@@ -1,7 +1,6 @@
 # ABLPC: reverse engineering *A Bug's Life* (PC)
 
 > Every step of this was used with AI. Some things may be inaccurate or false.
-> I will not be updating this repo going forward.
 
 This repository is a reproducible, evidence-driven research record for the
 Windows PC version of Disney/Pixar's *A Bug's Life* (1998). It documents how the
@@ -219,8 +218,7 @@ The durable mission, evidence hierarchy, research phases, repository hygiene rul
 
 ## Building on this work
 
-This repository is a snapshot and is not maintained. To continue the research,
-fork it. Start with [START HERE](Vault/00-System/START%20HERE.md),
+To continue the research yourself, fork it. Start with [START HERE](Vault/00-System/START%20HERE.md),
 [Next Tasks](Vault/00-System/Next%20Tasks.md) and
 [Known Unknowns](Vault/70-Known-Unknowns/Known%20Unknowns.md). Findings are tied
 to the retail `bugs.exe` with SHA-256
