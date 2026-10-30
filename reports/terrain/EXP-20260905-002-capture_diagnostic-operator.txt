@@ -1,0 +1,27 @@
+"""Read-only paused-state capture for the stationary edge classification.
+
+Not atomic or restorable. No signal, debugger or live memory write.
+"""
+from operate_stationary import *
+ns={'__file__':str(OP)}
+exec(OP.read_text().split('\ntry:\n action=')[0],ns)
+dest=ARM/'diagnostic';dest.mkdir()
+meta=ns['guard']();binding();before=ns['state'](meta)
+frames=[call('capture') for _ in range(3)]
+assert all(r['state']==json.loads(json.dumps(before)) for r in frames)
+start=time.time();regions=[];total=0
+maps=(Path('/proc')/str(meta['game']['pid'])/'maps').read_text()
+with open('/proc/%d/mem'%meta['game']['pid'],'rb',buffering=0) as f:
+    for line in maps.splitlines():
+        fields=line.split();lo,hi=[int(v,16) for v in fields[0].split('-')]
+        if 'r' not in fields[1] or not 0x10000<=lo<hi<=0x10000000:continue
+        total+=hi-lo;assert total<=180*1024*1024
+        data=os.pread(f.fileno(),hi-lo,lo);assert len(data)==hi-lo
+        p=dest/('ram-%08x-%08x.bin'%(lo,hi));p.write_bytes(data)
+        regions.append({'start':lo,'end':hi,'path':str(p.relative_to(ROOT)),'sha256':hashlib.sha256(data).hexdigest(),'map':line})
+after=ns['state'](ns['guard']());assert before==after
+manifest={'experiment':'EXP-20260905-002','game':meta,'capture_started':start,'capture_finished':time.time(),'before':before,'after':after,'regions':regions,'frames':frames,'scope':'Read-only low-address process copy while normally paused; non-atomic renderer buffers, not a savestate; no live writes or process suspension.'}
+(dest/'paused-memory.json').write_text(json.dumps(manifest,indent=2)+'\n')
+source=ROOT/'work/experiments/EXP-20260904-009/offline_mesh.py'
+(dest/'offline_mesh.py').write_bytes(source.read_bytes())
+print(json.dumps({'regions':len(regions),'bytes':total,'seconds':time.time()-start,'before':before},indent=2))

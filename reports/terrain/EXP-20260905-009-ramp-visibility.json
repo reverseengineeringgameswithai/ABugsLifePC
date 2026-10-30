@@ -1,0 +1,27 @@
+{
+  "experiment_id": "EXP-20260905-009",
+  "date": "2026-09-06",
+  "status": "camera-dependent-ramp-visibility-defect-reproduced-cause-unresolved",
+  "session": {"game_pid": 23853, "game_start_ticks": 183505, "process_group": 23606, "level": 1, "left_open": true},
+  "user_report": {"requested_routes": "Ramp middle and left/right edge routes, uphill/downhill without jumping", "result": "User reported collision working with no falling through or sideways sliding; no numerical traversal trace was collected for those manual routes.", "visual_issue": "Ramp disappears while descending or at some angles; a brief Down tap produces flashing and then visible terrain after turning. User clarified that Flik stands on the new ramp close to the original ground, not on original ground."},
+  "baseline": {"position": [192615, -97062, 358630], "contact": [99, 6991679], "camera_matrix_hex": "58f100006a0600000010000096f9000058f1", "camera_translation": [203758, -109869, 385181], "capture": "work/experiments/EXP-20260905-009/preview-01/frame-1788721323596806042.png", "sha256": "fe1afc0900e87ac46e3061e4db37e694531d768037210b7c79c0aa310f3f662f", "visual_observation": "Distinct added ramp surface is not visible; original terrain is visible around and beneath Flik."},
+  "contact_mapping": {"source": 99, "resident_payload_pointer_from_same_session_verification": 6986595, "file_payload_offset": 43924, "contact_pointer": 6991679, "file_cell_offset": 49008, "calculation": "43924 + (6991679 - 6986595) = 49008", "classification": "Appended connector/ramp cell, not an original cell"},
+  "input": [{"key": "Down", "requested_host_hold_seconds": 0.001, "result": "No observed position, contact or camera change in three subsequent samples. Game input registration is not proven.", "capture_paths": ["work/experiments/EXP-20260905-009/preview-01/frame-1788721346286156482.png", "work/experiments/EXP-20260905-009/preview-01/frame-1788721346794815405.png", "work/experiments/EXP-20260905-009/preview-01/frame-1788721348454796828.png"]}, {"key": "Down", "requested_host_hold_seconds": 0.05, "result": "Position changed to [192863,-97167,359200], then remained identical across all three captures while the camera rotated. Contact remained [99,6991679].", "timing_caveat": "Requested host sleep is not an exact measured game-frame input duration. Operator settles 0.15 seconds after release; captures and explicit waits add overhead."}],
+  "post_tap_samples": [
+    {"capture": "work/experiments/EXP-20260905-009/preview-01/frame-1788721369543843470.png", "sha256": "f93376d8655c017d0bbc167ce9e14a67c62ba654fe8c413b12fccbed8eb9e1a2", "position": [192863, -97167, 359200], "contact": [99, 6991679], "camera_matrix_hex": "53f100005f06000000100000a1f9000053f1", "camera_translation": [202135, -110117, 386396], "visual_observation": "Added ramp not distinctly visible; Flik has turned toward the camera."},
+    {"capture": "work/experiments/EXP-20260905-009/preview-01/frame-1788721370053725512.png", "sha256": "1c2c1207d7b3e2ce4e4cd616cfeafd65494c6c4d603da2e2db8665d03792e621", "position": [192863, -97167, 359200], "contact": [99, 6991679], "camera_matrix_hex": "05f0000044ff000000100000bc00000005f0", "camera_translation": [184778, -111206, 385302], "visual_observation": "Original terrain visible; distinct connector strip is not visible."},
+    {"capture": "work/experiments/EXP-20260905-009/preview-01/frame-1788721371713191991.png", "sha256": "3abe4f50e1461385c9373774b42a51fcf9ea15a5b15d469a870bf057b0ed55a1", "position": [192863, -97167, 359200], "contact": [99, 6991679], "camera_matrix_hex": "7e0e00003af9fbff0010f6ffc6060c007e0e", "camera_translation": [181267, -112759, 333192], "visual_observation": "Added ramp strip and connected platform are visibly rendered."}
+  ],
+  "confirmed_scope": "Camera-dependent visibility change at a fixed post-tap actor position, with the same appended-ramp contact recorded at every sample. Normal key input, owned-compositor screenshots and guarded read-only RAM only.",
+  "not_established": ["Flashing frequency or frame-by-frame intermittency", "Continuous contact between every sample", "Root cause", "Universal collision acceptance", "Live deck-edge landing and return acceptance"],
+  "candidate_causes_not_selected": ["Mesh/scene visibility or bounds rejection", "Triangle facing or clipping", "Draw ordering/depth interaction with retained original terrain"],
+  "discriminating_next_experiment": "Use the captured camera matrices/translations and exact combined mesh in an offline original-PC render-path comparison. Determine whether mesh 160 is rejected before command traversal, whether connector faces fail facing/clipping, or whether they are submitted but hidden by original terrain. Preserve the current failing fixture and change only an independently established render field in any later isolated A/B; do not change collision as a speculative visual fix.",
+  "memory_writes": false,
+  "teleport": false,
+  "process_stop_or_debugger": false,
+  "asset_edits": false,
+  "tests_run": [],
+  "r2q_or_full_suite": false,
+  "git_operations": false,
+  "capture_scope": "Baseline and three 50 ms post-tap screenshots visually inspected; 1 ms samples have state/capture receipts but were not individually visually inspected. No video or separate 200 ms file-size stability receipt."
+}

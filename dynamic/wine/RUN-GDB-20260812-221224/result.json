@@ -1,0 +1,107 @@
+{
+  "tool": "gdb-harness",
+  "tool_version": "1.1.0",
+  "schema_version": 2,
+  "spec_schema_version": 2,
+  "time_window_start": "2026-08-12T22:12:25.076247-04:00",
+  "time_window_end": "2026-08-12T22:12:36.735375-04:00",
+  "log_start_offset": 64542,
+  "completion": {
+    "completed": false,
+    "accepted": false,
+    "stop_reason": "target_signal",
+    "stops_observed": 1,
+    "watchpoints_installed": 0,
+    "watchpoints_deleted": 0,
+    "breakpoints_installed": 1,
+    "breakpoints_deleted": 1,
+    "cleanup_verified": true,
+    "detached": true,
+    "target_signal": {
+      "schema_version": 1,
+      "name": "SIGSEGV",
+      "classification": "fatal",
+      "pc": "0x44d794",
+      "t_wall": "2026-08-12T22:12:36.735148-04:00",
+      "delivery_policy": "stop-print-nopass"
+    },
+    "error": null,
+    "survival_required": true,
+    "survival_verified": true,
+    "survival_receipt": {
+      "schema_version": 1,
+      "probe": "proc-identity-state-tracer",
+      "pid": 2560449,
+      "time_start": "2026-08-12T22:12:36.756729-04:00",
+      "time_end": "2026-08-12T22:12:38.058594-04:00",
+      "configuration": {
+        "required": true,
+        "settle_ms": 500,
+        "sample_count": 5,
+        "sample_interval_ms": 200,
+        "require_untraced": true,
+        "require_resumed": true
+      },
+      "identity_verified": true,
+      "identity": {
+        "pid": 2560449,
+        "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+        "cmdline": [
+          "R:\\PC\\BUGS\\bugs.exe",
+          "log",
+          "cheat",
+          "mpeg"
+        ],
+        "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+        "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+        "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+        "verified": true,
+        "checked_at": "2026-08-12T22:12:37.257767-04:00"
+      },
+      "samples": [
+        {
+          "index": 0,
+          "t_wall": "2026-08-12T22:12:37.257805-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 1,
+          "t_wall": "2026-08-12T22:12:37.457929-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 2,
+          "t_wall": "2026-08-12T22:12:37.658091-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 3,
+          "t_wall": "2026-08-12T22:12:37.858248-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 4,
+          "t_wall": "2026-08-12T22:12:38.058470-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        }
+      ],
+      "passed": true,
+      "failure_reasons": []
+    }
+  }
+}

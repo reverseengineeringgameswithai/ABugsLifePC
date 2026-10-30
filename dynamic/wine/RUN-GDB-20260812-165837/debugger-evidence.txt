@@ -1,0 +1,71 @@
+RUN-GDB-20260812-165837
+Experiment: EXP-20260812-025
+Arm: Training plant 10 entry +0x0C dwords
+Executable SHA-256: 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+LEVEL1.DAT SHA-256: 494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+Environment: Fedora Linux 44; Wine 11.0 Staging; GNU GDB 17.1-6.fc44
+Renderer: Direct3D hardware, 640x480x16
+
+This is a curated record of hardware break/watchpoint stops and read-only
+memory observations. No game-data memory value, general-purpose register,
+executable byte, or game-data file was changed. Raw GDB text and captures
+remain ignored under
+work/copies/EXP-20260812-025/evidence/. The raw transcript SHA-256 is
+71866d9629516f070fba78855857cba2a3aa64680cdf93583b230b6440fe3b89.
+
+Plant-specific start
+--------------------
+
+At unique plant 10 post-call 0x0044596D, the retained stack contained path
+0x004DDC6C and resource ID 0x71. The read-only state reproduced:
+
+  0x005B1AA4 = 0x006C342B
+  ANM words +0x00/+0x02/+0x04/+0x06 = 1/3/66/68
+  first entry  0x005AAB00: 0x00000000 0x00000000 0x00000000 0x00000001
+  second entry 0x005AAB50: 0x00000000 0x00000000 0x00000000 0x00000001
+
+The immediately following common-tail stop at 0x00445B01 was accepted. Both
+entry heads were unchanged. The guard and common-tail breakpoints were
+deleted before hardware read watchpoints were armed on 0x005AAB0C and
+0x005AAB5C. A third hardware slot bounded the resource batch at 0x004679C7.
+
+Resource-batch-return boundary
+------------------------------
+
+The 0x004679C7 execution breakpoint won before either +0x0C watchpoint. Its
+`info breakpoints` record shows exactly one execution-breakpoint hit and no
+hit count for either read watchpoint. Both watched dwords remained
+0x00000001. Only the return breakpoint was deleted.
+
+No-input title boundary
+-----------------------
+
+No input was sent after the single Return used to select Training before the
+plant guard. Neither read watchpoint stopped execution while the game reached
+the Training title. An ignored capture at
+2026-08-12T17:00:57.008841846-04:00 shows the title and has SHA-256
+1d14ff734dd17201c3315391e9f3b3c4ca79ebddbbd6444840cfc57af2389ce1.
+
+After interrupting only to inspect the retained endpoint, both watches were
+still enabled with no hit counts and both dwords were still 0x00000001. Both
+watches were deleted, GDB reported that no breakpoint or watchpoint remained,
+and detached.
+
+Boundary and limitations
+------------------------
+
+This is a bounded negative for CPU reads overlapping exactly first-entry
+0x005AAB0C-0x005AAB0F or second-entry 0x005AAB5C-0x005AAB5F after guarded
+final plant 10 population. It has explicit resource-batch-return and no-input
+title endpoints. It does not cover later gameplay, later entry fields, later
+events, or non-CPU consumption.
+
+Run gates and closure
+---------------------
+
+The committed log contains one `Screen mode 640x480x16 selected`, one
+`Starting Direct3D renderer`, no `INITSOFTRENDER`, and both plant 10 request
+lines. Its SHA-256 is
+1007e939a858a5c578ff5e476d0d65d09469137e409896dfdf26cc5397703666. The
+experiment intentionally ended at the retained title, so neither
+`End InitMainGame` nor `NextLife` is claimed for this run.

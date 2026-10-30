@@ -1,0 +1,82 @@
+{
+  "experiment_id": "EXP-20260905-009",
+  "status": "level01-loaded-user-playtest-pending",
+  "startup_checkpoint": {
+    "experiment": "EXP-20260905-009",
+    "date": "2026-09-06",
+    "status": "hardware-started-window-title-guard-pending",
+    "private_evidence": "work/experiments/EXP-20260905-009/preview-01",
+    "stage": "work/copies/EXP-20260905-009/game",
+    "prefix": "work/experiments/EXP-20260905-009/preview-01/prefix",
+    "actual_image": "work/copies/auto-hardware/bugs.exe",
+    "actual_image_sha256": "1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f",
+    "retail_image_retained_in_stage": true,
+    "staged_assets_match_build_receipt": true,
+    "prelaunch_audit_clean": true,
+    "launch_count": 1,
+    "six_hardware_markers_passed": true,
+    "both_content_drive_log_identities_passed": true,
+    "level_select_log_seen": true,
+    "post_marker_settle_seconds": 1.0,
+    "preinput_gate_elapsed_seconds": 7.7147624350000115,
+    "leader": {
+      "pid": 23606,
+      "start_ticks": 183305,
+      "group": 23606
+    },
+    "gamescope": {
+      "pid": 23624,
+      "start_ticks": 183306,
+      "group": 23606
+    },
+    "xwayland": {
+      "pid": 23650,
+      "start_ticks": 183341,
+      "group": 23606,
+      "display": ":2"
+    },
+    "game": {
+      "pid": 23853,
+      "start_ticks": 183505,
+      "group": 23606
+    },
+    "observed_window": {
+      "id": 14680071,
+      "pid": 23853,
+      "size": [
+        640,
+        480
+      ],
+      "title": "Loading - A Bugs Life"
+    },
+    "ignored_window": {
+      "id": 14680072,
+      "pid": 23853,
+      "size": [
+        1,
+        1
+      ],
+      "title": "Default IME"
+    },
+    "guard_failure": "New discovery guard requires title Bugs; no window with that title met the owned-window gate. No active.json was published and no menu input was sent.",
+    "postlaunch_audit": {
+      "clean": false,
+      "make_exit_code": 2,
+      "generic_ledger_unattributed_processes": 7,
+      "accounting": "Four audited processes are in recorded launch group 23606. Three detached Wine helpers are independently bound by PID/start and exact new WINEPREFIX in pending-window-binding.json. All seven are accounted for; they are not registered to the fixture-only session-control ledger.",
+      "sink_name": "ablpc_mute_23606",
+      "sink_module": 536870916
+    },
+    "level01_confirmed": false,
+    "agent_menu_input_sent": false,
+    "agent_gameplay_input_sent": false,
+    "process_memory_reads": false,
+    "process_memory_writes": false,
+    "screenshots_taken": false,
+    "debugger_or_signal_actions": false,
+    "closed": false,
+    "r2q_or_full_suite_run": false,
+    "next": "Obtain approval for the phase-specific title-guard correction, then rebind this same owned process/window and finish the documented Anthill route. Do not relaunch or bypass the failed guard silently. No terrain runtime acceptance is claimed."
+  },
+  "continuation_report": "reports/terrain/EXP-20260905-009-runtime-entry.json"
+}

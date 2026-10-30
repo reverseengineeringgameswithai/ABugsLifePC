@@ -1,0 +1,53 @@
+EXP-20260905-003: shared-floor return discriminator
+Prepared 2026-09-05, after offline measurements and before runtime.
+
+Scope: preserve EXP-005 rigid TERRAIN.ALL/LEVEL.DAT control; compare fresh
+file-loaded retail, rigid and stitched arms sequentially. Use accepted
+auto-hardware executable 1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f.
+The original instruction reference remains retail
+97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878.
+
+Offline result: all eight edges have exact retail corner neighbors. The rigid
+edit introduces a 64-stored-unit Y separation with no added sides. Its return
+passes cell 47652's collection bounds but fails the negative starting-plane
+distance branch at 004AA646. Expanded Y admission bounds leave the trajectory
+unchanged. Stitched movement restores the return. Six original landings pass.
+Both retail and stitched pass 16/16 isolated-floor crossings and 13/16 complete
+scene crossings. The same three complete-scene routes contact unchanged props
+(sources 0 and 73); these are retained, not accepted as floor-only transitions.
+
+Candidate: move exact corner (6103,16,16174) by Y=-64 in all six incident cells:
+source99 cells 47652,47684,47716,47748,47812 and source100 cell48856. Recompute
+14-bit normals, Y edges and enclosing signed Y admission windows only.
+Paired LEVEL.DAT changes six vertex Y fields in primary160/280 by sampled
+continuous displacement. All original topology, object settings, materials,
+unknown bytes and file lengths remain. This is a bounded connected patch,
+not a universal normal/skin/triangulation rule.
+
+Runtime authorization: current user request permits normal launch, input and
+read-only capture. No memory write, teleport, process stop, ptrace, register
+access, debugger, or save state. No previous authority is reused. The user
+explicitly permits proceeding with originals untouched despite existing 0644
+ISO permissions. The protected R2q stash and historical Wine mappings remain.
+
+Each fresh arm uses a copied prefix, new full-disc stage under work/copies,
+and its own private audio sink. Session audit before launch and after close.
+Bind PID/start/group/cwd, mapped code, nested window and compositor socket.
+Require all six hardware markers and the exact R: stage/CD sentinel. Normal
+carousel route: focus, Right held 0.18 s, 1 s settle, screenshot verification,
+Return held 0.18 s, Level01 title verification, Return held 0.18 s.
+
+Read back complete collision payloads99/100 and complete four nearby static
+mesh streams. Record loaded hashes, scene/object pointers, player/contact/
+camera, game log and captures. Camera-relative steering aims first for
+approximately (170000,516000), then returns near (197091,492897), within
+bounded time/position limits. Capture any sustained fall and stop steering
+before leaving the test area. A failed navigation or wrong contact is a
+procedural/route limitation, not a geometry result. Retain rejected attempts.
+On stitched terrain repeat return, normal jump/landing and a source99/source100
+crossing when reachable by ordinary input. Runtime paths are not a replay of
+synthetic model steps. Close each owned arm before another launch.
+
+Validation: new parser/writer/model tests plus the exact five-file terrain
+gate before runtime. Run one final full make check with two workers and
+repo-local scratch after implementation/documentation are ready; measure it.

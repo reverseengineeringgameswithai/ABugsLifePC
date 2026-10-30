@@ -1,0 +1,25 @@
+{
+  "run_id": "RUN-GDB-20260812-155922",
+  "experiment_id": "EXP-20260812-022",
+  "time_window_start": "2026-08-12T15:59:22-04:00",
+  "time_window_end": "2026-08-12T16:05:06-04:00",
+  "watch_window_start": "2026-08-12T16:03:54.126557089-04:00",
+  "watch_window_end": "2026-08-12T16:05:05.834761548-04:00",
+  "watch_window_seconds": 71.708204459,
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "level_dat_sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+  "environment": "Fedora Linux 44, kernel 7.0.11-200.fc44.x86_64, Wine 11.0 Staging",
+  "debugger": "GNU GDB 17.1-6.fc44",
+  "working_directory": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+  "renderer": "Direct3D hardware, 640x480x16",
+  "status": "complete-bounded-negative",
+  "raw_transcript_sha256": "d16e5cc01e290dbbd145484fb958bab82386712b4857e2bf92f71d75cb37c00b",
+  "raw_transcript_committed": false,
+  "title_capture_sha256": "5e5ad5bd714b7d73cf8cce2d55b1521d5c9e4206584ee6a31d9b8e63343df5e4",
+  "title_capture_committed": false,
+  "artifacts": [
+    "bugs.log",
+    "debugger-evidence.txt",
+    "metadata.json"
+  ]
+}

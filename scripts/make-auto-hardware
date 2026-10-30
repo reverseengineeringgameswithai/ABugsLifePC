@@ -1,0 +1,77 @@
+#!/usr/bin/env python3
+"""Build a guarded auto-hardware (auto-Direct3D) PC executable copy.
+
+Applies the exact hash-locked paired code-plus-relocation transform from
+[[PC automatic Direct3D startup candidate]] to a derived retail bugs.exe copy
+under work/, so the game auto-confirms Direct3D without the manual chooser.
+
+This is a wrapper option, never a native bugs.exe argument. Game-bearing
+output must not be committed or distributed.
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+import shutil
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "reimplementation"))
+
+from ablpc.auto_hardware_mod import (  # noqa: E402
+    AutoHardwareModError,
+    build_auto_hardware_executable,
+)
+
+
+def _within(path: Path, root: Path) -> bool:
+    try:
+        path.relative_to(root)
+    except ValueError:
+        return False
+    return True
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Build an exact auto-hardware bugs.exe (auto-Direct3D startup) from "
+            "the retail binary. Applies both mandatory edits atomically."
+        )
+    )
+    parser.add_argument("source", type=Path, help="exact retail bugs.exe under work/")
+    parser.add_argument("output", type=Path, help="new output executable under work/")
+    args = parser.parse_args()
+
+    work_root = (ROOT / "work").resolve()
+    if args.source.is_symlink():
+        parser.error(f"refusing linked source: {args.source}")
+    if args.output.is_symlink():
+        parser.error(f"refusing linked output: {args.output}")
+    source = args.source.resolve()
+    output = args.output.resolve()
+    if not _within(source, work_root) or not _within(output, work_root):
+        parser.error("source and output must both be below work/")
+    if source == output:
+        parser.error("source and output must be different paths")
+    if not source.is_file():
+        parser.error(f"source is not a regular file: {source}")
+    if output.exists():
+        parser.error(f"refusing to overwrite existing output: {output}")
+    if not output.parent.is_dir():
+        parser.error(f"output parent directory does not exist: {output.parent}")
+
+    try:
+        result, receipt = build_auto_hardware_executable(source.read_bytes())
+        output.write_bytes(result)
+        shutil.copymode(source, output)
+    except (OSError, AutoHardwareModError, ValueError) as error:
+        parser.error(str(error))
+    print(json.dumps(receipt, sort_keys=True, separators=(",", ":")))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

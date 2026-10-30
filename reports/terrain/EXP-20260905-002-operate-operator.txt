@@ -1,0 +1,40 @@
+"""Normal input / read-only observations for the isolated moving-view arm."""
+from pathlib import Path
+import hashlib, json, os, socket, struct, subprocess, sys, time
+ROOT=Path('/home/dev/ABLPC'); HERE=Path(__file__).resolve().parent
+ARM=HERE/'alternate'; OP=ARM/'runtime.py'
+def call(*args):
+    p=subprocess.run([str(ROOT/'.venv/bin/python'),str(OP),*args],capture_output=True,text=True,timeout=20)
+    path=ARM/('call-%d.txt'%time.time_ns());path.write_text(p.stdout+p.stderr)
+    assert p.returncode==0,(p.stdout,p.stderr)
+    decoder=json.JSONDecoder();tail=p.stdout.strip();rows=[]
+    while tail:
+        d,n=decoder.raw_decode(tail);rows.append(d);tail=tail[n:].strip()
+    d=rows[-1]
+    print(json.dumps({'call':args,'result':{k:v for k,v in d.items() if k!='samples'},'sample_count':len(d.get('samples',[]))}),flush=True)
+    return d
+def save(name,d):
+    p=ARM/(name+'.json');assert not p.exists();p.write_text(json.dumps(d,indent=2)+'\n')
+def binding():
+    meta=json.loads((ARM/'active.json').read_text())
+    assert meta['game']['pid']!=46701 and meta['display']==':3' and meta['gamescope_display']=='gamescope-1'
+    path=Path(os.environ['XDG_RUNTIME_DIR'])/meta['gamescope_display']
+    with socket.socket(socket.AF_UNIX,socket.SOCK_STREAM) as s:
+        s.connect(str(path));pid,uid,gid=struct.unpack('3i',s.getsockopt(socket.SOL_SOCKET,socket.SO_PEERCRED,12))
+    stat=(Path('/proc')/str(pid)/'stat').read_text().rsplit(')',1)[1].split()
+    assert int(stat[2])==meta['leader']['group'] and uid==os.getuid()
+    cmd=(Path('/proc')/str(pid)/'cmdline').read_bytes().split(b'\0')
+    assert cmd[0]==b'gamescope'
+    return {'socket':str(path),'peer_pid':pid,'peer_start_ticks':int(stat[19]),'peer_group':int(stat[2]),'uid':uid,'gid':gid,'game':meta['game']}
+if __name__=='__main__':
+    assert hashlib.sha256(OP.read_bytes()).hexdigest()==json.loads((HERE/'plan.json').read_text())['runtime_sha256']
+    binding()
+    if sys.argv[1]=='carousel':
+        log=Path(json.loads((ARM/'active.json').read_text())['stage'])/'PC/BUGS/bugs.log'
+        s=log.read_text();assert 'LOADING : App run from R:\\PC\\BUGS.' in s and 'LOAD : Loading file R:\\PC\\BUGS\\cd\\cd.txt.' in s
+        assert '--- Start LevelSelect ---' in s
+        save('capture-binding',binding());time.sleep(1)
+        save('carousel-right',call('key','Right','.18'));time.sleep(1)
+        save('carousel-capture',call('capture'))
+    else:
+        label=sys.argv[1];save(label,call(*sys.argv[2:]))

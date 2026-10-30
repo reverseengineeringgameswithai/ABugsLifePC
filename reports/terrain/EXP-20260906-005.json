@@ -1,0 +1,332 @@
+{
+  "experiment": "EXP-20260906-005",
+  "status": "Native gate accepted; EXP-005 isolated preview running; user reports good initial appearance and requests a foliage perimeter",
+  "control": "EXP-20260906-004",
+  "scope": "Deactivate original primary/secondary scene draws and Level01/PLANTTER collision streams while retaining authored geometry, actor logic, sky and shared asset tables.",
+  "outputs": {
+    "TERRAIN.ALL": {
+      "path": "work/copies/EXP-20260906-005/fixture/TERRAIN.ALL",
+      "sha256": "961ff444fd875e80ce9e721e9f7fa264a7bea9059b54049d6145acc9154fb2db"
+    },
+    "LEVEL.DAT": {
+      "path": "work/copies/EXP-20260906-005/fixture/LEVEL.DAT",
+      "sha256": "3461dff75763670f54607efc6829c952158dc7876651c6a3f1088d0bcb0658af"
+    },
+    "PLANTTER.ALL": {
+      "path": "work/copies/EXP-20260906-005/fixture/PLANTTER.ALL",
+      "sha256": "c7fadbec78ac2c35f880c0dd5025e86a12604482c01dd93be38a90f6ad2d0cc9"
+    },
+    "bugs.exe": {
+      "path": "work/copies/EXP-20260906-005/auto-hardware/bugs.exe",
+      "sha256": "9d406ac0a1319ba58c9637eb51a45f499c2a0f901c674ce36e5d1d7aebb35ffe"
+    }
+  },
+  "collision": {
+    "retained_source": 99,
+    "retained_cells": 36,
+    "old_group_offsets": [
+      48380,
+      48424,
+      48468,
+      48512,
+      48556,
+      48600,
+      48644,
+      48688,
+      48732,
+      48776,
+      48820,
+      48864,
+      48908,
+      48952,
+      48996,
+      49040,
+      49084,
+      49128,
+      49172,
+      49216,
+      49260,
+      49304,
+      49348,
+      49392,
+      49436,
+      49480,
+      49524,
+      49568,
+      49612,
+      49656,
+      49700,
+      49744,
+      49788,
+      49832,
+      49876,
+      49920
+    ],
+    "new_group_offsets": [
+      43924,
+      43968,
+      44012,
+      44056,
+      44100,
+      44144,
+      44188,
+      44232,
+      44276,
+      44320,
+      44364,
+      44408,
+      44452,
+      44496,
+      44540,
+      44584,
+      44628,
+      44672,
+      44716,
+      44760,
+      44804,
+      44848,
+      44892,
+      44936,
+      44980,
+      45024,
+      45068,
+      45112,
+      45156,
+      45200,
+      45244,
+      45288,
+      45332,
+      45376,
+      45420,
+      45464
+    ],
+    "new_terminator": 45508,
+    "directory_offset": 224156,
+    "preservation": "Exact authored group bytes; descriptor identities/kinds/counts/template fields, other unknown bytes and file sizes retained. Other nonclone triangle streams terminate immediately; clones inherit empty templates. Twelve 0x101/0x104 stream registration markers suppressed, opaque bodies preserved.",
+    "native_active_cell_instances": 36,
+    "native_other_active_cells": 0
+  },
+  "render": {
+    "retained_scene": 160,
+    "retained_faces": 807,
+    "retired_original_faces_in_mixed_mesh": 69,
+    "muted_primary_records": 483,
+    "muted_secondary_records": 140,
+    "vertices_including_unused": 615,
+    "unused_original_vertices": 92,
+    "command_start": 353260,
+    "new_terminator": 362956,
+    "geometry_offset": 345876,
+    "scene_bound": 8560,
+    "dispatch_rule": "clear low three flag bits, retain loader layout bits; native primary dispatch passes 0/16 and secondary dispatch emitted no watched draw/transform calls for muted records"
+  },
+  "spawn": {
+    "consumer": "0x0043E6B0",
+    "table_row_va": "0x004DC7F4",
+    "file_offset": 898036,
+    "file_span_half_open": [
+      898036,
+      898044
+    ],
+    "old_x_z_heading": [
+      197108,
+      492895,
+      3505
+    ],
+    "new_x_z_heading": [
+      192000,
+      448000,
+      3505
+    ],
+    "height_source": "Original 0x004AC460 query; no Y or instruction patch",
+    "native_position": [
+      192000,
+      -102528,
+      448000
+    ],
+    "native_preceding_and_auxiliary_match": true,
+    "historical_probe_setup_failure": "New test seeded only changed X/Z into a model whose static data begins zeroed, leaving heading zero. Real output executable retains heading 3505. Test asserts heading 3505 and stops before settling. This is an acknowledged probe-setup bug, not terrain or executable failure; correction requested and not yet applied.",
+    "correction": "User approved; full 12-byte file-backed X/Z/heading row now seeds the offline model. Original failed matrix preserved.",
+    "live_table_row": [
+      192000,
+      448000,
+      3505
+    ]
+  },
+  "validation": {
+    "affected": {
+      "passed": 53,
+      "seconds": 0.14,
+      "receipt": "work/experiments/EXP-20260906-005/affected-tests.xml"
+    },
+    "focused": {
+      "passed": 72,
+      "seconds": 26.9,
+      "workers": 4,
+      "receipt": "work/experiments/EXP-20260906-005/focused-tests.xml"
+    },
+    "native": {
+      "accepted": true,
+      "accepted_arms": 10,
+      "unaccepted_arms": 0,
+      "seconds": 3.295094101000359,
+      "receipt": "work/experiments/EXP-20260906-005/native-validation-02.json",
+      "accepted_cases": [
+        "collision census",
+        "DAT relocation, old draw suppression and new command stream",
+        "ramp downhill/return at X5850",
+        "ramp downhill/return at X6000",
+        "ramp downhill/return at X6150",
+        "box uphill/downhill/return",
+        "box top landing and step-off to new deck",
+        "platform edge intentionally enters void",
+        "five negative original-floor height queries",
+        "complete file-backed initial spawn row and settling"
+      ]
+    },
+    "spawn_discriminator": "work/experiments/EXP-20260906-005/spawn-discriminator.json",
+    "full_suite_run": false,
+    "r2q_run": false,
+    "native_initial": {
+      "accepted": false,
+      "accepted_arms": 9,
+      "unaccepted_arms": 1,
+      "seconds": 3.2267620769998757,
+      "receipt": "work/experiments/EXP-20260906-005/native-validation.json",
+      "accepted_cases": [
+        "collision census",
+        "DAT relocation, old draw suppression and new command stream",
+        "ramp downhill/return at X5850",
+        "ramp downhill/return at X6000",
+        "ramp downhill/return at X6150",
+        "box uphill/downhill/return",
+        "box top landing and step-off to new deck",
+        "platform edge intentionally enters void",
+        "five negative original-floor height queries",
+        "complete file-backed initial spawn row and settling"
+      ],
+      "unaccepted_case": "native_initial_spawn_and_settle"
+    }
+  },
+  "lifecycle": {
+    "actions": [
+      "Closed EXP-004 using normal request followed by scoped identity-guarded fallback; post-close audit clean",
+      "Cold cloned isolated prefix and game stage; shared launcher and cache unchanged",
+      "Single private file-loaded launch; immediate prelaunch audit clean",
+      "Startup checker falsely rejected enumerated 320x200 modes; shell incorrectly continued, sent one Right .18 after game was already Level01; disclosed and no further input",
+      "Read-only resident geometry, scene flags, collision descriptors and executable spawn row verified"
+    ],
+    "current_preview": "EXP-20260906-005 preview-01 deliberately open",
+    "new_stage_created": true,
+    "live_memory_writes": [],
+    "git_operations": [],
+    "committed": false
+  },
+  "limitations": [
+    "First live spawn moment was not observed; file row, native initializer and current platform contact independently verified. Runtime traversal acceptance remains finite/user-reported.",
+    "Original gameplay actor/collectible definitions and level scripts retained; not a blank new level container",
+    "Retired raw bytes remain in inaccessible portions of private assets",
+    "Ramp sides retain EXP003's original-ground trim shape even though that ground is now absent",
+    "EXP004 clearance/corner and visual-overlap limitations remain; no universal collision rule"
+  ],
+  "evidence": [
+    "work/experiments/EXP-20260906-005/build.json",
+    "work/experiments/EXP-20260906-005/inventory_geometry.json",
+    "work/experiments/EXP-20260906-005/spawn_static4.json",
+    "work/experiments/EXP-20260906-005/native_probe_api.json"
+  ],
+  "runtime": {
+    "operator": "work/experiments/EXP-20260906-005/preview-01/runtime.py",
+    "leader": {
+      "pid": 108790,
+      "start": 1544911,
+      "group": 108790
+    },
+    "game": {
+      "pid": 109048,
+      "start": 1545038,
+      "group": 108790
+    },
+    "gamescope": {
+      "pid": 108808,
+      "start": 1544912,
+      "group": 108790
+    },
+    "xwayland": {
+      "pid": 108841,
+      "start": 1544937,
+      "group": 108790,
+      "display": ":2"
+    },
+    "window": 14680071,
+    "socket": "/run/user/1000/gamescope-0",
+    "prefix": "work/experiments/EXP-20260906-005/preview-01/prefix",
+    "stage": "work/copies/EXP-20260906-005/game",
+    "sink": {
+      "name": "ablpc_mute_108790",
+      "module_id": 536870916,
+      "note": "ID reusable; exact name required"
+    },
+    "active_triangle_streams": [
+      {
+        "descriptor": 99,
+        "pointer": 7004803,
+        "cells": 36
+      }
+    ],
+    "empty_triangle_descriptors": 177,
+    "other_descriptor_kinds": [
+      {
+        "descriptor": 191,
+        "kind": 110
+      },
+      {
+        "descriptor": 192,
+        "kind": 110
+      }
+    ],
+    "muted_scene_records": 623,
+    "source99": {
+      "bytes": 6044,
+      "sha256": "51dbbc0eedcbaec533ef574f7eadda4b075d7df7bf4391131e7740062a50a06a"
+    },
+    "active_mesh160": {
+      "address": 6942667,
+      "bytes": 17082,
+      "groups": 3,
+      "sha256": "d53a2661c77be124343fb2597e4cc251c3953ab9ae36a37f0514f7c66c9b8cea"
+    },
+    "first_observed_position": [
+      252500,
+      -102403,
+      530600
+    ],
+    "first_spawn_moment_observed": false,
+    "capture": {
+      "path": "work/experiments/EXP-20260906-005/preview-01/frame-1788732823315219775.png",
+      "sha256": "02d90568092591f68b0a9f6fd66253033c40ee11553bffe9ac5558842ff701e9",
+      "position": [
+        250954,
+        -102403,
+        531916
+      ],
+      "stable_bytes": 255184,
+      "stable_wait_seconds": 0.2
+    },
+    "latest_verification_position": [
+      170257,
+      -102402,
+      576693
+    ],
+    "user_feedback": "Looks good so far; berries stop at platform edge while Flik can walk off to death; user requests foliage-backed player boundary",
+    "receipts": [
+      "work/experiments/EXP-20260906-005/preview-01/startup-discriminator.json",
+      "work/experiments/EXP-20260906-005/preview-01/live-handoff-binding.json",
+      "work/experiments/EXP-20260906-005/preview-01/live-audit.txt"
+    ],
+    "audit_clean": false,
+    "audit_accounting": "Seven generic-ledger unattributed processes and one sink independently bound to this session",
+    "launcher_cleanup_issue": "Host pactl JSON omits numeric module IDs. The private launcher cleanup currently indexes a missing field; correction requested, not yet authorized/applied. Bind exact name using pactl list short modules before any close cleanup."
+  },
+  "followup": "EXP-20260906-006 perimeter study; not yet built or launched"
+}

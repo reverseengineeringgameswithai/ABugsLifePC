@@ -1,0 +1,60 @@
+{
+  "model": "kev-latest",
+  "state": "Evidence source: Vault/30-Experiments/EXP-20261005-001 - Thumper transplanted into Moonlit Cliffs.md\n\n## Where Thumper lives (static, PC)\n\n- **Type 16 is Thumper.** Character loader `0x00445020` switches on each pool\n  slot's type; case `0x10` pushes `\"chars2\\thumper\"` (`0x004DDEF0`,\n  referenced at `0x0044531F`). Case `0x1D` (29) is `chars3\\molt`, so the\n  Battle Arena \"grasshopper\" in [[PC original level Blender maps]] is Molt, not\n  Thumper.\n- **One native placement:** Council Chamber (engine 2, `LEVEL02/LEVEL.RAW`),\n  type-35 slot 1, script 9, stored (141, −1857, 101). Its native floor below\n  is 1693.5, so he starts 3,550 units above it\n  (`original-levels/03-council-chamber/original-map.json`).\n- **The RAW pair is the disc files.** Council Chamber's 0x101/0x102 packets\n  whose second dword is 16 equal `CD/CHARS2/THUMPER.ANM` (34,304 B) and\n  `THUMPER.ALL` (11,804 B) after their 8-byte heads, byte for byte. All 174\n  model faces use texture page 21; page 21 is absent from Moonlit's RAW. A\n  render of it shows grasshopper skin, eyes and claws.\n\n\n## Hardware arm 1 (classic selector, null sink, controllers disabled)\n\n`make session-audit` clean before launch. Game PID 218674 under gamescope\n218308; 6/6 hardware markers, no software markers.\n\n- **Load:** `bugs.log` shows `LOAD : Loading file R:\\PC\\BUGS\\cd\\chars2\\thumper.anm`\n  then `.all`. Nothing else requested them; the type byte did.\n- **Spawn:** slot 10 read type 16, health 50, flags 0x52, script PC\n  `0x004C7EE8`. The enemy total read 11 (10 + Thumper).\n- **Berry:** walking onto the purple berry right of the spawn set\n  `0x0059D9A7` to 4. It survived three deaths and reset to 0 only on level\n  re-entry (EXP-20260818-004's selector).\n- **Wake and drop:** when Flik approached, Thumper fell from −6766 to about\n  the ground (−3192), flags became 0x4053/0x5053/0x1053, PC `0x004C7F02`.\n  He chased Flik, cornered him against the valley wall and killed him four\n  times. Frames show the tall grasshopper with spiky legs and wings, textured,\n  dimmed by Moonlit's night light, and a purple splash on hits.\n- **Damage:** 28 health changes between samples: 27 of −3 and one −6 (two\n  hits). Health 50 → 32 → 11, then 38 → 32 → 26 → 11 → 0 in the second visit.\n  His health persisted across Flik's deaths; level re-entry reset him.\n- **Death:** at 0 his slot read type 0, health 0, flags 0x18D1 (0x880 set),\n  respawn 0, PC `0x004C7F6A`. The game ran 10 s more with no fault in\n  `launch.log`, and he did not return.\n- **Lives:** before the fight Flik was once back at the spawn with health\n  refilled (cause not sampled; a spider was beside him). The first in-fight\n  death then ended the game (back to the Flik's Journey select). In the second\n  visit three deaths respawned him in-level. Not investigated.\n- **Model records:** `0x005A9660` entries were used up to index 200 of 300;\n  the overflow flag `0x005C5960` read 0.\n- Closed through the packet; audit clean. Log moved to `arm1/bugs.log`.\n\n\n## Static audit of the dependencies (research subagent, disassembly)\n\nConfirmed from instructions or data unless marked:\n\n- **Script 9** (`0x004C7EE8`..`0x004C7F08`): frame sequence, a blocking fall\n  (op6, mode 4) that spawns dust type 1 on landing, op11 subroutine 4\n  (`0x00431C90`: `[0x0059EF70] = 60`, read only by `0x00431CB0`), then a loop\n  of random waits and random targets around home. Nothing reads the engine.\n- **Handler `0x0041C100`** only plays looping sound row 0x1A (sample 31,\n  `WASPBUZZ.WAV`, present in banks 1–18). No damage either way.\n- **The boss fight is engine-2 code.** Per-frame dispatcher `0x00418780`\n  (table `0x004187E8`, called at `0x004145BB` with `[0x00861C84]`) sends\n  engine 2 to `0x00431CB0`; init dispatcher `0x00418690` sends it to\n  `0x00431BF0`. `0x00431CB0` reads slot 1 (`0x0059B6AC`) and slots 2/3. It\n  plays hit voices, makes slot 2 or 3 his thrown projectile, and below\n  health 21 runs a camera cut, script 13 and `[0x0059A5B0] = 1` (level won).\n  The HUD health bar (`0x00416890`, at `0x0041725A`) also draws only in\n  engine 2. Engine 1's routines are `0x004317D0`/`0x00431730`.\n- **Damage** is `0x00429790`: purple −3, gold −4, blue and green −2; red is\n  deflected because flag 0x40 is set. Health is record +0x6E from source\n  +0x10 (50). At ≤ 0 he takes the ordinary kill path and, with source\n  +0x11 = 0, is not respawned.\n- **Sprites:** engine 1 and engine 2 copy byte-identical 50-descriptor sprite\n  tables (`0x004DA6B0`, `0x004DA7B8`), so no effect on his path is missing.\n- **RAW pair (inferred, strong):** `0x00465030` has no 0x101/0x102 case and\n  no instruction compares against those tags; the loader reads the disc\n  files. The pair is kept for parity with Moonlit's other creature types.\n- **Do not use slots 25 or 63:** engine 1's update writes through slot 25\n  (Dot) unchecked, and level start special-cases slot 63.\n\n\n## Contradiction (recorded, not resolved)\n\nThe static audit says homing selection `0x00428400` needs flags bit 0x0001,\nwhich 0x0052 lacks, so green/purple homing \"never\" picks Thumper. At runtime\nhis flags were 0x4053/0x5053/0x1053 after waking, which have bit 0x0001.\nPurple hits landed, but no arm instrumented whether a shot homed.\n**Discriminating experiment:** with Thumper awake and no other enemy near,\nsample the projectile's target pointer +0x10 and flag +0x33 bit 0x08 after a\npurple throw.\n\n*Later (2026-10-05):* [[EXP-20261005-002 - Native bosses and tough enemies in Moonlit Cliffs]]\nsaw bit 0x0001 appear on every boss once awake. Airborne bosses (1,974 and\n2,304 up) took purple hits, and a frame shows a berry climbing toward the\nflying Hopper. That supports lock-on; the projectile sample is still not taken.\n\n\n## Confirmed, inferred, unknown\n\n- **Confirmed (static + runtime):** a type-35 row brings its character model\n  by type; Thumper loads, renders, wakes, fights, takes −3 per purple hit,\n  dies and is removed in Moonlit without a crash.\n- **Confirmed (static):** the boss behaviour, health bar and win are not in\n  the row; they are engine-2 code bound to slot 1.\n- **Inferred:** the 0x101/0x102 packets are unused on PC.\n- **Unknown:** whether his sound plays (null sink); homing lock-on; behaviour\n  near cliffs or other enemies; a gold kill's enemy-counter effect; the\n  user's play.\n\n",
+  "questions": {
+    "q01": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Thumper's creature type is 16, whereas type 29 is Molt.",
+      "criteria": {
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q02": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: In the Moonlit hardware arm Thumper occupied slot 10 and initially had health 50.",
+      "criteria": {
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q03": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Each individual purple-berry hit removed four health points from Thumper in the recorded Moonlit arm.",
+      "criteria": {
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q04": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Transplanting Thumper's creature row automatically brought his Council Chamber health bar and boss win sequence into Moonlit.",
+      "criteria": {
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q05": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Thumper's buzzing sound is audible to a player in Moonlit Cliffs.",
+      "criteria": {
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q06": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Purple projectiles actually lock onto the transplanted Thumper after he wakes.",
+      "criteria": {
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    }
+  }
+}

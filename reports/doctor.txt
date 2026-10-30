@@ -1,0 +1,38 @@
+ABLPC doctor
+Generated: 2026-09-26T16:43:34-04:00
+
+Fedora             Fedora Linux 44 (Workstation Edition)
+Kernel             7.0.11-200.fc44.x86_64
+Architecture       x86_64
+CPU virtualization available
+KVM                /dev/kvm accessible
+Python             Python 3.14.6
+Java               openjdk version "25.0.3" 2026-04-21
+Wine               wine-11.0 (Staging)
+Gamescope          gamescope-3.16.25-1.fc44.x86_64
+QEMU               QEMU emulator version 10.2.2 (qemu-10.2.2-1.fc44)
+libvirt            12.0.0
+virt-manager       not installed
+virt-install       not installed
+radare2            radare2 5.9.8 0 @ linux-x86-64
+Git                git version 2.54.0
+strace             not installed
+GDB                GNU gdb (Fedora Linux) 17.1-6.fc44
+rr                 rr version 5.9.0
+apitrace           apitrace 0.0-unknown
+perf_event_paranoid 1 (rr needs <=1)
+ptrace_scope       0
+ripgrep            ripgrep 15.2.0 (rev e89fff89ac)
+fzf                not installed
+Codex              codex-cli 0.157.1
+Claude             2.1.283 (Claude Code)
+Ghidra JDK         openjdk version "21.0.12" 2026-07-21 LTS
+Ghidra             12.1.2
+PyGhidra           3.1.0
+86Box              6.0 build 9001 (project-local)
+PCem               not installed
+Obsidian           1.13.6 (official extracted AppImage payload)
+Python venv        Python 3.14.6
+virtqemud socket   active
+libvirt system     reachable
+default network    yes

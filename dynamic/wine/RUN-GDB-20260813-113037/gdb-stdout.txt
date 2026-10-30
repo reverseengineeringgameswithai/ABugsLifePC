@@ -1,0 +1,390 @@
+0x00007f72acfa9eb6 in ?? ()
+Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+Hardware access (read/write) watchpoint 3: *(unsigned int *)0x5b18e0
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004557a9 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 3: *(unsigned int *)0x5b18e0
+
+Value = 6836475
+0x00000000004032f6 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000410a47 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x000000000040fe79 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000405cbc in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x00000000004205a4 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000404c82 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000404f36 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000404f6c in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x0000000000404f6c in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x000000000040521f in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x000000000040450f in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Value = 29
+0x0000000000404663 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 29
+New value = 32
+0x000000000040474a in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x000000000044d45b in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x000000000040932e in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x000000000040bb48 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 3: *(unsigned int *)0x5b18e0
+
+Value = 6836475
+0x000000000044c63a in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+
+Value = 2
+0x000000000044f951 in ?? ()

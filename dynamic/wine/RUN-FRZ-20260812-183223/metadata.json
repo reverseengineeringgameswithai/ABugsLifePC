@@ -1,0 +1,37 @@
+{
+  "run_id": "RUN-FRZ-20260812-183223",
+  "pid": 2498490,
+  "tool": "frozen-capture",
+  "ownership": {
+    "pid": 2498490,
+    "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+    "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+    "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "verified": true,
+    "checked_at": "2026-08-12T18:32:23.571788-04:00"
+  },
+  "milestone": null,
+  "log_start_offset": 0,
+  "milestone_seen_at": null,
+  "frozen_at": "2026-08-12T18:32:23-04:00",
+  "captured_at": "2026-08-12T18:32:23-04:00",
+  "resumed_at": "2026-08-12T18:32:23-04:00",
+  "freeze_duration_ms": 0,
+  "capture_cmd": "bash /tmp/claude-1000/-home-dev-ABLPC/24a90fd1-fa4b-4a5a-8d06-f2439a103c93/scratchpad/cap.sh {out}",
+  "capture_status": 0,
+  "frame_path": "/home/dev/ABLPC/work/copies/EXP-VALIDATION-frz/evidence/frame-20260812-183223.png",
+  "frame_sha256": "2fcaf05e929129de826420a6fff00b5cd70404f2e1a1b28fa6023b975320fc95",
+  "frame_present": true,
+  "frame_committed": false,
+  "status": "complete",
+  "artifacts": [
+    "metadata.json"
+  ]
+}

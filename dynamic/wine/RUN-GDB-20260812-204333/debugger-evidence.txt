@@ -1,0 +1,16 @@
+# RUN-GDB-20260812-204333
+
+Experiment: EXP-20260812-028
+Tool: gdb-harness 1.0.0 (read-only hardware watch/breakpoints)
+Window start: 2026-08-12T20:43:34.026230-04:00
+Window end:   2026-08-12T20:43:44.040714-04:00
+
+This is an auto-generated draft of read-only debugger stops. No game memory, register, executable byte, or game file was changed. Read watchpoints are read-class hardware traps on x86 and may report during writes; treat them as access evidence, not proof of a read.
+
+Completion: timeout (completed=True, stops=0, cleanup_verified=True, detached=True)
+
+Stops
+-----
+(no stops observed in the bounded window)
+
+Interpretation is intentionally left for a linked experiment note.

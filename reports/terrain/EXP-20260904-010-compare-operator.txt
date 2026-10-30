@@ -1,0 +1,30 @@
+from pathlib import Path
+from PIL import Image
+import json,hashlib
+ROOT=Path('/home/dev/ABLPC');HERE=Path(__file__).resolve().parent
+arms=['before','candidate','restored'];roi=(285,285,350,340)
+rows={n:json.loads((HERE/(n+'-captures.json')).read_text()) for n in arms}
+plan=json.loads((ROOT/'work/experiments/EXP-20260904-009/candidate-plan.json').read_text())
+assert all(r['state']==plan['state'] for arm in rows.values() for r in arm)
+images={n:[Image.open(r['frame']).convert('RGB') for r in arm] for n,arm in rows.items()}
+raw={n:[im.crop(roi).tobytes() for im in arm] for n,arm in images.items()}
+blue=lambda rgb:rgb[2]>rgb[0]+6 and rgb[2]>rgb[1]+2
+prior=json.loads((ROOT/'reports/terrain/EXP-20260904-009.json').read_text())
+points=[tuple(r['xy']) for r in prior['selected_pixels']]
+all_prior=json.loads((ROOT/'work/experiments/EXP-20260904-009/pixel-depths-exploratory.json').read_text())
+inversions=[tuple(r['xy']) for r in all_prior['inversions']]
+control=images['before'][0]
+summary={'roi':roi,'roi_pixels':(roi[2]-roi[0])*(roi[3]-roi[1]),'state_identical_all_9':True,'before_restored_roi_identical':len(set(raw['before']+raw['restored']))==1,'candidate_roi_identical':len(set(raw['candidate']))==1,'rgb_roi_sha256':{n:[hashlib.sha256(x).hexdigest() for x in v] for n,v in raw.items()},'blue_pixels':{n:[sum(blue(im.getpixel((x,y))) for y in range(roi[1],roi[3]) for x in range(roi[0],roi[2])) for im in ims] for n,ims in images.items()},'prior_255_inversion_points_blue_counts':{n:[sum(blue(im.getpixel(xy)) for xy in inversions) for im in ims] for n,ims in images.items()},'candidate_changed_roi_pixels':sum(control.getpixel((x,y))!=images['candidate'][0].getpixel((x,y)) for y in range(roi[1],roi[3]) for x in range(roi[0],roi[2])),'selected_rgb':{str(xy):{n:[im.getpixel(xy) for im in ims] for n,ims in images.items()} for xy in points},'scope':'ROI/filter inherited from EXP009 before this live comparison; prior255 inversion points were selected from offline geometry/depth analysis. ROI includes legitimate exposed model pixels. Changed textured pixels alone are not disappearance evidence. No full-frame equality claimed.'}
+(HERE/'comparison.json').write_text(json.dumps(summary,indent=2)+'\n')
+frames={n:[str(Path(r['frame']).relative_to(ROOT/'work/experiments')) for r in arm] for n,arm in rows.items()}
+page='''<!doctype html><meta charset="utf-8"><title>Paused block visibility test</title>
+<style>body{background:#141920;color:#edf1f6;font:16px system-ui;max-width:1000px;margin:30px auto;padding:0 20px;line-height:1.5}button{padding:10px;margin:4px;background:#35404e;color:inherit;border:1px solid #728199;border-radius:6px;cursor:pointer}button.active{background:#19696d}.row{display:flex;gap:20px;flex-wrap:wrap}#frame{width:640px;max-width:100%;image-rendering:pixelated}#zoom{width:240px;height:240px;overflow:hidden;border:2px solid #92a1b2;position:relative}#zoom img{position:absolute;width:1920px;max-width:none;left:-840px;top:-810px;image-rendering:pixelated}small{color:#b4c1d2}</style>
+<h1>Same paused pose: original → finer mesh → restored</h1>
+<p>The finer box mesh hides the lower leg fragments; restoring the original mesh brings them back. Player position, contact and camera match in all nine captures. The game remains paused with the original mesh restored.</p>
+<div id="buttons"></div><p id="caption"></p><div class="row"><img id="frame" alt="Unaltered native paused game capture"><div><div id="zoom"><img id="detail" alt="Magnified portion of the same unchanged capture"></div><small>3× view below the pause menu</small></div></div>
+<p>Capture <input id="sample" type="range" min="0" max="2" value="0"> <span id="number">1 / 3</span></p>
+<p>At the 255 pixel locations predicted to have the wrong depth ordering before the live test, blue fragment pixels fall from 255 to 0, then return to 255. Some model parts remain legitimately above the box edge; this is a bounded visibility result, not an all-view guarantee.</p>
+<p><small>EXP-20260904-010. Two verified writes to one 1,078-byte render-mesh span. Box dimensions, collision and object offset unchanged. Subdivision also changes texture interpolation. Before/restored RGB matches exactly in the 3,575-pixel comparison region. Pause-menu animation is outside that region. All displayed images are original captures; magnification is CSS only.</small></p>
+<script>const frames=FRAMES;const labels={before:'Original mesh',candidate:'Finer mesh',restored:'Original restored'};let arm='before',index=0;for(const a of Object.keys(frames)){let b=document.createElement('button');b.textContent=labels[a];b.dataset.arm=a;b.onclick=()=>{arm=a;show()};document.querySelector('#buttons').append(b)}document.querySelector('#sample').oninput=e=>{index=Number(e.target.value);show()};function show(){const src='../'+frames[arm][index];document.querySelector('#frame').src=src;document.querySelector('#detail').src=src;document.querySelector('#caption').textContent=labels[arm];document.querySelector('#number').textContent=(index+1)+' / 3';for(const b of document.querySelectorAll('button'))b.classList.toggle('active',b.dataset.arm===arm)}show();</script>'''.replace('FRAMES',json.dumps(frames))
+(HERE/'comparison.html').write_text(page)
+print(json.dumps(summary,indent=2))

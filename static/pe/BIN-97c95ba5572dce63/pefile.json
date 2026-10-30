@@ -1,0 +1,869 @@
+{
+  "characteristics": "0x10a",
+  "entry_point_rva": "0xb1670",
+  "entry_point_va": "0x4b1670",
+  "exports": [],
+  "image_base": "0x400000",
+  "imports": [
+    {
+      "dll": "KERNEL32.dll",
+      "symbols": [
+        {
+          "address": "0x8645d4",
+          "name": "GlobalUnlock",
+          "ordinal": null
+        },
+        {
+          "address": "0x8645d8",
+          "name": "GlobalLock",
+          "ordinal": null
+        },
+        {
+          "address": "0x8645dc",
+          "name": "GetLastError",
+          "ordinal": null
+        },
+        {
+          "address": "0x8645e0",
+          "name": "GetCurrentDirectoryA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8645e4",
+          "name": "GetDriveTypeA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8645e8",
+          "name": "GlobalHandle",
+          "ordinal": null
+        },
+        {
+          "address": "0x8645ec",
+          "name": "MultiByteToWideChar",
+          "ordinal": null
+        },
+        {
+          "address": "0x8645f0",
+          "name": "GlobalAlloc",
+          "ordinal": null
+        },
+        {
+          "address": "0x8645f4",
+          "name": "GlobalFree",
+          "ordinal": null
+        },
+        {
+          "address": "0x8645f8",
+          "name": "CreateThread",
+          "ordinal": null
+        },
+        {
+          "address": "0x8645fc",
+          "name": "WaitForMultipleObjects",
+          "ordinal": null
+        },
+        {
+          "address": "0x864600",
+          "name": "CreateEventA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864604",
+          "name": "LocalFree",
+          "ordinal": null
+        },
+        {
+          "address": "0x864608",
+          "name": "FormatMessageA",
+          "ordinal": null
+        },
+        {
+          "address": "0x86460c",
+          "name": "EnterCriticalSection",
+          "ordinal": null
+        },
+        {
+          "address": "0x864610",
+          "name": "lstrlenA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864614",
+          "name": "FreeEnvironmentStringsW",
+          "ordinal": null
+        },
+        {
+          "address": "0x864618",
+          "name": "FreeEnvironmentStringsA",
+          "ordinal": null
+        },
+        {
+          "address": "0x86461c",
+          "name": "SetEndOfFile",
+          "ordinal": null
+        },
+        {
+          "address": "0x864620",
+          "name": "UnhandledExceptionFilter",
+          "ordinal": null
+        },
+        {
+          "address": "0x864624",
+          "name": "SetFilePointer",
+          "ordinal": null
+        },
+        {
+          "address": "0x864628",
+          "name": "GetModuleFileNameA",
+          "ordinal": null
+        },
+        {
+          "address": "0x86462c",
+          "name": "GetStdHandle",
+          "ordinal": null
+        },
+        {
+          "address": "0x864630",
+          "name": "SetHandleCount",
+          "ordinal": null
+        },
+        {
+          "address": "0x864634",
+          "name": "GetFileType",
+          "ordinal": null
+        },
+        {
+          "address": "0x864638",
+          "name": "HeapSize",
+          "ordinal": null
+        },
+        {
+          "address": "0x86463c",
+          "name": "HeapReAlloc",
+          "ordinal": null
+        },
+        {
+          "address": "0x864640",
+          "name": "ReadFile",
+          "ordinal": null
+        },
+        {
+          "address": "0x864644",
+          "name": "VirtualAlloc",
+          "ordinal": null
+        },
+        {
+          "address": "0x864648",
+          "name": "VirtualFree",
+          "ordinal": null
+        },
+        {
+          "address": "0x86464c",
+          "name": "WriteFile",
+          "ordinal": null
+        },
+        {
+          "address": "0x864650",
+          "name": "HeapDestroy",
+          "ordinal": null
+        },
+        {
+          "address": "0x864654",
+          "name": "GetProcAddress",
+          "ordinal": null
+        },
+        {
+          "address": "0x864658",
+          "name": "HeapCreate",
+          "ordinal": null
+        },
+        {
+          "address": "0x86465c",
+          "name": "GetStartupInfoA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864660",
+          "name": "GetModuleHandleA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864664",
+          "name": "GetVersion",
+          "ordinal": null
+        },
+        {
+          "address": "0x864668",
+          "name": "HeapAlloc",
+          "ordinal": null
+        },
+        {
+          "address": "0x86466c",
+          "name": "HeapFree",
+          "ordinal": null
+        },
+        {
+          "address": "0x864670",
+          "name": "DeleteFileA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864674",
+          "name": "TerminateProcess",
+          "ordinal": null
+        },
+        {
+          "address": "0x864678",
+          "name": "ExitProcess",
+          "ordinal": null
+        },
+        {
+          "address": "0x86467c",
+          "name": "GetCurrentProcess",
+          "ordinal": null
+        },
+        {
+          "address": "0x864680",
+          "name": "GetEnvironmentStringsW",
+          "ordinal": null
+        },
+        {
+          "address": "0x864684",
+          "name": "WideCharToMultiByte",
+          "ordinal": null
+        },
+        {
+          "address": "0x864688",
+          "name": "GetEnvironmentStrings",
+          "ordinal": null
+        },
+        {
+          "address": "0x86468c",
+          "name": "GetACP",
+          "ordinal": null
+        },
+        {
+          "address": "0x864690",
+          "name": "GetOEMCP",
+          "ordinal": null
+        },
+        {
+          "address": "0x864694",
+          "name": "GetCPInfo",
+          "ordinal": null
+        },
+        {
+          "address": "0x864698",
+          "name": "SetStdHandle",
+          "ordinal": null
+        },
+        {
+          "address": "0x86469c",
+          "name": "FlushFileBuffers",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646a0",
+          "name": "RtlUnwind",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646a4",
+          "name": "GetStringTypeA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646a8",
+          "name": "GetStringTypeW",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646ac",
+          "name": "CreateFileA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646b0",
+          "name": "lstrcpyA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646b4",
+          "name": "lstrcmpA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646b8",
+          "name": "LoadLibraryA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646bc",
+          "name": "lstrcatA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646c0",
+          "name": "InitializeCriticalSection",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646c4",
+          "name": "LeaveCriticalSection",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646c8",
+          "name": "CloseHandle",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646cc",
+          "name": "RaiseException",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646d0",
+          "name": "OutputDebugStringA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646d4",
+          "name": "LCMapStringA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646d8",
+          "name": "LCMapStringW",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646dc",
+          "name": "lstrcmpiA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646e0",
+          "name": "DeleteCriticalSection",
+          "ordinal": null
+        },
+        {
+          "address": "0x8646e4",
+          "name": "GetCommandLineA",
+          "ordinal": null
+        }
+      ]
+    },
+    {
+      "dll": "USER32.dll",
+      "symbols": [
+        {
+          "address": "0x864748",
+          "name": "DispatchMessageA",
+          "ordinal": null
+        },
+        {
+          "address": "0x86474c",
+          "name": "SetRect",
+          "ordinal": null
+        },
+        {
+          "address": "0x864750",
+          "name": "ReleaseDC",
+          "ordinal": null
+        },
+        {
+          "address": "0x864754",
+          "name": "GetDC",
+          "ordinal": null
+        },
+        {
+          "address": "0x864758",
+          "name": "DestroyWindow",
+          "ordinal": null
+        },
+        {
+          "address": "0x86475c",
+          "name": "TranslateMessage",
+          "ordinal": null
+        },
+        {
+          "address": "0x864760",
+          "name": "ShowCursor",
+          "ordinal": null
+        },
+        {
+          "address": "0x864764",
+          "name": "PeekMessageA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864768",
+          "name": "TranslateAcceleratorA",
+          "ordinal": null
+        },
+        {
+          "address": "0x86476c",
+          "name": "DefWindowProcA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864770",
+          "name": "PostQuitMessage",
+          "ordinal": null
+        },
+        {
+          "address": "0x864774",
+          "name": "LoadAcceleratorsA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864778",
+          "name": "RegisterClassExA",
+          "ordinal": null
+        },
+        {
+          "address": "0x86477c",
+          "name": "AppendMenuA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864780",
+          "name": "GetMenuItemCount",
+          "ordinal": null
+        },
+        {
+          "address": "0x864784",
+          "name": "wsprintfA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864788",
+          "name": "WaitMessage",
+          "ordinal": null
+        },
+        {
+          "address": "0x86478c",
+          "name": "GetAsyncKeyState",
+          "ordinal": null
+        },
+        {
+          "address": "0x864790",
+          "name": "EndDialog",
+          "ordinal": null
+        },
+        {
+          "address": "0x864794",
+          "name": "GetSystemMenu",
+          "ordinal": null
+        },
+        {
+          "address": "0x864798",
+          "name": "GetSystemMetrics",
+          "ordinal": null
+        },
+        {
+          "address": "0x86479c",
+          "name": "PostMessageA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647a0",
+          "name": "UnregisterClassA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647a4",
+          "name": "EnableMenuItem",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647a8",
+          "name": "CheckMenuItem",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647ac",
+          "name": "BeginPaint",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647b0",
+          "name": "DrawMenuBar",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647b4",
+          "name": "RedrawWindow",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647b8",
+          "name": "GetClientRect",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647bc",
+          "name": "EndPaint",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647c0",
+          "name": "SetCursor",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647c4",
+          "name": "AdjustWindowRectEx",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647c8",
+          "name": "GetWindowLongA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647cc",
+          "name": "GetMenu",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647d0",
+          "name": "SetWindowPos",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647d4",
+          "name": "SendMessageA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647d8",
+          "name": "GetWindowRect",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647dc",
+          "name": "LoadIconA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647e0",
+          "name": "ClientToScreen",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647e4",
+          "name": "SetWindowTextA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647e8",
+          "name": "CreateWindowExA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647ec",
+          "name": "LoadCursorA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647f0",
+          "name": "RegisterClassA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647f4",
+          "name": "SetFocus",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647f8",
+          "name": "ShowWindow",
+          "ordinal": null
+        },
+        {
+          "address": "0x8647fc",
+          "name": "UpdateWindow",
+          "ordinal": null
+        },
+        {
+          "address": "0x864800",
+          "name": "MessageBoxA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864804",
+          "name": "GetMessageA",
+          "ordinal": null
+        }
+      ]
+    },
+    {
+      "dll": "GDI32.dll",
+      "symbols": [
+        {
+          "address": "0x86456c",
+          "name": "SetBkColor",
+          "ordinal": null
+        },
+        {
+          "address": "0x864570",
+          "name": "GetStockObject",
+          "ordinal": null
+        },
+        {
+          "address": "0x864574",
+          "name": "DeleteObject",
+          "ordinal": null
+        },
+        {
+          "address": "0x864578",
+          "name": "GetTextExtentPoint32A",
+          "ordinal": null
+        },
+        {
+          "address": "0x86457c",
+          "name": "SetBkMode",
+          "ordinal": null
+        },
+        {
+          "address": "0x864580",
+          "name": "ExtTextOutA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864584",
+          "name": "GetTextExtentPointA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864588",
+          "name": "SelectObject",
+          "ordinal": null
+        },
+        {
+          "address": "0x86458c",
+          "name": "SetTextColor",
+          "ordinal": null
+        },
+        {
+          "address": "0x864590",
+          "name": "GetPixel",
+          "ordinal": null
+        },
+        {
+          "address": "0x864594",
+          "name": "GetSystemPaletteEntries",
+          "ordinal": null
+        },
+        {
+          "address": "0x864598",
+          "name": "SetPixel",
+          "ordinal": null
+        },
+        {
+          "address": "0x86459c",
+          "name": "CreateFontA",
+          "ordinal": null
+        }
+      ]
+    },
+    {
+      "dll": "ole32.dll",
+      "symbols": [
+        {
+          "address": "0x8648bc",
+          "name": "CoInitialize",
+          "ordinal": null
+        },
+        {
+          "address": "0x8648c0",
+          "name": "CoCreateInstance",
+          "ordinal": null
+        },
+        {
+          "address": "0x8648c4",
+          "name": "CoUninitialize",
+          "ordinal": null
+        }
+      ]
+    },
+    {
+      "dll": "DDRAW.dll",
+      "symbols": [
+        {
+          "address": "0x8644d4",
+          "name": "DirectDrawEnumerateA",
+          "ordinal": null
+        },
+        {
+          "address": "0x8644d8",
+          "name": "DirectDrawCreate",
+          "ordinal": null
+        }
+      ]
+    },
+    {
+      "dll": "DINPUT.dll",
+      "symbols": [
+        {
+          "address": "0x864508",
+          "name": "DirectInputCreateA",
+          "ordinal": null
+        }
+      ]
+    },
+    {
+      "dll": "DSOUND.dll",
+      "symbols": [
+        {
+          "address": "0x864538",
+          "name": "DirectSoundCreate",
+          "ordinal": null
+        },
+        {
+          "address": "0x86453c",
+          "name": "DirectSoundEnumerateA",
+          "ordinal": null
+        }
+      ]
+    },
+    {
+      "dll": "WINMM.dll",
+      "symbols": [
+        {
+          "address": "0x864858",
+          "name": "mmioDescend",
+          "ordinal": null
+        },
+        {
+          "address": "0x86485c",
+          "name": "mmioCreateChunk",
+          "ordinal": null
+        },
+        {
+          "address": "0x864860",
+          "name": "mmioWrite",
+          "ordinal": null
+        },
+        {
+          "address": "0x864864",
+          "name": "mmioGetInfo",
+          "ordinal": null
+        },
+        {
+          "address": "0x864868",
+          "name": "mmioAdvance",
+          "ordinal": null
+        },
+        {
+          "address": "0x86486c",
+          "name": "mmioSetInfo",
+          "ordinal": null
+        },
+        {
+          "address": "0x864870",
+          "name": "mmioSeek",
+          "ordinal": null
+        },
+        {
+          "address": "0x864874",
+          "name": "mmioOpenA",
+          "ordinal": null
+        },
+        {
+          "address": "0x864878",
+          "name": "mmioRead",
+          "ordinal": null
+        },
+        {
+          "address": "0x86487c",
+          "name": "mmioAscend",
+          "ordinal": null
+        },
+        {
+          "address": "0x864880",
+          "name": "mmioClose",
+          "ordinal": null
+        },
+        {
+          "address": "0x864884",
+          "name": "timeGetTime",
+          "ordinal": null
+        }
+      ]
+    }
+  ],
+  "linker_version": "5.0",
+  "machine": {
+    "name": "i386",
+    "value": "0x14c"
+  },
+  "path": "/home/dev/ABLPC/work/copies/BUGS_PC-disc/bugs.exe",
+  "pdb_paths": [],
+  "resource_types": [
+    "RT_CURSOR",
+    "RT_BITMAP",
+    "RT_ICON",
+    "RT_DIALOG",
+    "RT_STRING",
+    "RT_ACCELERATOR",
+    "RT_GROUP_CURSOR",
+    "RT_GROUP_ICON",
+    "RT_VERSION"
+  ],
+  "sections": [
+    {
+      "characteristics": "0x60000020",
+      "name": ".text",
+      "raw_offset": "0x400",
+      "raw_size": 780288,
+      "virtual_address": "0x1000",
+      "virtual_size": 780133
+    },
+    {
+      "characteristics": "0x40000040",
+      "name": ".rdata",
+      "raw_offset": "0xbec00",
+      "raw_size": 4096,
+      "virtual_address": "0xc0000",
+      "virtual_size": 3720
+    },
+    {
+      "characteristics": "0xc0000040",
+      "name": ".data",
+      "raw_offset": "0xbfc00",
+      "raw_size": 181248,
+      "virtual_address": "0xc1000",
+      "virtual_size": 3811696
+    },
+    {
+      "characteristics": "0xc0000040",
+      "name": ".idata",
+      "raw_offset": "0xec000",
+      "raw_size": 5632,
+      "virtual_address": "0x464000",
+      "virtual_size": 5379
+    },
+    {
+      "characteristics": "0x40000040",
+      "name": ".rsrc",
+      "raw_offset": "0xed600",
+      "raw_size": 6656,
+      "virtual_address": "0x466000",
+      "virtual_size": 6529
+    },
+    {
+      "characteristics": "0x42000040",
+      "name": ".reloc",
+      "raw_offset": "0xef000",
+      "raw_size": 71680,
+      "virtual_address": "0x468000",
+      "virtual_size": 71272
+    }
+  ],
+  "subsystem": 2,
+  "timestamp": 913834161
+}

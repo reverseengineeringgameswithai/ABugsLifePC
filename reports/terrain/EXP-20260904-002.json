@@ -1,0 +1,2280 @@
+{
+  "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "evidence_kind": "offline-original-instructions",
+  "experiment": "EXP-20260904-002",
+  "helper_sha256": "7f6fa6e0f8b07680247ee2f55db3ba36bed6e6351402f4810ff7edcc74d27e91",
+  "initialization": [
+    {
+      "boundary_N": 191,
+      "bucket_count": 20,
+      "bucket_members": 191,
+      "bucket_members_cover_loaded_records": true,
+      "cleared_loaded_indices": [
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190
+      ],
+      "initialized_tag_counts": {
+        "0": 522,
+        "6": 178
+      },
+      "initializer_slice": {
+        "eax_at_stop": 8339272,
+        "entry": "0x004a89f8",
+        "entry_visits": {
+          "0x004b0240": 2
+        },
+        "instruction_count": 789616,
+        "ordered_pc_sha256": "d15db1e2be2a0322da60ae6552ac3d52e96f2c1651498c14f68f2f50b6fbeb63",
+        "stop": "0x004a908f"
+      },
+      "level": "level01",
+      "loaded_descriptor_count": 191,
+      "loaded_tag_counts": {
+        "0": 509,
+        "6": 178,
+        "8": 13
+      },
+      "loader": {
+        "eax_at_stop": 191,
+        "entry": "0x004a8410",
+        "entry_visits": {
+          "0x004a8410": 1
+        },
+        "instruction_count": 12454,
+        "ordered_pc_sha256": "13f5f1d08b239cb5e4dc3333504628d8cf0abd7e979e4dc48db672948eed84c1",
+        "stop": "0x03000000"
+      },
+      "reserved_end_exclusive": 223,
+      "template_map": [
+        {
+          "descriptor_index": 178,
+          "file_offset": 4,
+          "object_type": 1,
+          "source": "plantter",
+          "source_record": 0
+        },
+        {
+          "descriptor_index": 184,
+          "file_offset": 6708,
+          "object_type": 2,
+          "source": "plantter",
+          "source_record": 6
+        },
+        {
+          "descriptor_index": 185,
+          "file_offset": 8248,
+          "object_type": 4,
+          "source": "plantter",
+          "source_record": 7
+        },
+        {
+          "descriptor_index": 186,
+          "file_offset": 9808,
+          "object_type": 5,
+          "source": "plantter",
+          "source_record": 8
+        },
+        {
+          "descriptor_index": 187,
+          "file_offset": 10772,
+          "object_type": 6,
+          "source": "plantter",
+          "source_record": 9
+        },
+        {
+          "descriptor_index": 188,
+          "file_offset": 10908,
+          "object_type": 7,
+          "source": "plantter",
+          "source_record": 10
+        },
+        {
+          "descriptor_index": 189,
+          "file_offset": 11680,
+          "object_type": 8,
+          "source": "plantter",
+          "source_record": 11
+        },
+        {
+          "descriptor_index": 190,
+          "file_offset": 14092,
+          "object_type": 9,
+          "source": "plantter",
+          "source_record": 12
+        },
+        {
+          "descriptor_index": 179,
+          "file_offset": 2480,
+          "object_type": 10,
+          "source": "plantter",
+          "source_record": 1
+        },
+        {
+          "descriptor_index": 180,
+          "file_offset": 3324,
+          "object_type": 11,
+          "source": "plantter",
+          "source_record": 2
+        },
+        {
+          "descriptor_index": 181,
+          "file_offset": 4800,
+          "object_type": 12,
+          "source": "plantter",
+          "source_record": 3
+        },
+        {
+          "descriptor_index": 182,
+          "file_offset": 5572,
+          "object_type": 13,
+          "source": "plantter",
+          "source_record": 4
+        },
+        {
+          "descriptor_index": 183,
+          "file_offset": 6320,
+          "object_type": 14,
+          "source": "plantter",
+          "source_record": 5
+        }
+      ],
+      "unique_bucket_members": 191
+    },
+    {
+      "boundary_N": 602,
+      "bucket_count": 33,
+      "bucket_members": 602,
+      "bucket_members_cover_loaded_records": true,
+      "cleared_loaded_indices": [
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601
+      ],
+      "initialized_tag_counts": {
+        "0": 111,
+        "6": 580,
+        "8": 9
+      },
+      "initializer_slice": {
+        "eax_at_stop": 8339272,
+        "entry": "0x004a89f8",
+        "entry_visits": {
+          "0x004b0240": 2
+        },
+        "instruction_count": 2566122,
+        "ordered_pc_sha256": "a38bcfacf5dcb83a40a62fd1c77f2411dc8b450e675fe5de5087c43429006cde",
+        "stop": "0x004a908f"
+      },
+      "level": "level03",
+      "loaded_descriptor_count": 602,
+      "loaded_tag_counts": {
+        "0": 98,
+        "6": 580,
+        "8": 22
+      },
+      "loader": {
+        "eax_at_stop": 602,
+        "entry": "0x004a8410",
+        "entry_visits": {
+          "0x004a8410": 1
+        },
+        "instruction_count": 40275,
+        "ordered_pc_sha256": "fd1aa059ff66d983cf68e5515c8bcc5d2ce5e6ffe17a3a7e6d3fcd5f91a9b2ee",
+        "stop": "0x03000000"
+      },
+      "reserved_end_exclusive": 634,
+      "template_map": [
+        {
+          "descriptor_index": 589,
+          "file_offset": 4,
+          "object_type": 1,
+          "source": "plantter",
+          "source_record": 0
+        },
+        {
+          "descriptor_index": 595,
+          "file_offset": 6708,
+          "object_type": 2,
+          "source": "plantter",
+          "source_record": 6
+        },
+        {
+          "descriptor_index": 596,
+          "file_offset": 8248,
+          "object_type": 4,
+          "source": "plantter",
+          "source_record": 7
+        },
+        {
+          "descriptor_index": 597,
+          "file_offset": 9808,
+          "object_type": 5,
+          "source": "plantter",
+          "source_record": 8
+        },
+        {
+          "descriptor_index": 598,
+          "file_offset": 10772,
+          "object_type": 6,
+          "source": "plantter",
+          "source_record": 9
+        },
+        {
+          "descriptor_index": 599,
+          "file_offset": 10908,
+          "object_type": 7,
+          "source": "plantter",
+          "source_record": 10
+        },
+        {
+          "descriptor_index": 600,
+          "file_offset": 11680,
+          "object_type": 8,
+          "source": "plantter",
+          "source_record": 11
+        },
+        {
+          "descriptor_index": 601,
+          "file_offset": 14092,
+          "object_type": 9,
+          "source": "plantter",
+          "source_record": 12
+        },
+        {
+          "descriptor_index": 590,
+          "file_offset": 2480,
+          "object_type": 10,
+          "source": "plantter",
+          "source_record": 1
+        },
+        {
+          "descriptor_index": 591,
+          "file_offset": 3324,
+          "object_type": 11,
+          "source": "plantter",
+          "source_record": 2
+        },
+        {
+          "descriptor_index": 592,
+          "file_offset": 4800,
+          "object_type": 12,
+          "source": "plantter",
+          "source_record": 3
+        },
+        {
+          "descriptor_index": 593,
+          "file_offset": 5572,
+          "object_type": 13,
+          "source": "plantter",
+          "source_record": 4
+        },
+        {
+          "descriptor_index": 594,
+          "file_offset": 6320,
+          "object_type": 14,
+          "source": "plantter",
+          "source_record": 5
+        }
+      ],
+      "unique_bucket_members": 602
+    }
+  ],
+  "movement": [
+    {
+      "axis": 0,
+      "best_segment_updates": [],
+      "best_triangle_updates": [
+        {
+          "file_offset": 1000,
+          "source": "level01",
+          "source_record": 87
+        }
+      ],
+      "case": "retail",
+      "changed_endpoint": true,
+      "execution": {
+        "eax_at_stop": 4294880714,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004a9420": 6,
+          "0x004a95e0": 2,
+          "0x004a9860": 2,
+          "0x004aa4d0": 2,
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 6943,
+        "ordered_pc_sha256": "0edbae75c1efb34395e15b7bd5b03e88682c68fe76d70a67cc60924693da993c",
+        "stop": "0x03000000"
+      },
+      "family": "triangle",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        -8164,
+        -86582,
+        250188
+      ],
+      "requested_delta": [
+        2048,
+        0,
+        0
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        -9611,
+        -86539,
+        251232
+      ],
+      "triangle_candidates": [
+        {
+          "descriptor_index": 114,
+          "file_offset": 106272,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106336,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106368,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1000,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1044,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1628,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1888,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 106,
+          "file_offset": 70792,
+          "source": "level01",
+          "source_record": 106
+        }
+      ],
+      "unconstrained_endpoint": [
+        -7563,
+        -86539,
+        251232
+      ],
+      "velocity_after": [
+        1021,
+        -74,
+        -1782
+      ]
+    },
+    {
+      "axis": 0,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "without_record87",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 4294880757,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004a95e0": 1,
+          "0x004aa4d0": 1,
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 4534,
+        "ordered_pc_sha256": "d5514eaf4bfc7ad957204140f09445522e7c91312eb05fbfd781adf9544294eb",
+        "stop": "0x03000000"
+      },
+      "family": "triangle",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        -7563,
+        -86539,
+        251232
+      ],
+      "requested_delta": [
+        2048,
+        0,
+        0
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        -9611,
+        -86539,
+        251232
+      ],
+      "triangle_candidates": [
+        {
+          "descriptor_index": 114,
+          "file_offset": 106272,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106336,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106368,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 106,
+          "file_offset": 70792,
+          "source": "level01",
+          "source_record": 106
+        }
+      ],
+      "unconstrained_endpoint": [
+        -7563,
+        -86539,
+        251232
+      ],
+      "velocity_after": [
+        2048,
+        0,
+        0
+      ]
+    },
+    {
+      "axis": 0,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "without_triangles",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 4294880757,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 3121,
+        "ordered_pc_sha256": "d055d44baed84150f196f7bb9427c0d11b03475742179861ec67d7359aeedcce",
+        "stop": "0x03000000"
+      },
+      "family": "triangle",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        -7563,
+        -86539,
+        251232
+      ],
+      "requested_delta": [
+        2048,
+        0,
+        0
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        -9611,
+        -86539,
+        251232
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        -7563,
+        -86539,
+        251232
+      ],
+      "velocity_after": [
+        2048,
+        0,
+        0
+      ]
+    },
+    {
+      "axis": 0,
+      "best_segment_updates": [],
+      "best_triangle_updates": [
+        {
+          "file_offset": 1000,
+          "source": "level01",
+          "source_record": 87
+        }
+      ],
+      "case": "without_segments",
+      "changed_endpoint": true,
+      "execution": {
+        "eax_at_stop": 4294880714,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004a9420": 6,
+          "0x004a95e0": 2,
+          "0x004a9860": 2,
+          "0x004aa4d0": 2,
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 5378,
+        "ordered_pc_sha256": "d21c5a6ff298f6501a834627dda4ade92bd08e399817ad42a977eb6c2eeccdb1",
+        "stop": "0x03000000"
+      },
+      "family": "triangle",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        -8164,
+        -86582,
+        250188
+      ],
+      "requested_delta": [
+        2048,
+        0,
+        0
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        -9611,
+        -86539,
+        251232
+      ],
+      "triangle_candidates": [
+        {
+          "descriptor_index": 114,
+          "file_offset": 106272,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106336,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106368,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1000,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1044,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1628,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1888,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 106,
+          "file_offset": 70792,
+          "source": "level01",
+          "source_record": 106
+        }
+      ],
+      "unconstrained_endpoint": [
+        -7563,
+        -86539,
+        251232
+      ],
+      "velocity_after": [
+        1021,
+        -74,
+        -1782
+      ]
+    },
+    {
+      "axis": 0,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "moving_away",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 4294880757,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004a95e0": 1,
+          "0x004aa4d0": 1,
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 5488,
+        "ordered_pc_sha256": "6b25b753b3db58f05b99680a35f80fe5ff3406895f484f7a47fb4efc4cb52cf5",
+        "stop": "0x03000000"
+      },
+      "family": "triangle",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        -11659,
+        -86539,
+        251232
+      ],
+      "requested_delta": [
+        -2048,
+        0,
+        0
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        -9611,
+        -86539,
+        251232
+      ],
+      "triangle_candidates": [
+        {
+          "descriptor_index": 114,
+          "file_offset": 106272,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106336,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106368,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1000,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1044,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1628,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1888,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 106,
+          "file_offset": 70792,
+          "source": "level01",
+          "source_record": 106
+        }
+      ],
+      "unconstrained_endpoint": [
+        -11659,
+        -86539,
+        251232
+      ],
+      "velocity_after": [
+        -2048,
+        0,
+        0
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [
+        {
+          "file_offset": 1000,
+          "source": "level01",
+          "source_record": 87
+        }
+      ],
+      "case": "retail",
+      "changed_endpoint": true,
+      "execution": {
+        "eax_at_stop": 4294880687,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004a9420": 6,
+          "0x004a95e0": 2,
+          "0x004a9860": 2,
+          "0x004aa4d0": 2,
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 6748,
+        "ordered_pc_sha256": "8910ce0b036a8f458c87d798e6a558aec008c0882d6120a8e40aa8cf5b9fbb41",
+        "stop": "0x03000000"
+      },
+      "family": "triangle",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        -9569,
+        -86609,
+        250551
+      ],
+      "requested_delta": [
+        0,
+        0,
+        2048
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        -8587,
+        -86539,
+        250208
+      ],
+      "triangle_candidates": [
+        {
+          "descriptor_index": 114,
+          "file_offset": 106272,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106336,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106368,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1000,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1044,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1628,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1888,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 106,
+          "file_offset": 70792,
+          "source": "level01",
+          "source_record": 106
+        }
+      ],
+      "unconstrained_endpoint": [
+        -8587,
+        -86539,
+        252256
+      ],
+      "velocity_after": [
+        -1776,
+        -128,
+        -1034
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "without_record87",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 4294880757,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004a95e0": 1,
+          "0x004aa4d0": 1,
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 4351,
+        "ordered_pc_sha256": "b00b157f2c20ebf0face3c63c22887f051649af3824203a0d85f13fc7d992c3b",
+        "stop": "0x03000000"
+      },
+      "family": "triangle",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        -8587,
+        -86539,
+        252256
+      ],
+      "requested_delta": [
+        0,
+        0,
+        2048
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        -8587,
+        -86539,
+        250208
+      ],
+      "triangle_candidates": [
+        {
+          "descriptor_index": 114,
+          "file_offset": 106272,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106336,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106368,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 106,
+          "file_offset": 70792,
+          "source": "level01",
+          "source_record": 106
+        }
+      ],
+      "unconstrained_endpoint": [
+        -8587,
+        -86539,
+        252256
+      ],
+      "velocity_after": [
+        0,
+        0,
+        2048
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "without_triangles",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 4294880757,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 2938,
+        "ordered_pc_sha256": "0bc7ea29a4c114d9f7ce26752b8b2d112cb5cbeea7b9127dd3c4984d88980721",
+        "stop": "0x03000000"
+      },
+      "family": "triangle",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        -8587,
+        -86539,
+        252256
+      ],
+      "requested_delta": [
+        0,
+        0,
+        2048
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        -8587,
+        -86539,
+        250208
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        -8587,
+        -86539,
+        252256
+      ],
+      "velocity_after": [
+        0,
+        0,
+        2048
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [
+        {
+          "file_offset": 1000,
+          "source": "level01",
+          "source_record": 87
+        }
+      ],
+      "case": "without_segments",
+      "changed_endpoint": true,
+      "execution": {
+        "eax_at_stop": 4294880687,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004a9420": 6,
+          "0x004a95e0": 2,
+          "0x004a9860": 2,
+          "0x004aa4d0": 2,
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 5366,
+        "ordered_pc_sha256": "190c27e501318d3e87bdfe888c668e7cde654927ad0a0a965573cdf1ef0cf012",
+        "stop": "0x03000000"
+      },
+      "family": "triangle",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        -9569,
+        -86609,
+        250551
+      ],
+      "requested_delta": [
+        0,
+        0,
+        2048
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        -8587,
+        -86539,
+        250208
+      ],
+      "triangle_candidates": [
+        {
+          "descriptor_index": 114,
+          "file_offset": 106272,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106336,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106368,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1000,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1044,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1628,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1888,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 106,
+          "file_offset": 70792,
+          "source": "level01",
+          "source_record": 106
+        }
+      ],
+      "unconstrained_endpoint": [
+        -8587,
+        -86539,
+        252256
+      ],
+      "velocity_after": [
+        -1776,
+        -128,
+        -1034
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "moving_away",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 4294880757,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004a95e0": 1,
+          "0x004aa4d0": 1,
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 5293,
+        "ordered_pc_sha256": "e9bffb79a267862bbd43003404d1b80b42081d6a3ed4e41192456188179e0204",
+        "stop": "0x03000000"
+      },
+      "family": "triangle",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        -8587,
+        -86539,
+        248160
+      ],
+      "requested_delta": [
+        0,
+        0,
+        -2048
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        -8587,
+        -86539,
+        250208
+      ],
+      "triangle_candidates": [
+        {
+          "descriptor_index": 114,
+          "file_offset": 106272,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106336,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 114,
+          "file_offset": 106368,
+          "source": "level01",
+          "source_record": 114
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1000,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1044,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1628,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 87,
+          "file_offset": 1888,
+          "source": "level01",
+          "source_record": 87
+        },
+        {
+          "descriptor_index": 106,
+          "file_offset": 70792,
+          "source": "level01",
+          "source_record": 106
+        }
+      ],
+      "unconstrained_endpoint": [
+        -8587,
+        -86539,
+        248160
+      ],
+      "velocity_after": [
+        0,
+        0,
+        -2048
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [
+        0
+      ],
+      "best_triangle_updates": [],
+      "case": "retail",
+      "changed_endpoint": true,
+      "execution": {
+        "eax_at_stop": 4294767296,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x00464ca0": 8,
+          "0x004a95e0": 2,
+          "0x004aa4d0": 2,
+          "0x004ab1a0": 1,
+          "0x004b0240": 9
+        },
+        "instruction_count": 7783,
+        "ordered_pc_sha256": "a67c5d35deadf88e638de7b8d0df5c244d2c910a4ea588c958d14e1447dc44e6",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110402,
+        -200000,
+        -129376
+      ],
+      "requested_delta": [
+        0,
+        0,
+        -2048
+      ],
+      "segment_candidate_pairs": 4,
+      "segment_source_matches": [
+        [
+          {
+            "file_offset": 219640,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219652,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219664,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219676,
+            "source": "level01",
+            "source_record": 179
+          }
+        ]
+      ],
+      "start": [
+        110544,
+        -200000,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        -200000,
+        -131616
+      ],
+      "velocity_after": [
+        -262,
+        0,
+        2064
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [
+        0
+      ],
+      "best_triangle_updates": [],
+      "case": "without_triangles",
+      "changed_endpoint": true,
+      "execution": {
+        "eax_at_stop": 4294767296,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x00464ca0": 8,
+          "0x004a95e0": 2,
+          "0x004aa4d0": 2,
+          "0x004ab1a0": 1,
+          "0x004b0240": 9
+        },
+        "instruction_count": 4166,
+        "ordered_pc_sha256": "2f0b9818898806ea2762473b1fdb212ff338e0bacc33fdca7c0a79c147284f4a",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110402,
+        -200000,
+        -129376
+      ],
+      "requested_delta": [
+        0,
+        0,
+        -2048
+      ],
+      "segment_candidate_pairs": 4,
+      "segment_source_matches": [
+        [
+          {
+            "file_offset": 219640,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219652,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219664,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219676,
+            "source": "level01",
+            "source_record": 179
+          }
+        ]
+      ],
+      "start": [
+        110544,
+        -200000,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        -200000,
+        -131616
+      ],
+      "velocity_after": [
+        -262,
+        0,
+        2064
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "without_segments",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 4294767296,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 4816,
+        "ordered_pc_sha256": "4348915f0d3953ba45b762f06e436758c5aa06f3d1d2c8ba96bf709f9854bd00",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110544,
+        -200000,
+        -131616
+      ],
+      "requested_delta": [
+        0,
+        0,
+        -2048
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        110544,
+        -200000,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        -200000,
+        -131616
+      ],
+      "velocity_after": [
+        0,
+        0,
+        -2048
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "moving_away",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 4294767296,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x00464ca0": 4,
+          "0x004a95e0": 1,
+          "0x004aa4d0": 1,
+          "0x004ab1a0": 1,
+          "0x004b0240": 5
+        },
+        "instruction_count": 6990,
+        "ordered_pc_sha256": "f1c6ec0c3296404cbaec14d296e6a026897f65a8c0554fd2932d09192871aff7",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110544,
+        -200000,
+        -127520
+      ],
+      "requested_delta": [
+        0,
+        0,
+        2048
+      ],
+      "segment_candidate_pairs": 4,
+      "segment_source_matches": [
+        [
+          {
+            "file_offset": 219640,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219652,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219664,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219676,
+            "source": "level01",
+            "source_record": 179
+          }
+        ]
+      ],
+      "start": [
+        110544,
+        -200000,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        -200000,
+        -127520
+      ],
+      "velocity_after": [
+        0,
+        0,
+        2048
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [
+        0
+      ],
+      "best_triangle_updates": [],
+      "case": "retail",
+      "changed_endpoint": true,
+      "execution": {
+        "eax_at_stop": 0,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x00464ca0": 8,
+          "0x004a95e0": 2,
+          "0x004aa4d0": 2,
+          "0x004ab1a0": 1,
+          "0x004b0240": 9
+        },
+        "instruction_count": 7783,
+        "ordered_pc_sha256": "a67c5d35deadf88e638de7b8d0df5c244d2c910a4ea588c958d14e1447dc44e6",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110402,
+        0,
+        -129376
+      ],
+      "requested_delta": [
+        0,
+        0,
+        -2048
+      ],
+      "segment_candidate_pairs": 4,
+      "segment_source_matches": [
+        [
+          {
+            "file_offset": 219640,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219652,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219664,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219676,
+            "source": "level01",
+            "source_record": 179
+          }
+        ]
+      ],
+      "start": [
+        110544,
+        0,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        0,
+        -131616
+      ],
+      "velocity_after": [
+        -262,
+        0,
+        2064
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [
+        0
+      ],
+      "best_triangle_updates": [],
+      "case": "without_triangles",
+      "changed_endpoint": true,
+      "execution": {
+        "eax_at_stop": 0,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x00464ca0": 8,
+          "0x004a95e0": 2,
+          "0x004aa4d0": 2,
+          "0x004ab1a0": 1,
+          "0x004b0240": 9
+        },
+        "instruction_count": 4166,
+        "ordered_pc_sha256": "2f0b9818898806ea2762473b1fdb212ff338e0bacc33fdca7c0a79c147284f4a",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110402,
+        0,
+        -129376
+      ],
+      "requested_delta": [
+        0,
+        0,
+        -2048
+      ],
+      "segment_candidate_pairs": 4,
+      "segment_source_matches": [
+        [
+          {
+            "file_offset": 219640,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219652,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219664,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219676,
+            "source": "level01",
+            "source_record": 179
+          }
+        ]
+      ],
+      "start": [
+        110544,
+        0,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        0,
+        -131616
+      ],
+      "velocity_after": [
+        -262,
+        0,
+        2064
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "without_segments",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 0,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 4816,
+        "ordered_pc_sha256": "4348915f0d3953ba45b762f06e436758c5aa06f3d1d2c8ba96bf709f9854bd00",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110544,
+        0,
+        -131616
+      ],
+      "requested_delta": [
+        0,
+        0,
+        -2048
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        110544,
+        0,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        0,
+        -131616
+      ],
+      "velocity_after": [
+        0,
+        0,
+        -2048
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "moving_away",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 0,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x00464ca0": 4,
+          "0x004a95e0": 1,
+          "0x004aa4d0": 1,
+          "0x004ab1a0": 1,
+          "0x004b0240": 5
+        },
+        "instruction_count": 6990,
+        "ordered_pc_sha256": "f1c6ec0c3296404cbaec14d296e6a026897f65a8c0554fd2932d09192871aff7",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110544,
+        0,
+        -127520
+      ],
+      "requested_delta": [
+        0,
+        0,
+        2048
+      ],
+      "segment_candidate_pairs": 4,
+      "segment_source_matches": [
+        [
+          {
+            "file_offset": 219640,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219652,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219664,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219676,
+            "source": "level01",
+            "source_record": 179
+          }
+        ]
+      ],
+      "start": [
+        110544,
+        0,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        0,
+        -127520
+      ],
+      "velocity_after": [
+        0,
+        0,
+        2048
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [
+        0
+      ],
+      "best_triangle_updates": [],
+      "case": "retail",
+      "changed_endpoint": true,
+      "execution": {
+        "eax_at_stop": 200000,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x00464ca0": 8,
+          "0x004a95e0": 2,
+          "0x004aa4d0": 2,
+          "0x004ab1a0": 1,
+          "0x004b0240": 9
+        },
+        "instruction_count": 7783,
+        "ordered_pc_sha256": "a67c5d35deadf88e638de7b8d0df5c244d2c910a4ea588c958d14e1447dc44e6",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110402,
+        200000,
+        -129376
+      ],
+      "requested_delta": [
+        0,
+        0,
+        -2048
+      ],
+      "segment_candidate_pairs": 4,
+      "segment_source_matches": [
+        [
+          {
+            "file_offset": 219640,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219652,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219664,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219676,
+            "source": "level01",
+            "source_record": 179
+          }
+        ]
+      ],
+      "start": [
+        110544,
+        200000,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        200000,
+        -131616
+      ],
+      "velocity_after": [
+        -262,
+        0,
+        2064
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [
+        0
+      ],
+      "best_triangle_updates": [],
+      "case": "without_triangles",
+      "changed_endpoint": true,
+      "execution": {
+        "eax_at_stop": 200000,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x00464ca0": 8,
+          "0x004a95e0": 2,
+          "0x004aa4d0": 2,
+          "0x004ab1a0": 1,
+          "0x004b0240": 9
+        },
+        "instruction_count": 4166,
+        "ordered_pc_sha256": "2f0b9818898806ea2762473b1fdb212ff338e0bacc33fdca7c0a79c147284f4a",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110402,
+        200000,
+        -129376
+      ],
+      "requested_delta": [
+        0,
+        0,
+        -2048
+      ],
+      "segment_candidate_pairs": 4,
+      "segment_source_matches": [
+        [
+          {
+            "file_offset": 219640,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219652,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219664,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219676,
+            "source": "level01",
+            "source_record": 179
+          }
+        ]
+      ],
+      "start": [
+        110544,
+        200000,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        200000,
+        -131616
+      ],
+      "velocity_after": [
+        -262,
+        0,
+        2064
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "without_segments",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 200000,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x004ab1a0": 1,
+          "0x004b0240": 1
+        },
+        "instruction_count": 4816,
+        "ordered_pc_sha256": "4348915f0d3953ba45b762f06e436758c5aa06f3d1d2c8ba96bf709f9854bd00",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110544,
+        200000,
+        -131616
+      ],
+      "requested_delta": [
+        0,
+        0,
+        -2048
+      ],
+      "segment_candidate_pairs": 0,
+      "segment_source_matches": [],
+      "start": [
+        110544,
+        200000,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        200000,
+        -131616
+      ],
+      "velocity_after": [
+        0,
+        0,
+        -2048
+      ]
+    },
+    {
+      "axis": 2,
+      "best_segment_updates": [],
+      "best_triangle_updates": [],
+      "case": "moving_away",
+      "changed_endpoint": false,
+      "execution": {
+        "eax_at_stop": 200000,
+        "entry": "0x004ab1a0",
+        "entry_visits": {
+          "0x00464ca0": 4,
+          "0x004a95e0": 1,
+          "0x004aa4d0": 1,
+          "0x004ab1a0": 1,
+          "0x004b0240": 5
+        },
+        "instruction_count": 6990,
+        "ordered_pc_sha256": "f1c6ec0c3296404cbaec14d296e6a026897f65a8c0554fd2932d09192871aff7",
+        "stop": "0x03000000"
+      },
+      "family": "segment",
+      "flags_after": [
+        0,
+        0
+      ],
+      "position_after": [
+        110544,
+        200000,
+        -127520
+      ],
+      "requested_delta": [
+        0,
+        0,
+        2048
+      ],
+      "segment_candidate_pairs": 4,
+      "segment_source_matches": [
+        [
+          {
+            "file_offset": 219640,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219652,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219664,
+            "source": "level01",
+            "source_record": 179
+          }
+        ],
+        [
+          {
+            "file_offset": 219676,
+            "source": "level01",
+            "source_record": 179
+          }
+        ]
+      ],
+      "start": [
+        110544,
+        200000,
+        -129568
+      ],
+      "triangle_candidates": [],
+      "unconstrained_endpoint": [
+        110544,
+        200000,
+        -127520
+      ],
+      "velocity_after": [
+        0,
+        0,
+        2048
+      ]
+    }
+  ],
+  "scope": {
+    "controls": "only private emulated memory; source files unchanged",
+    "globals": "zero-filled image except original .text and explicit fixture state",
+    "initializer": "004a89f8..004a908f exclusive; excludes filename setup and collectible init",
+    "live_gameplay_claim": false,
+    "loader": "full 004a8410 with original preloaded-buffer branches; no stubs",
+    "movement": "full 004ab1a0 and callees; slot0, nongrounded entry, synthetic position/velocity"
+  },
+  "script_sha256": "52ae78064bea79ec14de8f65e2529aa1b272b147b37e92599e4a9b0f24ec6980",
+  "sources": {
+    "level01": {
+      "clone_records": 85,
+      "directory_offset": 222572,
+      "kind_counts": {
+        "6": 178,
+        "257": 10,
+        "260": 1
+      },
+      "lateral_dominant_normal_cells": 2541,
+      "minimum_absolute_normal_y": 2,
+      "opaque_high_kinds": [
+        {
+          "kind": 257,
+          "payload_offset": 219180,
+          "payload_size": 452,
+          "source_record": 178
+        },
+        {
+          "kind": 257,
+          "payload_offset": 219632,
+          "payload_size": 68,
+          "source_record": 179
+        },
+        {
+          "kind": 257,
+          "payload_offset": 219700,
+          "payload_size": 2348,
+          "source_record": 180
+        },
+        {
+          "kind": 257,
+          "payload_offset": 222048,
+          "payload_size": 68,
+          "source_record": 181
+        },
+        {
+          "kind": 257,
+          "payload_offset": 222116,
+          "payload_size": 68,
+          "source_record": 182
+        },
+        {
+          "kind": 257,
+          "payload_offset": 222184,
+          "payload_size": 68,
+          "source_record": 183
+        },
+        {
+          "kind": 257,
+          "payload_offset": 222252,
+          "payload_size": 68,
+          "source_record": 184
+        },
+        {
+          "kind": 257,
+          "payload_offset": 222320,
+          "payload_size": 68,
+          "source_record": 185
+        },
+        {
+          "kind": 257,
+          "payload_offset": 222388,
+          "payload_size": 68,
+          "source_record": 186
+        },
+        {
+          "kind": 257,
+          "payload_offset": 222456,
+          "payload_size": 68,
+          "source_record": 187
+        },
+        {
+          "kind": 260,
+          "payload_offset": 222524,
+          "payload_size": 48,
+          "source_record": 188
+        }
+      ],
+      "path": "work/copies/BUGS_PC-full-disc/PC/BUGS/CD/LEVEL01/TERRAIN.ALL",
+      "sha256": "62f3b73f21630eb19c04e585a92e1f3e32a76fdcb6ec36bae18f9c1ec3a2a868",
+      "size": 236940,
+      "source_records": 189,
+      "stored_cells": 6379,
+      "vertical_normal_cells": 0
+    },
+    "level03": {
+      "clone_records": 463,
+      "directory_offset": 223372,
+      "kind_counts": {
+        "6": 580,
+        "8": 9,
+        "257": 2,
+        "260": 1
+      },
+      "lateral_dominant_normal_cells": 2604,
+      "minimum_absolute_normal_y": 0,
+      "opaque_high_kinds": [
+        {
+          "kind": 257,
+          "payload_offset": 211112,
+          "payload_size": 9872,
+          "source_record": 589
+        },
+        {
+          "kind": 257,
+          "payload_offset": 220984,
+          "payload_size": 2372,
+          "source_record": 590
+        },
+        {
+          "kind": 260,
+          "payload_offset": 223356,
+          "payload_size": 16,
+          "source_record": 591
+        }
+      ],
+      "path": "work/copies/BUGS_PC-full-disc/PC/BUGS/CD/LEVEL03/TERRAIN.ALL",
+      "sha256": "b878c378c924fbdb45e450f4314808fdd3506f8685da2c3f255b7e316f4a2d9c",
+      "size": 268368,
+      "source_records": 592,
+      "stored_cells": 6074,
+      "vertical_normal_cells": 72
+    },
+    "plantter": {
+      "clone_records": 0,
+      "directory_offset": 16692,
+      "kind_counts": {
+        "8": 13,
+        "260": 1
+      },
+      "lateral_dominant_normal_cells": 214,
+      "minimum_absolute_normal_y": 0,
+      "opaque_high_kinds": [
+        {
+          "kind": 260,
+          "payload_offset": 16676,
+          "payload_size": 16,
+          "source_record": 13
+        }
+      ],
+      "path": "work/copies/BUGS_PC-full-disc/PC/BUGS/CD/BITS/PLANTTER.ALL",
+      "sha256": "0a0cf7fa9e110eef8e2112760dcbefaa433b391ca613a3d673ee0327767eb468",
+      "size": 17760,
+      "source_records": 14,
+      "stored_cells": 453,
+      "vertical_normal_cells": 2
+    }
+  },
+  "terrain_parser_sha256": "f618f3b4e799b224190c3fcc2ff3fcbd7b1cc62ffba45874abd8a78a1b18d1ab",
+  "text_sha256": "4ff4c59215b473c8701edcfea9d10ee610108efe09bdfc5078d4ebcb6b3e318a",
+  "unicorn_version": "2.1.4"
+}

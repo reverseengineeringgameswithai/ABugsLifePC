@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "manifest_name": "training-primary-record-125-target-1319c",
+  "files": [
+    {
+      "path": "CD/LEVEL07/LEVEL1.DAT",
+      "input_sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+      "output_sha256": "b8ea00be86de53a9b659a20f8b0023369e687c9309b61dd61fe8496393d90ed9",
+      "edits": [
+        {
+          "edit_index": 0,
+          "operation": "set-scene-record-payload-target-offset",
+          "section": "primary",
+          "index": 125,
+          "expected_target_offset": 70116,
+          "target_offset": 78236
+        }
+      ]
+    }
+  ]
+}

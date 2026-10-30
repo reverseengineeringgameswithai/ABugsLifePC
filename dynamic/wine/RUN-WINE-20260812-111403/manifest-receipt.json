@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "manifest_name": "training-primary-record-125-field-0c-zero",
+  "files": [
+    {
+      "path": "CD/LEVEL07/LEVEL1.DAT",
+      "input_sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+      "output_sha256": "47b7f45e39137f7decdd4ca94db2ef663ee868e6d506bc88511569ded74d7c00",
+      "edits": [
+        {
+          "edit_index": 0,
+          "operation": "set-scene-record-field-0c",
+          "section": "primary",
+          "index": 125,
+          "expected_value": 1259,
+          "value": 0
+        }
+      ]
+    }
+  ]
+}

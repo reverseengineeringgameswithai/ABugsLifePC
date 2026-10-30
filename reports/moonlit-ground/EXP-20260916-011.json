@@ -1,0 +1,510 @@
+{
+  "experiment": "EXP-20260916-011",
+  "production": {
+    "production": "/home/dev/ABLPC/work/copies/studio-1789601166371376727",
+    "executable_sha256": "7bd89ae301df163c713e8b18bf3b4cf061ec15b22f43c33c4612cc14eb4c9611",
+    "saved_source": "/home/dev/ABLPC/work/studio/fliks-adventure/levels/anthill/level-tree-repair.blend",
+    "source_sha256": "47bf0fd698b7c10992a6a6d2a73d2d20961479a586a88084c013c83f499d16b9",
+    "project_sha256": "5f6e43bc9d28fc298477cb42f24cb959c6e52a4ec00d67431a33b26a3e14e48e",
+    "campaign_sha256": "969c4c57d6938ce32b269238decd38d73fad052c76c273636a28ca9aa5612a52",
+    "all729_CD_files_exact_EXP010": true,
+    "entire_DAT_TERRAIN_RAW_exact": true,
+    "whole_executable_inverse_exact_EXP010": true,
+    "whole_executable_exact_native_guard_trial": true,
+    "guard": {
+      "input_sha256": "84294c9217272786fd65dbc7190b62f200c26c57b56b749455dbeb6f51767f7a",
+      "output_sha256": "7bd89ae301df163c713e8b18bf3b4cf061ec15b22f43c33c4612cc14eb4c9611",
+      "input_bytes": 1111552,
+      "dat_sha256": "07997868cebf586f9f7388a732b3b5ac465c0eb2ce298e0e60d03222a8fc7d46",
+      "level": 1,
+      "hook_va": 4564976,
+      "code_rva": 13164544,
+      "entry_rva": 13164564,
+      "table_rva": 13165148,
+      "scratch_rva": 13168640,
+      "stats_rva": 13496320,
+      "scratch_bytes": 331776,
+      "payload_bytes": 700,
+      "meshes": [
+        {
+          "offset": 479900,
+          "vertices": 2344,
+          "bytes": 63118
+        },
+        {
+          "offset": 543020,
+          "vertices": 4,
+          "bytes": 74
+        },
+        {
+          "offset": 543096,
+          "vertices": 10,
+          "bytes": 198
+        },
+        {
+          "offset": 543296,
+          "vertices": 2489,
+          "bytes": 68854
+        },
+        {
+          "offset": 612152,
+          "vertices": 8,
+          "bytes": 154
+        },
+        {
+          "offset": 612308,
+          "vertices": 20,
+          "bytes": 430
+        },
+        {
+          "offset": 612740,
+          "vertices": 5424,
+          "bytes": 162958
+        },
+        {
+          "offset": 775700,
+          "vertices": 1706,
+          "bytes": 47154
+        }
+      ],
+      "exact_inverse": true,
+      "scope": "Hardware-only enumerated terrain; reject visual faces with camera coordinates outside signed16. Resident source and collision unchanged.",
+      "sites": [
+        {
+          "offset": 368112,
+          "before": "81ece0000000",
+          "after": "e91f38c30090"
+        },
+        {
+          "offset": 134,
+          "before": "1300",
+          "after": "1500"
+        },
+        {
+          "offset": 208,
+          "before": "00e0c800",
+          "after": "0000ce00"
+        },
+        {
+          "offset": 156,
+          "before": "008c0c00",
+          "after": "00900c00"
+        },
+        {
+          "offset": 164,
+          "before": "00708000",
+          "after": "00808500"
+        },
+        {
+          "offset": 1136,
+          "before": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+          "after": "2e63616d64726177bc02000000e0c8000004000000f61000000000000000000000000000200000602e63616d646174610010050000f0c8000000000000000000000000000000000000000000800000c0"
+        }
+      ]
+    },
+    "DAT_bytes": 1157144,
+    "load_budget": {
+      "bytes": 1846636,
+      "limit": 2000000,
+      "scope": "conservative pinned-profile budget; runtime model verification still required"
+    },
+    "blue_token_65_XYZ": [
+      -3815,
+      -6129,
+      21196
+    ]
+  },
+  "source_assignment": {
+    "saved_source": "/home/dev/ABLPC/work/studio/fliks-adventure/levels/anthill/level-tree-repair.blend",
+    "source_sha256": "47bf0fd698b7c10992a6a6d2a73d2d20961479a586a88084c013c83f499d16b9",
+    "campaign_sha256": "969c4c57d6938ce32b269238decd38d73fad052c76c273636a28ca9aa5612a52",
+    "project_sha256": "5f6e43bc9d28fc298477cb42f24cb959c6e52a4ec00d67431a33b26a3e14e48e",
+    "terrain_chunks": {
+      "x_cuts": [
+        8192
+      ],
+      "z_cuts": [
+        19456
+      ],
+      "y_cuts": [
+        -28000,
+        -12000
+      ],
+      "visual_refinement_passes": 1,
+      "pebbled_ground_detail": true,
+      "camera_range_guard": true
+    },
+    "scope": "Saved authoring geometry unchanged from EXP009/010; only opt-in camera range guard added."
+  },
+  "preview": {
+    "production": "/home/dev/ABLPC/work/copies/studio-1789601166371376727",
+    "preview": "/home/dev/ABLPC/work/copies/moonlit-camera-range-20260916-01",
+    "production_spawn_unchanged": true,
+    "only_executable_change": {
+      "address": "004DC7F4",
+      "offset": 898548,
+      "before": [
+        192000,
+        448000,
+        0
+      ],
+      "after": [
+        742287,
+        384691,
+        4065
+      ]
+    },
+    "executed_sha256": "ba13f2b799e7f8fa005b8c5837d30d74946efa53b75472976ac1e4d7f6e56922",
+    "all_CD_files_exact_production": true
+  },
+  "native_source_control": [
+    {
+      "arm": "tree-only",
+      "removed_faces": 14,
+      "batches": [
+        {
+          "root": 0,
+          "page": 1,
+          "vertices": 11,
+          "bounds": [
+            [
+              -2553.0,
+              3193.0
+            ],
+            [
+              135.0,
+              196.0
+            ],
+            [
+              0.2216796875,
+              0.2314453125
+            ],
+            [
+              0.0002635740675032139,
+              0.00027517887065187097
+            ]
+          ],
+          "uv_bounds": [
+            [
+              0.0,
+              0.12109375
+            ],
+            [
+              0.125,
+              0.24609375
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "arm": "non-tree-only",
+      "removed_faces": 1013,
+      "batches": [
+        {
+          "root": 0,
+          "page": 1,
+          "vertices": 4,
+          "bounds": [
+            [
+              -959.0,
+              1835.0
+            ],
+            [
+              87.0,
+              110.0
+            ],
+            [
+              0.416259765625,
+              0.54736328125
+            ],
+            [
+              0.00011150757927680388,
+              0.00014662757166661322
+            ]
+          ],
+          "uv_bounds": [
+            [
+              0.25,
+              0.49609375
+            ],
+            [
+              0.5,
+              0.74609375
+            ]
+          ]
+        },
+        {
+          "root": 0,
+          "page": 4,
+          "vertices": 3,
+          "bounds": [
+            [
+              -846.0,
+              1433.0
+            ],
+            [
+              -104.0,
+              10.0
+            ],
+            [
+              0.546630859375,
+              0.61865234375
+            ],
+            [
+              9.862905426416546e-05,
+              0.00011163206363562495
+            ]
+          ],
+          "uv_bounds": [
+            [
+              0.0,
+              0.24609375
+            ],
+            [
+              0.5,
+              0.74609375
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "runtime": {
+    "ownership": "work/experiments/EXP-20260916-011/camera-controlled-2/ownership.json",
+    "game": {
+      "pid": 494632,
+      "start": 8876059,
+      "group": 494406,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\moonlit-camera-range-20260916-01\\bugs.exe log cheat mpeg --classic-level-select                                                                                                   "
+    },
+    "processes": [
+      {
+        "pid": 494406,
+        "start": 8875912,
+        "group": 494406,
+        "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260916-011/camera-controlled-2/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/moonlit-camera-range-20260916-01/bugs.exe log cheat mpeg --classic-level-select ",
+        "basis": "launch_group"
+      },
+      {
+        "pid": 494432,
+        "start": 8875940,
+        "group": 494406,
+        "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation ",
+        "basis": "launch_group"
+      },
+      {
+        "pid": 494555,
+        "start": 8875953,
+        "group": 494406,
+        "cmd": "gamescopereaper -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260916-011/camera-controlled-2/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/moonlit-camera-range-20260916-01/bugs.exe log cheat mpeg --classic-level-select ",
+        "basis": "launch_group"
+      },
+      {
+        "pid": 494559,
+        "start": 8875953,
+        "group": 494559,
+        "cmd": "/usr/lib64/wine-wow64/wine/../../../bin/wineserver ",
+        "basis": "exact_prefix"
+      },
+      {
+        "pid": 494568,
+        "start": 8875960,
+        "group": 494568,
+        "cmd": "C:\\windows\\system32\\winedevice.exe                                                                                                   ",
+        "basis": "exact_prefix"
+      },
+      {
+        "pid": 494593,
+        "start": 8875965,
+        "group": 494593,
+        "cmd": "C:\\windows\\system32\\winedevice.exe                                                                                                   ",
+        "basis": "exact_prefix"
+      },
+      {
+        "pid": 494632,
+        "start": 8876059,
+        "group": 494406,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\moonlit-camera-range-20260916-01\\bugs.exe log cheat mpeg --classic-level-select                                                                                                   ",
+        "basis": "launch_group"
+      }
+    ],
+    "audio_streams": [
+      {
+        "index": 8324,
+        "sink": 55,
+        "mute": false,
+        "volume_percent": "25%"
+      }
+    ],
+    "editors": [
+      {
+        "pid": 463470,
+        "start": 8047238,
+        "group": 463444,
+        "cmd": "./blender --disable-autoexec /home/dev/ABLPC/work/studio/fliks-adventure/levels/anthill/level-anthill-slope.blend --python /home/dev/ABLPC/tools/blender/ablpc_level.py -- register --repo /home/dev/ABLPC "
+      },
+      {
+        "pid": 471336,
+        "start": 8180688,
+        "group": 471307,
+        "cmd": "./blender --disable-autoexec /home/dev/ABLPC/work/studio/fliks-adventure/levels/anthill/level-tree-repair.blend --python /home/dev/ABLPC/tools/blender/ablpc_level.py -- register --repo /home/dev/ABLPC "
+      }
+    ],
+    "guard_stats": [
+      27263,
+      85373,
+      0,
+      775700,
+      51920
+    ],
+    "guard_stats_fields": [
+      "matched_calls",
+      "rejected_faces_total",
+      "parse_aborts",
+      "last_mesh_offset",
+      "unsafe_vertices_total"
+    ],
+    "all_eight_resident_sources_exact": true,
+    "full_native_prologue_and_guard_code_exact": true,
+    "null_sinks": 0,
+    "live_memory_writes": 0
+  },
+  "gpu": {
+    "experiment": "EXP-20260916-011",
+    "frames": 92,
+    "all_formal_frames_viewed": true,
+    "reproduced_broad_horizontal_bands_absent_in_checked_final_frames": true,
+    "inputs": [
+      {
+        "packet": "final-right",
+        "inputs": [
+          {
+            "keys": [
+              "Up",
+              "Right"
+            ],
+            "seconds": 3.0933077380032046,
+            "nominal_wait_seconds": 3,
+            "released": true,
+            "captures_while_held": 12
+          }
+        ],
+        "samples": 13
+      },
+      {
+        "packet": "final-left",
+        "inputs": [
+          {
+            "keys": [
+              "Up",
+              "Left"
+            ],
+            "seconds": 3.0922747420117958,
+            "nominal_wait_seconds": 3,
+            "released": true,
+            "captures_while_held": 12
+          }
+        ],
+        "samples": 13
+      },
+      {
+        "packet": "final-forward",
+        "inputs": [
+          {
+            "key": "Up",
+            "seconds": 3.583210265991511,
+            "released": true,
+            "continuous": true,
+            "captures_while_held": 12
+          }
+        ],
+        "samples": 13
+      },
+      {
+        "packet": "final-back",
+        "inputs": [
+          {
+            "keys": [
+              "Down"
+            ],
+            "seconds": 1.5476424350054003,
+            "nominal_wait_seconds": 1.5,
+            "released": true,
+            "captures_while_held": 6
+          }
+        ],
+        "samples": 7
+      },
+      {
+        "packet": "final-turn",
+        "inputs": [
+          {
+            "keys": [
+              "Left"
+            ],
+            "seconds": 1.5481957599986345,
+            "nominal_wait_seconds": 1.5,
+            "released": true,
+            "captures_while_held": 6
+          }
+        ],
+        "samples": 7
+      },
+      {
+        "packet": "final-path",
+        "inputs": [
+          {
+            "keys": [
+              "Down"
+            ],
+            "seconds": 3.069543650999549,
+            "nominal_wait_seconds": 3,
+            "released": true,
+            "captures_while_held": 12
+          }
+        ],
+        "samples": 13
+      },
+      {
+        "packet": "final-return",
+        "inputs": [
+          {
+            "key": "Up",
+            "seconds": 3.589839619002305,
+            "released": true,
+            "continuous": true,
+            "captures_while_held": 12
+          }
+        ],
+        "samples": 13
+      },
+      {
+        "packet": "final-exact-up",
+        "inputs": [
+          {
+            "key": "Up",
+            "seconds": 3.5884316000010585,
+            "released": true,
+            "continuous": true,
+            "captures_while_held": 12
+          }
+        ],
+        "samples": 13
+      }
+    ],
+    "scope": "Manual inspection of all final PNGs; bounded routes, including blocked grass-boundary holds. Not every heading, distant clipping, or performance acceptance."
+  },
+  "floor": {
+    "count": 92,
+    "maximum_below_source_floor": 1.25,
+    "maximum_above_source_floor": 1.09375,
+    "scope": "Passive non-atomic comparison; not a tight settled-contact or new native collision acceptance claim."
+  },
+  "checks": {
+    "selected_passed": 154,
+    "deselected": 7130,
+    "full_suite": false
+  },
+  "acceptance": "Appearance/banking pending; accepted EXP005 bank untouched."
+}

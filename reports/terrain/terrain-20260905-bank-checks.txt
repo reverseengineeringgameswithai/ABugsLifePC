@@ -1,0 +1,39 @@
+Terrain diagonal and movement checkpoint validation
+Date: 2026-09-05
+
+Focused terrain/deck suite
+  command: TMPDIR=<repo-work> PYTHONPATH=<repo>/reimplementation .venv/bin/python -m pytest -q tests/test_terrain_deck_grid_probe.py tests/test_terrain_deck_probe.py tests/test_terrain_deck_visual_probe.py tests/test_terrain_floor_edit.py tests/test_terrain_floor_visual_fixture.py
+  result: 72 passed in 31.87s
+
+Full repository gate
+  command: make check
+  result: exit 2 after 11089.48s (3:04:49); 4090 passed, 166 failed, 42 errors, 2 warnings
+  classification: pytest filled /tmp/pytest-of-dev/pytest-17 until the tmpfs user quota returned OSError [Errno 122] Disk quota exceeded. The generated pytest-17 scratch tree was removed; /tmp changed from 50G used / 13G available to 128M used / 62G available.
+  limit: no complete green full repository gate is claimed.
+
+Known pre-existing R2q discriminator, rerun alone on clean repo-local scratch
+  test: tests/test_r2q_quiet_census_design.py::test_historical_validation_protocol_is_remount_stable_and_bounded
+  result: 1 failed in 0.27s at line 5899
+  expected: 6cd3d734d0dcbe34eedc163b96b784773fdbce1c23c07dd229818cdbf9e93da0 (R2q-029)
+  observed: 7d826b13a2e419c2911240eae44707e74569e1c316391f2b43d1f2e6e88ec554 (R2q-031)
+  scope: unchanged from parent checkpoint e5f4a3c; unrelated to terrain/deck changes.
+
+Late quota-cascade discriminator
+  clean repo-local scratch, workspace sandbox: 281 passed, 14 failed in 23.82s; every remaining failure was process_vm_readv/writev Operation not permitted in fake-process fixtures.
+  same four process-control modules outside the workspace sandbox: 110 passed in 18.38s.
+  modules: test_savestate_hotkeys.py, test_send_keys.py, test_session_lib.py, test_wait_for.py.
+
+Repository audits before staging
+  vault lint: 657 notes, 0 errors, 8 existing warnings
+  tracked-file audit: 0 violations
+  git diff --check before staging: pass for tracked modifications
+  git diff --cached --check: one trailing blank line in the new test source. That exact source byte stream is SHA-bound by EXP-011 and the private manifest, so it is preserved rather than rewritten after the experiment. Four unbound operator copies were normalized before commit.
+  session audit: tracked JSON equals fresh output; clean=true with zero processes, groups, sinks, or sessions
+
+Private evidence archive
+  path: work/snapshots/terrain-20260905-diagonal-movement-evidence.tar.gz
+  bytes: 32799576
+  sha256: 0dbf147f3efa72feea6e8e0c248c0fcd3d30ebfe7ded63c2a9d2317b6567715c
+  manifest: work/snapshots/terrain-20260905-diagonal-movement-evidence.manifest.tsv
+  manifest sha256: 736d6326e06125a39e72aaa756d42d0816277a0da4432650def4134713bca528
+  verification: 803 regular files matched byte counts and SHA-256; 804 archive members including the manifest

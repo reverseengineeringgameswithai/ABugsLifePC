@@ -1,0 +1,17 @@
+{
+  "run_id": "RUN-GDB-20260812-021920",
+  "time_window_start": "2026-08-12T02:19:20.251425990-04:00",
+  "time_window_end": "2026-08-12T02:21:09.708969892-04:00",
+  "time_window_basis": "successful debugger run occurred between the recorded Training title and post-detach gameplay capture mtimes",
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "level_dat_sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+  "environment": "Fedora Linux 44, kernel 7.0.11-200.fc44.x86_64, Wine 11.0 Staging",
+  "debugger": "GNU gdb 17.1-6.fc44",
+  "working_directory": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+  "renderer": "Direct3D hardware, 640x480x16",
+  "status": "complete",
+  "artifacts": [
+    "debugger-evidence.txt",
+    "metadata.json"
+  ]
+}

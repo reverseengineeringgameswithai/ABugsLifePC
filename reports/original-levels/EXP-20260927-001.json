@@ -1,0 +1,3763 @@
+{
+ "experiment": "EXP-20260927-001",
+ "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+ "file_rule": "004671D0: engine 1..10 LEVELnn/LEVEL.*+TERRAIN.ALL; 11..17 LEVEL(n-10)/LEVEL1.*+TERR1.ALL",
+ "appearance_hints": {
+  "1": "winged moth",
+  "2": "mantis",
+  "5": "stick insect",
+  "17": "long-legged spider",
+  "21": "ant",
+  "25": "winged moth",
+  "28": "ant",
+  "29": "grasshopper",
+  "30": "bird",
+  "31": "flytrap plant",
+  "32": "ant",
+  "34": "dragonfly",
+  "37": "dandelion seed",
+  "41": "centipede"
+ },
+ "names": {
+  "9": "spider",
+  "10": "mosquito",
+  "11": "seed",
+  "13": "bee",
+  "14": "Dot",
+  "35": "harvester",
+  "38": "Mr. Soil",
+  "39": "pill bug",
+  "40": "caterpillar"
+ },
+ "limits": [
+  "Reference map only: nothing here is compiled back into a game file.",
+  "Scenery uses stored poses; native animation selectors are recorded, not played.",
+  "Sprite batches (fences, berries, billboards) are drawn as crossed planes; the game turns them to face the camera.",
+  "Pickups sit at original 00456A90 initialized XYZ; stored rows are kept on each object.",
+  "Creatures use their original RAW 0x102 models in stored pose at literal stored XYZ; every slot is shown, including spawns the game gates by script or lesson. Headings and movement are not simulated.",
+  "Creature names come only from earlier Anthill/Training evidence; other types keep numeric names. \"Looks like\" hints describe model appearance only, not identity or behaviour.",
+  "Trailing per-corner normal tables in creature models are recorded as metadata; lighting is not reproduced.",
+  "Texture/vertex-colour preview is not a reproduction of the native renderer or lighting."
+ ],
+ "totals": {
+  "scene_records": 9673,
+  "drawn_objects": 9672,
+  "undispatched_records": 1,
+  "pickups": 936,
+  "creatures": 525,
+  "other_rows": 2747,
+  "collision_triangles": 108972
+ },
+ "levels": [
+  {
+   "engine": 1,
+   "folder": "work/level-projects/original-levels/01-anthill",
+   "title": "Anthill \u2022 progression 1 \u2022 engine 1 \u2022 LEVEL01/LEVEL.DAT",
+   "sources": {
+    "dat": "LEVEL01/LEVEL.DAT",
+    "raw": "LEVEL01/LEVEL.RAW",
+    "terrain": "LEVEL01/TERRAIN.ALL"
+   },
+   "hashes": {
+    "dat": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53",
+    "raw": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+    "terrain": "62f3b73f21630eb19c04e585a92e1f3e32a76fdcb6ec36bae18f9c1ec3a2a868"
+   },
+   "counts": {
+    "scene_records": 624,
+    "drawn_objects": 624,
+    "undispatched_records": 0,
+    "mesh_objects": 614,
+    "sprite_objects": 10,
+    "sprite_quads": 256,
+    "vertices": 25507,
+    "faces": 17574,
+    "pickups": 70,
+    "creatures": 32,
+    "creature_types": 8,
+    "other_rows": 152,
+    "collision_sources": 176,
+    "collision_triangles": 7281,
+    "barrier_segments": 262,
+    "texture_pages": 9
+   },
+   "dispatches": {
+    "0x41": 124,
+    "0x03": 7,
+    "0x49": 9,
+    "0x09": 353,
+    "0x01": 126,
+    "0x0a": 3,
+    "0x04": 2
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x21 Green berry": 1,
+    "0x22 Gold berry": 1,
+    "0x23 Blue berry": 1,
+    "0x24 Purple berry": 1,
+    "0x29 Yellow seed token": 3,
+    "0x2A Blue seed token": 3,
+    "0x2B Green seed token": 3,
+    "0x30 Telescope": 3
+   },
+   "creature_census": {
+    "type 9 spider": 7,
+    "type 10 mosquito": 4,
+    "type 11 seed": 9,
+    "type 13 bee": 5,
+    "type 14 Dot": 1,
+    "type 35 harvester": 1,
+    "type 39 pill bug": 2,
+    "type 40 caterpillar": 3
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     197108,
+     492895
+    ],
+    "stored_xz": [
+     6159.625,
+     15402.96875
+    ],
+    "heading": 3505,
+    "va": "0x004DC7F4",
+    "file_offset": 898036,
+    "native_start_y": 81.5,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "4201ad6d879487b45ec1f0903f4d28fedaf88aa1cd0f69871a41d89289514caf"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 24346,
+     "packet_sha256": "ac66a73f645a6d442009fc01f3b90590f2c6b442a1f01e47bb6f52fe93c4ebca"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 53015,
+     "packet_sha256": "9a5e122338c2a74e59e6dcdae5628a0f80f4b815ccab0b1c5a68830b80b0a284"
+    },
+    {
+     "page": 3,
+     "width": 256,
+     "packet_offset": 290009,
+     "packet_sha256": "5b946adfd07e1f22182efa0f412572a9530568721c9c3c6ea803dad0f46da353"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 74780,
+     "packet_sha256": "20d2768e3181b45e81630352a1f7ffa8d43d64e268e9f6773c87aa1f26aa12ce"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 158645,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 16,
+     "width": 256,
+     "packet_offset": 95113,
+     "packet_sha256": "a49549d9742d02a63b6287190651e8fe7e467888bd7ba8fc1a7957c9636bcab0"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 129897,
+     "packet_sha256": "6c6739756b626f803d220683571715ac883002c638c23f985b34475b0c782017"
+    },
+    {
+     "page": 26,
+     "width": 256,
+     "packet_offset": 272276,
+     "packet_sha256": "d2afdf55fe7bc4a7db40eac65d8106abc9949f8a0416c304431a3aacf8988ade"
+    }
+   ],
+   "creature_models": {
+    "9": {
+     "packet_offset": 637092,
+     "payload_sha256": "288ef4fc14560c5370b46bb2cb0ca3e0b54f8429202a91d582e87efe0ce02029",
+     "vertices": 280,
+     "faces": 76,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "10": {
+     "packet_offset": 652608,
+     "payload_sha256": "918b9debf124c5a95097fada9592d4f66810fdcfb9791d1741b17ba88d2d7547",
+     "vertices": 310,
+     "faces": 81,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 686819,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "13": {
+     "packet_offset": 678332,
+     "payload_sha256": "b0fe664b2d44a1e7b0b8117dcc4f35ad6c8fdd9dfc89a410e8e525dfa5b81330",
+     "vertices": 490,
+     "faces": 135,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "14": {
+     "packet_offset": 697075,
+     "payload_sha256": "879279de675026e5c0025b25c3749032a91916b04c50f5f2a7869227f8a43cff",
+     "vertices": 600,
+     "faces": 160,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "35": {
+     "packet_offset": 709869,
+     "payload_sha256": "7300cf37ac120859c7b110874d3b0de71627ddd65d184158c650b467bc2e0446",
+     "vertices": 659,
+     "faces": 172,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "287": 9
+     }
+    },
+    "39": {
+     "packet_offset": 657476,
+     "payload_sha256": "78813c1cc9d4adf11962099e79e47c1111513001daa5740188801ddb4fdaad6b",
+     "vertices": 502,
+     "faces": 131,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "40": {
+     "packet_offset": 683412,
+     "payload_sha256": "51ce54e6ae2dda59502ee591c852e9ab1c6892480a296f0c546a4687d4366f91",
+     "vertices": 402,
+     "faces": 103,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 4,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 292717,
+     "ordered_pc_sha256": "80062ec03f338b26b5d3e0a56195cfe2b7b02d686c79816d5dd888f47d768e50",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 2509,
+    "creature_floor_queries": 32
+   },
+   "blender": {
+    "blend_sha256": "08ddb40e7d29c7bec4c3a1f1e1e7c2aefac6e5cf38dafed51ff583332be86229",
+    "saved_objects": 1076,
+    "source_objects_verified": 624,
+    "source_vertices_verified": 25507,
+    "polygons_verified": 18086,
+    "pickups_and_creatures_verified": 102,
+    "collision_triangles_verified": 7281,
+    "packed_textures": 9,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Collision \u2022 special results",
+     "Creature offset model parts",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 2,
+   "folder": "work/level-projects/original-levels/03-council-chamber",
+   "title": "Council Chamber \u2022 progression 3 \u2022 engine 2 \u2022 LEVEL02/LEVEL.DAT",
+   "sources": {
+    "dat": "LEVEL02/LEVEL.DAT",
+    "raw": "LEVEL02/LEVEL.RAW",
+    "terrain": "LEVEL02/TERRAIN.ALL"
+   },
+   "hashes": {
+    "dat": "0bb00fa7387c2125ae20c55400bf5cea6a64641a7328cedc5cbd543bbd437ee7",
+    "raw": "6f0c0e44daf0014de890046679f82ade7623e6b5472df3634bc056cd09b13269",
+    "terrain": "7f6b446fa9fac0951a6a6e3b1e70f2f9bd456ea4dc69160918aaa36c95de83fd"
+   },
+   "counts": {
+    "scene_records": 200,
+    "drawn_objects": 200,
+    "undispatched_records": 0,
+    "mesh_objects": 200,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 6186,
+    "faces": 4485,
+    "pickups": 60,
+    "creatures": 6,
+    "creature_types": 3,
+    "other_rows": 55,
+    "collision_sources": 98,
+    "collision_triangles": 3450,
+    "barrier_segments": 80,
+    "texture_pages": 6
+   },
+   "dispatches": {
+    "0x41": 95,
+    "0x09": 77,
+    "0x01": 28
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x23 Blue berry": 2,
+    "0x2C Fourth seed token (0059D9AB)": 4
+   },
+   "creature_census": {
+    "type 10 mosquito": 2,
+    "type 11 seed": 3,
+    "type 16 (unnamed)": 1
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     -1580,
+     -226854
+    ],
+    "stored_xz": [
+     -49.375,
+     -7089.1875
+    ],
+    "heading": 4071,
+    "va": "0x004DC800",
+    "file_offset": 898048,
+    "native_start_y": 1206.875,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "533b4e63c3195b679c931292ffd365b29410350f42062e397d7f06ba7fd024a2"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 24175,
+     "packet_sha256": "84a8f8ae02c3ba4f799216040c2ec20eb42a62062df6807dc48ea260799a585e"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 39963,
+     "packet_sha256": "230871f3d64fe3259a6708d36e3c073470d56d5bd75a62ead75fe2216fb04b5e"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 120802,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 70904,
+     "packet_sha256": "6c6739756b626f803d220683571715ac883002c638c23f985b34475b0c782017"
+    },
+    {
+     "page": 21,
+     "width": 256,
+     "packet_offset": 93834,
+     "packet_sha256": "365a43c3156bc817ede5bfac1f8937cfe21af47630a737a8b51f3676f26a6c59"
+    }
+   ],
+   "creature_models": {
+    "10": {
+     "packet_offset": 492870,
+     "payload_sha256": "918b9debf124c5a95097fada9592d4f66810fdcfb9791d1741b17ba88d2d7547",
+     "vertices": 310,
+     "faces": 81,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 496183,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "16": {
+     "packet_offset": 473545,
+     "payload_sha256": "b43230b103cdd30739a8e199ce000f41703f97d476a0843c5e18b5ad51798cb9",
+     "vertices": 654,
+     "faces": 174,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 2,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 279969,
+     "ordered_pc_sha256": "f47e833fe9c8347a866991d77a1ef14b921d2200c5a38939f3b864e7f2f1ba37",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 3606,
+    "creature_floor_queries": 6
+   },
+   "blender": {
+    "blend_sha256": "15c60597ac0fde67379981674913977bc0f8e6d7a08d2ea868c18f4d0504d75f",
+    "saved_objects": 426,
+    "source_objects_verified": 200,
+    "source_vertices_verified": 6186,
+    "polygons_verified": 4485,
+    "pickups_and_creatures_verified": 66,
+    "collision_triangles_verified": 3450,
+    "packed_textures": 6,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Creature offset model parts",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 3,
+   "folder": "work/level-projects/original-levels/02-tunnels",
+   "title": "Tunnels \u2022 progression 2 \u2022 engine 3 \u2022 LEVEL03/LEVEL.DAT",
+   "sources": {
+    "dat": "LEVEL03/LEVEL.DAT",
+    "raw": "LEVEL03/LEVEL.RAW",
+    "terrain": "LEVEL03/TERRAIN.ALL"
+   },
+   "hashes": {
+    "dat": "bda28dc7287ebc3648998425b3c09f19d6470a85c9fcd439cca5ad8e391c0f2b",
+    "raw": "869700f6f8cd51d3d78ca14f55f350b343d6f77692f33fb11a8aef2b5f6a3ca4",
+    "terrain": "b878c378c924fbdb45e450f4314808fdd3506f8685da2c3f255b7e316f4a2d9c"
+   },
+   "counts": {
+    "scene_records": 480,
+    "drawn_objects": 480,
+    "undispatched_records": 0,
+    "mesh_objects": 480,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 37353,
+    "faces": 31130,
+    "pickups": 69,
+    "creatures": 64,
+    "creature_types": 7,
+    "other_rows": 387,
+    "collision_sources": 582,
+    "collision_triangles": 25026,
+    "barrier_segments": 1017,
+    "texture_pages": 6
+   },
+   "dispatches": {
+    "0x09": 224,
+    "0x01": 206,
+    "0x49": 42,
+    "0x41": 8
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x23 Blue berry": 2,
+    "0x2B Green seed token": 2,
+    "0x2C Fourth seed token (0059D9AB)": 4,
+    "0x30 Telescope": 2,
+    "0x31 Persistent selector 0x31 (unidentified)": 5
+   },
+   "creature_census": {
+    "type 9 spider": 14,
+    "type 11 seed": 13,
+    "type 12 (unnamed)": 11,
+    "type 15 (unnamed)": 19,
+    "type 35 harvester": 1,
+    "type 40 caterpillar": 2,
+    "type 41 (looks like: centipede)": 4
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     -16896,
+     6632
+    ],
+    "stored_xz": [
+     -528.0,
+     207.25
+    ],
+    "heading": 742,
+    "va": "0x004DC80C",
+    "file_offset": 898060,
+    "native_start_y": 997.375,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "9b4d2092e405e12f6b5f801586b3895dc17278aee3e6d213bbdfc65396639e59"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 23173,
+     "packet_sha256": "1122f823df19fa0708605aee7d14fac18c5eff1589f379b11faa211ad20cb15a"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 104124,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 16,
+     "width": 256,
+     "packet_offset": 52970,
+     "packet_sha256": "a49549d9742d02a63b6287190651e8fe7e467888bd7ba8fc1a7957c9636bcab0"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 74110,
+     "packet_sha256": "6c6739756b626f803d220683571715ac883002c638c23f985b34475b0c782017"
+    },
+    {
+     "page": 26,
+     "width": 256,
+     "packet_offset": 217755,
+     "packet_sha256": "d2afdf55fe7bc4a7db40eac65d8106abc9949f8a0416c304431a3aacf8988ade"
+    }
+   ],
+   "creature_models": {
+    "9": {
+     "packet_offset": 571484,
+     "payload_sha256": "288ef4fc14560c5370b46bb2cb0ca3e0b54f8429202a91d582e87efe0ce02029",
+     "vertices": 280,
+     "faces": 76,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 577221,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "12": {
+     "packet_offset": 574865,
+     "payload_sha256": "9decc9720eeb399ee3552ad621a4ada2138618bcda00fdfcd700c8a65fcae7c7",
+     "vertices": 204,
+     "faces": 53,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 8,
+      "9": 1
+     }
+    },
+    "15": {
+     "packet_offset": 621013,
+     "payload_sha256": "996846f913b003cc363f30f0ceacbbb8db65047f86120f8072e6bacbd9ea55c4",
+     "vertices": 539,
+     "faces": 145,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "35": {
+     "packet_offset": 633776,
+     "payload_sha256": "7300cf37ac120859c7b110874d3b0de71627ddd65d184158c650b467bc2e0446",
+     "vertices": 659,
+     "faces": 172,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "287": 9
+     }
+    },
+    "40": {
+     "packet_offset": 596460,
+     "payload_sha256": "51ce54e6ae2dda59502ee591c852e9ab1c6892480a296f0c546a4687d4366f91",
+     "vertices": 402,
+     "faces": 103,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 4,
+      "9": 1
+     }
+    },
+    "41": {
+     "packet_offset": 589395,
+     "payload_sha256": "38a21633ec0ac82d91a73fc1b56a09e88004009c6d1e6c475b5a5d230db5ce42",
+     "vertices": 752,
+     "faces": 204,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 256053,
+     "ordered_pc_sha256": "6e4c2b28ece13c8a3b26436394f5ea85295a7f8385f3a624ba919711b6634acd",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 2277,
+    "creature_floor_queries": 64
+   },
+   "blender": {
+    "blend_sha256": "4a5f056269f630f1768a1523de06f8b997e7748b864d29594c9a5e6f43bede1f",
+    "saved_objects": 1600,
+    "source_objects_verified": 480,
+    "source_vertices_verified": 37353,
+    "polygons_verified": 31130,
+    "pickups_and_creatures_verified": 133,
+    "collision_triangles_verified": 25026,
+    "packed_textures": 6,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Collision \u2022 special results",
+     "Creature offset model parts",
+     "Other stored rows",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 4,
+   "folder": "work/level-projects/original-levels/07-city-entrance",
+   "title": "City Entrance \u2022 progression 7 \u2022 engine 4 \u2022 LEVEL04/LEVEL.DAT",
+   "sources": {
+    "dat": "LEVEL04/LEVEL.DAT",
+    "raw": "LEVEL04/LEVEL.RAW",
+    "terrain": "LEVEL04/TERRAIN.ALL"
+   },
+   "hashes": {
+    "dat": "a6bbb538257e8652645df847623fa3623d889fdb7211891c2b145a2a18ffc905",
+    "raw": "526fe962ffd5743769123229469f0129e0e754dc3387057701410281ba4108fe",
+    "terrain": "9cf8fb6990a955a808f2e4f2c22ffce3fe5d62136f4a9271bdc444a6dd7fc103"
+   },
+   "counts": {
+    "scene_records": 1170,
+    "drawn_objects": 1170,
+    "undispatched_records": 0,
+    "mesh_objects": 1170,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 39170,
+    "faces": 22057,
+    "pickups": 47,
+    "creatures": 39,
+    "creature_types": 7,
+    "other_rows": 557,
+    "collision_sources": 226,
+    "collision_triangles": 6482,
+    "barrier_segments": 621,
+    "texture_pages": 8
+   },
+   "dispatches": {
+    "0x41": 150,
+    "0x49": 355,
+    "0x09": 519,
+    "0x01": 132,
+    "0x0c": 14
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 24,
+    "0x2A Blue seed token": 1,
+    "0x2B Green seed token": 4,
+    "0x2C Fourth seed token (0059D9AB)": 4,
+    "0x2D Fifth seed token (0059D9AC)": 2,
+    "0x30 Telescope": 3,
+    "0x31 Persistent selector 0x31 (unidentified)": 5
+   },
+   "creature_census": {
+    "type 3 (unnamed)": 1,
+    "type 5 (looks like: stick insect)": 1,
+    "type 6 (unnamed)": 9,
+    "type 7 (unnamed)": 1,
+    "type 11 seed": 10,
+    "type 17 (looks like: long-legged spider)": 11,
+    "type 18 (unnamed)": 6
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     -289789,
+     375937
+    ],
+    "stored_xz": [
+     -9055.90625,
+     11748.03125
+    ],
+    "heading": 2135,
+    "va": "0x004DC818",
+    "file_offset": 898072,
+    "native_start_y": -7.0,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "77f4423e5bea24d4252382c4ffe88aee336f15efda4acadc5a2a50dbece4cf2f"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 23050,
+     "packet_sha256": "4b2595e9f1d8847fd6d11afc41ad9dded79855ad17cc7a38a8b0c560b033cfd5"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 43417,
+     "packet_sha256": "c51708a0bb6ae08c120085a25be7707cfc4e628819fd42430cfba132bdeba89e"
+    },
+    {
+     "page": 3,
+     "width": 256,
+     "packet_offset": 254741,
+     "packet_sha256": "7f5c8996bf11c5b2323ec5dc1eb9252ab13919f6cd8f2045cd958895a2f1e383"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 63633,
+     "packet_sha256": "3366610da0f99dc8884e2ddc6c8577aa9549412efb19ad267fd091bfd6696732"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 129851,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 25,
+     "width": 256,
+     "packet_offset": 102475,
+     "packet_sha256": "6ac1c5993645c40c29b566961f5c72edbd506fab1a0244f02c7b7678a043e3d2"
+    },
+    {
+     "page": 31,
+     "width": 256,
+     "packet_offset": 91019,
+     "packet_sha256": "7f0ecd480d1f08a0ae88f67c36c5a28272fc13a2649f11c9e10f30e297306c09"
+    }
+   ],
+   "creature_models": {
+    "3": {
+     "packet_offset": 465897,
+     "payload_sha256": "8df7c823e149d39199319fe4497dfb194b0bff1c76a8c3801d3c85212c230b7b",
+     "vertices": 798,
+     "faces": 209,
+     "normal_tables": 1,
+     "opaque_kinds": {
+      "261": 2,
+      "9": 1
+     }
+    },
+    "5": {
+     "packet_offset": 483334,
+     "payload_sha256": "7e34eb27382c62bc4bfa7fe6654527da6b7bf811de69379e33861293e7622d36",
+     "vertices": 565,
+     "faces": 152,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "9": 1
+     }
+    },
+    "6": {
+     "packet_offset": 457120,
+     "payload_sha256": "41460ead761bb5fff5bcd7d14a942a0251f22d6e3aeb7f7c805d32564ad06f6f",
+     "vertices": 462,
+     "faces": 127,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "7": {
+     "packet_offset": 496766,
+     "payload_sha256": "232c874d9e13c5121ffed7a8168c55a0235a8810b6f1969614e0dec87566879e",
+     "vertices": 724,
+     "faces": 184,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 29,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 429651,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "17": {
+     "packet_offset": 446090,
+     "payload_sha256": "ff596551ff186c1de46f00f03c0fcedba0dc7e01877fa9b18094d9934e590b7f",
+     "vertices": 456,
+     "faces": 136,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "18": {
+     "packet_offset": 424458,
+     "payload_sha256": "d4895ebc8f9ced274c5d06dc4ed31d6f5ebdf0aceb8b527e538af46086f02fd8",
+     "vertices": 608,
+     "faces": 166,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 149483,
+     "ordered_pc_sha256": "449c4c9d301282589320740a6c4977bda7a19fe835425e863fa691503ebcba5b",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 3129,
+    "creature_floor_queries": 39
+   },
+   "blender": {
+    "blend_sha256": "122367d19652f2ff4f36a542a8c5f400fc1e1537beb955453fee8d7050bf27ca",
+    "saved_objects": 2055,
+    "source_objects_verified": 1170,
+    "source_vertices_verified": 39170,
+    "polygons_verified": 21997,
+    "pickups_and_creatures_verified": 86,
+    "collision_triangles_verified": 6482,
+    "packed_textures": 8,
+    "degenerate_faces_dropped": {
+     "scenery": 60,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Collision \u2022 special results",
+     "Creature offset model parts",
+     "Distant source objects",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 5,
+   "folder": "work/level-projects/original-levels/08-city-square",
+   "title": "City Square \u2022 progression 8 \u2022 engine 5 \u2022 LEVEL05/LEVEL.DAT",
+   "sources": {
+    "dat": "LEVEL05/LEVEL.DAT",
+    "raw": "LEVEL05/LEVEL.RAW",
+    "terrain": "LEVEL05/TERRAIN.ALL"
+   },
+   "hashes": {
+    "dat": "438372b363692af46351be01f0e74d3cd0547980147766e4a00b2445b75c8d90",
+    "raw": "ebfa2a5acc65a4d6ddbde57d97b9547962609c3b1a81aaba3f76bd11055e48eb",
+    "terrain": "57bce45056f8ecdeebc14d9851badab5f930c3c4736059075baacd390bb701ff"
+   },
+   "counts": {
+    "scene_records": 1218,
+    "drawn_objects": 1218,
+    "undispatched_records": 0,
+    "mesh_objects": 1218,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 40380,
+    "faces": 23395,
+    "pickups": 74,
+    "creatures": 35,
+    "creature_types": 10,
+    "other_rows": 64,
+    "collision_sources": 330,
+    "collision_triangles": 5761,
+    "barrier_segments": 499,
+    "texture_pages": 10
+   },
+   "dispatches": {
+    "0x41": 135,
+    "0x09": 622,
+    "0x49": 237,
+    "0x0c": 21,
+    "0x01": 198,
+    "0x04": 5
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x29 Yellow seed token": 1,
+    "0x2A Blue seed token": 4,
+    "0x2B Green seed token": 2,
+    "0x2C Fourth seed token (0059D9AB)": 4,
+    "0x30 Telescope": 4,
+    "0x31 Persistent selector 0x31 (unidentified)": 5
+   },
+   "creature_census": {
+    "type 1 (looks like: winged moth)": 1,
+    "type 2 (looks like: mantis)": 1,
+    "type 4 (unnamed)": 1,
+    "type 6 (unnamed)": 9,
+    "type 8 (unnamed)": 1,
+    "type 11 seed": 6,
+    "type 17 (looks like: long-legged spider)": 8,
+    "type 19 (unnamed)": 6,
+    "type 20 (unnamed)": 1,
+    "type 35 harvester": 1
+   },
+   "unavailable_pages": {
+    "18": "0 RAW packets"
+   },
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     835014,
+     96726
+    ],
+    "stored_xz": [
+     26094.1875,
+     3022.6875
+    ],
+    "heading": 2965,
+    "va": "0x004DC824",
+    "file_offset": 898084,
+    "native_start_y": -216.375,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "6c89150a244d323c667588cbf79155e0e11fa176af05d4ce58f03d234b17b069"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 20269,
+     "packet_sha256": "4b2595e9f1d8847fd6d11afc41ad9dded79855ad17cc7a38a8b0c560b033cfd5"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 40636,
+     "packet_sha256": "1e99774937fde9140cba7d14fd04a00ce6809a006f228c194195434378b7727f"
+    },
+    {
+     "page": 3,
+     "width": 256,
+     "packet_offset": 262041,
+     "packet_sha256": "008c444a69c56e6a26b451459f4b6f7b81c237af922d4ac75c750e73b175b25c"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 64007,
+     "packet_sha256": "3366610da0f99dc8884e2ddc6c8577aa9549412efb19ad267fd091bfd6696732"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 126823,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 16,
+     "width": 256,
+     "packet_offset": 70253,
+     "packet_sha256": "a49549d9742d02a63b6287190651e8fe7e467888bd7ba8fc1a7957c9636bcab0"
+    },
+    {
+     "page": 17,
+     "width": 256,
+     "packet_offset": 248397,
+     "packet_sha256": "9feea486660d7d0a9a001d9cf46b37b4887dfc21cdc850078f4d5172d129f2e1"
+    },
+    {
+     "page": 20,
+     "width": 256,
+     "packet_offset": 110826,
+     "packet_sha256": "b629d51b8176b4dd227eb5df1c2b0d11f91419c3e0601cfbe13d40094dce2ca3"
+    },
+    {
+     "page": 25,
+     "width": 256,
+     "packet_offset": 91393,
+     "packet_sha256": "6ac1c5993645c40c29b566961f5c72edbd506fab1a0244f02c7b7678a043e3d2"
+    }
+   ],
+   "creature_models": {
+    "1": {
+     "packet_offset": 368052,
+     "payload_sha256": "00778478ffb79baa5dc668d243892cdcb37bcf4f5dcf1e61994343f8ae0d7684",
+     "vertices": 800,
+     "faces": 208,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 4,
+      "9": 1
+     }
+    },
+    "2": {
+     "packet_offset": 385991,
+     "payload_sha256": "61546603d9de1a25714bd9aa4280fd48ff8ae64f5e261e640e4a9797fd8d129b",
+     "vertices": 628,
+     "faces": 166,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "9": 1
+     }
+    },
+    "4": {
+     "packet_offset": 340614,
+     "payload_sha256": "655567497a33f094b8457f24799f36f30f4207287b7956aa9c77f79b4517edd6",
+     "vertices": 596,
+     "faces": 152,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "9": 1
+     }
+    },
+    "6": {
+     "packet_offset": 300375,
+     "payload_sha256": "41460ead761bb5fff5bcd7d14a942a0251f22d6e3aeb7f7c805d32564ad06f6f",
+     "vertices": 462,
+     "faces": 127,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "8": {
+     "packet_offset": 322991,
+     "payload_sha256": "501e8c4a693c25d5b9932ee8ba1d54fc7c1be036441ab2df49077840d39acce8",
+     "vertices": 616,
+     "faces": 166,
+     "normal_tables": 3,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 6,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 284890,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "17": {
+     "packet_offset": 311914,
+     "payload_sha256": "ff596551ff186c1de46f00f03c0fcedba0dc7e01877fa9b18094d9934e590b7f",
+     "vertices": 456,
+     "faces": 136,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "19": {
+     "packet_offset": 279663,
+     "payload_sha256": "d4470c23df34b1632960334964c79c26846c6a5bfd850d367777de8bf75b3ccd",
+     "vertices": 611,
+     "faces": 168,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "20": {
+     "packet_offset": 350778,
+     "payload_sha256": "c2c1181b5a73d50b635eddf3254e61c67f1ad4fce3db5fa46e3ee609410fa368",
+     "vertices": 1256,
+     "faces": 341,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 4
+     }
+    },
+    "35": {
+     "packet_offset": 398981,
+     "payload_sha256": "7300cf37ac120859c7b110874d3b0de71627ddd65d184158c650b467bc2e0446",
+     "vertices": 659,
+     "faces": 172,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "287": 9
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 208835,
+     "ordered_pc_sha256": "09a531f30b308e5ee588c23af83e50409aeca76eca28ef0746a40e29af591207",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 2544,
+    "creature_floor_queries": 35
+   },
+   "blender": {
+    "blend_sha256": "5bed5b65b40e3f98f97403a92ac8ba09b179ae44fdfdfa0467137fd468add921",
+    "saved_objects": 1738,
+    "source_objects_verified": 1218,
+    "source_vertices_verified": 40380,
+    "polygons_verified": 23395,
+    "pickups_and_creatures_verified": 109,
+    "collision_triangles_verified": 5761,
+    "packed_textures": 10,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Creature offset model parts",
+     "Distant source objects",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 6,
+   "folder": "work/level-projects/original-levels/04-cliffside",
+   "title": "Cliffside \u2022 progression 4 \u2022 engine 6 \u2022 LEVEL06/LEVEL.DAT",
+   "sources": {
+    "dat": "LEVEL06/LEVEL.DAT",
+    "raw": "LEVEL06/LEVEL.RAW",
+    "terrain": "LEVEL06/TERRAIN.ALL"
+   },
+   "hashes": {
+    "dat": "7b23281eda241e215ea35f767f3dcf9bc948ec8b14b11ae7b572a997be1ee688",
+    "raw": "5bbd05b081e79d7d0fe95156b3d49e541a86686a558d3e7cb2ac4c46dc06c9e3",
+    "terrain": "a478f03958a4ff2ed557e2ebc1b88ccd5d4966f3608c1fabfc8707646d536f44"
+   },
+   "counts": {
+    "scene_records": 693,
+    "drawn_objects": 693,
+    "undispatched_records": 0,
+    "mesh_objects": 693,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 29308,
+    "faces": 17093,
+    "pickups": 60,
+    "creatures": 28,
+    "creature_types": 4,
+    "other_rows": 0,
+    "collision_sources": 126,
+    "collision_triangles": 10089,
+    "barrier_segments": 340,
+    "texture_pages": 7
+   },
+   "dispatches": {
+    "0x41": 124,
+    "0x01": 134,
+    "0x09": 431,
+    "0x49": 4
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x21 Green berry": 1,
+    "0x22 Gold berry": 1,
+    "0x29 Yellow seed token": 2,
+    "0x2B Green seed token": 2
+   },
+   "creature_census": {
+    "type 11 seed": 15,
+    "type 30 (looks like: bird)": 1,
+    "type 34 (looks like: dragonfly)": 10,
+    "type 37 (looks like: dandelion seed)": 2
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     93783,
+     -134554
+    ],
+    "stored_xz": [
+     2930.71875,
+     -4204.8125
+    ],
+    "heading": 3063,
+    "va": "0x004DC830",
+    "file_offset": 898096,
+    "native_start_y": -2617.25,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "5f1af86b3b1fe4d997112970735b4085251f94f552febb869ecafeb71d5fd349"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 27125,
+     "packet_sha256": "cc6652f9f313d3f8acad75be4f264812fefbe486562561a939b54d9c1e4b1346"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 55364,
+     "packet_sha256": "fceb209536e5b49dbbd431ab11410592527926882a8b71f86de7924b83384139"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 57209,
+     "packet_sha256": "94d22384a9143a0f9f9c9bdbfcc917313ee179ca99452a00c3add7e794b3e803"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 142890,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 102983,
+     "packet_sha256": "aca7573d21d0c791bd879f1596180c020f3c705d21f6662af5640013f9d79604"
+    },
+    {
+     "page": 23,
+     "width": 256,
+     "packet_offset": 125971,
+     "packet_sha256": "d41af128409238605d0a7436c24b89cedfff3b1207e0a84d6429e9a2fc9c0ee5"
+    }
+   ],
+   "creature_models": {
+    "11": {
+     "packet_offset": 593455,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "30": {
+     "packet_offset": 581834,
+     "payload_sha256": "9763391cd554c628369748554df516981b06253e8c1c92c9fa865b08d369a66c",
+     "vertices": 1228,
+     "faces": 319,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 42,
+      "9": 1
+     }
+    },
+    "34": {
+     "packet_offset": 607352,
+     "payload_sha256": "452fc9ab474eea1fed8e9a02b5b956d161a8bcab5b11fd01b5ee8f8d346a0d2d",
+     "vertices": 438,
+     "faces": 116,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "37": {
+     "packet_offset": 614636,
+     "payload_sha256": "fafdfd731706af56e3762e2aeeeec3bdef9eb312df4e80d80eac860cca5ec35d",
+     "vertices": 412,
+     "faces": 114,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 223651,
+     "ordered_pc_sha256": "33f9b39c6530fa3d58d866f51ab32795cf68476311f2c95e8ce3a3bc0620e1b0",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 2629,
+    "creature_floor_queries": 28
+   },
+   "blender": {
+    "blend_sha256": "b66caeef71d3247aa0f0a85d829e29e92b0328c0ed3fba831fd9206cc5b9e613",
+    "saved_objects": 926,
+    "source_objects_verified": 693,
+    "source_vertices_verified": 29308,
+    "polygons_verified": 17093,
+    "pickups_and_creatures_verified": 88,
+    "collision_triangles_verified": 10089,
+    "packed_textures": 7,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Collision \u2022 special results",
+     "Creature offset model parts",
+     "Distant source objects",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 7,
+   "folder": "work/level-projects/original-levels/10-clover-forest",
+   "title": "Clover Forest \u2022 progression 10 \u2022 engine 7 \u2022 LEVEL07/LEVEL.DAT",
+   "sources": {
+    "dat": "LEVEL07/LEVEL.DAT",
+    "raw": "LEVEL07/LEVEL.RAW",
+    "terrain": "LEVEL07/TERRAIN.ALL"
+   },
+   "hashes": {
+    "dat": "3b130e5a596b716f841e45b7fc0f8b0fea7c6e1d7fc2add795760ededca63d42",
+    "raw": "e7f75265d4591a5534a76ee193a63108b9837bc318a9433d97404ef2fad6c020",
+    "terrain": "7b168efa7934cd6db15d94ae927151ed3df4e78064f1619877d5dcee463cf1c8"
+   },
+   "counts": {
+    "scene_records": 793,
+    "drawn_objects": 793,
+    "undispatched_records": 0,
+    "mesh_objects": 791,
+    "sprite_objects": 2,
+    "sprite_quads": 42,
+    "vertices": 29832,
+    "faces": 19332,
+    "pickups": 77,
+    "creatures": 38,
+    "creature_types": 11,
+    "other_rows": 156,
+    "collision_sources": 133,
+    "collision_triangles": 5396,
+    "barrier_segments": 285,
+    "texture_pages": 10
+   },
+   "dispatches": {
+    "0x41": 449,
+    "0x09": 161,
+    "0x01": 179,
+    "0x02": 2,
+    "0x49": 1,
+    "0x04": 1
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x22 Gold berry": 2,
+    "0x29 Yellow seed token": 3,
+    "0x2A Blue seed token": 3,
+    "0x2B Green seed token": 2,
+    "0x2C Fourth seed token (0059D9AB)": 2,
+    "0x30 Telescope": 6,
+    "0x31 Persistent selector 0x31 (unidentified)": 5
+   },
+   "creature_census": {
+    "type 7 (unnamed)": 1,
+    "type 9 spider": 10,
+    "type 10 mosquito": 6,
+    "type 11 seed": 9,
+    "type 13 bee": 4,
+    "type 25 (looks like: winged moth)": 1,
+    "type 26 (unnamed)": 1,
+    "type 27 (unnamed)": 1,
+    "type 35 harvester": 1,
+    "type 39 pill bug": 2,
+    "type 40 caterpillar": 2
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     63740,
+     56996
+    ],
+    "stored_xz": [
+     1991.875,
+     1781.125
+    ],
+    "heading": 2609,
+    "va": "0x004DC83C",
+    "file_offset": 898108,
+    "native_start_y": -1440.25,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "74489f5fae0093ccf8f508bbaee47010e031ad409eddda9c25246fae67616dd3"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 21830,
+     "packet_sha256": "dd8efe9228c587a3296a363cd5a6d79db7c4b514965300111a33611b339bf91b"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 266436,
+     "packet_sha256": "34595c85442f1aac63765714e406ad5e9b0ec557c54738e5203482dbc3ce4158"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 44450,
+     "packet_sha256": "d5d0f9be6601f1b0cc6683b7b1992c5f4b8b26353900dad738eea0f207c536ed"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 135131,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 16,
+     "width": 256,
+     "packet_offset": 63608,
+     "packet_sha256": "a49549d9742d02a63b6287190651e8fe7e467888bd7ba8fc1a7957c9636bcab0"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 84748,
+     "packet_sha256": "6c6739756b626f803d220683571715ac883002c638c23f985b34475b0c782017"
+    },
+    {
+     "page": 20,
+     "width": 256,
+     "packet_offset": 107678,
+     "packet_sha256": "b629d51b8176b4dd227eb5df1c2b0d11f91419c3e0601cfbe13d40094dce2ca3"
+    },
+    {
+     "page": 26,
+     "width": 256,
+     "packet_offset": 248762,
+     "packet_sha256": "3f26d96e2d017678638aa164c84912b654c016fea03e4d6887ec2562bfe405b4"
+    },
+    {
+     "page": 31,
+     "width": 256,
+     "packet_offset": 123675,
+     "packet_sha256": "7f0ecd480d1f08a0ae88f67c36c5a28272fc13a2649f11c9e10f30e297306c09"
+    }
+   ],
+   "creature_models": {
+    "7": {
+     "packet_offset": 419691,
+     "payload_sha256": "232c874d9e13c5121ffed7a8168c55a0235a8810b6f1969614e0dec87566879e",
+     "vertices": 724,
+     "faces": 184,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 29,
+      "9": 1
+     }
+    },
+    "9": {
+     "packet_offset": 307168,
+     "payload_sha256": "288ef4fc14560c5370b46bb2cb0ca3e0b54f8429202a91d582e87efe0ce02029",
+     "vertices": 280,
+     "faces": 76,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "10": {
+     "packet_offset": 331087,
+     "payload_sha256": "918b9debf124c5a95097fada9592d4f66810fdcfb9791d1741b17ba88d2d7547",
+     "vertices": 310,
+     "faces": 81,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 309770,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "13": {
+     "packet_offset": 351208,
+     "payload_sha256": "b0fe664b2d44a1e7b0b8117dcc4f35ad6c8fdd9dfc89a410e8e525dfa5b81330",
+     "vertices": 490,
+     "faces": 135,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "25": {
+     "packet_offset": 404235,
+     "payload_sha256": "eb825f2d022a62cfc0c7897fc772b06ca0eccd1ea59d9c95ddc36f4cd45f645b",
+     "vertices": 896,
+     "faces": 232,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 4,
+      "9": 1
+     }
+    },
+    "26": {
+     "packet_offset": 390760,
+     "payload_sha256": "5ef0eb6107ddac31dbfe7bdb63591d0206603e0557dc47c4ead3a829d975a94b",
+     "vertices": 628,
+     "faces": 166,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "9": 1
+     }
+    },
+    "27": {
+     "packet_offset": 468541,
+     "payload_sha256": "20d8106a4a36c8b039d15e581be2db5d295484afdd3dc93080a932479132c6d5",
+     "vertices": 1299,
+     "faces": 344,
+     "normal_tables": 1,
+     "opaque_kinds": {
+      "unparsed tail": 2,
+      "261": 4,
+      "9": 1
+     }
+    },
+    "35": {
+     "packet_offset": 487416,
+     "payload_sha256": "7300cf37ac120859c7b110874d3b0de71627ddd65d184158c650b467bc2e0446",
+     "vertices": 659,
+     "faces": 172,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "287": 9
+     }
+    },
+    "39": {
+     "packet_offset": 361250,
+     "payload_sha256": "78813c1cc9d4adf11962099e79e47c1111513001daa5740188801ddb4fdaad6b",
+     "vertices": 502,
+     "faces": 131,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "40": {
+     "packet_offset": 356288,
+     "payload_sha256": "51ce54e6ae2dda59502ee591c852e9ab1c6892480a296f0c546a4687d4366f91",
+     "vertices": 402,
+     "faces": 103,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 4,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 214434,
+     "ordered_pc_sha256": "c16b6b5d61892da1d9cdd46730ea22065823a5d6605bc927523d96a7bb035521",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 3568,
+    "creature_floor_queries": 38
+   },
+   "blender": {
+    "blend_sha256": "5d83a6be1ba77e526294522b69b2db3ac1e210b0f56391844877ab91ccaa9d6d",
+    "saved_objects": 1213,
+    "source_objects_verified": 793,
+    "source_vertices_verified": 29832,
+    "polygons_verified": 19416,
+    "pickups_and_creatures_verified": 115,
+    "collision_triangles_verified": 5396,
+    "packed_textures": 10,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Creature offset model parts",
+     "Distant source objects",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 8,
+   "folder": "work/level-projects/original-levels/14-riverbed-flight",
+   "title": "Riverbed Flight \u2022 progression 14 \u2022 engine 8 \u2022 LEVEL08/LEVEL.DAT",
+   "sources": {
+    "dat": "LEVEL08/LEVEL.DAT",
+    "raw": "LEVEL08/LEVEL.RAW",
+    "terrain": "LEVEL08/TERRAIN.ALL"
+   },
+   "hashes": {
+    "dat": "596a13e3b80765ee81b0331ac74dd66916075683bcd3066ba51729c07e42d7ab",
+    "raw": "79f7592d8de319660c1c4d36a96ebc7e9d5e7d5f01ca68593d588e364a4e2343",
+    "terrain": "adde03ec0126e4e831930fd79ba5a09e2ef40469a5becf783a2d52b56122db3a"
+   },
+   "counts": {
+    "scene_records": 1001,
+    "drawn_objects": 1001,
+    "undispatched_records": 0,
+    "mesh_objects": 1001,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 39992,
+    "faces": 24734,
+    "pickups": 56,
+    "creatures": 61,
+    "creature_types": 7,
+    "other_rows": 212,
+    "collision_sources": 332,
+    "collision_triangles": 9460,
+    "barrier_segments": 1272,
+    "texture_pages": 9
+   },
+   "dispatches": {
+    "0x41": 392,
+    "0x09": 184,
+    "0x01": 211,
+    "0x04": 213,
+    "0x49": 1
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x22 Gold berry": 1,
+    "0x23 Blue berry": 1
+   },
+   "creature_census": {
+    "type 11 seed": 3,
+    "type 13 bee": 16,
+    "type 21 (looks like: ant)": 1,
+    "type 22 (unnamed)": 1,
+    "type 34 (looks like: dragonfly)": 20,
+    "type 37 (looks like: dandelion seed)": 16,
+    "type 40 caterpillar": 4
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     -157682,
+     -12845
+    ],
+    "stored_xz": [
+     -4927.5625,
+     -401.40625
+    ],
+    "heading": 352,
+    "va": "0x004DC848",
+    "file_offset": 898120,
+    "native_start_y": 182.25,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "c6118396fa3330952beb86727e3a87270b0bf7bd00893fa6eed0a6e90481417b"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 24394,
+     "packet_sha256": "da03c79045bb5b9dcdaa629c7f7c2615c7242ef495c7b207d82b8c1c48d56784"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 56312,
+     "packet_sha256": "18ff4f7bf699488cd7220590a94e0b491a8644673cc7980901bb08f4be5c6b9b"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 280106,
+     "packet_sha256": "ddbe3f784e3c430dd5cb164e4536326a4b6ef87c9e8e73bf64fe3c20b4841369"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 139995,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 16,
+     "width": 256,
+     "packet_offset": 67225,
+     "packet_sha256": "a49549d9742d02a63b6287190651e8fe7e467888bd7ba8fc1a7957c9636bcab0"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 88365,
+     "packet_sha256": "aca7573d21d0c791bd879f1596180c020f3c705d21f6662af5640013f9d79604"
+    },
+    {
+     "page": 22,
+     "width": 256,
+     "packet_offset": 111353,
+     "packet_sha256": "3e07450fe349f070669562749a5be9d08ff6cd0fe005e43d3dd1e9e0bedefcaa"
+    },
+    {
+     "page": 26,
+     "width": 256,
+     "packet_offset": 253626,
+     "packet_sha256": "d2afdf55fe7bc4a7db40eac65d8106abc9949f8a0416c304431a3aacf8988ade"
+    }
+   ],
+   "creature_models": {
+    "11": {
+     "packet_offset": 707276,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "13": {
+     "packet_offset": 608861,
+     "payload_sha256": "b0fe664b2d44a1e7b0b8117dcc4f35ad6c8fdd9dfc89a410e8e525dfa5b81330",
+     "vertices": 490,
+     "faces": 135,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "21": {
+     "packet_offset": 695625,
+     "payload_sha256": "fe8462f9a22f12f54c1b7725587ce6de44aa254ee19e6c79638016b3de29b483",
+     "vertices": 1458,
+     "faces": 385,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 10,
+      "9": 1
+     }
+    },
+    "22": {
+     "packet_offset": 648626,
+     "payload_sha256": "64828e4fb404c0c4e26293651c61bdaa15390f6a6b74313f3330a4df689fbc15",
+     "vertices": 697,
+     "faces": 187,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "34": {
+     "packet_offset": 587936,
+     "payload_sha256": "452fc9ab474eea1fed8e9a02b5b956d161a8bcab5b11fd01b5ee8f8d346a0d2d",
+     "vertices": 438,
+     "faces": 116,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "37": {
+     "packet_offset": 620515,
+     "payload_sha256": "fafdfd731706af56e3762e2aeeeec3bdef9eb312df4e80d80eac860cca5ec35d",
+     "vertices": 412,
+     "faces": 114,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "40": {
+     "packet_offset": 613941,
+     "payload_sha256": "51ce54e6ae2dda59502ee591c852e9ab1c6892480a296f0c546a4687d4366f91",
+     "vertices": 402,
+     "faces": 103,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 4,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 185417,
+     "ordered_pc_sha256": "ca783d570a3c81466f5cf054c761dac73aff9f02816a670aef69d3a0c0935423",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 2142,
+    "creature_floor_queries": 61
+   },
+   "blender": {
+    "blend_sha256": "536599a6f83932fba7f891a3e9d979e9049f948af9d9088db6f76fd917b37c10",
+    "saved_objects": 1675,
+    "source_objects_verified": 1001,
+    "source_vertices_verified": 39992,
+    "polygons_verified": 24734,
+    "pickups_and_creatures_verified": 117,
+    "collision_triangles_verified": 9460,
+    "packed_textures": 9,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Collision \u2022 special results",
+     "Creature offset model parts",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 9,
+   "folder": "work/level-projects/original-levels/13-anthill-pt-2",
+   "title": "Anthill Pt 2 \u2022 progression 13 \u2022 engine 9 \u2022 LEVEL09/LEVEL.DAT",
+   "sources": {
+    "dat": "LEVEL09/LEVEL.DAT",
+    "raw": "LEVEL09/LEVEL.RAW",
+    "terrain": "LEVEL09/TERRAIN.ALL"
+   },
+   "hashes": {
+    "dat": "92559f64f0cad9e05d31972757f7f639d86aea713b9fe7698fa455a46ddcddab",
+    "raw": "c9a5456e53db16bb63461c5a2ac4228ac4cd6fb1afd4aed5dfb7daa338f6a57b",
+    "terrain": "9132b16f120a8e4202d97a75decdf1fc785d2150feccdf4a0051c4832eb2d5af"
+   },
+   "counts": {
+    "scene_records": 661,
+    "drawn_objects": 661,
+    "undispatched_records": 0,
+    "mesh_objects": 658,
+    "sprite_objects": 3,
+    "sprite_quads": 63,
+    "vertices": 25219,
+    "faces": 17535,
+    "pickups": 74,
+    "creatures": 26,
+    "creature_types": 9,
+    "other_rows": 89,
+    "collision_sources": 174,
+    "collision_triangles": 6540,
+    "barrier_segments": 301,
+    "texture_pages": 8
+   },
+   "dispatches": {
+    "0x41": 114,
+    "0x09": 362,
+    "0x01": 126,
+    "0x04": 47,
+    "0x0a": 3,
+    "0x49": 9
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x29 Yellow seed token": 1,
+    "0x2A Blue seed token": 4,
+    "0x2B Green seed token": 4,
+    "0x2D Fifth seed token (0059D9AC)": 3,
+    "0x30 Telescope": 3,
+    "0x31 Persistent selector 0x31 (unidentified)": 5
+   },
+   "creature_census": {
+    "type 9 spider": 5,
+    "type 10 mosquito": 2,
+    "type 11 seed": 7,
+    "type 13 bee": 1,
+    "type 15 (unnamed)": 7,
+    "type 22 (unnamed)": 1,
+    "type 23 (unnamed)": 1,
+    "type 24 (unnamed)": 1,
+    "type 28 (looks like: ant)": 1
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     110406,
+     -106246
+    ],
+    "stored_xz": [
+     3450.1875,
+     -3320.1875
+    ],
+    "heading": 4039,
+    "va": "0x004DC854",
+    "file_offset": 898132,
+    "native_start_y": -3833.875,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "3dba0f4bc85da3de88fe2244eb032236e1d3c5335321a5c2485ba2c5c1513d71"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 24342,
+     "packet_sha256": "441e9d7103a9c4dcc378ff470440010d712039fda399300794648e20c3d0c0d3"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 53018,
+     "packet_sha256": "ee857f30e21854600f990e866d8b35235d20afdac10a2d41b819b74cfebc18e4"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 71653,
+     "packet_sha256": "479cbf66b9f014f3a269263e8f5506d6abd8d50174bad6598a6f00a4dfced431"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 162466,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 17,
+     "width": 256,
+     "packet_offset": 276097,
+     "packet_sha256": "9feea486660d7d0a9a001d9cf46b37b4887dfc21cdc850078f4d5172d129f2e1"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 113023,
+     "packet_sha256": "6c6739756b626f803d220683571715ac883002c638c23f985b34475b0c782017"
+    },
+    {
+     "page": 22,
+     "width": 256,
+     "packet_offset": 135953,
+     "packet_sha256": "3e07450fe349f070669562749a5be9d08ff6cd0fe005e43d3dd1e9e0bedefcaa"
+    }
+   ],
+   "creature_models": {
+    "9": {
+     "packet_offset": 546133,
+     "payload_sha256": "288ef4fc14560c5370b46bb2cb0ca3e0b54f8429202a91d582e87efe0ce02029",
+     "vertices": 280,
+     "faces": 76,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "10": {
+     "packet_offset": 582146,
+     "payload_sha256": "918b9debf124c5a95097fada9592d4f66810fdcfb9791d1741b17ba88d2d7547",
+     "vertices": 310,
+     "faces": 81,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 512757,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "13": {
+     "packet_offset": 565543,
+     "payload_sha256": "b0fe664b2d44a1e7b0b8117dcc4f35ad6c8fdd9dfc89a410e8e525dfa5b81330",
+     "vertices": 490,
+     "faces": 135,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "15": {
+     "packet_offset": 507492,
+     "payload_sha256": "996846f913b003cc363f30f0ceacbbb8db65047f86120f8072e6bacbd9ea55c4",
+     "vertices": 539,
+     "faces": 145,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "22": {
+     "packet_offset": 609877,
+     "payload_sha256": "64828e4fb404c0c4e26293651c61bdaa15390f6a6b74313f3330a4df689fbc15",
+     "vertices": 697,
+     "faces": 187,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "23": {
+     "packet_offset": 525742,
+     "payload_sha256": "b1e2bdbea94754552052cd2415050027b1926d143ebb9a1620d2eb71e9ba50a5",
+     "vertices": 722,
+     "faces": 197,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "9": 1
+     }
+    },
+    "24": {
+     "packet_offset": 536598,
+     "payload_sha256": "d8c4d572c89d73352f1e05d04d8cc062773b31a5835e0d0ecac02abe97f5fe91",
+     "vertices": 722,
+     "faces": 197,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "9": 1
+     }
+    },
+    "28": {
+     "packet_offset": 626320,
+     "payload_sha256": "38003cc6075c54c08a31043c5c7e6c8c9000f44af370627d11bb8b11b5dc08ec",
+     "vertices": 808,
+     "faces": 212,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 5,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 251000,
+     "ordered_pc_sha256": "07b966340f2331fca7f8df32654c7af82bfd039d87a103d78e3d35f92033ae0c",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 4334,
+    "creature_floor_queries": 26
+   },
+   "blender": {
+    "blend_sha256": "42bc4b7a78dee4f77b523889d120871e57e55fa2c716539b1fa4b55e680796d9",
+    "saved_objects": 1045,
+    "source_objects_verified": 661,
+    "source_vertices_verified": 25219,
+    "polygons_verified": 17661,
+    "pickups_and_creatures_verified": 100,
+    "collision_triangles_verified": 6540,
+    "packed_textures": 8,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Creature offset model parts",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 10,
+   "folder": "work/level-projects/original-levels/05-riverbed-canyon",
+   "title": "Riverbed Canyon \u2022 progression 5 \u2022 engine 10 \u2022 LEVEL10/LEVEL.DAT",
+   "sources": {
+    "dat": "LEVEL10/LEVEL.DAT",
+    "raw": "LEVEL10/LEVEL.RAW",
+    "terrain": "LEVEL10/TERRAIN.ALL"
+   },
+   "hashes": {
+    "dat": "bba726988e64192d9bff73d5be8c0582f1d6a885b152050ec4e8883983a47319",
+    "raw": "50a1ec79a0d9b55118692dd184778959088487aa397b54c0ff0c33ff56b2fb8c",
+    "terrain": "7a8471bb3fa14769de03edd58c1bae79428476b0c8f90e4bdc6d2e1d20e8206a"
+   },
+   "counts": {
+    "scene_records": 578,
+    "drawn_objects": 578,
+    "undispatched_records": 0,
+    "mesh_objects": 578,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 38000,
+    "faces": 20048,
+    "pickups": 74,
+    "creatures": 64,
+    "creature_types": 10,
+    "other_rows": 99,
+    "collision_sources": 295,
+    "collision_triangles": 6311,
+    "barrier_segments": 1003,
+    "texture_pages": 8
+   },
+   "dispatches": {
+    "0x41": 149,
+    "0x09": 268,
+    "0x01": 161
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x21 Green berry": 1,
+    "0x22 Gold berry": 1,
+    "0x23 Blue berry": 1,
+    "0x24 Purple berry": 1,
+    "0x29 Yellow seed token": 1,
+    "0x2A Blue seed token": 3,
+    "0x2B Green seed token": 4,
+    "0x30 Telescope": 4,
+    "0x31 Persistent selector 0x31 (unidentified)": 4
+   },
+   "creature_census": {
+    "type 6 (unnamed)": 4,
+    "type 10 mosquito": 4,
+    "type 11 seed": 12,
+    "type 13 bee": 11,
+    "type 17 (looks like: long-legged spider)": 6,
+    "type 35 harvester": 1,
+    "type 37 (looks like: dandelion seed)": 13,
+    "type 39 pill bug": 4,
+    "type 40 caterpillar": 4,
+    "type 41 (looks like: centipede)": 5
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     -3625,
+     -273246
+    ],
+    "stored_xz": [
+     -113.28125,
+     -8538.9375
+    ],
+    "heading": 0,
+    "va": "0x004DC860",
+    "file_offset": 898144,
+    "native_start_y": 119.375,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "ca7523f4cb19aaa90f7c17d8b48e49100795c5552e0b89e9b01130f5705884ab"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 29678,
+     "packet_sha256": "6fa3a0cdc683bcbb733b0cebf9a74fa4736231f1e3bb5169c899ccaab7466712"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 57604,
+     "packet_sha256": "f6e0696401ec551456294a12e96273199ca0077d803012b18f30def9142c6b4c"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 139006,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 16,
+     "width": 256,
+     "packet_offset": 70558,
+     "packet_sha256": "a49549d9742d02a63b6287190651e8fe7e467888bd7ba8fc1a7957c9636bcab0"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 91698,
+     "packet_sha256": "c0c130c3e231903482a88a02a1cc0a2135a077bd443da9f8a2a96e9ea673ea3b"
+    },
+    {
+     "page": 25,
+     "width": 256,
+     "packet_offset": 115022,
+     "packet_sha256": "6ac1c5993645c40c29b566961f5c72edbd506fab1a0244f02c7b7678a043e3d2"
+    },
+    {
+     "page": 26,
+     "width": 256,
+     "packet_offset": 252637,
+     "packet_sha256": "d2afdf55fe7bc4a7db40eac65d8106abc9949f8a0416c304431a3aacf8988ade"
+    }
+   ],
+   "creature_models": {
+    "6": {
+     "packet_offset": 612316,
+     "payload_sha256": "41460ead761bb5fff5bcd7d14a942a0251f22d6e3aeb7f7c805d32564ad06f6f",
+     "vertices": 462,
+     "faces": 127,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "10": {
+     "packet_offset": 601921,
+     "payload_sha256": "918b9debf124c5a95097fada9592d4f66810fdcfb9791d1741b17ba88d2d7547",
+     "vertices": 310,
+     "faces": 81,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 560107,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "13": {
+     "packet_offset": 585318,
+     "payload_sha256": "b0fe664b2d44a1e7b0b8117dcc4f35ad6c8fdd9dfc89a410e8e525dfa5b81330",
+     "vertices": 490,
+     "faces": 135,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "17": {
+     "packet_offset": 638903,
+     "payload_sha256": "ff596551ff186c1de46f00f03c0fcedba0dc7e01877fa9b18094d9934e590b7f",
+     "vertices": 456,
+     "faces": 136,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "35": {
+     "packet_offset": 655147,
+     "payload_sha256": "7300cf37ac120859c7b110874d3b0de71627ddd65d184158c650b467bc2e0446",
+     "vertices": 659,
+     "faces": 172,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "287": 9
+     }
+    },
+    "37": {
+     "packet_offset": 556414,
+     "payload_sha256": "fafdfd731706af56e3762e2aeeeec3bdef9eb312df4e80d80eac860cca5ec35d",
+     "vertices": 412,
+     "faces": 114,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "39": {
+     "packet_offset": 617374,
+     "payload_sha256": "78813c1cc9d4adf11962099e79e47c1111513001daa5740188801ddb4fdaad6b",
+     "vertices": 502,
+     "faces": 131,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "40": {
+     "packet_offset": 644242,
+     "payload_sha256": "51ce54e6ae2dda59502ee591c852e9ab1c6892480a296f0c546a4687d4366f91",
+     "vertices": 402,
+     "faces": 103,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 4,
+      "9": 1
+     }
+    },
+    "41": {
+     "packet_offset": 625193,
+     "payload_sha256": "38a21633ec0ac82d91a73fc1b56a09e88004009c6d1e6c475b5a5d230db5ce42",
+     "vertices": 752,
+     "faces": 204,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 269201,
+     "ordered_pc_sha256": "9a1b99405167abcc84b451b16cbe1fc09e19ee0fb7f2bd43067b337640832ef2",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 3433,
+    "creature_floor_queries": 64
+   },
+   "blender": {
+    "blend_sha256": "cd70e04708dff5eef4c82d2e756b2ea837c9a93916eb3ac069dbcd6a0732df21",
+    "saved_objects": 1127,
+    "source_objects_verified": 578,
+    "source_vertices_verified": 38000,
+    "polygons_verified": 20048,
+    "pickups_and_creatures_verified": 138,
+    "collision_triangles_verified": 6311,
+    "packed_textures": 8,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Collision \u2022 special results",
+     "Creature offset model parts",
+     "Distant source objects",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 11,
+   "folder": "work/level-projects/original-levels/06-bird-nest",
+   "title": "Bird Nest \u2022 progression 6 \u2022 engine 11 \u2022 LEVEL01/LEVEL1.DAT",
+   "sources": {
+    "dat": "LEVEL01/LEVEL1.DAT",
+    "raw": "LEVEL01/LEVEL1.RAW",
+    "terrain": "LEVEL01/TERR1.ALL"
+   },
+   "hashes": {
+    "dat": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+    "raw": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+    "terrain": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627"
+   },
+   "counts": {
+    "scene_records": 160,
+    "drawn_objects": 160,
+    "undispatched_records": 0,
+    "mesh_objects": 160,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 5557,
+    "faces": 2937,
+    "pickups": 62,
+    "creatures": 12,
+    "creature_types": 4,
+    "other_rows": 0,
+    "collision_sources": 72,
+    "collision_triangles": 2259,
+    "barrier_segments": 93,
+    "texture_pages": 6
+   },
+   "dispatches": {
+    "0x41": 102,
+    "0x04": 3,
+    "0x09": 41,
+    "0x01": 14
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x22 Gold berry": 1,
+    "0x23 Blue berry": 1,
+    "0x2A Blue seed token": 4,
+    "0x2D Fifth seed token (0059D9AC)": 2
+   },
+   "creature_census": {
+    "type 11 seed": 3,
+    "type 30 (looks like: bird)": 1,
+    "type 34 (looks like: dragonfly)": 4,
+    "type 37 (looks like: dandelion seed)": 4
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     44293,
+     75030
+    ],
+    "stored_xz": [
+     1384.15625,
+     2344.6875
+    ],
+    "heading": 0,
+    "va": "0x004DC86C",
+    "file_offset": 898156,
+    "native_start_y": 80.375,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "2f79dedc7b3aef45b005c05efb7c92d3d3270869f631beca798db7be15553814"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 33038,
+     "packet_sha256": "7c3efe1dc498caa4dcff3ed67fa47b16699a9ce1e6f6949e792d537d51731e15"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 61577,
+     "packet_sha256": "87b397cada9fd7ed4ef36dbb37ef1e4f1d9e377e6eea86c6330386d1bf337e7e"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 150583,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 111369,
+     "packet_sha256": "aca7573d21d0c791bd879f1596180c020f3c705d21f6662af5640013f9d79604"
+    },
+    {
+     "page": 23,
+     "width": 256,
+     "packet_offset": 134357,
+     "packet_sha256": "d41af128409238605d0a7436c24b89cedfff3b1207e0a84d6429e9a2fc9c0ee5"
+    }
+   ],
+   "creature_models": {
+    "11": {
+     "packet_offset": 483883,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "30": {
+     "packet_offset": 505550,
+     "payload_sha256": "9763391cd554c628369748554df516981b06253e8c1c92c9fa865b08d369a66c",
+     "vertices": 1228,
+     "faces": 319,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 42,
+      "9": 1
+     }
+    },
+    "34": {
+     "packet_offset": 497780,
+     "payload_sha256": "452fc9ab474eea1fed8e9a02b5b956d161a8bcab5b11fd01b5ee8f8d346a0d2d",
+     "vertices": 438,
+     "faces": 116,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "37": {
+     "packet_offset": 480190,
+     "payload_sha256": "fafdfd731706af56e3762e2aeeeec3bdef9eb312df4e80d80eac860cca5ec35d",
+     "vertices": 412,
+     "faces": 114,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 251610,
+     "ordered_pc_sha256": "a651a9d7b38ffb670c05c50720bc726aac4c916707880ae002dfc67f8a428e3b",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 3636,
+    "creature_floor_queries": 12
+   },
+   "blender": {
+    "blend_sha256": "82ac56e74e7253590d9cef6103fcc554b4308d334fff1d0ddaaee303502577b5",
+    "saved_objects": 313,
+    "source_objects_verified": 160,
+    "source_vertices_verified": 5557,
+    "polygons_verified": 2937,
+    "pickups_and_creatures_verified": 74,
+    "collision_triangles_verified": 2259,
+    "packed_textures": 6,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Creature offset model parts",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 12,
+   "folder": "work/level-projects/original-levels/11-the-tree",
+   "title": "The Tree \u2022 progression 11 \u2022 engine 12 \u2022 LEVEL02/LEVEL1.DAT",
+   "sources": {
+    "dat": "LEVEL02/LEVEL1.DAT",
+    "raw": "LEVEL02/LEVEL1.RAW",
+    "terrain": "LEVEL02/TERR1.ALL"
+   },
+   "hashes": {
+    "dat": "5e850a16ee98bd9d7feb747b53390babeef372e98a82378f602104cd7ba76471",
+    "raw": "ecfffece1a7196da4d556f9767a3b3c2d18e63e7ae1c8e8cfbd8bff2871f5493",
+    "terrain": "672412e9dc1373c9c6258a8ff0c7f780cf35c69bbf22f6df077ce08c3165c08e"
+   },
+   "counts": {
+    "scene_records": 830,
+    "drawn_objects": 830,
+    "undispatched_records": 0,
+    "mesh_objects": 830,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 34820,
+    "faces": 24692,
+    "pickups": 70,
+    "creatures": 57,
+    "creature_types": 10,
+    "other_rows": 283,
+    "collision_sources": 257,
+    "collision_triangles": 8136,
+    "barrier_segments": 174,
+    "texture_pages": 9
+   },
+   "dispatches": {
+    "0x41": 252,
+    "0x09": 428,
+    "0x49": 36,
+    "0x01": 114
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x22 Gold berry": 1,
+    "0x23 Blue berry": 1,
+    "0x29 Yellow seed token": 3,
+    "0x2B Green seed token": 4,
+    "0x30 Telescope": 2,
+    "0x31 Persistent selector 0x31 (unidentified)": 5
+   },
+   "creature_census": {
+    "type 4 (unnamed)": 3,
+    "type 9 spider": 11,
+    "type 10 mosquito": 15,
+    "type 11 seed": 7,
+    "type 13 bee": 6,
+    "type 14 Dot": 1,
+    "type 31 (looks like: flytrap plant)": 7,
+    "type 32 (looks like: ant)": 5,
+    "type 33 (unnamed)": 1,
+    "type 35 harvester": 1
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     219342,
+     -164697
+    ],
+    "stored_xz": [
+     6854.4375,
+     -5146.78125
+    ],
+    "heading": 419,
+    "va": "0x004DC878",
+    "file_offset": 898168,
+    "native_start_y": -99.625,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "8ae5e6c7d0c6f8b8a4b8f46ed17ebb2ac8d59d4e861b2fd71aacaf70d688ef59"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 26025,
+     "packet_sha256": "47cc3fb20888fac5c0b215b37b898ee82045a26850cdfc23fa6b88ca0d21386a"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 53362,
+     "packet_sha256": "e33c4f71eeed4b0d01a871aace32d9c7346b753a28d837ecdc8019f81195ff64"
+    },
+    {
+     "page": 3,
+     "width": 256,
+     "packet_offset": 270253,
+     "packet_sha256": "a9a285a32cb9130fc388cbf7c0c7c18e2720915eb2a15d349e3cf3ff742ea595"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 76109,
+     "packet_sha256": "25d9b6b1ae0cba63173747385dd44c4bf2d584112a6a07a541f800646f07d0d4"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 156622,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 16,
+     "width": 256,
+     "packet_offset": 93765,
+     "packet_sha256": "a49549d9742d02a63b6287190651e8fe7e467888bd7ba8fc1a7957c9636bcab0"
+    },
+    {
+     "page": 17,
+     "width": 256,
+     "packet_offset": 137835,
+     "packet_sha256": "9feea486660d7d0a9a001d9cf46b37b4887dfc21cdc850078f4d5172d129f2e1"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 114905,
+     "packet_sha256": "6c6739756b626f803d220683571715ac883002c638c23f985b34475b0c782017"
+    }
+   ],
+   "creature_models": {
+    "4": {
+     "packet_offset": 372676,
+     "payload_sha256": "655567497a33f094b8457f24799f36f30f4207287b7956aa9c77f79b4517edd6",
+     "vertices": 596,
+     "faces": 152,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "9": 1
+     }
+    },
+    "9": {
+     "packet_offset": 295685,
+     "payload_sha256": "288ef4fc14560c5370b46bb2cb0ca3e0b54f8429202a91d582e87efe0ce02029",
+     "vertices": 280,
+     "faces": 76,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "10": {
+     "packet_offset": 340101,
+     "payload_sha256": "918b9debf124c5a95097fada9592d4f66810fdcfb9791d1741b17ba88d2d7547",
+     "vertices": 310,
+     "faces": 81,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 318784,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "13": {
+     "packet_offset": 315095,
+     "payload_sha256": "b0fe664b2d44a1e7b0b8117dcc4f35ad6c8fdd9dfc89a410e8e525dfa5b81330",
+     "vertices": 490,
+     "faces": 135,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "14": {
+     "packet_offset": 355984,
+     "payload_sha256": "879279de675026e5c0025b25c3749032a91916b04c50f5f2a7869227f8a43cff",
+     "vertices": 600,
+     "faces": 160,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "31": {
+     "packet_offset": 352023,
+     "payload_sha256": "deb26791b78738324fa83c85f07a4bc33ae3f896698e445d52f7d1836f8bf3ee",
+     "vertices": 288,
+     "faces": 72,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "32": {
+     "packet_offset": 345927,
+     "payload_sha256": "c6ce4be27c14e5fe9ae6f285c1f143c861cbf86532859ebe4db7e9b22056a7bc",
+     "vertices": 673,
+     "faces": 183,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 4,
+      "9": 1
+     }
+    },
+    "33": {
+     "packet_offset": 380174,
+     "payload_sha256": "40bc2ee70da7d0550907c3ce37593bb65aa3e27612ec9373cfba45f611651d27",
+     "vertices": 710,
+     "faces": 190,
+     "normal_tables": 3,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 8,
+      "9": 1
+     }
+    },
+    "35": {
+     "packet_offset": 394524,
+     "payload_sha256": "7300cf37ac120859c7b110874d3b0de71627ddd65d184158c650b467bc2e0446",
+     "vertices": 659,
+     "faces": 172,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "287": 9
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 486982,
+     "ordered_pc_sha256": "021bd05d5f146c325f7250aae28098623c6aef990f94b07ab8bf68e883c669d8",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 5221,
+    "creature_floor_queries": 57
+   },
+   "blender": {
+    "blend_sha256": "2bcb105bcd177ad89ca599f07b6b440eb24cc2581c285d2ddae3b86f9c852770",
+    "saved_objects": 1509,
+    "source_objects_verified": 830,
+    "source_vertices_verified": 34820,
+    "polygons_verified": 24692,
+    "pickups_and_creatures_verified": 127,
+    "collision_triangles_verified": 8136,
+    "packed_textures": 9,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Creature offset model parts",
+     "Distant source objects",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 13,
+   "folder": "work/level-projects/original-levels/12-battle-arena",
+   "title": "Battle Arena \u2022 progression 12 \u2022 engine 13 \u2022 LEVEL03/LEVEL1.DAT",
+   "sources": {
+    "dat": "LEVEL03/LEVEL1.DAT",
+    "raw": "LEVEL03/LEVEL1.RAW",
+    "terrain": "LEVEL03/TERR1.ALL"
+   },
+   "hashes": {
+    "dat": "c0a1d40cb912162ee5ace15efed11022b4852a55238f238a1b650030f1dfb48d",
+    "raw": "67c9b8e4bd2b7fc7339eb564bf4de419f0780c07f28f3ca2977854213c495b1f",
+    "terrain": "266678bbfa0475ebb14a07295f5122fc9d5be2614a53c20c6ce4d762181c0f3c"
+   },
+   "counts": {
+    "scene_records": 318,
+    "drawn_objects": 317,
+    "undispatched_records": 1,
+    "mesh_objects": 316,
+    "sprite_objects": 1,
+    "sprite_quads": 13,
+    "vertices": 9966,
+    "faces": 6846,
+    "pickups": 61,
+    "creatures": 5,
+    "creature_types": 3,
+    "other_rows": 0,
+    "collision_sources": 11,
+    "collision_triangles": 651,
+    "barrier_segments": 95,
+    "texture_pages": 7
+   },
+   "dispatches": {
+    "0x41": 64,
+    "0x49": 63,
+    "0x01": 36,
+    "0x09": 153,
+    "0x02": 1,
+    "0x83": 1
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x2B Green seed token": 3,
+    "0x2C Fourth seed token (0059D9AB)": 4
+   },
+   "creature_census": {
+    "type 9 spider": 3,
+    "type 11 seed": 1,
+    "type 29 (looks like: grasshopper)": 1
+   },
+   "unavailable_pages": {},
+   "undispatched": [
+    {
+     "id": "primary.165",
+     "flags": 147,
+     "record_offset": 4288,
+     "object_offset": 12056,
+     "geometry_offset": 205652
+    }
+   ],
+   "spawn": {
+    "runtime_xz": [
+     60029,
+     -263118
+    ],
+    "stored_xz": [
+     1875.90625,
+     -8222.4375
+    ],
+    "heading": 0,
+    "va": "0x004DC884",
+    "file_offset": 898180,
+    "native_start_y": -3651.25,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "0e37bf9028c475f717a6998a3a5fbcd162e1b29e082a27e64c11339a27ff459d"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 22709,
+     "packet_sha256": "4b1a536446aeff9a6022f5061208c86810779088479b786b08ccc8601afcbae9"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 50443,
+     "packet_sha256": "c3e341b90dae2c1cc9b86ee5e36410b74fb31e487386c865339462847829a066"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 71430,
+     "packet_sha256": "c41ab01b72360897f8cbfe09beb7443685ceab06c56bf20ff72448f83d0f8512"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 162765,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 113225,
+     "packet_sha256": "6c6739756b626f803d220683571715ac883002c638c23f985b34475b0c782017"
+    },
+    {
+     "page": 21,
+     "width": 256,
+     "packet_offset": 136155,
+     "packet_sha256": "365a43c3156bc817ede5bfac1f8937cfe21af47630a737a8b51f3676f26a6c59"
+    }
+   ],
+   "creature_models": {
+    "9": {
+     "packet_offset": 467254,
+     "payload_sha256": "288ef4fc14560c5370b46bb2cb0ca3e0b54f8429202a91d582e87efe0ce02029",
+     "vertices": 280,
+     "faces": 76,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 469856,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "29": {
+     "packet_offset": 490439,
+     "payload_sha256": "a9e78a1b0bc7255af1b383ec89d456f2057923a7242513c59305886055cc40c5",
+     "vertices": 673,
+     "faces": 180,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 4,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 191447,
+     "ordered_pc_sha256": "46be9f9bd3f6c34cfbe1fbb55562ea517d80b1fb30a55e96b6151f130aff8165",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 2327,
+    "creature_floor_queries": 5
+   },
+   "blender": {
+    "blend_sha256": "7e10af5b6669d025ed93ec5873acf1d20ea45d41d6507a1720e15b14aca20c74",
+    "saved_objects": 408,
+    "source_objects_verified": 317,
+    "source_vertices_verified": 9966,
+    "polygons_verified": 6832,
+    "pickups_and_creatures_verified": 66,
+    "collision_triangles_verified": 651,
+    "packed_textures": 7,
+    "degenerate_faces_dropped": {
+     "scenery": 40,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Creature offset model parts",
+     "Distant source objects",
+     "Secondary scene",
+     "Undispatched records",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 14,
+   "folder": "work/level-projects/original-levels/09-bug-bar",
+   "title": "Bug Bar \u2022 progression 9 \u2022 engine 14 \u2022 LEVEL04/LEVEL1.DAT",
+   "sources": {
+    "dat": "LEVEL04/LEVEL1.DAT",
+    "raw": "LEVEL04/LEVEL1.RAW",
+    "terrain": "LEVEL04/TERR1.ALL"
+   },
+   "hashes": {
+    "dat": "a81f2397d32983014b5f3354e1dece7604168f84a998572ef1d9a8bada1d4dd2",
+    "raw": "71ceb765fc4c08ea5e80d7584eaab2afafbee48b8d2ccb19b5651a824f3b87bf",
+    "terrain": "fb1efb453c41e2b8180a840819f1ee384ef7f979e770d59a7026ccaec5d705a1"
+   },
+   "counts": {
+    "scene_records": 11,
+    "drawn_objects": 11,
+    "undispatched_records": 0,
+    "mesh_objects": 11,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 2244,
+    "faces": 1906,
+    "pickups": 6,
+    "creatures": 1,
+    "creature_types": 1,
+    "other_rows": 348,
+    "collision_sources": 1,
+    "collision_triangles": 504,
+    "barrier_segments": 41,
+    "texture_pages": 4
+   },
+   "dispatches": {
+    "0x49": 9,
+    "0x4c": 1,
+    "0x09": 1
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x22 Gold berry": 1,
+    "0x23 Blue berry": 1
+   },
+   "creature_census": {
+    "type 36 (unnamed)": 1
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     -81128,
+     0
+    ],
+    "stored_xz": [
+     -2535.25,
+     0.0
+    ],
+    "heading": 3072,
+    "va": "0x004DC890",
+    "file_offset": 898192,
+    "native_start_y": 127.875,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "d148fcb49e06748924455b2c66851b2a8f10f342e9c064fe67c5f44600060bf5"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 19957,
+     "packet_sha256": "b4ad7a4e787eaa78582125f39c61140675f0c0778acd8e357e6d53be8fe51fa3"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 42057,
+     "packet_sha256": "3fe4880c43d6b93baa9cd95f8e1763af5e18f2fe1df8d9c9873e5bc5b32b28dc"
+    },
+    {
+     "page": 21,
+     "width": 256,
+     "packet_offset": 65062,
+     "packet_sha256": "365a43c3156bc817ede5bfac1f8937cfe21af47630a737a8b51f3676f26a6c59"
+    }
+   ],
+   "creature_models": {
+    "36": {
+     "packet_offset": 387919,
+     "payload_sha256": "81246e7918ea79abed967d9a44e82abb73a43ab026a9a56e4df1f790a628fb9d",
+     "vertices": 586,
+     "faces": 161,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 2,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 11331,
+     "ordered_pc_sha256": "e57e515e3ee8a484261c1288f55cb86cf3937d1dc1d4856605ca5b92c08197cb",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 2160,
+    "creature_floor_queries": 1
+   },
+   "blender": {
+    "blend_sha256": "55e25576882746f677558dbdb72433494f4ef10724ab43dd5a8268321ecbdd70",
+    "saved_objects": 371,
+    "source_objects_verified": 11,
+    "source_vertices_verified": 2244,
+    "polygons_verified": 1906,
+    "pickups_and_creatures_verified": 7,
+    "collision_triangles_verified": 504,
+    "packed_textures": 4,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 15,
+   "folder": "work/level-projects/original-levels/15-canyon-showdown",
+   "title": "Canyon Showdown \u2022 progression 15 \u2022 engine 15 \u2022 LEVEL05/LEVEL1.DAT",
+   "sources": {
+    "dat": "LEVEL05/LEVEL1.DAT",
+    "raw": "LEVEL05/LEVEL1.RAW",
+    "terrain": "LEVEL05/TERR1.ALL"
+   },
+   "hashes": {
+    "dat": "46e24f7566aa7592d8b118369088f5ca34ec05df028dd72383fed382cf4cc30b",
+    "raw": "3bd5e71140f1d25b60c8be54f712de6f84c4e98d9bfa507003e8574305d9716c",
+    "terrain": "123969b6540c66e80fa35c73276d227d4c23492347dfaabf7bdab3098e7b0307"
+   },
+   "counts": {
+    "scene_records": 836,
+    "drawn_objects": 836,
+    "undispatched_records": 0,
+    "mesh_objects": 836,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 37700,
+    "faces": 26465,
+    "pickups": 69,
+    "creatures": 25,
+    "creature_types": 4,
+    "other_rows": 345,
+    "collision_sources": 349,
+    "collision_triangles": 9105,
+    "barrier_segments": 372,
+    "texture_pages": 9
+   },
+   "dispatches": {
+    "0x41": 154,
+    "0x49": 83,
+    "0x09": 353,
+    "0x01": 241,
+    "0x0c": 5
+   },
+   "pickup_census": {
+    "0x10 Letter F": 1,
+    "0x11 Letter L": 1,
+    "0x12 Letter I": 1,
+    "0x13 Letter K": 1,
+    "0x14 Grain": 50,
+    "0x22 Gold berry": 1,
+    "0x23 Blue berry": 3,
+    "0x29 Yellow seed token": 1,
+    "0x2A Blue seed token": 3,
+    "0x30 Telescope": 2,
+    "0x31 Persistent selector 0x31 (unidentified)": 5
+   },
+   "creature_census": {
+    "type 11 seed": 7,
+    "type 15 (unnamed)": 16,
+    "type 22 (unnamed)": 1,
+    "type 30 (looks like: bird)": 1
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     178426,
+     150035
+    ],
+    "stored_xz": [
+     5575.8125,
+     4688.59375
+    ],
+    "heading": 2253,
+    "va": "0x004DC89C",
+    "file_offset": 898204,
+    "native_start_y": -7.875,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "9223bc0fe66f5b6f238691cea0e45c7a0a9226d05ffe69d22551cdd8096813d2"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 32697,
+     "packet_sha256": "a0507c4d0d6089b4156c78a7d895f82e240426704d961bb39d716c47b542700b"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 58744,
+     "packet_sha256": "f0daf66bd6f38a1825b5ebb9be23cb08e014ac20ce3a3ec0091b8af7d4229433"
+    },
+    {
+     "page": 3,
+     "width": 256,
+     "packet_offset": 282177,
+     "packet_sha256": "11ac65b4a61cdeb0047dfb2e264c498be86c16903a1c063228d3c459f537cf2d"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 84287,
+     "packet_sha256": "4d8ab92ab3bdfef0a16be61e83807496ebe4a9e60eb4ca73bea6292214df3554"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 168546,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 120183,
+     "packet_sha256": "6c6739756b626f803d220683571715ac883002c638c23f985b34475b0c782017"
+    },
+    {
+     "page": 22,
+     "width": 256,
+     "packet_offset": 143113,
+     "packet_sha256": "3e07450fe349f070669562749a5be9d08ff6cd0fe005e43d3dd1e9e0bedefcaa"
+    },
+    {
+     "page": 23,
+     "width": 256,
+     "packet_offset": 288094,
+     "packet_sha256": "d41af128409238605d0a7436c24b89cedfff3b1207e0a84d6429e9a2fc9c0ee5"
+    }
+   ],
+   "creature_models": {
+    "11": {
+     "packet_offset": 616942,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    },
+    "15": {
+     "packet_offset": 611677,
+     "payload_sha256": "996846f913b003cc363f30f0ceacbbb8db65047f86120f8072e6bacbd9ea55c4",
+     "vertices": 539,
+     "faces": 145,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "22": {
+     "packet_offset": 649763,
+     "payload_sha256": "64828e4fb404c0c4e26293651c61bdaa15390f6a6b74313f3330a4df689fbc15",
+     "vertices": 697,
+     "faces": 187,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 2,
+      "287": 2,
+      "9": 1
+     }
+    },
+    "30": {
+     "packet_offset": 659894,
+     "payload_sha256": "9763391cd554c628369748554df516981b06253e8c1c92c9fa865b08d369a66c",
+     "vertices": 1228,
+     "faces": 319,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "287": 42,
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 232093,
+     "ordered_pc_sha256": "5d97f52980c0e052987f12e372978d95203d65f098c20e4f8963f1637accbb3e",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 1215,
+    "creature_floor_queries": 25
+   },
+   "blender": {
+    "blend_sha256": "b33b8c965bd744d96a346beffb7ee34f326d8b57bd48cab2e34a77957e52d866",
+    "saved_objects": 1635,
+    "source_objects_verified": 836,
+    "source_vertices_verified": 37700,
+    "polygons_verified": 26465,
+    "pickups_and_creatures_verified": 94,
+    "collision_triangles_verified": 9105,
+    "packed_textures": 9,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Creature offset model parts",
+     "Distant source objects",
+     "Other stored rows",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  },
+  {
+   "engine": 16,
+   "folder": "work/level-projects/original-levels/engine16-special-stage",
+   "title": "Special stage (engine 16) \u2022 no carousel position \u2022 engine 16 \u2022 LEVEL06/LEVEL1.DAT",
+   "sources": {
+    "dat": "LEVEL06/LEVEL1.DAT",
+    "raw": "LEVEL06/LEVEL1.RAW",
+    "terrain": "LEVEL06/TERR1.ALL"
+   },
+   "hashes": {
+    "dat": "7aab378d952f807ef283e93e90fc1c6f0f060e774a9c315f75b37c1cf54c2f13",
+    "raw": "dba053d0ba9ef686a6f30d77fb3801f9c8298924f3659311cf0d05a6259f1e4d",
+    "terrain": "b024e1c0cbfb3e7070e13a0e62d76030433b416289aff0123fdb3207ba7dafc2"
+   },
+   "counts": {
+    "scene_records": 100,
+    "drawn_objects": 100,
+    "undispatched_records": 0,
+    "mesh_objects": 100,
+    "sprite_objects": 0,
+    "sprite_quads": 0,
+    "vertices": 5164,
+    "faces": 3412,
+    "pickups": 7,
+    "creatures": 32,
+    "creature_types": 2,
+    "other_rows": 0,
+    "collision_sources": 63,
+    "collision_triangles": 2521,
+    "barrier_segments": 56,
+    "texture_pages": 6
+   },
+   "dispatches": {
+    "0x41": 59,
+    "0x49": 6,
+    "0x01": 29,
+    "0x4c": 1,
+    "0x09": 4,
+    "0x0c": 1
+   },
+   "pickup_census": {
+    "0x29 Yellow seed token": 3,
+    "0x2B Green seed token": 4
+   },
+   "creature_census": {
+    "type 9 spider": 11,
+    "type 11 seed": 21
+   },
+   "unavailable_pages": {},
+   "undispatched": [],
+   "spawn": {
+    "runtime_xz": [
+     0,
+     0
+    ],
+    "stored_xz": [
+     0.0,
+     0.0
+    ],
+    "heading": 3760,
+    "va": "0x004DC8A8",
+    "file_offset": 898216,
+    "native_start_y": -108.0,
+    "height_rule": "0043E6B0: Y=0x80000000 through 004AC460, minus 0x100"
+   },
+   "textures": [
+    {
+     "page": 0,
+     "width": 256,
+     "packet_offset": 0,
+     "packet_sha256": "32fce5899a43d1eb9b9402332334de260c94be813f1dfa2a206ccfa47f9c45bb"
+    },
+    {
+     "page": 1,
+     "width": 256,
+     "packet_offset": 21345,
+     "packet_sha256": "322212c44853910c89e5c8a97cebc0b07ba485be9533da6e351f0c56d53ba0b5"
+    },
+    {
+     "page": 2,
+     "width": 256,
+     "packet_offset": 39884,
+     "packet_sha256": "29948ac1d3fe97e8a181f9d45a389d51dfce019e267e261d5cba980c08a6aa77"
+    },
+    {
+     "page": 4,
+     "width": 256,
+     "packet_offset": 45347,
+     "packet_sha256": "3c18a724395bc07ffda4dbd6c539f5b9620136b8cdafc4b8cff61c799fa41327"
+    },
+    {
+     "page": 11,
+     "width": 256,
+     "packet_offset": 129429,
+     "packet_sha256": "8f7b2fcd46d20805b80d7970b677351c858990827b42d866eae63e14a0fba272"
+    },
+    {
+     "page": 18,
+     "width": 256,
+     "packet_offset": 77855,
+     "packet_sha256": "6c6739756b626f803d220683571715ac883002c638c23f985b34475b0c782017"
+    }
+   ],
+   "creature_models": {
+    "9": {
+     "packet_offset": 474074,
+     "payload_sha256": "288ef4fc14560c5370b46bb2cb0ca3e0b54f8429202a91d582e87efe0ce02029",
+     "vertices": 280,
+     "faces": 76,
+     "normal_tables": 0,
+     "opaque_kinds": {
+      "261": 1,
+      "9": 1
+     }
+    },
+    "11": {
+     "packet_offset": 476676,
+     "payload_sha256": "4f78e3c99309aed8e6adcee4b178cbd256a28c561a3c35c4322ac425cfedd816",
+     "vertices": 1030,
+     "faces": 264,
+     "normal_tables": 4,
+     "opaque_kinds": {
+      "9": 1
+     }
+    }
+   },
+   "native": {
+    "pickup_initializer": {
+     "entry": "0x00456a90",
+     "stop": "0x03000000",
+     "eax_at_stop": 33570816,
+     "instruction_count": 31073,
+     "ordered_pc_sha256": "9a6846066644d37b42127ee75564bf5f05d23029e4df12a3766d72b79622d85a",
+     "entry_visits": {}
+    },
+    "start_floor_instructions": 12712,
+    "creature_floor_queries": 32
+   },
+   "blender": {
+    "blend_sha256": "826bdc0b0cdf183f48dc9ec980a71aca5eabc3ae87d9514a22db9045f6b1bc14",
+    "saved_objects": 227,
+    "source_objects_verified": 100,
+    "source_vertices_verified": 5164,
+    "polygons_verified": 3412,
+    "pickups_and_creatures_verified": 39,
+    "collision_triangles_verified": 2521,
+    "packed_textures": 6,
+    "degenerate_faces_dropped": {
+     "scenery": 0,
+     "creatures": 0
+    },
+    "hidden_layers": [
+     "Collision surfaces",
+     "Creature offset model parts",
+     "Distant source objects",
+     "Secondary scene",
+     "XZ barriers"
+    ],
+    "blender_version": "5.2.0 LTS",
+    "save_reopen": "passed"
+   }
+  }
+ ]
+}

@@ -1,0 +1,1692 @@
+{
+  "experiment": "EXP-20260905-001",
+  "executed_plan_experiment": "EXP-20260904-011",
+  "status": "completed-bounded-live-comparison-original-restored",
+  "result": "Alternate top diagonals remove all six residual fragments at the preserved paused pose, with all 255 earlier fixes retained. Restoring the finer control returns all six; restoring the original mesh returns all 259 analytic samples. Both control ROIs restore exactly.",
+  "authorization": {
+    "experiment": "EXP-20260904-011",
+    "plan_sha256": "3c808a26cfca977045b23aabf8c8323ead9d10c2ceafcde22875aef7b076063f",
+    "operator_sha256": "3bd8d81482ce7760070c2a57b61a8ce6bde65e18803f14838887ce03481ceae3",
+    "memory_write_labels": [
+      "apply_control",
+      "apply_diagonal",
+      "restore_control",
+      "restore_original"
+    ],
+    "brief_process_stops_and_read_only_register_inspection": true,
+    "user_text": "You may run the live comparison using four guarded memory writes, brief process stops/register reads, and exact restoration\n  afterward",
+    "authorized_at": 1788613045.1222568
+  },
+  "process": {
+    "pid": 46701,
+    "start": 1147812,
+    "group": 46458,
+    "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\auto-hardware\\bugs.exe log cheat mpeg                                                                                                   "
+  },
+  "state": {
+    "level": 1,
+    "position": [
+      163024,
+      -102401,
+      509900
+    ],
+    "terrain_base": 0,
+    "barrier_head": 7152075,
+    "contact": [
+      99,
+      6973595
+    ],
+    "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+    "camera_translation": [
+      190254,
+      -115203,
+      500135
+    ]
+  },
+  "executed_game_sha256": "1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f",
+  "retail_static_executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "candidate_level_dat_sha256": "572d244f1cc053ef29d2c343e4311a6ff20237c2259c5e84867bade53d57c247",
+  "terrain_sha256": "26f3e0235533419a80b2a0eff18f423fadc20617a6c2ed2be445abeae87b35d5",
+  "collision_prefix_sha256": "068f8a4925848faabe608e04631aacac93d2597594c1f8bc8701e271bc94413f",
+  "collision_guard": "530 bytes at 0x006A6863 compared before/after every phase and in restored preflight; no collision write.",
+  "render_change": "Same 45 vertex records, 33 faces and zero object depth offset. One-corner rotation of 16 top quads and paired UV fields; 138 differing bytes inside the 256-byte table at 0x006664DB.",
+  "writes": [
+    {
+      "phase": "apply_control",
+      "attempt": 3,
+      "time": 1788613047.1449063,
+      "frame_chain": [
+        [
+          "0x97fe18",
+          "0x7bb1a71d"
+        ],
+        [
+          "0x97fe48",
+          "0x405b74"
+        ]
+      ],
+      "renderer_return": "0x44dbf3",
+      "frame_end_gate": true,
+      "address": "0x6662a7",
+      "bytes": 1078,
+      "before_prefix_sha256": "6741aab66d6a191f1e9285a92a0ca4edc3fb5157a384062a6ba52c79b9fe1554",
+      "target_prefix_sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1",
+      "status": "written-and-verified",
+      "bytes_written": 1078,
+      "after_prefix_sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1",
+      "elapsed_seconds": 0.06352739499561721,
+      "state_after_resume": {
+        "level": 1,
+        "position": [
+          163024,
+          -102401,
+          509900
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6973595
+        ],
+        "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+        "camera_translation": [
+          190254,
+          -115203,
+          500135
+        ]
+      }
+    },
+    {
+      "phase": "apply_diagonal",
+      "attempt": 3,
+      "time": 1788613049.1575253,
+      "frame_chain": [
+        [
+          "0x97fe18",
+          "0x7bb1a71d"
+        ],
+        [
+          "0x97fe48",
+          "0x405b74"
+        ]
+      ],
+      "renderer_return": "0x44dbf3",
+      "frame_end_gate": true,
+      "address": "0x6664db",
+      "bytes": 256,
+      "before_prefix_sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1",
+      "target_prefix_sha256": "e1a21b5f0bf96e7980fa992b94fc0ce4ea246127c5338a8c2ef5d32cd65e3fb5",
+      "status": "written-and-verified",
+      "bytes_written": 256,
+      "after_prefix_sha256": "e1a21b5f0bf96e7980fa992b94fc0ce4ea246127c5338a8c2ef5d32cd65e3fb5",
+      "elapsed_seconds": 0.0629832289996557,
+      "state_after_resume": {
+        "level": 1,
+        "position": [
+          163024,
+          -102401,
+          509900
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6973595
+        ],
+        "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+        "camera_translation": [
+          190254,
+          -115203,
+          500135
+        ]
+      }
+    },
+    {
+      "phase": "restore_control",
+      "attempt": 4,
+      "time": 1788613051.2452419,
+      "frame_chain": [
+        [
+          "0x97fe18",
+          "0x7bb1a71d"
+        ],
+        [
+          "0x97fe48",
+          "0x405b74"
+        ]
+      ],
+      "renderer_return": "0x44dbf3",
+      "frame_end_gate": true,
+      "address": "0x6664db",
+      "bytes": 256,
+      "before_prefix_sha256": "e1a21b5f0bf96e7980fa992b94fc0ce4ea246127c5338a8c2ef5d32cd65e3fb5",
+      "target_prefix_sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1",
+      "status": "written-and-verified",
+      "bytes_written": 256,
+      "after_prefix_sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1",
+      "elapsed_seconds": 0.06596433799859369,
+      "state_after_resume": {
+        "level": 1,
+        "position": [
+          163024,
+          -102401,
+          509900
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6973595
+        ],
+        "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+        "camera_translation": [
+          190254,
+          -115203,
+          500135
+        ]
+      }
+    },
+    {
+      "phase": "restore_original",
+      "attempt": 1,
+      "time": 1788613053.1532664,
+      "frame_chain": [
+        [
+          "0x97fe18",
+          "0x7bb1a71d"
+        ],
+        [
+          "0x97fe48",
+          "0x405b74"
+        ]
+      ],
+      "renderer_return": "0x44dbf3",
+      "frame_end_gate": true,
+      "address": "0x6662a7",
+      "bytes": 1078,
+      "before_prefix_sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1",
+      "target_prefix_sha256": "6741aab66d6a191f1e9285a92a0ca4edc3fb5157a384062a6ba52c79b9fe1554",
+      "status": "written-and-verified",
+      "bytes_written": 1078,
+      "after_prefix_sha256": "6741aab66d6a191f1e9285a92a0ca4edc3fb5157a384062a6ba52c79b9fe1554",
+      "elapsed_seconds": 0.06486925799981691,
+      "state_after_resume": {
+        "level": 1,
+        "position": [
+          163024,
+          -102401,
+          509900
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6973595
+        ],
+        "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+        "camera_translation": [
+          190254,
+          -115203,
+          500135
+        ]
+      }
+    }
+  ],
+  "captures": {
+    "original_before": [
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613045444533876.png",
+        "sha256": "3bfb56478b5c774205c3717dc0dfa9a405b2fe79ca3a0acc0223f06390f2cbf6",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613045923638074.png",
+        "sha256": "b51e501a545a1452821c93ee83eea5b7ff030cc0a75172aba32d3b7d4ce8f0f7",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613046404756321.png",
+        "sha256": "c388d3c41be426af4955decc803f96a7aeaf8981fd38ca3bc7ef8aa371e3c101",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      }
+    ],
+    "control_before": [
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613047454523132.png",
+        "sha256": "377e433b9334c2c7ad0c9c2f9ee8b060df429d91ad885cb9ec034aa2fe308d3f",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613047938066093.png",
+        "sha256": "06a4a1e647a445f870c9d7b115a83e956d151ac95f8b4aad171977d6c78f1983",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613048417938788.png",
+        "sha256": "6cabccdb756a1a0124f88afad431e0929e6a3252488914cb3c5c6d366c7ef8d5",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      }
+    ],
+    "alternate": [
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613049465240915.png",
+        "sha256": "e09eba55ce6d7892a40dedba7dc2b3e48faba252ca545c1540b5c1c41c181d8a",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613049943753377.png",
+        "sha256": "0348e3dbab27067ee9e6855a42922aabfee715fb8dab0d7c8f9f907a31efee5d",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613050424554111.png",
+        "sha256": "32ab216b182c13572b96a963514b1f08cfe73de2f5bec026da96883ecb9f5355",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      }
+    ],
+    "control_restored": [
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613051555023263.png",
+        "sha256": "e1472887636fa95c26be63cb711013fef690bf9f594ad048846b8a0be0b5a111",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613052035746787.png",
+        "sha256": "1cf85fd2366cadfdf7e1612f868a9a9296199db92ca02089595008d0cfa23cfd",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613052514231458.png",
+        "sha256": "7cedc9c8a51fce1bd8a779cf5ead23e129ba2301ee08de73dd19d4ed182514c3",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      }
+    ],
+    "original_restored": [
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613053459589109.png",
+        "sha256": "ac24fd89094d2f16e3c3027dc15486fc94f5847e227463ad340d933dcc4f5dbd",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613053939555605.png",
+        "sha256": "d1a4d0730f47edd3efcd12693893af0ecb5bfacac2d6e9c7f28dc56eca61b6a0",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788613054418777973.png",
+        "sha256": "3bfb56478b5c774205c3717dc0dfa9a405b2fe79ca3a0acc0223f06390f2cbf6",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "roi": [
+      285,
+      285,
+      350,
+      340
+    ],
+    "roi_pixels": 3575,
+    "state_identical_all_15": true,
+    "triplet_roi_identical_each_arm": true,
+    "original_restored_roi_identical": true,
+    "control_restored_roi_identical": true,
+    "blue_filter": "B > R + 6 and B > G + 2",
+    "blue_counts": {
+      "analytic259": {
+        "original_before": [
+          259,
+          259,
+          259
+        ],
+        "control_before": [
+          6,
+          6,
+          6
+        ],
+        "alternate": [
+          0,
+          0,
+          0
+        ],
+        "control_restored": [
+          6,
+          6,
+          6
+        ],
+        "original_restored": [
+          259,
+          259,
+          259
+        ]
+      },
+      "residual6": {
+        "original_before": [
+          6,
+          6,
+          6
+        ],
+        "control_before": [
+          6,
+          6,
+          6
+        ],
+        "alternate": [
+          0,
+          0,
+          0
+        ],
+        "control_restored": [
+          6,
+          6,
+          6
+        ],
+        "original_restored": [
+          6,
+          6,
+          6
+        ]
+      },
+      "prior255": {
+        "original_before": [
+          255,
+          255,
+          255
+        ],
+        "control_before": [
+          0,
+          0,
+          0
+        ],
+        "alternate": [
+          0,
+          0,
+          0
+        ],
+        "control_restored": [
+          0,
+          0,
+          0
+        ],
+        "original_restored": [
+          255,
+          255,
+          255
+        ]
+      }
+    },
+    "selected_residual_rgb": [
+      {
+        "xy": [
+          342,
+          315
+        ],
+        "rgb_by_arm": {
+          "original_before": [
+            [
+              41,
+              40,
+              57
+            ],
+            [
+              41,
+              40,
+              57
+            ],
+            [
+              41,
+              40,
+              57
+            ]
+          ],
+          "control_before": [
+            [
+              41,
+              40,
+              57
+            ],
+            [
+              41,
+              40,
+              57
+            ],
+            [
+              41,
+              40,
+              57
+            ]
+          ],
+          "alternate": [
+            [
+              33,
+              24,
+              24
+            ],
+            [
+              33,
+              24,
+              24
+            ],
+            [
+              33,
+              24,
+              24
+            ]
+          ],
+          "control_restored": [
+            [
+              41,
+              40,
+              57
+            ],
+            [
+              41,
+              40,
+              57
+            ],
+            [
+              41,
+              40,
+              57
+            ]
+          ],
+          "original_restored": [
+            [
+              41,
+              40,
+              57
+            ],
+            [
+              41,
+              40,
+              57
+            ],
+            [
+              41,
+              40,
+              57
+            ]
+          ]
+        }
+      },
+      {
+        "xy": [
+          344,
+          315
+        ],
+        "rgb_by_arm": {
+          "original_before": [
+            [
+              33,
+              32,
+              49
+            ],
+            [
+              33,
+              32,
+              49
+            ],
+            [
+              33,
+              32,
+              49
+            ]
+          ],
+          "control_before": [
+            [
+              33,
+              32,
+              49
+            ],
+            [
+              33,
+              32,
+              49
+            ],
+            [
+              33,
+              32,
+              49
+            ]
+          ],
+          "alternate": [
+            [
+              41,
+              36,
+              24
+            ],
+            [
+              41,
+              36,
+              24
+            ],
+            [
+              41,
+              36,
+              24
+            ]
+          ],
+          "control_restored": [
+            [
+              33,
+              32,
+              49
+            ],
+            [
+              33,
+              32,
+              49
+            ],
+            [
+              33,
+              32,
+              49
+            ]
+          ],
+          "original_restored": [
+            [
+              33,
+              32,
+              49
+            ],
+            [
+              33,
+              32,
+              49
+            ],
+            [
+              33,
+              32,
+              49
+            ]
+          ]
+        }
+      },
+      {
+        "xy": [
+          298,
+          319
+        ],
+        "rgb_by_arm": {
+          "original_before": [
+            [
+              33,
+              28,
+              41
+            ],
+            [
+              33,
+              28,
+              41
+            ],
+            [
+              33,
+              28,
+              41
+            ]
+          ],
+          "control_before": [
+            [
+              33,
+              28,
+              41
+            ],
+            [
+              33,
+              28,
+              41
+            ],
+            [
+              33,
+              28,
+              41
+            ]
+          ],
+          "alternate": [
+            [
+              49,
+              36,
+              24
+            ],
+            [
+              49,
+              36,
+              24
+            ],
+            [
+              49,
+              36,
+              24
+            ]
+          ],
+          "control_restored": [
+            [
+              33,
+              28,
+              41
+            ],
+            [
+              33,
+              28,
+              41
+            ],
+            [
+              33,
+              28,
+              41
+            ]
+          ],
+          "original_restored": [
+            [
+              33,
+              28,
+              41
+            ],
+            [
+              33,
+              28,
+              41
+            ],
+            [
+              33,
+              28,
+              41
+            ]
+          ]
+        }
+      },
+      {
+        "xy": [
+          299,
+          319
+        ],
+        "rgb_by_arm": {
+          "original_before": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ],
+          "control_before": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ],
+          "alternate": [
+            [
+              49,
+              36,
+              24
+            ],
+            [
+              49,
+              36,
+              24
+            ],
+            [
+              49,
+              36,
+              24
+            ]
+          ],
+          "control_restored": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ],
+          "original_restored": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ]
+        }
+      },
+      {
+        "xy": [
+          300,
+          319
+        ],
+        "rgb_by_arm": {
+          "original_before": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ],
+          "control_before": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ],
+          "alternate": [
+            [
+              49,
+              36,
+              24
+            ],
+            [
+              49,
+              36,
+              24
+            ],
+            [
+              49,
+              36,
+              24
+            ]
+          ],
+          "control_restored": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ],
+          "original_restored": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ]
+        }
+      },
+      {
+        "xy": [
+          301,
+          319
+        ],
+        "rgb_by_arm": {
+          "original_before": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ],
+          "control_before": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ],
+          "alternate": [
+            [
+              66,
+              56,
+              33
+            ],
+            [
+              66,
+              56,
+              33
+            ],
+            [
+              66,
+              56,
+              33
+            ]
+          ],
+          "control_restored": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ],
+          "original_restored": [
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ],
+            [
+              24,
+              28,
+              41
+            ]
+          ]
+        }
+      }
+    ],
+    "rgb_roi_sha256": {
+      "original_before": [
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842",
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842",
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842"
+      ],
+      "control_before": [
+        "4af5055892f27632268e90a66544406e9712540b592ae7a84719af66109f366f",
+        "4af5055892f27632268e90a66544406e9712540b592ae7a84719af66109f366f",
+        "4af5055892f27632268e90a66544406e9712540b592ae7a84719af66109f366f"
+      ],
+      "alternate": [
+        "c295ea25404d7853b965e1f061501d321c2db7e2f6655bf15bb2510753ec5971",
+        "c295ea25404d7853b965e1f061501d321c2db7e2f6655bf15bb2510753ec5971",
+        "c295ea25404d7853b965e1f061501d321c2db7e2f6655bf15bb2510753ec5971"
+      ],
+      "control_restored": [
+        "4af5055892f27632268e90a66544406e9712540b592ae7a84719af66109f366f",
+        "4af5055892f27632268e90a66544406e9712540b592ae7a84719af66109f366f",
+        "4af5055892f27632268e90a66544406e9712540b592ae7a84719af66109f366f"
+      ],
+      "original_restored": [
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842",
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842",
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842"
+      ]
+    },
+    "EXP010_roi_matches": {
+      "original_before": true,
+      "control_before": true,
+      "original_restored": true
+    },
+    "control_to_alternate_changed_roi_pixels": 128,
+    "scope": "Frozen EXP009/010/011 pixel selections. ROI also contains legitimately exposed model and textured box pixels; their total difference does not measure defects. No full-frame equality or moving-camera acceptance."
+  },
+  "control": {
+    "suspensions": 15,
+    "accepted_write_stops": 4,
+    "stop_duration_seconds_max": 0.06596433799859369,
+    "stop_duration_seconds_total": 0.9503499149723211,
+    "stop_durations_seconds": [
+      0.06198782999854302,
+      0.06349556399800349,
+      0.06272093799634604,
+      0.06352739499561721,
+      0.06273319700267166,
+      0.06273310699907597,
+      0.06522911099455087,
+      0.0629832289996557,
+      0.06200061999697937,
+      0.06553930399968522,
+      0.06224624199967366,
+      0.062265501997899264,
+      0.06596433799859369,
+      0.06205427999520907,
+      0.06486925799981691
+    ],
+    "frame_end_gate": "Retained EXP010 valid EBP chain: first game return 0x00405B74, enclosing renderer return 0x0044DBF3, bounded Wine PC and 32-bit stack.",
+    "inspection": "Scoped SIGSTOP and read-only PTRACE_SEIZE/INTERRUPT/GETREGS/DETACH; SIGCONT in finally. No register writes or breakpoints.",
+    "restoration": {
+      "time": 1788613078.6269088,
+      "restored": "exact-original-restored",
+      "audit_exact_match": true,
+      "audit_exit_code": 2,
+      "threads": [
+        {
+          "tid": 46701,
+          "state": "R (running)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46704,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46705,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46763,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46764,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46766,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46767,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46769,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46770,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46772,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46777,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46778,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46779,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46780,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46782,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        },
+        {
+          "tid": 46784,
+          "state": "S (sleeping)",
+          "tracer_pid": 0
+        }
+      ],
+      "state": {
+        "level": 1,
+        "position": [
+          163024,
+          -102401,
+          509900
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6973595
+        ],
+        "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+        "camera_translation": [
+          190254,
+          -115203,
+          500135
+        ]
+      },
+      "writes": [
+        {
+          "phase": "apply_control",
+          "address": "0x6662a7",
+          "bytes": 1078,
+          "status": "written-and-verified",
+          "bytes_written": 1078
+        },
+        {
+          "phase": "apply_diagonal",
+          "address": "0x6664db",
+          "bytes": 256,
+          "status": "written-and-verified",
+          "bytes_written": 256
+        },
+        {
+          "phase": "restore_control",
+          "address": "0x6664db",
+          "bytes": 256,
+          "status": "written-and-verified",
+          "bytes_written": 256
+        },
+        {
+          "phase": "restore_original",
+          "address": "0x6662a7",
+          "bytes": 1078,
+          "status": "written-and-verified",
+          "bytes_written": 1078
+        }
+      ]
+    }
+  },
+  "mechanism": {
+    "confirmed": "The same-vertex top diagonal change causally removes the six selected residual fragments at this exact paused pose.",
+    "supported_inference": "Residual depth interpolation error: EXP011 original 0x004498F0 output predicts all six depth-order changes; this live control/alternate/control comparison agrees. No complete rasterizer model is claimed."
+  },
+  "limits": [
+    "Known failure view selected the candidate; no independent camera holdout or oscillating movement test.",
+    "The analytic mask, sample-position sensitivity and partial actor-buffer reconstruction retain EXP009/011 limitations.",
+    "Corner/UV ordering changes texture interpolation as well as depth interpolation; total textured pixel differences are not defect counts.",
+    "General subdivision/diagonal rules, shared-floor return traversal in EXP005 and full level authoring remain open.",
+    "Four-write authority is consumed. The original six-quad mesh is restored in the paused user game; alternate geometry remains offline."
+  ],
+  "validation": {
+    "live_acceptance_assertions": "passed",
+    "image_reader": "system python3 Pillow; project .venv lacks Pillow",
+    "other_runtime_actions": {
+      "gameplay_input": 0,
+      "restarts": 0,
+      "launches": 0,
+      "closes": 0,
+      "register_writes": 0,
+      "collision_writes": 0,
+      "player_camera_writes": 0
+    }
+  },
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260904-011/candidate-plan.json",
+      "bytes": 3855,
+      "sha256": "3c808a26cfca977045b23aabf8c8323ead9d10c2ceafcde22875aef7b076063f"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/authorization.json",
+      "bytes": 593,
+      "sha256": "793b8097ec907f2d0a16cfa98aff06c0c5e103693ac4d6f13936646088293a0b"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/started.json",
+      "bytes": 603,
+      "sha256": "f2ac6188e8850879af6a06196434b72cb11736cb3c6356939d963693d92600f7"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/result.json",
+      "bytes": 21001,
+      "sha256": "27a2c7ffc027b8fae965eb33e67223343f5bd77dd291eb0cc7c5d90266a6287f"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/suspensions.json",
+      "bytes": 22970,
+      "sha256": "782618fd8054235eac383261ea6894687398226f586a2c7ba4da5a8a5d9055d4"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/live_compare.py",
+      "bytes": 5753,
+      "sha256": "3bd8d81482ce7760070c2a57b61a8ce6bde65e18803f14838887ce03481ceae3"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/authorized-pre-audit.json",
+      "bytes": 3443,
+      "sha256": "75a7780fd6396365f6242cdd9693541e8e52d7ee8e1459a8b2a10567b6287a23"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/authorized-post-audit.json",
+      "bytes": 3443,
+      "sha256": "75a7780fd6396365f6242cdd9693541e8e52d7ee8e1459a8b2a10567b6287a23"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/authorized-preflight.json",
+      "bytes": 587,
+      "sha256": "d99f139dd91308cd2d0af921c4eadc7342cd87f11f6e8e3b8055b970d79c1fb7"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/authorized-postflight.json",
+      "bytes": 586,
+      "sha256": "b1894e1eb1911936cabdcd64aff20810093ec34969e42cd976cee9bc5a0fb423"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/authorized-restoration-check.json",
+      "bytes": 2534,
+      "sha256": "2258ad2a1fcc5458651fddb0d0927dab27bc0d91e5e27d1cff0cb6a33ed39c90"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/apply_control-write.json",
+      "bytes": 2225,
+      "sha256": "c55290639538966575d2ce981778e87cecaacedea9e87cb945ac76ee6ca7b200"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/apply_diagonal-write.json",
+      "bytes": 2224,
+      "sha256": "faff6c750e90c51437b1176e9020b716d50b876886c9165e86bc98b2a741a5f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/restore_control-write.json",
+      "bytes": 2226,
+      "sha256": "13f381cc2227a1d90fc6a3e54518662f65c9030d760d2b99161f01536fddc2c6"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/restore_original-write.json",
+      "bytes": 2228,
+      "sha256": "beed42a094cbabec05832666bc2f8bd8431e53d184708d6eeb9ffa3d073b8970"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/original_before-captures.json",
+      "bytes": 1764,
+      "sha256": "d8e98f59341d85339c9ba9f31ec64aa64e52734c586db208069926c3ab7328b8"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/control_before-captures.json",
+      "bytes": 1764,
+      "sha256": "e254611ee63f8ca16a0b5c573c1aa2bf4f4ee3cefede0f200608c5a66ddabbe8"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/alternate-captures.json",
+      "bytes": 1764,
+      "sha256": "7e9478da5992bbd0046be0950992b54e1ddaddc3b5ab13fdf50bb0f55957f531"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/control_restored-captures.json",
+      "bytes": 1764,
+      "sha256": "228f7c3c72be5cd6e29f4e3705508cb131faa76d5408496154bd11a0c6bda494"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/original_restored-captures.json",
+      "bytes": 1764,
+      "sha256": "ae14b92e101d3a63079ab9c3670888cecc07f9ff100a0716498de222cd3d9ed9"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613045444533876.png",
+      "bytes": 164707,
+      "sha256": "3bfb56478b5c774205c3717dc0dfa9a405b2fe79ca3a0acc0223f06390f2cbf6"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613045923638074.png",
+      "bytes": 166091,
+      "sha256": "b51e501a545a1452821c93ee83eea5b7ff030cc0a75172aba32d3b7d4ce8f0f7"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613046404756321.png",
+      "bytes": 164627,
+      "sha256": "c388d3c41be426af4955decc803f96a7aeaf8981fd38ca3bc7ef8aa371e3c101"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613047454523132.png",
+      "bytes": 164216,
+      "sha256": "377e433b9334c2c7ad0c9c2f9ee8b060df429d91ad885cb9ec034aa2fe308d3f"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613047938066093.png",
+      "bytes": 164163,
+      "sha256": "06a4a1e647a445f870c9d7b115a83e956d151ac95f8b4aad171977d6c78f1983"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613048417938788.png",
+      "bytes": 165655,
+      "sha256": "6cabccdb756a1a0124f88afad431e0929e6a3252488914cb3c5c6d366c7ef8d5"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613049465240915.png",
+      "bytes": 165638,
+      "sha256": "e09eba55ce6d7892a40dedba7dc2b3e48faba252ca545c1540b5c1c41c181d8a"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613049943753377.png",
+      "bytes": 164215,
+      "sha256": "0348e3dbab27067ee9e6855a42922aabfee715fb8dab0d7c8f9f907a31efee5d"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613050424554111.png",
+      "bytes": 165580,
+      "sha256": "32ab216b182c13572b96a963514b1f08cfe73de2f5bec026da96883ecb9f5355"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613051555023263.png",
+      "bytes": 165644,
+      "sha256": "e1472887636fa95c26be63cb711013fef690bf9f594ad048846b8a0be0b5a111"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613052035746787.png",
+      "bytes": 164175,
+      "sha256": "1cf85fd2366cadfdf7e1612f868a9a9296199db92ca02089595008d0cfa23cfd"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613052514231458.png",
+      "bytes": 165614,
+      "sha256": "7cedc9c8a51fce1bd8a779cf5ead23e129ba2301ee08de73dd19d4ed182514c3"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613053459589109.png",
+      "bytes": 164727,
+      "sha256": "ac24fd89094d2f16e3c3027dc15486fc94f5847e227463ad340d933dcc4f5dbd"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613053939555605.png",
+      "bytes": 166204,
+      "sha256": "d1a4d0730f47edd3efcd12693893af0ecb5bfacac2d6e9c7f28dc56eca61b6a0"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788613054418777973.png",
+      "bytes": 164707,
+      "sha256": "3bfb56478b5c774205c3717dc0dfa9a405b2fe79ca3a0acc0223f06390f2cbf6"
+    },
+    {
+      "path": "reports/terrain/EXP-20260904-011.json",
+      "bytes": 57489,
+      "sha256": "205a399ee59d8d023bdd9a95cf2821f83533590854b7bbcf323870aace2131bb"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/pixel-depths-exploratory.json",
+      "bytes": 309924,
+      "sha256": "47ccde8def96a7f38fd0b9d963cc76119d68c6c8253a2477b8c837092452177a"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/result.json",
+      "bytes": 11037,
+      "sha256": "f0af6001e97e0c1e3ded937aef4060f4c18651e523f1ae3d67941676a94b6122"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-001/comparison.json",
+      "bytes": 11291,
+      "sha256": "a908162bdd866d322dca3ff0fe2af181c6e49f198b561e7e00e1b405dde6dbd1"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-001/comparison.html",
+      "bytes": 4493,
+      "sha256": "15fbabc8831501d1e5b840e8ce77e2a8d38311fb6d9022d9d74b6d61dbfa10d1"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-001/analyze.py",
+      "bytes": 14496,
+      "sha256": "053566c191d905f1b32b76ebec88f0551d8c6b5f7c6b59dfe6143032e14ec172"
+    }
+  ]
+}

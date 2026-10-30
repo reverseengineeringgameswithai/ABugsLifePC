@@ -1,0 +1,982 @@
+00010000-00110000 rw-p 00000000 00:00 0 
+00110000-00120000 rwxp 00000000 00:00 0 
+00120000-00122000 r-xp 00000000 00:24 3819045                            /usr/share/wine/nls/l_intl.nls
+00122000-00130000 ---p 00000000 00:00 0 
+00130000-00146000 r-xp 00000000 00:24 3825202                            /usr/lib64/wine-wow64/wine/x86_64-windows/apisetschema.dll
+00146000-00150000 ---p 00000000 00:00 0 
+00150000-0016a000 rwxp 00000000 00:00 0 
+0016a000-00170000 ---p 00000000 00:00 0 
+00170000-00176000 rwxp 00000000 00:00 0 
+00176000-00180000 ---p 00000000 00:00 0 
+00180000-00191000 r-xp 00000000 00:24 3818997                            /usr/share/wine/nls/c_1252.nls
+00191000-001a0000 ---p 00000000 00:00 0 
+001a0000-001b1000 r-xp 00000000 00:24 3819021                            /usr/share/wine/nls/c_437.nls
+001b1000-001c0000 ---p 00000000 00:00 0 
+001c0000-001cf000 r-xp 00000000 00:24 3819048                            /usr/share/wine/nls/normnfc.nls
+001cf000-001d0000 ---p 00000000 00:00 0 
+001d0000-001e6000 rwxp 00000000 00:00 0 
+001e6000-001f0000 ---p 00000000 00:00 0 
+001f0000-00200000 rwxp 00000000 00:00 0 
+00200000-00370000 ---p 00000000 00:00 0 
+00370000-00400000 rwxp 00000000 00:00 0 
+00400000-00401000 r-xp 00000000 00:24 8078043                            /home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe
+00401000-004c1000 r-xp 00000000 00:00 0 
+004c1000-00864000 rwxp 00000000 00:00 0 
+00864000-00866000 rwxp 000ec000 00:24 8078043                            /home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe
+00866000-00868000 r-xp 00000000 00:00 0 
+00868000-0087a000 r-xp 000ef000 00:24 8078043                            /home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe
+0087a000-00880000 ---p 00000000 00:00 0 
+00880000-00882000 ---p 00000000 00:00 0 
+00882000-00980000 rwxp 00000000 00:00 0 
+00980000-00a43000 r-xp 00000000 00:24 3819046                            /usr/share/wine/nls/locale.nls
+00a43000-00a50000 ---p 00000000 00:00 0 
+00a50000-00ad0000 rwxp 00000000 00:00 0 
+00ad0000-00e0a000 r-xp 00000000 00:24 3819052                            /usr/share/wine/nls/sortdefault.nls
+00e0a000-00e10000 ---p 00000000 00:00 0 
+00e10000-00e21000 r-xp 00000000 00:24 3819005                            /usr/share/wine/nls/c_20127.nls
+00e21000-00e30000 ---p 00000000 00:00 0 
+00e30000-00f74000 r-xp 00000000 00:35 527032                             /tmp/.wine-1000/server-36-7b0da2/tmpmap-a42e48ad (deleted)
+00f74000-00f80000 ---p 00000000 00:00 0 
+00f80000-01100000 rwxp 00000000 00:00 0 
+01100000-01111000 r-xp 00000000 00:24 3818978                            /usr/share/wine/nls/c_10000.nls
+01111000-01120000 ---p 00000000 00:00 0 
+01120000-01121000 rwxp 00000000 00:00 0 
+01121000-01130000 ---p 00000000 00:00 0 
+01130000-01131000 rwxp 00000000 00:00 0 
+01131000-01140000 ---p 00000000 00:00 0 
+01140000-0187c000 r-xp 00000000 00:24 8072848                            /home/dev/ABLPC/work/wine/baseline/drive_c/windows/resources/themes/light/light.msstyles
+0187c000-01880000 ---p 00000000 00:00 0 
+01880000-01980000 rwxp 00000000 00:00 0 
+01980000-01981000 rwxp 00000000 00:00 0 
+01981000-01990000 ---p 00000000 00:00 0 
+01990000-01996000 rwxp 00000000 00:00 0 
+01996000-019a0000 ---p 00000000 00:00 0 
+019a0000-019a1000 rwxp 00000000 00:00 0 
+019a1000-019b0000 ---p 00000000 00:00 0 
+019b0000-019c0000 rwxp 00000000 00:00 0 
+019c0000-019d0000 ---p 00000000 00:00 0 
+019d0000-019e6000 rwxp 00000000 00:00 0 
+019e6000-019f0000 ---p 00000000 00:00 0 
+019f0000-01a00000 rwxp 00000000 00:00 0 
+01a00000-01df0000 ---p 00000000 00:00 0 
+01df0000-01df1000 rwxp 00000000 00:00 0 
+01df1000-01e00000 ---p 00000000 00:00 0 
+01e00000-01e01000 rwxp 00000000 00:00 0 
+01e01000-01e10000 ---p 00000000 00:00 0 
+01e10000-01e1f000 rwxp 00000000 00:00 0 
+01e1f000-01e20000 ---p 00000000 00:00 0 
+01e20000-01e21000 rwxp 00000000 00:00 0 
+01e21000-01e30000 ---p 00000000 00:00 0 
+01e30000-01e32000 ---p 00000000 00:00 0 
+01e32000-01f30000 rw-p 00000000 00:00 0 
+01f30000-01f32000 ---p 00000000 00:00 0 
+01f32000-02030000 rw-p 00000000 00:00 0 
+02030000-02032000 ---p 00000000 00:00 0 
+02032000-02130000 rw-p 00000000 00:00 0 
+02130000-02730000 rwxp 00000000 00:00 0 
+02730000-02732000 ---p 00000000 00:00 0 
+02732000-02830000 rw-p 00000000 00:00 0 
+02830000-02840000 ---p 00000000 00:00 0 
+02840000-03050000 rwxp 00000000 00:00 0 
+03050000-03052000 ---p 00000000 00:00 0 
+03052000-03150000 rw-p 00000000 00:00 0 
+03150000-033f0000 rwxp 00000000 00:00 0 
+033f0000-033f2000 ---p 00000000 00:00 0 
+033f2000-034f0000 rw-p 00000000 00:00 0 
+034f0000-034f2000 ---p 00000000 00:00 0 
+034f2000-035f0000 rw-p 00000000 00:00 0 
+035f0000-040f0000 ---p 00000000 00:00 0 
+040f0000-04d90000 rwxp 00000000 00:00 0 
+04d90000-050c0000 ---p 00000000 00:00 0 
+050c0000-051c0000 ---p 00000000 00:00 0 
+051c0000-05250000 rwxp 00000000 00:00 0 
+05250000-09250000 rw-s 00000000 00:07 1685                               /dev/nvidiactl
+09250000-09500000 rwxp 00000000 00:00 0 
+09500000-0a2b0000 ---p 00000000 00:00 0 
+0a2b0000-0a610000 rwxp 00000000 00:00 0 
+0a610000-0b280000 ---p 00000000 00:00 0 
+0b280000-68000000 ---p 00000000 00:00 0 
+68000000-680ac000 rw-p 00000000 00:00 0 
+680ac000-680ae000 r-xs 00000000 00:01 75552                              /memfd:/.glXXXXXX (deleted)
+76ee0000-76eec000 r-xp 00000000 00:24 3826092                            /usr/lib64/wine-wow64/wine/i386-windows/winealsa.drv
+76f00000-76f0c000 r-xp 00000000 00:24 3826096                            /usr/lib64/wine-wow64/wine/i386-windows/winepulse.drv
+76f20000-76f23000 r-xp 00000000 00:24 3824965                            /usr/lib64/wine-wow64/wine/i386-windows/version.dll
+76f23000-76f24000 rwxp 00003000 00:24 3824965                            /usr/lib64/wine-wow64/wine/i386-windows/version.dll
+76f24000-76f26000 r-xp 00004000 00:24 3824965                            /usr/lib64/wine-wow64/wine/i386-windows/version.dll
+76f26000-76f27000 rwxp 00000000 00:00 0 
+76f27000-76f3b000 r-xp 00006000 00:24 3824965                            /usr/lib64/wine-wow64/wine/i386-windows/version.dll
+76f50000-76fb2000 r-xp 00000000 00:24 3824797                            /usr/lib64/wine-wow64/wine/i386-windows/oleaut32.dll
+76fb2000-76fb4000 rwxp 00062000 00:24 3824797                            /usr/lib64/wine-wow64/wine/i386-windows/oleaut32.dll
+76fb4000-76fe7000 r-xp 00064000 00:24 3824797                            /usr/lib64/wine-wow64/wine/i386-windows/oleaut32.dll
+76fe7000-77004000 rwxp 00000000 00:00 0 
+77004000-77221000 r-xp 00097000 00:24 3824797                            /usr/lib64/wine-wow64/wine/i386-windows/oleaut32.dll
+77240000-77258000 r-xp 00000000 00:24 3824661                            /usr/lib64/wine-wow64/wine/i386-windows/mmdevapi.dll
+77258000-77259000 rwxp 00018000 00:24 3824661                            /usr/lib64/wine-wow64/wine/i386-windows/mmdevapi.dll
+77259000-77267000 r-xp 00019000 00:24 3824661                            /usr/lib64/wine-wow64/wine/i386-windows/mmdevapi.dll
+77267000-77268000 rwxp 00000000 00:00 0 
+77268000-77320000 r-xp 00027000 00:24 3824661                            /usr/lib64/wine-wow64/wine/i386-windows/mmdevapi.dll
+77330000-77346000 r-xp 00000000 00:24 3824952                            /usr/lib64/wine-wow64/wine/i386-windows/uxtheme.dll
+77346000-77347000 rwxp 00016000 00:24 3824952                            /usr/lib64/wine-wow64/wine/i386-windows/uxtheme.dll
+77347000-77362000 r-xp 00017000 00:24 3824952                            /usr/lib64/wine-wow64/wine/i386-windows/uxtheme.dll
+77362000-77363000 rwxp 00000000 00:00 0 
+77363000-773dc000 r-xp 00032000 00:24 3824952                            /usr/lib64/wine-wow64/wine/i386-windows/uxtheme.dll
+773f0000-773f2000 r-xp 00000000 00:24 3825057                            /usr/lib64/wine-wow64/wine/i386-windows/winex11.drv
+773f2000-773f3000 rwxp 00002000 00:24 3825057                            /usr/lib64/wine-wow64/wine/i386-windows/winex11.drv
+773f3000-773f5000 r-xp 00003000 00:24 3825057                            /usr/lib64/wine-wow64/wine/i386-windows/winex11.drv
+773f5000-773f6000 rwxp 00000000 00:00 0 
+773f6000-77400000 r-xp 00005000 00:24 3825057                            /usr/lib64/wine-wow64/wine/i386-windows/winex11.drv
+77410000-77420000 r-xp 00000000 00:24 3824600                            /usr/lib64/wine-wow64/wine/i386-windows/imm32.dll
+77420000-77421000 rwxp 00010000 00:24 3824600                            /usr/lib64/wine-wow64/wine/i386-windows/imm32.dll
+77421000-77429000 r-xp 00011000 00:24 3824600                            /usr/lib64/wine-wow64/wine/i386-windows/imm32.dll
+77429000-7742a000 rwxp 00000000 00:00 0 
+7742a000-77478000 r-xp 00019000 00:24 3824600                            /usr/lib64/wine-wow64/wine/i386-windows/imm32.dll
+77490000-774a0000 r-xp 00000000 00:24 3824673                            /usr/lib64/wine-wow64/wine/i386-windows/msacm32.dll
+774a0000-774a1000 rwxp 00010000 00:24 3824673                            /usr/lib64/wine-wow64/wine/i386-windows/msacm32.dll
+774a1000-774a7000 r-xp 00011000 00:24 3824673                            /usr/lib64/wine-wow64/wine/i386-windows/msacm32.dll
+774a7000-774a8000 rwxp 00000000 00:00 0 
+774a8000-774f8000 r-xp 00017000 00:24 3824673                            /usr/lib64/wine-wow64/wine/i386-windows/msacm32.dll
+77510000-77534000 r-xp 00000000 00:24 3825066                            /usr/lib64/wine-wow64/wine/i386-windows/winmm.dll
+77534000-77535000 rwxp 00024000 00:24 3825066                            /usr/lib64/wine-wow64/wine/i386-windows/winmm.dll
+77535000-77543000 r-xp 00025000 00:24 3825066                            /usr/lib64/wine-wow64/wine/i386-windows/winmm.dll
+77543000-7754d000 rwxp 00000000 00:00 0 
+7754d000-77682000 r-xp 00033000 00:24 3825066                            /usr/lib64/wine-wow64/wine/i386-windows/winmm.dll
+776a0000-776c1000 r-xp 00000000 00:24 3824528                            /usr/lib64/wine-wow64/wine/i386-windows/dsound.dll
+776c1000-776c2000 rwxp 00021000 00:24 3824528                            /usr/lib64/wine-wow64/wine/i386-windows/dsound.dll
+776c2000-776e7000 r-xp 00022000 00:24 3824528                            /usr/lib64/wine-wow64/wine/i386-windows/dsound.dll
+776e7000-776e8000 rwxp 00000000 00:00 0 
+776e8000-777f2000 r-xp 00047000 00:24 3824528                            /usr/lib64/wine-wow64/wine/i386-windows/dsound.dll
+77810000-7784e000 r-xp 00000000 00:24 3824881                            /usr/lib64/wine-wow64/wine/i386-windows/setupapi.dll
+7784e000-7784f000 rwxp 0003e000 00:24 3824881                            /usr/lib64/wine-wow64/wine/i386-windows/setupapi.dll
+7784f000-77873000 r-xp 0003f000 00:24 3824881                            /usr/lib64/wine-wow64/wine/i386-windows/setupapi.dll
+77873000-77874000 rwxp 00000000 00:00 0 
+77874000-779c5000 r-xp 00063000 00:24 3824881                            /usr/lib64/wine-wow64/wine/i386-windows/setupapi.dll
+779e0000-779e6000 r-xp 00000000 00:24 3824576                            /usr/lib64/wine-wow64/wine/i386-windows/hid.dll
+779e6000-779e7000 rwxp 00006000 00:24 3824576                            /usr/lib64/wine-wow64/wine/i386-windows/hid.dll
+779e7000-779ea000 r-xp 00007000 00:24 3824576                            /usr/lib64/wine-wow64/wine/i386-windows/hid.dll
+779ea000-779eb000 rwxp 00000000 00:00 0 
+779eb000-77a0b000 r-xp 0000a000 00:24 3824576                            /usr/lib64/wine-wow64/wine/i386-windows/hid.dll
+77a20000-77ab5000 r-xp 00000000 00:24 3824396                            /usr/lib64/wine-wow64/wine/i386-windows/comctl32.dll
+77ab5000-77ab6000 rwxp 00095000 00:24 3824396                            /usr/lib64/wine-wow64/wine/i386-windows/comctl32.dll
+77ab6000-77ae2000 r-xp 00096000 00:24 3824396                            /usr/lib64/wine-wow64/wine/i386-windows/comctl32.dll
+77ae2000-77ae4000 rwxp 00000000 00:00 0 
+77ae4000-77ddc000 r-xp 000c2000 00:24 3824396                            /usr/lib64/wine-wow64/wine/i386-windows/comctl32.dll
+77df0000-77e0f000 r-xp 00000000 00:24 3824496                            /usr/lib64/wine-wow64/wine/i386-windows/dinput.dll
+77e0f000-77e10000 rwxp 0001f000 00:24 3824496                            /usr/lib64/wine-wow64/wine/i386-windows/dinput.dll
+77e10000-77e27000 r-xp 00020000 00:24 3824496                            /usr/lib64/wine-wow64/wine/i386-windows/dinput.dll
+77e27000-77e28000 rwxp 00000000 00:00 0 
+77e28000-77ef3000 r-xp 00037000 00:24 3824496                            /usr/lib64/wine-wow64/wine/i386-windows/dinput.dll
+77f10000-77fc6000 r-xp 00000000 00:24 3824808                            /usr/lib64/wine-wow64/wine/i386-windows/opengl32.dll
+77fc6000-77fc9000 rwxp 000b6000 00:24 3824808                            /usr/lib64/wine-wow64/wine/i386-windows/opengl32.dll
+77fc9000-7802e000 r-xp 000b9000 00:24 3824808                            /usr/lib64/wine-wow64/wine/i386-windows/opengl32.dll
+7802e000-7802f000 rwxp 00000000 00:00 0 
+7802f000-78404000 r-xp 0011e000 00:24 3824808                            /usr/lib64/wine-wow64/wine/i386-windows/opengl32.dll
+78420000-78636000 r-xp 00000000 00:24 3825040                            /usr/lib64/wine-wow64/wine/i386-windows/wined3d.dll
+78636000-78637000 rwxp 00216000 00:24 3825040                            /usr/lib64/wine-wow64/wine/i386-windows/wined3d.dll
+78637000-78726000 r-xp 00217000 00:24 3825040                            /usr/lib64/wine-wow64/wine/i386-windows/wined3d.dll
+78726000-7872f000 rwxp 00000000 00:00 0 
+7872f000-79bc6000 r-xp 00306000 00:24 3825040                            /usr/lib64/wine-wow64/wine/i386-windows/wined3d.dll
+79be0000-79c1e000 r-xp 00000000 00:24 3824487                            /usr/lib64/wine-wow64/wine/i386-windows/ddraw.dll
+79c1e000-79c1f000 rwxp 0003e000 00:24 3824487                            /usr/lib64/wine-wow64/wine/i386-windows/ddraw.dll
+79c1f000-79c48000 r-xp 0003f000 00:24 3824487                            /usr/lib64/wine-wow64/wine/i386-windows/ddraw.dll
+79c48000-79c49000 rwxp 00000000 00:00 0 
+79c49000-79e37000 r-xp 00068000 00:24 3824487                            /usr/lib64/wine-wow64/wine/i386-windows/ddraw.dll
+79e50000-79e54000 r-xp 00000000 00:24 3824399                            /usr/lib64/wine-wow64/wine/i386-windows/coml2.dll
+79e54000-79e55000 rwxp 00004000 00:24 3824399                            /usr/lib64/wine-wow64/wine/i386-windows/coml2.dll
+79e55000-79e63000 r-xp 00005000 00:24 3824399                            /usr/lib64/wine-wow64/wine/i386-windows/coml2.dll
+79e63000-79e64000 rwxp 00000000 00:00 0 
+79e64000-79e9d000 r-xp 00013000 00:24 3824399                            /usr/lib64/wine-wow64/wine/i386-windows/coml2.dll
+79eb0000-79eb3000 r-xp 00000000 00:24 3824412                            /usr/lib64/wine-wow64/wine/i386-windows/cryptbase.dll
+79eb3000-79eb4000 rwxp 00003000 00:24 3824412                            /usr/lib64/wine-wow64/wine/i386-windows/cryptbase.dll
+79eb4000-79eb6000 r-xp 00004000 00:24 3824412                            /usr/lib64/wine-wow64/wine/i386-windows/cryptbase.dll
+79eb6000-79eb8000 rwxp 00000000 00:00 0 
+79eb8000-79ecf000 r-xp 00006000 00:24 3824412                            /usr/lib64/wine-wow64/wine/i386-windows/cryptbase.dll
+79ee0000-79f33000 r-xp 00000000 00:24 3824851                            /usr/lib64/wine-wow64/wine/i386-windows/rpcrt4.dll
+79f33000-79f34000 rwxp 00053000 00:24 3824851                            /usr/lib64/wine-wow64/wine/i386-windows/rpcrt4.dll
+79f34000-79f5f000 r-xp 00054000 00:24 3824851                            /usr/lib64/wine-wow64/wine/i386-windows/rpcrt4.dll
+79f5f000-79f60000 rwxp 00000000 00:00 0 
+79f60000-7a116000 r-xp 0007f000 00:24 3824851                            /usr/lib64/wine-wow64/wine/i386-windows/rpcrt4.dll
+7a130000-7a15b000 r-xp 00000000 00:24 3824394                            /usr/lib64/wine-wow64/wine/i386-windows/combase.dll
+7a15b000-7a15c000 rwxp 0002b000 00:24 3824394                            /usr/lib64/wine-wow64/wine/i386-windows/combase.dll
+7a15c000-7a179000 r-xp 0002c000 00:24 3824394                            /usr/lib64/wine-wow64/wine/i386-windows/combase.dll
+7a179000-7a17a000 rwxp 00000000 00:00 0 
+7a17a000-7a287000 r-xp 00049000 00:24 3824394                            /usr/lib64/wine-wow64/wine/i386-windows/combase.dll
+7a2a0000-7a2f8000 r-xp 00000000 00:24 3824795                            /usr/lib64/wine-wow64/wine/i386-windows/ole32.dll
+7a2f8000-7a2fa000 rwxp 00058000 00:24 3824795                            /usr/lib64/wine-wow64/wine/i386-windows/ole32.dll
+7a2fa000-7a32b000 r-xp 0005a000 00:24 3824795                            /usr/lib64/wine-wow64/wine/i386-windows/ole32.dll
+7a32b000-7a32c000 rwxp 00000000 00:00 0 
+7a32c000-7a5c4000 r-xp 0008b000 00:24 3824795                            /usr/lib64/wine-wow64/wine/i386-windows/ole32.dll
+7a5e0000-7a5f4000 r-xp 00000000 00:24 3824994                            /usr/lib64/wine-wow64/wine/i386-windows/win32u.dll
+7a5f4000-7a5f5000 rwxp 00014000 00:24 3824994                            /usr/lib64/wine-wow64/wine/i386-windows/win32u.dll
+7a5f5000-7a60a000 r-xp 00015000 00:24 3824994                            /usr/lib64/wine-wow64/wine/i386-windows/win32u.dll
+7a60a000-7a60b000 rwxp 00000000 00:00 0 
+7a60b000-7a624000 r-xp 0002a000 00:24 3824994                            /usr/lib64/wine-wow64/wine/i386-windows/win32u.dll
+7a640000-7a691000 r-xp 00000000 00:24 3824566                            /usr/lib64/wine-wow64/wine/i386-windows/gdi32.dll
+7a691000-7a692000 rwxp 00051000 00:24 3824566                            /usr/lib64/wine-wow64/wine/i386-windows/gdi32.dll
+7a692000-7a6b8000 r-xp 00052000 00:24 3824566                            /usr/lib64/wine-wow64/wine/i386-windows/gdi32.dll
+7a6b8000-7a6b9000 rwxp 00000000 00:00 0 
+7a6b9000-7a869000 r-xp 00078000 00:24 3824566                            /usr/lib64/wine-wow64/wine/i386-windows/gdi32.dll
+7a880000-7a916000 r-xp 00000000 00:24 3824936                            /usr/lib64/wine-wow64/wine/i386-windows/ucrtbase.dll
+7a916000-7a918000 rwxp 00096000 00:24 3824936                            /usr/lib64/wine-wow64/wine/i386-windows/ucrtbase.dll
+7a918000-7a953000 r-xp 00098000 00:24 3824936                            /usr/lib64/wine-wow64/wine/i386-windows/ucrtbase.dll
+7a953000-7a955000 rwxp 00000000 00:00 0 
+7a955000-7abce000 r-xp 000d3000 00:24 3824936                            /usr/lib64/wine-wow64/wine/i386-windows/ucrtbase.dll
+7abe0000-7abef000 r-xp 00000000 00:24 3824875                            /usr/lib64/wine-wow64/wine/i386-windows/sechost.dll
+7abef000-7abf0000 rwxp 0000f000 00:24 3824875                            /usr/lib64/wine-wow64/wine/i386-windows/sechost.dll
+7abf0000-7abfa000 r-xp 00010000 00:24 3824875                            /usr/lib64/wine-wow64/wine/i386-windows/sechost.dll
+7abfa000-7abfb000 rwxp 00000000 00:00 0 
+7abfb000-7ac51000 r-xp 0001a000 00:24 3824875                            /usr/lib64/wine-wow64/wine/i386-windows/sechost.dll
+7ac70000-7aceb000 r-xp 00000000 00:24 3824744                            /usr/lib64/wine-wow64/wine/i386-windows/msvcrt.dll
+7aceb000-7aced000 rwxp 0007b000 00:24 3824744                            /usr/lib64/wine-wow64/wine/i386-windows/msvcrt.dll
+7aced000-7ad16000 r-xp 0007d000 00:24 3824744                            /usr/lib64/wine-wow64/wine/i386-windows/msvcrt.dll
+7ad16000-7ad18000 rwxp 00000000 00:00 0 
+7ad18000-7af3e000 r-xp 000a6000 00:24 3824744                            /usr/lib64/wine-wow64/wine/i386-windows/msvcrt.dll
+7af50000-7af73000 r-xp 00000000 00:24 3824352                            /usr/lib64/wine-wow64/wine/i386-windows/advapi32.dll
+7af73000-7af74000 rwxp 00023000 00:24 3824352                            /usr/lib64/wine-wow64/wine/i386-windows/advapi32.dll
+7af74000-7af84000 r-xp 00024000 00:24 3824352                            /usr/lib64/wine-wow64/wine/i386-windows/advapi32.dll
+7af84000-7af85000 rwxp 00000000 00:00 0 
+7af85000-7b036000 r-xp 00034000 00:24 3824352                            /usr/lib64/wine-wow64/wine/i386-windows/advapi32.dll
+7b050000-7b0ec000 r-xp 00000000 00:24 3824948                            /usr/lib64/wine-wow64/wine/i386-windows/user32.dll
+7b0ec000-7b0ed000 rwxp 0009c000 00:24 3824948                            /usr/lib64/wine-wow64/wine/i386-windows/user32.dll
+7b0ed000-7b129000 r-xp 0009d000 00:24 3824948                            /usr/lib64/wine-wow64/wine/i386-windows/user32.dll
+7b129000-7b12a000 rwxp 00000000 00:00 0 
+7b12a000-7b566000 r-xp 000d9000 00:24 3824948                            /usr/lib64/wine-wow64/wine/i386-windows/user32.dll
+7b580000-7b60a000 r-xp 00000000 00:24 3824620                            /usr/lib64/wine-wow64/wine/i386-windows/kernelbase.dll
+7b60a000-7b60c000 rwxp 0008a000 00:24 3824620                            /usr/lib64/wine-wow64/wine/i386-windows/kernelbase.dll
+7b60c000-7b641000 r-xp 0008c000 00:24 3824620                            /usr/lib64/wine-wow64/wine/i386-windows/kernelbase.dll
+7b641000-7b643000 rwxp 00000000 00:00 0 
+7b643000-7badd000 r-xp 000c1000 00:24 3824620                            /usr/lib64/wine-wow64/wine/i386-windows/kernelbase.dll
+7baf0000-7bb20000 r-xp 00000000 00:24 3824619                            /usr/lib64/wine-wow64/wine/i386-windows/kernel32.dll
+7bb20000-7bb21000 rwxp 00030000 00:24 3824619                            /usr/lib64/wine-wow64/wine/i386-windows/kernel32.dll
+7bb21000-7bb36000 r-xp 00031000 00:24 3824619                            /usr/lib64/wine-wow64/wine/i386-windows/kernel32.dll
+7bb36000-7bb37000 rwxp 00000000 00:00 0 
+7bb37000-7bc6d000 r-xp 00046000 00:24 3824619                            /usr/lib64/wine-wow64/wine/i386-windows/kernel32.dll
+7bc80000-7bc82000 r-xp 00000000 00:24 3825892                            /usr/lib64/wine-wow64/wine/x86_64-windows/wow64cpu.dll
+7bc82000-7bc83000 rwxp 00002000 00:24 3825892                            /usr/lib64/wine-wow64/wine/x86_64-windows/wow64cpu.dll
+7bc83000-7bc86000 r-xp 00003000 00:24 3825892                            /usr/lib64/wine-wow64/wine/x86_64-windows/wow64cpu.dll
+7bc86000-7bc87000 rwxp 00000000 00:00 0 
+7bc87000-7bc88000 r-xp 00000000 00:00 0 
+7bc88000-7bc98000 r-xp 00006000 00:24 3825892                            /usr/lib64/wine-wow64/wine/x86_64-windows/wow64cpu.dll
+7bcb0000-7bd26000 r-xp 00000000 00:24 3824780                            /usr/lib64/wine-wow64/wine/i386-windows/ntdll.dll
+7bd26000-7bd27000 rwxp 00076000 00:24 3824780                            /usr/lib64/wine-wow64/wine/i386-windows/ntdll.dll
+7bd27000-7bd58000 r-xp 00077000 00:24 3824780                            /usr/lib64/wine-wow64/wine/i386-windows/ntdll.dll
+7bd58000-7bd5b000 rwxp 00000000 00:00 0 
+7bd5b000-7bfe4000 r-xp 000a8000 00:24 3824780                            /usr/lib64/wine-wow64/wine/i386-windows/ntdll.dll
+7f000000-7ffe0000 ---p 00000000 00:00 0 
+7ffe0000-7ffe1000 r-xs 00000000 00:35 527031                             /tmp/.wine-1000/server-36-7b0da2/tmpmap-6d742653 (deleted)
+7ffe1000-7ffe2000 rw-p 00000000 00:00 0 
+7ffe2000-7fff0000 ---p 00000000 00:00 0 
+100000000-100100000 rwxp 00000000 00:00 0 
+100100000-100102000 ---p 00000000 00:00 0 
+100102000-100200000 rwxp 00000000 00:00 0 
+100200000-100300000 rw-p 00000000 00:00 0 
+100300000-100302000 ---p 00000000 00:00 0 
+100302000-100500000 rw-p 00000000 00:00 0 
+100500000-100502000 ---p 00000000 00:00 0 
+100502000-100700000 rw-p 00000000 00:00 0 
+100700000-100702000 ---p 00000000 00:00 0 
+100702000-100900000 rw-p 00000000 00:00 0 
+100900000-100902000 ---p 00000000 00:00 0 
+100902000-100b00000 rw-p 00000000 00:00 0 
+100b00000-100b02000 ---p 00000000 00:00 0 
+100b02000-100d00000 rw-p 00000000 00:00 0 
+100d00000-100d02000 ---p 00000000 00:00 0 
+100d02000-100f00000 rw-p 00000000 00:00 0 
+100f00000-100f02000 ---p 00000000 00:00 0 
+100f02000-101000000 rw-p 00000000 00:00 0 
+6ffffc3e0000-6ffffc3f6000 r-xp 00000000 00:24 3825893                    /usr/lib64/wine-wow64/wine/x86_64-windows/wow64win.dll
+6ffffc3f6000-6ffffc3f7000 rwxp 00016000 00:24 3825893                    /usr/lib64/wine-wow64/wine/x86_64-windows/wow64win.dll
+6ffffc3f7000-6ffffc53f000 r-xp 00017000 00:24 3825893                    /usr/lib64/wine-wow64/wine/x86_64-windows/wow64win.dll
+6ffffc550000-6ffffc567000 r-xp 00000000 00:24 3825891                    /usr/lib64/wine-wow64/wine/x86_64-windows/wow64.dll
+6ffffc567000-6ffffc568000 rwxp 00017000 00:24 3825891                    /usr/lib64/wine-wow64/wine/x86_64-windows/wow64.dll
+6ffffc568000-6ffffc56f000 r-xp 00018000 00:24 3825891                    /usr/lib64/wine-wow64/wine/x86_64-windows/wow64.dll
+6ffffc56f000-6ffffc570000 rwxp 00000000 00:00 0 
+6ffffc570000-6ffffc691000 r-xp 0001f000 00:24 3825891                    /usr/lib64/wine-wow64/wine/x86_64-windows/wow64.dll
+6ffffd9f0000-6ffffda08000 r-xp 00000000 00:24 3825796                    /usr/lib64/wine-wow64/wine/x86_64-windows/win32u.dll
+6ffffda08000-6ffffda09000 rwxp 00018000 00:24 3825796                    /usr/lib64/wine-wow64/wine/x86_64-windows/win32u.dll
+6ffffda09000-6ffffda19000 r-xp 00019000 00:24 3825796                    /usr/lib64/wine-wow64/wine/x86_64-windows/win32u.dll
+6ffffda19000-6ffffda1a000 rwxp 00000000 00:00 0 
+6ffffda1a000-6ffffda3c000 r-xp 00029000 00:24 3825796                    /usr/lib64/wine-wow64/wine/x86_64-windows/win32u.dll
+6fffffbe0000-6fffffc59000 r-xp 00000000 00:24 3825606                    /usr/lib64/wine-wow64/wine/x86_64-windows/ntdll.dll
+6fffffc59000-6fffffc5a000 rwxp 00079000 00:24 3825606                    /usr/lib64/wine-wow64/wine/x86_64-windows/ntdll.dll
+6fffffc5a000-6fffffc82000 r-xp 0007a000 00:24 3825606                    /usr/lib64/wine-wow64/wine/x86_64-windows/ntdll.dll
+6fffffc82000-6fffffc86000 rwxp 00000000 00:00 0 
+6fffffc86000-6ffffffe5000 r-xp 000a2000 00:24 3825606                    /usr/lib64/wine-wow64/wine/x86_64-windows/ntdll.dll
+7d7d00000000-7d7d00002000 r-xp 00001000 00:24 3825178                    /usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader
+7d7d00002000-7d7d00003000 r--p 00003000 00:24 3825178                    /usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader
+7d7d00003000-7d7d00004000 rw-p 00004000 00:24 3825178                    /usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader
+7d7d05ab5000-7d7d06d54000 rw-p 00000000 00:00 0                          [heap]
+7fad87bff000-7fad87fff000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fad87fff000-7fad8c000000 rw-p 00000000 00:00 0 
+7fad8c000000-7fad90000000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fad90000000-7fad90021000 rw-p 00000000 00:00 0 
+7fad90021000-7fad94000000 ---p 00000000 00:00 0 
+7fad94000000-7fad94508000 rw-p 00000000 00:00 0 
+7fad94508000-7fad98000000 ---p 00000000 00:00 0 
+7fad98000000-7fad9c000000 rw-s 00000000 00:01 85273                      /memfd:pulseaudio (deleted)
+7fad9c000000-7fad9c021000 rw-p 00000000 00:00 0 
+7fad9c021000-7fada0000000 ---p 00000000 00:00 0 
+7fada0000000-7fada021f000 rw-p 00000000 00:00 0 
+7fada021f000-7fada4000000 ---p 00000000 00:00 0 
+7fada4000000-7fada4021000 rw-p 00000000 00:00 0 
+7fada4021000-7fada8000000 ---p 00000000 00:00 0 
+7fada8000000-7fada865e000 rw-p 00000000 00:00 0 
+7fada865e000-7fadac000000 ---p 00000000 00:00 0 
+7fadac000000-7fadac021000 rw-p 00000000 00:00 0 
+7fadac021000-7fadb0000000 ---p 00000000 00:00 0 
+7fadb0000000-7fadb0021000 rw-p 00000000 00:00 0 
+7fadb0021000-7fadb4000000 ---p 00000000 00:00 0 
+7fadb4000000-7fadb4200000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadb4200000-7fadb4600000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadb4600000-7fadb4801000 rw-s 00000000 00:24 289                        /home/dev/.cache/radv_builtin_shaders/index
+7fadb49f1000-7fadb4df1000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadb4df1000-7fadb55f2000 rw-p 00000000 00:00 0 
+7fadb55f2000-7fadb57f2000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadb57f2000-7fadb59f2000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadb59f2000-7fadb67fd000 rw-p 00000000 00:00 0 
+7fadb67fd000-7fadb8000000 rw-p 00000000 00:00 0 
+7fadb8000000-7fadb8021000 rw-p 00000000 00:00 0 
+7fadb8021000-7fadbc000000 ---p 00000000 00:00 0 
+7fadbc000000-7fadbc021000 rw-p 00000000 00:00 0 
+7fadbc021000-7fadc0000000 ---p 00000000 00:00 0 
+7fadc0000000-7fadc0021000 rw-p 00000000 00:00 0 
+7fadc0021000-7fadc4000000 ---p 00000000 00:00 0 
+7fadc4000000-7fadc4021000 rw-p 00000000 00:00 0 
+7fadc4021000-7fadc8000000 ---p 00000000 00:00 0 
+7fadc8000000-7fadc8021000 rw-p 00000000 00:00 0 
+7fadc8021000-7fadcc000000 ---p 00000000 00:00 0 
+7fadcc000000-7fadcc021000 rw-p 00000000 00:00 0 
+7fadcc021000-7fadd0000000 ---p 00000000 00:00 0 
+7fadd0000000-7fadd0021000 rw-p 00000000 00:00 0 
+7fadd0021000-7fadd4000000 ---p 00000000 00:00 0 
+7fadd4200000-7fadd4401000 rw-s 00000000 00:24 286                        /home/dev/.cache/mesa_shader_cache/index
+7fadd4600000-7fadd64a0000 r-xp 00000000 00:24 733676                     /usr/lib64/libgallium-26.0.8.so
+7fadd64a0000-7fadd76c0000 r--p 01ea0000 00:24 733676                     /usr/lib64/libgallium-26.0.8.so
+7fadd76c0000-7fadd781e000 r--p 030bf000 00:24 733676                     /usr/lib64/libgallium-26.0.8.so
+7fadd781e000-7fadd7852000 rw-p 0321d000 00:24 733676                     /usr/lib64/libgallium-26.0.8.so
+7fadd7852000-7fadd7a1d000 rw-p 00000000 00:00 0 
+7fadd7add000-7fadd7b91000 r-xp 00000000 00:24 1135388                    /usr/lib64/libasound.so.2.0.0
+7fadd7b91000-7fadd7bf7000 r--p 000b4000 00:24 1135388                    /usr/lib64/libasound.so.2.0.0
+7fadd7bf7000-7fadd7bff000 r--p 0011a000 00:24 1135388                    /usr/lib64/libasound.so.2.0.0
+7fadd7bff000-7fadd7c00000 rw-p 00122000 00:24 1135388                    /usr/lib64/libasound.so.2.0.0
+7fadd7c00000-7fadd7e01000 rw-s 00000000 00:24 289                        /home/dev/.cache/radv_builtin_shaders/index
+7fadd7e92000-7fadd7eb3000 r--p 00000000 00:24 3824188                    /usr/share/wine/fonts/arial.ttf
+7fadd7eb3000-7fadd7ee8000 r-xp 00000000 00:24 36773                      /usr/lib64/libmp3lame.so.0.0.0
+7fadd7ee8000-7fadd7efd000 r--p 00035000 00:24 36773                      /usr/lib64/libmp3lame.so.0.0.0
+7fadd7efd000-7fadd7eff000 r--p 00049000 00:24 36773                      /usr/lib64/libmp3lame.so.0.0.0
+7fadd7eff000-7fadd7f2d000 rw-p 00000000 00:00 0 
+7fadd7f2d000-7fadd7f6c000 r-xp 00000000 00:24 36783                      /usr/lib64/libmpg123.so.0.48.3
+7fadd7f6c000-7fadd7f8a000 r--p 0003f000 00:24 36783                      /usr/lib64/libmpg123.so.0.48.3
+7fadd7f8a000-7fadd7f8b000 r--p 0005d000 00:24 36783                      /usr/lib64/libmpg123.so.0.48.3
+7fadd7f8b000-7fadd7f8c000 rw-p 0005e000 00:24 36783                      /usr/lib64/libmpg123.so.0.48.3
+7fadd7f8c000-7fadd7fe8000 r-xp 00000000 00:24 36878                      /usr/lib64/libopus.so.0.11.0
+7fadd7fe8000-7fadd7ffe000 r--p 0005c000 00:24 36878                      /usr/lib64/libopus.so.0.11.0
+7fadd7ffe000-7fadd7fff000 r--p 00072000 00:24 36878                      /usr/lib64/libopus.so.0.11.0
+7fadd7fff000-7fadd8021000 rw-p 00000000 00:00 0 
+7fadd8021000-7faddc000000 ---p 00000000 00:00 0 
+7faddc009000-7faddc00c000 r-xp 00000000 00:24 37256                      /usr/lib64/libvorbisenc.so.2.0.12
+7faddc00c000-7faddc084000 r--p 00003000 00:24 37256                      /usr/lib64/libvorbisenc.so.2.0.12
+7faddc084000-7faddc0a0000 r--p 0007a000 00:24 37256                      /usr/lib64/libvorbisenc.so.2.0.12
+7faddc0a0000-7faddc0a1000 rw-p 00096000 00:24 37256                      /usr/lib64/libvorbisenc.so.2.0.12
+7faddc0a1000-7faddc0e4000 r-xp 00000000 00:24 35825                      /usr/lib64/libFLAC.so.14.0.0
+7faddc0e4000-7faddc0f5000 r--p 00043000 00:24 35825                      /usr/lib64/libFLAC.so.14.0.0
+7faddc0f5000-7faddc0f6000 r--p 00054000 00:24 35825                      /usr/lib64/libFLAC.so.14.0.0
+7faddc0f6000-7faddc0f7000 rw-p 00055000 00:24 35825                      /usr/lib64/libFLAC.so.14.0.0
+7faddc0f7000-7faddc154000 r-xp 00000000 00:24 37080                      /usr/lib64/libsndfile.so.1.0.37
+7faddc154000-7faddc172000 r--p 0005d000 00:24 37080                      /usr/lib64/libsndfile.so.1.0.37
+7faddc172000-7faddc175000 r--p 0007b000 00:24 37080                      /usr/lib64/libsndfile.so.1.0.37
+7faddc175000-7faddc176000 rw-p 0007e000 00:24 37080                      /usr/lib64/libsndfile.so.1.0.37
+7faddc176000-7faddc178000 rw-p 00000000 00:00 0 
+7faddc178000-7faddc1c7000 r-xp 00000000 00:24 42916                      /usr/lib64/pulseaudio/libpulsecommon-17.0.so
+7faddc1c7000-7faddc1fa000 r--p 0004f000 00:24 42916                      /usr/lib64/pulseaudio/libpulsecommon-17.0.so
+7faddc1fa000-7faddc1fd000 r--p 00081000 00:24 42916                      /usr/lib64/pulseaudio/libpulsecommon-17.0.so
+7faddc1fd000-7faddc1fe000 rw-p 00084000 00:24 42916                      /usr/lib64/pulseaudio/libpulsecommon-17.0.so
+7faddc1fe000-7faddc3fe000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7faddc3fe000-7faddd400000 rw-p 00000000 00:00 0 
+7faddd400000-7faddd601000 rw-s 00000000 00:24 286                        /home/dev/.cache/mesa_shader_cache/index
+7faddd60c000-7faddd64c000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7faddd64c000-7faddd680000 r-xp 00000000 00:24 36977                      /usr/lib64/libpulse.so.0.24.3
+7faddd680000-7faddd69d000 r--p 00034000 00:24 36977                      /usr/lib64/libpulse.so.0.24.3
+7faddd69d000-7faddd69f000 r--p 00050000 00:24 36977                      /usr/lib64/libpulse.so.0.24.3
+7faddd69f000-7faddd6a0000 rw-p 00052000 00:24 36977                      /usr/lib64/libpulse.so.0.24.3
+7faddd6a0000-7faddd7a0000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7faddd7a0000-7faddd7e0000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7faddd7e0000-7faddd800000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7faddd800000-7faddd833000 r--p 00000000 00:24 321902                     /usr/lib64/libnvidia-glvkspirv.so.595.58.03
+7faddd833000-7fadddff5000 r-xp 00033000 00:24 321902                     /usr/lib64/libnvidia-glvkspirv.so.595.58.03
+7fadddff5000-7fadde143000 r--p 007f5000 00:24 321902                     /usr/lib64/libnvidia-glvkspirv.so.595.58.03
+7fadde143000-7fadde155000 r--p 00942000 00:24 321902                     /usr/lib64/libnvidia-glvkspirv.so.595.58.03
+7fadde155000-7fadde1e0000 rw-p 00954000 00:24 321902                     /usr/lib64/libnvidia-glvkspirv.so.595.58.03
+7fadde1e0000-7fadde1f7000 rw-p 00000000 00:00 0 
+7fadde200000-7fadde400000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadde400000-7faddeab1000 r-xp 00000000 00:24 733714                     /usr/lib64/libvulkan_radeon.so
+7faddeab1000-7faddf491000 r--p 006b1000 00:24 733714                     /usr/lib64/libvulkan_radeon.so
+7faddf491000-7faddf4e2000 r--p 01091000 00:24 733714                     /usr/lib64/libvulkan_radeon.so
+7faddf4e2000-7faddf4fe000 rw-p 010e2000 00:24 733714                     /usr/lib64/libvulkan_radeon.so
+7faddf4fe000-7faddf503000 rw-p 00000000 00:00 0 
+7faddf520000-7faddf560000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7faddf560000-7faddf580000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7faddf580000-7faddf5c0000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7faddf5e0000-7faddf600000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7faddf600000-7faddf64e000 r--p 00000000 00:24 321908                     /usr/lib64/libnvidia-rtcore.so.595.58.03
+7faddf64e000-7fade0405000 r-xp 0004e000 00:24 321908                     /usr/lib64/libnvidia-rtcore.so.595.58.03
+7fade0405000-7fade1d0f000 r--p 00e05000 00:24 321908                     /usr/lib64/libnvidia-rtcore.so.595.58.03
+7fade1d0f000-7fade1d30000 r--p 0270e000 00:24 321908                     /usr/lib64/libnvidia-rtcore.so.595.58.03
+7fade1d30000-7fade1e26000 rw-p 0272f000 00:24 321908                     /usr/lib64/libnvidia-rtcore.so.595.58.03
+7fade1e26000-7fade1e70000 rw-p 00000000 00:00 0 
+7fade1e76000-7fade1e79000 r-xp 00000000 00:24 36865                      /usr/lib64/libogg.so.0.8.6
+7fade1e79000-7fade1e7e000 r--p 00003000 00:24 36865                      /usr/lib64/libogg.so.0.8.6
+7fade1e7e000-7fade1e7f000 r--p 00007000 00:24 36865                      /usr/lib64/libogg.so.0.8.6
+7fade1e7f000-7fade1e80000 rw-p 00000000 00:00 0 
+7fade1e80000-7fade1ec0000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fade1ec0000-7fade1f00000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fade1f00000-7fade2000000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fade2000000-7fade63a0000 r--p 00000000 00:24 1097246                    /usr/lib64/libLLVM.so.22.1
+7fade63a0000-7fadea87d000 r-xp 0439f000 00:24 1097246                    /usr/lib64/libLLVM.so.22.1
+7fadea87d000-7fadeaa9e000 r--p 0887b000 00:24 1097246                    /usr/lib64/libLLVM.so.22.1
+7fadeaa9e000-7fadeaaa7000 rw-p 08a9b000 00:24 1097246                    /usr/lib64/libLLVM.so.22.1
+7fadeaaa7000-7fadeab54000 rw-p 00000000 00:00 0 
+7fadeab5a000-7fadeab6d000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadeab6d000-7fadeab80000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadeab80000-7fadeac00000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadeac00000-7fadeb0ba000 r-xp 00000000 00:24 733710                     /usr/lib64/libvulkan_lvp.so
+7fadeb0ba000-7fadeb8c7000 r--p 004ba000 00:24 733710                     /usr/lib64/libvulkan_lvp.so
+7fadeb8c7000-7fadeb916000 r--p 00cc7000 00:24 733710                     /usr/lib64/libvulkan_lvp.so
+7fadeb916000-7fadeb91a000 rw-p 00d16000 00:24 733710                     /usr/lib64/libvulkan_lvp.so
+7fadeb91a000-7fadeb945000 rw-p 00000000 00:00 0 
+7fadeb94b000-7fadeb96b000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadeb96b000-7fadeb9eb000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadeb9eb000-7fadeb9fe000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadeb9fe000-7fadeca00000 rw-p 00000000 00:00 0 
+7fadeca00000-7fadecc39000 r--p 00000000 00:24 321897                     /usr/lib64/libnvidia-eglcore.so.595.58.03
+7fadecc39000-7faded8cb000 r-xp 00239000 00:24 321897                     /usr/lib64/libnvidia-eglcore.so.595.58.03
+7faded8cb000-7fadeec5a000 r--p 00ecb000 00:24 321897                     /usr/lib64/libnvidia-eglcore.so.595.58.03
+7fadeec5a000-7fadeedcf000 r--p 02259000 00:24 321897                     /usr/lib64/libnvidia-eglcore.so.595.58.03
+7fadeedcf000-7fadeee22000 rw-p 023ce000 00:24 321897                     /usr/lib64/libnvidia-eglcore.so.595.58.03
+7fadeee22000-7fadeee39000 rw-p 00000000 00:00 0 
+7fadeee40000-7fadeee80000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadeee80000-7fadeef80000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadeef80000-7fadef000000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadef000000-7fadef2f1000 r-xp 00000000 00:24 733706                     /usr/lib64/libvulkan_dzn.so
+7fadef2f1000-7fadefa47000 r--p 002f1000 00:24 733706                     /usr/lib64/libvulkan_dzn.so
+7fadefa47000-7fadefa93000 r--p 00a46000 00:24 733706                     /usr/lib64/libvulkan_dzn.so
+7fadefa93000-7fadefa96000 rw-p 00a92000 00:24 733706                     /usr/lib64/libvulkan_dzn.so
+7fadefa96000-7fadefa98000 rw-p 00000000 00:00 0 
+7fadefa9f000-7fadefabf000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadefabf000-7fadefaff000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadefaff000-7fadefbff000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadefbff000-7fadf0400000 rw-p 00000000 00:00 0 
+7fadf0401000-7fadf0405000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0405000-7fadf0409000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0409000-7fadf0429000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0429000-7fadf0469000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0469000-7fadf04e9000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf04e9000-7fadf05e9000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf05e9000-7fadf0669000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0669000-7fadf066d000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf066d000-7fadf06ed000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf06ed000-7fadf0700000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0700000-7fadf0740000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0740000-7fadf0780000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0780000-7fadf0800000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadf0800000-7fadf0972000 r-xp 00000000 00:24 200160                     /usr/lib64/libstdc++.so.6.0.35
+7fadf0972000-7fadf0a9d000 r--p 00172000 00:24 200160                     /usr/lib64/libstdc++.so.6.0.35
+7fadf0a9d000-7fadf0aae000 r--p 0029d000 00:24 200160                     /usr/lib64/libstdc++.so.6.0.35
+7fadf0aae000-7fadf0aaf000 rw-p 002ae000 00:24 200160                     /usr/lib64/libstdc++.so.6.0.35
+7fadf0aaf000-7fadf0ab3000 rw-p 00000000 00:00 0 
+7fadf0ab3000-7fadf0ab5000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0ab5000-7fadf0ad5000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0ad5000-7fadf0af5000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0af5000-7fadf0b35000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0b35000-7fadf0b4b000 r-xp 00000000 00:24 4539706                    /usr/lib64/libVkLayer_FROG_gamescope_wsi_x86_64.so
+7fadf0b4b000-7fadf0b5d000 r--p 00016000 00:24 4539706                    /usr/lib64/libVkLayer_FROG_gamescope_wsi_x86_64.so
+7fadf0b5d000-7fadf0b5e000 r--p 00027000 00:24 4539706                    /usr/lib64/libVkLayer_FROG_gamescope_wsi_x86_64.so
+7fadf0b5e000-7fadf0b5f000 rw-p 00028000 00:24 4539706                    /usr/lib64/libVkLayer_FROG_gamescope_wsi_x86_64.so
+7fadf0b5f000-7fadf0b73000 r-xp 00000000 00:24 185312                     /usr/lib64/libelf-0.195.so
+7fadf0b73000-7fadf0b7a000 r--p 00014000 00:24 185312                     /usr/lib64/libelf-0.195.so
+7fadf0b7a000-7fadf0b7b000 r--p 0001b000 00:24 185312                     /usr/lib64/libelf-0.195.so
+7fadf0b7b000-7fadf0b7c000 rw-p 00000000 00:00 0 
+7fadf0b7c000-7fadf0b91000 r-xp 00000000 00:24 37164                      /usr/lib64/libtinfo.so.6.6
+7fadf0b91000-7fadf0ba4000 r--p 00015000 00:24 37164                      /usr/lib64/libtinfo.so.6.6
+7fadf0ba4000-7fadf0ba8000 r--p 00028000 00:24 37164                      /usr/lib64/libtinfo.so.6.6
+7fadf0ba8000-7fadf0ba9000 rw-p 0002c000 00:24 37164                      /usr/lib64/libtinfo.so.6.6
+7fadf0ba9000-7fadf0bcc000 r-xp 00000000 00:24 206360                     /usr/lib64/libedit.so.0.0.78
+7fadf0bcc000-7fadf0bdf000 r--p 00023000 00:24 206360                     /usr/lib64/libedit.so.0.0.78
+7fadf0bdf000-7fadf0be2000 r--p 00035000 00:24 206360                     /usr/lib64/libedit.so.0.0.78
+7fadf0be2000-7fadf0be3000 rw-p 00038000 00:24 206360                     /usr/lib64/libedit.so.0.0.78
+7fadf0be3000-7fadf0be6000 rw-p 00000000 00:00 0 
+7fadf0be6000-7fadf0c07000 r-xp 00000000 00:24 185328                     /usr/lib64/libexpat.so.1.12.1
+7fadf0c07000-7fadf0c11000 r--p 00021000 00:24 185328                     /usr/lib64/libexpat.so.1.12.1
+7fadf0c11000-7fadf0c13000 r--p 0002b000 00:24 185328                     /usr/lib64/libexpat.so.1.12.1
+7fadf0c13000-7fadf0c14000 rw-p 00000000 00:00 0 
+7fadf0c14000-7fadf0d1c000 r-xp 00000000 00:24 35930                      /usr/lib64/libSPIRV-Tools.so
+7fadf0d1c000-7fadf0daf000 r--p 00108000 00:24 35930                      /usr/lib64/libSPIRV-Tools.so
+7fadf0daf000-7fadf0db2000 r--p 0019b000 00:24 35930                      /usr/lib64/libSPIRV-Tools.so
+7fadf0db2000-7fadf0db3000 rw-p 0019e000 00:24 35930                      /usr/lib64/libSPIRV-Tools.so
+7fadf0db3000-7fadf0de0000 r-xp 00000000 00:24 729877                     /usr/lib64/libudev.so.1.7.12
+7fadf0de0000-7fadf0dfa000 r--p 0002d000 00:24 729877                     /usr/lib64/libudev.so.1.7.12
+7fadf0dfa000-7fadf0dff000 r--p 00047000 00:24 729877                     /usr/lib64/libudev.so.1.7.12
+7fadf0dff000-7fadf0e00000 rw-p 0004c000 00:24 729877                     /usr/lib64/libudev.so.1.7.12
+7fadf0e00000-7fadf0e01000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e01000-7fadf0e02000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e02000-7fadf0e03000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadf0e03000-7fadf0e07000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e0a000-7fadf0e0b000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadf0e0b000-7fadf0e0d000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e0d000-7fadf0e0e000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e17000-7fadf0e27000 rw-p 00000000 00:00 0 
+7fadf0e27000-7fadf0e28000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadf0e28000-7fadf0e29000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e29000-7fadf0e3c000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e3c000-7fadf0e3d000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadf0e3d000-7fadf0e3f000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e3f000-7fadf0e40000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e40000-7fadf0e60000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e60000-7fadf0e64000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e64000-7fadf0e68000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e68000-7fadf0e7b000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e7b000-7fadf0e7c000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadf0e7c000-7fadf0e7e000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e7e000-7fadf0e82000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e82000-7fadf0e83000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e83000-7fadf0e84000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0e84000-7fadf0ec4000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0ec4000-7fadf0ee4000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0ee4000-7fadf0f24000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0f24000-7fadf0f44000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf0f44000-7fadf0fc4000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadf0fc4000-7fadf1004000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf1004000-7fadf1024000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf1027000-7fadf1828000 rw-p 00000000 00:00 0 
+7fadf1828000-7fadf182e000 r-xp 00000000 00:24 36911                      /usr/lib64/libpciaccess.so.0.11.1
+7fadf182e000-7fadf1831000 r--p 00006000 00:24 36911                      /usr/lib64/libpciaccess.so.0.11.1
+7fadf1831000-7fadf1832000 r--p 00009000 00:24 36911                      /usr/lib64/libpciaccess.so.0.11.1
+7fadf1832000-7fadf1833000 rw-p 00000000 00:00 0 
+7fadf1833000-7fadf184b000 r-xp 00000000 00:24 729894                     /usr/lib64/libdrm_intel.so.1.134.0
+7fadf184b000-7fadf1857000 r--p 00018000 00:24 729894                     /usr/lib64/libdrm_intel.so.1.134.0
+7fadf1857000-7fadf1858000 r--p 00023000 00:24 729894                     /usr/lib64/libdrm_intel.so.1.134.0
+7fadf1858000-7fadf1859000 rw-p 00024000 00:24 729894                     /usr/lib64/libdrm_intel.so.1.134.0
+7fadf1859000-7fadf1861000 r-xp 00000000 00:24 37059                      /usr/lib64/libsensors.so.4.5.0
+7fadf1861000-7fadf1866000 r--p 00008000 00:24 37059                      /usr/lib64/libsensors.so.4.5.0
+7fadf1866000-7fadf1867000 r--p 0000d000 00:24 37059                      /usr/lib64/libsensors.so.4.5.0
+7fadf1867000-7fadf1868000 rw-p 0000e000 00:24 37059                      /usr/lib64/libsensors.so.4.5.0
+7fadf1868000-7fadf18a4000 r-xp 00000000 00:24 782048                     /usr/lib64/libEGL_mesa.so.0.0.0
+7fadf18a4000-7fadf18bc000 r--p 0003c000 00:24 782048                     /usr/lib64/libEGL_mesa.so.0.0.0
+7fadf18bc000-7fadf18c9000 r--p 00053000 00:24 782048                     /usr/lib64/libEGL_mesa.so.0.0.0
+7fadf18c9000-7fadf18ca000 rw-p 00060000 00:24 782048                     /usr/lib64/libEGL_mesa.so.0.0.0
+7fadf18ca000-7fadf18cb000 rw-p 00000000 00:00 0 
+7fadf18cb000-7fadf18d7000 r-xp 00000000 00:24 321851                     /usr/lib64/libnvidia-egl-xlib.so.1.0.5
+7fadf18d7000-7fadf18dd000 r--p 0000c000 00:24 321851                     /usr/lib64/libnvidia-egl-xlib.so.1.0.5
+7fadf18dd000-7fadf18de000 r--p 00012000 00:24 321851                     /usr/lib64/libnvidia-egl-xlib.so.1.0.5
+7fadf18de000-7fadf18df000 rw-p 00013000 00:24 321851                     /usr/lib64/libnvidia-egl-xlib.so.1.0.5
+7fadf18df000-7fadf18eb000 r-xp 00000000 00:24 321849                     /usr/lib64/libnvidia-egl-xcb.so.1.0.5
+7fadf18eb000-7fadf18f1000 r--p 0000c000 00:24 321849                     /usr/lib64/libnvidia-egl-xcb.so.1.0.5
+7fadf18f1000-7fadf18f2000 r--p 00012000 00:24 321849                     /usr/lib64/libnvidia-egl-xcb.so.1.0.5
+7fadf18f2000-7fadf18f3000 rw-p 00013000 00:24 321849                     /usr/lib64/libnvidia-egl-xcb.so.1.0.5
+7fadf18f3000-7fadf18f6000 r-xp 00000000 00:24 321879                     /usr/lib64/libnvidia-egl-gbm.so.1.1.3
+7fadf18f6000-7fadf18f8000 r--p 00003000 00:24 321879                     /usr/lib64/libnvidia-egl-gbm.so.1.1.3
+7fadf18f8000-7fadf18f9000 r--p 00005000 00:24 321879                     /usr/lib64/libnvidia-egl-gbm.so.1.1.3
+7fadf18f9000-7fadf18fa000 rw-p 00000000 00:00 0 
+7fadf18fa000-7fadf1904000 r-xp 00000000 00:24 37280                      /usr/lib64/libwayland-server.so.0.24.0
+7fadf1904000-7fadf190c000 r--p 0000a000 00:24 37280                      /usr/lib64/libwayland-server.so.0.24.0
+7fadf190c000-7fadf190e000 r--p 00012000 00:24 37280                      /usr/lib64/libwayland-server.so.0.24.0
+7fadf190e000-7fadf190f000 rw-p 00014000 00:24 37280                      /usr/lib64/libwayland-server.so.0.24.0
+7fadf190f000-7fadf191a000 r-xp 00000000 00:24 321870                     /usr/lib64/libnvidia-egl-wayland.so.1.1.21
+7fadf191a000-7fadf1920000 r--p 0000b000 00:24 321870                     /usr/lib64/libnvidia-egl-wayland.so.1.1.21
+7fadf1920000-7fadf1922000 r--p 00010000 00:24 321870                     /usr/lib64/libnvidia-egl-wayland.so.1.1.21
+7fadf1922000-7fadf1923000 rw-p 00012000 00:24 321870                     /usr/lib64/libnvidia-egl-wayland.so.1.1.21
+7fadf1923000-7fadf1930000 r-xp 00000000 00:24 321861                     /usr/lib64/libnvidia-egl-wayland2.so.1.0.1
+7fadf1930000-7fadf1936000 r--p 0000d000 00:24 321861                     /usr/lib64/libnvidia-egl-wayland2.so.1.0.1
+7fadf1936000-7fadf1938000 r--p 00012000 00:24 321861                     /usr/lib64/libnvidia-egl-wayland2.so.1.0.1
+7fadf1938000-7fadf1939000 rw-p 00014000 00:24 321861                     /usr/lib64/libnvidia-egl-wayland2.so.1.0.1
+7fadf1939000-7fadf196d000 r--p 00000000 00:24 321885                     /usr/lib64/libEGL_nvidia.so.595.58.03
+7fadf196d000-7fadf1a03000 r-xp 00034000 00:24 321885                     /usr/lib64/libEGL_nvidia.so.595.58.03
+7fadf1a03000-7fadf1a56000 r--p 000ca000 00:24 321885                     /usr/lib64/libEGL_nvidia.so.595.58.03
+7fadf1a56000-7fadf1a57000 ---p 0011d000 00:24 321885                     /usr/lib64/libEGL_nvidia.so.595.58.03
+7fadf1a57000-7fadf1a5f000 r--p 0011d000 00:24 321885                     /usr/lib64/libEGL_nvidia.so.595.58.03
+7fadf1a5f000-7fadf1a75000 rw-p 00125000 00:24 321885                     /usr/lib64/libEGL_nvidia.so.595.58.03
+7fadf1a75000-7fadf1a7a000 rw-p 00000000 00:00 0 
+7fadf1a7a000-7fadf1ab9000 r-xp 00000000 00:24 35832                      /usr/lib64/libGLdispatch.so.0.0.0
+7fadf1ab9000-7fadf1acd000 r--p 0003f000 00:24 35832                      /usr/lib64/libGLdispatch.so.0.0.0
+7fadf1acd000-7fadf1ae9000 r--p 00053000 00:24 35832                      /usr/lib64/libGLdispatch.so.0.0.0
+7fadf1ae9000-7fadf1aea000 rw-p 0006f000 00:24 35832                      /usr/lib64/libGLdispatch.so.0.0.0
+7fadf1aea000-7fadf1af2000 rw-p 00000000 00:00 0 
+7fadf1af2000-7fadf1af4000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf1af4000-7fadf1af5000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf1af5000-7fadf1af6000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf1af6000-7fadf1b06000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadf1b06000-7fadf1b16000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadf1b16000-7fadf1bdf000 r-xp 00000000 00:24 37414                      /usr/lib64/libzstd.so.1.5.7
+7fadf1bdf000-7fadf1bfd000 r--p 000c9000 00:24 37414                      /usr/lib64/libzstd.so.1.5.7
+7fadf1bfd000-7fadf1bff000 r--p 000e6000 00:24 37414                      /usr/lib64/libzstd.so.1.5.7
+7fadf1bff000-7fadf1c00000 rw-p 00000000 00:00 0 
+7fadf1c00000-7fadf1f14000 r--p 00000000 00:24 321903                     /usr/lib64/libnvidia-gpucomp.so.595.58.03
+7fadf1f14000-7fadf5e42000 r-xp 00314000 00:24 321903                     /usr/lib64/libnvidia-gpucomp.so.595.58.03
+7fadf5e42000-7fadf7271000 r--p 04242000 00:24 321903                     /usr/lib64/libnvidia-gpucomp.so.595.58.03
+7fadf7271000-7fadf7272000 ---p 05671000 00:24 321903                     /usr/lib64/libnvidia-gpucomp.so.595.58.03
+7fadf7272000-7fadf747e000 r--p 05671000 00:24 321903                     /usr/lib64/libnvidia-gpucomp.so.595.58.03
+7fadf747e000-7fadf75b8000 rw-p 0587d000 00:24 321903                     /usr/lib64/libnvidia-gpucomp.so.595.58.03
+7fadf75b8000-7fadf7664000 rw-p 00000000 00:00 0 
+7fadf7664000-7fadf7665000 r--s 00000000 00:07 1685                       /dev/nvidiactl
+7fadf7665000-7fadf7674000 r-xp 00000000 00:24 733703                     /usr/lib64/libVkLayer_MESA_device_select.so
+7fadf7674000-7fadf767b000 r--p 0000f000 00:24 733703                     /usr/lib64/libVkLayer_MESA_device_select.so
+7fadf767b000-7fadf767c000 r--p 00016000 00:24 733703                     /usr/lib64/libVkLayer_MESA_device_select.so
+7fadf767c000-7fadf767d000 rw-p 00017000 00:24 733703                     /usr/lib64/libVkLayer_MESA_device_select.so
+7fadf767d000-7fadf767f000 rw-p 00000000 00:00 0 
+7fadf767f000-7fadf768a000 r-xp 00000000 00:24 36355                      /usr/lib64/libffi.so.8.2.0
+7fadf768a000-7fadf768d000 r--p 0000b000 00:24 36355                      /usr/lib64/libffi.so.8.2.0
+7fadf768d000-7fadf768e000 r--p 0000e000 00:24 36355                      /usr/lib64/libffi.so.8.2.0
+7fadf768e000-7fadf768f000 rw-p 0000f000 00:24 36355                      /usr/lib64/libffi.so.8.2.0
+7fadf768f000-7fadf76a7000 r-xp 00000000 00:24 36272                      /usr/lib64/libdisplay-info.so.0.3.0
+7fadf76a7000-7fadf76c5000 r--p 00018000 00:24 36272                      /usr/lib64/libdisplay-info.so.0.3.0
+7fadf76c5000-7fadf76c6000 r--p 00035000 00:24 36272                      /usr/lib64/libdisplay-info.so.0.3.0
+7fadf76c6000-7fadf76c7000 rw-p 00000000 00:00 0 
+7fadf76c7000-7fadf7797000 r-xp 00000000 00:24 729875                     /usr/lib64/libsystemd.so.0.42.0
+7fadf7797000-7fadf77f5000 r--p 000d0000 00:24 729875                     /usr/lib64/libsystemd.so.0.42.0
+7fadf77f5000-7fadf77fe000 r--p 0012d000 00:24 729875                     /usr/lib64/libsystemd.so.0.42.0
+7fadf77fe000-7fadf77ff000 rw-p 00136000 00:24 729875                     /usr/lib64/libsystemd.so.0.42.0
+7fadf77ff000-7fadf7800000 rw-p 00000000 00:00 0 
+7fadf7800000-7fadf7a50000 r-xp 00000000 00:24 321900                     /usr/lib64/libnvidia-glcore.so.595.58.03
+7fadf7a50000-7fadf7a71000 rwxp 00250000 00:24 321900                     /usr/lib64/libnvidia-glcore.so.595.58.03
+7fadf7a71000-7fadf7c00000 r-xp 00271000 00:24 321900                     /usr/lib64/libnvidia-glcore.so.595.58.03
+7fadf7c00000-7fadf8800000 r-xp 00400000 00:24 321900                     /usr/lib64/libnvidia-glcore.so.595.58.03
+7fadf8800000-7fadf9c26000 r-xp 01000000 00:24 321900                     /usr/lib64/libnvidia-glcore.so.595.58.03
+7fadf9c26000-7fadf9c27000 ---p 02426000 00:24 321900                     /usr/lib64/libnvidia-glcore.so.595.58.03
+7fadf9c27000-7fadf9d9e000 r--p 02426000 00:24 321900                     /usr/lib64/libnvidia-glcore.so.595.58.03
+7fadf9d9e000-7fadf9e01000 rw-p 0259d000 00:24 321900                     /usr/lib64/libnvidia-glcore.so.595.58.03
+7fadf9e01000-7fadf9e20000 rw-p 00000000 00:00 0 
+7fadf9e20000-7fadf9e27000 r-xp 00000000 00:24 729892                     /usr/lib64/libdrm_amdgpu.so.1.134.0
+7fadf9e27000-7fadf9e2c000 r--p 00007000 00:24 729892                     /usr/lib64/libdrm_amdgpu.so.1.134.0
+7fadf9e2c000-7fadf9e2d000 r--p 0000b000 00:24 729892                     /usr/lib64/libdrm_amdgpu.so.1.134.0
+7fadf9e2d000-7fadf9e2e000 rw-p 00000000 00:00 0 
+7fadf9e2e000-7fadf9e35000 r-xp 00000000 00:24 37277                      /usr/lib64/libwayland-client.so.0.24.0
+7fadf9e35000-7fadf9e3a000 r--p 00007000 00:24 37277                      /usr/lib64/libwayland-client.so.0.24.0
+7fadf9e3a000-7fadf9e3c000 r--p 0000c000 00:24 37277                      /usr/lib64/libwayland-client.so.0.24.0
+7fadf9e3c000-7fadf9e3d000 rw-p 0000e000 00:24 37277                      /usr/lib64/libwayland-client.so.0.24.0
+7fadf9e3d000-7fadf9e3e000 r-xp 00000000 00:24 37397                      /usr/lib64/libxshmfence.so.1.0.0
+7fadf9e3e000-7fadf9e3f000 r--p 00001000 00:24 37397                      /usr/lib64/libxshmfence.so.1.0.0
+7fadf9e3f000-7fadf9e40000 r--p 00001000 00:24 37397                      /usr/lib64/libxshmfence.so.1.0.0
+7fadf9e40000-7fadf9e41000 rw-p 00002000 00:24 37397                      /usr/lib64/libxshmfence.so.1.0.0
+7fadf9e41000-7fadf9e45000 r--p 00000000 00:24 321893                     /usr/lib64/libnvidia-allocator.so.595.58.03
+7fadf9e45000-7fadf9e5e000 r-xp 00004000 00:24 321893                     /usr/lib64/libnvidia-allocator.so.595.58.03
+7fadf9e5e000-7fadf9e69000 r--p 0001d000 00:24 321893                     /usr/lib64/libnvidia-allocator.so.595.58.03
+7fadf9e69000-7fadf9e6a000 r--p 00027000 00:24 321893                     /usr/lib64/libnvidia-allocator.so.595.58.03
+7fadf9e6a000-7fadf9e6b000 rw-p 00028000 00:24 321893                     /usr/lib64/libnvidia-allocator.so.595.58.03
+7fadf9e6b000-7fadf9e6c000 rw-p 00000000 00:00 0 
+7fadf9e6c000-7fadf9e78000 r-xp 00000000 00:24 729890                     /usr/lib64/libdrm.so.2.134.0
+7fadf9e78000-7fadf9e80000 r--p 0000c000 00:24 729890                     /usr/lib64/libdrm.so.2.134.0
+7fadf9e80000-7fadf9e81000 r--p 00014000 00:24 729890                     /usr/lib64/libdrm.so.2.134.0
+7fadf9e81000-7fadf9e82000 rw-p 00000000 00:00 0 
+7fadf9e82000-7fadf9eb8000 r-xp 00000000 00:24 36259                      /usr/lib64/libdbus-1.so.3.38.3
+7fadf9eb8000-7fadf9ed7000 r--p 00036000 00:24 36259                      /usr/lib64/libdbus-1.so.3.38.3
+7fadf9ed7000-7fadf9ed9000 r--p 00054000 00:24 36259                      /usr/lib64/libdbus-1.so.3.38.3
+7fadf9ed9000-7fadf9eda000 rw-p 00056000 00:24 36259                      /usr/lib64/libdbus-1.so.3.38.3
+7fadf9eda000-7fadf9edb000 rw-s 00000000 00:01 91253                      /memfd:lp_dma_buf (deleted)
+7fadf9edd000-7fadf9edf000 r-xp 00000000 00:24 733604                     /usr/lib64/libgbm.so.1.0.0
+7fadf9edf000-7fadf9ee1000 r--p 00002000 00:24 733604                     /usr/lib64/libgbm.so.1.0.0
+7fadf9ee1000-7fadf9ee2000 r--p 00003000 00:24 733604                     /usr/lib64/libgbm.so.1.0.0
+7fadf9ee2000-7fadf9ee3000 rw-p 00004000 00:24 733604                     /usr/lib64/libgbm.so.1.0.0
+7fadf9ee3000-7fadf9eed000 r-xp 00000000 00:24 35802                      /usr/lib64/libEGL.so.1.1.0
+7fadf9eed000-7fadf9ef2000 r--p 0000a000 00:24 35802                      /usr/lib64/libEGL.so.1.1.0
+7fadf9ef2000-7fadf9ef3000 r--p 0000f000 00:24 35802                      /usr/lib64/libEGL.so.1.1.0
+7fadf9ef3000-7fadf9ef4000 rw-p 00010000 00:24 35802                      /usr/lib64/libEGL.so.1.1.0
+7fadf9ef4000-7fadf9ef5000 rw-s 00000000 00:01 75544                      /memfd:lp_dma_buf (deleted)
+7fadf9ef5000-7fadf9efc000 r--s 00000000 00:24 809490                     /usr/lib64/gconv/gconv-modules.cache
+7fadf9efc000-7fadf9efd000 rw-p 00000000 00:00 0 
+7fadf9efd000-7fadf9efe000 rw-p 00000000 00:00 0 
+7fadf9efe000-7fadf9f01000 r-xp 00000000 00:24 37347                      /usr/lib64/libxcb-xfixes.so.0.0.0
+7fadf9f01000-7fadf9f05000 r--p 00003000 00:24 37347                      /usr/lib64/libxcb-xfixes.so.0.0.0
+7fadf9f05000-7fadf9f06000 r--p 00007000 00:24 37347                      /usr/lib64/libxcb-xfixes.so.0.0.0
+7fadf9f06000-7fadf9f07000 rw-p 00008000 00:24 37347                      /usr/lib64/libxcb-xfixes.so.0.0.0
+7fadf9f07000-7fadf9f0a000 r-xp 00000000 00:24 37344                      /usr/lib64/libxcb-sync.so.1.0.0
+7fadf9f0a000-7fadf9f0d000 r--p 00003000 00:24 37344                      /usr/lib64/libxcb-sync.so.1.0.0
+7fadf9f0d000-7fadf9f0e000 r--p 00006000 00:24 37344                      /usr/lib64/libxcb-sync.so.1.0.0
+7fadf9f0e000-7fadf9f0f000 rw-p 00007000 00:24 37344                      /usr/lib64/libxcb-sync.so.1.0.0
+7fadf9f0f000-7fadf9f15000 r-xp 00000000 00:24 37336                      /usr/lib64/libxcb-randr.so.0.1.0
+7fadf9f15000-7fadf9f1f000 r--p 00006000 00:24 37336                      /usr/lib64/libxcb-randr.so.0.1.0
+7fadf9f1f000-7fadf9f20000 r--p 00010000 00:24 37336                      /usr/lib64/libxcb-randr.so.0.1.0
+7fadf9f20000-7fadf9f21000 rw-p 00011000 00:24 37336                      /usr/lib64/libxcb-randr.so.0.1.0
+7fadf9f21000-7fadf9f2a000 r-xp 00000000 00:24 37324                      /usr/lib64/libxcb-glx.so.0.0.0
+7fadf9f2a000-7fadf9f3a000 r--p 00009000 00:24 37324                      /usr/lib64/libxcb-glx.so.0.0.0
+7fadf9f3a000-7fadf9f3c000 r--p 00019000 00:24 37324                      /usr/lib64/libxcb-glx.so.0.0.0
+7fadf9f3c000-7fadf9f3d000 rw-p 0001b000 00:24 37324                      /usr/lib64/libxcb-glx.so.0.0.0
+7fadf9f3d000-7fadf9f4d000 r--p 00000000 00:24 321901                     /usr/lib64/libnvidia-glsi.so.595.58.03
+7fadf9f4d000-7fadf9fad000 r-xp 00010000 00:24 321901                     /usr/lib64/libnvidia-glsi.so.595.58.03
+7fadf9fad000-7fadf9fca000 r--p 00070000 00:24 321901                     /usr/lib64/libnvidia-glsi.so.595.58.03
+7fadf9fca000-7fadf9fd0000 r--p 0008c000 00:24 321901                     /usr/lib64/libnvidia-glsi.so.595.58.03
+7fadf9fd0000-7fadf9fd1000 rw-p 00092000 00:24 321901                     /usr/lib64/libnvidia-glsi.so.595.58.03
+7fadf9fd1000-7fadf9fd9000 rw-p 00000000 00:00 0 
+7fadf9fd9000-7fadfa02a000 r--p 00000000 00:24 321891                     /usr/lib64/libGLX_nvidia.so.595.58.03
+7fadfa02a000-7fadfa087000 r-xp 00051000 00:24 321891                     /usr/lib64/libGLX_nvidia.so.595.58.03
+7fadfa087000-7fadfa0bc000 rwxp 000ae000 00:24 321891                     /usr/lib64/libGLX_nvidia.so.595.58.03
+7fadfa0bc000-7fadfa0bd000 r-xp 000e3000 00:24 321891                     /usr/lib64/libGLX_nvidia.so.595.58.03
+7fadfa0bd000-7fadfa0dd000 r--p 000e4000 00:24 321891                     /usr/lib64/libGLX_nvidia.so.595.58.03
+7fadfa0dd000-7fadfa0fd000 r--p 00103000 00:24 321891                     /usr/lib64/libGLX_nvidia.so.595.58.03
+7fadfa0fd000-7fadfa102000 rw-p 00123000 00:24 321891                     /usr/lib64/libGLX_nvidia.so.595.58.03
+7fadfa102000-7fadfa104000 rw-p 00000000 00:00 0 
+7fadfa104000-7fadfa152000 r-xp 00000000 00:24 37262                      /usr/lib64/libvulkan.so.1.4.341
+7fadfa152000-7fadfa18a000 r--p 0004e000 00:24 37262                      /usr/lib64/libvulkan.so.1.4.341
+7fadfa18a000-7fadfa18c000 r--p 00086000 00:24 37262                      /usr/lib64/libvulkan.so.1.4.341
+7fadfa18c000-7fadfa18d000 rw-p 00088000 00:24 37262                      /usr/lib64/libvulkan.so.1.4.341
+7fadfa18d000-7fadfa18e000 r-xp 00000000 00:24 37343                      /usr/lib64/libxcb-shm.so.0.0.0
+7fadfa18e000-7fadfa18f000 r--p 00001000 00:24 37343                      /usr/lib64/libxcb-shm.so.0.0.0
+7fadfa18f000-7fadfa190000 r--p 00002000 00:24 37343                      /usr/lib64/libxcb-shm.so.0.0.0
+7fadfa190000-7fadfa191000 rw-p 00003000 00:24 37343                      /usr/lib64/libxcb-shm.so.0.0.0
+7fadfa191000-7fadfa1a1000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadfa1a1000-7fadfa1b1000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadfa1d1000-7fadfa1f1000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadfa1f3000-7fadfa20e000 r-xp 00000000 00:24 37255                      /usr/lib64/libvorbis.so.0.4.9
+7fadfa20e000-7fadfa222000 r--p 0001b000 00:24 37255                      /usr/lib64/libvorbis.so.0.4.9
+7fadfa222000-7fadfa223000 r--p 0002e000 00:24 37255                      /usr/lib64/libvorbis.so.0.4.9
+7fadfa223000-7fadfa224000 rw-p 00000000 00:00 0 
+7fadfa224000-7fadfa22e000 r-xp 00000000 00:24 36500                      /usr/lib64/libgsm.so.1.0.24
+7fadfa22e000-7fadfa230000 r--p 0000a000 00:24 36500                      /usr/lib64/libgsm.so.1.0.24
+7fadfa230000-7fadfa231000 r--p 0000c000 00:24 36500                      /usr/lib64/libgsm.so.1.0.24
+7fadfa231000-7fadfa232000 rw-p 0000d000 00:24 36500                      /usr/lib64/libgsm.so.1.0.24
+7fadfa232000-7fadfa235000 r-xp 00000000 00:24 36097                      /usr/lib64/libasyncns.so.0.3.1
+7fadfa235000-7fadfa237000 r--p 00003000 00:24 36097                      /usr/lib64/libasyncns.so.0.3.1
+7fadfa237000-7fadfa238000 r--p 00004000 00:24 36097                      /usr/lib64/libasyncns.so.0.3.1
+7fadfa238000-7fadfa239000 rw-p 00000000 00:00 0 
+7fadfa239000-7fadfa23c000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadfa23c000-7fadfa23e000 rw-s 00000000 00:01 75552                      /memfd:/.glXXXXXX (deleted)
+7fadfa23e000-7fadfa23f000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadfa23f000-7fadfa243000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadfa243000-7fadfa244000 rw-s 00000000 00:07 1691                       /dev/nvidia0
+7fadfa244000-7fadfa246000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadfa246000-7fadfa247000 rw-s 00000000 00:07 1685                       /dev/nvidiactl
+7fadfa247000-7fadfa253000 r-xp 00000000 00:24 3826093                    /usr/lib64/wine-wow64/wine/x86_64-unix/winealsa.so
+7fadfa253000-7fadfa25a000 r--p 0000c000 00:24 3826093                    /usr/lib64/wine-wow64/wine/x86_64-unix/winealsa.so
+7fadfa25a000-7fadfa25b000 r--p 00013000 00:24 3826093                    /usr/lib64/wine-wow64/wine/x86_64-unix/winealsa.so
+7fadfa25b000-7fadfa25c000 rw-p 00014000 00:24 3826093                    /usr/lib64/wine-wow64/wine/x86_64-unix/winealsa.so
+7fadfa25c000-7fadfa25d000 rw-p 00000000 00:00 0 
+7fadfa25d000-7fadfa264000 r-xp 00000000 00:24 3826097                    /usr/lib64/wine-wow64/wine/x86_64-unix/winepulse.so
+7fadfa264000-7fadfa26f000 r--p 00007000 00:24 3826097                    /usr/lib64/wine-wow64/wine/x86_64-unix/winepulse.so
+7fadfa26f000-7fadfa270000 r--p 00011000 00:24 3826097                    /usr/lib64/wine-wow64/wine/x86_64-unix/winepulse.so
+7fadfa270000-7fadfa271000 rw-p 00012000 00:24 3826097                    /usr/lib64/wine-wow64/wine/x86_64-unix/winepulse.so
+7fadfa271000-7fadfa295000 r--p 00000000 00:24 3821387                    /usr/share/wine/fonts/tahoma.ttf
+7fadfa295000-7fadfa299000 r-xp 00000000 00:24 35943                      /usr/lib64/libXfixes.so.3.1.0
+7fadfa299000-7fadfa29b000 r--p 00004000 00:24 35943                      /usr/lib64/libXfixes.so.3.1.0
+7fadfa29b000-7fadfa29c000 r--p 00006000 00:24 35943                      /usr/lib64/libXfixes.so.3.1.0
+7fadfa29c000-7fadfa29d000 rw-p 00007000 00:24 35943                      /usr/lib64/libXfixes.so.3.1.0
+7fadfa29d000-7fadfa2a4000 r-xp 00000000 00:24 35939                      /usr/lib64/libXcursor.so.1.0.2
+7fadfa2a4000-7fadfa2a8000 r--p 00007000 00:24 35939                      /usr/lib64/libXcursor.so.1.0.2
+7fadfa2a8000-7fadfa2a9000 r--p 0000b000 00:24 35939                      /usr/lib64/libXcursor.so.1.0.2
+7fadfa2a9000-7fadfa3d7000 rw-p 00000000 00:00 0 
+7fadfa3d7000-7fadfa3e4000 r-xp 00000000 00:24 204615                     /usr/lib64/libXi.so.6.1.0
+7fadfa3e4000-7fadfa3e8000 r--p 0000d000 00:24 204615                     /usr/lib64/libXi.so.6.1.0
+7fadfa3e8000-7fadfa3e9000 r--p 00011000 00:24 204615                     /usr/lib64/libXi.so.6.1.0
+7fadfa3e9000-7fadfa3ea000 rw-p 00012000 00:24 204615                     /usr/lib64/libXi.so.6.1.0
+7fadfa3ea000-7fadfa3eb000 r-xp 00000000 00:24 35938                      /usr/lib64/libXcomposite.so.1.0.0
+7fadfa3eb000-7fadfa3ec000 r--p 00001000 00:24 35938                      /usr/lib64/libXcomposite.so.1.0.0
+7fadfa3ec000-7fadfa3ed000 r--p 00001000 00:24 35938                      /usr/lib64/libXcomposite.so.1.0.0
+7fadfa3ed000-7fadfa3ee000 rw-p 00000000 00:00 0 
+7fadfa3ee000-7fadfa3f6000 r-xp 00000000 00:24 35951                      /usr/lib64/libXrandr.so.2.2.0
+7fadfa3f6000-7fadfa3f9000 r--p 00008000 00:24 35951                      /usr/lib64/libXrandr.so.2.2.0
+7fadfa3f9000-7fadfa3fa000 r--p 0000b000 00:24 35951                      /usr/lib64/libXrandr.so.2.2.0
+7fadfa3fa000-7fadfa3fb000 rw-p 0000c000 00:24 35951                      /usr/lib64/libXrandr.so.2.2.0
+7fadfa3fb000-7fadfa403000 r-xp 00000000 00:24 35952                      /usr/lib64/libXrender.so.1.3.0
+7fadfa403000-7fadfa406000 r--p 00008000 00:24 35952                      /usr/lib64/libXrender.so.1.3.0
+7fadfa406000-7fadfa407000 r--p 0000a000 00:24 35952                      /usr/lib64/libXrender.so.1.3.0
+7fadfa407000-7fadfa408000 rw-p 0000b000 00:24 35952                      /usr/lib64/libXrender.so.1.3.0
+7fadfa408000-7fadfa40b000 r-xp 00000000 00:24 35962                      /usr/lib64/libXxf86vm.so.1.0.0
+7fadfa40b000-7fadfa40d000 r--p 00003000 00:24 35962                      /usr/lib64/libXxf86vm.so.1.0.0
+7fadfa40d000-7fadfa40e000 r--p 00004000 00:24 35962                      /usr/lib64/libXxf86vm.so.1.0.0
+7fadfa40e000-7fadfa40f000 rw-p 00005000 00:24 35962                      /usr/lib64/libXxf86vm.so.1.0.0
+7fadfa40f000-7fadfa410000 r-xp 00000000 00:24 35947                      /usr/lib64/libXinerama.so.1.0.0
+7fadfa410000-7fadfa411000 r--p 00001000 00:24 35947                      /usr/lib64/libXinerama.so.1.0.0
+7fadfa411000-7fadfa412000 r--p 00001000 00:24 35947                      /usr/lib64/libXinerama.so.1.0.0
+7fadfa412000-7fadfa413000 rw-p 00002000 00:24 35947                      /usr/lib64/libXinerama.so.1.0.0
+7fadfa413000-7fadfa415000 r-xp 00000000 00:24 35937                      /usr/lib64/libXau.so.6.0.0
+7fadfa415000-7fadfa416000 r--p 00002000 00:24 35937                      /usr/lib64/libXau.so.6.0.0
+7fadfa416000-7fadfa417000 r--p 00003000 00:24 35937                      /usr/lib64/libXau.so.6.0.0
+7fadfa417000-7fadfa418000 rw-p 00000000 00:00 0 
+7fadfa418000-7fadfa42c000 r-xp 00000000 00:24 37355                      /usr/lib64/libxcb.so.1.1.0
+7fadfa42c000-7fadfa440000 r--p 00014000 00:24 37355                      /usr/lib64/libxcb.so.1.1.0
+7fadfa440000-7fadfa441000 r--p 00028000 00:24 37355                      /usr/lib64/libxcb.so.1.1.0
+7fadfa441000-7fadfa442000 rw-p 00029000 00:24 37355                      /usr/lib64/libxcb.so.1.1.0
+7fadfa442000-7fadfa4e8000 r-xp 00000000 00:24 35935                      /usr/lib64/libX11.so.6.4.0
+7fadfa4e8000-7fadfa591000 r--p 000a6000 00:24 35935                      /usr/lib64/libX11.so.6.4.0
+7fadfa591000-7fadfa594000 r--p 0014e000 00:24 35935                      /usr/lib64/libX11.so.6.4.0
+7fadfa594000-7fadfa598000 rw-p 00151000 00:24 35935                      /usr/lib64/libX11.so.6.4.0
+7fadfa598000-7fadfa5a4000 r-xp 00000000 00:24 35942                      /usr/lib64/libXext.so.6.4.0
+7fadfa5a4000-7fadfa5aa000 r--p 0000c000 00:24 35942                      /usr/lib64/libXext.so.6.4.0
+7fadfa5aa000-7fadfa5ab000 r--p 00011000 00:24 35942                      /usr/lib64/libXext.so.6.4.0
+7fadfa5ab000-7fadfa5ac000 rw-p 00012000 00:24 35942                      /usr/lib64/libXext.so.6.4.0
+7fadfa5ac000-7fadfa5ad000 r--s 00000000 00:07 1685                       /dev/nvidiactl
+7fadfa5ad000-7fadfa5ae000 r-xp 00000000 00:24 37333                      /usr/lib64/libxcb-present.so.0.0.0
+7fadfa5ae000-7fadfa5b0000 r--p 00001000 00:24 37333                      /usr/lib64/libxcb-present.so.0.0.0
+7fadfa5b0000-7fadfa5b1000 r--p 00002000 00:24 37333                      /usr/lib64/libxcb-present.so.0.0.0
+7fadfa5b1000-7fadfa5b2000 rw-p 00003000 00:24 37333                      /usr/lib64/libxcb-present.so.0.0.0
+7fadfa5b2000-7fadfa5b3000 r-xp 00000000 00:24 35934                      /usr/lib64/libX11-xcb.so.1.0.0
+7fadfa5b3000-7fadfa5b4000 r--p 00001000 00:24 35934                      /usr/lib64/libX11-xcb.so.1.0.0
+7fadfa5b4000-7fadfa5b5000 r--p 00001000 00:24 35934                      /usr/lib64/libX11-xcb.so.1.0.0
+7fadfa5b5000-7fadfa5b6000 rw-p 00000000 00:00 0 
+7fadfa5b6000-7fadfa5b8000 r-xp 00000000 00:24 37319                      /usr/lib64/libxcb-dri3.so.0.1.0
+7fadfa5b8000-7fadfa5ba000 r--p 00002000 00:24 37319                      /usr/lib64/libxcb-dri3.so.0.1.0
+7fadfa5ba000-7fadfa5bb000 r--p 00004000 00:24 37319                      /usr/lib64/libxcb-dri3.so.0.1.0
+7fadfa5bb000-7fadfa5bc000 rw-p 00005000 00:24 37319                      /usr/lib64/libxcb-dri3.so.0.1.0
+7fadfa5bc000-7fadfa5bd000 r-xp 00000000 00:24 729273                     /usr/lib64/librt.so.1
+7fadfa5bd000-7fadfa5be000 r--p 00001000 00:24 729273                     /usr/lib64/librt.so.1
+7fadfa5be000-7fadfa5bf000 r--p 00001000 00:24 729273                     /usr/lib64/librt.so.1
+7fadfa5bf000-7fadfa5c0000 rw-p 00000000 00:00 0 
+7fadfa5c0000-7fadfa5c1000 r-xp 00000000 00:24 729271                     /usr/lib64/libpthread.so.0
+7fadfa5c1000-7fadfa5c2000 r--p 00001000 00:24 729271                     /usr/lib64/libpthread.so.0
+7fadfa5c2000-7fadfa5c3000 r--p 00001000 00:24 729271                     /usr/lib64/libpthread.so.0
+7fadfa5c3000-7fadfa5c4000 rw-p 00000000 00:00 0 
+7fadfa5c4000-7fadfa5c5000 r-xp 00000000 00:24 729264                     /usr/lib64/libdl.so.2
+7fadfa5c5000-7fadfa5c6000 r--p 00001000 00:24 729264                     /usr/lib64/libdl.so.2
+7fadfa5c6000-7fadfa5c7000 r--p 00001000 00:24 729264                     /usr/lib64/libdl.so.2
+7fadfa5c7000-7fadfa5c8000 rw-p 00000000 00:00 0 
+7fadfa5c8000-7fadfa5c9000 r--p 00000000 00:24 321909                     /usr/lib64/libnvidia-tls.so.595.58.03
+7fadfa5c9000-7fadfa5cb000 r-xp 00001000 00:24 321909                     /usr/lib64/libnvidia-tls.so.595.58.03
+7fadfa5cb000-7fadfa5cc000 r--p 00003000 00:24 321909                     /usr/lib64/libnvidia-tls.so.595.58.03
+7fadfa5cc000-7fadfa5cd000 r--p 00003000 00:24 321909                     /usr/lib64/libnvidia-tls.so.595.58.03
+7fadfa5cd000-7fadfa5ce000 rw-p 00004000 00:24 321909                     /usr/lib64/libnvidia-tls.so.595.58.03
+7fadfa5ce000-7fadfa5d0000 r--p 00000000 00:24 3824128                    /usr/share/wine/fonts/vgasys.fon
+7fadfa5d0000-7fadfa61b000 r-xp 00000000 00:24 3825187                    /usr/lib64/wine-wow64/wine/x86_64-unix/winex11.so
+7fadfa61b000-7fadfa63b000 r--p 0004b000 00:24 3825187                    /usr/lib64/wine-wow64/wine/x86_64-unix/winex11.so
+7fadfa63b000-7fadfa63e000 r--p 0006b000 00:24 3825187                    /usr/lib64/wine-wow64/wine/x86_64-unix/winex11.so
+7fadfa63e000-7fadfa640000 rw-p 0006e000 00:24 3825187                    /usr/lib64/wine-wow64/wine/x86_64-unix/winex11.so
+7fadfa640000-7fadfa645000 rw-p 00000000 00:00 0 
+7fadfa645000-7fadfa6da000 r-xp 00000000 00:24 3825173                    /usr/lib64/wine-wow64/wine/x86_64-unix/opengl32.so
+7fadfa6da000-7fadfa73d000 r--p 00095000 00:24 3825173                    /usr/lib64/wine-wow64/wine/x86_64-unix/opengl32.so
+7fadfa73d000-7fadfa75a000 r--p 000f8000 00:24 3825173                    /usr/lib64/wine-wow64/wine/x86_64-unix/opengl32.so
+7fadfa75a000-7fadfa761000 rw-p 00115000 00:24 3825173                    /usr/lib64/wine-wow64/wine/x86_64-unix/opengl32.so
+7fadfa761000-7fadfa767000 rw-p 00000000 00:00 0 
+7fadfa767000-7fadfa76c000 r--s 00000000 00:24 359165                     /usr/lib/fontconfig/cache/cc8b894d3abbdf0310c48629c0737d80-le64.cache-9
+7fadfa76c000-7fadfa789000 r--s 00000000 00:24 359163                     /usr/lib/fontconfig/cache/123d59b33ddb0e7c76bb24004bd5cfac-le64.cache-9
+7fadfa789000-7fadfa78e000 r--s 00000000 00:24 359161                     /usr/lib/fontconfig/cache/131ab5cc1583381c4f7ce0194912c56d-le64.cache-9
+7fadfa78e000-7fadfa78f000 r--s 00000000 00:24 359159                     /usr/lib/fontconfig/cache/b2307de753f1224d9542f27e8b3975ae-le64.cache-9
+7fadfa78f000-7fadfa791000 r--s 00000000 00:24 359157                     /usr/lib/fontconfig/cache/01d40cee498be4726842ba21cbce24ab-le64.cache-9
+7fadfa791000-7fadfa792000 r--s 00000000 00:24 359155                     /usr/lib/fontconfig/cache/39377a11d38956c26ecfe23db50b3cd3-le64.cache-9
+7fadfa792000-7fadfa79d000 r--s 00000000 00:24 359153                     /usr/lib/fontconfig/cache/f2e61d441ca43dbfffafb9d0f2c6d8fc-le64.cache-9
+7fadfa79d000-7fadfa79f000 r--s 00000000 00:24 359151                     /usr/lib/fontconfig/cache/9d9e7a658cb1f50f02561d1ed3ca8bca-le64.cache-9
+7fadfa79f000-7fadfa7a0000 r--s 00000000 00:24 3826655                    /usr/lib/fontconfig/cache/6fcb01a03a016cc71057b587cdea6709-le64.cache-9
+7fadfa7a0000-7fadfa7a5000 r--s 00000000 00:24 359147                     /usr/lib/fontconfig/cache/29c8f5b6bf15d25ebb2e963855ab41be-le64.cache-9
+7fadfa7a5000-7fadfa7a6000 r--s 00000000 00:24 359145                     /usr/lib/fontconfig/cache/2a90ec7ec7fc01d3a9f58fddf8db0237-le64.cache-9
+7fadfa7a6000-7fadfa7a9000 r--s 00000000 00:24 359143                     /usr/lib/fontconfig/cache/71fe2b50576cdbc5f931776365d4a6ea-le64.cache-9
+7fadfa7a9000-7fadfa7ab000 r--s 00000000 00:24 359141                     /usr/lib/fontconfig/cache/e5da922122f90e18ce9aab86d5c2b324-le64.cache-9
+7fadfa7ab000-7fadfa7ad000 r--s 00000000 00:24 3826653                    /usr/lib/fontconfig/cache/de3fc716275e870cc68457cf08da2de7-le64.cache-9
+7fadfa7ad000-7fadfa7af000 r--s 00000000 00:24 359139                     /usr/lib/fontconfig/cache/9162ae45def2e036f06e4d1913f17ba7-le64.cache-9
+7fadfa7af000-7fadfa7b8000 r--s 00000000 00:24 359137                     /usr/lib/fontconfig/cache/2a3658b432e68423dcec456e1667e977-le64.cache-9
+7fadfa7b8000-7fadfa7b9000 r--s 00000000 00:24 359135                     /usr/lib/fontconfig/cache/22f06f3be2d16d058da85b73ae1dc5b1-le64.cache-9
+7fadfa7b9000-7fadfa81b000 r--s 00000000 00:24 359133                     /usr/lib/fontconfig/cache/d63f98f14a274bd69a5425fc33aaac6b-le64.cache-9
+7fadfa81b000-7fadfa82e000 r--s 00000000 00:24 359131                     /usr/lib/fontconfig/cache/42536ef14367b24656ac994a93d66238-le64.cache-9
+7fadfa82e000-7fadfa839000 r--s 00000000 00:24 359129                     /usr/lib/fontconfig/cache/efcfae1a52990961975415036867654f-le64.cache-9
+7fadfa839000-7fadfa84c000 r--s 00000000 00:24 359127                     /usr/lib/fontconfig/cache/c4be257954870c0bf6972134c1de66d5-le64.cache-9
+7fadfa84c000-7fadfa84d000 r--s 00000000 00:24 359125                     /usr/lib/fontconfig/cache/a1059391c956b3cbc42a78cac70f430a-le64.cache-9
+7fadfa84d000-7fadfa893000 r--s 00000000 00:24 543443                     /usr/lib/fontconfig/cache/7ee6df7a8311986241317a58487e0145-le64.cache-9
+7fadfa893000-7fadfa89c000 r--s 00000000 00:24 359119                     /usr/lib/fontconfig/cache/6ee3103884cce7b2fe6f32eba9089175-le64.cache-9
+7fadfa89c000-7fadfa8a3000 r--s 00000000 00:24 359113                     /usr/lib/fontconfig/cache/614d1caaa4d7914789410f6367de37ca-le64.cache-9
+7fadfa8a3000-7fadfa8c8000 r-xp 00000000 00:24 36742                      /usr/lib64/liblzma.so.5.8.2
+7fadfa8c8000-7fadfa8d7000 r--p 00025000 00:24 36742                      /usr/lib64/liblzma.so.5.8.2
+7fadfa8d7000-7fadfa8d8000 r--p 00033000 00:24 36742                      /usr/lib64/liblzma.so.5.8.2
+7fadfa8d8000-7fadfa8d9000 rw-p 00034000 00:24 36742                      /usr/lib64/liblzma.so.5.8.2
+7fadfa8d9000-7fadfa9d5000 r-xp 00000000 00:24 37382                      /usr/lib64/libxml2.so.2.12.10
+7fadfa9d5000-7fadfaa3b000 r--p 000fc000 00:24 37382                      /usr/lib64/libxml2.so.2.12.10
+7fadfaa3b000-7fadfaa46000 r--p 00161000 00:24 37382                      /usr/lib64/libxml2.so.2.12.10
+7fadfaa46000-7fadfaa47000 rw-p 0016c000 00:24 37382                      /usr/lib64/libxml2.so.2.12.10
+7fadfaa47000-7fadfaa48000 rw-p 00000000 00:00 0 
+7fadfaa48000-7fadfaa7b000 r-xp 00000000 00:24 36382                      /usr/lib64/libfontconfig.so.1.16.0
+7fadfaa7b000-7fadfaa98000 r--p 00033000 00:24 36382                      /usr/lib64/libfontconfig.so.1.16.0
+7fadfaa98000-7fadfaa9a000 r--p 00050000 00:24 36382                      /usr/lib64/libfontconfig.so.1.16.0
+7fadfaa9a000-7fadfaa9b000 rw-p 00052000 00:24 36382                      /usr/lib64/libfontconfig.so.1.16.0
+7fadfaa9b000-7fadfab1c000 r-xp 00000000 00:24 36915                      /usr/lib64/libpcre2-8.so.0.15.0
+7fadfab1c000-7fadfab4a000 r--p 00081000 00:24 36915                      /usr/lib64/libpcre2-8.so.0.15.0
+7fadfab4a000-7fadfab4b000 r--p 000ae000 00:24 36915                      /usr/lib64/libpcre2-8.so.0.15.0
+7fadfab4b000-7fadfab4c000 rw-p 000af000 00:24 36915                      /usr/lib64/libpcre2-8.so.0.15.0
+7fadfab4c000-7fadfab4d000 r-xp 00000000 00:24 36187                      /usr/lib64/libbrotlicommon.so.1.2.0
+7fadfab4d000-7fadfab6d000 r--p 00001000 00:24 36187                      /usr/lib64/libbrotlicommon.so.1.2.0
+7fadfab6d000-7fadfab6e000 r--p 00020000 00:24 36187                      /usr/lib64/libbrotlicommon.so.1.2.0
+7fadfab6e000-7fadfab6f000 rw-p 00000000 00:00 0 
+7fadfab6f000-7fadfac1c000 r-xp 00000000 00:24 185392                     /usr/lib64/libglib-2.0.so.0.8800.1
+7fadfac1c000-7fadfacce000 r--p 000ad000 00:24 185392                     /usr/lib64/libglib-2.0.so.0.8800.1
+7fadfacce000-7fadfaccf000 r--p 0015f000 00:24 185392                     /usr/lib64/libglib-2.0.so.0.8800.1
+7fadfaccf000-7fadfacd0000 rw-p 00160000 00:24 185392                     /usr/lib64/libglib-2.0.so.0.8800.1
+7fadfacd0000-7fadfacd1000 rw-p 00000000 00:00 0 
+7fadfacd1000-7fadfadca000 r-xp 00000000 00:24 185532                     /usr/lib64/libharfbuzz.so.0.61410.0
+7fadfadca000-7fadfae0a000 r--p 000f9000 00:24 185532                     /usr/lib64/libharfbuzz.so.0.61410.0
+7fadfae0a000-7fadfae0c000 r--p 00138000 00:24 185532                     /usr/lib64/libharfbuzz.so.0.61410.0
+7fadfae0c000-7fadfae0d000 rw-p 0013a000 00:24 185532                     /usr/lib64/libharfbuzz.so.0.61410.0
+7fadfae0d000-7fadfaeaf000 r-xp 00000000 00:24 185517                     /usr/lib64/libfreetype.so.6.20.6
+7fadfaeaf000-7fadfaee0000 r--p 000a2000 00:24 185517                     /usr/lib64/libfreetype.so.6.20.6
+7fadfaee0000-7fadfaee8000 r--p 000d2000 00:24 185517                     /usr/lib64/libfreetype.so.6.20.6
+7fadfaee8000-7fadfaee9000 rw-p 00000000 00:00 0 
+7fadfaee9000-7fadfaf78000 r-xp 00000000 00:24 729265                     /usr/lib64/libm.so.6
+7fadfaf78000-7fadfaffe000 r--p 0008f000 00:24 729265                     /usr/lib64/libm.so.6
+7fadfaffe000-7fadfafff000 r--p 00114000 00:24 729265                     /usr/lib64/libm.so.6
+7fadfafff000-7fadfb000000 rw-p 00115000 00:24 729265                     /usr/lib64/libm.so.6
+7fadfb000000-7fadfb135000 r-xp 00000000 00:24 3825176                    /usr/lib64/wine-wow64/wine/x86_64-unix/win32u.so
+7fadfb135000-7fadfb19f000 r--p 00135000 00:24 3825176                    /usr/lib64/wine-wow64/wine/x86_64-unix/win32u.so
+7fadfb19f000-7fadfb1a9000 r--p 0019e000 00:24 3825176                    /usr/lib64/wine-wow64/wine/x86_64-unix/win32u.so
+7fadfb1a9000-7fadfb1b7000 rw-p 001a8000 00:24 3825176                    /usr/lib64/wine-wow64/wine/x86_64-unix/win32u.so
+7fadfb1b7000-7fadfb225000 rw-p 00000000 00:00 0 
+7fadfb225000-7fadfb227000 r--s 00000000 00:24 359117                     /usr/lib/fontconfig/cache/383aa4c3ea81d46e4a1459cd427fba23-le64.cache-9
+7fadfb227000-7fadfb229000 r--s 00000000 00:24 359115                     /usr/lib/fontconfig/cache/cc4435afd06e20625c417ffcddec4f51-le64.cache-9
+7fadfb229000-7fadfb241000 r-xp 00000000 00:24 36497                      /usr/lib64/libgraphite2.so.3.2.1
+7fadfb241000-7fadfb246000 r--p 00018000 00:24 36497                      /usr/lib64/libgraphite2.so.3.2.1
+7fadfb246000-7fadfb248000 r--p 0001c000 00:24 36497                      /usr/lib64/libgraphite2.so.3.2.1
+7fadfb248000-7fadfb249000 rw-p 00000000 00:00 0 
+7fadfb249000-7fadfb252000 r-xp 00000000 00:24 36188                      /usr/lib64/libbrotlidec.so.1.2.0
+7fadfb252000-7fadfb256000 r--p 00009000 00:24 36188                      /usr/lib64/libbrotlidec.so.1.2.0
+7fadfb256000-7fadfb257000 r--p 0000c000 00:24 36188                      /usr/lib64/libbrotlidec.so.1.2.0
+7fadfb257000-7fadfb258000 rw-p 00000000 00:00 0 
+7fadfb258000-7fadfb284000 r-xp 00000000 00:24 185336                     /usr/lib64/libpng16.so.16.58.0
+7fadfb284000-7fadfb293000 r--p 0002c000 00:24 185336                     /usr/lib64/libpng16.so.16.58.0
+7fadfb293000-7fadfb294000 r--p 0003a000 00:24 185336                     /usr/lib64/libpng16.so.16.58.0
+7fadfb294000-7fadfb295000 rw-p 00000000 00:00 0 
+7fadfb295000-7fadfb2a4000 r-xp 00000000 00:24 36193                      /usr/lib64/libbz2.so.1.0.8
+7fadfb2a4000-7fadfb2a7000 r--p 0000f000 00:24 36193                      /usr/lib64/libbz2.so.1.0.8
+7fadfb2a7000-7fadfb2a8000 r--p 00011000 00:24 36193                      /usr/lib64/libbz2.so.1.0.8
+7fadfb2a8000-7fadfb2a9000 rw-p 00012000 00:24 36193                      /usr/lib64/libbz2.so.1.0.8
+7fadfb2a9000-7fadfb2c6000 r-xp 00000000 00:24 37407                      /usr/lib64/libz.so.1.3.1.zlib-ng
+7fadfb2c6000-7fadfb2d1000 r--p 0001d000 00:24 37407                      /usr/lib64/libz.so.1.3.1.zlib-ng
+7fadfb2d1000-7fadfb2d2000 r--p 00027000 00:24 37407                      /usr/lib64/libz.so.1.3.1.zlib-ng
+7fadfb2d2000-7fadfb2d3000 rw-p 00028000 00:24 37407                      /usr/lib64/libz.so.1.3.1.zlib-ng
+7fadfb2d3000-7fadfb2f7000 r-xp 00000000 00:24 184628                     /usr/lib64/libgcc_s-16-20260515.so.1
+7fadfb2f7000-7fadfb2fe000 r--p 00024000 00:24 184628                     /usr/lib64/libgcc_s-16-20260515.so.1
+7fadfb2fe000-7fadfb2ff000 r--p 0002b000 00:24 184628                     /usr/lib64/libgcc_s-16-20260515.so.1
+7fadfb2ff000-7fadfb600000 rw-p 00000000 00:00 0 
+7fadfb600000-7fae09492000 r--p 00000000 00:24 729370                     /usr/lib/locale/locale-archive
+7fae09492000-7fae09493000 r--s 00000000 00:24 359123                     /usr/lib/fontconfig/cache/aa02322cc1375fea2382deabf4339973-le64.cache-9
+7fae09493000-7fae09499000 r--s 00000000 00:24 543441                     /usr/lib/fontconfig/cache/221930ae9526a9cb8049af2916f03412-le64.cache-9
+7fae09499000-7fae094a4000 r-xp 00000000 00:24 37202                      /usr/lib64/libunwind.so.8.2.0
+7fae094a4000-7fae094a8000 r--p 0000b000 00:24 37202                      /usr/lib64/libunwind.so.8.2.0
+7fae094a8000-7fae094a9000 r--p 0000e000 00:24 37202                      /usr/lib64/libunwind.so.8.2.0
+7fae094a9000-7fae094aa000 rw-p 0000f000 00:24 37202                      /usr/lib64/libunwind.so.8.2.0
+7fae094aa000-7fae094b4000 rw-p 00000000 00:00 0 
+7fae094b4000-7fae09525000 r-xp 00000000 00:24 3825171                    /usr/lib64/wine-wow64/wine/x86_64-unix/ntdll.so
+7fae09525000-7fae0954d000 r--p 00071000 00:24 3825171                    /usr/lib64/wine-wow64/wine/x86_64-unix/ntdll.so
+7fae0954d000-7fae0954f000 r--p 00099000 00:24 3825171                    /usr/lib64/wine-wow64/wine/x86_64-unix/ntdll.so
+7fae0954f000-7fae09551000 rw-p 0009b000 00:24 3825171                    /usr/lib64/wine-wow64/wine/x86_64-unix/ntdll.so
+7fae09551000-7fae0957f000 rw-p 00000000 00:00 0 
+7fae0957f000-7fae096f1000 r-xp 00000000 00:24 729263                     /usr/lib64/libc.so.6
+7fae096f1000-7fae0976a000 r--p 00172000 00:24 729263                     /usr/lib64/libc.so.6
+7fae0976a000-7fae0976e000 r--p 001eb000 00:24 729263                     /usr/lib64/libc.so.6
+7fae0976e000-7fae09770000 rw-p 001ef000 00:24 729263                     /usr/lib64/libc.so.6
+7fae09770000-7fae09778000 rw-p 00000000 00:00 0 
+7fae09778000-7fae09779000 r--s 00000000 00:24 359111                     /usr/lib/fontconfig/cache/0f80fa86029ae75a63f21d682b864529-le64.cache-9
+7fae09779000-7fae09782000 r--s 00000000 00:24 359109                     /usr/lib/fontconfig/cache/6cdba951d5a16891afaaf2fee13e80e7-le64.cache-9
+7fae09782000-7fae09785000 r--s 00000000 00:24 359107                     /usr/lib/fontconfig/cache/feeafda3627faad7596d025cfacea73f-le64.cache-9
+7fae09785000-7fae0978c000 r--s 00000000 00:24 359105                     /usr/lib/fontconfig/cache/d4fe5728f86380c2e3b1e4e9a34fabd8-le64.cache-9
+7fae0978c000-7fae0978f000 r--s 00000000 00:24 359103                     /usr/lib/fontconfig/cache/18f520a508f13854f77176faf7889ae9-le64.cache-9
+7fae0978f000-7fae09792000 r--s 00000000 00:24 359101                     /usr/lib/fontconfig/cache/3196f05a030874ca00722cbf1e991434-le64.cache-9
+7fae09792000-7fae09795000 r--s 00000000 00:24 359099                     /usr/lib/fontconfig/cache/a11fef9c6b59ddb48eba670bb9bf2c6a-le64.cache-9
+7fae09795000-7fae09797000 r--s 00000000 00:24 2999556                    /home/dev/.cache/fontconfig/92bad001a8bae095f20093b997cd930a-le64.cache-9
+7fae09797000-7fae0979c000 r--s 00000000 00:24 878661                     /usr/lib/fontconfig/cache/beeeeb3dfe132a8a0633a017c99ce0c0-le64.cache-9
+7fae0979c000-7fae0979e000 rw-p 00000000 00:00 0 
+7fae0979e000-7fae097c8000 r-xp 00000000 00:24 729260                     /usr/lib64/ld-linux-x86-64.so.2
+7fae097c8000-7fae097d4000 r--p 0002a000 00:24 729260                     /usr/lib64/ld-linux-x86-64.so.2
+7fae097d4000-7fae097d6000 r--p 00036000 00:24 729260                     /usr/lib64/ld-linux-x86-64.so.2
+7fae097d6000-7fae097d7000 rw-p 00038000 00:24 729260                     /usr/lib64/ld-linux-x86-64.so.2
+7fae097d7000-7fae097d8000 rw-p 00000000 00:00 0 
+7fae097d8000-7fae097d9000 r-xp 00000000 00:24 3825177                    /usr/lib64/wine-wow64/wine/x86_64-unix/wine
+7fae097d9000-7fae097da000 r--p 00001000 00:24 3825177                    /usr/lib64/wine-wow64/wine/x86_64-unix/wine
+7fae097da000-7fae097db000 r--p 00001000 00:24 3825177                    /usr/lib64/wine-wow64/wine/x86_64-unix/wine
+7fae097db000-7fae097dc000 rw-p 00002000 00:24 3825177                    /usr/lib64/wine-wow64/wine/x86_64-unix/wine
+7fae097dc000-7fae097e0000 r--p 00000000 00:00 0                          [vvar]
+7fae097e0000-7fae097e2000 r--p 00000000 00:00 0                          [vvar_vclock]
+7fae097e2000-7fae097e4000 r-xp 00000000 00:00 0                          [vdso]
+7ffe474bd000-7ffe474df000 rw-p 00000000 00:00 0                          [stack]
+7ffffe000000-7fffffbb0000 ---p 00000000 00:00 0 
+7fffffbb0000-7fffffff0000 rw-p 00000000 00:00 0 
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]

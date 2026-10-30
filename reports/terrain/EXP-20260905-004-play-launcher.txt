@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd /home/dev/ABLPC
+make session-audit
+printf 'At level select: Right once for Anthill, Enter, then Enter at the Level One title.\n'
+printf 'Walk around to the low end on the right/east side of the box to climb the ramp.\n'
+exec .venv/bin/python work/experiments/EXP-20260905-004/runtime.py launch /home/dev/ABLPC/work/copies/EXP-20260905-004/game

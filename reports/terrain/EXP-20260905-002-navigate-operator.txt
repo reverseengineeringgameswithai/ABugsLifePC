@@ -1,0 +1,46 @@
+"""Bounded camera-relative XTEST steering; read-only memory. No teleport."""
+from operate import *
+import math, traceback
+ns={'__file__':str(OP)}
+exec(OP.read_text().split('\ntry:\n action=')[0],ns)
+def steer(label,tx,tz,seconds=8,tolerance=900):
+    assert 130000<tx<263000 and 420000<tz<576000 and 0<seconds<=20
+    meta=ns['guard']();assert meta['display']==':3' and meta['game']['pid']==120500
+    env=ns['focus'](meta);binding();held=set();samples=[];events=[]
+    start=time.monotonic();old=None;error=None;outcome='timeout'
+    try:
+        while time.monotonic()-start<seconds:
+            current=ns['state'](meta);now=time.monotonic();x,y,z=current['position']
+            assert current['level']==1 and 128000<x<265600 and 416000<z<579200
+            assert y<=-102350,('unexpected fall',current)
+            vx=vz=0
+            if old:
+                vx=(x-old[1])/(now-old[0]);vz=(z-old[2])/(now-old[0])
+            old=(now,x,z)
+            distance=math.hypot(tx-x,tz-z)
+            samples.append({'elapsed':now-start,'target_distance':distance,'velocity_xz':[vx,vz],**current})
+            if distance<tolerance:
+                outcome='target-reached';break
+            dx,dz=tx-x-vx*.12,tz-z-vz*.12
+            matrix=struct.unpack('<9h',bytes.fromhex(current['camera_matrix_hex']))
+            a,b=matrix[0]/4096,matrix[2]/4096
+            right,up=a*dx+b*dz,-b*dx+a*dz
+            angle=math.atan2(up,right)
+            sector=round(angle/(math.pi/4))%8
+            desired=[{'Right'},{'Right','Up'},{'Up'},{'Up','Left'},{'Left'},{'Left','Down'},{'Down'},{'Down','Right'}][sector]
+            if desired!=held:
+                for key in sorted(held-desired):ns['run'](['xdotool','keyup',key],env)
+                for key in sorted(desired-held):ns['run'](['xdotool','keydown',key],env)
+                events.append({'elapsed':time.monotonic()-start,'held':sorted(desired)});held=set(desired)
+            time.sleep(.10)
+    except BaseException:
+        error=traceback.format_exc()
+    finally:
+        for key in ['Up','Down','Left','Right']:ns['run'](['xdotool','keyup',key],env)
+        row={'target':[tx,tz],'limit_seconds':seconds,'tolerance':tolerance,'samples':samples,'events':events,'outcome':outcome,'error':error,'after_release':ns['state'](ns['guard']())}
+        save(label,row)
+    print(json.dumps({k:v for k,v in row.items() if k not in ('samples','events')},indent=2))
+    if error:raise RuntimeError(error)
+    return row
+if __name__=='__main__':
+    steer(sys.argv[1],int(sys.argv[2]),int(sys.argv[3]),float(sys.argv[4]) if len(sys.argv)>4 else 8)

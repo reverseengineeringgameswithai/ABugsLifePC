@@ -1,0 +1,11 @@
+Context budget (estimated_tokens = bytes // 4; startup sequence from START HERE):
+    tokens      bytes   lines  note
+      2209       8836     147  Vault/00-System/START HERE.md
+      9698      38794     567  Vault/00-System/Current State.md
+      4206      16826     367  Vault/00-System/Project Roadmap.md
+      1771       7087     146  Vault/00-System/Environment Status.md
+     10212      40851     757  Vault/50-Decisions/Decision Log.md
+     11262      45051     609  Vault/70-Known-Unknowns/Known Unknowns.md
+       837       3349      59  Vault/01-MOCs/Reverse Engineering MOC.md
+     40198     160794    2652  TOTAL of 7 mandated notes (session budget 120000)
+Vault lint: 1168 notes, 0 errors, 0 warnings

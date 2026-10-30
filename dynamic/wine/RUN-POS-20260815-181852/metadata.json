@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "run_id": "RUN-POS-20260815-181852",
+  "started_at": "2026-08-15T18:18:52-04:00",
+  "environment": {
+    "host": "Fedora Linux 44",
+    "wine": "11.0 Staging",
+    "gamescope": "3.16.25",
+    "renderer": "Direct3D 640x480x16"
+  },
+  "target": {
+    "path": "work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+    "sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "pid": 88917,
+    "process_group": 88662,
+    "gamescope_pid": 88671,
+    "private_sink": "ablpc_mute_88662"
+  },
+  "launch": "scripts/play-pristine-with-inputs.py --game-dir work/copies/BUGS_PC-full-disc/PC/BUGS --research --windowed --mute",
+  "renderer_log_markers": [
+    "Native software render mode is FALSE",
+    "RenderMode set to Direct3d render mode",
+    "Screen mode 640x480x16 selected",
+    "Starting Direct3D renderer",
+    "NextLife"
+  ],
+  "sampling": {
+    "backend": "process_vm_readv",
+    "nominal_interval_ms": 20,
+    "retained_rows": "distinct value transitions only",
+    "pauses_target": false,
+    "attaches_debugger": false,
+    "sets_breakpoints": false,
+    "writes_target_memory": false
+  },
+  "inputs": [
+    "Shift_L stationary jump",
+    "Right ground movement"
+  ],
+  "artifact": "position-trace.tsv",
+  "experiment": "EXP-20260815-128"
+}

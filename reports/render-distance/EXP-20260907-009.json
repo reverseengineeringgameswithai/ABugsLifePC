@@ -1,0 +1,427 @@
+{
+  "experiment": "EXP-20260907-009",
+  "status": "read-only diagnosis; candidates offline only",
+  "retail_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "live_exe_sha256": "e4ff4340b845bd3769b9946b2b52a252b5f31b16e953f814ca6903d73ee2ab2c",
+  "live_dat_sha256": "89ba7d700daadda5554e1c41634fa5a7e7c0c2f6333cea7c863cfbb7cfcc12c4",
+  "user_scope": "Observe requested spaced forward taps; inspect RAM and PC static code. No installation or RAM writes.",
+  "live": {
+    "pid": 550760,
+    "start": 5083559,
+    "group": 550524,
+    "display": ":2",
+    "level": 1,
+    "up_presses": 8,
+    "requested_press_seconds": 0.18,
+    "inter_press_release_seconds": 0.7,
+    "all_keys_released": true,
+    "start_position": [
+      223518,
+      -102276,
+      456338
+    ],
+    "end_position": [
+      218517,
+      -101836,
+      490442
+    ],
+    "resident_mushroom_bindings": 28,
+    "frame_count": 9
+  },
+  "conclusion": "Sampled mushroom scenes 486 and 488 already pass scene admission but initially emit no polygons because the original native hardware mesh depth gate rejects all drawable faces. Later taps lower their camera depths and expose partial mushrooms. Offline flag +0x40 or larger distance pairs remove this cutoff at the same initial camera.",
+  "constants": {
+    "0x005C02FC": 1152,
+    "0x005BA80C": 1664,
+    "0x005B56D0": "per-pass scratch, observed 400 after background; foreground pass assigns 1152 for these mushrooms"
+  },
+  "native_code_matches": [
+    {
+      "start": "0x44bb70",
+      "end_exclusive": "0x44bc61",
+      "file_offset": 307056,
+      "sha256": "ed89aa9da5df494194b9a3f3bbb28557600f6df8f847978117ba096417820fd2",
+      "matches_original": true
+    },
+    {
+      "start": "0x44d430",
+      "end_exclusive": "0x44d800",
+      "file_offset": 313392,
+      "sha256": "6977d835d1d645d3fa7c669c0d4c2decad440ad1bebf0e20447fd7362da2da8c",
+      "matches_original": true
+    },
+    {
+      "start": "0x4498f0",
+      "end_exclusive": "0x44b060",
+      "file_offset": 298224,
+      "sha256": "82758bc910e2d8b64cbd74b3b416eab11355bf9cf26fd943b32edc0813fe80a7",
+      "matches_original": true
+    },
+    {
+      "start": "0x45a7f0",
+      "end_exclusive": "0x460282",
+      "file_offset": 367600,
+      "sha256": "92d2aab1e87a14e3d1f56863b9e72dbd4a5273bf9bc47f8e0891f811e540681e",
+      "matches_original": true
+    }
+  ],
+  "initializer_constants": [
+    {
+      "va": "0x44bba3",
+      "file_offset": 307107,
+      "value": 1664
+    },
+    {
+      "va": "0x44bbaf",
+      "file_offset": 307119,
+      "value": 1664
+    }
+  ],
+  "scene_gate": {
+    "range_start": "0x0044D59F",
+    "far_reject": "0x0044D5EC",
+    "near_reject": "0x0044D6F8",
+    "flag_test": "0x0044D6A7",
+    "field_offset": 14,
+    "current_flags": 25,
+    "offline_far_flags": 89,
+    "scene_radius_field_offset": 12,
+    "distance_formula": "trunc(dx/16)^2 + trunc(dz/16)^2 - trunc(radius/16)^2 < trunc(5*D/16)^2"
+  },
+  "polygon_gate": {
+    "function": "0x0045A7F0",
+    "hardware_depth_check": "0x0045CF63",
+    "reject_branch": "0x0045CF89",
+    "next_on_reject": "0x00460232",
+    "predicate": "Reject quad when all four camera-space signed vertex depths are greater than 4 * current pass distance.",
+    "nominal_near_depth_limit_stored": 4608,
+    "nominal_far_depth_limit_stored": 6656,
+    "nominal_group_gain_fraction": 0.4444444444444444,
+    "object_depth_bias_field": 24,
+    "retained_object_depth_bias": 4,
+    "object_adjustment_code": "0x0044A257..0x0044A266",
+    "effective_depth_formula": "4 * (group_distance - 8 * object_byte_18)",
+    "mushroom_near_depth_limit_stored": 4480,
+    "mushroom_far_depth_limit_stored": 6528,
+    "mushroom_depth_gain_fraction": 0.4571428571428571
+  },
+  "offline_arms": [
+    {
+      "arm": "current",
+      "near": 1152,
+      "far": 1664,
+      "admitted_scenes": 8,
+      "emitting_scenes": [
+        502,
+        503,
+        504,
+        505
+      ]
+    },
+    {
+      "arm": "existing_far_group",
+      "near": 1152,
+      "far": 1664,
+      "admitted_scenes": 13,
+      "emitting_scenes": [
+        486,
+        488,
+        498,
+        499,
+        502,
+        503,
+        504,
+        505,
+        507,
+        508,
+        510
+      ]
+    },
+    {
+      "arm": "distance_1_5",
+      "near": 1728,
+      "far": 2496,
+      "admitted_scenes": 13,
+      "emitting_scenes": [
+        486,
+        488,
+        498,
+        499,
+        502,
+        503,
+        504,
+        505,
+        507,
+        508,
+        510
+      ]
+    },
+    {
+      "arm": "distance_2",
+      "near": 2304,
+      "far": 3328,
+      "admitted_scenes": 19,
+      "emitting_scenes": [
+        486,
+        488,
+        490,
+        493,
+        494,
+        496,
+        498,
+        499,
+        502,
+        503,
+        504,
+        505,
+        507,
+        508,
+        510
+      ]
+    }
+  ],
+  "offline_clip_traces": [
+    {
+      "scene": 486,
+      "label": "initial",
+      "near": 1152,
+      "far": 1664,
+      "far_group": false,
+      "vertices": 0,
+      "passed": 0,
+      "rejected": 25,
+      "minimum_view_depth": 4501,
+      "maximum_view_depth": 5297,
+      "limit": 4480
+    },
+    {
+      "scene": 486,
+      "label": "Up-01",
+      "near": 1152,
+      "far": 1664,
+      "far_group": false,
+      "vertices": 40,
+      "passed": 10,
+      "rejected": 15,
+      "minimum_view_depth": 4383,
+      "maximum_view_depth": 5179,
+      "limit": 4480
+    },
+    {
+      "scene": 488,
+      "label": "initial",
+      "near": 1152,
+      "far": 1664,
+      "far_group": false,
+      "vertices": 0,
+      "passed": 0,
+      "rejected": 29,
+      "minimum_view_depth": 4921,
+      "maximum_view_depth": 5717,
+      "limit": 4480
+    },
+    {
+      "scene": 488,
+      "label": "Up-04",
+      "near": 1152,
+      "far": 1664,
+      "far_group": false,
+      "vertices": 36,
+      "passed": 9,
+      "rejected": 19,
+      "minimum_view_depth": 4391,
+      "maximum_view_depth": 5187,
+      "limit": 4480
+    },
+    {
+      "scene": 486,
+      "label": "initial",
+      "near": 1152,
+      "far": 1664,
+      "far_group": true,
+      "vertices": 100,
+      "passed": 25,
+      "rejected": 0,
+      "minimum_view_depth": 4501,
+      "maximum_view_depth": 5297,
+      "limit": 6528
+    },
+    {
+      "scene": 488,
+      "label": "initial",
+      "near": 1152,
+      "far": 1664,
+      "far_group": true,
+      "vertices": 116,
+      "passed": 29,
+      "rejected": 0,
+      "minimum_view_depth": 4921,
+      "maximum_view_depth": 5717,
+      "limit": 6528
+    },
+    {
+      "scene": 486,
+      "label": "initial",
+      "near": 1728,
+      "far": 2496,
+      "far_group": false,
+      "vertices": 100,
+      "passed": 25,
+      "rejected": 0,
+      "minimum_view_depth": 4501,
+      "maximum_view_depth": 5297,
+      "limit": 6784
+    }
+  ],
+  "native_case_count": 336,
+  "native_seconds": 3.2913624799984973,
+  "retained_frame_buffer_matches": [
+    {
+      "scene": 486,
+      "admitted": true,
+      "emitted_vertices": 100,
+      "live_xyzw_matches": 16
+    },
+    {
+      "scene": 488,
+      "admitted": true,
+      "emitted_vertices": 116,
+      "live_xyzw_matches": 112
+    },
+    {
+      "scene": 502,
+      "admitted": true,
+      "emitted_vertices": 84,
+      "live_xyzw_matches": 0
+    },
+    {
+      "scene": 503,
+      "admitted": true,
+      "emitted_vertices": 4,
+      "live_xyzw_matches": 0
+    },
+    {
+      "scene": 504,
+      "admitted": true,
+      "emitted_vertices": 104,
+      "live_xyzw_matches": 0
+    },
+    {
+      "scene": 505,
+      "admitted": true,
+      "emitted_vertices": 108,
+      "live_xyzw_matches": 0
+    }
+  ],
+  "candidate_alpha": {
+    "scenes": [
+      486,
+      488,
+      510
+    ],
+    "existing_far_group": "all emitted vertices have alpha 255 at initial pose"
+  },
+  "limits": [
+    "No candidate installed; no live RAM writes, pause, debugger, or hook.",
+    "Native branch traces execute only in Unicorn with copied RAM and original PC instructions.",
+    "Captures and RAM samples are asynchronous; settled before/after pose equality is bounded support, not atomic frame proof.",
+    "Idle D3D vertex counts are reset; partial XYZW matches use retained page bytes, not live submission counts.",
+    "First native gate replay incorrectly retained previous object rotation in scratch matrix; invalid native-replay-01.json preserved, corrected by native 0x004636C0 loading captured camera before every case.",
+    "Wider group changes draw ordering; full frame/GPU/occlusion and performance remain untested.",
+    "Larger global change must preserve distance lookup table 0x005C0410..0x005C240E exclusive (4095 words), signed projection ranges and finite packet capacity. No arbitrary-distance safety claim.",
+    "First report draft listed nominal group limits as mushroom-effective limits; corrected with retained object byte +0x18 = 4 and original 0x0044A257 subtraction. Draft preserved privately; clip traces always recorded actual 4480/6528."
+  ],
+  "evidence": [
+    {
+      "path": "work/experiments/EXP-20260907-009/plan.json",
+      "sha256": "a8769bd018872bbb135b0052a7c4e60e4ec88059bdadfd63d23acadcb68ad1a2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/observe.py",
+      "sha256": "8fefb48248bca69354a2ddc7317de9f43175b6fad98bad2b5bdfda7198e9a1e3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/capture-memory.py",
+      "sha256": "30a95ca4945795efee7a09550ec19c20581dfbaf5e4b0982e4edf35cb1320c54"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/memory.json",
+      "sha256": "744d8630e8a7b6e9739199ca8fae9c657b3f548beca2f546da12b8d71844e443"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/up-01.json",
+      "sha256": "958d03e3a4f83d0be7f2b72cd0c41f1f9aa4a0e2d8e4200109d8f52f0c9124cb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/map.py",
+      "sha256": "2ab965807c7fcdcecd166a84f3abe873fca9a241ef5e6282c1f3ebb031e487a8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/replay.py",
+      "sha256": "33d3b596f81439b93f8b16f5038665a7267b86d2b948a531db6a683b3438585d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/native-replay-01.json",
+      "sha256": "806371aa77933fdd60daa47eeaaae001bcee1a42ab3d88a9bde7fb44dae8ba3f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/native-replay-02.json",
+      "sha256": "2bdd323c36e20d701263454a418126070629b0af3aa92d58f0a4dfa13aa0910e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/clip-trace.py",
+      "sha256": "b9712a7533b8dbfa69765c414265f65628f9fdcd94f9fe9cb1b7c044005c7b6e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/native-clip-trace.json",
+      "sha256": "a2515170dead440cdd3172b4ef18a1b4fb28057781be8977aec4c6ec8bc62189"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/verify-final.py",
+      "sha256": "6d4cd3820faa8d6baa5881def19d6b1fc62a9357fd29f40401ef88dae08d3d6b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/final-verification.json",
+      "sha256": "0963f12aeb0dc7d14f6380745643996449af36fa16e00118ec31fb6293c97368"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/static-render.json",
+      "sha256": "6f9a9feff5987158e76c05ac3b3d05559fbbee45a655602ab4d9c2062e4fde80"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/static-loader.json",
+      "sha256": "947b65703dcf2221e6424fd6f8f284d1a312d922e2e7e7f91f886ee5b89ee8a2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/static-object.json",
+      "sha256": "8c96a6ec3c911e80c0de3b930d218733d480cdd86512a220b67aabccecda36fe"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/static-mesh.json",
+      "sha256": "ccc9e36d4e9774aa063a2799dd9adf72eaa742a65efba59c396dcba55494d3f8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/static-object-depth-scaled.txt",
+      "sha256": "9335ea13e8b2cf46a6d074f6b9a7ca9fb604f01b791b2c250a9d2c6eec7ef84a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/report-draft-01.json",
+      "sha256": "0b0bc4489274a494e48867de7bb08b197ad3350f75e556aefba757c5996f0a4d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/final-audit.json",
+      "sha256": "a78668af018e1540c92b48f8b7e5bdb3c450426fb98feadd78281b1c690e4113"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/claim-sweep-depth.json",
+      "sha256": "04f9a644eb44dc855688f1a600e37f116af065670a6c07b3ddb9811e6da2b4c6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/claim-sweep-gate.json",
+      "sha256": "06387aae4bb8643295aec02e028b175590ed75661a1def867992ab2fa83e20db"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/hygiene.txt",
+      "sha256": "94b3a84352f0d6b75533ebb60e0492dcbd698b92713d03bd6b5f6223c3c24500"
+    }
+  ]
+}

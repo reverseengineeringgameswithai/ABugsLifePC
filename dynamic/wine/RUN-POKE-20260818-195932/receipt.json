@@ -1,0 +1,44 @@
+{
+  "tool": "game-memory",
+  "tool_version": "1.1.0",
+  "schema_version": 1,
+  "verb": "poke",
+  "authorization": "user in-session request 2026-08-18: cycle to gold berry to confirm KU-073",
+  "purpose": "KU-073 PC confirmation: set 0x0059D9A7=3 (gold berry per cross-port map)",
+  "target": {
+    "pid": 4148084,
+    "process_group": 4147806,
+    "start_ticks": 11489922,
+    "session_id": null,
+    "ownership": {
+      "pid": 4148084,
+      "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+      "cmdline": [
+        "R:\\PC\\BUGS\\bugs.exe",
+        "log",
+        "cheat",
+        "mpeg"
+      ],
+      "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+      "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+      "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+      "verified": true,
+      "checked_at": "2026-08-18T19:59:32.412871-04:00"
+    }
+  },
+  "address": "0x0059D9A7",
+  "size": 1,
+  "before_hex": "04",
+  "payload_hex": "03",
+  "guard": {
+    "guarded": true,
+    "expected_hex": "04"
+  },
+  "dry_run": false,
+  "written": true,
+  "verified": true,
+  "started_at": "2026-08-18T19:59:32.413003-04:00",
+  "bytes_written": 1,
+  "after_hex": "03",
+  "finished_at": "2026-08-18T19:59:32.413030-04:00"
+}

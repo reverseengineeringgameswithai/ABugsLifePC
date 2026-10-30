@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "name": "training-central-flower-cluster-candidate-far",
+  "files": [
+    {
+      "path": "CD/LEVEL07/LEVEL1.DAT",
+      "sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+      "format": "pc-level-dat-prefix-v0",
+      "edits": [
+        {
+          "operation": "set-scene-record-position",
+          "section": "primary",
+          "index": 124,
+          "position": [50000, -833, -393]
+        },
+        {
+          "operation": "set-scene-record-position",
+          "section": "primary",
+          "index": 125,
+          "position": [50000, -270, -968]
+        },
+        {
+          "operation": "set-scene-record-position",
+          "section": "primary",
+          "index": 126,
+          "position": [50000, -757, 70]
+        }
+      ]
+    }
+  ]
+}

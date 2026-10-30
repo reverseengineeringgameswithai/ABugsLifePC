@@ -1,0 +1,14 @@
+{
+  "run_id": "RUN-WINE-20260812-022322",
+  "started": "2026-08-12T02:23:22.061627562-04:00",
+  "captured": "2026-08-12T02:24:08.731859470-04:00",
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "input_level_dat_sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+  "staged_level_dat_sha256": "10e42b43f02281664a5e6cb0b26099b7a2762eb6b2ac7eb2f50751a18c2e64c7",
+  "environment": "Fedora Linux 44, Wine 11.0 Staging",
+  "renderer": "Direct3D hardware 640x480x16",
+  "working_directory": "/home/dev/ABLPC/work/copies/EXP-20260812-008/record-124/PC/BUGS",
+  "drive_layout": "S:\\PC\\BUGS",
+  "status": "captured then intentionally terminated",
+  "artifacts": ["bugs.log", "experiment.md", "manifest-receipt.json", "metadata.json", "training-record-124-far.png"]
+}

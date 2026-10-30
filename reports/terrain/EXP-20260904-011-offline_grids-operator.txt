@@ -1,0 +1,60 @@
+"""Original PC renderer over captured RAM, comparing EXP-011 grids offline."""
+from pathlib import Path
+import json, struct, hashlib, importlib.util
+from unicorn import UC_HOOK_CODE
+from unicorn.x86_const import UC_X86_REG_ESP, UC_X86_REG_EIP
+
+ROOT=Path('/home/dev/ABLPC');HERE=Path(__file__).resolve().parent
+OLD=ROOT/'work/experiments/EXP-20260904-009'
+def module(name,path):
+ spec=importlib.util.spec_from_file_location(name,path);m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m);return m
+original=module('captured_renderer',OLD/'offline_mesh.py')
+grid=module('grid_builder',ROOT/'scripts/terrain-deck-grid-probe.py')
+
+def run(nx,nz,flip):
+ terrain,dat,meta=grid.build(nx,nz,flip_top=flip)
+ cpu=original.cpu_from_capture()
+ def get(a,f):return struct.unpack('<'+f,cpu.mem_read(a,struct.calcsize('<'+f)))
+ def put(a,f,*v):cpu.mem_write(a,struct.pack('<'+f,*v))
+ base=get(0x5ba240,'I')[0];scene=base+8580;obj=base+18672;mesh=base+113136
+ assert get(scene+16,'I')[0]==obj and get(obj+20,'I')[0]==mesh and get(obj+18,'B')[0]==0
+ cpu.mem_write(mesh,dat[113136:113136+meta['mesh160_replaced_prefix_bytes']])
+ put(0x5b56d0,'I',get(0x5ba80c,'I')[0]);put(0x5ba120,'I',0)
+ roots=get(0x4c4108,'2I')
+ for i,r in enumerate(roots):
+  cpu.mem_write(r+0x104,b'\0'*128);cpu.mem_write(r+(0x1fd56 if i==0 else 0x4b186),b'\0'*128)
+ table=0x70001000;stack=0x70180000;ret=0x70000000
+ put(table,'I',scene);put(stack,'5I',ret,table,1,0,0);cpu.reg_write(UC_X86_REG_ESP,stack)
+ count=0
+ def guard(uc,a,size,data):
+  nonlocal count
+  count+=1
+  if not 0x401000<=a<0x4c1000:raise RuntimeError(f'external execution {a:08x}')
+ cpu.hook_add(UC_HOOK_CODE,guard);cpu.emu_start(0x4498f0,ret,count=2000000)
+ assert cpu.reg_read(UC_X86_REG_EIP)==ret
+ batches=[]
+ for ri,r in enumerate(roots):
+  for page in range(32):
+   n=get(r+0x104+page*2,'H')[0]
+   if not n:continue
+   assert n<=500
+   ptr=get(r+page*4,'I')[0]
+   vertices=[dict(zip(('x','y','z','rhw'),get(ptr+i*32,'4f')))|{'diffuse':hex(get(ptr+i*32+16,'I')[0]),'uv':list(get(ptr+i*32+24,'2f'))} for i in range(n)]
+   nidx=get(r+(0x1fd56 if ri==0 else 0x4b186)+page*2,'H')[0]
+   assert nidx%3==0 and nidx<=(1000 if ri==0 else 4800)
+   idx=list(get(r+0x186+page*(2000 if ri==0 else 9600),str(nidx)+'H'))
+   assert all(i<n for i in idx)
+   batches.append({'root_index':ri,'page':page,'pointer':hex(ptr),'vertices':vertices,'indices':idx})
+ result={'nx':nx,'nz':nz,'flip_top':flip,'metadata':meta,'entry':'0x004498F0','instructions':count,'returned':True,'batches':batches}
+ name=f'grid-{nx}-{nz}'+('-flip' if flip else '')
+ (HERE/(name+'.json')).write_text(json.dumps(result,indent=2)+'\n')
+ return result
+
+if __name__=='__main__':
+ for nx,nz in grid.GRIDS:
+  for flip in (False,True):
+   r=run(nx,nz,flip);print(nx,nz,flip,r['instructions'],r['metadata']['mesh160_replaced_prefix_bytes'],flush=True)
+ baseline=json.loads((HERE/'grid-4-4.json').read_text())['batches']
+ prior=json.loads((OLD/'offline-mesh-4.json').read_text())['batches']
+ assert baseline==prior
+ print('4x4 emitted batches exactly reproduce EXP009')

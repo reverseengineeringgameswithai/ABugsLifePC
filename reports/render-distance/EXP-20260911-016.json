@@ -1,0 +1,1418 @@
+{
+  "experiment": "EXP-20260911-016",
+  "status": "confirmed-bounded",
+  "question": "Is the grass Flik is standing against a real boundary, and how does it relate to the distant strip?",
+  "retail_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "runtime": {
+    "build": "/home/dev/ABLPC/work/copies/EXP-20260911-013-play",
+    "sha256": "f55c3612f60fb1fba373c55d8cab6afcac96cf00d4156c542963234aa58b7059",
+    "sink": "ablpc_soil_1789159752419995386",
+    "module": 536870916,
+    "code_va": 17313792,
+    "state_va": 17317888,
+    "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-013/play/prefix",
+    "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+    "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+    "audible": false,
+    "expect_auto_hardware": true,
+    "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+    "leader": {
+      "pid": 91091,
+      "start": 5734658,
+      "group": 91091,
+      "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789159752419995386 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-013/play/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-013-play/bugs.exe log cheat mpeg "
+    },
+    "game": {
+      "pid": 91321,
+      "start": 5734777,
+      "group": 91091,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-013-play\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "display": ":2",
+    "xwayland": {
+      "pid": 91119,
+      "start": 5734682,
+      "group": 91091,
+      "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+    },
+    "hardware_before_input": true,
+    "window": "14680071"
+  },
+  "capture": {
+    "time_ns": 1789168644513824753,
+    "flik": [
+      -205749,
+      -34847,
+      50162
+    ],
+    "camera_matrix": "5c040000640fefff001004009cf0eeff5c04",
+    "camera_translation": [
+      -178291,
+      -47662,
+      42081
+    ],
+    "camera_phase": 11444,
+    "level": 17
+  },
+  "layout": {
+    "comparison": {
+      "primary_bounds": [
+        [
+          -7350,
+          6849
+        ],
+        [
+          -2236,
+          -722
+        ],
+        [
+          -7091,
+          6445
+        ]
+      ],
+      "secondary_bounds_times_four": [
+        [
+          -7276,
+          6768
+        ],
+        [
+          -2220,
+          -724
+        ],
+        [
+          -7088,
+          6440
+        ]
+      ],
+      "primary_vertices": 681,
+      "primary_faces": 444,
+      "secondary_vertices": 60,
+      "secondary_faces": 29
+    },
+    "rows": [
+      {
+        "section": "primary",
+        "scene": 255,
+        "flags": 65,
+        "scene_offset": 6972,
+        "object_offset": 16856,
+        "mesh_offset": 94308,
+        "origin": [
+          -8192,
+          -8192,
+          8192
+        ],
+        "bounds": [
+          [
+            -6449,
+            -2481
+          ],
+          [
+            -1899,
+            -883
+          ],
+          [
+            1908,
+            6301
+          ]
+        ],
+        "vertices": 110,
+        "faces": 72,
+        "tags": [
+          354,
+          33123,
+          33126
+        ]
+      },
+      {
+        "section": "primary",
+        "scene": 256,
+        "flags": 65,
+        "scene_offset": 6992,
+        "object_offset": 16880,
+        "mesh_offset": 96656,
+        "origin": [
+          -8192,
+          -8192,
+          -8192
+        ],
+        "bounds": [
+          [
+            -7350,
+            -6436
+          ],
+          [
+            -1962,
+            -762
+          ],
+          [
+            -2696,
+            1920
+          ]
+        ],
+        "vertices": 77,
+        "faces": 50,
+        "tags": [
+          354,
+          33123,
+          33126
+        ]
+      },
+      {
+        "section": "primary",
+        "scene": 257,
+        "flags": 65,
+        "scene_offset": 7012,
+        "object_offset": 16904,
+        "mesh_offset": 98300,
+        "origin": [
+          -8192,
+          -8192,
+          -8192
+        ],
+        "bounds": [
+          [
+            -7256,
+            -2543
+          ],
+          [
+            -1734,
+            -722
+          ],
+          [
+            -6802,
+            -2695
+          ]
+        ],
+        "vertices": 110,
+        "faces": 72,
+        "tags": [
+          354,
+          33123,
+          33126
+        ]
+      },
+      {
+        "section": "primary",
+        "scene": 258,
+        "flags": 65,
+        "scene_offset": 7032,
+        "object_offset": 16928,
+        "mesh_offset": 100648,
+        "origin": [
+          -8192,
+          -8192,
+          -8192
+        ],
+        "bounds": [
+          [
+            -2554,
+            2159
+          ],
+          [
+            -2236,
+            -907
+          ],
+          [
+            -7091,
+            -6111
+          ]
+        ],
+        "vertices": 92,
+        "faces": 60,
+        "tags": [
+          354,
+          33123,
+          33126
+        ]
+      },
+      {
+        "section": "primary",
+        "scene": 259,
+        "flags": 65,
+        "scene_offset": 7052,
+        "object_offset": 16952,
+        "mesh_offset": 102612,
+        "origin": [
+          8192,
+          -8192,
+          8192
+        ],
+        "bounds": [
+          [
+            3239,
+            6558
+          ],
+          [
+            -2111,
+            -1084
+          ],
+          [
+            1715,
+            6445
+          ]
+        ],
+        "vertices": 100,
+        "faces": 65,
+        "tags": [
+          354,
+          33123,
+          33126
+        ]
+      },
+      {
+        "section": "primary",
+        "scene": 260,
+        "flags": 65,
+        "scene_offset": 7072,
+        "object_offset": 16976,
+        "mesh_offset": 104744,
+        "origin": [
+          8192,
+          -8192,
+          -8192
+        ],
+        "bounds": [
+          [
+            6017,
+            6849
+          ],
+          [
+            -2110,
+            -1014
+          ],
+          [
+            -2759,
+            1854
+          ]
+        ],
+        "vertices": 85,
+        "faces": 55,
+        "tags": [
+          354,
+          33123,
+          33126
+        ]
+      },
+      {
+        "section": "primary",
+        "scene": 261,
+        "flags": 65,
+        "scene_offset": 7092,
+        "object_offset": 17000,
+        "mesh_offset": 106552,
+        "origin": [
+          8192,
+          -8192,
+          -8192
+        ],
+        "bounds": [
+          [
+            2150,
+            6050
+          ],
+          [
+            -2156,
+            -1020
+          ],
+          [
+            -6113,
+            -2730
+          ]
+        ],
+        "vertices": 107,
+        "faces": 70,
+        "tags": [
+          354,
+          33123,
+          33126
+        ]
+      },
+      {
+        "section": "secondary",
+        "scene": 12,
+        "flags": 1,
+        "scene_offset": 9556,
+        "object_offset": 17312,
+        "mesh_offset": 116176,
+        "origin": [
+          -11273,
+          0,
+          -442
+        ],
+        "bounds": [
+          [
+            -13092,
+            -9581
+          ],
+          [
+            -555,
+            -181
+          ],
+          [
+            -2214,
+            1168
+          ]
+        ],
+        "vertices": 60,
+        "faces": 29,
+        "tags": [
+          1122,
+          33894
+        ]
+      },
+      {
+        "section": "secondary",
+        "scene": 15,
+        "flags": 1,
+        "scene_offset": 9616,
+        "object_offset": 17384,
+        "mesh_offset": 116176,
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "bounds": [
+          [
+            -1819,
+            1692
+          ],
+          [
+            -555,
+            -181
+          ],
+          [
+            -1772,
+            1610
+          ]
+        ],
+        "vertices": 60,
+        "faces": 29,
+        "tags": [
+          1122,
+          33894
+        ]
+      }
+    ],
+    "flik_stored": [
+      -6429.65625,
+      -1088.96875,
+      1567.5625
+    ],
+    "nearest_barriers": [
+      {
+        "segment": 19,
+        "file_offset": 47748,
+        "a": [
+          -6291,
+          2039
+        ],
+        "b": [
+          -6609,
+          1031
+        ],
+        "fraction": 0.464829274482003,
+        "nearest": [
+          -6438.815709285277,
+          1570.4520913221409
+        ],
+        "distance": 9.604448573845366
+      },
+      {
+        "segment": 18,
+        "file_offset": 47736,
+        "a": [
+          -5974,
+          3097
+        ],
+        "b": [
+          -6291,
+          2039
+        ],
+        "fraction": 1,
+        "nearest": [
+          -6291,
+          2039
+        ],
+        "distance": 491.4049980111237
+      },
+      {
+        "segment": 20,
+        "file_offset": 47760,
+        "a": [
+          -6609,
+          1031
+        ],
+        "b": [
+          -6845,
+          99
+        ],
+        "fraction": 0,
+        "nearest": [
+          -6609,
+          1031
+        ],
+        "distance": 565.7415461766199
+      },
+      {
+        "segment": 21,
+        "file_offset": 47772,
+        "a": [
+          -6845,
+          99
+        ],
+        "b": [
+          -6948,
+          -341
+        ],
+        "fraction": 0,
+        "nearest": [
+          -6845,
+          99
+        ],
+        "distance": 1526.1671753350981
+      },
+      {
+        "segment": 17,
+        "file_offset": 47724,
+        "a": [
+          -5521,
+          3905
+        ],
+        "b": [
+          -5974,
+          3097
+        ],
+        "fraction": 1,
+        "nearest": [
+          -5974,
+          3097
+        ],
+        "distance": 1595.8701966545752
+      }
+    ]
+  },
+  "primary_views": {
+    "scope": "Compare original detailed grass-boundary emission at three saved poses.",
+    "rows": [
+      {
+        "pose": "initial",
+        "capture": "/home/dev/ABLPC/work/experiments/EXP-20260911-014/memory.json",
+        "context": {
+          "matrix": [
+            -3979,
+            0,
+            970,
+            -2,
+            4096,
+            -11,
+            -970,
+            -12,
+            -3979
+          ],
+          "translation": [
+            25152,
+            -34556,
+            306650
+          ]
+        },
+        "scenes": [
+          {
+            "scene": 255,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                3803,
+                -294,
+                6564
+              ],
+              "flags": 65
+            },
+            "vertices": 252,
+            "xy_bounds": [
+              [
+                501.0,
+                559.0
+              ],
+              [
+                191.0,
+                256.0
+              ]
+            ],
+            "live_full_vertex_matches": 144
+          },
+          {
+            "scene": 256,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                5098,
+                -252,
+                11504
+              ],
+              "flags": 65
+            },
+            "vertices": 147,
+            "xy_bounds": [
+              [
+                444.0,
+                502.0
+              ],
+              [
+                212.0,
+                247.0
+              ]
+            ],
+            "live_full_vertex_matches": 147
+          },
+          {
+            "scene": 257,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                2130,
+                -107,
+                15267
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          },
+          {
+            "scene": 258,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                -2876,
+                -448,
+                15955
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          },
+          {
+            "scene": 259,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                -5297,
+                -505,
+                4372
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          },
+          {
+            "scene": 260,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                -7861,
+                -458,
+                8411
+              ],
+              "flags": 65
+            },
+            "vertices": 112,
+            "xy_bounds": [
+              [
+                -3.0,
+                82.0
+              ],
+              [
+                210.0,
+                243.0
+              ]
+            ],
+            "live_full_vertex_matches": 112
+          },
+          {
+            "scene": 261,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                -6535,
+                -473,
+                12819
+              ],
+              "flags": 65
+            },
+            "vertices": 154,
+            "xy_bounds": [
+              [
+                81.0,
+                173.0
+              ],
+              [
+                210.0,
+                242.0
+              ]
+            ],
+            "live_full_vertex_matches": 154
+          }
+        ]
+      },
+      {
+        "pose": "farther",
+        "capture": "/home/dev/ABLPC/work/experiments/EXP-20260911-015/memory.json",
+        "context": {
+          "matrix": [
+            -4036,
+            0,
+            -694,
+            1,
+            4096,
+            -5,
+            694,
+            -6,
+            -4036
+          ],
+          "translation": [
+            12776,
+            -19271,
+            474844
+          ]
+        },
+        "scenes": [
+          {
+            "scene": 255,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                6611,
+                -777,
+                9752
+              ],
+              "flags": 65
+            },
+            "vertices": 252,
+            "xy_bounds": [
+              [
+                492.0,
+                578.0
+              ],
+              [
+                196.0,
+                231.0
+              ]
+            ],
+            "live_full_vertex_matches": 252
+          },
+          {
+            "scene": 256,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                9764,
+                -743,
+                13768
+              ],
+              "flags": 65
+            },
+            "vertices": 63,
+            "xy_bounds": [
+              [
+                553.0,
+                567.0
+              ],
+              [
+                205.0,
+                229.0
+              ]
+            ],
+            "live_full_vertex_matches": 63
+          },
+          {
+            "scene": 257,
+            "gate": {
+              "accepted": false,
+              "destination": "0x44d728",
+              "rejection": "0x44d5ec",
+              "view": [
+                0,
+                0,
+                0
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          },
+          {
+            "scene": 258,
+            "gate": {
+              "accepted": false,
+              "destination": "0x44d728",
+              "rejection": "0x44d5ec",
+              "view": [
+                0,
+                0,
+                0
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          },
+          {
+            "scene": 259,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                -2610,
+                -980,
+                11364
+              ],
+              "flags": 65
+            },
+            "vertices": 203,
+            "xy_bounds": [
+              [
+                230.0,
+                270.0
+              ],
+              [
+                192.0,
+                227.0
+              ]
+            ],
+            "live_full_vertex_matches": 203
+          },
+          {
+            "scene": 260,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                -3354,
+                -939,
+                16089
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          },
+          {
+            "scene": 261,
+            "gate": {
+              "accepted": false,
+              "destination": "0x44d728",
+              "rejection": "0x44d5ec",
+              "view": [
+                0,
+                0,
+                0
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          }
+        ]
+      },
+      {
+        "pose": "contact",
+        "capture": "/home/dev/ABLPC/work/experiments/EXP-20260911-016/memory.json",
+        "context": {
+          "matrix": [
+            1116,
+            0,
+            3940,
+            -17,
+            4096,
+            4,
+            -3940,
+            -18,
+            1116
+          ],
+          "translation": [
+            -178291,
+            -47662,
+            42081
+          ]
+        },
+        "scenes": [
+          {
+            "scene": 255,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                2985,
+                96,
+                -304
+              ],
+              "flags": 65
+            },
+            "vertices": 28,
+            "xy_bounds": [
+              [
+                427.0,
+                685.0
+              ],
+              [
+                107.0,
+                401.0
+              ]
+            ],
+            "live_full_vertex_matches": 28
+          },
+          {
+            "scene": 256,
+            "gate": {
+              "accepted": true,
+              "destination": "0x44d712",
+              "rejection": null,
+              "view": [
+                -1998,
+                130,
+                807
+              ],
+              "flags": 65
+            },
+            "vertices": 49,
+            "xy_bounds": [
+              [
+                -41.0,
+                428.0
+              ],
+              [
+                93.0,
+                376.0
+              ]
+            ],
+            "live_full_vertex_matches": 49
+          },
+          {
+            "scene": 257,
+            "gate": {
+              "accepted": false,
+              "destination": "0x44d728",
+              "rejection": "0x44d677",
+              "view": [
+                -5649,
+                252,
+                -2298
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          },
+          {
+            "scene": 258,
+            "gate": {
+              "accepted": false,
+              "destination": "0x44d728",
+              "rejection": "0x44d64d",
+              "view": [
+                -6150,
+                -112,
+                -7324
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          },
+          {
+            "scene": 259,
+            "gate": {
+              "accepted": false,
+              "destination": "0x44d728",
+              "rejection": "0x44d64d",
+              "view": [
+                5512,
+                -148,
+                -9316
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          },
+          {
+            "scene": 260,
+            "gate": {
+              "accepted": false,
+              "destination": "0x44d728",
+              "rejection": "0x44d64d",
+              "view": [
+                1570,
+                -124,
+                -12027
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          },
+          {
+            "scene": 261,
+            "gate": {
+              "accepted": false,
+              "destination": "0x44d728",
+              "rejection": "0x44d64d",
+              "view": [
+                -2882,
+                -144,
+                -10865
+              ],
+              "flags": 65
+            },
+            "vertices": 0,
+            "xy_bounds": null,
+            "live_full_vertex_matches": 0
+          }
+        ]
+      }
+    ]
+  },
+  "secondary_contact": {
+    "live_full_vertex_matches": 0,
+    "scene": 15,
+    "section": "secondary",
+    "object": 17384,
+    "geometry": 116176,
+    "vertices": 0,
+    "xy_bounds": null
+  },
+  "collision": {
+    "mode": "resident",
+    "scope": "Original coordinator at captured boundary position; copied RAM only.",
+    "nearest_segment": {
+      "segment": 19,
+      "file_offset": 47748,
+      "a": [
+        -6291,
+        2039
+      ],
+      "b": [
+        -6609,
+        1031
+      ],
+      "fraction": 0.464829274482003,
+      "nearest": [
+        -6438.815709285277,
+        1570.4520913221409
+      ],
+      "distance": 9.604448573845366
+    },
+    "rows": [
+      {
+        "case": "outward",
+        "start": [
+          -205749,
+          -34847,
+          50162
+        ],
+        "requested_delta": [
+          -977,
+          256,
+          308
+        ],
+        "result": [
+          -205239,
+          -34843,
+          50017
+        ],
+        "flags": 257,
+        "requested_distance": -22.408014756584322,
+        "result_distance": 26.166809423039354,
+        "start_distance": 9.604448573845275,
+        "target_segment_collected": true,
+        "admitted_segments": [
+          {
+            "pointer": "0x8dfce7",
+            "a": [
+              -6291,
+              2039
+            ],
+            "b": [
+              -6609,
+              1031
+            ]
+          }
+        ],
+        "execution": {
+          "instructions": 6319,
+          "entry": "0x4ab1a0"
+        }
+      },
+      {
+        "case": "inward",
+        "start": [
+          -205749,
+          -34847,
+          50162
+        ],
+        "requested_delta": [
+          977,
+          256,
+          -308
+        ],
+        "result": [
+          -204767,
+          -34842,
+          49869
+        ],
+        "flags": 257,
+        "requested_distance": 41.616911904274886,
+        "result_distance": 41.62489461983438,
+        "start_distance": 9.604448573845275,
+        "target_segment_collected": true,
+        "admitted_segments": [
+          {
+            "pointer": "0x8dfce7",
+            "a": [
+              -6291,
+              2039
+            ],
+            "b": [
+              -6609,
+              1031
+            ]
+          }
+        ],
+        "execution": {
+          "instructions": 4864,
+          "entry": "0x4ab1a0"
+        }
+      },
+      {
+        "case": "outward_large",
+        "start": [
+          -205749,
+          -34847,
+          50162
+        ],
+        "requested_delta": [
+          -3906,
+          256,
+          1232
+        ],
+        "result": [
+          -202366,
+          -34818,
+          49100
+        ],
+        "flags": 257,
+        "requested_distance": -118.3858004716954,
+        "result_distance": 120.40986235022919,
+        "start_distance": 9.604448573845275,
+        "target_segment_collected": true,
+        "admitted_segments": [
+          {
+            "pointer": "0x8dfce7",
+            "a": [
+              -6291,
+              2039
+            ],
+            "b": [
+              -6609,
+              1031
+            ]
+          }
+        ],
+        "execution": {
+          "instructions": 6666,
+          "entry": "0x4ab1a0"
+        }
+      }
+    ]
+  },
+  "renderer_code_verification": [
+    {
+      "name": "panorama_submit",
+      "start": "0x404410",
+      "end_exclusive": "0x404980",
+      "retail_file_offset": 14352,
+      "sha256": "271d843a25866d2c345776d715cfb37b60ab4682702cd33aec8ec45b8bc32c56",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "panorama_scroll",
+      "start": "0x405410",
+      "end_exclusive": "0x4055f0",
+      "retail_file_offset": 18448,
+      "sha256": "8e7df751d08e79df002763b4da2e17c1a6300897749d780e74f113b9c9c297dd",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "scene_distance_gate",
+      "start": "0x44d59f",
+      "end_exclusive": "0x44d5f2",
+      "retail_file_offset": 313759,
+      "sha256": "ea4cd4d9474d17b292cf9939edff257e8dc7db0193bc82cd2945e502332d6258",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "quad_distance_gate",
+      "start": "0x45cf63",
+      "end_exclusive": "0x45cf8f",
+      "retail_file_offset": 377699,
+      "sha256": "0ea8fc86d609ec0a534600f401f5293d27fa87daed2ebf7251809efae6495dd5",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "secondary_tail",
+      "start": "0x44d83d",
+      "end_exclusive": "0x44dbee",
+      "retail_file_offset": 314429,
+      "sha256": "c1b8d1ad03bd476dcc22a6296481c841e36d8d3113c4669a39ece2d23f8aa002",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "secondary_renderer",
+      "start": "0x448d70",
+      "end_exclusive": "0x4498f0",
+      "retail_file_offset": 295280,
+      "sha256": "9a38cf8ae95c7b718f1c34b4321812f0c525b851bba8bf27779b51a8929a2325",
+      "resident_equals_retail": true
+    }
+  ],
+  "findings": [
+    "The current close view is detailed primary255/256 grass at a real XZ boundary;77/77 complete emitted vertices match live buffers.",
+    "Primary255..261 comprise681 vertices/444 faces. Secondary15 is a60-vertex/29-face distant representation with geometry at approximately quarter coordinates; scaling its bounds by4 nearly reproduces the detailed boundary bounds.",
+    "Both secondary geometry and camera are quarter-scaled, preserving projected placement. Quarter camera translation alone does not imply slower world parallax or unrelated background decoration.",
+    "Primary257/258 emit nothing in the initial view and fail admission in the farther view while the secondary strip draws; secondary15 emits nothing at current contact while detailed meshes draw. This is a near/distant visual representation of the same boundary, not a runtime mesh-pointer swap claim.",
+    "Terrain source25 segment19 lies9.60445 stored units from Flik; three copied-state native collision cases collect this exact segment, reject outward crossing, and allow inward travel.",
+    "The custom walls are primary291..315 and have no added counterpart among the16 original secondary records. No distant-wall implementation is added."
+  ],
+  "corrections": [
+    "EXP015 correctly identified the distant secondary render object but did not relate it to the real boundary and omitted that its geometry is also quarter-scaled.",
+    "A broad collision-code retail equality check failed on existing relocated collision pool operands. Resident copied-text replay preserves these operands and reproduces all three retail-code results; only listed renderer spans are asserted equal to retail.",
+    "The layout probe initially included rotated plant250; it was narrowed to the actual unrotated grass255..261 and verifies every staged source coordinate and origin against the original mapping."
+  ],
+  "limits": [
+    "No new live inputs, live writes, launch/close, assets/settings edits or benchmark.",
+    "Native copied-state collision and resident vertex-buffer matches are not a new live push test or GPU command trace.",
+    "Bounded geometric/visual correspondence, not exact equality of simplified mesh topology or an explicit primary-to-secondary pointer map.",
+    "No exhaustive handoff/occlusion/performance test, infinite range claim or validated custom-wall proxy implementation."
+  ],
+  "evidence": [
+    {
+      "path": "work/experiments/EXP-20260911-016/memory.json",
+      "sha256": "52dd2c93e0c3703dd44b6426615c17df83503e2e1a469b0376b27d84e54a8141",
+      "bytes": 21049
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/capture.py",
+      "sha256": "1c69acc50d52a7d63decea1c4930f3928c59fd2eeefa402d0424a45f88b24b5d",
+      "bytes": 1483
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/audit.py",
+      "sha256": "7f3353699c134415ac06ff6f1b3a9b4c7d039ea8169591be352ecc5d7cbadc11",
+      "bytes": 1937
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/map.py",
+      "sha256": "135b41086cc73cf8b607e83d052c943889cb9adb54479c29ed05312254c57f52",
+      "bytes": 5453
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/replay.py",
+      "sha256": "dd71ef75b8daff16aaa8b45ce0cf46872def089498bca7928d43d18e218418c5",
+      "bytes": 2628
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/boundary-layout.py",
+      "sha256": "55f9fe1feb6da724693ea91a2719ca4622450f94c0f8782f1165edaccce4b9e1",
+      "bytes": 2966
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/boundary-layout.json",
+      "sha256": "0e6d6255754c263202de747826e84b9d86e270a482804660ab64ebb3010af059",
+      "bytes": 6736
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/boundary-views.py",
+      "sha256": "e30c918c3c60fef5e2a40d277bc0d148d907eb6bf6c65b11e38c0a96671c7368",
+      "bytes": 1244
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/boundary-views.json",
+      "sha256": "84f4e6a197c14f9889a98f31cc803a28122834ae5098af408f691cf8513b84ec",
+      "bytes": 11030
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/contact-probe.py",
+      "sha256": "98951f774685aab04af4f3603b1ba7464ba6f9c861deaf56f27f65fb57fc1e02",
+      "bytes": 2193
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/contact-probe.json",
+      "sha256": "6faf01b95fc4e95e68633678362d1a6698c8163c9feb9c91925c9a1200955138",
+      "bytes": 2705
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/resident-contact-probe.json",
+      "sha256": "e862f8909b8c7f3ea644250df9fafe7453e117b3c701b28152738be2007607fb",
+      "bytes": 2727
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/secondary-probe.py",
+      "sha256": "b43e377fc1c4c9adaa24599fbe3333ac205a1d01ea6f135911c1897cd5c1b8b8",
+      "bytes": 3020
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/secondary-probe.json",
+      "sha256": "81cf263186ff23e44383f20945ff10f2581bf33f51c84f1b51fbeb232d365a6e",
+      "bytes": 40062
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/code-verification.json",
+      "sha256": "4bf5fe55e6436937486ab47bf90edc134c86415ebce8e3d2b4b75e7de9e0118f",
+      "bytes": 1504
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/collision-code-differences.json",
+      "sha256": "708fd57e686a1ee5fa831e463b5387aca3b0e9a100b2ef2e074cc3d14350cd99",
+      "bytes": 846
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/verify.py",
+      "sha256": "b04b67574c6427a0de7de0b990b6692b03dd5d60a5a52e9c49574e8da187934a",
+      "bytes": 1133
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/grass-candidates.json",
+      "sha256": "154e3c9c54c90abbb86743ef54a22c46eb9068a33249a769db4f11b962bb22dc",
+      "bytes": 423123
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/play/frame-1789168644483763650.png",
+      "sha256": "f308b4f7b0e81007eebbb019cf17fe89715bcde49dc29a4c4c44b0f18aa19363",
+      "bytes": 201556
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/memory.json",
+      "sha256": "d11c4d4c1eb6b816cee2fcf0123694898c6f32b31e3025a9116dfb8042ead400",
+      "bytes": 21042
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/memory.json",
+      "sha256": "1de505159a68ef8001fc5b5b03985c9f0af06b4e3d9a2e96eef03738115ba54f",
+      "bytes": 21043
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/secondary-probe.json",
+      "sha256": "e840a236f3d12593a260b8ff129962d3e34cd0b544ab97bf8d700f2621aca5c6",
+      "bytes": 128836
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/initial-secondary-probe.json",
+      "sha256": "0e09eefe18b4f5a5b324fe7fb801861f9bc18dd31d1651eeed193d93366d2b4b",
+      "bytes": 82827
+    },
+    {
+      "path": "work/level-projects/original-training-soil-triggers/original-map.json",
+      "sha256": "c8ea5161a7eb8d9ceabb898674339cdda771ef35f51b0ea5ed0e31d8776e0655",
+      "bytes": 2305489
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/make-check.log",
+      "sha256": "d1889080769a5b9d538daf6d58e8c3505cb58956a235f522fd5c0e106d73174d",
+      "bytes": 1688
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/claim-sweep.json",
+      "sha256": "60c7f98593b133952d3ee6250185678195e77112178ecd15a34181a8aa25e37e",
+      "bytes": 913
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/initial-final-audit.json",
+      "sha256": "52714ac275029c202de2af062e20e8d0077383becbb6c4615880505d325fd9e3",
+      "bytes": 3462
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/initial-final-bindings.json",
+      "sha256": "834e2a88bb30e5a05d0e46eb9cb93367c08e0e6ec4cd0e8230cc00add24d20a6",
+      "bytes": 3497
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/initial-audio-binding.json",
+      "sha256": "21d3daeb35f243a8af46aa9379d2c3090629bec52755d51e53e83cb144538026",
+      "bytes": 1754
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/final-audit.json",
+      "sha256": "52714ac275029c202de2af062e20e8d0077383becbb6c4615880505d325fd9e3",
+      "bytes": 3462
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/final-bindings.json",
+      "sha256": "834e2a88bb30e5a05d0e46eb9cb93367c08e0e6ec4cd0e8230cc00add24d20a6",
+      "bytes": 3497
+    },
+    {
+      "path": "work/experiments/EXP-20260911-016/audio-binding.json",
+      "sha256": "21d3daeb35f243a8af46aa9379d2c3090629bec52755d51e53e83cb144538026",
+      "bytes": 1754
+    }
+  ],
+  "validation": {
+    "command": "PYTEST_ADDOPTS='-k \"render_distance or training_expansion\"' make check",
+    "passed": 58,
+    "deselected": 6478,
+    "seconds": 31.33,
+    "vault_notes": 946,
+    "vault_errors": 0,
+    "vault_existing_budget_warnings": 5,
+    "claim_sweep": "new_only"
+  },
+  "lifecycle": {
+    "generic_processes": 7,
+    "bound_processes": 13,
+    "game_left_open": true,
+    "muted": true,
+    "external_live_writes": false,
+    "gameplay_keys": 0,
+    "launches": 0,
+    "closes": 0,
+    "sink": "ablpc_soil_1789159752419995386",
+    "module": 536870916,
+    "stream": 5233
+  }
+}

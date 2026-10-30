@@ -1,0 +1,217 @@
+{
+  "experiment": "EXP-20260905-009",
+  "date": "2026-09-06",
+  "status": "bounded-offline-crossing-acceptance-runtime-pending",
+  "acceptance_scope": "Preservation, native allocation/command traversal, box/fall checks and four separately declared continuous crossing/return routes pass. The original exact point-target controls retain their diagnosed controller-stall failures; they are not relabelled as passes.",
+  "approved_corrections": [
+    "Mutable-input regression expectations now match the writer's ValueError.",
+    "Offline top-landing setup starts 1024 rather than 4096 world units above the render height.",
+    "Command-audit call now supplies LevelDat.parse(added_dat), not raw bytes.",
+    "Validation-summary terrain hash transcription corrected to match the unchanged build receipt.",
+    "Redundant overridden initial terrain hash assignment removed."
+  ],
+  "pytest": [
+    {
+      "command": "PYTHONPATH=\"$PWD/reimplementation:${PYTHONPATH:-}\" .venv/bin/python -m pytest -q --basetemp=\"$PWD/work/tmp/pytest-terrain-additive\" -o tmp_path_retention_policy=failed tests/test_terrain_additive.py",
+      "passed": 39,
+      "failed": 0,
+      "seconds": 0.36
+    },
+    {
+      "command": "PYTHONPATH=\"$PWD/reimplementation:${PYTHONPATH:-}\" .venv/bin/python -m pytest -q -n 4 --dist=loadfile --basetemp=\"$PWD/work/tmp/pytest-terrain\" -o tmp_path_retention_policy=failed tests/test_terrain_deck_grid_probe.py tests/test_terrain_deck_probe.py tests/test_terrain_deck_visual_probe.py tests/test_terrain_floor_edit.py tests/test_terrain_floor_visual_fixture.py tests/test_terrain_floor_patch.py tests/test_terrain_play_area.py tests/test_terrain_wall_shading.py tests/test_terrain_wall_material.py tests/test_terrain_texture_tiling.py tests/test_terrain_additive.py",
+      "passed": 224,
+      "failed": 0,
+      "seconds": 26.61
+    }
+  ],
+  "build": {
+    "receipt": "reports/terrain/EXP-20260905-009.json",
+    "fixture": "work/copies/EXP-20260905-009/fixture",
+    "staged_game": "work/copies/EXP-20260905-009/game/PC/BUGS",
+    "terrain_sha256": "77a77456c3b9a0f4db5e7b20d257a9772e04c0f0ed3d0812590943d630851698",
+    "terrain_hash_authority": "Corrected transcription on 2026-09-06 to match the unchanged build receipt and assets.",
+    "level_dat_sha256": "24b8c345d82bb3489ab765d3ad24f917fcacf1da4d5a910e715b4daf84b071e8",
+    "source99_original_cells": 134,
+    "source99_added_cells": 16,
+    "source99_total_cells": 150,
+    "terrain_growth_bytes": 704,
+    "mesh160_original_vertices": 92,
+    "mesh160_original_faces": 69,
+    "mesh160_combined_vertices": 439,
+    "mesh160_combined_faces": 623,
+    "dat_growth_bytes": 13056,
+    "depth_bias_exception": "Combined mesh uses the banked value 0 instead of original mesh-160 value 8."
+  },
+  "initial_native_proof_historical": {
+    "private_receipt": "work/experiments/EXP-20260905-009/offline-proof.json",
+    "seconds": 10.93874,
+    "accepted": false,
+    "arms_passed": 6,
+    "route_arms_not_accepted": 4,
+    "probe_errors": 1,
+    "loader": {
+      "accepted": true,
+      "original_runtime_cell_instances_preserved": 7307,
+      "scope": "Initialized native height-eligible descriptor payloads, including the loaded source families; not a count of unique Level01 triangles.",
+      "evidence": ["004A8410", "004A89F8..004A908F"]
+    },
+    "dat_relocator": {
+      "accepted": true,
+      "geometry_offset": 332820,
+      "changed_original_relocated_prefix_byte_offsets": [8592, 8593, 18690, 18692, 18693, 18694],
+      "trailing_data_pointer": 268759980,
+      "trailing_plus_118_pointer": 268760260,
+      "unchanged_trailer_table_sha256": "6137e0ce6f3f284b432407f1c7089a4e41fb5307420638ef0afb783102f69b9a",
+      "evidence": ["0044BB70", "0044BD13..0044BD22", "0044BEC4..0044BF25"]
+    },
+    "command_stream": {
+      "accepted": false,
+      "error": "AttributeError: 'bytes' object has no attribute 'data'",
+      "cause_scope": "New probe passes bytes to the existing command-audit helper. This is a probe call error, not evidence of an invalid DAT command stream.",
+      "correction_applied": false
+    },
+    "connector": {
+      "lanes_x_stored": [5850, 6000, 6150],
+      "speed_world": 900,
+      "target_z_stored": 10800,
+      "outbound_target_results": ["blocked", "blocked", "blocked"],
+      "outbound_contact_reached": {"source_record": 99, "original_cell_offset": 44140},
+      "each_return_to_deck_accepted": true,
+      "longest_airborne_run_each_direction": 1,
+      "overall_accepted": false
+    },
+    "banked_box_uphill_downhill": {"accepted": true, "longest_airborne_run": 1},
+    "top_landing_and_stepoff": {"accepted": true, "stepoff_airborne_run": 13},
+    "same_synthetic_fall": {
+      "start_xz_world": [220590, 435460],
+      "route": "58 steps (33,512,-900), followed by 120 steps (0,512,0)",
+      "replacement_control": {
+        "expected_failure_reproduced": true,
+        "final_position": [222504, -22531, 383260],
+        "final_flags": [0, 0],
+        "longest_airborne_run": 157,
+        "latched_contact_offset": 43936
+      },
+      "additive": {
+        "landing_accepted": true,
+        "first_original_landing_step_zero_based": 51,
+        "first_original_landing_cell_offset": 45884,
+        "first_original_landing_position": [222240, -87219, 388735],
+        "longest_airborne_run": 30,
+        "later_original_contact_offsets": [45488, 45008],
+        "final_position": [204253, -73640, 405181],
+        "final_flags": [1, 1],
+        "final_contact_offset": 45008
+      },
+      "limitation": "Identical requested synthetic displacements, not an exact full actor/input replay. After contact, the additive arm slides along original terrain, so final X/Z is not held fixed."
+    },
+    "return_from_restored_landing": {
+      "overall_accepted": false,
+      "original_floor_target_result": "blocked",
+      "original_floor_contact_offset": 44140,
+      "subsequent_uphill_to_deck_accepted": true,
+      "returned_position": [192000, -102400, 422400]
+    }
+  },
+  "retail_discriminator": {
+    "private_receipt": "work/experiments/EXP-20260905-009/connector-retail-control.json",
+    "seconds": 3.512078,
+    "arms": 12,
+    "lanes_x_stored": [5850, 6000, 6150],
+    "speeds_world": [900, 1800],
+    "files": ["retail", "additive"],
+    "start_z_stored": 10900,
+    "target_z_stored": 10800,
+    "all_outcomes": "blocked",
+    "all_final_flags": [1, 1],
+    "all_final_contact_offsets": 44140,
+    "all_longest_airborne_runs": 0,
+    "maximum_paired_endpoint_component_difference_world": 1,
+    "inference": "This first discriminator establishes that the local stop is not additive-only. The later steering discriminator separates constant-forward traversal from adaptive target slowdown; see steering_discriminator below.",
+    "acceptance_thresholds_changed": false
+  },
+  "affected_tests_after_latest_corrections": {"passed": 39, "failed": 0, "seconds": 0.31},
+  "final_terrain_gate": {
+    "command_reference": "Same explicit eleven-file terrain-only command recorded in pytest[1].",
+    "passed": 224,
+    "failed": 0,
+    "seconds": 26.40
+  },
+  "native_proof_rerun": {
+    "private_receipt": "work/experiments/EXP-20260905-009/offline-proof-02.json",
+    "seconds": 11.340866,
+    "accepted_arms": 7,
+    "total_arms": 11,
+    "probe_errors": 0,
+    "command_stream_accepted": true,
+    "command_stream_entry": "0045A8B0",
+    "command_stream_stop": "00460266",
+    "original_matrix_exit_code": 1,
+    "original_matrix_accepted": false,
+    "retained_failures": "Three exact connector point targets and one longer exact original-floor target remain unaccepted. These historical criteria were not changed."
+  },
+  "steering_discriminator": {
+    "private_receipt": "work/experiments/EXP-20260905-009/steering-discriminator.json",
+    "seconds": 2.406522,
+    "arms": 12,
+    "files": ["retail", "additive"],
+    "modes": ["fixed_north", "adaptive"],
+    "gravity_deltas": [512, 128, 0],
+    "target_xz_world": [192000, 345600],
+    "original_cell_offset": 44140,
+    "original_normal_words": [-4304, -14070, 7206],
+    "original_cell_raw_sha256": "5aba7a6555036a5b97c89f69d53e254d7aba7d84f7093f9955f50e973f3f62de",
+    "fixed_north_crosses_target_z_in_all_six_arms": true,
+    "adaptive_512_reaches_128_unit_point_tolerance": false,
+    "adaptive_512_minimum_remaining_world": 304.92622058458664,
+    "near_stall_requested_delta": [156, 512, -262],
+    "observed_native_actual_displacement": [0, 1, 0],
+    "normal_parallel_horizontal_components_at_y512": ["512*4304/14070", "-512*7206/14070"],
+    "adaptive_128_and_zero_reach_tolerance_in_both_files": true,
+    "inference": "For this local slope and controller, capped horizontal motion approaches a vector almost opposite the stored normal while the downward request remains fixed at 512. Native tangential movement then approaches zero about 305 units short, outside the 128-unit point tolerance. Fixed forward motion traverses the same ground. The old helper's later settling further slides the grounded pose away; this does not demonstrate a missing collision cell.",
+    "limitation": "Reduced-gravity arms are diagnostics only, not retail actor physics or acceptance. This does not establish a universal controller/mesh rule."
+  },
+  "continuous_crossing_acceptance": {
+    "private_receipt": "work/experiments/EXP-20260905-009/through-route-proof.json",
+    "seconds": 6.072251,
+    "accepted": true,
+    "accepted_routes": 4,
+    "criteria_declared_before_execution": {
+      "required_z_max_world": 345600,
+      "required_x_window_world": [184000, 200000],
+      "required_flags": [1, 1],
+      "required_contact": "preserved original source99 cell before offset 48380",
+      "maximum_airborne_run": 2,
+      "maximum_outbound_steps": 220,
+      "steering_aim_z_world": 339200,
+      "unchanged_gravity_delta": 512,
+      "maximum_horizontal_step": 900,
+      "return": "Existing walk_to helper, unchanged point tolerance/settling, on the flat deck."
+    },
+    "outward_and_return_run_without_reset": true,
+    "routes": [
+      {"lane_x_stored": 5850, "original_floor_crossing_xyz": [185549, -96143, 345348], "return_xz": [187200, 422400], "accepted": true},
+      {"lane_x_stored": 6000, "original_floor_crossing_xyz": [189851, -97473, 345317], "return_xz": [192000, 422400], "accepted": true},
+      {"lane_x_stored": 6150, "original_floor_crossing_xyz": [194334, -98853, 345305], "return_xz": [196800, 422400], "accepted": true},
+      {"name": "fall-original-floor-return", "original_floor_crossing_xyz": [189238, -97342, 345210], "return_xz": [192000, 422400], "accepted": true}
+    ],
+    "all_crossing_contacts": {"source_record": 99, "cell_offset": 44140, "flags": [1, 1]},
+    "all_final_return_contacts": {"source_record": 99, "cell_offset": 48392, "flags": [1, 1]},
+    "maximum_observed_airborne_run_per_crossing_or_return": 1,
+    "asset_changes_for_controller_diagnosis": false,
+    "original_point_target_failures_reclassified": false,
+    "limitation": "Separate through-crossing acceptance, not exact-point parking or full actor/input replay."
+  },
+  "remaining": [
+    "Fresh file-loaded runtime comparison using the authoritative PC autonomous-control procedure and session audits.",
+    "Runtime rendering, enlarged-batch visibility, sorting and old/new geometry overlap remain untested.",
+    "Do not treat the retained exact-point controller failures as mesh holes or count the finite crossings as universal terrain/collision completion.",
+    "No previous authorization for live memory writes, teleport or debugger actions is reused."
+  ],
+  "runtime_tested": false,
+  "live_process_actions": [],
+  "r2q_tests_run": false,
+  "full_make_check_run": false,
+  "git_actions": [],
+  "private_snapshot_updated": false
+}

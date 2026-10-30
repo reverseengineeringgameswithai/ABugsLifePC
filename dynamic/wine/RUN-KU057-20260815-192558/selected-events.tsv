@@ -1,0 +1,12 @@
+arm	trace	t_us	cur_x	cur_y	cur_z	aux_x	aux_y	aux_z	flags	next_life	collision_index	collision_value	note
+all_three	teleport-row6-01.tsv	501481	501696	65000	494016	501696	65000	494016	0x0008	0	548	0	36-byte write visible; all triples equal unsupported point
+all_three	teleport-row6-01-right-tap.tsv	804398	502123	81896	489249	501696	65000	494016	0x0004	2	548	0	first captured fall request after brief Right hold
+all_three	teleport-row6-01-right-tap.tsv	1543005	501696	65256	494016	501696	65000	494016	0x0000	0	548	0	reset returns to written auxiliary point
+all_three	teleport-row6-01-right-tap.tsv	1861679	501696	81896	494016	501696	65000	494016	0x0004	2	548	0	second repeating fall request
+known_floor	teleport-row6-safe-floor.tsv	500984	501696	30092	494016	-16896	32043	6631	0x0008	0	548	0	24-byte current+preceding write; auxiliary initially unchanged
+known_floor	teleport-row6-safe-floor.tsv	511107	501696	30092	494016	501696	30092	494016	0x0008	0	548	0	engine adopts stable walkable target as auxiliary about 10 ms later
+pit_equal_pair	row6-anchor-known-pit-contact.tsv	500901	494438	68730	526143	501696	30092	494016	0x0008	0	548	0	24-byte current+preceding write; safe auxiliary survives readback only
+pit_equal_pair	row6-anchor-known-pit-contact.tsv	511019	494438	68730	526143	494438	68730	526143	0x0008	0	548	0	engine adopts unsupported target as auxiliary before collision evaluation
+pit_equal_pair	row6-anchor-known-pit-contact.tsv	637500	494597	94358	525649	494438	68730	526143	0x0004	2	548	0	generic fall request; no material-1 descriptor
+pit_equal_pair	row6-anchor-known-pit-contact.tsv	1375886	494438	68986	526143	494438	68730	526143	0x0000	0	548	0	reset returns to unsafe adopted point
+pit_equal_pair	row6-anchor-known-pit-contact.tsv	1628819	494438	80250	526143	494438	68730	526143	0x0004	2	548	0	repeating fall request begins again

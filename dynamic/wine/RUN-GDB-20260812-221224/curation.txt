@@ -1,0 +1,42 @@
+RUN-GDB-20260812-221224 curation
+================================
+
+Disposition: rejected as caller/callee/data evidence and accepted only as the
+M2.18 adjacent-continuation discriminator. The only hardware execution
+breakpoint was 0x0044D794.
+
+The unchanged hardware Direct3D Training run stopped once at 0x0044D794. The
+pre-instruction snapshot records AL=0x40, RCX=0, [0x005C5EDC]=0x40,
+[0x005BA80C]=0x00000680, [0x005B56D0]=0x00000480, and plant 10 slot
+[0x005B1AA4]=0x006C342B. Raw GDB then records SIGSEGV at the same PC. Result
+schema 2 correctly terminates the arm as target_signal, completed=false, and
+accepted=false; it deletes the point, verifies cleanup, and detaches.
+
+Because fatal signals use stop-print-nopass, the target itself survived this
+rejected evidence arm. Five independent samples from
+2026-08-12T22:12:37.257805-04:00 through
+2026-08-12T22:12:38.058470-04:00 record state R and TracerPid 0. A later
+isolated game-surface frame at 2026-08-12T22:14:33.278179243-04:00 visibly
+shows live Training gameplay; its SHA-256 is
+70749edc62d202fea3c5db444eeb3fba0c968d6e31cbcfeb8c94fea95d0ca0a4.
+The frame remains ignored under work/copies/EXP-20260812-031/evidence/ and no
+desktop or whole-screen capture was taken.
+
+The committed bugs.log has SHA-256
+4b31578df91c6662a95dced776f4611a77402117eda20e1789e7d4b0a4ed931c. It
+proves 640x480x16 hardware selection, Direct3D start, no INITSOFTRENDER, the
+plant10 pair requests, End InitMainGame, and NextLife. NextLife does not
+override the structured target_signal.
+
+Raw stdout/stderr remain ignored. Stdout SHA-256 is
+92f4d3fd6122193b99e1f1985391901cc08755cb061ce63e617a6a5146b579e3 and
+records the one breakpoint stop followed by SIGSEGV at 0x0044D794. Stderr is
+empty, SHA-256
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.
+
+Per the M2.18 first-pass stop rule, the fresh exact-0x0044D79A arm was not run
+after the adjacent address signaled. Combined with the independent exact-PC
+reproductions in EXP-20260812-028/029, this rules out an explanation confined
+only to 0x0044D79A at the tested Wine/native-GDB boundary. It does not establish
+normal execution of 0x0044D794, 0x0044D79A, the following call, or any resource
+semantics.

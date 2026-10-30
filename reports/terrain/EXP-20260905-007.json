@@ -1,0 +1,646 @@
+{
+  "experiment_id": "EXP-20260905-007",
+  "date": "2026-09-05",
+  "result": "bounded-retail-control-and-selected-authored-floor-omissions",
+  "scope": "Later current slope location, not a matched replay of the earlier authored deck-edge fall",
+  "actual_executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "control": {
+    "experiment": "EXP-20260905-007",
+    "classification": "normal input after previously receipted position/facing writes; not pristine setup",
+    "user_authorization": "yup go for it",
+    "memory_writes_this_control": 0,
+    "game": {
+      "pid": 313931,
+      "start": 10570967,
+      "group": 313689,
+      "cmd": "R:\\PC\\BUGS\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "requested_up_seconds": 4,
+    "status": "completed",
+    "captures": [
+      {
+        "path": "/home/dev/ABLPC/work/experiments/EXP-20260905-007/og-preview-02/normal-up-before.png",
+        "request_elapsed": 0.002421676996164024
+      },
+      {
+        "path": "/home/dev/ABLPC/work/experiments/EXP-20260905-007/og-preview-02/normal-up-after.png",
+        "request_elapsed": 6.052310871993541
+      }
+    ],
+    "before": {
+      "elapsed": 5.9650003095157444e-05,
+      "phase": "before",
+      "level": 1,
+      "position": [
+        124987,
+        -102158,
+        328714
+      ],
+      "terrain_base": 0,
+      "barrier_head": 7152075,
+      "contact": [
+        99,
+        6977331
+      ],
+      "camera_matrix_hex": "f605000028f16ffffd0fc6ffd50e9d00f405",
+      "camera_translation": [
+        99210,
+        -121956,
+        317945
+      ],
+      "preceding": [
+        124987,
+        -102158,
+        328714
+      ],
+      "auxiliary": [
+        197091,
+        2734,
+        492897
+      ],
+      "dword_0059d930": 766,
+      "dword_0059d938": 763,
+      "flags_0059d9a0": 0,
+      "unknown_byte_0059d992": 1,
+      "next_life_0059a5b0": 0
+    },
+    "initial_camera_direction_cosine": 0.99961366441184,
+    "keyup_elapsed": 4.035556835995521,
+    "actual_up_host_seconds": 4.032985067999107,
+    "after": {
+      "elapsed": 6.049502381996717,
+      "phase": "final",
+      "level": 1,
+      "position": [
+        303395,
+        -73801,
+        405307
+      ],
+      "terrain_base": 0,
+      "barrier_head": 7152075,
+      "contact": [
+        93,
+        6953751
+      ],
+      "camera_matrix_hex": "1e08000037f26ffffc0fabffc50da9001b08",
+      "camera_translation": [
+        279110,
+        -93606,
+        391493
+      ],
+      "preceding": [
+        303395,
+        -73801,
+        405307
+      ],
+      "auxiliary": [
+        303395,
+        -73801,
+        405307
+      ],
+      "dword_0059d930": 711,
+      "dword_0059d938": 708,
+      "flags_0059d9a0": 8,
+      "unknown_byte_0059d992": 1,
+      "next_life_0059a5b0": 0
+    },
+    "sample_count": 301,
+    "next_life_values": [
+      0
+    ],
+    "flags_values": [
+      0,
+      8
+    ],
+    "contact_reference_transitions": [
+      {
+        "elapsed": 5.9650003095157444e-05,
+        "phase": "before",
+        "source": 99,
+        "runtime_cell": 6977331,
+        "candidate_file_offset": 47716,
+        "position": [
+          124987,
+          -102158,
+          328714
+        ]
+      },
+      {
+        "elapsed": 0.4786223510018317,
+        "phase": "up",
+        "source": 98,
+        "runtime_cell": 6972967,
+        "candidate_file_offset": 43352,
+        "position": [
+          149221,
+          -102469,
+          329853
+        ]
+      },
+      {
+        "elapsed": 0.7000742709933547,
+        "phase": "up",
+        "source": 98,
+        "runtime_cell": 6973299,
+        "candidate_file_offset": 43684,
+        "position": [
+          160930,
+          -98963,
+          336403
+        ]
+      },
+      {
+        "elapsed": 0.7604744970012689,
+        "phase": "up",
+        "source": 98,
+        "runtime_cell": 6973203,
+        "candidate_file_offset": 43588,
+        "position": [
+          164469,
+          -98472,
+          337640
+        ]
+      },
+      {
+        "elapsed": 0.9819438569975318,
+        "phase": "up",
+        "source": 5,
+        "runtime_cell": 6929783,
+        "candidate_file_offset": 168,
+        "position": [
+          176618,
+          -97644,
+          341866
+        ]
+      },
+      {
+        "elapsed": 1.2637904120056191,
+        "phase": "up",
+        "source": 99,
+        "runtime_cell": 6973755,
+        "candidate_file_offset": 44140,
+        "position": [
+          191376,
+          -96469,
+          348189
+        ]
+      },
+      {
+        "elapsed": 1.5658267889957642,
+        "phase": "up",
+        "source": 99,
+        "runtime_cell": 6973787,
+        "candidate_file_offset": 44172,
+        "position": [
+          206881,
+          -97532,
+          354601
+        ]
+      },
+      {
+        "elapsed": 1.585962251003366,
+        "phase": "up",
+        "source": 99,
+        "runtime_cell": 6973691,
+        "candidate_file_offset": 44076,
+        "position": [
+          208481,
+          -97845,
+          355439
+        ]
+      },
+      {
+        "elapsed": 1.7470041859924095,
+        "phase": "up",
+        "source": 99,
+        "runtime_cell": 6973927,
+        "candidate_file_offset": 44312,
+        "position": [
+          217065,
+          -99004,
+          358785
+        ]
+      },
+      {
+        "elapsed": 2.1094152680016123,
+        "phase": "up",
+        "source": 99,
+        "runtime_cell": 6973831,
+        "candidate_file_offset": 44216,
+        "position": [
+          236056,
+          -100146,
+          366161
+        ]
+      },
+      {
+        "elapsed": 2.3510005099960836,
+        "phase": "up",
+        "source": 99,
+        "runtime_cell": 6973863,
+        "candidate_file_offset": 44248,
+        "position": [
+          249967,
+          -96337,
+          371497
+        ]
+      },
+      {
+        "elapsed": 2.4516004089964554,
+        "phase": "up",
+        "source": 93,
+        "runtime_cell": 6953071,
+        "candidate_file_offset": 23456,
+        "position": [
+          255559,
+          -94119,
+          373709
+        ]
+      },
+      {
+        "elapsed": 2.55226994799159,
+        "phase": "up",
+        "source": 93,
+        "runtime_cell": 6953179,
+        "candidate_file_offset": 23564,
+        "position": [
+          260890,
+          -91378,
+          375801
+        ]
+      },
+      {
+        "elapsed": 2.653029027991579,
+        "phase": "up",
+        "source": 93,
+        "runtime_cell": 6953211,
+        "candidate_file_offset": 23596,
+        "position": [
+          266257,
+          -88696,
+          377963
+        ]
+      },
+      {
+        "elapsed": 2.894618039004854,
+        "phase": "up",
+        "source": 46,
+        "runtime_cell": 6929783,
+        "candidate_file_offset": 168,
+        "position": [
+          280047,
+          -82839,
+          383660
+        ]
+      },
+      {
+        "elapsed": 2.934875873004785,
+        "phase": "up",
+        "source": 165,
+        "runtime_cell": 7125083,
+        "candidate_file_offset": 195468,
+        "position": [
+          280676,
+          -83285,
+          384443
+        ]
+      },
+      {
+        "elapsed": 3.1563370030053193,
+        "phase": "up",
+        "source": 165,
+        "runtime_cell": 7125399,
+        "candidate_file_offset": 195784,
+        "position": [
+          284134,
+          -86319,
+          385895
+        ]
+      },
+      {
+        "elapsed": 3.418052056003944,
+        "phase": "up",
+        "source": 165,
+        "runtime_cell": 7125431,
+        "candidate_file_offset": 195816,
+        "position": [
+          289737,
+          -88282,
+          387931
+        ]
+      },
+      {
+        "elapsed": 3.8609829859924503,
+        "phase": "up",
+        "source": 93,
+        "runtime_cell": 6953847,
+        "candidate_file_offset": 24232,
+        "position": [
+          301698,
+          -74516,
+          397967
+        ]
+      },
+      {
+        "elapsed": 3.901238620004733,
+        "phase": "up",
+        "source": 93,
+        "runtime_cell": 6953611,
+        "candidate_file_offset": 23996,
+        "position": [
+          301859,
+          -74142,
+          399599
+        ]
+      },
+      {
+        "elapsed": 3.9213662120018853,
+        "phase": "up",
+        "source": 93,
+        "runtime_cell": 6953643,
+        "candidate_file_offset": 24028,
+        "position": [
+          302211,
+          -73897,
+          401027
+        ]
+      },
+      {
+        "elapsed": 3.9817501270008506,
+        "phase": "up",
+        "source": 93,
+        "runtime_cell": 6953751,
+        "candidate_file_offset": 24136,
+        "position": [
+          303502,
+          -73738,
+          403269
+        ]
+      },
+      {
+        "elapsed": 4.076011530996766,
+        "phase": "after-release",
+        "source": 93,
+        "runtime_cell": 6953719,
+        "candidate_file_offset": 24104,
+        "position": [
+          304286,
+          -73685,
+          405147
+        ]
+      },
+      {
+        "elapsed": 4.17665682999359,
+        "phase": "after-release",
+        "source": 93,
+        "runtime_cell": 6953751,
+        "candidate_file_offset": 24136,
+        "position": [
+          303461,
+          -73794,
+          405340
+        ]
+      }
+    ],
+    "position_min": [
+      124987,
+      -124648,
+      326142
+    ],
+    "position_max": [
+      304837,
+      -73341,
+      405418
+    ]
+  },
+  "selected_footprints": {
+    "experiment": "EXP-20260905-007",
+    "method": "Exact projected triangle containment at selected RAM positions, not original-instruction movement/admission replay",
+    "points": {
+      "og_source99_entry": [
+        191376,
+        -96469,
+        348189
+      ],
+      "og_source99_exit": [
+        249967,
+        -96337,
+        371497
+      ],
+      "earlier_authored_edge_start": [
+        220590,
+        -102402,
+        435460
+      ],
+      "earlier_authored_fall_end": [
+        222481,
+        -22529,
+        383185
+      ]
+    },
+    "arms": {
+      "retail": {
+        "sha256": "62f3b73f21630eb19c04e585a92e1f3e32a76fdcb6ec36bae18f9c1ec3a2a868",
+        "projected_candidates": {
+          "og_source99_entry": [
+            {
+              "source": 99,
+              "payload_source": 99,
+              "offset": 44140,
+              "vertices": [
+                [
+                  5991,
+                  -3298,
+                  10520
+                ],
+                [
+                  5496,
+                  -2891,
+                  11019
+                ],
+                [
+                  6488,
+                  -3195,
+                  11018
+                ]
+              ]
+            }
+          ],
+          "og_source99_exit": [
+            {
+              "source": 99,
+              "payload_source": 99,
+              "offset": 44248,
+              "vertices": [
+                [
+                  7500,
+                  -2927,
+                  12017
+                ],
+                [
+                  8004,
+                  -3124,
+                  11522
+                ],
+                [
+                  7500,
+                  -3490,
+                  11014
+                ]
+              ]
+            }
+          ],
+          "earlier_authored_edge_start": [
+            {
+              "source": 99,
+              "payload_source": 99,
+              "offset": 47008,
+              "vertices": [
+                [
+                  6925,
+                  -1049,
+                  13577
+                ],
+                [
+                  6541,
+                  -1057,
+                  13502
+                ],
+                [
+                  6981,
+                  -658,
+                  14026
+                ]
+              ]
+            }
+          ],
+          "earlier_authored_fall_end": [
+            {
+              "source": 99,
+              "payload_source": 99,
+              "offset": 45884,
+              "vertices": [
+                [
+                  6489,
+                  -2707,
+                  12014
+                ],
+                [
+                  6991,
+                  -2684,
+                  12511
+                ],
+                [
+                  6991,
+                  -3106,
+                  11517
+                ]
+              ]
+            }
+          ]
+        }
+      },
+      "authored": {
+        "sha256": "1ff3af9f0b5b2c2957bde8e877e1d988054455f3e1be18f8ea0e6cb57875d16b",
+        "projected_candidates": {
+          "og_source99_entry": [],
+          "og_source99_exit": [],
+          "earlier_authored_edge_start": [
+            {
+              "source": 99,
+              "payload_source": 99,
+              "offset": 43936,
+              "vertices": [
+                [
+                  4000,
+                  -3296,
+                  13000
+                ],
+                [
+                  8300,
+                  -3296,
+                  18100
+                ],
+                [
+                  8300,
+                  -3296,
+                  13000
+                ]
+              ]
+            }
+          ],
+          "earlier_authored_fall_end": []
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Write-assisted position/facing setup; initial contact and auxiliary state were not transferred",
+    "Cached contact reference alone does not prove grounding",
+    "Projected floor coverage is not native admission or a full falling-trajectory replay",
+    "Missing-render/retained-collision report remains unlocalized"
+  ],
+  "private_evidence": [
+    {
+      "path": "work/experiments/EXP-20260905-007/og-preview-02/normal-up-result.json",
+      "bytes": 8255,
+      "sha256": "d23162387cf5072f230300c086956522907a9662d9d8b5fe2862fa3a0210562e"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-007/og-preview-02/normal-up-samples.jsonl",
+      "bytes": 143811,
+      "sha256": "7f95aeec23843297e1162ccdff82ae3fb957bff5a4a483b1a33c0315ae4ca501"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-007/og-preview-02/normal-up-before.png",
+      "bytes": 366988,
+      "sha256": "e0fc59f783b75aa7f823c25cc5cad1a427ec89a57bd0b1da2391a9becf300bd2"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-007/og-preview-02/normal-up-after.png",
+      "bytes": 182943,
+      "sha256": "848d0ff30e166c7613226f9120280f4f54a8f3efe3aecce04c02faedaf3a117f"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-007/og-preview-02/transfer-result.json",
+      "bytes": 6627,
+      "sha256": "f117112b8247ec0ca318c133aa13366d83b0883baca138f20755b4f962fc0c4e"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-007/og-preview-02/transfer-and-up-samples.jsonl",
+      "bytes": 344366,
+      "sha256": "cfef1b5844871ff8e5ca3d1b03220f1d4cb873ffdb9d50b0b7164688ee9fcfd0"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-007/og-preview-02/stationary-transfer-analysis.json",
+      "bytes": 1021,
+      "sha256": "0c17316f45c6e86b1464776f37ef79a71f790009da50648ba0c955267566cbd8"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-007/og-preview-02/selected-footprint-comparison.json",
+      "bytes": 3417,
+      "sha256": "97b48bd58c48a214b05f977805a091bc50af09c1703f56806d0c0c98f15a7c23"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-007/og-preview-02/entry-receipt.json",
+      "bytes": 3985,
+      "sha256": "d3e7d373885a46815b5b3f2698b1469099c85a0ffc225c1c25139c4284794ccf"
+    }
+  ],
+  "session": {
+    "open": true,
+    "game_pid": 313931,
+    "game_start_ticks": 10570967,
+    "group": 313689,
+    "stage": "work/copies/EXP-20260905-007/og-game",
+    "prefix": "work/experiments/EXP-20260905-007/og-preview-02/prefix",
+    "generic_ledger": "seven explicitly accounted direct-procedure processes appear unattributed"
+  },
+  "validation": {
+    "pytest_run": false,
+    "r2q_run": false,
+    "full_make_check_run": false,
+    "commit_made": false
+  },
+  "next_step": "Native-instruction replay of the earlier fall and an integration plan preserving or deliberately replacing both collision and render coverage"
+}

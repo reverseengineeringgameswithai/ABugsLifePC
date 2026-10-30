@@ -1,0 +1,88 @@
+EXP-20260813-038 curated comparison
+====================================
+
+Question
+--------
+Which exact retained candidates {0-7, 9-23} produce differing intervals in
+the 0x80-stride arena rooted through 0x0081BC28 during matched Direct3D
+control/replacement/control arms?
+
+Inputs and staging
+------------------
+bugs.exe SHA-256 (all arms):
+  97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+unchanged CHARS/FLICK.ALL (13,548 bytes):
+  a2f23220392d7fb4880bbab7acab9393fe6da059961d620e7b85c8df3f4f4ac6
+replacement CHARS/FLICK.ALL (exact CHARS3/FLICKD.ALL, 13,548 bytes):
+  6e5afb4f9ea649bc305fdafeb027aece25914b27a017d04841bf4298634079a4
+
+Accepted arms
+-------------
+  RUN-GDB-20260813-102253  control A
+  RUN-GDB-20260813-102505  replacement
+  RUN-GDB-20260813-102626  control B
+
+Each result reports capture_complete, 55 hardware-data-watch stops, one
+installed/deleted watchpoint, cleanup_verified, detached, no target signal,
+and a required passing survival receipt. Every receipt independently
+re-verifies the executable/process identity and records five resumed,
+untraced /proc samples.
+
+Every 1,480-line log contains the 640x480x16 Direct3D gates, exact
+CHARS/FLICK.ANM and CHARS/FLICK.ALL loads at lines 1459-1460,
+End InitMainGame at line 1476, and NextLife at line 1478. No log contains
+INITSOFTRENDER. Removing only CalculateClockSpeed, time[], avgtime, and CPU
+clock-speed lines makes all three logs byte-identical:
+  d5370bc4284a1b89ad06ed454d8ceebc8d89620f63dc605bdf362329b6987692
+
+Raw accepted log hashes:
+  control A:    8b331970c547406864ce26d1afee9367683cf34b62b39bd379206fa6ffcfd500
+  replacement: e23f290155552d729a290214459b23386a58c55d5c0074c26442c262e25dc0b4
+  control B:    fbab7f9d8b647bf61766883f50afbed1d9025a97abb7bde01239ad805058cc72
+
+Capture boundary and fail-closed rule
+-------------------------------------
+The intended hardware execution breakpoint at 0x0044C898 was rejected after
+RUN-GDB-20260813-101022 stopped there once and then received structured
+same-PC SIGSEGV. Its points were deleted, it detached, and all five survival
+samples passed under nopass. Accepted arms therefore use no execution
+breakpoint.
+
+One hardware access watch at 0x005B18E0 stops after the exact post-call load
+at 0x0044C8A5, reporting PC 0x0044C8AB and the still-current RSI entry
+pointer. Between return 0x0044C89E and this stop, native code only restores
+EDI, pops the argument, and loads 0x005B18E0; it does not touch counter
+0x008082C8, capacity 0x0081C138, or base pointer 0x0081BC28. Nonmatching
+accesses remain in stops.jsonl but do not enter the ordered capture.
+
+The zero_post mode accepts only the coherent all-zero triple
+(counter, capacity, base) = (0, 0, 0). Native 0x0044F8E0 only increments this
+counter after counter < capacity and contains no counter reset/decrement.
+Thus an accepted zero post proves exact pre=post=0 and an empty record
+interval for that call. Any active or inconsistent arena fails the arm.
+
+Per-entry comparison
+--------------------
+Each accepted arm contains exactly one complete ordered cycle after one
+rollover warmup and one row for every candidate:
+  0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+  21, 22, 23
+
+For every candidate row in every arm:
+  pre_counter  = 0
+  post_counter = 0
+  record_count = 0
+  byte_count   = 0
+  SHA-256      = e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+
+No arena payload byte was read or retained in zero_post mode. The candidate
+set with a differing emission interval is therefore empty.
+
+Result
+------
+Bounded negative. The exact M2.24 candidate streams are reached by the caller,
+but none emits into this 0x80-stride arena in any tested Direct3D arm because
+the arena remains inactive. This contradicts treating the conditional static
+arena path as the active explanation for M2.20's visible result. It does not
+rule out other effects of 0x0044F8E0, another retained-entry consumer, a
+different renderer path, or later copied state.

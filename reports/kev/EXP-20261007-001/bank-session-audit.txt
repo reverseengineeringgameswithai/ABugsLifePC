@@ -1,0 +1,14 @@
+{
+  "tool": "game-session",
+  "tool_version": "1.0.0",
+  "verb": "audit",
+  "processes": {
+    "processes": [],
+    "owned_count": 0,
+    "unattributed_count": 0,
+    "owned_groups": []
+  },
+  "null_sinks": [],
+  "open_sessions": [],
+  "clean": true
+}

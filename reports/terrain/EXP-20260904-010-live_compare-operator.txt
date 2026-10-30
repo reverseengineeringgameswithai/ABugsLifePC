@@ -1,0 +1,104 @@
+"""One authorized temporary mesh substitution, paused captures and restoration.
+
+No game input or restart. Two guarded writes only. Never invoke a second time.
+"""
+from common import *
+from freeze import frozen
+import time,sys,subprocess,traceback
+h=lambda b:hashlib.sha256(b).hexdigest()
+rows=[];captures={};writes=[]
+def save(name,value):
+ path=HERE/name
+ with path.open('w') as f:
+  json.dump(value,f,indent=2);f.write('\n');f.flush();os.fsync(f.fileno())
+
+def identity(expected=None,require_pose=True):
+ meta=ns['guard']();assert meta['game']==plan['process']
+ state=ns['state'](meta)
+ if require_pose:assert json.loads(json.dumps(state))==plan['state'],'paused pose changed'
+ assert struct.unpack('<I',ns['mem'](meta,0x5ba240,4))[0]+113136==address
+ assert struct.unpack('<I',ns['mem'](meta,0x64f1a7+20,4))[0]==address
+ assert ns['mem'](meta,0x64f1a7+18,1)==b'\0'
+ if expected is not None:assert ns['mem'](meta,address,size)==expected
+ return meta,state
+
+def frame_end_gate(meta,regs,receipt):
+ # Accept a live EBP chain whose first game return is the timer call in
+ # 00405B72..91, and whose enclosing renderer return is 0044DBF3.
+ # This is the frame limiter after 0044D430 has finished mesh processing.
+ if not (0x70000000<=regs.rip<0x80000000 and 0x970000<=regs.rsp<0x980000):return False
+ frame=regs.rbp;frames=[]
+ for _ in range(8):
+  if not regs.rsp<=frame<0x97fff0 or frame%4:return False
+  next_frame,ret=struct.unpack('<2I',ns['mem'](meta,frame,8));frames.append([hex(frame),hex(ret)])
+  if 0x401000<=ret<0x4c1000:
+   caller=struct.unpack('<I',ns['mem'](meta,frame+0x1c,4))[0]
+   accepted=ret==0x405b74 and caller==0x44dbf3
+   receipt.update(frame_chain=frames,renderer_return=hex(caller),frame_end_gate=accepted)
+   return accepted
+  if next_frame<=frame:return False
+  frame=next_frame
+ return False
+
+def change(label,expected,replacement,require_pose=True):
+ meta,state=identity(expected,require_pose)
+ for attempt in range(100):
+  receipt={'phase':label,'attempt':attempt,'time':time.time()};done=False
+  try:
+   with frozen(meta['game']['pid'],receipt) as regs:
+    identity(expected,require_pose)
+    if frame_end_gate(meta,regs,receipt):
+     fd=os.open('/proc/%d/mem'%meta['game']['pid'],os.O_RDWR)
+     try:
+      before=os.pread(fd,size,address);assert before==expected
+      receipt.update(address=hex(address),bytes=size,before_sha256=h(before),target_sha256=h(replacement),status='compare-passed-write-pending')
+      save(label+'-write.json',receipt)
+      # The authorization covers this specific write and its restoration.
+      receipt['write_attempted']=True;writes.append(receipt)
+      n=os.pwrite(fd,replacement,address);receipt['bytes_written']=n
+      after=os.pread(fd,size,address);receipt['after_sha256']=h(after)
+      assert n==size and after==replacement,'write/readback did not complete'
+      receipt['status']='written-and-verified';done=True
+     finally:os.close(fd)
+   if done:
+    receipt['state_after_resume']=ns['state'](ns['guard']())
+    save(label+'-write.json',receipt);return
+  finally:
+   rows.append(receipt);save('suspensions.json',rows)
+  time.sleep(.017)
+ raise RuntimeError('No accepted frame-limiter stop; no write performed for '+label)
+
+def sample(label):
+ values=[]
+ for i in range(3):
+  result=subprocess.run([str(ROOT/'.venv/bin/python'),str(runtime),'capture'],capture_output=True,text=True,timeout=20)
+  assert result.returncode==0,(result.stdout,result.stderr)
+  row=json.loads(result.stdout);assert row['state']==plan['state'];values.append(row)
+  save(label+'-captures.json',values);time.sleep(.25)
+ captures[label]=values
+
+if __name__=='__main__':
+ assert sys.argv[1:]==['--run-authorized']
+ auth=json.loads((HERE/'authorization.json').read_text());assert auth['user_text']=='go for it. I authorize memory writes ehre'
+ identity(original)
+ assert not (HERE/'started.json').exists(),'this transaction cannot be rerun'
+ with (HERE/'started.json').open('x') as f:json.dump({'time':time.time(),'plan_sha256':h(PLAN.read_bytes()),'source_sha256':h(Path(__file__).read_bytes()),'authorization':auth},f)
+ error=None;restoration=None
+ try:
+  sample('before');change('apply',original,candidate);sample('candidate')
+ except BaseException:
+  error=traceback.format_exc()
+ finally:
+  if any(r.get('write_attempted') for r in writes):
+   try:
+    meta,_=identity(require_pose=False);current=ns['mem'](meta,address,size)
+    # A partial first write can only contain old/new bytes at their own offsets.
+    assert all(v in (a,b) for v,a,b in zip(current,original,candidate)),'unexpected mesh mutation'
+    change('restore',current,original,require_pose=False)
+    restoration='exact-original-restored';sample('restored')
+   except BaseException:
+    restoration='RESTORATION-FAILED';error=(error or '')+'\n'+traceback.format_exc()
+  else:restoration='no-write-needed'
+  save('result.json',{'error':error,'restoration':restoration,'writes':writes,'captures':captures,'suspension_count':len(rows),'finished':time.time()})
+ print(json.dumps({'error':error,'restoration':restoration,'writes':len(writes),'captures':{k:len(v) for k,v in captures.items()},'suspensions':len(rows)},indent=2))
+ if error:sys.exit(1)

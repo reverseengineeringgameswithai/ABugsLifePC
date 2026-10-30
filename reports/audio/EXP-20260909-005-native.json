@@ -1,0 +1,557 @@
+{
+  "experiment": "EXP-20260909-005",
+  "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "evidence_kind": "offline original-x86 emulation; API stubs; no audible playback",
+  "files": [
+    {
+      "file": "LESS1.WAV",
+      "sha256": "b38cd2c945d233deedeeefb8f7688d4866cad644bcdb6c3c10971dac20ca7cb7",
+      "channels": 2,
+      "frames": 333855,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 15.140816326530611
+    },
+    {
+      "file": "LESS10.WAV",
+      "sha256": "cd47476e50c45c8363cef0d335e0de9ce1b138b224e612fd2cb046fc908fb5cd",
+      "channels": 2,
+      "frames": 217677,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 9.871972789115647
+    },
+    {
+      "file": "LESS11.WAV",
+      "sha256": "f2a67f21019266be3b106f4403703625bb06e14b640a119be1e84030baacb92e",
+      "channels": 2,
+      "frames": 156415,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 7.093650793650793
+    },
+    {
+      "file": "LESS12.WAV",
+      "sha256": "8d9cab9bcae9138214147dc9169a408cc158374ed42cf7568ec8805e30a7ae6e",
+      "channels": 1,
+      "frames": 447294,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 20.28544217687075
+    },
+    {
+      "file": "LESS13.WAV",
+      "sha256": "6db1005debd542efa76d29c20e95a7b753da7d6c57e0a7a5a71a54b220b2a47b",
+      "channels": 1,
+      "frames": 588163,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 26.6740589569161
+    },
+    {
+      "file": "LESS2.WAV",
+      "sha256": "0cd363d403166c07eda958d90335011582a10e4afc7b473f0d3001fa3ff11ec4",
+      "channels": 1,
+      "frames": 254555,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 11.544444444444444
+    },
+    {
+      "file": "LESS3.WAV",
+      "sha256": "29b3d4af3e67cf21033bc1f56743999eb6e752aaba03ac8873f14cd7ae6fb6ce",
+      "channels": 1,
+      "frames": 227977,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 10.339092970521541
+    },
+    {
+      "file": "LESS4.WAV",
+      "sha256": "19aa29c3a88241d8043e3a189767fcebe5e11cb71922f3bbd5783d19bd6dc0e8",
+      "channels": 1,
+      "frames": 490433,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 22.241859410430838
+    },
+    {
+      "file": "LESS5.WAV",
+      "sha256": "9d200da44bfa440ff8fdc886196bff42112f2a5930cc10dc3cbc5e0f5aa6251f",
+      "channels": 1,
+      "frames": 223935,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 10.15578231292517
+    },
+    {
+      "file": "LESS6.WAV",
+      "sha256": "cb5e9a92e07be5bcbd5f89ed7763f66f2e7eaf0de5db6fafa0cefaf0e8d0d6b3",
+      "channels": 1,
+      "frames": 160249,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 7.267528344671202
+    },
+    {
+      "file": "LESS7.WAV",
+      "sha256": "2668a3b95612865839de73afa291b89ab3dff8ed37b1a9863d1050639e6d03a9",
+      "channels": 1,
+      "frames": 366404,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 16.616961451247164
+    },
+    {
+      "file": "LESS8.WAV",
+      "sha256": "3f20248d66a03e89e06cefb1c340513ddbfc1bded00510459b6e8fef7197d093",
+      "channels": 1,
+      "frames": 108177,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 4.905986394557823
+    },
+    {
+      "file": "LESS8A.WAV",
+      "sha256": "70a9bee0bee21aac365002fc429efdb8ab8d283916aff577180275072aab59cd",
+      "channels": 1,
+      "frames": 50646,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 2.2968707482993196
+    },
+    {
+      "file": "LESS9.WAV",
+      "sha256": "fb3dcd57fd175fad3ce5993f4ab4cdd8c83b87d54fabb0e50f56e89c959a7a09",
+      "channels": 1,
+      "frames": 77159,
+      "rate": 22050,
+      "bits": 8,
+      "seconds": 3.4992743764172336
+    }
+  ],
+  "native": [
+    {
+      "base": "0x400000",
+      "table": [
+        "audio\\Level1a.wav",
+        "audio\\Level1b.wav",
+        "audio\\Level1c.wav",
+        "audio\\Level2a.wav",
+        "audio\\Level2b.wav",
+        "audio\\Level2c.wav",
+        "audio\\Level3a.wav",
+        "audio\\Level3b.wav",
+        "audio\\Level3c.wav",
+        "audio\\Level4a.wav",
+        "audio\\Level4b.wav",
+        "audio\\Level4c.wav",
+        "audio\\Level5a.wav",
+        "audio\\Level5b.wav",
+        "audio\\Level5c.wav",
+        "audio\\dead.wav",
+        "audio\\dead.wav",
+        "audio\\levcom.wav",
+        "audio\\title.wav",
+        "audio\\bugs2mb.wav",
+        "audio\\bugs2ma.wav",
+        "audio\\bugs2mc.wav",
+        "audio\\dead.wav",
+        "audio\\dead.wav",
+        "audio\\less1.wav",
+        "audio\\less2.wav",
+        "audio\\less3.wav",
+        "audio\\less4.wav",
+        "audio\\less5.wav",
+        "audio\\less6.wav",
+        "audio\\less7.wav",
+        "audio\\less8.wav",
+        "audio\\less8a.wav",
+        "audio\\less9.wav",
+        "audio\\less10.wav",
+        "audio\\less11.wav",
+        "audio\\less12.wav",
+        "audio\\less13.wav",
+        "audio\\less13.wav",
+        "audio\\less13.wav",
+        null
+      ],
+      "paths": [
+        "R:\\pc\\bugs\\cd\\audio\\less1.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less2.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less3.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less4.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less5.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less6.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less7.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less8.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less8a.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less9.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less10.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less11.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less12.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less13.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less13.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less13.wav"
+      ],
+      "stages": [
+        {
+          "stage": 0,
+          "cue": 24
+        },
+        {
+          "stage": 1,
+          "cue": 25
+        },
+        {
+          "stage": 2,
+          "cue": 26
+        },
+        {
+          "stage": 3,
+          "cue": 27
+        },
+        {
+          "stage": 4,
+          "cue": 28
+        },
+        {
+          "stage": 5,
+          "cue": 29
+        },
+        {
+          "stage": 6,
+          "cue": 30
+        },
+        {
+          "stage": 7,
+          "cue": 31
+        },
+        {
+          "stage": 8,
+          "cue": 32
+        },
+        {
+          "stage": 9,
+          "cue": 33
+        },
+        {
+          "stage": 10,
+          "cue": 34
+        },
+        {
+          "stage": 11,
+          "cue": 35
+        },
+        {
+          "stage": 12,
+          "cue": 36
+        },
+        {
+          "stage": 13,
+          "cue": 37
+        }
+      ],
+      "reads": [
+        {
+          "data_size": 997,
+          "read_sizes": [
+            997
+          ],
+          "exact": true
+        },
+        {
+          "data_size": 2049,
+          "read_sizes": [
+            1024,
+            1024,
+            1
+          ],
+          "exact": true
+        },
+        {
+          "data_size": 65539,
+          "read_sizes": [
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            3
+          ],
+          "exact": true
+        }
+      ]
+    },
+    {
+      "base": "0x1000000",
+      "table": [
+        "audio\\Level1a.wav",
+        "audio\\Level1b.wav",
+        "audio\\Level1c.wav",
+        "audio\\Level2a.wav",
+        "audio\\Level2b.wav",
+        "audio\\Level2c.wav",
+        "audio\\Level3a.wav",
+        "audio\\Level3b.wav",
+        "audio\\Level3c.wav",
+        "audio\\Level4a.wav",
+        "audio\\Level4b.wav",
+        "audio\\Level4c.wav",
+        "audio\\Level5a.wav",
+        "audio\\Level5b.wav",
+        "audio\\Level5c.wav",
+        "audio\\dead.wav",
+        "audio\\dead.wav",
+        "audio\\levcom.wav",
+        "audio\\title.wav",
+        "audio\\bugs2mb.wav",
+        "audio\\bugs2ma.wav",
+        "audio\\bugs2mc.wav",
+        "audio\\dead.wav",
+        "audio\\dead.wav",
+        "audio\\less1.wav",
+        "audio\\less2.wav",
+        "audio\\less3.wav",
+        "audio\\less4.wav",
+        "audio\\less5.wav",
+        "audio\\less6.wav",
+        "audio\\less7.wav",
+        "audio\\less8.wav",
+        "audio\\less8a.wav",
+        "audio\\less9.wav",
+        "audio\\less10.wav",
+        "audio\\less11.wav",
+        "audio\\less12.wav",
+        "audio\\less13.wav",
+        "audio\\less13.wav",
+        "audio\\less13.wav",
+        null
+      ],
+      "paths": [
+        "R:\\pc\\bugs\\cd\\audio\\less1.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less2.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less3.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less4.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less5.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less6.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less7.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less8.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less8a.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less9.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less10.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less11.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less12.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less13.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less13.wav",
+        "R:\\pc\\bugs\\cd\\audio\\less13.wav"
+      ],
+      "stages": [
+        {
+          "stage": 0,
+          "cue": 24
+        },
+        {
+          "stage": 1,
+          "cue": 25
+        },
+        {
+          "stage": 2,
+          "cue": 26
+        },
+        {
+          "stage": 3,
+          "cue": 27
+        },
+        {
+          "stage": 4,
+          "cue": 28
+        },
+        {
+          "stage": 5,
+          "cue": 29
+        },
+        {
+          "stage": 6,
+          "cue": 30
+        },
+        {
+          "stage": 7,
+          "cue": 31
+        },
+        {
+          "stage": 8,
+          "cue": 32
+        },
+        {
+          "stage": 9,
+          "cue": 33
+        },
+        {
+          "stage": 10,
+          "cue": 34
+        },
+        {
+          "stage": 11,
+          "cue": 35
+        },
+        {
+          "stage": 12,
+          "cue": 36
+        },
+        {
+          "stage": 13,
+          "cue": 37
+        }
+      ],
+      "reads": [
+        {
+          "data_size": 997,
+          "read_sizes": [
+            997
+          ],
+          "exact": true
+        },
+        {
+          "data_size": 2049,
+          "read_sizes": [
+            1024,
+            1024,
+            1
+          ],
+          "exact": true
+        },
+        {
+          "data_size": 65539,
+          "read_sizes": [
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            1024,
+            3
+          ],
+          "exact": true
+        }
+      ]
+    }
+  ]
+}

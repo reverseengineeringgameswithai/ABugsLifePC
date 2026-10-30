@@ -1,0 +1,15 @@
+libEGL warning: pci id for fd 45: 10de:2b85, driver (null)
+
+pci id for fd 46: 10de:2b85, driver (null)
+pci id for fd 47: 10de:2b85, driver (null)
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: pci id for fd 45: 10de:2b85, driver (null)
+
+pci id for fd 46: 10de:2b85, driver (null)
+pci id for fd 47: 10de:2b85, driver (null)
+libEGL warning: egl: failed to create dri2 screen
+libEGL warning: pci id for fd 45: 10de:2b85, driver (null)
+
+wine: Unhandled page fault on read access to E75733F8 at address 004A84A4 (thread 0138), starting debugger...
+0170:err:system:NtUserChangeDisplaySettings Changing L"\\\\.\\DISPLAY1" display settings returned -2.
+0170:err:explorer:initialize_display_settings Failed to initialize registry display settings for L"\\\\.\\DISPLAY1".

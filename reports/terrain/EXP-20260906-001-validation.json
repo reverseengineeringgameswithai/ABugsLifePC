@@ -1,0 +1,100 @@
+{
+  "experiment_id": "EXP-20260906-001",
+  "status": "offline-gates-passed-file-loaded-angle-validation-pending",
+  "control": "EXP-20260905-009",
+  "affected_tests": {
+    "files": [
+      "tests/test_terrain_additive.py",
+      "tests/test_terrain_visibility.py"
+    ],
+    "passed": 73,
+    "failed": 0,
+    "duration_seconds": 0.33,
+    "scratch": "work/tmp/pytest-visibility-focused"
+  },
+  "terrain_gate": {
+    "files": [
+      "tests/test_terrain_deck_grid_probe.py",
+      "tests/test_terrain_deck_probe.py",
+      "tests/test_terrain_deck_visual_probe.py",
+      "tests/test_terrain_floor_edit.py",
+      "tests/test_terrain_floor_visual_fixture.py"
+    ],
+    "passed": 72,
+    "failed": 0,
+    "duration_seconds": 26.17,
+    "workers": 4,
+    "distribution": "loadfile",
+    "scratch": "work/tmp/pytest-terrain",
+    "retention": "failed"
+  },
+  "native_camera_sweep": {
+    "report": "reports/terrain/EXP-20260906-001-camera-bounds.json",
+    "duration_seconds": 1.4757455979997758,
+    "targeted_cases": 6624,
+    "target_inside_viewport": 5152,
+    "outside_target_cases": 1472,
+    "control_mesh_rejections": 544,
+    "candidate_mesh_rejections": 0,
+    "historical_camera_acceptances": 5,
+    "scope": "32 yaw angles, three pitches, three distances, all 23 appended connector vertices; original PC culling instructions, not live face rasterization"
+  },
+  "preservation": {
+    "terrain_sha256": "77a77456c3b9a0f4db5e7b20d257a9772e04c0f0ed3d0812590943d630851698",
+    "candidate_dat_sha256": "691674fdca9b87a95f477bfb144f9ff6d805fecc05785669c68162c8f4f17659",
+    "changed_dat_offsets": [
+      8592,
+      8593
+    ],
+    "radius_before": 6047,
+    "radius_after": 8560,
+    "collision_unchanged": true,
+    "geometry_and_unknown_fields_unchanged": true,
+    "control_copy_preserved": true
+  },
+  "fresh_runtime": {
+    "launched": true,
+    "level": 1,
+    "file_loaded_bound": 8560,
+    "report": "reports/terrain/EXP-20260906-001-runtime.json",
+    "user_angle_test_pending": true
+  },
+  "orientation": {
+    "allocation": "No EXP-20260906 entries in experiment notes, terrain reports or private experiment directories before allocation",
+    "run_index": "work/experiments/EXP-20260906-001/run-index-before.json",
+    "run_directories": 114,
+    "unreadable_metadata": 7,
+    "uncited_run_directories": 14,
+    "dangling_citations": 1,
+    "scope": "Existing run-index conditions recorded, not repaired or attributed to this change"
+  },
+  "limits": [
+    "Eight stored-unit rounding allowance and finite profile validation are not a universal all-angle or all-renderer proof",
+    "No fresh file-loaded runtime acceptance yet",
+    "Earlier intermediate-angle rendering discrepancy and flashing remain unclosed",
+    "No full repository suite or R2q tests",
+    "No Git operations or commit",
+    "No new live RAM writes, teleport, debugger or process stops"
+  ],
+  "next": "User repeats ramp descent and short-turn/side-angle views in the fresh file-loaded candidate; no additional RAM writes.",
+  "initial_runtime_checkpoint": {
+    "launched": false,
+    "reason": "Owned EXP-009 game remains alive after normal Alt+F4, pause/exit-level confirmation sequence and exact-window close request. Final session-audit exit 2 reports the same seven explicitly owned but generic-ledger-unattributed processes and private sink. Scoped process-termination approval requested before replacement launch.",
+    "old_process_group": 23606,
+    "old_game_pid": 23853,
+    "old_game_start_ticks": 183505,
+    "old_audited_processes": [
+      23624,
+      23650,
+      23774,
+      23778,
+      23787,
+      23813,
+      23853
+    ],
+    "old_sink": "ablpc_mute_23606",
+    "old_sink_module": 536870916,
+    "candidate_prefix_created": false,
+    "launch_plan": "work/experiments/EXP-20260906-001/preview-01/launch-plan.json"
+  }
+}

@@ -1,0 +1,93 @@
+EXP-20260813-042 per-record Direct3D append discriminator
+Date: 2026-08-13
+Executable SHA-256: 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+
+Accepted arms
+-------------
+control A:   RUN-GDB-20260813-124153
+replacement: RUN-GDB-20260813-124414
+control B:   RUN-GDB-20260813-124610
+
+Staged SHA-256 receipts
+-----------------------
+All three bugs.exe:
+97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+control A/B CD/CHARS/FLICK.ALL:
+a2f23220392d7fb4880bbab7acab9393fe6da059961d620e7b85c8df3f4f4ac6
+replacement CD/CHARS/FLICK.ALL (equal to source CD/CHARS3/FLICKD.ALL):
+6e5afb4f9ea649bc305fdafeb027aece25914b27a017d04841bf4298634079a4
+
+Fresh game-log receipts
+-----------------------
+control A bugs.log SHA-256:
+2b47114c981bc8ff4f8e23b77126ebd025e3cd7eef993a34988409d947635601
+replacement bugs.log SHA-256:
+8b331970c547406864ce26d1afee9367683cf34b62b39bd379206fa6ffcfd500
+control B bugs.log SHA-256:
+8b331970c547406864ce26d1afee9367683cf34b62b39bd379206fa6ffcfd500
+
+Each log contains these exact bounded receipts (line numbers 74, 75, 76, 127,
+1460, and 1478 respectively):
+
+  INFO Native software render mode is FALSE.
+  INFO RenderMode set to Direct3d render mode.
+  INFO Screen mode 640x480x16 selected.
+  INIT : Starting Direct3D renderer.
+  LOAD : Loading file R:\PC\BUGS\cd\chars\flick.all.
+  ROUTINE : NextLife.
+
+Direct search finds no INITSOFTRENDER line in any of the three logs.
+
+All three report capture_complete, one complete 168-call audit cycle, exactly
+124 retained candidate outcomes, three installed/deleted data watches,
+cleanup_verified, detach, no target signal, and five passing resumed/untraced
+survival samples. Each game log positively contains Native software render
+mode is FALSE, Direct3D render mode, 640x480x16, Starting Direct3D renderer,
+the exact chars/flick.all load, and NextLife; none contains INITSOFTRENDER.
+No selected record flushes. All positive candidate outcomes use only
+root_004c4108, page 16. No file, vertex, or index payload bytes are read or
+retained.
+
+Outcome-pattern comparison
+--------------------------
+A/R/B are append booleans in control A / replacement / control B.
+
+pattern  records  exact file offsets
+0/0/0    57       retained in the three run result files
+1/1/1    53       retained in the three run result files
+0/0/1     3       0x0640 0x0D40 0x1640
+1/1/0     9       0x0A3C 0x1370 0x1490 0x1550 0x2040 0x23D0 0x2458 0x24E8 0x2548
+0/1/1     1       0x1E98
+0/1/0     1       0x0A6C
+
+Only pattern 0/1/0 lies outside both controls. The smallest exact
+replacement-local outcome set is therefore:
+
+  entry 7, file offset 0x0A6C, form 0x3C: control A no append,
+  replacement append (+4 vertices/+6 indices), control B no append.
+
+The controls disagree on 13 of 124 records. Those alternatives are not added
+to the replacement-local set. Replacement matches control A on 122 records
+and control B on 111 records.
+
+Prior single-record outcome scope
+---------------------------------
+EXP-20260813-041's aggregate single-record results were exact for its retained
+M2.27 arms but do not reproduce in this fresh capture:
+
+offset  form  EXP-041 A/R/B  EXP-042 A/R/B
+0x0174  0x34  1/0/1          1/1/1
+0x0858  0x34  1/0/1          1/1/1
+0x0AA4  0x34  0/1/0          0/0/0
+
+This is retained as direct evidence of per-frame admission variation, not
+silently normalized into a source-stable result. It does not contradict the
+native append equations or either experiment's within-arm measurements.
+
+Rejected timing arm
+-------------------
+RUN-GDB-20260813-123859 attached before the natural Training title boundary,
+recorded 1,000 unmatched pre-title flush-marker stops, and rejected at
+max_stops before any candidate pre-call event. It deleted all three points,
+detached, observed no target signal, and passed five survival samples. It is
+not outcome evidence.

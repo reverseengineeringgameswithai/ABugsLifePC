@@ -1,0 +1,60 @@
+{
+  "model": "kev-latest",
+  "state": "Evidence source: Vault/30-Experiments/EXP-20261001-002 - Flik animation catalog.md\n\n## Inputs\n\n- Retail executable SHA-256\n  `97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878`\n  (`work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe`).\n- `CHARS/FLICK.ANM` `1743b26a…e8ab1` (= `CHARS3/FLICKD.ANM`),\n  and:\n  - `CHARS3/FLICKP.ANM` `95e77803dfaef08b616eaed738e3edc183c0de3336f7da6473bb69ad3c0ed3b7`\n  - `CHARS4/FLICKP.ANM` `85ecebab2dc71bb8b6ae23b728ed8f855775dd6cf4ff1ef9be1b3b5a2e6e3fe9`\n  - `CHARS3/FLIKHARV.ANM` `5442b76ff7b0911fed6f79b40390b3f7e83a04b2bcb1d5730fad86d581557f48`\n  - `CHARS2/ATTAFLIK.ANM` `267ba06ac8fbb88aecfe978795e65e2daa0f99b3cac86db46b06b7da4ccefc2d`\n- All 61 retail `.ANM` files for the multi-file check.\n- No PS1 source, runtime, memory access or edit was used.\n\n\n## Observed\n\n- **Record grammar.** `+0x02` frames (`& 0x7FFF`), `+0x04` parts, `+0x06`\n  words per frame, `+0x08` list count, `+0x0A` bitmask length, part list,\n  bitmask, frames. With the bitmask length respected, **303 records in 60 of\n  61 files end with zero slack**; every `+0x00` equals its slot.\n  `LEVEL00/ROSIEWLK.ANM` is the exception (first offset beyond its file).\n- **FLICK.ANM.** 40 slots, slot 26 absent; 24 parts (21 driven, 3 `-2`);\n  frame counts 8–58; words per frame 129/126 (full body), 72 (parts 9–20) and\n  57 (parts 0–8). Five slots are half-body layers.\n- **State table.** 35 rows at `0x004C1CE8`, a `0xFFFFFFFF` word at\n  `0x004C1FA4`, idle tables at `0x004C1FA8/B8/C8`. Every script frame lies\n  within its slots. State `0x20` names absent slot 26 and no store writes\n  `0x20`.\n- **Coverage.** Sampler call sites: `0x004032FE`, `0x004033D9` (Flik),\n  `0x00448569` (entity types), `0x0044CE05` (plants). Slots 7 and 12 have no\n  reference. Berry-throw overlays use slots 2, 11 and 23; the strand swing\n  uses slot 32 through header `+0x88`.\n- **Variants.** FLICKD is identical; both FLICKP files have 29 parts and the\n  same frame count in every present slot; CHARS4/FLICKP also lacks slots 30,\n  31 and 37, exactly the fidgets its levels' idle table never picks.\n- **Non-player models.** ATTAFLIK (actor slot 39, Riverbed Flight only) is\n  drawn instead of Flik: `0x004362D0` copies his position and sets\n  `0x0059D9A0` bit 0 (`0x0043634A`), which Flik's renderer tests at\n  `0x0044C51A`; its slots are a flight loop, hurt, berry throw and death.\n  FLIKHARV (actor slot 63, hook `0x00415E30`) is the rideable harvester:\n  ridden moving, ridden standing, parked (`0x00416038`, `0x00416014`).\n- **Triggers.** As tabulated in [[PC Flik animation catalog]] and\n  `config/animation/pc-flik-animations.json`, each with addresses.\n\n\n## Interpretation\n\nThe catalogue is complete for the player model at the slot and state level:\nthe only paths that sample Flik's file are enumerated, and every reachable\nslot is labelled. Twenty-eight state names are confirmed by the code that\nsets them; seven carry `candidate` names (states 1, 2, 6, 7, `0x10`, `0x1C`\nand `0x1F`). One contradiction is recorded (movement state 4,\ngliding versus hover-dive-pound).\n\n\n## Result\n\nStatic catalogue complete for the player model and both non-player Flik\nmodels. `tests/test_anm.py` (26) and `tests/test_flik_animation.py` (13) pass; the\ngenerator's `--check` reproduces the committed reports.\n\n\n## Follow-up\n\n- A read-only runtime arm on the state word (see [[Known Unknowns#Flik animations]]).\n- `.ALL` hierarchy decoding for visual previews and part names.\n",
+  "questions": {
+    "q25": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: FLICK.ANM has a 40-slot table with slot 26 absent.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q26": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Flik's native action-state table has 35 rows at address 0x004C1CE8.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q27": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: All 61 retail ANM files passed the record grammar check with zero slack and no exceptional file.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q28": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The animation catalogue experiment observed Flik's state word live during gameplay.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q29": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Unreferenced animation slot 7 visually depicts Flik waving.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q30": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The per-part stored rotation angles use XYZ Euler order.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    }
+  }
+}

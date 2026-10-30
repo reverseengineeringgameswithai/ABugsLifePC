@@ -1,0 +1,173 @@
+{
+  "experiment": "EXP-20260907-017",
+  "status": "implemented-runtime-observed; user accepts appearance, requests walkable trunk frontage in successor",
+  "project": "work/level-projects/moonlit-cliffs-trunk/level.blend",
+  "build": "/home/dev/ABLPC/work/copies/blender-level-1788804437878233170",
+  "game": {
+    "pid": 643454,
+    "start": 8723576,
+    "group": 643206,
+    "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-017\\preview-02\\bugs.exe log cheat mpeg                                                                                                   "
+  },
+  "leader": {
+    "pid": 643206,
+    "start": 8723417,
+    "group": 643206,
+    "cmd": "/usr/bin/bash /home/dev/ABLPC/work/experiments/EXP-20260907-017/preview-02/launch.sh "
+  },
+  "blender": {
+    "reopened_export_exact": true,
+    "clovers": [
+      {
+        "name": "Clover 01",
+        "asset": "clover.large",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 02",
+        "asset": "clover.slender",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 03",
+        "asset": "clover.tilted",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 04",
+        "asset": "clover.large",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 05",
+        "asset": "clover.slender",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 06",
+        "asset": "clover.tilted",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 07",
+        "asset": "clover.large",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 08",
+        "asset": "clover.slender",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 09",
+        "asset": "clover.tilted",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 10",
+        "asset": "clover.large",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 11",
+        "asset": "clover.slender",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 12",
+        "asset": "clover.tilted",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 13",
+        "asset": "clover.large",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 14",
+        "asset": "clover.slender",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      },
+      {
+        "name": "Clover 15",
+        "asset": "clover.tilted",
+        "vertices": 37,
+        "faces": 23,
+        "visible": true
+      }
+    ],
+    "blend_sha256": "59fd302e82ad1b9c6ec206dcf12cd53f35190f8f382364a44f3f6cf8ef0d0bca"
+  },
+  "native_frame": {
+    "accepted": true,
+    "views": 8,
+    "max_batch_vertices": 499
+  },
+  "tests": {
+    "selected_make_check": 1138,
+    "focused_mesh_reuse": 97
+  },
+  "collision_and_exe_unchanged": true,
+  "load_bytes": 970440,
+  "load_budget": 1000000,
+  "data_saved_bytes": 56376,
+  "character_storage": {
+    "accepted": true,
+    "original_model_bytes": 436,
+    "model_pointer": 7740651,
+    "scratch_start": 7797152,
+    "clearance": 56065,
+    "scope": "read-only repeated exact original body18 geometry during live play; no live writes"
+  },
+  "evidence": [
+    "work/experiments/EXP-20260907-017/blender-build-initial.json",
+    "work/experiments/EXP-20260907-017/blender-build.json",
+    "work/experiments/EXP-20260907-017/saved-file-check.json",
+    "work/experiments/EXP-20260907-017/frame-probe-final.json",
+    "work/experiments/EXP-20260907-017/flik-causal-replay.json",
+    "work/experiments/EXP-20260907-017/scratch-store-disassembly.json",
+    "work/experiments/EXP-20260907-017/planes-01/moving-planes.mp4",
+    "work/experiments/EXP-20260907-017/planes-02/trace.json",
+    "work/experiments/EXP-20260907-017/fixed-movement-02/trace.json",
+    "work/experiments/EXP-20260907-017/preview-02/verify.log",
+    "work/experiments/EXP-20260907-017/preview-02/live-handoff-binding.json",
+    "work/experiments/EXP-20260907-017/post-rejected-close-audit.json",
+    "work/experiments/EXP-20260907-017/post-og-close-audit.json",
+    "work/experiments/EXP-20260907-017/preview-02/trunk-view.json"
+  ],
+  "hashes": {
+    "LEVEL.DAT": "b675ecc1922598629cc55b1c3c1f5692935c4ace38645d8c9313ecad5bdc0e62",
+    "TERRAIN.ALL": "77949f180aeeeab73d3695de638344f20762ed869b2439d04ae7e14689504d21",
+    "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+    "bugs.exe": "3a2e6ca8463752463751c5eefc031e109d17e1ddaa9dc079615446b1f0454a77"
+  },
+  "lifecycle": "CLOSED for EXP-018; current successor is EXP-019"
+}

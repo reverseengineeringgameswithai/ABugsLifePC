@@ -1,0 +1,85 @@
+{
+  "experiment": "EXP-20261007-001",
+  "description": "Exploratory, hand-authored evidence classification probe. Labels frozen before inference; not a representative accuracy benchmark or new PC evidence.",
+  "groups": [
+    {
+      "id": "thumper",
+      "source": "Vault/30-Experiments/EXP-20261005-001 - Thumper transplanted into Moonlit Cliffs.md",
+      "sections": ["Where Thumper lives (static, PC)", "Hardware arm 1 (classic selector, null sink, controllers disabled)", "Static audit of the dependencies (research subagent, disassembly)", "Contradiction (recorded, not resolved)", "Confirmed, inferred, unknown"],
+      "claims": [
+        ["Thumper's creature type is 16, whereas type 29 is Molt.", "supported", "Where Thumper lives (static, PC)", "Loader case 0x10 versus 0x1D."],
+        ["In the Moonlit hardware arm Thumper occupied slot 10 and initially had health 50.", "supported", "Hardware arm 1 (classic selector, null sink, controllers disabled)", "Spawn readback."],
+        ["Each individual purple-berry hit removed four health points from Thumper in the recorded Moonlit arm.", "contradicted", "Hardware arm 1 (classic selector, null sink, controllers disabled)", "27 deltas of -3; one -6 was two hits."],
+        ["Transplanting Thumper's creature row automatically brought his Council Chamber health bar and boss win sequence into Moonlit.", "contradicted", "Static audit of the dependencies (research subagent, disassembly)", "Engine-2 routines and HUD remain bound to their home context."],
+        ["Thumper's buzzing sound is audible to a player in Moonlit Cliffs.", "insufficient", "Confirmed, inferred, unknown", "Sound was not heard; null sink."],
+        ["Purple projectiles actually lock onto the transplanted Thumper after he wakes.", "insufficient", "Contradiction (recorded, not resolved)", "Suggestive awake flags and hits, no projectile target/flag sample." ]
+      ]
+    },
+    {
+      "id": "bosses",
+      "source": "Vault/30-Experiments/EXP-20261005-002 - Native bosses and tough enemies in Moonlit Cliffs.md",
+      "sections": ["Hardware arms", "Static audit (research subagent; confirmed unless marked)", "\"Visual artifacts when Flik starts moving\"", "Confirmed, inferred, unknown"],
+      "claims": [
+        ["The transplanted Thud was killed, respawned at health 50, and was killed again.", "supported", "Hardware arms", "Thud outcome table."],
+        ["The static berry damage path treats creature health of at least 100 as immune.", "supported", "Static audit (research subagent; confirmed unless marked)", "cmp ax,0x64 at 0x00429C35."],
+        ["The experiment established that the centipede is immune to purple-berry damage.", "contradicted", "Hardware arms", "Shots chose the fly; damage untested, not refuted."],
+        ["The dark horizontal bands occurred only in an image containing a transplanted boss.", "contradicted", "\"Visual artifacts when Flik starts moving\"", "Boss-free control had 2/236 band frames."],
+        ["The dark bands at the spawn fence are caused by the camera clipping the fence geometry.", "insufficient", "\"Visual artifacts when Flik starts moving\"", "Cause explicitly unidentified; camera clip is an inference."],
+        ["Instruction 0x0041C100 is the writer that sets awake bosses' flags bit 0x0001.", "insufficient", "Hardware arms", "Awake flag is sampled, writer is not identified." ]
+      ]
+    },
+    {
+      "id": "collision",
+      "source": "Vault/30-Experiments/EXP-20261005-004 - Original collision for Moonlit leaves and hollow plant.md",
+      "sections": ["Change", "Builds", "Native evidence (offline, original instructions)", "Hardware evidence (matched arms)", "Publication", "Limits"],
+      "claims": [
+        ["Among the production game files, the published collision fix changed only Moonlit's TERRAIN.ALL.", "supported", "Publication", "779 files compared; build metadata separately changed."],
+        ["The offline probe accepted all 32 solid props using 97 samples.", "supported", "Native evidence (offline, original instructions)", "Explicit probe totals."],
+        ["The yellow leaves received newly invented approximate collision shells instead of translated original strips.", "contradicted", "Change", "NATIVE_STRIPS maps to original kind-0x101 strips."],
+        ["Publishing the collision fix required changing the bugs.exe bytes from the preceding production.", "contradicted", "Publication", "EXE unchanged at c3d8b207..."],
+        ["A player can reliably jump into the hollow plant's cup and land on its rim in the hardware-rendered game.", "insufficient", "Limits", "Those hardware jumps were not tried."],
+        ["The new collision pieces lower the hardware frame rate by exactly two frames per second.", "insufficient", "Limits", "No comparative frame-rate measurement in this packet." ]
+      ]
+    },
+    {
+      "id": "camera",
+      "source": "Vault/30-Experiments/EXP-20261003-001 - R–Z camera wrap bands.md",
+      "sections": ["Diagnosis", "Fix", "Validation", "Limits"],
+      "claims": [
+        ["The extended camera guard contains 88 rows covering Moonlit, the Journey hub and rooms R through Z.", "supported", "Fix", "8 + 8 + 72 rows."],
+        ["All 765 CD files were byte-identical between the camera-fix production and its preceding production.", "supported", "Validation", "Build comparison."],
+        ["The camera-fix experiment checked every room from R through Z in hardware.", "contradicted", "Limits", "Only R at reproduced pose was checked."],
+        ["The October 2 room themes introduced the geometry that first caused the green band.", "contradicted", "Diagnosis", "Dates to first room build; themes changed no geometry."],
+        ["A hardware visit to room S would show no green band at any camera pose with this guard installed.", "insufficient", "Limits", "Other rooms and poses not tested."],
+        ["Players find the guard's possible whole-face popping at the 32k boundary visually acceptable.", "insufficient", "Limits", "No player appearance acceptance reported." ]
+      ]
+    },
+    {
+      "id": "animation",
+      "source": "Vault/30-Experiments/EXP-20261001-002 - Flik animation catalog.md",
+      "sections": ["Inputs", "Observed", "Interpretation", "Result", "Follow-up"],
+      "claims": [
+        ["FLICK.ANM has a 40-slot table with slot 26 absent.", "supported", "Observed", "40 slots, 39 present."],
+        ["Flik's native action-state table has 35 rows at address 0x004C1CE8.", "supported", "Observed", "State-table count and address."],
+        ["All 61 retail ANM files passed the record grammar check with zero slack and no exceptional file.", "contradicted", "Observed", "60/61; ROSIEWLK has first offset beyond file."],
+        ["The animation catalogue experiment observed Flik's state word live during gameplay.", "contradicted", "Inputs", "Static-only; runtime arm is follow-up."],
+        ["Unreferenced animation slot 7 visually depicts Flik waving.", "insufficient", "Observed", "No reference or visual preview identifies slot 7."],
+        ["The per-part stored rotation angles use XYZ Euler order.", "insufficient", "Follow-up", "Hierarchy/part interpretation not established by packet." ]
+      ]
+    },
+    {
+      "id": "fragments",
+      "source": "Vault/40-Implementation/PC gold fragments.md",
+      "sections": ["Setting", "How it works", "Limits"],
+      "preamble": true,
+      "claims": [
+        ["A gold-berry kill never drops an additional gold fragment.", "supported", "PC gold fragments", "Gold already counts and never drops one."],
+        ["The saved default probability of a fragment from a red-berry kill is one in twelve.", "supported", "Setting", "one_in.red = 12."],
+        ["Hardware testing has already validated fragment drops and pickups for all six non-gold berry types.", "contradicted", "Limits", "Only red in Moonlit with guaranteed-drop fixtures."],
+        ["The white-berry fragment odds were copied from a white-berry row in the PS1 odds table.", "contradicted", "Setting", "No white row; white uses red's odds by assumption."],
+        ["With the real red-berry odds, a long hardware run would produce a measured drop frequency within one percentage point of 1/12.", "insufficient", "Limits", "Real odds not hardware-tested; no measured frequency."],
+        ["Collecting the last fragment in a scripted Hopper boss encounter triggers the correct level-completion behavior in hardware.", "insufficient", "Limits", "Scripted boss counts untested." ]
+      ]
+    }
+  ]
+}

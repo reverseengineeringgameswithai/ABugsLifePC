@@ -1,0 +1,45 @@
+{
+  "experiment_id": "EXP-20260906-001",
+  "control": "EXP-20260905-009",
+  "status": "staged-not-runtime-validated",
+  "source_game": "work/copies/EXP-20260905-009/game",
+  "candidate_game": "work/copies/EXP-20260906-001/game",
+  "terrain_sha256": "77a77456c3b9a0f4db5e7b20d257a9772e04c0f0ed3d0812590943d630851698",
+  "source_dat_sha256": "24b8c345d82bb3489ab765d3ad24f917fcacf1da4d5a910e715b4daf84b071e8",
+  "candidate_dat_sha256": "691674fdca9b87a95f477bfb144f9ff6d805fecc05785669c68162c8f4f17659",
+  "bounds": {
+    "record_index": 160,
+    "scene_record_offset": 8580,
+    "bound_offset": 8592,
+    "bound_before": 6047,
+    "bound_after": 8560,
+    "scene_center_retained": [
+      4243,
+      -570,
+      16018
+    ],
+    "object_origin_retained": [
+      8192,
+      -8192,
+      8192
+    ],
+    "vertex_count": 439,
+    "squared_geometric_radius": 36557262,
+    "geometric_radius": 6047,
+    "profile": {
+      "width": 640,
+      "height": 480,
+      "focal": 320
+    },
+    "rounding_allowance_stored_units": 8,
+    "formula": "ceil(R * sqrt(1 + (max(width//2,height//2)/focal)**2)) + 8",
+    "preservation": "All bytes outside the signed scene-bound word are identical"
+  },
+  "changed_dat_offsets": [
+    8592,
+    8593
+  ],
+  "dat_size_unchanged": true,
+  "collision_unchanged": true,
+  "unknown_fields_and_geometry_unchanged": true
+}

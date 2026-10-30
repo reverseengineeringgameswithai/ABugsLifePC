@@ -1,0 +1,81 @@
+"""Synthetic byte-buffer checks for the prepared EXP-011 write routine.
+
+No game memory, OS descriptors, signals, debugger or capture calls are used.
+"""
+from pathlib import Path
+import importlib.util, types, contextlib, json
+
+HERE=Path(__file__).resolve().parent
+s=importlib.util.spec_from_file_location('prepared',HERE/'live_compare.py')
+m=importlib.util.module_from_spec(s);s.loader.exec_module(m)
+base=bytes((i*7)%251 for i in range(1078));control=bytes((i*13)%251 for i in range(1078))
+alt=control[:564]+bytes((i*17)%251 for i in range(256))+control[820:]
+out=[]
+
+class IO:
+ O_RDWR=2
+ def __init__(self,data,short=False):self.data=bytearray(data);self.calls=[];self.short=short
+ def open(self,path,flags):assert path=='/proc/123/mem';return 7
+ def close(self,fd):assert fd==7
+ def pread(self,fd,n,at):assert fd==7;return bytes(self.data[at:at+n])
+ def pwrite(self,fd,data,at):
+  assert fd==7;self.calls.append((at,len(data)))
+  n=5 if self.short else len(data);self.data[at:at+n]=data[:n];return n
+
+@contextlib.contextmanager
+def frozen(pid,receipt):
+ assert pid==123;yield object()
+
+def install(data,short=False):
+ io=IO(data,short);m.os=io;m.writes=[];m.stops=[]
+ meta={'game':{'pid':123}}
+ def identity(expected=None,require_pose=True):
+  if expected is not None:assert bytes(io.data)==expected
+  return meta,{}
+ m.identity=identity
+ m.lib=types.SimpleNamespace(address=0,frozen=frozen,frame_end_gate=lambda *a:True,
+   save=lambda *a:None,ns={'state':lambda *a:{},'guard':lambda:meta})
+ return io
+
+io=install(base)
+m.change('apply_control',base,control)
+m.change('apply_diagonal',control,alt,564,256)
+m.change('restore_control',alt,control,564,256)
+m.change('restore_original',control,base)
+assert bytes(io.data)==base and io.calls==[(0,1078),(564,256),(564,256),(0,1078)]
+out.append({'case':'full sequence exact slices and original restoration','passed':True})
+
+io=install(base)
+try:m.change('apply_control',control,alt)
+except AssertionError:pass
+else:raise AssertionError('mismatch accepted')
+assert not io.calls
+out.append({'case':'compare mismatch prevents any write','passed':True})
+
+io=install(control)
+try:m.change('apply_diagonal',control,base,564,256)
+except AssertionError:pass
+else:raise AssertionError('outside-slice change accepted')
+assert not io.calls
+out.append({'case':'outside-slice target mutation refused','passed':True})
+
+io=install(base,short=True)
+try:m.change('apply_control',base,control)
+except AssertionError:pass
+else:raise AssertionError('short write accepted')
+assert len(m.writes)==1 and m.writes[0]['bytes_written']==5
+partial=bytes(io.data);io.short=False
+m.change('restore_original',partial,base)
+assert bytes(io.data)==base
+out.append({'case':'short write detected and original restored under final phase','passed':True})
+
+io=install(base)
+m.change('apply_control',base,control)
+try:m.change('apply_control',control,base)
+except AssertionError:pass
+else:raise AssertionError('phase replay accepted')
+assert len(io.calls)==1
+out.append({'case':'attempted phase cannot be replayed','passed':True})
+
+(HERE/'operator-fixture.json').write_text(json.dumps({'scope':__doc__,'cases':out},indent=2)+'\n')
+print(json.dumps(out,indent=2))

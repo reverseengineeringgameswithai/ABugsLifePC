@@ -1,0 +1,1519 @@
+{
+  "experiment": "EXP-20260905-005",
+  "phase": "user-authorized original-PC wall view and texture extraction",
+  "utc_epoch": 1788650947.6204734,
+  "plan": {
+    "experiment": "EXP-20260905-005",
+    "arm": "original-wall-localization",
+    "stage": "/home/dev/ABLPC/work/copies/EXP-20260905-005/original-game",
+    "files": {
+      "PC/BUGS/bugs.exe": {
+        "sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+        "bytes": 1069056
+      },
+      "PC/BUGS/CD/CD.TXT": {
+        "sha256": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d",
+        "bytes": 4
+      },
+      "PC/BUGS/CD/LEVEL01/LEVEL.DAT": {
+        "sha256": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53",
+        "bytes": 332824
+      },
+      "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": {
+        "sha256": "62f3b73f21630eb19c04e585a92e1f3e32a76fdcb6ec36bae18f9c1ec3a2a868",
+        "bytes": 236940
+      },
+      "PC/BUGS/CD/LEVEL01/LEVEL.RAW": {
+        "sha256": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+        "bytes": 747748
+      }
+    },
+    "executed_image": "work/copies/auto-hardware/bugs.exe",
+    "executed_sha256": "1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f",
+    "authorization": "User go for it to close test copy, launch original Level01, turn toward wall and read-only capture",
+    "procedure": "PC autonomous game control: exact owned PID/window/socket, six hardware markers and both R: identities before input; Right .18s, Return .18s, Return .18s with separate captures and short directional holds to see wall",
+    "prohibited": "No memory writes, teleport, ptrace, process stops, registers, save states or debugger control",
+    "prior_close": "EXP-004 launch-only user session lacked active.json; normal-close guard failed, exact-owned-identity cleanup completed; post-close audit clean",
+    "preflight_correction": "First query checked system.reg; the valid R: cdrom declaration is in user.reg. No registry repair or game launch occurred before this correction."
+  },
+  "pre_launch_audit": {
+    "tool": "game-session",
+    "tool_version": "1.0.0",
+    "verb": "audit",
+    "processes": {
+      "processes": [],
+      "owned_count": 0,
+      "unattributed_count": 0,
+      "owned_groups": []
+    },
+    "null_sinks": [],
+    "open_sessions": [],
+    "clean": true
+  },
+  "active": {
+    "leader": {
+      "pid": 277987,
+      "start": 9423433,
+      "group": 277987,
+      "cmd": "/usr/bin/env bash /home/dev/ABLPC/scripts/play-pristine.sh --game-dir /home/dev/ABLPC/work/copies/EXP-20260905-005/original-game/PC/BUGS --prefix /home/dev/ABLPC/work/experiments/EXP-20260905-005/original/prefix --auto-hardware --research --windowed --mute "
+    },
+    "stage": "/home/dev/ABLPC/work/copies/EXP-20260905-005/original-game",
+    "args": [
+      "/home/dev/ABLPC/scripts/play-pristine.sh",
+      "--game-dir",
+      "/home/dev/ABLPC/work/copies/EXP-20260905-005/original-game/PC/BUGS",
+      "--prefix",
+      "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/prefix",
+      "--auto-hardware",
+      "--research",
+      "--windowed",
+      "--mute"
+    ],
+    "game": {
+      "pid": 278243,
+      "start": 9423624,
+      "group": 277987,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\auto-hardware\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "display": ":2",
+    "gamescope_display": "gamescope-0",
+    "window": 14680071
+  },
+  "receipts": [
+    {
+      "time": 1788650288.1487935,
+      "command": [
+        "launch",
+        "/home/dev/ABLPC/work/copies/EXP-20260905-005/original-game"
+      ],
+      "result": {
+        "leader": {
+          "pid": 277987,
+          "start": 9423433,
+          "group": 277987,
+          "cmd": "/usr/bin/env bash /home/dev/ABLPC/scripts/play-pristine.sh --game-dir /home/dev/ABLPC/work/copies/EXP-20260905-005/original-game/PC/BUGS --prefix /home/dev/ABLPC/work/experiments/EXP-20260905-005/original/prefix --auto-hardware --research --windowed --mute "
+        },
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260905-005/original-game",
+        "args": [
+          "/home/dev/ABLPC/scripts/play-pristine.sh",
+          "--game-dir",
+          "/home/dev/ABLPC/work/copies/EXP-20260905-005/original-game/PC/BUGS",
+          "--prefix",
+          "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/prefix",
+          "--auto-hardware",
+          "--research",
+          "--windowed",
+          "--mute"
+        ]
+      }
+    },
+    {
+      "time": 1788650295.8002005,
+      "command": [
+        "discover"
+      ],
+      "result": [
+        {
+          "pid": 277987,
+          "start": 9423433,
+          "group": 277987,
+          "cmd": "bash /home/dev/ABLPC/scripts/play-pristine.sh --game-dir /home/dev/ABLPC/work/copies/EXP-20260905-005/original-game/PC/BUGS --prefix /home/dev/ABLPC/work/experiments/EXP-20260905-005/original/prefix --auto-hardware --research --windowed --mute "
+        },
+        {
+          "pid": 278005,
+          "start": 9423434,
+          "group": 277987,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_mute_277987 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/auto-hardware/bugs.exe log cheat mpeg "
+        },
+        {
+          "pid": 278041,
+          "start": 9423461,
+          "group": 277987,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        {
+          "pid": 278056,
+          "start": 9423472,
+          "group": 277987,
+          "cmd": "bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --setenv XDG_RUNTIME_DIR /run/user/1000 --symlink /usr/lib /lib --symlink /usr/lib64 /lib64 --ro-bind-try /etc/fonts/conf.d /etc/fonts/conf.d --ro-bind-try /etc/fonts/fonts.conf /etc/fonts/fonts.conf --ro-bind-try /home/dev/.cache/fontconfig /home/dev/.cache/fontconfig --ro-bind-try /home/dev/.fonts /home/dev/.fonts --ro-bind-try /usr/lib/fontconfig/cache /usr/lib/fontconfig/cache --bind-try /home/dev/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg /home/dev/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg --setenv XDG_CACHE_HOME /home/dev/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg --seccomp 114 /usr/libexec/glycin-loaders/2+/glycin-svg --dbus-fd 113 "
+        },
+        {
+          "pid": 278057,
+          "start": 9423472,
+          "group": 277987,
+          "cmd": "bwrap --unshare-all --die-with-parent --chdir / --ro-bind /usr /usr --dev /dev --ro-bind-try /etc/ld.so.cache /etc/ld.so.cache --ro-bind-try /nix/store /nix/store --tmpfs /tmp-home --tmpfs /tmp-run --clearenv --setenv HOME /tmp-home --setenv XDG_RUNTIME_DIR /tmp-run --setenv XDG_RUNTIME_DIR /run/user/1000 --symlink /usr/lib /lib --symlink /usr/lib64 /lib64 --ro-bind-try /etc/fonts/conf.d /etc/fonts/conf.d --ro-bind-try /etc/fonts/fonts.conf /etc/fonts/fonts.conf --ro-bind-try /home/dev/.cache/fontconfig /home/dev/.cache/fontconfig --ro-bind-try /home/dev/.fonts /home/dev/.fonts --ro-bind-try /usr/lib/fontconfig/cache /usr/lib/fontconfig/cache --bind-try /home/dev/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg /home/dev/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg --setenv XDG_CACHE_HOME /home/dev/.cache/glycin/usr/libexec/glycin-loaders/2+/glycin-svg --seccomp 114 /usr/libexec/glycin-loaders/2+/glycin-svg --dbus-fd 113 "
+        },
+        {
+          "pid": 278058,
+          "start": 9423472,
+          "group": 277987,
+          "cmd": "/usr/libexec/glycin-loaders/2+/glycin-svg --dbus-fd 113 "
+        },
+        {
+          "pid": 278164,
+          "start": 9423474,
+          "group": 277987,
+          "cmd": "gamescopereaper -- env PULSE_SINK=ablpc_mute_277987 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/auto-hardware/bugs.exe log cheat mpeg "
+        },
+        {
+          "pid": 278166,
+          "start": 9423474,
+          "group": 277987,
+          "cmd": "start.exe /exec /home/dev/ABLPC/work/copies/auto-hardware/bugs.exe log cheat                                                                                        "
+        },
+        {
+          "pid": 278243,
+          "start": 9423624,
+          "group": 277987,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\auto-hardware\\bugs.exe log cheat mpeg                                                                                                   "
+        }
+      ]
+    },
+    {
+      "time": 1788650295.808608,
+      "command": [
+        "discover"
+      ],
+      "result": {
+        "active": {
+          "leader": {
+            "pid": 277987,
+            "start": 9423433,
+            "group": 277987,
+            "cmd": "/usr/bin/env bash /home/dev/ABLPC/scripts/play-pristine.sh --game-dir /home/dev/ABLPC/work/copies/EXP-20260905-005/original-game/PC/BUGS --prefix /home/dev/ABLPC/work/experiments/EXP-20260905-005/original/prefix --auto-hardware --research --windowed --mute "
+          },
+          "stage": "/home/dev/ABLPC/work/copies/EXP-20260905-005/original-game",
+          "args": [
+            "/home/dev/ABLPC/scripts/play-pristine.sh",
+            "--game-dir",
+            "/home/dev/ABLPC/work/copies/EXP-20260905-005/original-game/PC/BUGS",
+            "--prefix",
+            "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/prefix",
+            "--auto-hardware",
+            "--research",
+            "--windowed",
+            "--mute"
+          ],
+          "game": {
+            "pid": 278243,
+            "start": 9423624,
+            "group": 277987,
+            "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\auto-hardware\\bugs.exe log cheat mpeg                                                                                                   "
+          },
+          "display": ":2",
+          "gamescope_display": "gamescope-0",
+          "window": 14680071
+        },
+        "state": {
+          "level": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "terrain_base": 0,
+          "barrier_head": 0,
+          "contact": [
+            0,
+            0
+          ],
+          "camera_matrix_hex": "000000000000000000000000000000000000",
+          "camera_translation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650389.3990533,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/frame-1788650389239225877.png",
+        "sha256": "b72317d15faa6d00a05f3c1b06d53299f4c2d068652551858709a7649506d399",
+        "state": {
+          "level": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "terrain_base": 0,
+          "barrier_head": 0,
+          "contact": [
+            0,
+            0
+          ],
+          "camera_matrix_hex": "000000000000000000000000000000000000",
+          "camera_translation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650400.49829,
+      "command": [
+        "key",
+        "Right",
+        ".18"
+      ],
+      "result": {
+        "key": "Right",
+        "seconds": 0.18,
+        "before": {
+          "level": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "terrain_base": 0,
+          "barrier_head": 0,
+          "contact": [
+            0,
+            0
+          ],
+          "camera_matrix_hex": "000000000000000000000000000000000000",
+          "camera_translation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "level": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "terrain_base": 0,
+          "barrier_head": 0,
+          "contact": [
+            0,
+            0
+          ],
+          "camera_matrix_hex": "000000000000000000000000000000000000",
+          "camera_translation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650401.6691544,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/frame-1788650401562617713.png",
+        "sha256": "e4719e04f170845910212564604809b233714042b73c7d9ca6cfcb58195e1c14",
+        "state": {
+          "level": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "terrain_base": 0,
+          "barrier_head": 0,
+          "contact": [
+            0,
+            0
+          ],
+          "camera_matrix_hex": "000000000000000000000000000000000000",
+          "camera_translation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650411.384309,
+      "command": [
+        "key",
+        "Return",
+        ".18"
+      ],
+      "result": {
+        "key": "Return",
+        "seconds": 0.18,
+        "before": {
+          "level": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "terrain_base": 0,
+          "barrier_head": 0,
+          "contact": [
+            0,
+            0
+          ],
+          "camera_matrix_hex": "000000000000000000000000000000000000",
+          "camera_translation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "level": 0,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "terrain_base": 0,
+          "barrier_head": 0,
+          "contact": [
+            0,
+            0
+          ],
+          "camera_matrix_hex": "000000000000000000000000000000000000",
+          "camera_translation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650413.5543313,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/frame-1788650413449201511.png",
+        "sha256": "cf8df78dc234e6a067797b1b1e9d9b07a59c8d4fe26a287903e77327f3219834",
+        "state": {
+          "level": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            0,
+            0
+          ],
+          "camera_matrix_hex": "000000000000000000000000000000000000",
+          "camera_translation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650422.8249135,
+      "command": [
+        "key",
+        "Return",
+        ".18"
+      ],
+      "result": {
+        "key": "Return",
+        "seconds": 0.18,
+        "before": {
+          "level": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            0,
+            0
+          ],
+          "camera_matrix_hex": "000000000000000000000000000000000000",
+          "camera_translation": [
+            0,
+            0,
+            0
+          ]
+        },
+        "after": {
+          "level": 1,
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            0,
+            0
+          ],
+          "camera_matrix_hex": "000000000000000000000000000000000000",
+          "camera_translation": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650423.8736718,
+      "command": [
+        "verify_patch"
+      ],
+      "result": {
+        "collision": [
+          {
+            "source": 99,
+            "pointer": 6973539,
+            "file_offset": 43924,
+            "bytes": 4460,
+            "sha256": "697fd09c5d32541a074d75064f7ebbe1bb12c88135ce11b5b3042eba5c7aa9a7"
+          },
+          {
+            "source": 100,
+            "pointer": 6977999,
+            "file_offset": 48384,
+            "bytes": 4088,
+            "sha256": "ab72db4bfcecef26a8f878c4edf4807c5f5c79ca0d7f89ddaf269331780f2815"
+          }
+        ],
+        "meshes": [
+          {
+            "record": 128,
+            "geometry": 6815603,
+            "bytes": 4270,
+            "groups": 3,
+            "sha256": "015b840c54730557f9828ddb8649f2def52ef0c300a802f5ea453b31e7f4ceb3"
+          },
+          {
+            "record": 160,
+            "geometry": 6709927,
+            "bytes": 2234,
+            "groups": 5,
+            "sha256": "1de3480a594b7a44959d67b2ea8771f63a482b6fe4cc04c419bfc38743d6ab2a"
+          },
+          {
+            "record": 213,
+            "geometry": 6652395,
+            "bytes": 4574,
+            "groups": 6,
+            "sha256": "56ef2228e048be6c0985293a6bcbb37f65fbf09489536a12e6950bda98bf364e"
+          },
+          {
+            "record": 280,
+            "geometry": 6656971,
+            "bytes": 3038,
+            "groups": 6,
+            "sha256": "d7c359d86e6f2eb5cdabbba5cfe52b6078f427ed10041c8f8d0662fff460eff9"
+          }
+        ],
+        "terrain_sha256": "62f3b73f21630eb19c04e585a92e1f3e32a76fdcb6ec36bae18f9c1ec3a2a868",
+        "level_dat_sha256": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53",
+        "binding": {
+          "socket": "/run/user/1000/gamescope-0",
+          "peer": {
+            "pid": 278005,
+            "start": 9423434,
+            "group": 277987,
+            "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_mute_277987 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/auto-hardware/bugs.exe log cheat mpeg "
+          },
+          "uid": 1000,
+          "gid": 1000
+        },
+        "state": {
+          "level": 1,
+          "position": [
+            197091,
+            2734,
+            492897
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977331
+          ],
+          "camera_matrix_hex": "dd090000990c2200ff0fe5ff68f32c00dc09",
+          "camera_translation": [
+            219520,
+            -14274,
+            475334
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650424.0404851,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/frame-1788650423934116742.png",
+        "sha256": "27d44387532db8b7b815de92b794c3668b3b5825f1501282ce9c318fe7fe2859",
+        "state": {
+          "level": 1,
+          "position": [
+            197091,
+            2734,
+            492897
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977331
+          ],
+          "camera_matrix_hex": "dd090000990c2200ff0fe5ff68f32c00dc09",
+          "camera_translation": [
+            219517,
+            -14285,
+            475334
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650454.5757565,
+      "command": [
+        "key",
+        "Down",
+        ".6"
+      ],
+      "result": {
+        "key": "Down",
+        "seconds": 0.6,
+        "before": {
+          "level": 1,
+          "position": [
+            197091,
+            2734,
+            492897
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977331
+          ],
+          "camera_matrix_hex": "dd090000990c2200ff0fe5ff68f32c00dc09",
+          "camera_translation": [
+            219517,
+            -14292,
+            475334
+          ]
+        },
+        "after": {
+          "level": 1,
+          "position": [
+            213483,
+            -208,
+            480238
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6975875
+          ],
+          "camera_matrix_hex": "dd090000990c5702b80f2bfea0f3fa02b009",
+          "camera_translation": [
+            233212,
+            -25592,
+            464436
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650455.7458053,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/frame-1788650455640464250.png",
+        "sha256": "77efbcdc40c5d0892f2f4a00c69610ea44860c9e826366ae4a9065cfba65f6dd",
+        "state": {
+          "level": 1,
+          "position": [
+            219545,
+            -1419,
+            475635
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6976591
+          ],
+          "camera_matrix_hex": "760e0000d7067d02e60ebdfaa2f9d305770d",
+          "camera_translation": [
+            223474,
+            -31814,
+            453129
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650486.6894727,
+      "command": [
+        "key",
+        "Down",
+        ".6"
+      ],
+      "result": {
+        "key": "Down",
+        "seconds": 0.6,
+        "before": {
+          "level": 1,
+          "position": [
+            219545,
+            -1419,
+            475635
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6976591
+          ],
+          "camera_matrix_hex": "5af600003df3000000100000c30c00005af6",
+          "camera_translation": [
+            196835,
+            -14226,
+            493347
+          ]
+        },
+        "after": {
+          "level": 1,
+          "position": [
+            200994,
+            2012,
+            489722
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977395
+          ],
+          "camera_matrix_hex": "37f6000058f3deffff0f1a00a70c2c0038f6",
+          "camera_translation": [
+            179840,
+            -12805,
+            506636
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650488.8570306,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/frame-1788650488752546265.png",
+        "sha256": "758c72f42374c6b5eb3b8dcbdcbec5121209d55b52393e33d2c214f3d4fb99c8",
+        "state": {
+          "level": 1,
+          "position": [
+            190571,
+            2452,
+            497661
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977363
+          ],
+          "camera_matrix_hex": "8ffd0000d00f6800fe0f100032f06a0090fd",
+          "camera_translation": [
+            213450,
+            -14840,
+            490620
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650509.878008,
+      "command": [
+        "key",
+        "Down",
+        ".18"
+      ],
+      "result": {
+        "key": "Down",
+        "seconds": 0.18,
+        "before": {
+          "level": 1,
+          "position": [
+            190571,
+            2452,
+            497661
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977363
+          ],
+          "camera_matrix_hex": "83090000dd0c3100ff0fdcff24f33e008209",
+          "camera_translation": [
+            213237,
+            -14581,
+            480416
+          ]
+        },
+        "after": {
+          "level": 1,
+          "position": [
+            193424,
+            2602,
+            495559
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977363
+          ],
+          "camera_matrix_hex": "8d090000d60c5000fe0fc5ff2cf364008b09",
+          "camera_translation": [
+            216869,
+            -14973,
+            477595
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650515.04734,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/frame-1788650514942422082.png",
+        "sha256": "cbd928408d8f01895a48634f9850e5599bb5be70b32f5ec9afcf49be9ec4c86b",
+        "state": {
+          "level": 1,
+          "position": [
+            193791,
+            2620,
+            495289
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977363
+          ],
+          "camera_matrix_hex": "b5f60000faf277fffc0f6200020da900b8f6",
+          "camera_translation": [
+            171302,
+            -17185,
+            511856
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650598.8438127,
+      "command": [
+        "read",
+        "0x573408",
+        "16"
+      ],
+      "result": {
+        "address": "0x573408",
+        "hex": "00010001000100010001000100010001"
+      }
+    },
+    {
+      "time": 1788650638.2988338,
+      "command": [
+        "read",
+        "0x582eb0",
+        "16"
+      ],
+      "result": {
+        "address": "0x582eb0",
+        "hex": "c03e4209d8bb4309f038450950f45909"
+      }
+    },
+    {
+      "time": 1788650638.3259861,
+      "command": [
+        "read",
+        "0x5836a4",
+        "16"
+      ],
+      "result": {
+        "address": "0x5836a4",
+        "hex": "03000000030000000300000003000000"
+      }
+    },
+    {
+      "time": 1788650669.3210697,
+      "command": [
+        "key",
+        "Up",
+        ".35"
+      ],
+      "result": {
+        "key": "Up",
+        "seconds": 0.35,
+        "before": {
+          "level": 1,
+          "position": [
+            193791,
+            2620,
+            495289
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977363
+          ],
+          "camera_matrix_hex": "b5f60000faf277fffc0f6200020da900b8f6",
+          "camera_translation": [
+            171302,
+            -17185,
+            511856
+          ]
+        },
+        "after": {
+          "level": 1,
+          "position": [
+            200871,
+            2153,
+            490209
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977331
+          ],
+          "camera_matrix_hex": "b5f60000faf290fffd0f5000030d8a00b7f6",
+          "camera_translation": [
+            174579,
+            -15930,
+            509415
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650670.4883964,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/frame-1788650670385545916.png",
+        "sha256": "707db1b25df5ebd9c271625748b9761044a566568867b374bbbf487b3147a9d4",
+        "state": {
+          "level": 1,
+          "position": [
+            203074,
+            1910,
+            488628
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977395
+          ],
+          "camera_matrix_hex": "b5f60000faf2e7ff00101200060d1f00b5f6",
+          "camera_translation": [
+            179197,
+            -13728,
+            505996
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650670.5153272,
+      "command": [
+        "read",
+        "0x573118",
+        "4"
+      ],
+      "result": {
+        "address": "0x573118",
+        "hex": "01000000"
+      }
+    },
+    {
+      "time": 1788650765.0303774,
+      "command": [
+        "key",
+        "Up",
+        ".5"
+      ],
+      "result": {
+        "key": "Up",
+        "seconds": 0.5,
+        "before": {
+          "level": 1,
+          "position": [
+            203074,
+            1910,
+            488628
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6977395
+          ],
+          "camera_matrix_hex": "b5f60000faf2e7ff00101200060d1f00b5f6",
+          "camera_translation": [
+            179229,
+            -13711,
+            505973
+          ]
+        },
+        "after": {
+          "level": 1,
+          "position": [
+            215826,
+            -228,
+            479741
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6976591
+          ],
+          "camera_matrix_hex": "b5f60000faf2000000100000060d0000b5f6",
+          "camera_translation": [
+            186984,
+            -13428,
+            500331
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650766.1977053,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/frame-1788650766092914428.png",
+        "sha256": "175bea5953e2db28e4280d1cb2d1f37c885a4a44c79763c19458c6a9e95a2a31",
+        "state": {
+          "level": 1,
+          "position": [
+            220764,
+            -1209,
+            476264
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6976559
+          ],
+          "camera_matrix_hex": "b5f60000faf2000000100000060d0000b5f6",
+          "camera_translation": [
+            197096,
+            -13985,
+            493047
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650816.4431183,
+      "command": [
+        "key",
+        "Up",
+        ".45"
+      ],
+      "result": {
+        "key": "Up",
+        "seconds": 0.45,
+        "before": {
+          "level": 1,
+          "position": [
+            220764,
+            -1209,
+            476264
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6976559
+          ],
+          "camera_matrix_hex": "b5f60000faf2000000100000060d0000b5f6",
+          "camera_translation": [
+            197224,
+            -13997,
+            492955
+          ]
+        },
+        "after": {
+          "level": 1,
+          "position": [
+            229112,
+            -4755,
+            470540
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6976367
+          ],
+          "camera_matrix_hex": "b5f60000faf204000010fdff060dfaffb5f6",
+          "camera_translation": [
+            201653,
+            -15980,
+            489807
+          ]
+        }
+      }
+    },
+    {
+      "time": 1788650817.6110897,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-005/original/frame-1788650817506429264.png",
+        "sha256": "22efec899aec7793cae393e6d89de9346908d4d3282ccd679972f82fb1979064",
+        "state": {
+          "level": 1,
+          "position": [
+            231258,
+            -5528,
+            468973
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6976367
+          ],
+          "camera_matrix_hex": "b5f60000faf204000010fdff060dfaffb5f6",
+          "camera_translation": [
+            207360,
+            -18212,
+            485759
+          ]
+        }
+      }
+    }
+  ],
+  "captures": [
+    {
+      "path": "work/experiments/EXP-20260905-005/original/frame-1788650389239225877.png",
+      "sha256": "b72317d15faa6d00a05f3c1b06d53299f4c2d068652551858709a7649506d399",
+      "state": {
+        "level": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "terrain_base": 0,
+        "barrier_head": 0,
+        "contact": [
+          0,
+          0
+        ],
+        "camera_matrix_hex": "000000000000000000000000000000000000",
+        "camera_translation": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "work/experiments/EXP-20260905-005/original/frame-1788650401562617713.png",
+      "sha256": "e4719e04f170845910212564604809b233714042b73c7d9ca6cfcb58195e1c14",
+      "state": {
+        "level": 0,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "terrain_base": 0,
+        "barrier_head": 0,
+        "contact": [
+          0,
+          0
+        ],
+        "camera_matrix_hex": "000000000000000000000000000000000000",
+        "camera_translation": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "work/experiments/EXP-20260905-005/original/frame-1788650413449201511.png",
+      "sha256": "cf8df78dc234e6a067797b1b1e9d9b07a59c8d4fe26a287903e77327f3219834",
+      "state": {
+        "level": 1,
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          0,
+          0
+        ],
+        "camera_matrix_hex": "000000000000000000000000000000000000",
+        "camera_translation": [
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "path": "work/experiments/EXP-20260905-005/original/frame-1788650423934116742.png",
+      "sha256": "27d44387532db8b7b815de92b794c3668b3b5825f1501282ce9c318fe7fe2859",
+      "state": {
+        "level": 1,
+        "position": [
+          197091,
+          2734,
+          492897
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6977331
+        ],
+        "camera_matrix_hex": "dd090000990c2200ff0fe5ff68f32c00dc09",
+        "camera_translation": [
+          219517,
+          -14285,
+          475334
+        ]
+      }
+    },
+    {
+      "path": "work/experiments/EXP-20260905-005/original/frame-1788650455640464250.png",
+      "sha256": "77efbcdc40c5d0892f2f4a00c69610ea44860c9e826366ae4a9065cfba65f6dd",
+      "state": {
+        "level": 1,
+        "position": [
+          219545,
+          -1419,
+          475635
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6976591
+        ],
+        "camera_matrix_hex": "760e0000d7067d02e60ebdfaa2f9d305770d",
+        "camera_translation": [
+          223474,
+          -31814,
+          453129
+        ]
+      }
+    },
+    {
+      "path": "work/experiments/EXP-20260905-005/original/frame-1788650488752546265.png",
+      "sha256": "758c72f42374c6b5eb3b8dcbdcbec5121209d55b52393e33d2c214f3d4fb99c8",
+      "state": {
+        "level": 1,
+        "position": [
+          190571,
+          2452,
+          497661
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6977363
+        ],
+        "camera_matrix_hex": "8ffd0000d00f6800fe0f100032f06a0090fd",
+        "camera_translation": [
+          213450,
+          -14840,
+          490620
+        ]
+      }
+    },
+    {
+      "path": "work/experiments/EXP-20260905-005/original/frame-1788650514942422082.png",
+      "sha256": "cbd928408d8f01895a48634f9850e5599bb5be70b32f5ec9afcf49be9ec4c86b",
+      "state": {
+        "level": 1,
+        "position": [
+          193791,
+          2620,
+          495289
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6977363
+        ],
+        "camera_matrix_hex": "b5f60000faf277fffc0f6200020da900b8f6",
+        "camera_translation": [
+          171302,
+          -17185,
+          511856
+        ]
+      }
+    },
+    {
+      "path": "work/experiments/EXP-20260905-005/original/frame-1788650670385545916.png",
+      "sha256": "707db1b25df5ebd9c271625748b9761044a566568867b374bbbf487b3147a9d4",
+      "state": {
+        "level": 1,
+        "position": [
+          203074,
+          1910,
+          488628
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6977395
+        ],
+        "camera_matrix_hex": "b5f60000faf2e7ff00101200060d1f00b5f6",
+        "camera_translation": [
+          179197,
+          -13728,
+          505996
+        ]
+      }
+    },
+    {
+      "path": "work/experiments/EXP-20260905-005/original/frame-1788650766092914428.png",
+      "sha256": "175bea5953e2db28e4280d1cb2d1f37c885a4a44c79763c19458c6a9e95a2a31",
+      "state": {
+        "level": 1,
+        "position": [
+          220764,
+          -1209,
+          476264
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6976559
+        ],
+        "camera_matrix_hex": "b5f60000faf2000000100000060d0000b5f6",
+        "camera_translation": [
+          197096,
+          -13985,
+          493047
+        ]
+      }
+    },
+    {
+      "path": "work/experiments/EXP-20260905-005/original/frame-1788650817506429264.png",
+      "sha256": "22efec899aec7793cae393e6d89de9346908d4d3282ccd679972f82fb1979064",
+      "state": {
+        "level": 1,
+        "position": [
+          231258,
+          -5528,
+          468973
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6976367
+        ],
+        "camera_matrix_hex": "b5f60000faf204000010fdff060dfaffb5f6",
+        "camera_translation": [
+          207360,
+          -18212,
+          485759
+        ]
+      }
+    }
+  ],
+  "page0_extraction": {
+    "experiment": "EXP-20260905-005",
+    "operation": "read-only original-PC page-0 indexed buffer and palette extraction",
+    "identity": {
+      "pid": 278243,
+      "start": 9423624,
+      "group": 277987
+    },
+    "time": 1788650766.244146,
+    "pointer_global": "0x00582eb0",
+    "pointer": "0x9423ec0",
+    "dimensions_global": "0x00573408",
+    "dimensions": [
+      256,
+      256
+    ],
+    "indexed_mode_global": "0x00573118",
+    "indexed_mode": 1,
+    "palette_address": "0x005844f4",
+    "pixels_sha256": "da6ed96650d2a3464f6d8af8d37f6088222d744ae95b322bff0031d9e14caf85",
+    "palette_sha256": "0e848743ea7fcae70325a8a71b9691a65f048d4634781212860627120d57e1dc",
+    "regions": {
+      "floor": {
+        "u": [
+          0,
+          63
+        ],
+        "v": [
+          192,
+          255
+        ],
+        "indices": [
+          192,
+          193,
+          194,
+          195,
+          196,
+          197,
+          198,
+          199,
+          200,
+          201,
+          202,
+          203,
+          204,
+          205,
+          206,
+          207
+        ],
+        "indices_sha256": "48935a7749f0ba1af3bdbd6cc64a5d811ee033848cb9dc4933ecf712de21fc55",
+        "low_nibble_sha256": "fc8ef2a971c4db81832b0e91781b379ef3239c6cbb8a3b2e0185aa233266b07d",
+        "rgb_sha256": "faf7f4c439a9dfcd961a13f2c723bdaf0ececbc298f8545ded5c5a5c369d2ac5"
+      },
+      "wall-a": {
+        "u": [
+          64,
+          127
+        ],
+        "v": [
+          192,
+          255
+        ],
+        "indices": [
+          213,
+          214,
+          215,
+          216,
+          217,
+          218,
+          219,
+          220,
+          221,
+          222,
+          223
+        ],
+        "indices_sha256": "b1c7d3318d4c8e7c0b9ef29e21f3da129b10358eaf2060fcc7d0dd13c6c84f85",
+        "low_nibble_sha256": "7585ce51d99e9ed430d4ccb6ef8dc92bf6548d19c0895f3570cb15f6bcb8b082",
+        "rgb_sha256": "967cfca143e62753b1505b10924e981982d91516cab63571007462da82bb4e16"
+      },
+      "wall-b": {
+        "u": [
+          128,
+          191
+        ],
+        "v": [
+          192,
+          255
+        ],
+        "indices": [
+          224,
+          225,
+          226,
+          227,
+          228,
+          229,
+          231,
+          232,
+          234,
+          235,
+          236,
+          237,
+          238,
+          239
+        ],
+        "indices_sha256": "2234faec2cf94f79775ca6206da27633429bdf388f397c3b6a6cc98794fec34e",
+        "low_nibble_sha256": "9bd74c3c412a772ac0e958ad630d95a0aee3f0317440cd08cfae0a6afa3ca717",
+        "rgb_sha256": "4ecc9990bd2c5e36de7677d7da7ec0ec330293ae2fdeaf28000faa9989edc728"
+      }
+    },
+    "native_consumers": [
+      "0x0040F340",
+      "0x00466260",
+      "0x00462C30"
+    ],
+    "writes": "Only private evidence files, no process writes"
+  },
+  "reference_confirmation": "User confirmed the brown wall is in view and requested a closer approach; subsequent Up holds .35/.5/.45 seconds moved Flik beside it.",
+  "current_runtime": "Original asset copy intentionally left open for the user; controls released; no close/post-close audit for this still-live arm.",
+  "window_title_observation": {
+    "name": "Loading - A Bugs Life",
+    "class": "bugs.exe",
+    "pid": 278243,
+    "window": 14680071,
+    "size": [
+      640,
+      480
+    ],
+    "qualification": "The older exact Bugs selector-window title gate did not match this auto-hardware in-game menu. No chooser existed. Actual same-PID window, mapped code, hardware/CD logs, socket ownership and visual Training/Anthill/title/gameplay frames were checked; do not call the old exact-title condition passed."
+  },
+  "confirmed": [
+    "Read-only loaded original collision sources99/100 and complete meshes128/160/213/280 matched staged original files.",
+    "The native page-0 256x256 indexed buffer and 768-byte palette were read twice unchanged under pinned PID/start/group.",
+    "Floor U0..63 and steep-face U64..127/U128..191 regions at V192..255 decode to different RGB pixels and have different low-nibble index hashes.",
+    "The original static same-tag steep-face donor also has varying warm vertex colour inputs distinct from the authored neutral floor assignment."
+  ],
+  "limits": [
+    "User-confirmed wall view is not a causal pixel-to-exact-face join; no live mesh perturbation was used.",
+    "Different decoded tile variants do not establish independent source artwork or exclude relationships through editing, palette remapping or UV transformations.",
+    "Original asset bytes ran on the established auto-hardware-derived PC image, not an unmodified-retail executable runtime arm.",
+    "No authored material edit was applied or tested. Uniform shading draft remains unapplied and untested."
+  ],
+  "tests": "No pytest, R2q or full suite in this original-assets inspection.",
+  "prohibited_operations": "No process memory writes, teleport, ptrace, process stops, register access, save states or debugger control.",
+  "claims": "Static-phase no-launch/no-extracted-pixels statements in the earlier census describe that earlier phase only; this runtime addendum supersedes them for current status."
+}

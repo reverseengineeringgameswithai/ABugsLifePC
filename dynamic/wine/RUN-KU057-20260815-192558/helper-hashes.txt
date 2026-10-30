@@ -1,0 +1,5 @@
+36df8e3d422340e52e3144ce6d832ca61538b1fe3d56d06409996ee5bc80088d  work/copies/EXP-20260815-130-row6-teleport/state_watch.c
+893284a35b60864b01666a8494fa3b938239972e313642a5997915f142da5b0c  work/copies/EXP-20260815-130-row6-teleport/teleport_flik.c
+7cc425b774135cd3a4d631b35589e8e6abf0fcd7d3b00436bb008471a26eb1fb  work/copies/EXP-20260815-130-row6-teleport/teleport_flik_keep_anchor.c
+
+The helper sources and full 5 ms traces remain under ignored work/copies/. This file pins the exact exercised source revisions; the selected evidence needed for the durable claim is retained beside this receipt.

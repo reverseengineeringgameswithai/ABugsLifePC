@@ -1,0 +1,51 @@
+{
+  "tool": "game-memory",
+  "tool_version": "1.1.0",
+  "schema_version": 1,
+  "verb": "restore",
+  "authorization": "user approved live reload test 2026-08-17",
+  "purpose": "",
+  "snapshot_dir": "work/snapshots/reload-test",
+  "snapshot_name": "reload-test",
+  "same_process": true,
+  "level_changed": false,
+  "target": {
+    "pid": 57939,
+    "process_group": 57698,
+    "start_ticks": 1200478,
+    "session_id": null,
+    "ownership": {
+      "pid": 57939,
+      "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+      "cmdline": [
+        "R:\\PC\\BUGS\\bugs.exe",
+        "log",
+        "cheat",
+        "mpeg"
+      ],
+      "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+      "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+      "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+      "verified": true,
+      "checked_at": "2026-08-17T17:09:40.367437-04:00"
+    }
+  },
+  "internal_level_before": 17,
+  "regions": [
+    "0x0059D910"
+  ],
+  "write_assisted": true,
+  "dry_run": false,
+  "started_at": "2026-08-17T17:09:40.367551-04:00",
+  "region_results": [
+    {
+      "label": "0x0059D910",
+      "address": "0x0059D910",
+      "size": 12,
+      "verified": true
+    }
+  ],
+  "verified": true,
+  "internal_level_after": 17,
+  "finished_at": "2026-08-17T17:09:40.368775-04:00"
+}

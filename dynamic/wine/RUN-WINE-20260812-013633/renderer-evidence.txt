@@ -1,0 +1,25 @@
+RUN-WINE-20260812-013633 renderer evidence
+
+Executable SHA-256:
+97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+
+Source game log:
+/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.log
+SHA-256 at capture:
+0211d18930a666e81621f760e97537d8570c40999c32b96ae486e318788be119
+
+Relevant verbatim lines from the game-generated log:
+
+INFO Native software render mode is FALSE.
+INFO RenderMode set to Direct3d render mode.
+INFO Screen mode 640x480x16 selected.
+D3DAPPCREATE : Mode set to 640x480.
+MODE: Width = 640 Height = 480 Bpp = 16.
+INIT : Starting Direct3D renderer.
+
+For the independently retained software comparison, see
+dynamic/wine/RUN-WINE-20260812-000215/bugs.log. It records:
+
+D3DAPPCREATE : Mode set to 320x200.
+SOFTRENDER : Screen set to 320x200.
+InitSoftWindow(320,200)

@@ -1,0 +1,6 @@
+Run: RUN-KU057-20260815-184629
+Source: work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.log
+Phase: user-confirmed black-spider death
+
+Level done variable is 2.
+NextLife.

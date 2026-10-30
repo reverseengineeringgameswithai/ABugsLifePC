@@ -1,0 +1,52 @@
+EXP-20260812-020 metadata-only comparison
+Date: 2026-08-12
+
+Exact inputs
+------------
+bugs.exe: 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+control LEVEL1.DAT: 494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+suppression LEVEL1.DAT: bcf6b8390f8ddcfebeb3411807f60f2dee0fc73a6cbd9d63a9daa1a3c7f1370e
+only difference: zero-based offset 0x3A4, 0x2B -> 0x00
+cmp -l receipt: one-based byte 933, octal 053 -> 000
+
+Unchanged resource hashes in both arms
+--------------------------------------
+PLANT04.ANM: 32dce9588272d4bd4d0b2054e58de2b9ca5ae563826d56f7cd12abe8b001e7ce
+PLANT04.ALL: 486bd73c54b96f9b0ef41e2c9ccc6029c95772619feaacb8885f4f1cc424f14a
+PLANT10.ANM: 12d2550ea89b9156acd04ce403d1754aa244d1cedf8531eaca2c8e7bf22b5194
+PLANT10.ALL: 0c0f244b5bef3b5a3f7148744aad9ac223b7fdeaeb0eecaa561193e7a30bf714
+
+Runtime gate and normalized log result
+--------------------------------------
+control: RUN-WINE-20260812-150528, 1480 lines
+suppression: RUN-WINE-20260812-150805, 1478 lines
+each: one 640x480x16 marker, one Starting Direct3D marker, zero
+INITSOFTRENDER markers, one End InitMainGame, one NextLife
+control plant04/plant10 path lines: 2 / 2
+suppression plant04/plant10 path lines: 2 / 0
+after drive-label normalization and removal of ten ->time[] diagnostic lines,
+the only diff is deletion of plant10.anm and plant10.all request lines
+
+Visual procedure and measurements
+---------------------------------
+15 compositor frames per arm, 2560x1440, captured after NextLife
+normalization: crop 1920x1440+320+0, point resize to 640x480
+control capture-set digest: b7f5dfe03b1696c577a0d32f3ba9642c5dd17654cd33238f9296090b27a15648
+suppression capture-set digest: 903e3a56483de54bc27bf3e2c37194c9472ad0078f41baf7e41ae3e9a38e80d5
+control normalized-set digest: abb6e03d5b3ce7e40395691045d4e0d80eabfc5adb38c838f5f4859010fd0ecb
+suppression normalized-set digest: 5d6d74b70e34f02165ab3144d98b015f07747b94d901b5c611e048191d1cfbaf
+
+closest all-pairs: control frame 02 vs suppression frame 10
+differing pixels: 28279 of 307200 (9.2054%)
+normalized RMSE: 0.0318984
+temporal medians differing pixels: 36487 of 307200 (11.8773%)
+temporal medians normalized RMSE: 0.0419452
+
+Independent control-median comparisons to current control/suppression:
+M2.6 control: 0.0422443 / 0.0344740
+M2.5 primary control: 0.0437912 / 0.0363679
+M2.5 control rerun: 0.0373585 / 0.0366375
+
+The current arm-to-arm median delta is inside the independent control range.
+Residuals follow animated characters, plant stems/flowers, and object edges;
+there is no stable suppression-only mask suitable for M1 overlap promotion.

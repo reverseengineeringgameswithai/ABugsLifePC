@@ -1,0 +1,16 @@
+RUN-GDB-20260813-101022 curation
+================================
+
+Disposition: rejected EXP-20260813-038 boundary preflight; retained as
+tool-safety evidence only and excluded from the control comparison.
+
+The fresh control stopped once at hardware execution breakpoint 0x0044C898.
+Resume immediately produced structured SIGSEGV at the same PC. Harness 1.2.0
+made the signal terminal under nopass, deleted both installed points,
+verified cleanup, detached, and recorded five passing resumed/untraced
+survival samples. This does not validate continuation at 0x0044C898; it is the
+reason accepted arms used the safe data-watch post boundary instead.
+
+Raw GDB stdout/stderr were not curated; their hashes were
+1b15310c327b71cab0ed50fc867673902e4be9bcea680a11bd71822d26896894 and
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.

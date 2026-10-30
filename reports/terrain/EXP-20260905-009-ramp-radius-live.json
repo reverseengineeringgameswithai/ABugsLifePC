@@ -1,0 +1,538 @@
+{
+  "experiment_id": "EXP-20260905-009",
+  "events": [
+    {
+      "kind": "authorization",
+      "time_ns": 1788722331456800143,
+      "experiment_id": "EXP-20260905-009",
+      "user_reply": "Yup go for it",
+      "scope": "Two-byte scene-radius 6047 -> 8192 -> 6047 at 0x0064CA47 in PID 23853/start 183505, with compare-before-write and receipts. No other live writes, process control, or input during this comparison.",
+      "pid": 23853,
+      "start_ticks": 183505,
+      "group": 23606
+    },
+    {
+      "kind": "settled-pose",
+      "time_ns": 1788722331876043067,
+      "level": 1,
+      "position": [
+        192607,
+        -97057,
+        358628
+      ],
+      "contact": [
+        99,
+        6991679
+      ],
+      "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+      "camera_translation": [
+        204439,
+        -109864,
+        384878
+      ]
+    },
+    {
+      "kind": "control-before",
+      "time_ns": 1788722332835224891,
+      "radius": 6047,
+      "captures": [
+        {
+          "before": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-009/preview-01/frame-1788722332030412990.png",
+          "sha256": "4b56e89a5960dbc996268878355140496a22d68e52280a3e537401a603c01f0c",
+          "state": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "after": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "stable_size_200ms": 403034
+        },
+        {
+          "before": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-009/preview-01/frame-1788722332435715035.png",
+          "sha256": "3df9a09f675d5ced06e787ba1dcd23edd7966f1eab6a34066b5ef43e3f5d187d",
+          "state": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "after": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "stable_size_200ms": 383374
+        }
+      ]
+    },
+    {
+      "kind": "enlarge-intent",
+      "time_ns": 1788722332906266093,
+      "pid": 23853,
+      "start_ticks": 183505,
+      "address": "0x64ca47",
+      "length": 2,
+      "expected_hex": "9f17",
+      "replacement_hex": "0020"
+    },
+    {
+      "kind": "enlarge-receipt",
+      "time_ns": 1788722332906957546,
+      "bytes_written": 2,
+      "actual_hex": "0020",
+      "verified": true
+    },
+    {
+      "kind": "candidate",
+      "time_ns": 1788722334278386831,
+      "radius": 8192,
+      "captures": [
+        {
+          "before": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-009/preview-01/frame-1788722333474782445.png",
+          "sha256": "f2ddf398ecc48681edc778193e27c5144091f86edc40cd3a38b165e0b10426d7",
+          "state": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "after": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "stable_size_200ms": 390662
+        },
+        {
+          "before": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-009/preview-01/frame-1788722333880308091.png",
+          "sha256": "4f60b06d82a90421c4c92afc2548e5dc51d1e8aae10a0100914e9d1dba69971d",
+          "state": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "after": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "stable_size_200ms": 400571
+        }
+      ]
+    },
+    {
+      "kind": "restore-intent",
+      "time_ns": 1788722334356159585,
+      "pid": 23853,
+      "start_ticks": 183505,
+      "address": "0x64ca47",
+      "length": 2,
+      "expected_hex": "0020",
+      "replacement_hex": "9f17"
+    },
+    {
+      "kind": "restore-receipt",
+      "time_ns": 1788722334356887929,
+      "bytes_written": 2,
+      "actual_hex": "9f17",
+      "verified": true
+    },
+    {
+      "kind": "control-restored",
+      "time_ns": 1788722335743301607,
+      "radius": 6047,
+      "captures": [
+        {
+          "before": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-009/preview-01/frame-1788722334936287845.png",
+          "sha256": "8bef33af3985b88ce699de0469a543908e319c8925b16cc565ebe3faec2b1a9a",
+          "state": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "after": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "stable_size_200ms": 416063
+        },
+        {
+          "before": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "frame": "/home/dev/ABLPC/work/experiments/EXP-20260905-009/preview-01/frame-1788722335344409194.png",
+          "sha256": "a3ea5ad8fe82d1b44c0a33ce3cdd71f50732885e74578a3a61c089ccbcd1e849",
+          "state": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "after": {
+            "level": 1,
+            "position": [
+              192607,
+              -97057,
+              358628
+            ],
+            "terrain_base": 0,
+            "barrier_head": 7165835,
+            "contact": [
+              99,
+              6991679
+            ],
+            "camera_matrix_hex": "84f10000cc0600000010000034f9000084f1",
+            "camera_translation": [
+              204439,
+              -109864,
+              384878
+            ]
+          },
+          "stable_size_200ms": 401164
+        }
+      ]
+    },
+    {
+      "kind": "complete",
+      "time_ns": 1788722335820862100,
+      "write_calls": 2,
+      "restored_radius": 6047,
+      "pose_unchanged": true,
+      "game_left_open": true
+    }
+  ],
+  "status": "radius-only-live-visibility-change-confirmed-at-one-fixed-pose",
+  "date": "2026-09-06",
+  "static_companion": "reports/terrain/EXP-20260905-009-ramp-culling.json",
+  "live_executable_sha256": "1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f",
+  "terrain_sha256": "77a77456c3b9a0f4db5e7b20d257a9772e04c0f0ed3d0812590943d630851698",
+  "level_dat_sha256": "24b8c345d82bb3489ab765d3ad24f917fcacf1da4d5a910e715b4daf84b071e8",
+  "visual_assessment": {
+    "method": "All six full-resolution captures visually inspected; no calibrated pixel-difference mask or exact-frame restoration claim",
+    "control_before": "Distinct added ramp strip below Flik absent in both captures at radius 6047",
+    "candidate": "Added ramp surface below Flik visible in both captures at radius 8192",
+    "control_restored": "Distinct added ramp strip absent again in both captures at radius 6047",
+    "bounded_conclusion": "Two-byte scene-radius change reversibly controls ramp visibility at this fixed pose, corroborating the original-instruction whole-mesh culling discriminator",
+    "limitations": [
+      "One fixed pose and six finite captures, not a camera sweep",
+      "Actor and vegetation animations continued; full-frame hashes differ",
+      "The earlier intermediate camera discrepancy and flashing frequency remain unresolved",
+      "8192 is an experimental discriminator, not a general authoring rule or a permanent file fix"
+    ]
+  },
+  "preparation": {
+    "input": "One normal Down tap requested for 0.05 seconds, followed by a three-second wait and bounded pose settling",
+    "writes_during_preparation": 0
+  },
+  "allowed_write_scope": {
+    "pid": 23853,
+    "start_ticks": 183505,
+    "address": "0x0064CA47",
+    "field": "signed 16-bit scene radius at LEVEL.DAT offset 8592",
+    "sequence": [
+      6047,
+      8192,
+      6047
+    ],
+    "write_calls": 2,
+    "bytes_per_write": 2,
+    "restored": true
+  },
+  "lifecycle": {
+    "same_session": true,
+    "game_left_open": true,
+    "launches": 0,
+    "closes": 0
+  },
+  "collision_actor_camera_writes": false,
+  "debugger_or_process_stops": false,
+  "asset_edits": false,
+  "tests_run": [],
+  "r2q_or_full_suite": false,
+  "git_operations": false,
+  "next": "Preserve the failing file fixture. Design PC-compatible scene bounds or appropriate mesh partitioning, add bounded offline regressions, then file-load a candidate and validate camera angles. Do not treat this temporary RAM discriminator as a banked asset repair."
+}

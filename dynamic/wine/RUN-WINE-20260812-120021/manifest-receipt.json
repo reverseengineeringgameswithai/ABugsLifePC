@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "manifest_name": "level01-primary-record-261-candidate-far",
+  "files": [
+    {
+      "path": "CD/LEVEL01/LEVEL.DAT",
+      "input_sha256": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53",
+      "output_sha256": "ef43ee54e9283bac7280251dad9ad664b35ec02aa63ef9494bd36037f5b10384",
+      "edits": [
+        {
+          "edit_index": 0,
+          "operation": "set-scene-record-position",
+          "section": "primary",
+          "index": 261,
+          "position": [
+            50000,
+            -4948,
+            -762
+          ]
+        }
+      ]
+    }
+  ]
+}

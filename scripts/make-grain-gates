@@ -1,0 +1,119 @@
+#!/usr/bin/env python3
+"""Build a guarded PC executable with configured grain-gate requirements."""
+
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+import shutil
+import sys
+
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "reimplementation"))
+
+from ablpc.grain_gate_mod import (  # noqa: E402
+    GrainGateModError,
+    RETAIL_CITY_ENTRANCE_REQUIREMENTS,
+    RETAIL_TUNNELS_REQUIREMENTS,
+    build_grain_gate_executable,
+)
+
+
+def _within(path: Path, root: Path) -> bool:
+    try:
+        path.relative_to(root)
+    except ValueError:
+        return False
+    return True
+
+
+def _requirements(value: str, *, label: str, count: int) -> tuple[int, ...]:
+    fields = value.split(",")
+    if len(fields) != count:
+        raise argparse.ArgumentTypeError(
+            f"{label} needs {count} comma-separated integers"
+        )
+    try:
+        return tuple(int(field, 10) for field in fields)
+    except ValueError as error:
+        raise argparse.ArgumentTypeError(
+            f"{label} values must be decimal integers"
+        ) from error
+
+
+def _tunnels(value: str) -> tuple[int, ...]:
+    return _requirements(value, label="--tunnels", count=9)
+
+
+def _city_entrance(value: str) -> tuple[int, ...]:
+    return _requirements(value, label="--city-entrance", count=3)
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Build an exact PC bugs.exe with independent Tunnels and City "
+            "Entrance grain-gate requirements. Values must be in 0..50."
+        )
+    )
+    parser.add_argument("source", type=Path, help="exact retail bugs.exe under work/")
+    parser.add_argument("output", type=Path, help="new output executable under work/")
+    parser.add_argument(
+        "--tunnels",
+        type=_tunnels,
+        metavar="ROW0,...,ROW8",
+        help=(
+            "nine Tunnels table requirements "
+            "(retail: 20,10,10,10,20,20,30,10,30)"
+        ),
+    )
+    parser.add_argument(
+        "--city-entrance",
+        type=_city_entrance,
+        metavar="GATE0,GATE1,GATE2",
+        help="three City Entrance requirements (retail: 10,20,30)",
+    )
+    args = parser.parse_args()
+    if args.tunnels is None and args.city_entrance is None:
+        parser.error("provide --tunnels, --city-entrance, or both")
+
+    work_root = (ROOT / "work").resolve()
+    source_argument = args.source
+    output_argument = args.output
+    if source_argument.is_symlink():
+        parser.error(f"refusing linked source: {source_argument}")
+    if output_argument.is_symlink():
+        parser.error(f"refusing linked output: {output_argument}")
+    source = source_argument.resolve()
+    output = output_argument.resolve()
+    if not _within(source, work_root) or not _within(output, work_root):
+        parser.error("source and output must both be below work/")
+    if source == output:
+        parser.error("source and output must be different paths")
+    if not source.is_file():
+        parser.error(f"source is not a regular file: {source}")
+    if output.exists():
+        parser.error(f"refusing to overwrite existing output: {output}")
+    if not output.parent.is_dir():
+        parser.error(f"output parent directory does not exist: {output.parent}")
+
+    tunnels = args.tunnels or RETAIL_TUNNELS_REQUIREMENTS
+    city = args.city_entrance or RETAIL_CITY_ENTRANCE_REQUIREMENTS
+    try:
+        result, receipt = build_grain_gate_executable(
+            source.read_bytes(),
+            tunnels_requirements=tunnels,
+            city_entrance_requirements=city,
+        )
+        output.write_bytes(result)
+        shutil.copymode(source, output)
+    except (OSError, GrainGateModError, ValueError) as error:
+        parser.error(str(error))
+    print(json.dumps(receipt, sort_keys=True, separators=(",", ":")))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

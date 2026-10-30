@@ -1,0 +1,17 @@
+{
+  "experiment": "EXP-20260905-006",
+  "scope": "Offline terrain texture tiling and checked mesh growth; not live visual acceptance",
+  "affected_tests": {"passed": 34, "seconds": 0.5},
+  "terrain_gate": {"passed": 185, "seconds": 27.33, "workers": 4, "distribution": "loadfile", "basetemp": "work/tmp/pytest-terrain", "retention": "failed"},
+  "original_pc_relocation": {"passed": true, "checks": 6, "report": "reports/terrain/EXP-20260905-006-relocation.json"},
+  "full_make_check": {"run": false, "reason": "User-directed terrain-only validation override; no R2q rerun and no full-repository verdict"},
+  "runtime_actions": [],
+  "runtime_acceptance": "Pending; fresh game staged but not launched",
+  "session_audit": {"clean": false, "expected_user_game_preserved": true, "processes": 7, "sinks": 1, "game_pid": 299378, "game_start_ticks": 10038768, "group": 299129, "sink_module": 536870916, "receipt": "work/experiments/EXP-20260905-006/session-audit.json"},
+  "run_index": {"historical_uncited_runs": 14, "historical_dangling_citations": 1, "new_conflicts": 0},
+  "protected_stash": "76db1c9ee1ffffce52cea6aee591c24ab6a1c39a",
+  "private_archive": {"path": "work/snapshots/terrain-20260905-material-tiling-evidence.tar.gz", "bytes": 5404866, "files": 104, "sha256": "d69a817bcaab45a7bf816bd85ce751e46c404e72a7671680c5612a206864c906", "source_comparison_passed": true},
+  "private_manifest": {"path": "work/snapshots/terrain-20260905-material-tiling-evidence.manifest.tsv", "bytes": 14368, "sha256": "8644b12bf40b6cb14b268feadd85bf83ca62f0a26a37439b65443a98d26f737b"},
+  "remaining_limits": ["Cold file loading and live appearance are untested", "512 stored units is an authoring choice", "Render coordinate rounding is at most one half stored unit per coordinate in this candidate", "No performance or all-view occlusion guarantee", "Not a second connected layout or generic level repacker"],
+  "bank_checks": "reports/terrain/EXP-20260905-006-bank-checks.txt"
+}

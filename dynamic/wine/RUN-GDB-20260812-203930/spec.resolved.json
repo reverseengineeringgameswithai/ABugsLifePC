@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXP-20260812-028",
+  "target": {
+    "mode": "pid",
+    "pid": 2544466,
+    "exe_basename": "bugs.exe",
+    "expected_exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878"
+  },
+  "watchpoints": [],
+  "breakpoints": [
+    {
+      "id": "selected_entry_plus_2e_reader",
+      "address": "0x0044CE3E"
+    }
+  ],
+  "window": {
+    "max_stops": 20,
+    "timeout_seconds": 10,
+    "end_milestones": [],
+    "log_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.log"
+  },
+  "on_stop": {
+    "registers": [
+      "rax",
+      "rbx",
+      "rcx",
+      "rdx",
+      "rsi",
+      "rdi",
+      "rbp",
+      "rsp",
+      "rip",
+      "eflags"
+    ],
+    "memory_reads": [
+      {
+        "id": "plant10_slot",
+        "address": "0x005B1AA4",
+        "size": 4
+      },
+      {
+        "id": "plant10_anm_header",
+        "address": "0x006C342B",
+        "size": 16
+      },
+      {
+        "id": "entry_66",
+        "address": "0x005AAB00",
+        "size": 80
+      },
+      {
+        "id": "entry_67",
+        "address": "0x005AAB50",
+        "size": 80
+      },
+      {
+        "id": "source_records_0",
+        "address": "0x0059D9C0",
+        "size": 256
+      },
+      {
+        "id": "source_records_1",
+        "address": "0x0059DAC0",
+        "size": 256
+      },
+      {
+        "id": "source_records_2",
+        "address": "0x0059DBC0",
+        "size": 256
+      },
+      {
+        "id": "source_records_3",
+        "address": "0x0059DCC0",
+        "size": 200
+      }
+    ],
+    "backtrace_limit": 12
+  }
+}

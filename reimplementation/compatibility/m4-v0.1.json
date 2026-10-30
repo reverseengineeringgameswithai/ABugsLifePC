@@ -1,0 +1,206 @@
+{
+  "statement_schema_version": 1,
+  "statement_id": "ablpc-m4-compatibility-v0.1",
+  "toolkit_version": "0.1",
+  "status_vocabulary": [
+    "demonstrated",
+    "fail-closed",
+    "unsupported"
+  ],
+  "hash_anchors": [
+    {
+      "id": "pc-executable",
+      "path": "bugs.exe",
+      "sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+      "role": "tested-executable",
+      "status": "demonstrated",
+      "evidence_ids": [
+        "EXP-20260811-001",
+        "EXP-20260812-007"
+      ]
+    },
+    {
+      "id": "training-level-dat",
+      "path": "CD/LEVEL07/LEVEL1.DAT",
+      "sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+      "role": "tested-manifest-input",
+      "status": "demonstrated",
+      "evidence_ids": [
+        "EXP-20260812-006",
+        "EXP-20260812-010"
+      ]
+    },
+    {
+      "id": "level01-level-dat",
+      "path": "CD/LEVEL01/LEVEL.DAT",
+      "sha256": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53",
+      "role": "tested-manifest-input",
+      "status": "demonstrated",
+      "evidence_ids": [
+        "EXP-20260812-006",
+        "EXP-20260812-013"
+      ]
+    },
+    {
+      "id": "flick-all-destination",
+      "path": "CD/CHARS/FLICK.ALL",
+      "sha256": "a2f23220392d7fb4880bbab7acab9393fe6da059961d620e7b85c8df3f4f4ac6",
+      "role": "tested-replacement-destination",
+      "status": "demonstrated",
+      "evidence_ids": [
+        "EXP-20260812-033",
+        "EXP-20260814-060"
+      ]
+    },
+    {
+      "id": "flickd-all-source",
+      "path": "CD/CHARS3/FLICKD.ALL",
+      "sha256": "6e5afb4f9ea649bc305fdafeb027aece25914b27a017d04841bf4298634079a4",
+      "role": "tested-replacement-source",
+      "status": "demonstrated",
+      "evidence_ids": [
+        "EXP-20260812-033",
+        "EXP-20260814-060"
+      ]
+    }
+  ],
+  "manifest_contract": {
+    "schema_versions": [
+      1,
+      2
+    ],
+    "formats": [
+      {
+        "name": "pc-level-dat-prefix-v0",
+        "schema_versions": [
+          1,
+          2
+        ],
+        "operations": [
+          "set-scene-record-position",
+          "set-scene-record-field-0c",
+          "set-scene-record-payload-target-offset"
+        ],
+        "status": "demonstrated"
+      },
+      {
+        "name": "opaque-file-v0",
+        "schema_versions": [
+          2
+        ],
+        "operations": [
+          "replace-whole-file"
+        ],
+        "status": "demonstrated"
+      }
+    ],
+    "workflows": [
+      {
+        "id": "apply",
+        "scope": "dedicated-sparse-overlay",
+        "status": "demonstrated"
+      },
+      {
+        "id": "stage",
+        "scope": "new-derived-full-tree",
+        "status": "demonstrated"
+      },
+      {
+        "id": "compose",
+        "scope": "exactly-two-existing-schema-manifests",
+        "status": "demonstrated"
+      },
+      {
+        "id": "remove",
+        "scope": "receipt-validated-dedicated-sparse-overlay-on-declared-linux-environment",
+        "status": "demonstrated"
+      }
+    ],
+    "failure_policy": "fail-closed",
+    "receipt_path": ".ablpc/receipt.json",
+    "tracked_recipes": [
+      {
+        "manifest": "mods/training-primary-record-124-target-111e4.json",
+        "schema_version": 1,
+        "format": "pc-level-dat-prefix-v0",
+        "operation": "set-scene-record-payload-target-offset",
+        "destination_anchor": "training-level-dat"
+      },
+      {
+        "manifest": "mods/level01-primary-record-261-target-3459c.json",
+        "schema_version": 1,
+        "format": "pc-level-dat-prefix-v0",
+        "operation": "set-scene-record-payload-target-offset",
+        "destination_anchor": "level01-level-dat"
+      },
+      {
+        "manifest": "mods/chars-flick-all-from-chars3-flickd-all.json",
+        "schema_version": 2,
+        "format": "opaque-file-v0",
+        "operation": "replace-whole-file",
+        "destination_anchor": "flick-all-destination",
+        "replacement_anchor": "flickd-all-source"
+      }
+    ]
+  },
+  "tested_tool_environment": {
+    "status": "demonstrated",
+    "distribution": "Fedora Linux 44 (Workstation Edition)",
+    "kernel": "7.0.11-200.fc44.x86_64",
+    "architecture": "x86_64",
+    "python": "3.14.6",
+    "evidence_ids": [
+      "EXP-20260814-077"
+    ]
+  },
+  "removal_boundary": {
+    "status": "demonstrated",
+    "platform_scope": "current-x86_64-linux-only",
+    "required_interfaces": [
+      "/proc/self/mountinfo",
+      "listmount(2)-LISTMOUNT_REVERSE",
+      "statmount(2)-STATMOUNT_SB_BASIC|STATMOUNT_MNT_BASIC"
+    ],
+    "on_unavailable_or_inconsistent_topology": "fail-closed",
+    "supported_overlay_kind": "ordinary-dedicated-sparse-apply-overlay",
+    "non_transactional_after_preflight": true,
+    "evidence_ids": [
+      "EXP-20260814-068",
+      "EXP-20260814-077"
+    ]
+  },
+  "tested_wine_gamescope_scope": {
+    "status": "demonstrated",
+    "launcher": "scripts/play-pristine.sh",
+    "executable_anchor": "pc-executable",
+    "wine": "wine-11.0 (Staging)",
+    "gamescope": "gamescope-3.16.25-1.fc44.x86_64",
+    "source_policy": "derived-work-copy-below-work/copies",
+    "game_working_directory": "R:\\PC\\BUGS",
+    "gamescope_game_surface": "640x480",
+    "default_output": "2560x1440",
+    "scaler": "fit",
+    "default_filter": "nearest",
+    "renderer_selection": "manual-down-then-confirm-hardware-acceleration",
+    "required_log_markers": [
+      "Native software render mode is FALSE",
+      "RenderMode set to Direct3d render mode",
+      "Screen mode 640x480x16 selected",
+      "Starting Direct3D renderer"
+    ],
+    "rejected_log_marker": "INITSOFTRENDER",
+    "evidence_ids": [
+      "EXP-20260812-007",
+      "EXP-20260812-029"
+    ]
+  },
+  "unsupported": [
+    "unlisted-executable-or-game-input-hashes-as-demonstrated-anchors",
+    "untested-windows-wine-kernel-architecture-or-filesystem-configurations",
+    "general-all-file-layout-identity-or-compatibility",
+    "n-way-manifest-composition-or-cross-input-dependency-resolution",
+    "staged-tree-or-source-removal-and-restoration",
+    "rollback-backup-trash-package-or-general-transaction-semantics",
+    "general-mod-dry-run-launch-or-runtime-automation"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "trailing_globals_identical": true,
+    "old_prefix_before_pointer_identical": true,
+    "old_prefix_after_pointer_identical": true,
+    "new_geometry_pointer_correct": true,
+    "new_mesh_loaded_exactly": true,
+    "trailing_data_pointer_correct": true
+  },
+  "passed": true,
+  "source_globals": {
+    "trailing_data_pointer": 268759980,
+    "trailing_plus_118_pointer": 268760260,
+    "trailer_table_sha256": "6137e0ce6f3f284b432407f1c7089a4e41fb5307420638ef0afb783102f69b9a",
+    "return_address": 805371888
+  },
+  "candidate_globals": {
+    "trailing_data_pointer": 268759980,
+    "trailing_plus_118_pointer": 268760260,
+    "trailer_table_sha256": "6137e0ce6f3f284b432407f1c7089a4e41fb5307420638ef0afb783102f69b9a",
+    "return_address": 805371888
+  },
+  "pc_executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "entry": "0044bb70",
+  "model": "Original x86 instructions under Unicorn; offline synthetic memory, no live process access",
+  "source_dat_sha256": "b9da33f9fa8a8227e78ed72fe6870f187e8065a04039b6de4ebcd72f719d6241",
+  "candidate_dat_sha256": "99fbff1754fc43979542de40e56c04d10d7af4fccde8d13e919853b679429a21",
+  "limitations": "Proves bounded relocation, not cold file loading, visible textures, performance, movement or all-view occlusion."
+}

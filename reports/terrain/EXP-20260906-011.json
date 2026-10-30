@@ -1,0 +1,402 @@
+{
+  "experiment": "EXP-20260906-011",
+  "date": "2026-09-06",
+  "parent_commit": "90c8a44",
+  "status": "diagnosed; fix not implemented or installed",
+  "validation": {
+    "command": "PYTEST_ADDOPTS='-n 2 --dist=loadfile --ignore-glob=tests/test_r2q*.py -k terrain --basetemp=work/tmp/pytest-exp011-corner-bank --junitxml=work/experiments/EXP-20260906-011/terrain-check.xml' make check",
+    "terrain_passed": 780,
+    "terrain_duration_seconds": 38.06,
+    "vault_notes": 708,
+    "vault_errors": 0,
+    "vault_existing_maintenance_warnings": 8,
+    "tracked_file_violations": 0,
+    "imports_and_m4_pass": true,
+    "whitespace_pass": true,
+    "claim_sweep": {
+      "old": "Radius grows8560 ->10087",
+      "new": "Radius grew8560 ->10087, subsequently shown insufficient by EXP-011",
+      "state": "new_only",
+      "old_hits": 0,
+      "new_hits": 1
+    },
+    "hooks": "already installed",
+    "scope": "Existing terrain-selected gates, no new implementation/tests, no R2q/full-suite run. Passing file/helper tests do not cover this newly diagnosed native camera regression."
+  },
+  "retail_executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "executed_executable_sha256": "9d406ac0a1319ba58c9637eb51a45f499c2a0f901c674ce36e5d1d7aebb35ffe",
+  "private_root": "work/experiments/EXP-20260906-011",
+  "cause": "Expansion calls terrain_foliage.append_scene_mesh, which bypasses scene_visibility_radius and uses geometric-only isqrt(distance2)+65. Original-PC horizontal cull rejects the observed hidden cameras.",
+  "source_locators": [
+    "scripts/terrain-expand-area.py:71",
+    "reimplementation/ablpc/terrain_foliage.py:183",
+    "reimplementation/ablpc/terrain_additive.py:181",
+    "reimplementation/ablpc/terrain_visibility.py"
+  ],
+  "bound_discriminator": {
+    "record_index": 160,
+    "scene_record_offset": 8580,
+    "bound_offset": 8592,
+    "bound_before": 10087,
+    "bound_after": 14183,
+    "scene_center_retained": [
+      4243,
+      -570,
+      16018
+    ],
+    "object_origin_retained": [
+      8192,
+      -8192,
+      8192
+    ],
+    "vertex_count": 3393,
+    "squared_geometric_radius": 100457133,
+    "geometric_radius": 10023,
+    "profile": {
+      "width": 640,
+      "height": 480,
+      "focal": 320
+    },
+    "rounding_allowance_stored_units": 8,
+    "formula": "ceil(R * sqrt(1 + (max(width//2,height//2)/focal)**2)) + 8",
+    "preservation": "All bytes outside the signed scene-bound word are identical"
+  },
+  "changed_candidate_offsets": [
+    8593
+  ],
+  "candidate_only_in_emulated_memory": true,
+  "native_gate": {
+    "entry": "0x0044D59F",
+    "transform": "0x00448230",
+    "reject_branch": "0x0044D677",
+    "accept_stop": "0x0044D6A7",
+    "reject_stop": "0x0044D728",
+    "resident_gate_sha256": "e07bfb4095bfe5e3758e2e6dfd3ea22b84615fc4a7793925ff5ae476de8a0219",
+    "resident_gate_matches_retail": true,
+    "stable_runtime_camera_matches_reconstruction": true,
+    "movement_samples": 124,
+    "capture_endpoints": 18,
+    "control_rejections": 121,
+    "candidate_rejections": 0,
+    "duration_seconds": 0.1820294789977197
+  },
+  "live_observations": {
+    "input": "ordinary guarded Up4.020285s then Down1.541241s; unconditional key release",
+    "sequence": "visible / hidden while still supported / visible after leaving corner",
+    "y_range": [
+      -102403,
+      -102400
+    ],
+    "sampled_vertical_velocities": [
+      0
+    ],
+    "sampled_contact_sources": [
+      99
+    ],
+    "sampled_flags": [
+      0,
+      1,
+      257
+    ],
+    "scene_record_unique_count": 1,
+    "scene_object_unique_count": 1,
+    "asynchronous_not_atomic": true
+  },
+  "captures": [
+    {
+      "label": "before",
+      "sha256": "644731a8bf7829cfb6b108e44db4f256db010fcdd15b23f065f8bc7c79bd8853",
+      "state_after": {
+        "level": 1,
+        "position": [
+          250386,
+          -102401,
+          719976
+        ],
+        "heading": 797,
+        "contact": [
+          99,
+          7118617
+        ],
+        "barrier_head": 7293909,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "control": true,
+      "candidate": true
+    },
+    {
+      "label": "held-0",
+      "sha256": "5824d4aca214b34062daec3dc48cd96852b01d8b6d8f1d8043fc309179cfa7a6",
+      "state_after": {
+        "level": 1,
+        "position": [
+          276034,
+          -102401,
+          728311
+        ],
+        "heading": 819,
+        "contact": [
+          99,
+          7118617
+        ],
+        "barrier_head": 7293909,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "control": true,
+      "candidate": true
+    },
+    {
+      "label": "held-1",
+      "sha256": "23e9264fe589ac12f55fbcb18656cf06fcbf3a758ed79ee1a5bd23e9d3213455",
+      "state_after": {
+        "level": 1,
+        "position": [
+          304438,
+          -102401,
+          737544
+        ],
+        "heading": 819,
+        "contact": [
+          99,
+          7118617
+        ],
+        "barrier_head": 7293909,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "control": false,
+      "candidate": true
+    },
+    {
+      "label": "held-2",
+      "sha256": "299ec753aed44e9cb0199e3aba8600331b463b7b8dd82efa8bda3578f6049ceb",
+      "state_after": {
+        "level": 1,
+        "position": [
+          326707,
+          -102403,
+          739309
+        ],
+        "heading": 876,
+        "contact": [
+          99,
+          7118617
+        ],
+        "barrier_head": 7293909,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "control": false,
+      "candidate": true
+    },
+    {
+      "label": "held-3",
+      "sha256": "3fa03313deae6d7f95b2415fb1fdc5c2fecaf63ae8fbe15d506201eba3982288",
+      "state_after": {
+        "level": 1,
+        "position": [
+          332062,
+          -102401,
+          740266
+        ],
+        "heading": 881,
+        "contact": [
+          99,
+          7118573
+        ],
+        "barrier_head": 7293909,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "control": false,
+      "candidate": true
+    },
+    {
+      "label": "released",
+      "sha256": "64d5f2be3be4159cd0c4ae18e09ea88c7b566faf48024283197c6e2662e3d10b",
+      "state_after": {
+        "level": 1,
+        "position": [
+          332340,
+          -102401,
+          740312
+        ],
+        "heading": 881,
+        "contact": [
+          99,
+          7118573
+        ],
+        "barrier_head": 7293909,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "control": false,
+      "candidate": true
+    },
+    {
+      "label": "after",
+      "sha256": "58fc052f2a6f10dc4718e94995bbb23b9efd9bf150658eee4eb4bace026da2d6",
+      "state_after": {
+        "level": 1,
+        "position": [
+          332340,
+          -102401,
+          740312
+        ],
+        "heading": 881,
+        "contact": [
+          99,
+          7118573
+        ],
+        "barrier_head": 7293909,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "control": false,
+      "candidate": true
+    },
+    {
+      "label": "return-before",
+      "sha256": "3054beb3d8f01df729943871b82ee65620a2c58c2b422a0286a8177183345261",
+      "state_after": {
+        "level": 1,
+        "position": [
+          332340,
+          -102401,
+          740312
+        ],
+        "heading": 881,
+        "contact": [
+          99,
+          7118573
+        ],
+        "barrier_head": 7293909,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "control": false,
+      "candidate": true
+    },
+    {
+      "label": "return-after",
+      "sha256": "dac23421245bb967134e560b54cda3a3cd07ac11333271ec4747ff74d0adcbde",
+      "state_after": {
+        "level": 1,
+        "position": [
+          239669,
+          -102400,
+          720628
+        ],
+        "heading": 2942,
+        "contact": [
+          99,
+          7118617
+        ],
+        "barrier_head": 7293909,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "control": true,
+      "candidate": true
+    }
+  ],
+  "runtime": {
+    "game_pid": 350624,
+    "game_start": 2935292,
+    "leader_group": 350348,
+    "leader_start": 2935133,
+    "display": ":2",
+    "window": 14680071,
+    "sink": "ablpc_mute_350348",
+    "owned_processes": 14,
+    "generic_processes": 7,
+    "intentionally_open": true,
+    "audit_clean": false,
+    "stage": "work/copies/EXP-20260906-010/expanded-game-02",
+    "prefix_controller": "work/experiments/EXP-20260906-010/expanded-preview-02",
+    "final_state": {
+      "level": 1,
+      "position": [
+        239669,
+        -102400,
+        720628
+      ],
+      "heading": 2942,
+      "contact": [
+        99,
+        7118617
+      ],
+      "barrier_head": 7293909,
+      "vertical_velocity": 0,
+      "contact_flags": 257
+    }
+  },
+  "unchanged_asset_sha256": {
+    "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "a60b8d902a68b6b4f7b1a7cd1c3cb533d9be9083afd2b2de1305e053c345232f",
+    "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "e3af42b68a05c358ff5471a5b24d55a6d6e3c2217e2e9229c49c68e71fb25065",
+    "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+    "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e"
+  },
+  "resident_verification": {
+    "source99_pointer": 7116801,
+    "source99_bytes": 6308,
+    "barrier_pointer": 7293909,
+    "barrier_source": 178,
+    "barrier_segments": 15,
+    "mesh_pointer": 7000763,
+    "mesh_bytes": 72110,
+    "mesh_sha256": "a8cd38b29de2b9500a45c8f3328c5eccd3967c6150116a0cf96a9de361354be5",
+    "plantter_base": 7297297,
+    "plantter_retained_bytes": 16692,
+    "plantter_retained_sha256": "42ae06619418ff0691f3984fcfc0c893444b32d6f792e3b94a52792554ff2257",
+    "plantter_file_sha256": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+    "template_descriptor": 186,
+    "state": {
+      "level": 1,
+      "position": [
+        239669,
+        -102400,
+        720628
+      ],
+      "heading": 2942,
+      "contact": [
+        99,
+        7118617
+      ],
+      "barrier_head": 7293909,
+      "vertical_velocity": 0,
+      "contact_flags": 257
+    }
+  },
+  "resident_verify_receipt": "work/experiments/EXP-20260906-010/expanded-preview-02/receipt-1788748558208013604.json",
+  "resident_verify_receipt_sha256": "ca32b7aeae4a70ea247b3c2618d512fe19cf58d4c1d786812f9738cf446c02be",
+  "private_receipt_sha256": {
+    "after.png": "58fc052f2a6f10dc4718e94995bbb23b9efd9bf150658eee4eb4bace026da2d6",
+    "before.png": "644731a8bf7829cfb6b108e44db4f256db010fcdd15b23f065f8bc7c79bd8853",
+    "corner-native.py": "a1d38d12c083a9df9291e7134ec4f887dd56142b87ef742a7874f1297e950711",
+    "corner-observe.py": "0a89e9de1d8b0a8e5f8b88ca50333226889b885b76b0568a78e50e1a91bb0046",
+    "corner-return.py": "a531964aef3d4af14a6d1d0c89a3ac63e167edce5ae63aca00f4348e1893ec14",
+    "final-audit.json": "0eb6427a9dbf3e36608dfb7dd2a8287221af1d531920e475d958fe3b6670f43a",
+    "final-audit.py": "82ee5e5b7684c6786d918928a60bce136b03280fa7830eddaa18887c77f96f75",
+    "held-0.png": "5824d4aca214b34062daec3dc48cd96852b01d8b6d8f1d8043fc309179cfa7a6",
+    "held-1.png": "23e9264fe589ac12f55fbcb18656cf06fcbf3a758ed79ee1a5bd23e9d3213455",
+    "held-2.png": "299ec753aed44e9cb0199e3aba8600331b463b7b8dd82efa8bda3578f6049ceb",
+    "held-3.png": "3fa03313deae6d7f95b2415fb1fdc5c2fecaf63ae8fbe15d506201eba3982288",
+    "live-return.json": "e757cb792ba6a1f19aad6dedfca1408953a98e3e5dcef44bd56b2ec01da9072b",
+    "live-up.json": "954d3299b1c8c065d61e4ed786141a90f34e06899a36ccb522faae71a83da74c",
+    "native.json": "9191d0148f4ebb504d3f70148f7586b3d6d0b64b1f1b7872215de21a01a9635a",
+    "released.png": "64d5f2be3be4159cd0c4ae18e09ea88c7b566faf48024283197c6e2662e3d10b",
+    "return-after.png": "dac23421245bb967134e560b54cda3a3cd07ac11333271ec4747ff74d0adcbde",
+    "return-before.png": "3054beb3d8f01df729943871b82ee65620a2c58c2b422a0286a8177183345261"
+  },
+  "protected_stash": "76db1c9ee1ffffce52cea6aee591c24ab6a1c39a",
+  "limits": [
+    "No live branch/GPU trace or radius write; native replay is offline only.",
+    "No production source/tests or staged assets changed.",
+    "Finite cameras, not universal visibility or collision proof.",
+    "Previous EXP-010 mixed-input observations remain qualified; this is fresh requested reproduction."
+  ],
+  "next": "On implementation request, use established PC-aware helper with rounding/preservation/overflow and expanded-camera tests, prepare separate file-loaded candidate and verify the corner."
+}

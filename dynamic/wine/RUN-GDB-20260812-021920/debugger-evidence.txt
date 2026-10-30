@@ -1,0 +1,74 @@
+RUN-GDB-20260812-021920
+Experiment: EXP-20260812-008
+Executable SHA-256: 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+LEVEL1.DAT SHA-256: 494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+Environment: Fedora Linux 44; Wine 11.0 Staging; GNU gdb 17.1-6.fc44
+
+This is a curated record of the interactive debugger observations. It is not a
+verbatim terminal transcript. No game memory or register was modified.
+
+Live mapping after LEVEL1.DAT fixup
+-----------------------------------
+
+(gdb) set $base=*(unsigned int*)0x005ba240
+(gdb) p/x $base
+$1 = 0x6590d7
+
+The global at 0x005BA240 therefore stores a pointer to the loaded DAT; it is not
+the DAT storage itself. The primary records were at:
+
+  record 124: base + 0x0E60 = 0x00659F37
+  record 125: base + 0x0E74 = 0x00659F4B
+  record 126: base + 0x0E88 = 0x00659F5F
+
+Their relocated payload pointers at record +0x10 were:
+
+  record 124: 0x0065B7B3 = base + 0x26DC
+  record 125: 0x0065B7D3 = base + 0x26FC
+  record 126: 0x0065B7F3 = base + 0x271C
+
+The last dwords of those 32-byte payloads were relocated to:
+
+  record 124 payload: 0x0066C273 = base + 0x1319C
+  record 125 payload: 0x0066A2BB = base + 0x111E4
+  record 126 payload: 0x0066A2BB = base + 0x111E4
+
+A preliminary read-only native-GDB attach also observed 0x005BA7E0 holding
+0x00659587, equal to base + 0x04B0, the primary-record start established by the
+file parser.
+
+Successful natural-pause watchpoint sequence
+--------------------------------------------
+
+Training was selected and allowed to stop at its natural "press a key to start"
+screen. Native GDB was attached at that pause. A one-byte hardware read
+watchpoint was installed on each record's first byte, one at a time; a full
+dword read triggers each watchpoint.
+
+  record 124: ESI=0x00659F37, EAX=0xFFFFFF5A, stop PC=0x0044D5BA
+  record 125: ESI=0x00659F4B, EAX=0x0000034D, stop PC=0x0044D5BA
+  record 126: ESI=0x00659F5F, EAX=0x00000368, stop PC=0x0044D5BA
+
+Static disassembly of the exact executable bytes identifies the completed read:
+
+  0x0044D5B8  mov eax,DWORD PTR [esi]
+  0x0044D5BA  sub eax,edx
+
+This address lies inside function 0x0044D430. After the last watchpoint was
+removed, continuing and detaching allowed InitMainGame and NextLife to complete.
+
+Negative debugger observations
+------------------------------
+
+1. A hardware read watchpoint installed only after gameplay began did not fire
+   during 25 seconds that included movement input. This does not prove the
+   records are never revisited; it shows that this late observation window did
+   not include a read.
+2. Native GDB warned that selected architecture i386:x86-64 was incompatible
+   with the reported i386:x64-32 target. A software breakpoint at 0x00467976
+   (the instruction after the 0x0044BB70 call) hit, but continuing immediately
+   raised SIGSEGV at 0x00467976. Treat this as debugger interference. The
+   hardware-watchpoint method at the natural game pause remained stable.
+3. WineDbg's --gdb proxy injected a debug thread and later produced an unhandled
+   fault at 0xFFBF0D6C in that injected thread. Treat this as tool interference,
+   not a game defect; the target was restarted before the successful run.

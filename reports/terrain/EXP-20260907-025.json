@@ -1,0 +1,1720 @@
+{
+  "experiment": "EXP-20260907-025",
+  "status": "bounded density implementation/native/live checks pass; full milestone 3 acceptance open",
+  "source_base_commit": "95a1c71c5983b72b3edd90a4005a61645986de09",
+  "source_tests": {
+    "passed": 1203,
+    "receipt": {
+      "accepted": true,
+      "commands": [
+        {
+          "command": [
+            "make",
+            "check"
+          ],
+          "start_ns": 1788833674779589312,
+          "end_ns": 1788833822555670345,
+          "returncode": 0
+        }
+      ],
+      "log": "/home/dev/ABLPC/work/experiments/EXP-20260907-025/source.log",
+      "log_sha256": "db03875f52737731e858ef249510578f74d44dd34e910c445c8a38bb53be7340"
+    },
+    "scope": "Recorded authoring selection; unrelated R2q exclusions unchanged from EXP024"
+  },
+  "control": {
+    "hashes": {
+      "LEVEL.DAT": "7cb935ec839a56a4b9f98e081d18c52a6867b8c3fb8bf881a4824e2e58ebc35f",
+      "TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+      "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+      "bugs.exe": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f"
+    },
+    "mesh_vertices": 4727,
+    "floor_triangle_count": 2092,
+    "collision_triangle_count": 2365,
+    "load_budget": {
+      "bytes": 997042,
+      "limit": 2000000,
+      "scope": "conservative pinned-profile budget; runtime model verification still required"
+    },
+    "static_collision_density": {
+      "resolved_cells": 3509,
+      "maximum_static_candidates_bound": 103,
+      "witness_xz_stored": [
+        7934,
+        17662
+      ],
+      "static_limit": 300,
+      "native_candidate_capacity": 400,
+      "window_margin_stored": 514,
+      "maximum_delta_world": 10000,
+      "scope": "Resolved static tag6/7/8 and clone cell windows; ignores Y/group/descriptor rejection. 100 slots reserved but arbitrary dynamic actors and larger movement deltas remain unverified."
+    }
+  },
+  "density_trial": {
+    "hashes": {
+      "LEVEL.DAT": "e0093dee486a79105c7565c72585db57e3f364ae9fe9fef4d7a0d475e20e745c",
+      "TERRAIN.ALL": "871508c01d5521ce181b9aacfdb2f1e093970bd79e35c780ee0626efb3ef29e8",
+      "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+      "bugs.exe": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f"
+    },
+    "mesh_vertices": 5964,
+    "floor_triangle_count": 4566,
+    "collision_triangle_count": 4839,
+    "load_budget": {
+      "bytes": 1150610,
+      "limit": 2000000,
+      "scope": "conservative pinned-profile budget; runtime model verification still required"
+    },
+    "static_collision_density": {
+      "resolved_cells": 5983,
+      "maximum_static_candidates_bound": 161,
+      "witness_xz_stored": [
+        -5176,
+        21486
+      ],
+      "static_limit": 300,
+      "native_candidate_capacity": 400,
+      "window_margin_stored": 514,
+      "maximum_delta_world": 10000,
+      "scope": "Resolved static tag6/7/8 and clone cell windows; ignores Y/group/descriptor rejection. 100 slots reserved but arbitrary dynamic actors and larger movement deltas remain unverified."
+    },
+    "terrain_chunks": {
+      "chunks": [
+        {
+          "region": [
+            0,
+            1
+          ],
+          "origin": [
+            1024,
+            -4791,
+            22991
+          ],
+          "radius": 12104,
+          "bounds": [
+            [
+              -6400,
+              -7006,
+              19103
+            ],
+            [
+              8448,
+              -2576,
+              26880
+            ]
+          ],
+          "vertices": 2604,
+          "faces": 3751,
+          "collision_triangles": 3092,
+          "scene_index": 160,
+          "source_index": 99,
+          "mesh_bytes": 78014,
+          "collision_bytes": 136050,
+          "geometry_offset": 477076,
+          "pointer_offset": 19612,
+          "radius_offset": 8592
+        },
+        {
+          "region": [
+            0,
+            0
+          ],
+          "origin": [
+            1024,
+            -4548,
+            15360
+          ],
+          "radius": 12633,
+          "bounds": [
+            [
+              -6400,
+              -6920,
+              11008
+            ],
+            [
+              8448,
+              -2176,
+              19712
+            ]
+          ],
+          "vertices": 1767,
+          "faces": 1889,
+          "collision_triangles": 1124,
+          "scene_index": 484,
+          "source_index": 189,
+          "mesh_bytes": 44602,
+          "collision_bytes": 49458,
+          "geometry_offset": 555092,
+          "pointer_offset": 477024,
+          "radius_offset": 15072
+        },
+        {
+          "region": [
+            1,
+            0
+          ],
+          "origin": [
+            9984,
+            -3945,
+            15360
+          ],
+          "radius": 7256,
+          "bounds": [
+            [
+              7936,
+              -5714,
+              11008
+            ],
+            [
+              12032,
+              -2176,
+              19712
+            ]
+          ],
+          "vertices": 892,
+          "faces": 665,
+          "collision_triangles": 329,
+          "scene_index": 485,
+          "source_index": 190,
+          "mesh_bytes": 19186,
+          "collision_bytes": 14478,
+          "geometry_offset": 599696,
+          "pointer_offset": 477048,
+          "radius_offset": 15092
+        },
+        {
+          "region": [
+            1,
+            1
+          ],
+          "origin": [
+            9984,
+            -4143,
+            23040
+          ],
+          "radius": 6551,
+          "bounds": [
+            [
+              7936,
+              -5744,
+              19200
+            ],
+            [
+              12032,
+              -2541,
+              26880
+            ]
+          ],
+          "vertices": 826,
+          "faces": 604,
+          "collision_triangles": 294,
+          "scene_index": 486,
+          "source_index": 191,
+          "mesh_bytes": 17626,
+          "collision_bytes": 12938,
+          "geometry_offset": 618884,
+          "pointer_offset": 477072,
+          "radius_offset": 15112
+        }
+      ],
+      "prefix_growth": 60,
+      "tail_growth": 159508,
+      "preserved_source_trailer_bytes": 4458,
+      "scope": "whole-face native objects and paired collision sources; unchanged world geometry, bounded profile",
+      "settings": {
+        "x_cuts": [
+          8192
+        ],
+        "z_cuts": [
+          19456
+        ]
+      }
+    }
+  },
+  "native_checks": {
+    "floor_seams": {
+      "accepted": true,
+      "cases": 124,
+      "peak_candidates": [
+        20,
+        45
+      ],
+      "max_position_difference_world": 3
+    },
+    "wall_seams": {
+      "accepted": true,
+      "cases": 24,
+      "peak_candidates": null,
+      "max_position_difference_world": 0
+    },
+    "interior_grid": {
+      "accepted": true,
+      "cases": 138,
+      "peak_candidates": [
+        27,
+        53
+      ],
+      "max_position_difference_world": 3
+    },
+    "renderer": {
+      "accepted": true,
+      "cases": 12,
+      "peak_candidates": null,
+      "max_position_difference_world": 0
+    }
+  },
+  "frame_work": [
+    {
+      "camera": [
+        6000,
+        -3700,
+        12500,
+        0
+      ],
+      "control_vertices": 5045,
+      "dense_vertices": 6860,
+      "control_instructions": 2436977,
+      "dense_instructions": 3427347,
+      "ratio": 1.406392838340288,
+      "control_batches": 12,
+      "dense_batches": 15
+    },
+    {
+      "camera": [
+        7900,
+        -3900,
+        18500,
+        0
+      ],
+      "control_vertices": 3555,
+      "dense_vertices": 3555,
+      "control_instructions": 2117698,
+      "dense_instructions": 2835761,
+      "ratio": 1.3390771488663633,
+      "control_batches": 9,
+      "dense_batches": 9
+    },
+    {
+      "camera": [
+        8600,
+        -3900,
+        18500,
+        2048
+      ],
+      "control_vertices": 3210,
+      "dense_vertices": 3570,
+      "control_instructions": 2000554,
+      "dense_instructions": 2766542,
+      "ratio": 1.3828879400406087,
+      "control_batches": 9,
+      "dense_batches": 10
+    },
+    {
+      "camera": [
+        7900,
+        -3800,
+        15000,
+        1024
+      ],
+      "control_vertices": 904,
+      "dense_vertices": 946,
+      "control_instructions": 1026340,
+      "dense_instructions": 1160608,
+      "ratio": 1.1308221447083813,
+      "control_batches": 3,
+      "dense_batches": 3
+    },
+    {
+      "camera": [
+        8700,
+        -3800,
+        15000,
+        3072
+      ],
+      "control_vertices": 4570,
+      "dense_vertices": 5983,
+      "control_instructions": 2057061,
+      "dense_instructions": 3032794,
+      "ratio": 1.474333527299385,
+      "control_batches": 12,
+      "dense_batches": 14
+    },
+    {
+      "camera": [
+        7500,
+        -3900,
+        20000,
+        2048
+      ],
+      "control_vertices": 4340,
+      "dense_vertices": 4856,
+      "control_instructions": 2284713,
+      "dense_instructions": 3070875,
+      "ratio": 1.344096610821578,
+      "control_batches": 10,
+      "dense_batches": 12
+    },
+    {
+      "camera": [
+        9500,
+        -4300,
+        21000,
+        0
+      ],
+      "control_vertices": 1661,
+      "dense_vertices": 1661,
+      "control_instructions": 1260205,
+      "dense_instructions": 1855945,
+      "ratio": 1.4727326109640893,
+      "control_batches": 4,
+      "dense_batches": 4
+    },
+    {
+      "camera": [
+        6000,
+        -3900,
+        24500,
+        0
+      ],
+      "control_vertices": 610,
+      "dense_vertices": 610,
+      "control_instructions": 860992,
+      "dense_instructions": 1456348,
+      "ratio": 1.6914768081468818,
+      "control_batches": 2,
+      "dense_batches": 2
+    },
+    {
+      "camera": [
+        -900,
+        -4900,
+        22000,
+        3072
+      ],
+      "control_vertices": 1284,
+      "dense_vertices": 5712,
+      "control_instructions": 1150976,
+      "dense_instructions": 2462642,
+      "ratio": 2.139611946730427,
+      "control_batches": 3,
+      "dense_batches": 12
+    },
+    {
+      "camera": [
+        -1200,
+        -4900,
+        24500,
+        3072
+      ],
+      "control_vertices": 857,
+      "dense_vertices": 3770,
+      "control_instructions": 1094786,
+      "dense_instructions": 2203384,
+      "ratio": 2.012616164254932,
+      "control_batches": 3,
+      "dense_batches": 9
+    },
+    {
+      "camera": [
+        6000,
+        -3800,
+        19000,
+        1024
+      ],
+      "control_vertices": 2134,
+      "dense_vertices": 2134,
+      "control_instructions": 1888297,
+      "dense_instructions": 2612997,
+      "ratio": 1.383784966030238,
+      "control_batches": 5,
+      "dense_batches": 5
+    },
+    {
+      "camera": [
+        6000,
+        -3800,
+        20000,
+        3072
+      ],
+      "control_vertices": 2907,
+      "dense_vertices": 4440,
+      "control_instructions": 1554965,
+      "dense_instructions": 2526053,
+      "ratio": 1.6245079471242119,
+      "control_batches": 9,
+      "dense_batches": 12
+    }
+  ],
+  "blender": {
+    "project": "/home/dev/ABLPC/work/level-projects/moonlit-cliffs-density-trial",
+    "build_button": "/home/dev/ABLPC/work/copies/blender-level-1788832885870881431",
+    "reopened_export_exact": true,
+    "clovers": 15,
+    "chunk_count": 4,
+    "asset_arena_bytes": 8388608,
+    "hashes": {
+      "LEVEL.DAT": "e0093dee486a79105c7565c72585db57e3f364ae9fe9fef4d7a0d475e20e745c",
+      "TERRAIN.ALL": "871508c01d5521ce181b9aacfdb2f1e093970bd79e35c780ee0626efb3ef29e8",
+      "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+      "bugs.exe": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f"
+    },
+    "blend_sha256": "11a39f35b5bee09dc4364b40ccce6a2e0dbae1928e128c24a17b7e546c1efd63"
+  },
+  "hardware_timings": [
+    {
+      "game": {
+        "pid": 71739,
+        "start": 647285,
+        "group": 71504,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-025\\live-control\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "exe_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+      "seconds_requested": 20.0,
+      "observed_intervals": 625,
+      "mean_ms": 32.0,
+      "p50_ms": 32,
+      "p95_ms": 32,
+      "p99_ms": 32,
+      "min_ms": 32,
+      "max_ms": 32,
+      "native_fps_limit": 30,
+      "max_observer_poll_gap_ms": 2.97674,
+      "observer_poll_gap_p99_ms": 1.062997,
+      "before": {
+        "level": 1,
+        "position": [
+          192000,
+          -102400,
+          448000
+        ],
+        "heading": 0,
+        "contact": [
+          178,
+          9822271
+        ],
+        "barrier_head": 9801887,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "after": {
+        "level": 1,
+        "position": [
+          192000,
+          -102400,
+          448000
+        ],
+        "heading": 0,
+        "contact": [
+          178,
+          9822271
+        ],
+        "barrier_head": 9801887,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "scope": "Observed original frame-start timeGetTime timestamp intervals including native pacing; millisecond quantization and observer gaps apply. No GPU duration, live write, control input or debugger stop."
+    },
+    {
+      "game": {
+        "pid": 72722,
+        "start": 673824,
+        "group": 72468,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-025\\live-dense-final\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "exe_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+      "seconds_requested": 20.0,
+      "observed_intervals": 625,
+      "mean_ms": 32.0016,
+      "p50_ms": 32,
+      "p95_ms": 32,
+      "p99_ms": 32,
+      "min_ms": 32,
+      "max_ms": 33,
+      "native_fps_limit": 30,
+      "max_observer_poll_gap_ms": 3.413466,
+      "observer_poll_gap_p99_ms": 1.064378,
+      "before": {
+        "level": 1,
+        "position": [
+          192000,
+          -102400,
+          448000
+        ],
+        "heading": 0,
+        "contact": [
+          178,
+          9961143
+        ],
+        "barrier_head": 9936095,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "after": {
+        "level": 1,
+        "position": [
+          192000,
+          -102400,
+          448000
+        ],
+        "heading": 0,
+        "contact": [
+          178,
+          9961143
+        ],
+        "barrier_head": 9936095,
+        "vertical_velocity": 0,
+        "contact_flags": 257
+      },
+      "scope": "Observed original frame-start timeGetTime timestamp intervals including native pacing; millisecond quantization and observer gaps apply. No GPU duration, live write, control input or debugger stop."
+    }
+  ],
+  "live_models": {
+    "live-control": [
+      {
+        "samples": 147,
+        "entries": 170,
+        "pose_tables": 73,
+        "accepted": true
+      }
+    ],
+    "live-dense-final": [
+      {
+        "samples": 147,
+        "entries": 170,
+        "pose_tables": 61,
+        "accepted": true
+      },
+      {
+        "samples": 147,
+        "entries": 170,
+        "pose_tables": 100,
+        "accepted": true
+      }
+    ]
+  },
+  "retained_assets": {
+    "native_arena_base": 8892416,
+    "cursor": 10454393,
+    "retained_bytes": 1561977,
+    "model_load_peak_bytes": 1562513,
+    "arena_headroom_at_modeled_peak": 6826095,
+    "scope": "Pinned RAW/terrain and exact 35 model-load sequence; live cursor/model roots verified. Not arbitrary allocation safety."
+  },
+  "resident_chunks": {
+    "accepted": true,
+    "game": {
+      "pid": 72722,
+      "start": 673824,
+      "group": 72468,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-025\\live-dense-final\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "rows": [
+      {
+        "scene": 160,
+        "source": 99,
+        "runtime_descriptor": 99,
+        "origin": [
+          1024,
+          -4791,
+          22991
+        ],
+        "mesh_pointer": 9418419,
+        "collision_pointer": 9624787,
+        "mesh_bytes": 78014,
+        "collision_bytes": 140508,
+        "mesh_sha256": "b906ba5fd325f8a8c59ef13596017b546177e048e91f0af3176f96b23c3de963"
+      },
+      {
+        "scene": 484,
+        "source": 189,
+        "runtime_descriptor": 178,
+        "origin": [
+          1024,
+          -4548,
+          15360
+        ],
+        "mesh_pointer": 9496435,
+        "collision_pointer": 9939483,
+        "mesh_bytes": 44602,
+        "collision_bytes": 49458,
+        "mesh_sha256": "7e1a3e92e2b44e5ec01b244914edd968c0cd0b27ff636fdb8379a70b961331ef"
+      },
+      {
+        "scene": 485,
+        "source": 190,
+        "runtime_descriptor": 179,
+        "origin": [
+          9984,
+          -3945,
+          15360
+        ],
+        "mesh_pointer": 9541039,
+        "collision_pointer": 9988941,
+        "mesh_bytes": 19186,
+        "collision_bytes": 14478,
+        "mesh_sha256": "6f9b6e0cee6424844ef13d42431557317fcbbde1a87c94146ce5e319c1f66785"
+      },
+      {
+        "scene": 486,
+        "source": 191,
+        "runtime_descriptor": 180,
+        "origin": [
+          9984,
+          -4143,
+          23040
+        ],
+        "mesh_pointer": 9560227,
+        "collision_pointer": 10003419,
+        "mesh_bytes": 17626,
+        "collision_bytes": 12938,
+        "mesh_sha256": "686035d8ec7127f400c4a03d1564a7483b503fe7ded61a3f51917d705f20a61a"
+      }
+    ],
+    "state": {
+      "level": 1,
+      "position": [
+        108854,
+        -123890,
+        551327
+      ],
+      "heading": 3806,
+      "contact": [
+        178,
+        9949835
+      ],
+      "barrier_head": 9936095,
+      "vertical_velocity": 0,
+      "contact_flags": 257
+    },
+    "scope": "Read-only exact resident bytes, independent origins, pointer relocation and scene bounds for all four chunks; no live writes."
+  },
+  "live_handoff": {
+    "meta": {
+      "leader": {
+        "pid": 72468,
+        "start": 673692,
+        "group": 72468,
+        "cmd": "/usr/bin/bash /home/dev/ABLPC/work/experiments/EXP-20260907-025/live-dense-final/launch.sh "
+      },
+      "stage": "/home/dev/ABLPC/work/copies/EXP-20260907-025/live-dense-final/game",
+      "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260907-025/live-dense-final/prefix",
+      "hashes": {
+        "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+        "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+        "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+        "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+        "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+        "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+        "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+        "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+        "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+        "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+        "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+        "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+        "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+        "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+        "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "871508c01d5521ce181b9aacfdb2f1e093970bd79e35c780ee0626efb3ef29e8",
+        "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "e0093dee486a79105c7565c72585db57e3f364ae9fe9fef4d7a0d475e20e745c",
+        "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+        "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+      },
+      "game": {
+        "pid": 72722,
+        "start": 673824,
+        "group": 72468,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-025\\live-dense-final\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "display": ":2",
+      "xwayland": {
+        "pid": 72521,
+        "start": 673717,
+        "group": 72468,
+        "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+      },
+      "window": 14680071
+    },
+    "our_process_count": 14,
+    "foreign_protected_process_count": 16,
+    "audit_process_rows": 15,
+    "state": {
+      "level": 1,
+      "position": [
+        108854,
+        -123890,
+        551327
+      ],
+      "heading": 3806,
+      "contact": [
+        178,
+        9949835
+      ],
+      "barrier_head": 9936095,
+      "vertical_velocity": 0,
+      "contact_flags": 257
+    }
+  },
+  "rejections": {
+    "full_refinement_max_seam_difference_world": 45,
+    "seam_preserving_refinement_failed_interior_differences_world": [
+      103,
+      51,
+      64
+    ],
+    "native_divergence_cause": "unresolved; matching quantized normals do not imply identical narrow-phase behavior"
+  },
+  "open_gates": [
+    "full live respawn/exit cycles",
+    "actor endurance",
+    "complete timed traversal",
+    "controlled unpaced CPU/GPU work-time headroom",
+    "exact native slope-retessellation divergence mechanism"
+  ],
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260907-025/audit-after-own-close.json",
+      "bytes": 3561,
+      "sha256": "5da6bd160719499d7833c4d388af6c1de004ddc12317fa9e5064d1166b19e87e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/audit-after-rejected-close-preflight.json",
+      "bytes": 6786,
+      "sha256": "7166918ec85639f0a8d8de4275af7cc006af3736b11805168c105383f6d14afc"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/audit-before-close-control.json",
+      "bytes": 6786,
+      "sha256": "7166918ec85639f0a8d8de4275af7cc006af3736b11805168c105383f6d14afc"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/audit-before-control-launch.json",
+      "bytes": 3561,
+      "sha256": "5da6bd160719499d7833c4d388af6c1de004ddc12317fa9e5064d1166b19e87e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/audit-before-dense-capture.json",
+      "bytes": 7086,
+      "sha256": "6d9a3969f775509abba2f631d1a6c55b912da01b65dab3b467687129f51dc1b6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/audit-before-dense-launch.json",
+      "bytes": 1944,
+      "sha256": "53d74bb6544efc09b4696997401175015f9278069ab8020eeb499da551ef5b62"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/audit-before-own-close.json",
+      "bytes": 13039,
+      "sha256": "46222e42b1b0dffca93d40736b0fada87c75ecd3de676eba3c66c5162d6f5799"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/author-blender.py",
+      "bytes": 1927,
+      "sha256": "b58f62ce3223b01e60d43d5533423e9f6faf892319f9ed48c5b726807e562577"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/begin-frame.json",
+      "bytes": 5535,
+      "sha256": "fd1b8263b0d0469692f61ecd6332ab5da11d275498cdadabc9e1cbf4460ef22c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/blender-chunks-build.json",
+      "bytes": 721,
+      "sha256": "aeb2dc8299b8c0793a77d3f65f7cce249037b806b1edaccbf0b9b42ad5877ced"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/blender-registration-rejected.log",
+      "bytes": 702,
+      "sha256": "d3cbdde0e3c00e29180ca36750855337bfbef28431cb4791d08554f433815809"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/blender.log",
+      "bytes": 1088,
+      "sha256": "40f21529c206ac9cbbeb04f8ad7da83daa974b1e3bb2e6bd9abda2a9865a069c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/build-density-flat-final.log",
+      "bytes": 328,
+      "sha256": "eb45ffc2dff5168e54ac48f8b7b68d126c45be45cf13fac450176b03699fc02d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/build-density-flat.log",
+      "bytes": 328,
+      "sha256": "de41a1cd95d0a91f1bd4295fb1a69439834398ddd8240e26577c7b2de3170973"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/build-density-lattice.log",
+      "bytes": 328,
+      "sha256": "156df2374e1ce9f54e0f4dc97ee156581588b12551ab46303e13d2b222c842ba"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/build-density-seams.log",
+      "bytes": 326,
+      "sha256": "c60e325541d3216e364e1be935dc133f238972967bece7888b37ec4a8f59f978"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/build-density.log",
+      "bytes": 1130,
+      "sha256": "0a40167f02cf327cca9001170e071d4a2fabecf41ee3f6bea820da374857366f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/build-density.py",
+      "bytes": 3311,
+      "sha256": "baaed32842fa8f155008617a7da31c829655bc7c36f212b8d6ecd580af71a7d6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/check-static-density.log",
+      "bytes": 473,
+      "sha256": "36a02a1f03d8b3a8e27641ac3c4434197fce831edbc1cc12b826bc10c21dfab6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/check-static-density.py",
+      "bytes": 1487,
+      "sha256": "ac3423a771d2ed808b435384012fb50709fa980ef222026c8d986c87be24f5f3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/claim-sweep-stage3.json",
+      "bytes": 533,
+      "sha256": "1e5a24a335ac64c017dd6a876aa7f4ebaa0e7b7613144f6f7370a58aa78ab6a2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/close-arm.py",
+      "bytes": 1312,
+      "sha256": "f24ea977fdbeaee1f4e372d949ce700ed16603c24adcf4434633c3b0756fb395"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/close-own-previous.py",
+      "bytes": 2013,
+      "sha256": "9ee69cf8c4f7664986a67a4570424e3d788abce0cd461673e0e4c335511f9c50"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/close-previous.log",
+      "bytes": 8458,
+      "sha256": "cd500a8a623d692dd762816e6f7b8c3b9a674034e38ddd53b68744e6754f26c2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/close-previous.py",
+      "bytes": 2963,
+      "sha256": "1ecd8d540f7287ff2e1cc85152071f5e1f7a54bbef3be48ceffe90b4993a6a80"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/collect-geometry.json",
+      "bytes": 11481,
+      "sha256": "32bf1dec7749557a54f9baf1458237974e378abf9d5e57d1d95af7f6eacfd884"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/collect-local.json",
+      "bytes": 12941,
+      "sha256": "a2a77de993615874ec4b9b4e096d7f4379b1b1f454aef3b2f63369e82f61f75f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/collector-dispatch.json",
+      "bytes": 5027,
+      "sha256": "193023c6bed6a2424337bd4f883bcd55c1fb60b9b9b8b405f89f5118c4997731"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/collector.json",
+      "bytes": 22502,
+      "sha256": "954d22436bc57d56a45b41bfcd1c8d0fdaa13350e59e3e33acc31cc89ddc813c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/collision-coordinator.json",
+      "bytes": 28950,
+      "sha256": "b6300947ff32690fb2bca117a64e378b2089b73446b3b424d0997816e9c26d47"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/compiled/LEVEL.DAT",
+      "bytes": 639520,
+      "sha256": "e0093dee486a79105c7565c72585db57e3f364ae9fe9fef4d7a0d475e20e745c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/compiled/PLANTTER.ALL",
+      "bytes": 17760,
+      "sha256": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/compiled/TERRAIN.ALL",
+      "bytes": 493330,
+      "sha256": "871508c01d5521ce181b9aacfdb2f1e093970bd79e35c780ee0626efb3ef29e8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/compiled/bugs.exe",
+      "bytes": 1072128,
+      "sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/compiled-build.json",
+      "bytes": 58204,
+      "sha256": "72b41478468a5fac2a708f5cf091237c67990bf59c215da74b78bfc3dc57f881"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/compiled-scene.json",
+      "bytes": 808047,
+      "sha256": "8624c1e7e967c7ac7f84d5a34d469c08eb1e248bb45134fdae2b4d31f9f6dd8f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/compiled-static-density.json",
+      "bytes": 268,
+      "sha256": "37a342ebb1a8ddea8014beff014d7d67c7c92b354f365308f5d4cae203d1056b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/control/LEVEL.DAT",
+      "bytes": 594808,
+      "sha256": "7cb935ec839a56a4b9f98e081d18c52a6867b8c3fb8bf881a4824e2e58ebc35f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/control/PLANTTER.ALL",
+      "bytes": 17760,
+      "sha256": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/control/TERRAIN.ALL",
+      "bytes": 384474,
+      "sha256": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/control/bugs.exe",
+      "bytes": 1072128,
+      "sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/control-build.json",
+      "bytes": 58031,
+      "sha256": "9ae2c25c41ca6b68d7a39239f3f6d17224929cb23d520fedf2b93d300ac00e9b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/control-scene.json",
+      "bytes": 575639,
+      "sha256": "1174ae398b7bb3dc2834a92b4f72c2f4f6ef10eea90c278c5af3bfef9dc1a805"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/control-static-density.json",
+      "bytes": 268,
+      "sha256": "b915aae29e60096d6c5290e203268817c8868a3e4b8fac5fc7493cc180d22ac6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/dense-model-delta.json",
+      "bytes": 113,
+      "sha256": "5cbd73f9d330a4e313cd0f6d77fd2d4ef93e28b1611a2da9054893421aed3769"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/density-and-build-tests.log",
+      "bytes": 100,
+      "sha256": "722949c4d7209e6055af71119b85bc3b9ece62767949ea9fd177cd05fc01f965"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/density-tests.log",
+      "bytes": 98,
+      "sha256": "1ccafd8e67328198f09639d51973b1537731591146acaca71578cfcbe74b267b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/document-final.py",
+      "bytes": 5347,
+      "sha256": "7cfdba0d04dea388e91697a79106e0a617298b7eb72217acf25435f6e1037206"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/document-stage3.py",
+      "bytes": 8849,
+      "sha256": "cc72c318681526032be84556236e181085ac52639dd8f4968572c343352a81fb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/draw-mesh.json",
+      "bytes": 201321,
+      "sha256": "977b5fc9c08c25a78541f1ed9126f7aa3f8d33111171f4f5310b5c7804dbe2f5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/draw-object.json",
+      "bytes": 64344,
+      "sha256": "f1519ff65942e896b0a3114e9fdd66be98e2afaf4a71104f14536b859e9cc990"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/final-handoff-group-classification-rejected.log",
+      "bytes": 338,
+      "sha256": "2ccce3f69c056d7f814fc2e93508ab0e90164eff02f7e11b44f72b4c68c5e8ba"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/final-handoff.log",
+      "bytes": 1068,
+      "sha256": "5a9cae34a8d0beff5aeba3cfceedee22e926a99a8d86bff52bfbac473b6d3e82"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/final-handoff.py",
+      "bytes": 2359,
+      "sha256": "dd1ca127ea976961672e3cc0a5e621751581e3f8b8f1263bd17c3da7407e9def"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/final-vault-lint.log",
+      "bytes": 1605,
+      "sha256": "00662d01ae7407855ce5ab04d75d09f8e6022e0117839eeaac07c6369cf5446f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/fps-display.json",
+      "bytes": 8548,
+      "sha256": "51f2d254d97cb73446f3da1160ffa5fcd2db92efa89eb3dc733a7a79ac2e90e9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/frame-start-callers.json",
+      "bytes": 12187,
+      "sha256": "0c2ea2c6457e9a1e41f765fc7fae8d7edfd2c334b0941fb192bc16c0123da659"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/frame-start.json",
+      "bytes": 3943,
+      "sha256": "d49b6459cb95455bc17b0c954d8f3552a86d195199d43e2a3f697a32bd750467"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/frame-summary.json",
+      "bytes": 3505,
+      "sha256": "9fe8dac156526e98077949d84a709b0567248b0b6ceaac973d2609813135e7fe"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/frame-timer.json",
+      "bytes": 3020,
+      "sha256": "ac72a44b176e8da8843068d6323362273021d01379b86d4fc0a2a93ff2a146ba"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/initial-tests.log",
+      "bytes": 180,
+      "sha256": "a2bee27209f432de19cf201a2a42e42bc02bcc4a2085c13e5e3a578db383647d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/inspect-refinement.py",
+      "bytes": 932,
+      "sha256": "e18d2a8069e2f39aeeece466748900381c51a59ac392d50f8e9c509c25587e2e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/active.json",
+      "bytes": 2786,
+      "sha256": "c9d74df8178f3b2f760ce8f9f1a9145c804d73e1661ef96bc707fb07a8dd8e75"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/audit-after-close.json",
+      "bytes": 3561,
+      "sha256": "5da6bd160719499d7833c4d388af6c1de004ddc12317fa9e5064d1166b19e87e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/audit-before-close.json",
+      "bytes": 6798,
+      "sha256": "4076c866f1fd040fb12c6f5d5af22636b2fe47e6f3383bd1c64a592de8cb05cd"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/close-pinned.py",
+      "bytes": 2965,
+      "sha256": "23e3b52b3bc6c544ad2410771ca75471e4bf72ce6b25a80511efa93d7e3959b7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/close-receipt.json",
+      "bytes": 8404,
+      "sha256": "4572673d0b7b504495a665fb0de2ea3c35f5dfe09d5636f2e4b7a0a8fe1737e6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/close.log",
+      "bytes": 8404,
+      "sha256": "4572673d0b7b504495a665fb0de2ea3c35f5dfe09d5636f2e4b7a0a8fe1737e6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/control.py",
+      "bytes": 18200,
+      "sha256": "fb6d4838a13fa4975cc154d9bfcf81c14dfef36c934eb7696d955868bec0a21c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/discover.log",
+      "bytes": 3138,
+      "sha256": "96a956cc0dd134ad7f83590d9921f7d18d37618c47b0b4638d3eaa00561746ea"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/frozen-game.log",
+      "bytes": 66230,
+      "sha256": "5443a4d89d648a5c85f4b846081ac93b6976cf80195fdda8653a6c00ff831b88"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/launch-receipt.log",
+      "bytes": 2241,
+      "sha256": "654109efc6f9eb075998970387affd3ae9da3542cd4a39d3d4066a55305a6529"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/launch.json",
+      "bytes": 2241,
+      "sha256": "654109efc6f9eb075998970387affd3ae9da3542cd4a39d3d4066a55305a6529"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/launch.log",
+      "bytes": 10768,
+      "sha256": "8672897e2b521bbf536b1b1eabb48114c48c5dba1027d0329d678a1e718005ea"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/menu-right.log",
+      "bytes": 445,
+      "sha256": "e565a6a5975619669cedb9408bf91a5531eac9135e39a382e910bac20e491695"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/models-1788833152776922932.json",
+      "bytes": 107883,
+      "sha256": "84fa6bc2a279b7849b6654993b0fd6cd1166134cfadbf57a8f068ff37128374a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/models-check.log",
+      "bytes": 444,
+      "sha256": "fced0c46b9f742829317a12e84541fc6a1dea67f854c277b80a83a5bebb76552"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/prepare.json",
+      "bytes": 2467,
+      "sha256": "13c03e7dd3e9afb1f90856b95acb8561e7caa44bf207e82c1011bd9fb86c7420"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/receipt-1788833062191695400.json",
+      "bytes": 2381,
+      "sha256": "e5b9955ce26f9e34c75dbe53fa3a1ac40dfcdb7b3f9b2a14123e9a2701f74eda"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/receipt-1788833075357695190.json",
+      "bytes": 3344,
+      "sha256": "dc76a9fe43806bdf18049b45c36af8ad18e1a98ab8bc33ea6b3a296e2a904510"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/receipt-1788833111862857831.json",
+      "bytes": 319,
+      "sha256": "59f64057f3fc6c9e84e6dc94b9179326e0e7077784032774b76b8011b62bbce2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/receipt-1788833190722776788.json",
+      "bytes": 15977,
+      "sha256": "5125924c8381bd677d6bf0970fed0e0aadfabf3da1a835b830c5c2f3a1bbeb77"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/receipt-1788833192116550237.json",
+      "bytes": 16138,
+      "sha256": "cb2575aff36b98f3b4504c55dc66a26669ee7387e17b72c3f98318f30192f2d3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/receipt-1788833193511965129.json",
+      "bytes": 16159,
+      "sha256": "595ecce6cd47d7da8db25abf375b255188dd8e52f653eaf637342e00045773e3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/receipt-1788833194906261013.json",
+      "bytes": 16164,
+      "sha256": "5e1299e1e5a7b66a7457daf3fde80e8a8dfb462f545e42ada42fe45d5aab7066"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/receipt-1788833199301350751.json",
+      "bytes": 104077,
+      "sha256": "201e5276d38a596638a2287ef4dbda539fa4736ad6de9bfd6e260038807e37ec"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-control/smoke-route.json",
+      "bytes": 168191,
+      "sha256": "c07a2f563d9ceff7bd7a63312917481489795821cb454e3d2e9ced6212309ab8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/active.json",
+      "bytes": 2802,
+      "sha256": "073c1fa49c108041e4a314f5d19003277970a91a1718215c96009674d2a330d0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/capture.log",
+      "bytes": 703,
+      "sha256": "6f4ad3e4fcf0e2f5f24aad73170fad5e4f2f7d6da4700c99a3bd3b48a916d25b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/chunks-after-movement.log",
+      "bytes": 1708,
+      "sha256": "8237a59635a38ded076eaf44f83281b2e59259ed781621fed2087dc90a853e57"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/chunks-check.log",
+      "bytes": 1705,
+      "sha256": "f6f9e437a78f7810cb15c00a9878f2bc2db2b85176c84490c17910a469e37ebf"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/control.py",
+      "bytes": 18208,
+      "sha256": "e62124794f2d94e81726a4003900a7fc44f19e1b6643841ea3ad0bd5f3ca30bb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/discover.log",
+      "bytes": 3122,
+      "sha256": "942e936cba9424e1d124320c3c7372a99c7c0eb6cbb4196621b84f7eb87f0d64"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/frame-1788833720471453523.png",
+      "bytes": 252179,
+      "sha256": "b2ef62b25aba3ab2715e7d8f9a56b8ed241c5d7eb6cd753249efde55984d5fb0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/frozen-game.log",
+      "bytes": 66230,
+      "sha256": "5e7b93e772d3e3530583e80b5c5f71d6bccfabbb35e4cd94353baa2204d386fa"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/launch-receipt.log",
+      "bytes": 2253,
+      "sha256": "33c87a89f44b8bbeb3a07fe403b535ff1ba6c991c74f42b24a9dcfc64241d6c3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/launch.json",
+      "bytes": 2253,
+      "sha256": "33c87a89f44b8bbeb3a07fe403b535ff1ba6c991c74f42b24a9dcfc64241d6c3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/launch.log",
+      "bytes": 10734,
+      "sha256": "5c35bd8e18ffae351d0bc33d7bf7f4b788e7ae7751436cac10e4e5f8fbed69db"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/live-handoff-binding.json",
+      "bytes": 25296,
+      "sha256": "9447bbdf66b5c41944d50dac185ca5b31ff8badc789a6a6b6f0ccebca2fc8b03"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/menu-right.log",
+      "bytes": 521,
+      "sha256": "05dc75ac9412e7566ebe0758e09ce1a616cdac77634c17bd3f5ee526978500a2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/menu-select.log",
+      "bytes": 523,
+      "sha256": "2cf1372b997fe9b21b96109038d273b9afdb1496ee95eb7b46bb46fdf1d0b0f1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/menu-title.log",
+      "bytes": 534,
+      "sha256": "0cacb6262ada4fc5486d3d5c0adccdb2f6a69276984893a6faa6eadc894f8e0a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/models-1788833516232419022.json",
+      "bytes": 107876,
+      "sha256": "93b1a7eca279440d18626525f019f5898640a631c68106ace14cdb52bc502abe"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/models-1788833732913151257.json",
+      "bytes": 108334,
+      "sha256": "781f362328c3952dd65123995ec1d64a3e200a76577d1b28a678c2682123f708"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/models-after-movement.log",
+      "bytes": 453,
+      "sha256": "dc188c44961ec0018aa75a68c4e4ac4c05cea184098a13eb39380a94b983bee5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/models-check.log",
+      "bytes": 452,
+      "sha256": "f7253572b32144e2244dcd9265ccdbb588fd0cbdb966705d7ed637d212b09bc6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/prepare.json",
+      "bytes": 2559,
+      "sha256": "8b9f39c5b869ad0359fe47d42209af12b974b34a476063d54dc7547c0f6eccdf"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833327657703352.json",
+      "bytes": 2393,
+      "sha256": "7c43bdae326f12875dde93f2e34836057bb64ce410e1ef0bf6d26f1dbe1da1d1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833342928743558.json",
+      "bytes": 3328,
+      "sha256": "f881e220dee2d82d8068afc057cae4a1d55b3a7c9d1a297358ed25c6b1549f01"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833358981459037.json",
+      "bytes": 287,
+      "sha256": "4436fa7de6622455f9a193c94416968e3142ac471b56a32b9219c057915531fd"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833369033038711.json",
+      "bytes": 692,
+      "sha256": "cec4cfe2638589a4b668cc775b0badc5daa2465958a4dfefae85afb86c112b4c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833403804024917.json",
+      "bytes": 695,
+      "sha256": "a48e1d668f781dc1b37dfa32eabc7d5babae00fac963805c35a550cdd27f703c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833485348940276.json",
+      "bytes": 705,
+      "sha256": "d8435c1b3202656e41f040365bcf5a07d277b2fe3bab394fc3f09c30d34fe3ed"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833646053210928.json",
+      "bytes": 15966,
+      "sha256": "d8534d49b5561893b64ca4269d6d78fb87d2fe6f9ba77edf68797489950f0ab5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833647448361618.json",
+      "bytes": 16141,
+      "sha256": "5f575c4e81f13038cd15fd35e950d2c20092bec8339bef447893dbed53ac25c6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833648842930783.json",
+      "bytes": 16151,
+      "sha256": "a23f581a8f0aed6daa48d74c33fb72b0f62988ccc69683c87293af62aa87aa8e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833650236204169.json",
+      "bytes": 16163,
+      "sha256": "620b2420aa5fe9abdaede9d6b46db49b89d8d0ed7475b2b8f36a63a243d89616"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833654630022327.json",
+      "bytes": 104101,
+      "sha256": "39a30500fe6307e8642f040465006bd5b3e57e6d148be667818983b6d59f59b7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/receipt-1788833720814824733.json",
+      "bytes": 856,
+      "sha256": "f9d914b7884bf32e69f9ff52bc2317b24b5f41b07a0b27dd94c5905493ba6bc3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/resident-chunks-before-movement.json",
+      "bytes": 2199,
+      "sha256": "4b8e8294c6ecc8cc8f99640efeb29c439b4a1188296f7f99f41bbb7faa66fd31"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/resident-chunks.json",
+      "bytes": 2202,
+      "sha256": "70431784ff176949dda0e0c7fd6873e9c1f5753e91ccb30ca01c647b2542f687"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-dense-final/smoke-route.json",
+      "bytes": 168198,
+      "sha256": "232324d34b8f336829493f9ccef26948930c026219f74dfe59ba9f6212ba3ee7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-order-expected.json",
+      "bytes": 58474,
+      "sha256": "a1fe9c5155dd3d93458edf189bc6fba9bc74f530c26111d38aeeb510ea1e45de"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/live-smoke.py",
+      "bytes": 932,
+      "sha256": "0efb5adf09a1faf322bf86899963605d96f30219e806a0b1531ffe97910bd86b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-bounds.asm",
+      "bytes": 16573,
+      "sha256": "f06b89c114369c62c2adcc89a2662409648a6cbe586427f6fa5bd236c1f6215a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-frames.json",
+      "bytes": 195166,
+      "sha256": "3d661f9805a5aae49ff68e9c4aedd9fe485afd3edd54c9e5a49f61f3767c491c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-frames.log",
+      "bytes": 349,
+      "sha256": "a0fa5467d79d5dabaada079b8cf8090ea36c6a494f3be37e09edccb5548137d8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-frames.py",
+      "bytes": 7501,
+      "sha256": "2ee018a76173c150d53097a1920e992fe0bcc2ba3735ab800308b8167c867023"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-grid.json",
+      "bytes": 1018533,
+      "sha256": "7818e599dc7fd5ab901e8ccd6189ac638dfc123251ca303040acafeed556f324"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-grid.log",
+      "bytes": 84,
+      "sha256": "c56e0fa1f0773b0588d0186d0a6d87d57e2396562f80de390d0dcdb4cfb56e2e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-grid.py",
+      "bytes": 1478,
+      "sha256": "d01ea9213e8ed7bd65efaf1d59ed22e8b80b8482fc79ba2097089d7b35fd323c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-interiors.json",
+      "bytes": 724054,
+      "sha256": "f41748c045c922988ce8c4bdbe57d9b301ab9c9072bc30db14a3e2de1071b7f5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-interiors.log",
+      "bytes": 68,
+      "sha256": "f117a697085adb1e8639b683efb9817d74ca79442d35185145cf611f5dab2b18"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-interiors.py",
+      "bytes": 1450,
+      "sha256": "29da95332a9efabeb124a30d10a38855453277e466cb49c5b81dfdf8c4658a67"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-seams.json",
+      "bytes": 1065297,
+      "sha256": "67164449a76724994c513c496477fa6c67589e751c388c5b00f2fafa92215856"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-seams.log",
+      "bytes": 603,
+      "sha256": "135da79115eb8c5b6b94ea235e62478974bc83331bd349b08c00115f33bc90ca"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-seams.py",
+      "bytes": 4876,
+      "sha256": "7dfe3b47cf597d179326642f853e48ef80b54a2e879a4bfa6fdb6926a649e8fe"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-wall-seams.json",
+      "bytes": 159989,
+      "sha256": "98cee081e87dc52a3dceef5576d71889a30a13f0ea42719889be3ebb3fcb4313"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-wall-seams.log",
+      "bytes": 254,
+      "sha256": "9a5e49016a7acccd1b0291a8f541b1f14c173d3775840f1047624aab50ed735d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/native-wall-seams.py",
+      "bytes": 1664,
+      "sha256": "87246cb9928378112722efd2dc8dfee964fcc6310953224d42b1575d4580bce9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/prepare-control.log",
+      "bytes": 2371,
+      "sha256": "8feacfb15ab29eabb411b6e9c9ff150596c1597819ae9651bc8f44b0cdce4967"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/prepare-dense-final.log",
+      "bytes": 2451,
+      "sha256": "d8a824777145ed33f8f274330db881694d1fafbf5b5152cad4e9f8d83992ebd9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/prepare-dense.log",
+      "bytes": 2427,
+      "sha256": "784881f608d8ceb53c4a975c3e8928e365ade17650506a84856c075ad5494605"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/prepare-live-final.py",
+      "bytes": 3255,
+      "sha256": "7476c7143ed00f533e7e966f75800a638f8452bd8b1cab8caaf49ed856cfb0eb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/prepare-live.py",
+      "bytes": 3249,
+      "sha256": "a0c34d9b357365c9aa8e01a18b985886eeda44caedbb52d035341c49da380761"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/refinement-plane-comparison.json",
+      "bytes": 3638,
+      "sha256": "a542d95d0edd621eb7a7913f46975fa0634f22ab01c7c0a042e51eaf17e8d039"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/build-density-lattice.log",
+      "bytes": 328,
+      "sha256": "156df2374e1ce9f54e0f4dc97ee156581588b12551ab46303e13d2b222c842ba"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/build-density.py",
+      "bytes": 3002,
+      "sha256": "002df848b58ad3ed94ce8c0dd4244f6be3034f0d6eec2a5850a3491c0ce162ac"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/compiled-build.json",
+      "bytes": 57691,
+      "sha256": "03b14561bfa06e1d23126e13ad5b57c9c5383e2c2666e84aeb589c9b4dde9655"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/compiled-scene.json",
+      "bytes": 883514,
+      "sha256": "aba202ac27961a4a9c15557d7faa505f89d063eefc927ced8872fb9f6c10c9de"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/compiled-static-density.json",
+      "bytes": 268,
+      "sha256": "37a342ebb1a8ddea8014beff014d7d67c7c92b354f365308f5d4cae203d1056b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/native-frames.json",
+      "bytes": 196331,
+      "sha256": "b21923dad5dd27c1e51c63ec1a8d0c855d1a26f436c4d5b11a941fc2a27c9259"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/native-frames.log",
+      "bytes": 349,
+      "sha256": "679a54ec5304c48e4194dd045d9851fb3abc342bf5f2a1f703902b5eabd29066"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/native-seams.json",
+      "bytes": 1065362,
+      "sha256": "d53ffe4a189efa8587c77308e78bb4513ac8334560a6c8cd4ed80b814f35a8c0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/native-seams.log",
+      "bytes": 812,
+      "sha256": "4098672ce16fcdc38b09fc4eda7f1eb83413a8d962b3d54cb4b2279ac6261cc0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/native-wall-seams.json",
+      "bytes": 160003,
+      "sha256": "5dfc30d0f939bfb12755e0a1bf9c9082fbd14309d8f3d10fcde28ca5f73de6af"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-full-refinement/native-wall-seams.log",
+      "bytes": 628,
+      "sha256": "bcf7de98885d1ceea91a09af2572c9a34d4c6e44d791e4e4e4ff65557433c7b9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-seam-preserving-refinement/blender-chunks-build.json",
+      "bytes": 721,
+      "sha256": "833983a5dfd6ddfb42df7361ec9d225453b95e6c165546ad6c5f1e3df39e4750"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-seam-preserving-refinement/blender.log",
+      "bytes": 1088,
+      "sha256": "9a11f438dafe359c96b5f04f86dd65bee9885bb217cdf806ec4b1688afaea96f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-seam-preserving-refinement/build-density.py",
+      "bytes": 3504,
+      "sha256": "009f1567e6684239548794d8999d9cd95faac5da3eb43e5324d7dc721bdc97b1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-seam-preserving-refinement/compiled-build.json",
+      "bytes": 58250,
+      "sha256": "d3eedfa5eb9d8108f2fa38648408fc247bc10fc2e140947c7e7b0b7c74972952"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-seam-preserving-refinement/compiled-scene.json",
+      "bytes": 862431,
+      "sha256": "b16ab5b469b6de06e22ecfeb22b3ed3f5d1d72eed442b8cdb731e8a9bdca91c2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-seam-preserving-refinement/native-frames.json",
+      "bytes": 195196,
+      "sha256": "3d740d60d21d4477b607a6a72edd41b94646cdbbf03790a3a3a2c70da1cf894e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-seam-preserving-refinement/native-interiors.json",
+      "bytes": 724344,
+      "sha256": "aba55dee7b96a2006d605ca55d281fb9d5268fe698628acca8e7f4a93fbf06ae"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-seam-preserving-refinement/native-interiors.log",
+      "bytes": 510,
+      "sha256": "7e27dd95f67f213796d49f5b55ca2309ae8e9c8b4680a4107e72b653056bceab"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-seam-preserving-refinement/native-seams.json",
+      "bytes": 1065318,
+      "sha256": "e01949a920ee151cfdb7929399fb582daa7576be3350705b90e7a561f3f7fda9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/rejected-seam-preserving-refinement/native-wall-seams.json",
+      "bytes": 159990,
+      "sha256": "f64e8469589fd902f8a8b7d3c7fda55a355a5b0bb4b4a633eee20ea076ecfe38"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/report.py",
+      "bytes": 5106,
+      "sha256": "c85073066fd61d18f71a42449d593773a82eede468e7189e9328489546c33ae6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/run-check.py",
+      "bytes": 1459,
+      "sha256": "1a5580a2e1ab48d5f1d3bf3798f22bd2cd7a04d784fd47b2bdf73b2d34e39ed9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/sample-timing.py",
+      "bytes": 2711,
+      "sha256": "8b190b297d1e64d677ad63beb92c13c839c39ee602eb59f6c585296fdcc002a8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/seams.json",
+      "bytes": 41577,
+      "sha256": "8446edb29591be50ca95262b6740c19c8a153a058947a20860bcf926488663b8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/source-frontmatter-source-receipt.json",
+      "bytes": 374,
+      "sha256": "f8e972fe73f717c8f5c472adf29533629d946c35185b62417ef35c0232d738a7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/source-frontmatter-source.log",
+      "bytes": 2019,
+      "sha256": "cd056c5f204332e0015ead0b56760fc92d5f163efbf173ed45952fa3666c1d7c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/source-receipt.json",
+      "bytes": 373,
+      "sha256": "d6f8f68770f3303c42d9cac27cbb5f8275c28ada009c83b83284dd9341325cd9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/source.log",
+      "bytes": 3299,
+      "sha256": "db03875f52737731e858ef249510578f74d44dd34e910c445c8a38bb53be7340"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/test-selection.json",
+      "bytes": 6333,
+      "sha256": "327a1bbe611d6a48502fe051374b23ec46f25e74b690c2e359432b184f9fa138"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/timing-1788831204588843171.json",
+      "bytes": 49572,
+      "sha256": "800be1a9f6582cc5d00f785416f4c4cab628b9841ed1ac44be6b622279d120e7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/timing-1788833131966093276.json",
+      "bytes": 49564,
+      "sha256": "fac46d11b7cf29b8055f7a2c45e638aed36ef70f228d639932aa06715854d473"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/timing-1788833523009613069.json",
+      "bytes": 49572,
+      "sha256": "2e2306bd75d1435a77d6299dfeec9c6e950315416bff2d32cd7b91af6a7c0d8f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/timing-control.log",
+      "bytes": 1237,
+      "sha256": "9b1dc84813752e0cfc8054223f91bdd16eb631904575d7f69627929a42512968"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/timing-dense.log",
+      "bytes": 1245,
+      "sha256": "aa3aba360e07bc2d51356d9abf1984ff0ba00d0054205b162aac7412f681dcb2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/timing-initial.log",
+      "bytes": 1245,
+      "sha256": "7e93f05caafcb06c7c527054b6ddc8c96b29590edfbc82342d2edbdb7ef93bb2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/timing.json",
+      "bytes": 2855,
+      "sha256": "bc389b6e68ad46a442387a83d1011e3eccc6eb71c6a0658d8dfad0febcecf26a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/triangle-count-xrefs.json",
+      "bytes": 16869,
+      "sha256": "ff2de94eedec32a26fe3e117ee3e565b3896b9b1e204db759b5a1c740f93931b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/verify-chunks.py",
+      "bytes": 2661,
+      "sha256": "86d2ac81eb8f1e880f1210ab974eca84e49468cf8f907c6cd043bc96baed84b2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/verify-models.py",
+      "bytes": 2005,
+      "sha256": "3bd5f00c88e7b87d5f075e5c146cc12aa4230e1419154fd91cd4a0ed8da7d411"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-025/wall-seams.json",
+      "bytes": 9600,
+      "sha256": "7f61d6bca97d23ac5c39df93717be00411a33683447703756f557d269766f0a3"
+    },
+    {
+      "path": "work/level-projects/moonlit-cliffs-chunks-arena/level.blend",
+      "bytes": 234240,
+      "sha256": "f7924fe3426e922368e7ea88e93242a16906aa452d4f17401906f10312566dde"
+    },
+    {
+      "path": "work/level-projects/moonlit-cliffs-density-trial/level.blend",
+      "bytes": 285031,
+      "sha256": "11a39f35b5bee09dc4364b40ccce6a2e0dbae1928e128c24a17b7e546c1efd63"
+    }
+  ]
+}

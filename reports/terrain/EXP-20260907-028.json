@@ -1,0 +1,3886 @@
+{
+  "experiment": "EXP-20260907-028",
+  "status": "representative-measurement-passed-milestone3-open",
+  "baseline_git": "b921aaf",
+  "date": "2026-09-08",
+  "normal_exe_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+  "diagnostic_exe_sha256": "febbcaaef3a96d656ea75c495752a9612376dddc412c3cfec75c7855e9133b23",
+  "measurements": {
+    "normal-control": {
+      "accepted": true,
+      "spawn": {
+        "frames": 250,
+        "whole_ms": {
+          "n": 250,
+          "min": 0.3873,
+          "p50": 0.4259,
+          "p95": 0.4849,
+          "p99": 0.5223,
+          "max": 0.5581,
+          "mean": 0.43140839999999997
+        },
+        "render_ms": {
+          "n": 250,
+          "min": 0.3155,
+          "p50": 0.3458,
+          "p95": 0.3996,
+          "p99": 0.4365,
+          "max": 0.4724,
+          "mean": 0.35092239999999997
+        },
+        "update_ms": {
+          "n": 250,
+          "min": 0.07,
+          "p50": 0.0787,
+          "p95": 0.0937,
+          "p99": 0.0988,
+          "max": 0.1126,
+          "mean": 0.080486
+        },
+        "native_render_ms": {
+          "n": 250,
+          "min": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0,
+          "mean": 0.0
+        },
+        "qpc_pair_gap_us": {
+          "n": 250,
+          "min": 0.1,
+          "p50": 0.1,
+          "p95": 0.2,
+          "p99": 0.2,
+          "max": 1.0,
+          "mean": 0.11680000000000001
+        },
+        "max_candidates_all": {
+          "n": 250,
+          "min": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0,
+          "mean": 0.0
+        },
+        "collector_calls": {
+          "n": 250,
+          "min": 1,
+          "p50": 1,
+          "p95": 1,
+          "p99": 1,
+          "max": 1,
+          "mean": 1.0
+        },
+        "max_candidates_flik": {
+          "n": 250,
+          "min": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0,
+          "mean": 0.0
+        },
+        "flik_collector_calls": {
+          "n": 250,
+          "min": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0,
+          "mean": 0.0
+        },
+        "batches": {
+          "n": 250,
+          "min": 18,
+          "p50": 18,
+          "p95": 18,
+          "p99": 18,
+          "max": 18,
+          "mean": 18.0
+        },
+        "vertices": {
+          "n": 250,
+          "min": 5852,
+          "p50": 5929,
+          "p95": 5982,
+          "p99": 6000,
+          "max": 6026,
+          "mean": 5926.864
+        },
+        "indices": {
+          "n": 250,
+          "min": 7380,
+          "p50": 7485,
+          "p95": 7560,
+          "p99": 7590,
+          "max": 7626,
+          "mean": 7483.824
+        },
+        "max_batch_vertices": {
+          "n": 250,
+          "min": 498,
+          "p50": 498,
+          "p95": 499,
+          "p99": 499,
+          "max": 499,
+          "mean": 498.356
+        },
+        "primary_admitted": {
+          "n": 250,
+          "min": 75,
+          "p50": 75,
+          "p95": 75,
+          "p99": 75,
+          "max": 75,
+          "mean": 75.0
+        },
+        "max_indices_root0": {
+          "n": 250,
+          "min": 744,
+          "p50": 744,
+          "p95": 744,
+          "p99": 744,
+          "max": 744,
+          "mean": 744.0
+        },
+        "max_indices_root1": {
+          "n": 250,
+          "min": 594,
+          "p50": 606,
+          "p95": 612,
+          "p99": 618,
+          "max": 624,
+          "mean": 605.328
+        },
+        "errors_histogram": {
+          "0": 250
+        },
+        "actors_histogram": {
+          "2": 250
+        },
+        "actor_mask_histogram": {
+          "128": 250
+        },
+        "seeds_histogram": {
+          "9": 250
+        },
+        "contact_histogram": {
+          "178": 250
+        },
+        "lives_histogram": {
+          "5": 250
+        },
+        "arena_cursor_histogram": {
+          "10300825": 250
+        },
+        "transition_histogram": {
+          "0": 250
+        },
+        "renderer_flags_histogram": {
+          "2": 250
+        },
+        "chunk_mask_histogram": {
+          "15": 250
+        },
+        "unique_camera_contexts": 1,
+        "over_32ms": 0,
+        "worst_frames": [
+          {
+            "sequence": 1055,
+            "native_render_ms": 0,
+            "whole_ms": 0.5581,
+            "render_ms": 0.4724,
+            "update_ms": 0.0857,
+            "start_ticks": 141332750023,
+            "end_ticks": 141332755604,
+            "level": 1,
+            "input": 0,
+            "position": [
+              192000,
+              -102400,
+              448000
+            ],
+            "heading": 0,
+            "matrix": [
+              4096,
+              0,
+              0,
+              0,
+              4096,
+              0,
+              0,
+              0,
+              4096
+            ],
+            "translation": [
+              192000,
+              -115207,
+              419200
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 18,
+            "vertices": 5886,
+            "indices": 7428,
+            "max_batch_vertices": 498,
+            "primary_admitted": 75,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 600,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10300825,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 1037,
+            "native_render_ms": 0,
+            "whole_ms": 0.5265,
+            "render_ms": 0.441,
+            "update_ms": 0.0855,
+            "start_ticks": 141326990041,
+            "end_ticks": 141326995306,
+            "level": 1,
+            "input": 0,
+            "position": [
+              192000,
+              -102400,
+              448000
+            ],
+            "heading": 0,
+            "matrix": [
+              4096,
+              0,
+              0,
+              0,
+              4096,
+              0,
+              0,
+              0,
+              4096
+            ],
+            "translation": [
+              192000,
+              -115207,
+              419200
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 18,
+            "vertices": 5929,
+            "indices": 7485,
+            "max_batch_vertices": 499,
+            "primary_admitted": 75,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 600,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10300825,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 1103,
+            "native_render_ms": 0,
+            "whole_ms": 0.5223,
+            "render_ms": 0.4365,
+            "update_ms": 0.0858,
+            "start_ticks": 141348110169,
+            "end_ticks": 141348115392,
+            "level": 1,
+            "input": 0,
+            "position": [
+              192000,
+              -102400,
+              448000
+            ],
+            "heading": 0,
+            "matrix": [
+              4096,
+              0,
+              0,
+              0,
+              4096,
+              0,
+              0,
+              0,
+              4096
+            ],
+            "translation": [
+              192000,
+              -115207,
+              419200
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 18,
+            "vertices": 5931,
+            "indices": 7485,
+            "max_batch_vertices": 498,
+            "primary_admitted": 75,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 606,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10300825,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.2
+          },
+          {
+            "sequence": 960,
+            "native_render_ms": 0,
+            "whole_ms": 0.5166,
+            "render_ms": 0.4318,
+            "update_ms": 0.0848,
+            "start_ticks": 141302350039,
+            "end_ticks": 141302355205,
+            "level": 1,
+            "input": 0,
+            "position": [
+              192000,
+              -102400,
+              448000
+            ],
+            "heading": 0,
+            "matrix": [
+              4096,
+              0,
+              0,
+              0,
+              4096,
+              0,
+              0,
+              0,
+              4096
+            ],
+            "translation": [
+              192000,
+              -115207,
+              419200
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 18,
+            "vertices": 5961,
+            "indices": 7533,
+            "max_batch_vertices": 498,
+            "primary_admitted": 75,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 600,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10300825,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.2
+          },
+          {
+            "sequence": 1031,
+            "native_render_ms": 0,
+            "whole_ms": 0.5144,
+            "render_ms": 0.4286,
+            "update_ms": 0.0858,
+            "start_ticks": 141325070066,
+            "end_ticks": 141325075210,
+            "level": 1,
+            "input": 0,
+            "position": [
+              192000,
+              -102400,
+              448000
+            ],
+            "heading": 0,
+            "matrix": [
+              4096,
+              0,
+              0,
+              0,
+              4096,
+              0,
+              0,
+              0,
+              4096
+            ],
+            "translation": [
+              192000,
+              -115207,
+              419200
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 18,
+            "vertices": 5943,
+            "indices": 7503,
+            "max_batch_vertices": 498,
+            "primary_admitted": 75,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 612,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10300825,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.2
+          }
+        ]
+      },
+      "visible_chunk_count_histogram": {
+        "1": 33,
+        "2": 1043,
+        "3": 995,
+        "4": 2490
+      },
+      "all": {
+        "frames": 4561,
+        "whole_ms": {
+          "n": 4561,
+          "min": 0.1969,
+          "p50": 0.366,
+          "p95": 0.4463,
+          "p99": 0.4921,
+          "max": 1.5033,
+          "mean": 0.3602162683622013
+        },
+        "render_ms": {
+          "n": 4561,
+          "min": 0.1262,
+          "p50": 0.2846,
+          "p95": 0.3583,
+          "p99": 0.3978,
+          "max": 0.5653,
+          "mean": 0.2781030914273186
+        },
+        "update_ms": {
+          "n": 4561,
+          "min": 0.0661,
+          "p50": 0.0803,
+          "p95": 0.0967,
+          "p99": 0.1047,
+          "max": 1.0324,
+          "mean": 0.0821131769348827
+        },
+        "native_render_ms": {
+          "n": 4561,
+          "min": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 1,
+          "mean": 0.00021925016443762334
+        },
+        "qpc_pair_gap_us": {
+          "n": 4561,
+          "min": 0.1,
+          "p50": 0.1,
+          "p95": 0.2,
+          "p99": 0.2,
+          "max": 1.8,
+          "mean": 0.11725498794124097
+        },
+        "max_candidates_all": {
+          "n": 4561,
+          "min": 0,
+          "p50": 8,
+          "p95": 9,
+          "p99": 12,
+          "max": 17,
+          "mean": 5.024336768252576
+        },
+        "collector_calls": {
+          "n": 4561,
+          "min": 1,
+          "p50": 2,
+          "p95": 2,
+          "p99": 3,
+          "max": 6,
+          "mean": 1.6421837316377987
+        },
+        "max_candidates_flik": {
+          "n": 4561,
+          "min": 0,
+          "p50": 8,
+          "p95": 9,
+          "p99": 12,
+          "max": 17,
+          "mean": 5.0
+        },
+        "flik_collector_calls": {
+          "n": 4561,
+          "min": 0,
+          "p50": 1,
+          "p95": 1,
+          "p99": 1,
+          "max": 1,
+          "mean": 0.6467879850909888
+        },
+        "batches": {
+          "n": 4561,
+          "min": 6,
+          "p50": 13,
+          "p95": 20,
+          "p99": 20,
+          "max": 20,
+          "mean": 13.043411532558649
+        },
+        "vertices": {
+          "n": 4561,
+          "min": 618,
+          "p50": 3646,
+          "p95": 6111,
+          "p99": 6170,
+          "max": 6345,
+          "mean": 3664.74852006139
+        },
+        "indices": {
+          "n": 4561,
+          "min": 834,
+          "p50": 4680,
+          "p95": 7572,
+          "p99": 7659,
+          "max": 7887,
+          "mean": 4629.966235474677
+        },
+        "max_batch_vertices": {
+          "n": 4561,
+          "min": 333,
+          "p50": 498,
+          "p95": 499,
+          "p99": 499,
+          "max": 499,
+          "mean": 488.0539355404517
+        },
+        "primary_admitted": {
+          "n": 4561,
+          "min": 5,
+          "p50": 69,
+          "p95": 91,
+          "p99": 105,
+          "max": 111,
+          "mean": 57.75027406270555
+        },
+        "max_indices_root0": {
+          "n": 4561,
+          "min": 477,
+          "p50": 744,
+          "p95": 744,
+          "p99": 744,
+          "max": 747,
+          "mean": 706.3030037272528
+        },
+        "max_indices_root1": {
+          "n": 4561,
+          "min": 6,
+          "p50": 273,
+          "p95": 621,
+          "p99": 684,
+          "max": 744,
+          "mean": 282.8498136373602
+        },
+        "errors_histogram": {
+          "0": 4561
+        },
+        "actors_histogram": {
+          "2": 4561
+        },
+        "actor_mask_histogram": {
+          "128": 4561
+        },
+        "seeds_histogram": {
+          "9": 4561
+        },
+        "contact_histogram": {
+          "99": 988,
+          "178": 1803,
+          "179": 968,
+          "180": 802
+        },
+        "lives_histogram": {
+          "5": 4561
+        },
+        "arena_cursor_histogram": {
+          "10300825": 4561
+        },
+        "transition_histogram": {
+          "0": 4561
+        },
+        "renderer_flags_histogram": {
+          "2": 4561
+        },
+        "chunk_mask_histogram": {
+          "3": 48,
+          "4": 8,
+          "6": 420,
+          "7": 510,
+          "8": 25,
+          "9": 540,
+          "10": 6,
+          "11": 283,
+          "12": 29,
+          "13": 134,
+          "14": 68,
+          "15": 2490
+        },
+        "unique_camera_contexts": 3541,
+        "over_32ms": 0,
+        "worst_frames": [
+          {
+            "sequence": 3336,
+            "native_render_ms": 0,
+            "whole_ms": 1.5033,
+            "render_ms": 0.4709,
+            "update_ms": 1.0324,
+            "start_ticks": 142062690577,
+            "end_ticks": 142062705610,
+            "level": 1,
+            "input": 64,
+            "position": [
+              191145,
+              -102403,
+              443997
+            ],
+            "heading": 1737,
+            "matrix": [
+              4059,
+              0,
+              545,
+              9,
+              4095,
+              -68,
+              -544,
+              69,
+              4058
+            ],
+            "translation": [
+              192729,
+              -118241,
+              417181
+            ],
+            "max_candidates_all": 8,
+            "collector_calls": 2,
+            "max_candidates_flik": 8,
+            "flik_collector_calls": 1,
+            "batches": 19,
+            "vertices": 6180,
+            "indices": 7740,
+            "max_batch_vertices": 498,
+            "primary_admitted": 80,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 558,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10300825,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 4440,
+            "native_render_ms": 1,
+            "whole_ms": 1.2865,
+            "render_ms": 0.3351,
+            "update_ms": 0.9514,
+            "start_ticks": 142416010279,
+            "end_ticks": 142416023144,
+            "level": 1,
+            "input": 32,
+            "position": [
+              208117,
+              -99480,
+              718588
+            ],
+            "heading": 2350,
+            "matrix": [
+              -4021,
+              0,
+              780,
+              7,
+              4095,
+              36,
+              -779,
+              37,
+              -4020
+            ],
+            "translation": [
+              212162,
+              -115492,
+              754165
+            ],
+            "max_candidates_all": 8,
+            "collector_calls": 2,
+            "max_candidates_flik": 8,
+            "flik_collector_calls": 1,
+            "batches": 16,
+            "vertices": 4705,
+            "indices": 5763,
+            "max_batch_vertices": 498,
+            "primary_admitted": 81,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 378,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 99,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10300825,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 5215,
+            "native_render_ms": 0,
+            "whole_ms": 0.7062,
+            "render_ms": 0.5653,
+            "update_ms": 0.1409,
+            "start_ticks": 142664010087,
+            "end_ticks": 142664017149,
+            "level": 1,
+            "input": 0,
+            "position": [
+              186141,
+              -102403,
+              452831
+            ],
+            "heading": 3863,
+            "matrix": [
+              3791,
+              0,
+              1550,
+              9,
+              4096,
+              -23,
+              -1550,
+              25,
+              3791
+            ],
+            "translation": [
+              196551,
+              -118027,
+              426205
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 18,
+            "vertices": 5886,
+            "indices": 7224,
+            "max_batch_vertices": 499,
+            "primary_admitted": 74,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 501,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10300825,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.2
+          },
+          {
+            "sequence": 2925,
+            "native_render_ms": 0,
+            "whole_ms": 0.691,
+            "render_ms": 0.2885,
+            "update_ms": 0.4025,
+            "start_ticks": 141931170180,
+            "end_ticks": 141931177090,
+            "level": 1,
+            "input": 16,
+            "position": [
+              209081,
+              -102466,
+              445450
+            ],
+            "heading": 2769,
+            "matrix": [
+              -1897,
+              0,
+              3630,
+              27,
+              4096,
+              14,
+              -3630,
+              31,
+              -1897
+            ],
+            "translation": [
+              241588,
+              -118200,
+              461715
+            ],
+            "max_candidates_all": 8,
+            "collector_calls": 2,
+            "max_candidates_flik": 8,
+            "flik_collector_calls": 1,
+            "batches": 12,
+            "vertices": 2682,
+            "indices": 3438,
+            "max_batch_vertices": 498,
+            "primary_admitted": 89,
+            "chunk_mask": 7,
+            "max_indices_root0": 744,
+            "max_indices_root1": 66,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 0,
+            "lives": 5,
+            "arena_cursor": 10300825,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 4271,
+            "native_render_ms": 0,
+            "whole_ms": 0.6585,
+            "render_ms": 0.503,
+            "update_ms": 0.1555,
+            "start_ticks": 142361900137,
+            "end_ticks": 142361906722,
+            "level": 1,
+            "input": 32,
+            "position": [
+              284003,
+              -113574,
+              838711
+            ],
+            "heading": 366,
+            "matrix": [
+              3348,
+              0,
+              2358,
+              155,
+              4087,
+              -220,
+              -2352,
+              270,
+              3340
+            ],
+            "translation": [
+              304775,
+              -135268,
+              807705
+            ],
+            "max_candidates_all": 8,
+            "collector_calls": 2,
+            "max_candidates_flik": 8,
+            "flik_collector_calls": 1,
+            "batches": 7,
+            "vertices": 1338,
+            "indices": 1710,
+            "max_batch_vertices": 496,
+            "primary_admitted": 15,
+            "chunk_mask": 9,
+            "max_indices_root0": 630,
+            "max_indices_root1": 18,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 180,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10300825,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.2
+          }
+        ]
+      },
+      "loops": [
+        {
+          "repeat": 1,
+          "seconds_including_settles": 59.584888127999875,
+          "min_exit_distance_stored": 1077.139386889674
+        },
+        {
+          "repeat": 2,
+          "seconds_including_settles": 62.4091794750002,
+          "min_exit_distance_stored": 1429.3078833444615
+        }
+      ],
+      "reader_rows": 4561,
+      "frequency": 10000000,
+      "missed": 0,
+      "retries": 0
+    },
+    "normal-detail": {
+      "accepted": true,
+      "spawn": {
+        "frames": 250,
+        "whole_ms": {
+          "n": 250,
+          "min": 0.5444,
+          "p50": 0.586,
+          "p95": 0.6426,
+          "p99": 0.6932,
+          "max": 0.7129,
+          "mean": 0.591982
+        },
+        "render_ms": {
+          "n": 250,
+          "min": 0.4709,
+          "p50": 0.5064,
+          "p95": 0.5474,
+          "p99": 0.6077,
+          "max": 0.6256,
+          "mean": 0.5105536
+        },
+        "update_ms": {
+          "n": 250,
+          "min": 0.0702,
+          "p50": 0.0805,
+          "p95": 0.0931,
+          "p99": 0.0993,
+          "max": 0.1021,
+          "mean": 0.0814284
+        },
+        "native_render_ms": {
+          "n": 250,
+          "min": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0,
+          "mean": 0.0
+        },
+        "qpc_pair_gap_us": {
+          "n": 250,
+          "min": 0.1,
+          "p50": 0.1,
+          "p95": 0.2,
+          "p99": 0.2,
+          "max": 0.2,
+          "mean": 0.114
+        },
+        "max_candidates_all": {
+          "n": 250,
+          "min": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0,
+          "mean": 0.0
+        },
+        "collector_calls": {
+          "n": 250,
+          "min": 1,
+          "p50": 1,
+          "p95": 1,
+          "p99": 1,
+          "max": 1,
+          "mean": 1.0
+        },
+        "max_candidates_flik": {
+          "n": 250,
+          "min": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0,
+          "mean": 0.0
+        },
+        "flik_collector_calls": {
+          "n": 250,
+          "min": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 0,
+          "mean": 0.0
+        },
+        "batches": {
+          "n": 250,
+          "min": 27,
+          "p50": 27,
+          "p95": 27,
+          "p99": 27,
+          "max": 27,
+          "mean": 27.0
+        },
+        "vertices": {
+          "n": 250,
+          "min": 9881,
+          "p50": 9970,
+          "p95": 10021,
+          "p99": 10059,
+          "max": 10064,
+          "mean": 9968.732
+        },
+        "indices": {
+          "n": 250,
+          "min": 11403,
+          "p50": 11529,
+          "p95": 11607,
+          "p99": 11652,
+          "max": 11658,
+          "mean": 11528.1
+        },
+        "max_batch_vertices": {
+          "n": 250,
+          "min": 498,
+          "p50": 499,
+          "p95": 499,
+          "p99": 499,
+          "max": 499,
+          "mean": 498.54
+        },
+        "primary_admitted": {
+          "n": 250,
+          "min": 75,
+          "p50": 75,
+          "p95": 75,
+          "p99": 75,
+          "max": 75,
+          "mean": 75.0
+        },
+        "max_indices_root0": {
+          "n": 250,
+          "min": 744,
+          "p50": 744,
+          "p95": 744,
+          "p99": 744,
+          "max": 744,
+          "mean": 744.0
+        },
+        "max_indices_root1": {
+          "n": 250,
+          "min": 609,
+          "p50": 615,
+          "p95": 621,
+          "p99": 621,
+          "max": 621,
+          "mean": 616.584
+        },
+        "errors_histogram": {
+          "0": 250
+        },
+        "actors_histogram": {
+          "2": 250
+        },
+        "actor_mask_histogram": {
+          "128": 250
+        },
+        "seeds_histogram": {
+          "9": 250
+        },
+        "contact_histogram": {
+          "178": 250
+        },
+        "lives_histogram": {
+          "5": 250
+        },
+        "arena_cursor_histogram": {
+          "10387477": 250
+        },
+        "transition_histogram": {
+          "0": 250
+        },
+        "renderer_flags_histogram": {
+          "2": 250
+        },
+        "chunk_mask_histogram": {
+          "15": 250
+        },
+        "unique_camera_contexts": 1,
+        "over_32ms": 0,
+        "worst_frames": [
+          {
+            "sequence": 1647,
+            "native_render_ms": 0,
+            "whole_ms": 0.7129,
+            "render_ms": 0.6256,
+            "update_ms": 0.0873,
+            "start_ticks": 144302700038,
+            "end_ticks": 144302707167,
+            "level": 1,
+            "input": 0,
+            "position": [
+              192000,
+              -102400,
+              448000
+            ],
+            "heading": 0,
+            "matrix": [
+              4096,
+              0,
+              0,
+              0,
+              4096,
+              0,
+              0,
+              0,
+              4096
+            ],
+            "translation": [
+              192000,
+              -115207,
+              419200
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 27,
+            "vertices": 9973,
+            "indices": 11535,
+            "max_batch_vertices": 498,
+            "primary_admitted": 75,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 618,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10387477,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.2
+          },
+          {
+            "sequence": 1632,
+            "native_render_ms": 0,
+            "whole_ms": 0.6933,
+            "render_ms": 0.6054,
+            "update_ms": 0.0879,
+            "start_ticks": 144297900039,
+            "end_ticks": 144297906972,
+            "level": 1,
+            "input": 0,
+            "position": [
+              192000,
+              -102400,
+              448000
+            ],
+            "heading": 0,
+            "matrix": [
+              4096,
+              0,
+              0,
+              0,
+              4096,
+              0,
+              0,
+              0,
+              4096
+            ],
+            "translation": [
+              192000,
+              -115207,
+              419200
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 27,
+            "vertices": 9881,
+            "indices": 11409,
+            "max_batch_vertices": 498,
+            "primary_admitted": 75,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 615,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10387477,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 1772,
+            "native_render_ms": 0,
+            "whole_ms": 0.6932,
+            "render_ms": 0.6121,
+            "update_ms": 0.0811,
+            "start_ticks": 144342700022,
+            "end_ticks": 144342706954,
+            "level": 1,
+            "input": 0,
+            "position": [
+              192000,
+              -102400,
+              448000
+            ],
+            "heading": 0,
+            "matrix": [
+              4096,
+              0,
+              0,
+              0,
+              4096,
+              0,
+              0,
+              0,
+              4096
+            ],
+            "translation": [
+              192000,
+              -115207,
+              419200
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 27,
+            "vertices": 9973,
+            "indices": 11535,
+            "max_batch_vertices": 499,
+            "primary_admitted": 75,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 618,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10387477,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 1773,
+            "native_render_ms": 0,
+            "whole_ms": 0.6928,
+            "render_ms": 0.6071,
+            "update_ms": 0.0857,
+            "start_ticks": 144343020038,
+            "end_ticks": 144343026966,
+            "level": 1,
+            "input": 0,
+            "position": [
+              192000,
+              -102400,
+              448000
+            ],
+            "heading": 0,
+            "matrix": [
+              4096,
+              0,
+              0,
+              0,
+              4096,
+              0,
+              0,
+              0,
+              4096
+            ],
+            "translation": [
+              192000,
+              -115207,
+              419200
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 27,
+            "vertices": 9996,
+            "indices": 11562,
+            "max_batch_vertices": 499,
+            "primary_admitted": 75,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 615,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10387477,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 1650,
+            "native_render_ms": 0,
+            "whole_ms": 0.6904,
+            "render_ms": 0.6077,
+            "update_ms": 0.0827,
+            "start_ticks": 144303660039,
+            "end_ticks": 144303666943,
+            "level": 1,
+            "input": 0,
+            "position": [
+              192000,
+              -102400,
+              448000
+            ],
+            "heading": 0,
+            "matrix": [
+              4096,
+              0,
+              0,
+              0,
+              4096,
+              0,
+              0,
+              0,
+              4096
+            ],
+            "translation": [
+              192000,
+              -115207,
+              419200
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 27,
+            "vertices": 9997,
+            "indices": 11571,
+            "max_batch_vertices": 498,
+            "primary_admitted": 75,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 621,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10387477,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          }
+        ]
+      },
+      "visible_chunk_count_histogram": {
+        "1": 16,
+        "2": 875,
+        "3": 1188,
+        "4": 2338
+      },
+      "all": {
+        "frames": 4417,
+        "whole_ms": {
+          "n": 4417,
+          "min": 0.2038,
+          "p50": 0.4936,
+          "p95": 0.6116,
+          "p99": 0.6591,
+          "max": 1.6506,
+          "mean": 0.48347188136744396
+        },
+        "render_ms": {
+          "n": 4417,
+          "min": 0.1324,
+          "p50": 0.4108,
+          "p95": 0.524,
+          "p99": 0.5724,
+          "max": 1.578,
+          "mean": 0.4005528412949966
+        },
+        "update_ms": {
+          "n": 4417,
+          "min": 0.0671,
+          "p50": 0.0811,
+          "p95": 0.0979,
+          "p99": 0.1106,
+          "max": 0.5384,
+          "mean": 0.08291904007244737
+        },
+        "native_render_ms": {
+          "n": 4417,
+          "min": 0,
+          "p50": 0,
+          "p95": 0,
+          "p99": 0,
+          "max": 1,
+          "mean": 0.0004527960153950645
+        },
+        "qpc_pair_gap_us": {
+          "n": 4417,
+          "min": 0.1,
+          "p50": 0.1,
+          "p95": 0.2,
+          "p99": 0.2,
+          "max": 2.2,
+          "mean": 0.11688929137423593
+        },
+        "max_candidates_all": {
+          "n": 4417,
+          "min": 0,
+          "p50": 8,
+          "p95": 10,
+          "p99": 12,
+          "max": 18,
+          "mean": 5.281186325560335
+        },
+        "collector_calls": {
+          "n": 4417,
+          "min": 1,
+          "p50": 2,
+          "p95": 2,
+          "p99": 3,
+          "max": 6,
+          "mean": 1.6481774960380349
+        },
+        "max_candidates_flik": {
+          "n": 4417,
+          "min": 0,
+          "p50": 8,
+          "p95": 10,
+          "p99": 12,
+          "max": 16,
+          "mean": 4.938419741906271
+        },
+        "flik_collector_calls": {
+          "n": 4417,
+          "min": 0,
+          "p50": 1,
+          "p95": 1,
+          "p99": 1,
+          "max": 1,
+          "mean": 0.6391215757301336
+        },
+        "batches": {
+          "n": 4417,
+          "min": 5,
+          "p50": 16,
+          "p95": 28,
+          "p99": 28,
+          "max": 29,
+          "mean": 17.379443060901064
+        },
+        "vertices": {
+          "n": 4417,
+          "min": 757,
+          "p50": 4879,
+          "p95": 10549,
+          "p99": 10603,
+          "max": 11012,
+          "mean": 5783.941362916006
+        },
+        "indices": {
+          "n": 4417,
+          "min": 939,
+          "p50": 5766,
+          "p95": 11988,
+          "p99": 12066,
+          "max": 12618,
+          "mean": 6741.425175458456
+        },
+        "max_batch_vertices": {
+          "n": 4417,
+          "min": 345,
+          "p50": 498,
+          "p95": 499,
+          "p99": 499,
+          "max": 499,
+          "mean": 496.35952003622367
+        },
+        "primary_admitted": {
+          "n": 4417,
+          "min": 5,
+          "p50": 65,
+          "p95": 90,
+          "p99": 103,
+          "max": 111,
+          "mean": 57.33122028526149
+        },
+        "max_indices_root0": {
+          "n": 4417,
+          "min": 471,
+          "p50": 744,
+          "p95": 744,
+          "p99": 744,
+          "max": 747,
+          "mean": 711.6982114557392
+        },
+        "max_indices_root1": {
+          "n": 4417,
+          "min": 6,
+          "p50": 291,
+          "p95": 621,
+          "p99": 714,
+          "max": 741,
+          "mean": 301.43513697079464
+        },
+        "errors_histogram": {
+          "0": 4417
+        },
+        "actors_histogram": {
+          "2": 4417
+        },
+        "actor_mask_histogram": {
+          "128": 4417
+        },
+        "seeds_histogram": {
+          "9": 4417
+        },
+        "contact_histogram": {
+          "99": 1066,
+          "178": 1700,
+          "179": 873,
+          "180": 778
+        },
+        "lives_histogram": {
+          "5": 4417
+        },
+        "arena_cursor_histogram": {
+          "10387477": 4417
+        },
+        "transition_histogram": {
+          "0": 4417
+        },
+        "renderer_flags_histogram": {
+          "2": 4417
+        },
+        "chunk_mask_histogram": {
+          "3": 50,
+          "6": 389,
+          "7": 417,
+          "8": 16,
+          "9": 417,
+          "11": 338,
+          "12": 19,
+          "13": 184,
+          "14": 249,
+          "15": 2338
+        },
+        "unique_camera_contexts": 3445,
+        "over_32ms": 0,
+        "worst_frames": [
+          {
+            "sequence": 4636,
+            "native_render_ms": 1,
+            "whole_ms": 1.6506,
+            "render_ms": 1.578,
+            "update_ms": 0.0726,
+            "start_ticks": 145259180174,
+            "end_ticks": 145259196680,
+            "level": 1,
+            "input": 32,
+            "position": [
+              308893,
+              -122465,
+              797446
+            ],
+            "heading": 736,
+            "matrix": [
+              3926,
+              0,
+              1165,
+              199,
+              4035,
+              -670,
+              -1147,
+              700,
+              3867
+            ],
+            "translation": [
+              313776,
+              -148104,
+              767854
+            ],
+            "max_candidates_all": 8,
+            "collector_calls": 2,
+            "max_candidates_flik": 8,
+            "flik_collector_calls": 1,
+            "batches": 7,
+            "vertices": 1694,
+            "indices": 2028,
+            "max_batch_vertices": 497,
+            "primary_admitted": 17,
+            "chunk_mask": 9,
+            "max_indices_root0": 630,
+            "max_indices_root1": 12,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 180,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10387477,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 5163,
+            "native_render_ms": 1,
+            "whole_ms": 0.984,
+            "render_ms": 0.4456,
+            "update_ms": 0.5384,
+            "start_ticks": 145427830174,
+            "end_ticks": 145427840014,
+            "level": 1,
+            "input": 32,
+            "position": [
+              144545,
+              -103479,
+              710608
+            ],
+            "heading": 2376,
+            "matrix": [
+              1864,
+              0,
+              -3647,
+              -284,
+              4083,
+              -145,
+              3635,
+              320,
+              1858
+            ],
+            "translation": [
+              123738,
+              -125689,
+              698272
+            ],
+            "max_candidates_all": 12,
+            "collector_calls": 2,
+            "max_candidates_flik": 8,
+            "flik_collector_calls": 1,
+            "batches": 16,
+            "vertices": 4977,
+            "indices": 5967,
+            "max_batch_vertices": 499,
+            "primary_admitted": 48,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 42,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 99,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10387477,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 5774,
+            "native_render_ms": 0,
+            "whole_ms": 0.809,
+            "render_ms": 0.6976,
+            "update_ms": 0.1114,
+            "start_ticks": 145623350041,
+            "end_ticks": 145623358131,
+            "level": 1,
+            "input": 0,
+            "position": [
+              185826,
+              -102402,
+              454650
+            ],
+            "heading": 3913,
+            "matrix": [
+              3873,
+              0,
+              1332,
+              8,
+              4096,
+              -23,
+              -1332,
+              25,
+              3873
+            ],
+            "translation": [
+              194768,
+              -118033,
+              427442
+            ],
+            "max_candidates_all": 0,
+            "collector_calls": 1,
+            "max_candidates_flik": 0,
+            "flik_collector_calls": 0,
+            "batches": 28,
+            "vertices": 10521,
+            "indices": 11925,
+            "max_batch_vertices": 498,
+            "primary_admitted": 76,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 549,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 178,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10387477,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.2
+          },
+          {
+            "sequence": 2772,
+            "native_render_ms": 0,
+            "whole_ms": 0.764,
+            "render_ms": 0.6706,
+            "update_ms": 0.0934,
+            "start_ticks": 144662700665,
+            "end_ticks": 144662708305,
+            "level": 1,
+            "input": 16,
+            "position": [
+              263058,
+              -109173,
+              807994
+            ],
+            "heading": 2659,
+            "matrix": [
+              -2280,
+              0,
+              3402,
+              83,
+              4094,
+              55,
+              -3400,
+              100,
+              -2278
+            ],
+            "translation": [
+              291261,
+              -127829,
+              829703
+            ],
+            "max_candidates_all": 10,
+            "collector_calls": 2,
+            "max_candidates_flik": 10,
+            "flik_collector_calls": 1,
+            "batches": 26,
+            "vertices": 9190,
+            "indices": 10278,
+            "max_batch_vertices": 498,
+            "primary_admitted": 82,
+            "chunk_mask": 15,
+            "max_indices_root0": 744,
+            "max_indices_root1": 618,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 99,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10387477,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.1
+          },
+          {
+            "sequence": 3019,
+            "native_render_ms": 0,
+            "whole_ms": 0.7342,
+            "render_ms": 0.5754,
+            "update_ms": 0.1588,
+            "start_ticks": 144741740594,
+            "end_ticks": 144741747936,
+            "level": 1,
+            "input": 0,
+            "position": [
+              144717,
+              -103326,
+              705071
+            ],
+            "heading": 713,
+            "matrix": [
+              3812,
+              0,
+              1497,
+              0,
+              4096,
+              0,
+              -1497,
+              0,
+              3812
+            ],
+            "translation": [
+              151235,
+              -116192,
+              674134
+            ],
+            "max_candidates_all": 4,
+            "collector_calls": 2,
+            "max_candidates_flik": 4,
+            "flik_collector_calls": 1,
+            "batches": 11,
+            "vertices": 3707,
+            "indices": 4533,
+            "max_batch_vertices": 498,
+            "primary_admitted": 37,
+            "chunk_mask": 11,
+            "max_indices_root0": 744,
+            "max_indices_root1": 54,
+            "errors": 0,
+            "actors": 2,
+            "actor_mask": 128,
+            "seeds": 9,
+            "contact": 99,
+            "contact_flags": 257,
+            "lives": 5,
+            "arena_cursor": 10387477,
+            "transition": 0,
+            "damage": 4,
+            "renderer_flags": 2,
+            "qpc_pair_gap_us": 0.2
+          }
+        ]
+      },
+      "loops": [
+        {
+          "repeat": 1,
+          "seconds_including_settles": 58.16403616700154,
+          "min_exit_distance_stored": 1426.2486038829713
+        },
+        {
+          "repeat": 2,
+          "seconds_including_settles": 59.228552228998524,
+          "min_exit_distance_stored": 1447.3523031567418
+        }
+      ],
+      "reader_rows": 4417,
+      "frequency": 10000000,
+      "missed": 0,
+      "retries": 0
+    },
+    "spawn_exact_context_match": [
+      192000,
+      -102400,
+      448000,
+      4096,
+      0,
+      0,
+      0,
+      4096,
+      0,
+      0,
+      0,
+      4096,
+      192000,
+      -115207,
+      419200
+    ],
+    "active_plant": {
+      "frames": 2342,
+      "whole_ms": {
+        "n": 2342,
+        "min": 0.423,
+        "p50": 0.5365,
+        "p95": 0.5951,
+        "p99": 0.6498,
+        "max": 1.3971,
+        "mean": 0.536659777967549
+      },
+      "render_ms": {
+        "n": 2342,
+        "min": 0.3508,
+        "p50": 0.4571,
+        "p95": 0.5047,
+        "p99": 0.5568,
+        "max": 0.6845,
+        "mean": 0.4539228437233134
+      },
+      "update_ms": {
+        "n": 2342,
+        "min": 0.0673,
+        "p50": 0.0803,
+        "p95": 0.0976,
+        "p99": 0.1092,
+        "max": 0.8738,
+        "mean": 0.0827369342442357
+      },
+      "native_render_ms": {
+        "n": 2342,
+        "min": 0,
+        "p50": 0,
+        "p95": 0,
+        "p99": 0,
+        "max": 1,
+        "mean": 0.0008539709649871904
+      },
+      "qpc_pair_gap_us": {
+        "n": 2342,
+        "min": 0.1,
+        "p50": 0.1,
+        "p95": 0.2,
+        "p99": 0.2,
+        "max": 56.4,
+        "mean": 0.14035012809564473
+      },
+      "max_candidates_all": {
+        "n": 2342,
+        "min": 0,
+        "p50": 0,
+        "p95": 18,
+        "p99": 23,
+        "max": 26,
+        "mean": 1.9440649017933391
+      },
+      "collector_calls": {
+        "n": 2342,
+        "min": 1,
+        "p50": 1,
+        "p95": 2,
+        "p99": 2,
+        "max": 5,
+        "mean": 1.3531169940222032
+      },
+      "max_candidates_flik": {
+        "n": 2342,
+        "min": 0,
+        "p50": 0,
+        "p95": 17,
+        "p99": 23,
+        "max": 25,
+        "mean": 1.6929974380871051
+      },
+      "flik_collector_calls": {
+        "n": 2342,
+        "min": 0,
+        "p50": 0,
+        "p95": 1,
+        "p99": 1,
+        "max": 1,
+        "mean": 0.3339026473099915
+      },
+      "batches": {
+        "n": 2342,
+        "min": 13,
+        "p50": 22,
+        "p95": 25,
+        "p99": 26,
+        "max": 27,
+        "mean": 21.450469684030743
+      },
+      "vertices": {
+        "n": 2342,
+        "min": 4019,
+        "p50": 7228,
+        "p95": 8637,
+        "p99": 9223,
+        "max": 9485,
+        "mean": 7189.242954739539
+      },
+      "indices": {
+        "n": 2342,
+        "min": 4965,
+        "p50": 8760,
+        "p95": 10119,
+        "p99": 10710,
+        "max": 11010,
+        "mean": 8501.734842015372
+      },
+      "max_batch_vertices": {
+        "n": 2342,
+        "min": 498,
+        "p50": 498,
+        "p95": 499,
+        "p99": 499,
+        "max": 499,
+        "mean": 498.4244235695986
+      },
+      "primary_admitted": {
+        "n": 2342,
+        "min": 43,
+        "p50": 79,
+        "p95": 82,
+        "p99": 90,
+        "max": 90,
+        "mean": 79.11827497865073
+      },
+      "max_indices_root0": {
+        "n": 2342,
+        "min": 744,
+        "p50": 744,
+        "p95": 744,
+        "p99": 744,
+        "max": 747,
+        "mean": 744.0153714773697
+      },
+      "max_indices_root1": {
+        "n": 2342,
+        "min": 30,
+        "p50": 546,
+        "p95": 600,
+        "p99": 642,
+        "max": 690,
+        "mean": 425.11614005123823
+      },
+      "errors_histogram": {
+        "0": 2342
+      },
+      "actors_histogram": {
+        "2": 73,
+        "3": 2269
+      },
+      "actor_mask_histogram": {
+        "128": 73,
+        "160": 2269
+      },
+      "seeds_histogram": {
+        "9": 2342
+      },
+      "contact_histogram": {
+        "178": 1620,
+        "224": 722
+      },
+      "lives_histogram": {
+        "5": 2342
+      },
+      "arena_cursor_histogram": {
+        "10387477": 2342
+      },
+      "transition_histogram": {
+        "0": 2342
+      },
+      "renderer_flags_histogram": {
+        "2": 2342
+      },
+      "chunk_mask_histogram": {
+        "7": 882,
+        "15": 1460
+      },
+      "unique_camera_contexts": 912,
+      "over_32ms": 0,
+      "worst_frames": [
+        {
+          "sequence": 9065,
+          "native_render_ms": 1,
+          "whole_ms": 1.3971,
+          "render_ms": 0.5233,
+          "update_ms": 0.8738,
+          "start_ticks": 146676470254,
+          "end_ticks": 146676484225,
+          "level": 1,
+          "input": 0,
+          "position": [
+            192982,
+            -128509,
+            568830
+          ],
+          "heading": 3739,
+          "matrix": [
+            3460,
+            0,
+            2191,
+            -227,
+            4073,
+            359,
+            -2178,
+            -426,
+            3440
+          ],
+          "translation": [
+            208387,
+            -131535,
+            543702
+          ],
+          "max_candidates_all": 0,
+          "collector_calls": 2,
+          "max_candidates_flik": 0,
+          "flik_collector_calls": 1,
+          "batches": 25,
+          "vertices": 8422,
+          "indices": 9918,
+          "max_batch_vertices": 498,
+          "primary_admitted": 78,
+          "chunk_mask": 15,
+          "max_indices_root0": 744,
+          "max_indices_root1": 570,
+          "errors": 0,
+          "actors": 3,
+          "actor_mask": 160,
+          "seeds": 9,
+          "contact": 224,
+          "contact_flags": 0,
+          "lives": 5,
+          "arena_cursor": 10387477,
+          "transition": 0,
+          "damage": 4,
+          "renderer_flags": 2,
+          "qpc_pair_gap_us": 0.1
+        },
+        {
+          "sequence": 8674,
+          "native_render_ms": 0,
+          "whole_ms": 0.7724,
+          "render_ms": 0.6845,
+          "update_ms": 0.0879,
+          "start_ticks": 146551350033,
+          "end_ticks": 146551357757,
+          "level": 1,
+          "input": 0,
+          "position": [
+            200841,
+            -101485,
+            555612
+          ],
+          "heading": 2451,
+          "matrix": [
+            -3259,
+            0,
+            2480,
+            3,
+            4096,
+            4,
+            -2480,
+            6,
+            -3259
+          ],
+          "translation": [
+            217889,
+            -115706,
+            578740
+          ],
+          "max_candidates_all": 0,
+          "collector_calls": 1,
+          "max_candidates_flik": 0,
+          "flik_collector_calls": 0,
+          "batches": 21,
+          "vertices": 6635,
+          "indices": 7671,
+          "max_batch_vertices": 499,
+          "primary_admitted": 90,
+          "chunk_mask": 15,
+          "max_indices_root0": 744,
+          "max_indices_root1": 198,
+          "errors": 0,
+          "actors": 2,
+          "actor_mask": 128,
+          "seeds": 9,
+          "contact": 178,
+          "contact_flags": 257,
+          "lives": 5,
+          "arena_cursor": 10387477,
+          "transition": 0,
+          "damage": 4,
+          "renderer_flags": 2,
+          "qpc_pair_gap_us": 0.1
+        },
+        {
+          "sequence": 8772,
+          "native_render_ms": 0,
+          "whole_ms": 0.7655,
+          "render_ms": 0.5174,
+          "update_ms": 0.2481,
+          "start_ticks": 146582710195,
+          "end_ticks": 146582717850,
+          "level": 1,
+          "input": 0,
+          "position": [
+            197190,
+            -132643,
+            564522
+          ],
+          "heading": 3739,
+          "matrix": [
+            -1555,
+            0,
+            3789,
+            -278,
+            4085,
+            -114,
+            -3778,
+            -301,
+            -1550
+          ],
+          "translation": [
+            224534,
+            -137284,
+            571586
+          ],
+          "max_candidates_all": 0,
+          "collector_calls": 2,
+          "max_candidates_flik": 0,
+          "flik_collector_calls": 1,
+          "batches": 21,
+          "vertices": 7959,
+          "indices": 9249,
+          "max_batch_vertices": 499,
+          "primary_admitted": 69,
+          "chunk_mask": 7,
+          "max_indices_root0": 744,
+          "max_indices_root1": 273,
+          "errors": 0,
+          "actors": 3,
+          "actor_mask": 160,
+          "seeds": 9,
+          "contact": 224,
+          "contact_flags": 0,
+          "lives": 5,
+          "arena_cursor": 10387477,
+          "transition": 0,
+          "damage": 4,
+          "renderer_flags": 2,
+          "qpc_pair_gap_us": 0.1
+        },
+        {
+          "sequence": 10108,
+          "native_render_ms": 0,
+          "whole_ms": 0.7545,
+          "render_ms": 0.6793,
+          "update_ms": 0.0752,
+          "start_ticks": 147010230133,
+          "end_ticks": 147010237678,
+          "level": 1,
+          "input": 0,
+          "position": [
+            198053,
+            -132245,
+            566128
+          ],
+          "heading": 3805,
+          "matrix": [
+            3532,
+            0,
+            2073,
+            -316,
+            4048,
+            538,
+            -2048,
+            -625,
+            3490
+          ],
+          "translation": [
+            213103,
+            -136064,
+            537877
+          ],
+          "max_candidates_all": 0,
+          "collector_calls": 2,
+          "max_candidates_flik": 0,
+          "flik_collector_calls": 1,
+          "batches": 25,
+          "vertices": 9016,
+          "indices": 10518,
+          "max_batch_vertices": 498,
+          "primary_admitted": 78,
+          "chunk_mask": 15,
+          "max_indices_root0": 744,
+          "max_indices_root1": 615,
+          "errors": 0,
+          "actors": 3,
+          "actor_mask": 160,
+          "seeds": 9,
+          "contact": 224,
+          "contact_flags": 0,
+          "lives": 5,
+          "arena_cursor": 10387477,
+          "transition": 0,
+          "damage": 4,
+          "renderer_flags": 2,
+          "qpc_pair_gap_us": 0.2
+        },
+        {
+          "sequence": 10960,
+          "native_render_ms": 0,
+          "whole_ms": 0.7256,
+          "render_ms": 0.6026,
+          "update_ms": 0.123,
+          "start_ticks": 147282870124,
+          "end_ticks": 147282877380,
+          "level": 1,
+          "input": 0,
+          "position": [
+            199666,
+            -102271,
+            573924
+          ],
+          "heading": 1756,
+          "matrix": [
+            -3667,
+            0,
+            -1824,
+            0,
+            4096,
+            0,
+            1824,
+            0,
+            -3667
+          ],
+          "translation": [
+            187045,
+            -115213,
+            600165
+          ],
+          "max_candidates_all": 0,
+          "collector_calls": 1,
+          "max_candidates_flik": 0,
+          "flik_collector_calls": 0,
+          "batches": 19,
+          "vertices": 6478,
+          "indices": 7506,
+          "max_batch_vertices": 499,
+          "primary_admitted": 81,
+          "chunk_mask": 7,
+          "max_indices_root0": 744,
+          "max_indices_root1": 234,
+          "errors": 0,
+          "actors": 3,
+          "actor_mask": 160,
+          "seeds": 9,
+          "contact": 178,
+          "contact_flags": 257,
+          "lives": 5,
+          "arena_cursor": 10387477,
+          "transition": 0,
+          "damage": 4,
+          "renderer_flags": 2,
+          "qpc_pair_gap_us": 0.1
+        }
+      ]
+    },
+    "active_jumps": [
+      {
+        "file": "/home/dev/ABLPC/work/experiments/EXP-20260907-028/normal-detail/mushroom-jump-1.json",
+        "samples": 296,
+        "contacts": [
+          178,
+          224
+        ],
+        "upward_3328_onsets_observed": 9,
+        "seed_countdown_values": [
+          0
+        ],
+        "final_types": [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      },
+      {
+        "file": "/home/dev/ABLPC/work/experiments/EXP-20260907-028/normal-detail/seed-jump-1.json",
+        "samples": 298,
+        "contacts": [
+          178,
+          224
+        ],
+        "upward_3328_onsets_observed": 9,
+        "seed_countdown_values": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "final_types": [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            5
+          ]
+        ]
+      }
+    ],
+    "scope": "Representative finite hardware routes, same four goals repeated twice per build; contexts captured every measured frame. Initial stationary contexts match exactly. Feedback route timings are not deterministic input movies or causally isolated A/B timings. QPC work before pacing includes probe and host overhead and may submit GPU work asynchronously. No broad dynamic pool/coordinate-limit/streaming acceptance."
+  },
+  "offline_hook_checks": {
+    "accepted": true,
+    "checks": [
+      {
+        "base": 4194304,
+        "site": "0x40ffca",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x405c07",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x4ab756",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x4ab756",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x4ab756",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x405816",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x40598b",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x405816",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x44d6fa",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x44d712",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x44d6fa",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x44d712",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x44d712",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x405b63",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x4ab756",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x405c07",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x405b63",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "site": "0x405b63",
+        "integer_state_exact": true
+      },
+      {
+        "base": 4194304,
+        "failure": "module",
+        "disabled": true
+      },
+      {
+        "base": 4194304,
+        "failure": "QueryPerformanceCounter",
+        "disabled": true
+      },
+      {
+        "base": 4194304,
+        "failure": "QueryPerformanceFrequency",
+        "disabled": true
+      },
+      {
+        "base": 4194304,
+        "failure": "zero-frequency",
+        "disabled": true
+      },
+      {
+        "base": 4194304,
+        "failure": "counter",
+        "disabled": true
+      },
+      {
+        "base": 4194304,
+        "level": 0,
+        "cursor": 9991764,
+        "bypassed": true
+      },
+      {
+        "base": 4194304,
+        "level": 1,
+        "cursor": 16777216,
+        "bypassed": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x40ffca",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x405c07",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x4ab756",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x4ab756",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x4ab756",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x405816",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x40598b",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x405816",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x44d6fa",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x44d712",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x44d6fa",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x44d712",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x44d712",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x405b63",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x4ab756",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x405c07",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x405b63",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "site": "0x405b63",
+        "integer_state_exact": true
+      },
+      {
+        "base": 20971520,
+        "failure": "module",
+        "disabled": true
+      },
+      {
+        "base": 20971520,
+        "failure": "QueryPerformanceCounter",
+        "disabled": true
+      },
+      {
+        "base": 20971520,
+        "failure": "QueryPerformanceFrequency",
+        "disabled": true
+      },
+      {
+        "base": 20971520,
+        "failure": "zero-frequency",
+        "disabled": true
+      },
+      {
+        "base": 20971520,
+        "failure": "counter",
+        "disabled": true
+      },
+      {
+        "base": 20971520,
+        "level": 0,
+        "cursor": 9991764,
+        "bypassed": true
+      },
+      {
+        "base": 20971520,
+        "level": 1,
+        "cursor": 33554432,
+        "bypassed": true
+      }
+    ],
+    "scope": "Two image bases; eight isolated hook sites replay displaced native operations with integer registers, ESP and flags equal. API/COM/helper success stubs, ABI argument checks, initialization failures, inactive/level/arena bypass, counter borrow, ring wrap, exact known census/context/counters. Does not assert API internals/LastError or complete engine equivalence."
+  },
+  "decoder_checks": {
+    "accepted": true,
+    "synthetic_valid": 1,
+    "malformed_cases_rejected": 10,
+    "scope": "Frequency bounds, truncated row, publication words/sequence, duration and timestamp ordering."
+  },
+  "live_handoff": {
+    "game": 133402,
+    "start_ticks": 1484892,
+    "group": 133160,
+    "controller": "work/experiments/EXP-20260907-028/handoff-detail/control.py",
+    "closed_games": [
+      119064,
+      128004,
+      130413
+    ],
+    "normal_inventory_files": 721,
+    "all170_models_exact": true,
+    "all_four_chunks_exact": true,
+    "protected_other_tree_untouched": true
+  },
+  "remaining": [
+    "Simultaneous local actor/candidate density beyond one active type5 plant",
+    "Consolidated Milestone3 acceptance gate",
+    "Coordinate arithmetic verification before increasing extent",
+    "Conditional streaming milestone4"
+  ],
+  "private_artifacts": [
+    {
+      "path": "work/experiments/EXP-20260907-028/00405ad0.c",
+      "bytes": 1083,
+      "sha256": "ef59a24eadaa2acdfc9fbd75f49fb3e855a5c45679c366d086514c994eba726c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/00405ad0.json",
+      "bytes": 3020,
+      "sha256": "ac72a44b176e8da8843068d6323362273021d01379b86d4fc0a2a93ff2a146ba"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/00405be0.c",
+      "bytes": 1166,
+      "sha256": "ebc7db8cdcd338576fe0ca276891e26075d0780a2a8dff577bda8f2dc7dd0c95"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/00405be0.json",
+      "bytes": 3943,
+      "sha256": "d49b6459cb95455bc17b0c954d8f3552a86d195199d43e2a3f697a32bd750467"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/0040ffc0.c",
+      "bytes": 235,
+      "sha256": "54d1c286c4b7fe9ee6b019192b4a85ecb50486d51e4c4b66cfbf9a27c12a6c68"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/0040ffc0.json",
+      "bytes": 1005,
+      "sha256": "768a84e440dcb471757978b9b61d94d57358d4d80efc9c48c63beae7c2be6434"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/004144c0.c",
+      "bytes": 2089,
+      "sha256": "61f69be9ef7e030a882b62377eecc3d9b70eda35e0d06c82e386641c8c175c76"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/004144c0.json",
+      "bytes": 6732,
+      "sha256": "6b9cbd01f0dbbe83a7f85d2370db3386859f0a8d5c138a4dea495c64c528eb52"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/0044d430.c",
+      "bytes": 8203,
+      "sha256": "d65fd7807000ddfbee8314cfaa8cbb6e454732c9051b30ec482b6011e9e5fa68"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/0044d430.json",
+      "bytes": 28278,
+      "sha256": "cb4b0a22834dd9f30656bec7ca3117baa914ed114fef55ba42d555c232b992db"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/EXP027-normal-detail-launch-indexed-prefix.log",
+      "bytes": 11056,
+      "sha256": "74537278c399e2869d60f2007de70485b939755eb8e3aca21c2c6c78ea8643fc"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/accepted-measurements.json",
+      "bytes": 56101,
+      "sha256": "1376553b06490e1261a08cc8391ee889d9be8fcd5369b393f0b1c3c49c84bfb7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/after-normal-control-close.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/after-normal-detail-close.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/analyze.py",
+      "bytes": 3723,
+      "sha256": "9cd2b4690cb7bed2d2ca954ec84f68c674a565e36a65645b422acbd31b778ca8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/audit.py",
+      "bytes": 1592,
+      "sha256": "a761bb80e76d6b8ca50a55adacdde98aed9fec0e9cd6c0efd553038f795af26c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/bank-report.py",
+      "bytes": 4092,
+      "sha256": "f02814b5aee2ad255b51815a45aa6ee1e9eb0a2d738dcfafb8e341bb9ecdec67"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-active-plant-capture.json",
+      "bytes": 5397,
+      "sha256": "aafa4ac323b8824b27cf087ea9f9bd1f91c297636fb3eb93e0612cc4ddbaf3df"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-handoff-detail-launch.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-handoff-detail-menu-capture.json",
+      "bytes": 5403,
+      "sha256": "1adcdfc81f617a382471648e78a3c7668fb091c692322eee3d36e15806f4fb2d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-handoff-final-capture.json",
+      "bytes": 5403,
+      "sha256": "1adcdfc81f617a382471648e78a3c7668fb091c692322eee3d36e15806f4fb2d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-normal-control-close.json",
+      "bytes": 5403,
+      "sha256": "6044e0ecb0e2a79d70f7cd5749377cb7f870b464b904b26cdb4f7c1627168e38"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-normal-control-final-capture.json",
+      "bytes": 5403,
+      "sha256": "6044e0ecb0e2a79d70f7cd5749377cb7f870b464b904b26cdb4f7c1627168e38"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-normal-control-launch.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-normal-control-menu-capture.json",
+      "bytes": 5403,
+      "sha256": "6044e0ecb0e2a79d70f7cd5749377cb7f870b464b904b26cdb4f7c1627168e38"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-normal-detail-close.json",
+      "bytes": 5397,
+      "sha256": "aafa4ac323b8824b27cf087ea9f9bd1f91c297636fb3eb93e0612cc4ddbaf3df"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-normal-detail-launch.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/before-normal-detail-menu-capture.json",
+      "bytes": 5397,
+      "sha256": "aafa4ac323b8824b27cf087ea9f9bd1f91c297636fb3eb93e0612cc4ddbaf3df"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/build-probe.py",
+      "bytes": 2571,
+      "sha256": "a1e69618c26a364630e10f78398c8b2559a763c00fb7b5ada1c0503cf9fa512c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/close-arm.py",
+      "bytes": 1088,
+      "sha256": "e7cdc28ab8648dcbd03b24367ae05b73358d7546b852230fa71674791a3bc0f0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/comparison.json",
+      "bytes": 145633,
+      "sha256": "7e427f2e3dc4603a60630822a8586e2d9175c64bf92fa13a29b839e96633d24c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/decoder-checks.json",
+      "bytes": 189,
+      "sha256": "1b665c3b8269b9a6dfdf7f5bc78022d3c9c4d89a1decb29bf16c91ff7edc4c96"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/detail-mushroom-depart.json",
+      "bytes": 317288,
+      "sha256": "1fa336af5105ef5fe64cce2e83aa0996107099c51a5aded13c37116da519af5a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/detail-mushroom-depart.log",
+      "bytes": 1375,
+      "sha256": "86dd2d2a3dd387c8aba32732adaf90af2204575828af774ec3cc37ea51f03ab1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/detail-seed-approach.json",
+      "bytes": 291079,
+      "sha256": "73aafb140478ae0c6fe8b44f5a100b8ea979c064bc6efa29c380f91d2818f17b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/detail-seed-approach.log",
+      "bytes": 1374,
+      "sha256": "6583e71f711f348c6ecba45625a0c83a206a10c9d37e33bcb76b623d54324914"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/drive-lifecycle-wait-ready.py",
+      "bytes": 4654,
+      "sha256": "c3cf943486091123e98a13a1449b81b769fd4ea6198a4dd38884eff7b31f6ca5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/enter-level.py",
+      "bytes": 1015,
+      "sha256": "a153b12ba69e8961429a0365e3db887283e01d952a1b2b7cbfa466217e958907"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/enter-selected.py",
+      "bytes": 945,
+      "sha256": "f96799ca515719afc225b14287d9776f1404a9e875665c1e82f237b8f8d8af28"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/final-handoff.py",
+      "bytes": 2363,
+      "sha256": "27cee0f5f42aa0c91d00ca9e6860aa20dc8e436a4ece069ee6ccd5f70d064992"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/final-ownership-recheck.json",
+      "bytes": 5403,
+      "sha256": "1adcdfc81f617a382471648e78a3c7668fb091c692322eee3d36e15806f4fb2d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/final-vault-lint.log",
+      "bytes": 1605,
+      "sha256": "ac2778be5a9eb296f04c5f4dd9987b5aa68150d25dd3d95e1c24142ed968c230"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/finish-analysis.py",
+      "bytes": 3766,
+      "sha256": "e9aa0ec0cdf24cb1a80a29777c5c677ec221437f9eb47113cbcc098d71d93b23"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/full-inventories.json",
+      "bytes": 340292,
+      "sha256": "43f41082d3c0060ed8fc3cd6f0d2d5df15fd44f9ce2710f0181ea78249e828b3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/active.json",
+      "bytes": 2803,
+      "sha256": "ee9f88f4154b80e1559c264b1a2262f5d2d8a39dc14fb651d35a178cb22a1d06"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/audio-module.txt",
+      "bytes": 10,
+      "sha256": "cb1c82eefc1b74a058dc1f90971f4c657cfa996f0b2b87191206b0edbe74915c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/chunks-final.log",
+      "bytes": 1776,
+      "sha256": "7645daaef89cb52a5a661ff6c11de0c938fea31ffdc0e725f921dd71e1c83e90"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/control.py",
+      "bytes": 18390,
+      "sha256": "8b11db49e7fcc68be993dd0f00b8ec14d2922d4db13215e6c2a41b1d531f8318"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/frame-1788841447822564463.png",
+      "bytes": 300162,
+      "sha256": "13e41c3e62a446df78084cf87e9b587274889eb8632aa25b4451437febd4a7fa"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/frame-1788841526043875907.png",
+      "bytes": 206351,
+      "sha256": "d51036cd2df6dff57dfc05040c7ff5e9330e7f809a99de0d35183e63ca93466e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/frozen-game.log",
+      "bytes": 66230,
+      "sha256": "df5c241c2d69b126c378a146141a3724b2ed3d5033c76a4fd9ef22576976d27e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/launch-result.json",
+      "bytes": 2250,
+      "sha256": "abafb2ceab8aaedaa48cf5ef8a872980f13a1b3a2c35db34fb27946c24dd1658"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/launch.json",
+      "bytes": 2250,
+      "sha256": "abafb2ceab8aaedaa48cf5ef8a872980f13a1b3a2c35db34fb27946c24dd1658"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/launch.sh",
+      "bytes": 907,
+      "sha256": "3365f3cf37958eba1021ac1577a7bb973c4cfad41567448ffe4e0421d9d36bd1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/live-handoff-binding.json",
+      "bytes": 18878,
+      "sha256": "ff6e32a436ae52a4f4b18e564ec8093a9a7eca42d9bdca0531573b2237279899"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/models-1788841520335357438.json",
+      "bytes": 81310,
+      "sha256": "7e85c77262a4ddd6bb467b7d70ccdd2cb1e79dfa95000631ef780f3a2c8e63b9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/prepare.json",
+      "bytes": 2634,
+      "sha256": "1442814961b58f969bcd3aa37fcd949ae157d01aed0dfdbce2e4e5140917f819"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841438451348719.json",
+      "bytes": 2390,
+      "sha256": "4928acafe5e976bb3a07477c41c8a5ba26b1c502f420b1b91ab63a67c4fe7518"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841441647618209.json",
+      "bytes": 3329,
+      "sha256": "396945abd27ec3339101000d0f04541aa297cffd83ba5eebb82ea90a2c39acfd"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841446474913938.json",
+      "bytes": 287,
+      "sha256": "fedd51cf7bbdd999d002cbd8d3bf3ebfbf957e606746cb097876560b9342519c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841446740994356.json",
+      "bytes": 692,
+      "sha256": "c2b22f8bd83df84c10a9feeb63a559b64aa2146fe430dcc09f26dfa20adedf9e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841448164451585.json",
+      "bytes": 784,
+      "sha256": "3a64a17b0b5d7f744d944870c924155b0d1428e450f7803276cb1c8c8d44ce96"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841485892503799.json",
+      "bytes": 3329,
+      "sha256": "8e97698320d55d0d8525dd1649b123babb525a9eb2a1e76fb419f76ea5c5ef8f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841485916510764.json",
+      "bytes": 287,
+      "sha256": "3a0cff2324c5173b72968bc01b70aa7381c751cf6903910fb22e7f90f409a80c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841486181642703.json",
+      "bytes": 695,
+      "sha256": "793725d6cada918ebcfa07e50caa811f43b329299a24729ef89fd687e78a7f7b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841487753141933.json",
+      "bytes": 705,
+      "sha256": "7fe273e1b44f1e41e8e280f3732671b8768edc5b47f1113fdb92a4b61db6215e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841488980587193.json",
+      "bytes": 319,
+      "sha256": "de3ec1bef9f9bebeddbd6b74445b4298df6f45f1efd405463b4c93acb7647be0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841526385490920.json",
+      "bytes": 848,
+      "sha256": "2f135b220468dd70decca4b0dbe7ee929aecc3673d7da0ab4bba8ddc3b5376e5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/receipt-1788841950083506481.json",
+      "bytes": 319,
+      "sha256": "85dc9046d3187e2ec3c82b09b8ed005cfbc3326506fff70766424269d3056058"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/handoff-detail/resident-chunks-final.json",
+      "bytes": 2294,
+      "sha256": "fd8c04ca237808a0e3b0dbbb442b30cd4f3e74a18d68bdc31fe4d26090e9fb4e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/initial-menu.py",
+      "bytes": 1240,
+      "sha256": "3fc295a7af6cc0aeb9aeb61f3b15191ca364cb2719209d666b8b9fdc3b571022"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/live-order-expected.json",
+      "bytes": 58474,
+      "sha256": "a1fe9c5155dd3d93458edf189bc6fba9bc74f530c26111d38aeeb510ea1e45de"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/measure.asm",
+      "bytes": 5502,
+      "sha256": "4bbac6b3612ac3a859407531e2d45053b6478db2e29898e26777db30e763b4eb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/measure.bin",
+      "bytes": 1566,
+      "sha256": "4ad21ec616d03a4225ab93856382ab068814bca08aa876c2c68badf922aff72b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/nav.py",
+      "bytes": 3095,
+      "sha256": "51c560e1c51ed8970fa5a384a45e17af7b9587c36cc815653922d4eb48e21b32"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/active.json",
+      "bytes": 2803,
+      "sha256": "fde4220f7c40435ce888555a3f4d9acb3cb3fd59625a8df93304c58253d31e95"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/audio-module.txt",
+      "bytes": 10,
+      "sha256": "cb1c82eefc1b74a058dc1f90971f4c657cfa996f0b2b87191206b0edbe74915c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/close-pinned.py",
+      "bytes": 2971,
+      "sha256": "8540e0918a96e7f1aa889423ce32ecfeebe212a7642743c049143dd0b75ca35a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/close-receipt.json",
+      "bytes": 8636,
+      "sha256": "a3260cc42b16d868ba7728a66ff9961436ff6f8f75f22c1a6009c6fd4c10f6f2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/close.log",
+      "bytes": 8636,
+      "sha256": "a3260cc42b16d868ba7728a66ff9961436ff6f8f75f22c1a6009c6fd4c10f6f2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/control.py",
+      "bytes": 18620,
+      "sha256": "3b999e38eea7e5c4a51b8a903f8bb37785c1a53f1ae82bbfff765a00541e4913"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/frame-1788840658297708831.png",
+      "bytes": 299903,
+      "sha256": "cab1f3f9a9c0926fc5b17d48ab3a7e22b1ee1fe6186ef878c35c67096f2cc18c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/frame-1788840879296988749.png",
+      "bytes": 225900,
+      "sha256": "41fc062f482c1eb3d35692950d695aabbac8e2840cc014998bb908b1a13d0bab"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/frozen-game.log",
+      "bytes": 66230,
+      "sha256": "bfb493304635e2d903cbd1f519bc84c65283ff97ec137425fe34d9e4e9f589cb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/launch.json",
+      "bytes": 2250,
+      "sha256": "2b4c9236fad8316806169eaa1ee481ef94b1b6be1e06d4c5716e03b437c4fe1f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/launch.sh",
+      "bytes": 907,
+      "sha256": "9f032a6fafbf4b6d21e4aa25d8f98fdf282aaf07535aab36ea32bc7c54de84eb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/models-1788840716153538008.json",
+      "bytes": 48248,
+      "sha256": "d8b98e56ccb007ed659d3d8112d2356accae21c83647eaa06fe8a680f3b80040"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/models-1788840883028993989.json",
+      "bytes": 61448,
+      "sha256": "e69aa930d10d6279896b7ef0ec7ba104f03264859f1a9ce9637c34bedb0b5161"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/prepare.json",
+      "bytes": 2511,
+      "sha256": "f17e7bcaa6d28bf7fb9e941b9886a4ed60c2157747f8e321fc6071b7769c31fe"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/profile-analysis.json",
+      "bytes": 66861,
+      "sha256": "8cfce4782145b2c3b9c48468b96d046084ad0449a5b2e3aeac5d76ffa1c09c09"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/profile-phases.json",
+      "bytes": 2987,
+      "sha256": "06d4ae8fb244b80d211ab6d304011965d176a1cff75e4e9ca9215030a29adbea"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/profile-reader.log",
+      "bytes": 811,
+      "sha256": "448777cd47c1f81ad0f8e4ce289eb7fed563b0d6ab1651a77f5f7837719631bf"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/profile-stop",
+      "bytes": 5,
+      "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/profile.bin",
+      "bytes": 875712,
+      "sha256": "acb83aef13fda6d90858bfca116723737bb81d28e597372275e91c20d59483d2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/profile.json",
+      "bytes": 102309,
+      "sha256": "8877d8cbeed2132823c59b72506cee19967e109fc3c9d0ad865dff978c85b4a2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840648935024173.json",
+      "bytes": 2390,
+      "sha256": "46a333b2b5ba02749cc20ad7b25301a3f9daa8f81e265a263367cc33e65d6090"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840652121873001.json",
+      "bytes": 3329,
+      "sha256": "682cdc99f1b96955a1c6cc7e3133684e126f3e2db000fbc0ec21b94bbd68ce23"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840656950090036.json",
+      "bytes": 287,
+      "sha256": "7cf68d6a4684411991ca87e295dc544b36389509d8d3e5d0f1e1e59db5ecfaa3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840657215896492.json",
+      "bytes": 692,
+      "sha256": "d606dff6561170236012a196eb69f48481c41d0800294c5b69b3a6ee1446af14"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840658640277427.json",
+      "bytes": 784,
+      "sha256": "f958e6abfcb1c6aea2ba9561da52b7316ac57d59ef721412cda8f325a52a1443"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840688217793228.json",
+      "bytes": 3329,
+      "sha256": "8f4574aff899cdc94ca8eec29c927eca389dfaafcb667938bbcfcf1da941b252"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840688242168259.json",
+      "bytes": 287,
+      "sha256": "10db60f190fe0831cbdc290d56accf2c9fc7e9f4a063b0b86f72c45e16d7a4da"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840688507633733.json",
+      "bytes": 695,
+      "sha256": "10a15e9870824fb0a9828522e7e54031ab1417a278c66e1da1a65d361bf90f9f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840690078315581.json",
+      "bytes": 705,
+      "sha256": "1be0dea5c9c754ec40a8db89fb2148d1bfcac4179623dde02a5dde2b1fd49492"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840691305855328.json",
+      "bytes": 319,
+      "sha256": "3e47466167676d4349fdff9b706ebe6f8ae5a5e84501bb2f8fc6f37e86dee4d5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/receipt-1788840879639731066.json",
+      "bytes": 854,
+      "sha256": "36e0553eba8ba41134a36af763540dff45bf0bc5129e5acfbc6d6ce8ae8d05bc"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/resident-chunks-after.json",
+      "bytes": 2297,
+      "sha256": "4535d83d700d77387151d9915beac9926b978c0c055359fa9ddb950cd2bef557"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control/resident-chunks-before.json",
+      "bytes": 2294,
+      "sha256": "bca2f2272ee56c35a5bb391f5a353f23b774b4489e93fd432e0ab40e8f2e8696"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat1-loop-01.json",
+      "bytes": 476040,
+      "sha256": "aeabee44a9b7cc12c08e2e27c7fdc9112e6b11f5b0d9b082844cf8c1b1c03675"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat1-loop-01.log",
+      "bytes": 1378,
+      "sha256": "c21186dcccefe7bb679ff1d1bccf66abbcf5701012514cd8e76079b9d889b46d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat1-loop-02.json",
+      "bytes": 260018,
+      "sha256": "063da661a9ab98e1ea6bb1f1e999651db47f75d7df2192ce906a4ef0143f2083"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat1-loop-02.log",
+      "bytes": 1377,
+      "sha256": "4a7c2125a60e7e75ff9081b5177fe5c60d80aadd1b575df5431c00f307101c3e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat1-loop-03.json",
+      "bytes": 490911,
+      "sha256": "36a285af2174a3198893a9505d602aab48dd37b4622148d3cd59e54965357562"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat1-loop-03.log",
+      "bytes": 1374,
+      "sha256": "0c541e22ce0ad4edb6925b8810cd92675f85a42615ea10b95a5e898348f1c3c2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat1-loop-04.json",
+      "bytes": 423982,
+      "sha256": "fc7cceedf1c387829ce62b18e000c89e65620aad69fd00aa856c97d25ffb87bb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat1-loop-04.log",
+      "bytes": 1376,
+      "sha256": "678123cb82f32e98b3b76dbc189056f7eef02901760e6cf4085609764359515d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat1-loop-summary.json",
+      "bytes": 1437,
+      "sha256": "48d62ca695a4a513bb069351f40193380dabc5b4bfa48705c16956b1cd416d71"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat2-loop-01.json",
+      "bytes": 481772,
+      "sha256": "5cbdd8773e2a973e92543da858c811df4e883cb561b615bf416d0b8aae0fbc75"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat2-loop-01.log",
+      "bytes": 1378,
+      "sha256": "e02475acd2939fdab0e84eb86c7f38e14375797d42786368a097c54068d43323"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat2-loop-02.json",
+      "bytes": 282911,
+      "sha256": "81c7a2b84322a79ad5e03db2f114e181166ab3687ff12f3dd3248cf3e76419ee"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat2-loop-02.log",
+      "bytes": 1379,
+      "sha256": "fa0c783e09f5f9a3271bf10773fb879e40064e4b100393eaae4bc0704d969357"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat2-loop-03.json",
+      "bytes": 482727,
+      "sha256": "98f6734d818a2c69501ccddaa710ea827220de7e42f70db6fe32cbbb1f2bb7e5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat2-loop-03.log",
+      "bytes": 1374,
+      "sha256": "e88cc5e9e002d77b8a49dc1f3c6cb8f45e79514d3b17dbee64c77adbe7177244"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat2-loop-04.json",
+      "bytes": 487872,
+      "sha256": "0377a71ee4a803ad7518578e9830f81994481905fb94f4c5cbd1b39e2d28e7b5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat2-loop-04.log",
+      "bytes": 1376,
+      "sha256": "965f092de4cbd1ab806d404490d45ee31b60681b101c3c4217d0cc988e4140d4"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-control-repeat2-loop-summary.json",
+      "bytes": 1436,
+      "sha256": "499f856e9b016b85c86f3b5430d149694bbf9435a1b801f7f8a1a16f7b37ff9b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/active-plant-verified.json",
+      "bytes": 6928,
+      "sha256": "fdd07c6995515a36c9af1d5ab7ea82ff75f130dd2587362209643fcd9ac95a62"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/active-plant.bin",
+      "bytes": 449664,
+      "sha256": "479a81f7043b6e030bc16d62dde53c074e106e54617726105a28ad107e4acd60"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/active-plant.json",
+      "bytes": 60114,
+      "sha256": "1a77fc465469068dbc2b367a69ca272e48e04e0b9c7f8e8c14d8950b064232e8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/active.json",
+      "bytes": 2799,
+      "sha256": "db834b09720c15c8c95e443ab7502b27f0d4630951b41175e99a13fad78cae58"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/audio-module.txt",
+      "bytes": 10,
+      "sha256": "cb1c82eefc1b74a058dc1f90971f4c657cfa996f0b2b87191206b0edbe74915c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/chunks-after-plant.log",
+      "bytes": 1777,
+      "sha256": "b6a0c5a3b36e63e42c03c33d82c7097fed11dc476e5bd093dc050e1ed2b71b3c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/chunks-after.log",
+      "bytes": 1778,
+      "sha256": "61caa803a80727483b9c5f8122ca3eb193532e7ab8088a86aa1ba6c2a988d9c7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/chunks-before.log",
+      "bytes": 1775,
+      "sha256": "2671047b3a97ae0c0453d96e77e72796760fa80b83df1c0b328e9013a76f6daf"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/close-pinned.py",
+      "bytes": 2970,
+      "sha256": "a5a936171eb53d88efc19c4322bfef36c62e564c283d8e9ea430fa9457e3d3c7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/close-receipt.json",
+      "bytes": 8622,
+      "sha256": "078f734352aa0bfd39b5636ccf6866a909bf5add2a7f53aee4a89e15d79ce688"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/close.log",
+      "bytes": 8622,
+      "sha256": "078f734352aa0bfd39b5636ccf6866a909bf5add2a7f53aee4a89e15d79ce688"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/control.py",
+      "bytes": 18618,
+      "sha256": "4c471dee8875b0b287ee87676ec43c099a0069461eec2c0732a8699aa97ea986"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/frame-1788840914804627387.png",
+      "bytes": 299593,
+      "sha256": "ac30518bd1e15125da6e88319495ac8f5071a3294fb07444e2ee431f57f6b423"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/frame-1788841277931201189.png",
+      "bytes": 184715,
+      "sha256": "fa319ea9cf23ae5ce0a535228a460462e784d296f9acac7ac0d49f9177286ee7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/frozen-game.log",
+      "bytes": 66230,
+      "sha256": "5443a4d89d648a5c85f4b846081ac93b6976cf80195fdda8653a6c00ff831b88"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/launch.json",
+      "bytes": 2247,
+      "sha256": "7e38862efe7eac52c1c33c578a2cc6642aa477665cbc90088a6d2c6285dbfefe"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/launch.sh",
+      "bytes": 904,
+      "sha256": "ecd99081a677b2e847cc268c279ae244408b5feca5d48eecd02b2618e0b17cf8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/models-1788840990095578355.json",
+      "bytes": 48248,
+      "sha256": "9346b57860d7f95282458e8225e196a5f7bbf9e76f7f64616347775af3b5f908"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/models-1788841193307948966.json",
+      "bytes": 61480,
+      "sha256": "b401a92805a8588ec9d16d7921094270c5b09c2864f090edd6d23ef6a50a615c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/models-1788841398751826864.json",
+      "bytes": 61929,
+      "sha256": "7017f403a7310e6cdf2c16ac7de906da1119c006215d8b822567dd9c84c707cb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/mushroom-jump-1.json",
+      "bytes": 219511,
+      "sha256": "9d9cca40e4cdf5e0d683db822b0f4b8787b63ff032b0eb555eecb32c53b13a17"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/prepare.json",
+      "bytes": 2470,
+      "sha256": "99751f854e2764c441e8cb606dc033fa011258b3a08b8a80144255da35ba96c1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/profile-analysis.json",
+      "bytes": 66864,
+      "sha256": "fc0e87eeee018a76b8bbfaf528ff26739fb18b5797b06096ff9d9064652e5e79"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/profile-phases.json",
+      "bytes": 2988,
+      "sha256": "651e34d5ff250a49a8eada362c7425ab053bfd0ccfc6d283c2b8751a69d43966"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/profile-reader.log",
+      "bytes": 811,
+      "sha256": "f66a34bbc3c5f6c5d921cc3cc67bdd2bf8ddfdaed7362468dba5ac51f5f7e250"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/profile-stop",
+      "bytes": 5,
+      "sha256": "d117fa006ba9208500b2930ce69cbde436c647afa917cb7396a9bc9111a46dd2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/profile.bin",
+      "bytes": 848064,
+      "sha256": "d130f585c7406eb444fc5f89b64fb267c19ce40b6b4a5dd4dbf4614787345e62"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/profile.json",
+      "bytes": 99521,
+      "sha256": "085821e33bf026abc29eb1221c0f5475d5bd83c72dcea45e706416f30057e93f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788840905568667012.json",
+      "bytes": 2387,
+      "sha256": "01a19049ef65d5ba91d4f235c01fd06c8f3d9a52c45081f65e5612fdb5c9f43a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788840908425230474.json",
+      "bytes": 3325,
+      "sha256": "5b6365263ceabf36187775f447a33dbc40ab65df9da6f7f4878e9ede0282e2b3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788840913453647490.json",
+      "bytes": 287,
+      "sha256": "f4480d75eddd080cfaf23429781ab5d74c134525d0b3f9d24f88e6c93c73afe6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788840913719980559.json",
+      "bytes": 692,
+      "sha256": "498ff01a28f95baa51168c87ca1b6f80efdc204e1126014f5d37b5cf27b4ae7c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788840915148033619.json",
+      "bytes": 783,
+      "sha256": "3518374cfa66bd44f9d7ea336057cc928a3929a0d2536a7f4b4c1baecb19a56b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788840966266016421.json",
+      "bytes": 3325,
+      "sha256": "57b2f438cd8d1a3caeaf9452efb41811d446bd1dc40f02dda4d12d1897ca5773"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788840966290078551.json",
+      "bytes": 287,
+      "sha256": "e90cae01f24c82d7590bdbec05a94fe46984bb2b25c7a5577743045bd23f1d02"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788840966554924411.json",
+      "bytes": 695,
+      "sha256": "5bbf395ef80f9c55769cc0411a2dc140155d0a27d8e69d4326fe247391bacbdd"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788840968125717409.json",
+      "bytes": 705,
+      "sha256": "6b56d1e670f774ec9b0bea1e7c194daf2a16f8ce8c4c30fb5d9147eab463d647"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788840969353589489.json",
+      "bytes": 319,
+      "sha256": "3a34cd82d6cb74aa7da909314fd46d16d73d8d374c95a6ad91758db97b38fa53"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/receipt-1788841278274152578.json",
+      "bytes": 853,
+      "sha256": "28838fc85229752419b756655e0fb6229f32d2016b6c0d70e38e7e3d1f689fb6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/resident-chunks-after-plant.json",
+      "bytes": 2295,
+      "sha256": "a05baec6e7861e5495f2c51b40628a73b0f1eb566074f6a9e1a7012bcec73805"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/resident-chunks-after.json",
+      "bytes": 2296,
+      "sha256": "f82e0b6fd6fb55c6566ebff621f87d6b7409bc5a350248e210b35357c0595fd6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/resident-chunks-before.json",
+      "bytes": 2293,
+      "sha256": "d563fa262910319f08c3f4fe7addfd6b5c1d607e9b2ebf94beed2c2b0b2ce715"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail/seed-jump-1.json",
+      "bytes": 219217,
+      "sha256": "5a455e57c09a6c70c074186c8bc8a6488932d88199a984fccf7a867f89a60b95"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat1-loop-01.json",
+      "bytes": 435437,
+      "sha256": "47cd04d08c298f809264cdc27bbd485ff83df4fd1c39f94f765439abd266061d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat1-loop-01.log",
+      "bytes": 1375,
+      "sha256": "794b7598a8b1fe4916b9f92c9d6f5f076b542086926280ff256c3f81d66ac518"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat1-loop-02.json",
+      "bytes": 294336,
+      "sha256": "925c313de76da67f16fb745f93cdbd82f455154143133959fa1621d63493e0e6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat1-loop-02.log",
+      "bytes": 1373,
+      "sha256": "7273c479c91407a3eb9c9a404b48292663cb24b67b65ea1093ef1e3f1e06ae08"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat1-loop-03.json",
+      "bytes": 464878,
+      "sha256": "2129b9a1e956b8ffab3c07ebee952bdbc533becb7ac6fb73fc22102bd9e2aa3c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat1-loop-03.log",
+      "bytes": 1373,
+      "sha256": "96d4528a5fa7ec028c9daa6a7dfe8fc1896d3da2313a054f967dc522ee53bd44"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat1-loop-04.json",
+      "bytes": 418898,
+      "sha256": "7403a3defe11f69727354ab67ec198a41ff872bfd44305582b191a86b7248b53"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat1-loop-04.log",
+      "bytes": 1375,
+      "sha256": "80e89e5be989b34d3683768eb0d7bdc3cfdb96c4087ef741550e08a8ff234396"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat1-loop-summary.json",
+      "bytes": 1432,
+      "sha256": "69dc396d69279a03d5e8507543d172baf2d4fbce3f0007760a472e1aec2dff47"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat2-loop-01.json",
+      "bytes": 421390,
+      "sha256": "15c87c3eacb50efac771e711d44866589f03e4b9d85031e9d9a4b1862c2554c4"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat2-loop-01.log",
+      "bytes": 1375,
+      "sha256": "da1f1cf71a3b0d897051dda696bffe5aecb7519f13f83d4ba4c27cf58b939bae"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat2-loop-02.json",
+      "bytes": 266512,
+      "sha256": "ef405e8f7eda5a3549c835438139498a740931d39690cc24633aec6dbe550870"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat2-loop-02.log",
+      "bytes": 1380,
+      "sha256": "e21fc5aa69e068f7e61ef9b970fd367e3f2c75c8452b9326ef57e40823403803"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat2-loop-03.json",
+      "bytes": 453252,
+      "sha256": "58777091063904fdf9d92a416bd283042716f3081a01e65585fc4b2ec6098926"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat2-loop-03.log",
+      "bytes": 1369,
+      "sha256": "9963f2f362ffa9714c9bc101a2b692731a3ff4a738596fc45584652a79f75cd4"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat2-loop-04.json",
+      "bytes": 500286,
+      "sha256": "77a224b16d1c9a8de8e4f23810772833cd1c1352d19339b7fcc5c929433b12e6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat2-loop-04.log",
+      "bytes": 1375,
+      "sha256": "8351297c893b8143db6507183d384bb6b412be92ec9f8948d946c4651cc7ed16"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/normal-detail-repeat2-loop-summary.json",
+      "bytes": 1433,
+      "sha256": "3f9a35f7cb689bede59d8abe446f874e3550fb1cf5b01df95d650685e4390e7e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/partial-analysis.json",
+      "bytes": 72823,
+      "sha256": "18cd2184b4b89383f3c5afe2029be477e2bc4f0f20f190def3e78f87dec19cb5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/player-controller.c",
+      "bytes": 19813,
+      "sha256": "1ce523048520d9ccc3762c420900add9d3d3b2cfb3c68993456dbb7c8bfe19f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/player-controller.json",
+      "bytes": 40286,
+      "sha256": "08bc818f5f529fec4094ed0c9455dff0ea5866e2ea6509bb52867debb1412278"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/prepare.py",
+      "bytes": 2064,
+      "sha256": "416b6f3fd4b473aa5e32a2ff94a9921b512da74596e09538aeb3f8cd5cd8e6bd"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/prior-packet-recheck.json",
+      "bytes": 796,
+      "sha256": "ef3192a98f3ce05668733f15a53d465410f90b0ecee53295ce6c9b05b04d1cf5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/probe-bugs.exe",
+      "bytes": 1072128,
+      "sha256": "febbcaaef3a96d656ea75c495752a9612376dddc412c3cfec75c7855e9133b23"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/probe-offline-checks.json",
+      "bytes": 5260,
+      "sha256": "b9a6cff9409c7634cdb96864fdc03aff0023ec28716c0eabcba56a6f39bcd14a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/probe-patch.json",
+      "bytes": 18703,
+      "sha256": "4086a3d0d65c956644ceab2d118f95697e81c6c676e27ae02e02c1851ce7f5d4"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/profile-run.py",
+      "bytes": 1213,
+      "sha256": "628b4ebba8caad9f8d2429c54287a79e97970a576893151e4005bae130e4eeda"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/read-probe.py",
+      "bytes": 2400,
+      "sha256": "dd5930947475ee9473ceed5dce87b99b28039394c8d52bf79d9bcd6653d4db39"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/rejected-log-predicate.json",
+      "bytes": 487,
+      "sha256": "4c31e51018bcea01fd370c138114c993d7f44adea3ba4dad8eace3398011be27"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/run-check.py",
+      "bytes": 1459,
+      "sha256": "1a5580a2e1ab48d5f1d3bf3798f22bd2cd7a04d784fd47b2bdf73b2d34e39ed9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/run-loop.py",
+      "bytes": 1760,
+      "sha256": "87280eae31b181fd831350ea396ed9bbf33f123a57e33295c2da27e30f16265d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/scene-offsets.inc",
+      "bytes": 91,
+      "sha256": "b5e4ade6540e8e957957dbff1b9103a995f3a5e8fb3ff1309164e1833f3c4153"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/seed-jump.py",
+      "bytes": 3111,
+      "sha256": "4aeeef82dfa598969924ee5def214451fe4934da3606bd780b2f1e77128d54e2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/source-receipt.json",
+      "bytes": 373,
+      "sha256": "e88542753367890efd6dd6d89f4e3d2556b1e6c1c727e3e840ae1c4a278d93a1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/source.log",
+      "bytes": 3299,
+      "sha256": "f2f9e2f8c8727410c4e119be7a53c980d41ca128c7417c9c4fa22580e9341c60"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/startup-event-claim-sweep.txt",
+      "bytes": 262,
+      "sha256": "6d168885372d993d05210ca3af50f0fa8bdbb2ba32d6d22d1adbd2764a069218"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/stomp-xrefs.json",
+      "bytes": 21084,
+      "sha256": "5646a3d81e64179e7c260a94b510cba5ecda70d4f5c268271dcf5f05c6e0556f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/test-decoder.py",
+      "bytes": 964,
+      "sha256": "23d83c85e0af80f25af168a0ed3287a75df7ecd05586b583848524054169d90d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/test-probe.py",
+      "bytes": 7285,
+      "sha256": "cab445cde0e37432651ae69886fc16aac4afd27470b45708f0f3c53cbe01e6de"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/test-selection.json",
+      "bytes": 6333,
+      "sha256": "327a1bbe611d6a48502fe051374b23ec46f25e74b690c2e359432b184f9fa138"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/timing-boundaries.asm.txt",
+      "bytes": 4515,
+      "sha256": "54e2cab596b4a67cf19f16cf845e072c686e7a1fc17099a3bbd6423fb10b63a2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/timing-claim-sweep.json",
+      "bytes": 464,
+      "sha256": "348943d5022619a005a54d0909ab476826f77e1114fbf24d7e0a415177f5aefa"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/verify-active-plant.py",
+      "bytes": 984,
+      "sha256": "81cb22f1084e34b0878466f4b88016c55d8f09df69325fd8329ce67a27b7f95b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/verify-chunks.py",
+      "bytes": 2879,
+      "sha256": "42c6cf9cfd9bad4e38a591a462bd4f74af2a0c5194fd50f044ed995382d5f1eb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/verify-inventories.py",
+      "bytes": 1533,
+      "sha256": "2b1d8e8983b02575c236a5a449b33149676d054907926ac5451a766b71205500"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/verify-models.py",
+      "bytes": 2005,
+      "sha256": "3bd5f00c88e7b87d5f075e5c146cc12aa4230e1419154fd91cd4a0ed8da7d411"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-028/write-notes.py",
+      "bytes": 23528,
+      "sha256": "c1c577ba5cfb890f57e85f20f5e29dcd8ec79fa413ea08487b11422d14bb0d56"
+    }
+  ],
+  "private_artifact_count": 216,
+  "source_check": {
+    "accepted": true,
+    "commands": [
+      {
+        "command": [
+          "make",
+          "check"
+        ],
+        "start_ns": 1788841765782456057,
+        "end_ns": 1788841918270671694,
+        "returncode": 0
+      }
+    ],
+    "log": "/home/dev/ABLPC/work/experiments/EXP-20260907-028/source.log",
+    "log_sha256": "f2f9e2f8c8727410c4e119be7a53c980d41ca128c7417c9c4fa22580e9341c60"
+  }
+}

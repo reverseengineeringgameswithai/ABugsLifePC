@@ -1,0 +1,141 @@
+{
+  "schema_version": 4,
+  "experiment_id": "EXP-20260813-040",
+  "target": {
+    "mode": "pid",
+    "pid": 2630768,
+    "exe_basename": "bugs.exe",
+    "expected_exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "expected_loader_re": ".*wine-preloader$",
+    "expected_cwd_prefix": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-b/PC/BUGS/"
+  },
+  "watchpoints": [
+    {
+      "id": "batch_pre",
+      "address": "0x0059F7F0",
+      "kind": "access",
+      "size": 2
+    },
+    {
+      "id": "batch_flush",
+      "address": "0x004C4118",
+      "kind": "access",
+      "size": 2
+    },
+    {
+      "id": "entry_post",
+      "address": "0x005B18E0",
+      "kind": "access",
+      "size": 4
+    }
+  ],
+  "breakpoints": [],
+  "window": {
+    "max_stops": 1000,
+    "timeout_seconds": 90,
+    "end_milestones": [],
+    "log_path": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-b/PC/BUGS/bugs.log"
+  },
+  "on_stop": {
+    "registers": [
+      "rip",
+      "rsp",
+      "rsi",
+      "rbp"
+    ],
+    "memory_reads": [],
+    "backtrace_limit": 2
+  },
+  "survival": {
+    "required": true,
+    "settle_ms": 500,
+    "sample_count": 5,
+    "sample_interval_ms": 200,
+    "require_untraced": true,
+    "require_resumed": true
+  },
+  "direct3d_batch_capture": {
+    "pre_trigger_id": "batch_pre",
+    "flush_trigger_id": "batch_flush",
+    "post_trigger_id": "entry_post",
+    "pre_stop_pcs": [
+      "0x0044F951",
+      "0x0045026C"
+    ],
+    "post_stop_pc": "0x0044C8AB",
+    "call_return_address": "0x0044C89E",
+    "stack_pointer_register": "esp",
+    "entry_return_stack_offset": 88,
+    "entry_pointer_stack_offset": 4,
+    "entry_index_stack_offset": 8,
+    "post_entry_register": "esi",
+    "page_register": "esi",
+    "entry_root": "0x005A9660",
+    "entry_stride": 80,
+    "entry_count": 24,
+    "candidate_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "pointer_size": 4,
+    "page_count": 32,
+    "max_digest_bytes_per_entry": 16777216,
+    "warmup_rollovers": 1,
+    "capture_cycles": 1,
+    "families": [
+      {
+        "id": "root_004c4108",
+        "flush_stop_pc": "0x00405838",
+        "root_pointer_address": "0x004C4108",
+        "allowed_roots": [
+          "0x004F1730"
+        ],
+        "vertex_pointer_table_offset": 0,
+        "vertex_count_offset": 260,
+        "index_base_offset": 390,
+        "index_count_offset": 130390,
+        "index_page_stride": 2000,
+        "vertex_stride": 32,
+        "max_vertex_count": 500,
+        "max_index_count": 1000
+      },
+      {
+        "id": "root_004c410c",
+        "flush_stop_pc": "0x004059AB",
+        "root_pointer_address": "0x004C410C",
+        "allowed_roots": [
+          "0x00511510"
+        ],
+        "vertex_pointer_table_offset": 0,
+        "vertex_count_offset": 260,
+        "index_base_offset": 390,
+        "index_count_offset": 307590,
+        "index_page_stride": 9600,
+        "vertex_stride": 32,
+        "max_vertex_count": 500,
+        "max_index_count": 4800
+      }
+    ]
+  }
+}

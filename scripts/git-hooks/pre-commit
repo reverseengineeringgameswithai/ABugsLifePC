@@ -1,0 +1,120 @@
+#!/usr/bin/env bash
+# Fast pre-commit gate for ABLPC.
+#
+# This is deliberately NOT `make check`: the pytest suite takes most of an hour
+# and a hook people disable is worth nothing. It runs only the checks that catch a
+# defect which is expensive to undo once committed:
+#
+#   1. git diff --check          whitespace damage and conflict markers
+#   2. scripts/audit-tracked-files.py   the provenance / asset-leak guard, the
+#      one that genuinely matters before a commit: it refuses tracked game
+#      assets, disc images, ROMs, memory dumps and virtual disks
+#   3. scripts/vault-lint.py     Vault note structure
+#   4. scripts/check-m4-compatibility.py  the M4 statement against the Vault
+#      notes it quotes (under a second); a note edit broke it unnoticed once
+#   5. compileall on staged Python  syntax check of what is being committed
+#
+# The full suite still belongs to `make check` and to .github/workflows/check.yml.
+#
+# Bypass: git commit --no-verify   (git skips this hook entirely)
+# Install: scripts/install-git-hooks.sh
+#
+# Exit codes: 0 pass, 1 a gate failed, 2 usage error, 3 structured refusal
+# (the hook cannot run, e.g. no usable Python interpreter).
+set -euo pipefail
+
+usage() {
+    cat >&2 <<'EOF'
+Usage: pre-commit
+
+Git pre-commit hook for ABLPC. Runs, in order:
+  git diff --check / git diff --cached --check
+  scripts/audit-tracked-files.py   (tracked-asset provenance guard)
+  scripts/vault-lint.py            (Vault note structure)
+  scripts/check-m4-compatibility.py (M4 statement vs the notes it quotes)
+  python -m compileall             (staged *.py syntax only)
+
+Takes a couple of seconds; it is not the test suite. Each gate is announced;
+a failing gate's own output is reproduced in full. Bypass one commit with
+`git commit --no-verify`. Install or remove with scripts/install-git-hooks.sh.
+
+Exit codes: 0 pass, 1 gate failed, 2 usage error, 3 structured refusal.
+EOF
+    exit 2
+}
+
+refuse() {
+    # $1 reason, $2 remedy
+    printf '{"refused":true,"tool":"pre-commit","reason":"%s","remedy":"%s"}\n' \
+        "$1" "$2" >&2
+    exit 3
+}
+
+test $# -eq 0 || usage
+
+ROOT=$(git rev-parse --show-toplevel) || refuse "not_a_git_worktree" \
+    "run this hook from inside the ABLPC working tree"
+cd "$ROOT"
+
+PYTHON="$ROOT/.venv/bin/python"
+if ! test -x "$PYTHON"; then
+    PYTHON=$(command -v python3 || true)
+fi
+test -n "$PYTHON" || refuse "python_missing" \
+    "create the project venv (.venv) or install python3"
+
+failed=()
+ran=()
+
+run_gate() {
+    # $1 label, rest: command. Each gate's own output is buffered and shown in
+    # full when it fails; a passing gate stays quiet so the hook is readable.
+    local label=$1
+    shift
+    ran+=("$label")
+    local out
+    out=$(mktemp)
+    if "$@" >"$out" 2>&1; then
+        printf 'pre-commit: ok    %s\n' "$label"
+    else
+        printf 'pre-commit: FAIL  %s\n' "$label" >&2
+        cat "$out" >&2
+        failed+=("$label")
+    fi
+    rm -f "$out"
+}
+
+run_gate "git diff --check" git diff --check
+run_gate "git diff --cached --check" git diff --cached --check
+run_gate "audit-tracked-files" "$PYTHON" "$ROOT/scripts/audit-tracked-files.py"
+run_gate "vault-lint" "$PYTHON" "$ROOT/scripts/vault-lint.py"
+if test -f "$ROOT/scripts/check-m4-compatibility.py"; then
+    run_gate "m4-compatibility" "$PYTHON" "$ROOT/scripts/check-m4-compatibility.py"
+else
+    printf 'pre-commit: skip  m4-compatibility (no checker in this tree)\n'
+fi
+
+# Syntax-check the staged Python files. This compiles the working-tree copy,
+# which is the same content for an ordinary `git add`-then-commit; a partially
+# staged file is checked as it exists on disk.
+staged_py=()
+while IFS= read -r -d '' path; do
+    if test -f "$path"; then
+        staged_py+=("$path")
+    fi
+done < <(git diff --cached --name-only --diff-filter=ACM -z -- '*.py')
+
+if test "${#staged_py[@]}" -gt 0; then
+    run_gate "compileall (${#staged_py[@]} staged *.py)" \
+        "$PYTHON" -m compileall -q "${staged_py[@]}"
+else
+    printf 'pre-commit: skip  compileall (no staged *.py)\n'
+fi
+
+printf 'pre-commit: ran %s\n' "${ran[*]}"
+
+if test "${#failed[@]}" -gt 0; then
+    printf 'pre-commit: blocked by %s\n' "${failed[*]}" >&2
+    printf 'pre-commit: bypass with `git commit --no-verify` if intentional\n' >&2
+    exit 1
+fi

@@ -1,0 +1,2513 @@
+{
+  "finished_at": "2026-10-08T02:10:07.075498+00:00",
+  "frozen_sha256": "2151d8c043e78bf783858b16dc45ca22d1faf24eff69d7f3d9f9b475a8d7672d",
+  "metrics": {
+    "primary": {
+      "correct": 35,
+      "total": 36,
+      "confusion": {
+        "supported": {
+          "supported": 12
+        },
+        "contradicted": {
+          "contradicted": 11,
+          "insufficient": 1
+        },
+        "insufficient": {
+          "insufficient": 12
+        }
+      },
+      "brier_multiclass_sum": 0.02525831845865541,
+      "high_probability_count": 32,
+      "high_probability_errors": 0,
+      "errors": [
+        {
+          "group": "bosses",
+          "variant": "primary",
+          "id": "q09",
+          "claim": "The experiment established that the centipede is immune to purple-berry damage.",
+          "expected": "contradicted",
+          "predicted": "insufficient",
+          "correct": false,
+          "probabilities": {
+            "supported": 0.0034721947740763426,
+            "contradicted": 0.3708057701587677,
+            "insufficient": 0.6257221102714539
+          },
+          "top_probability": 0.6257221102714539
+        }
+      ]
+    },
+    "rotated": {
+      "correct": 36,
+      "total": 36,
+      "confusion": {
+        "supported": {
+          "supported": 12
+        },
+        "contradicted": {
+          "contradicted": 12
+        },
+        "insufficient": {
+          "insufficient": 12
+        }
+      },
+      "brier_multiclass_sum": 0.015408398594239356,
+      "high_probability_count": 32,
+      "high_probability_errors": 0,
+      "errors": []
+    },
+    "reversed": {
+      "correct": 36,
+      "total": 36,
+      "confusion": {
+        "supported": {
+          "supported": 12
+        },
+        "contradicted": {
+          "contradicted": 12
+        },
+        "insufficient": {
+          "insufficient": 12
+        }
+      },
+      "brier_multiclass_sum": 0.014161415092552481,
+      "high_probability_count": 29,
+      "high_probability_errors": 0,
+      "errors": []
+    },
+    "no_evidence": {
+      "correct": 36,
+      "total": 36,
+      "confusion": {
+        "supported": {},
+        "contradicted": {},
+        "insufficient": {
+          "insufficient": 36
+        }
+      },
+      "brier_multiclass_sum": 0.002330069745597154,
+      "high_probability_count": 36,
+      "high_probability_errors": 0,
+      "errors": []
+    }
+  },
+  "stability": {
+    "rotated": {
+      "choice_flips": [
+        "q09"
+      ],
+      "max_probability_delta": 0.24622467160224915
+    },
+    "reversed": {
+      "choice_flips": [
+        "q09"
+      ],
+      "max_probability_delta": 0.25851500034332275
+    }
+  },
+  "calls": [
+    {
+      "group": "thumper",
+      "variant": "primary",
+      "wall_ms": 1056.0838669998702,
+      "usage": {
+        "input_tokens": 3092,
+        "output_tokens": 721
+      },
+      "server_latency_ms": 1049.9
+    },
+    {
+      "group": "thumper",
+      "variant": "rotated",
+      "wall_ms": 662.6657730002989,
+      "usage": {
+        "input_tokens": 3092,
+        "output_tokens": 726
+      },
+      "server_latency_ms": 657.3
+    },
+    {
+      "group": "thumper",
+      "variant": "reversed",
+      "wall_ms": 658.4319029998369,
+      "usage": {
+        "input_tokens": 3092,
+        "output_tokens": 722
+      },
+      "server_latency_ms": 653.5
+    },
+    {
+      "group": "thumper",
+      "variant": "no_evidence",
+      "wall_ms": 280.61792900007276,
+      "usage": {
+        "input_tokens": 823,
+        "output_tokens": 723
+      },
+      "server_latency_ms": 277.8
+    },
+    {
+      "group": "bosses",
+      "variant": "primary",
+      "wall_ms": 1014.2972920002649,
+      "usage": {
+        "input_tokens": 2943,
+        "output_tokens": 723
+      },
+      "server_latency_ms": 1009.1
+    },
+    {
+      "group": "bosses",
+      "variant": "rotated",
+      "wall_ms": 666.2731280002845,
+      "usage": {
+        "input_tokens": 2943,
+        "output_tokens": 726
+      },
+      "server_latency_ms": 661.2
+    },
+    {
+      "group": "bosses",
+      "variant": "reversed",
+      "wall_ms": 675.0450400004411,
+      "usage": {
+        "input_tokens": 2943,
+        "output_tokens": 722
+      },
+      "server_latency_ms": 670.1
+    },
+    {
+      "group": "bosses",
+      "variant": "no_evidence",
+      "wall_ms": 279.899142999966,
+      "usage": {
+        "input_tokens": 828,
+        "output_tokens": 719
+      },
+      "server_latency_ms": 276.8
+    },
+    {
+      "group": "collision",
+      "variant": "primary",
+      "wall_ms": 949.1626120006913,
+      "usage": {
+        "input_tokens": 2475,
+        "output_tokens": 728
+      },
+      "server_latency_ms": 943.9
+    },
+    {
+      "group": "collision",
+      "variant": "rotated",
+      "wall_ms": 663.1146760000775,
+      "usage": {
+        "input_tokens": 2475,
+        "output_tokens": 725
+      },
+      "server_latency_ms": 658.2
+    },
+    {
+      "group": "collision",
+      "variant": "reversed",
+      "wall_ms": 667.1571040005801,
+      "usage": {
+        "input_tokens": 2475,
+        "output_tokens": 724
+      },
+      "server_latency_ms": 662.3
+    },
+    {
+      "group": "collision",
+      "variant": "no_evidence",
+      "wall_ms": 280.6594479998239,
+      "usage": {
+        "input_tokens": 813,
+        "output_tokens": 719
+      },
+      "server_latency_ms": 277.5
+    },
+    {
+      "group": "camera",
+      "variant": "primary",
+      "wall_ms": 941.2305759997253,
+      "usage": {
+        "input_tokens": 2378,
+        "output_tokens": 724
+      },
+      "server_latency_ms": 936.2
+    },
+    {
+      "group": "camera",
+      "variant": "rotated",
+      "wall_ms": 677.4784469998849,
+      "usage": {
+        "input_tokens": 2378,
+        "output_tokens": 727
+      },
+      "server_latency_ms": 672.5
+    },
+    {
+      "group": "camera",
+      "variant": "reversed",
+      "wall_ms": 670.07444400042,
+      "usage": {
+        "input_tokens": 2378,
+        "output_tokens": 725
+      },
+      "server_latency_ms": 664.8
+    },
+    {
+      "group": "camera",
+      "variant": "no_evidence",
+      "wall_ms": 281.5342449994205,
+      "usage": {
+        "input_tokens": 822,
+        "output_tokens": 722
+      },
+      "server_latency_ms": 278.5
+    },
+    {
+      "group": "animation",
+      "variant": "primary",
+      "wall_ms": 956.9209170003887,
+      "usage": {
+        "input_tokens": 2231,
+        "output_tokens": 728
+      },
+      "server_latency_ms": 952.1
+    },
+    {
+      "group": "animation",
+      "variant": "rotated",
+      "wall_ms": 660.4371969997374,
+      "usage": {
+        "input_tokens": 2231,
+        "output_tokens": 726
+      },
+      "server_latency_ms": 655.9
+    },
+    {
+      "group": "animation",
+      "variant": "reversed",
+      "wall_ms": 658.5302630001024,
+      "usage": {
+        "input_tokens": 2231,
+        "output_tokens": 725
+      },
+      "server_latency_ms": 654.2
+    },
+    {
+      "group": "animation",
+      "variant": "no_evidence",
+      "wall_ms": 278.19496099982643,
+      "usage": {
+        "input_tokens": 811,
+        "output_tokens": 717
+      },
+      "server_latency_ms": 275.3
+    },
+    {
+      "group": "fragments",
+      "variant": "primary",
+      "wall_ms": 918.6871080000856,
+      "usage": {
+        "input_tokens": 2082,
+        "output_tokens": 722
+      },
+      "server_latency_ms": 914.0
+    },
+    {
+      "group": "fragments",
+      "variant": "rotated",
+      "wall_ms": 677.0620449997296,
+      "usage": {
+        "input_tokens": 2082,
+        "output_tokens": 722
+      },
+      "server_latency_ms": 672.5
+    },
+    {
+      "group": "fragments",
+      "variant": "reversed",
+      "wall_ms": 671.7279670001517,
+      "usage": {
+        "input_tokens": 2082,
+        "output_tokens": 723
+      },
+      "server_latency_ms": 667.4
+    },
+    {
+      "group": "fragments",
+      "variant": "no_evidence",
+      "wall_ms": 279.8478439999599,
+      "usage": {
+        "input_tokens": 829,
+        "output_tokens": 720
+      },
+      "server_latency_ms": 277.0
+    }
+  ],
+  "rows": [
+    {
+      "group": "thumper",
+      "variant": "primary",
+      "id": "q01",
+      "claim": "Thumper's creature type is 16, whereas type 29 is Molt.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9952561259269714,
+        "contradicted": 0.001502624829299748,
+        "insufficient": 0.003241226077079773
+      },
+      "top_probability": 0.9952561259269714
+    },
+    {
+      "group": "thumper",
+      "variant": "primary",
+      "id": "q02",
+      "claim": "In the Moonlit hardware arm Thumper occupied slot 10 and initially had health 50.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9959807395935059,
+        "contradicted": 0.0013926676474511623,
+        "insufficient": 0.0026265571359544992
+      },
+      "top_probability": 0.9959807395935059
+    },
+    {
+      "group": "thumper",
+      "variant": "primary",
+      "id": "q03",
+      "claim": "Each individual purple-berry hit removed four health points from Thumper in the recorded Moonlit arm.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.010521741583943367,
+        "contradicted": 0.9760185480117798,
+        "insufficient": 0.01345966849476099
+      },
+      "top_probability": 0.9760185480117798
+    },
+    {
+      "group": "thumper",
+      "variant": "primary",
+      "id": "q04",
+      "claim": "Transplanting Thumper's creature row automatically brought his Council Chamber health bar and boss win sequence into Moonlit.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.004622220061719418,
+        "contradicted": 0.9590414762496948,
+        "insufficient": 0.03633633255958557
+      },
+      "top_probability": 0.9590414762496948
+    },
+    {
+      "group": "thumper",
+      "variant": "primary",
+      "id": "q05",
+      "claim": "Thumper's buzzing sound is audible to a player in Moonlit Cliffs.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.002844941569492221,
+        "contradicted": 0.03509250655770302,
+        "insufficient": 0.9620625376701355
+      },
+      "top_probability": 0.9620625376701355
+    },
+    {
+      "group": "thumper",
+      "variant": "primary",
+      "id": "q06",
+      "claim": "Purple projectiles actually lock onto the transplanted Thumper after he wakes.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.072233647108078,
+        "contradicted": 0.033683475106954575,
+        "insufficient": 0.8940828442573547
+      },
+      "top_probability": 0.8940828442573547
+    },
+    {
+      "group": "thumper",
+      "variant": "rotated",
+      "id": "q01",
+      "claim": "Thumper's creature type is 16, whereas type 29 is Molt.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0009904394391924143,
+        "insufficient": 0.0016273543005809188,
+        "supported": 0.9973822236061096
+      },
+      "top_probability": 0.9973822236061096
+    },
+    {
+      "group": "thumper",
+      "variant": "rotated",
+      "id": "q02",
+      "claim": "In the Moonlit hardware arm Thumper occupied slot 10 and initially had health 50.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0005747142131440341,
+        "insufficient": 0.0009173822472803295,
+        "supported": 0.9985079169273376
+      },
+      "top_probability": 0.9985079169273376
+    },
+    {
+      "group": "thumper",
+      "variant": "rotated",
+      "id": "q03",
+      "claim": "Each individual purple-berry hit removed four health points from Thumper in the recorded Moonlit arm.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9721075892448425,
+        "insufficient": 0.017481191083788872,
+        "supported": 0.010411304421722889
+      },
+      "top_probability": 0.9721075892448425
+    },
+    {
+      "group": "thumper",
+      "variant": "rotated",
+      "id": "q04",
+      "claim": "Transplanting Thumper's creature row automatically brought his Council Chamber health bar and boss win sequence into Moonlit.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9563829302787781,
+        "insufficient": 0.037449728697538376,
+        "supported": 0.006167368032038212
+      },
+      "top_probability": 0.9563829302787781
+    },
+    {
+      "group": "thumper",
+      "variant": "rotated",
+      "id": "q05",
+      "claim": "Thumper's buzzing sound is audible to a player in Moonlit Cliffs.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.05499871075153351,
+        "insufficient": 0.9395534992218018,
+        "supported": 0.005447767209261656
+      },
+      "top_probability": 0.9395534992218018
+    },
+    {
+      "group": "thumper",
+      "variant": "rotated",
+      "id": "q06",
+      "claim": "Purple projectiles actually lock onto the transplanted Thumper after he wakes.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.050073038786649704,
+        "insufficient": 0.8886336088180542,
+        "supported": 0.0612933523952961
+      },
+      "top_probability": 0.8886336088180542
+    },
+    {
+      "group": "thumper",
+      "variant": "reversed",
+      "id": "q01",
+      "claim": "Thumper's creature type is 16, whereas type 29 is Molt.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.0017220097361132503,
+        "contradicted": 0.001150751137174666,
+        "supported": 0.9971272349357605
+      },
+      "top_probability": 0.9971272349357605
+    },
+    {
+      "group": "thumper",
+      "variant": "reversed",
+      "id": "q02",
+      "claim": "In the Moonlit hardware arm Thumper occupied slot 10 and initially had health 50.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.0009473192039877176,
+        "contradicted": 0.0007540013757534325,
+        "supported": 0.998298704624176
+      },
+      "top_probability": 0.998298704624176
+    },
+    {
+      "group": "thumper",
+      "variant": "reversed",
+      "id": "q03",
+      "claim": "Each individual purple-berry hit removed four health points from Thumper in the recorded Moonlit arm.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.016330812126398087,
+        "contradicted": 0.968988835811615,
+        "supported": 0.014680402353405952
+      },
+      "top_probability": 0.968988835811615
+    },
+    {
+      "group": "thumper",
+      "variant": "reversed",
+      "id": "q04",
+      "claim": "Transplanting Thumper's creature row automatically brought his Council Chamber health bar and boss win sequence into Moonlit.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.022790150716900826,
+        "contradicted": 0.9697792530059814,
+        "supported": 0.007430585566908121
+      },
+      "top_probability": 0.9697792530059814
+    },
+    {
+      "group": "thumper",
+      "variant": "reversed",
+      "id": "q05",
+      "claim": "Thumper's buzzing sound is audible to a player in Moonlit Cliffs.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.878532886505127,
+        "contradicted": 0.11190532892942429,
+        "supported": 0.00956176407635212
+      },
+      "top_probability": 0.878532886505127
+    },
+    {
+      "group": "thumper",
+      "variant": "reversed",
+      "id": "q06",
+      "claim": "Purple projectiles actually lock onto the transplanted Thumper after he wakes.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.885654628276825,
+        "contradicted": 0.035991717129945755,
+        "supported": 0.07835368067026138
+      },
+      "top_probability": 0.885654628276825
+    },
+    {
+      "group": "thumper",
+      "variant": "no_evidence",
+      "id": "q01",
+      "claim": "Thumper's creature type is 16, whereas type 29 is Molt.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.012645471841096878,
+        "contradicted": 0.022059563547372818,
+        "insufficient": 0.9652949571609497
+      },
+      "top_probability": 0.9652949571609497
+    },
+    {
+      "group": "thumper",
+      "variant": "no_evidence",
+      "id": "q02",
+      "claim": "In the Moonlit hardware arm Thumper occupied slot 10 and initially had health 50.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.02026047743856907,
+        "contradicted": 0.020094821229577065,
+        "insufficient": 0.9596447348594666
+      },
+      "top_probability": 0.9596447348594666
+    },
+    {
+      "group": "thumper",
+      "variant": "no_evidence",
+      "id": "q03",
+      "claim": "Each individual purple-berry hit removed four health points from Thumper in the recorded Moonlit arm.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.01191782858222723,
+        "contradicted": 0.015519331209361553,
+        "insufficient": 0.9725629091262817
+      },
+      "top_probability": 0.9725629091262817
+    },
+    {
+      "group": "thumper",
+      "variant": "no_evidence",
+      "id": "q04",
+      "claim": "Transplanting Thumper's creature row automatically brought his Council Chamber health bar and boss win sequence into Moonlit.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.006149315275251865,
+        "contradicted": 0.024976152926683426,
+        "insufficient": 0.9688745737075806
+      },
+      "top_probability": 0.9688745737075806
+    },
+    {
+      "group": "thumper",
+      "variant": "no_evidence",
+      "id": "q05",
+      "claim": "Thumper's buzzing sound is audible to a player in Moonlit Cliffs.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.012468264438211918,
+        "contradicted": 0.020590076223015785,
+        "insufficient": 0.9669417142868042
+      },
+      "top_probability": 0.9669417142868042
+    },
+    {
+      "group": "thumper",
+      "variant": "no_evidence",
+      "id": "q06",
+      "claim": "Purple projectiles actually lock onto the transplanted Thumper after he wakes.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.011220229789614677,
+        "contradicted": 0.024848278611898422,
+        "insufficient": 0.9639315009117126
+      },
+      "top_probability": 0.9639315009117126
+    },
+    {
+      "group": "bosses",
+      "variant": "primary",
+      "id": "q07",
+      "claim": "The transplanted Thud was killed, respawned at health 50, and was killed again.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9948209524154663,
+        "contradicted": 0.002182035008445382,
+        "insufficient": 0.0029969438910484314
+      },
+      "top_probability": 0.9948209524154663
+    },
+    {
+      "group": "bosses",
+      "variant": "primary",
+      "id": "q08",
+      "claim": "The static berry damage path treats creature health of at least 100 as immune.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9935150146484375,
+        "contradicted": 0.001442466164007783,
+        "insufficient": 0.005042584612965584
+      },
+      "top_probability": 0.9935150146484375
+    },
+    {
+      "group": "bosses",
+      "variant": "primary",
+      "id": "q09",
+      "claim": "The experiment established that the centipede is immune to purple-berry damage.",
+      "expected": "contradicted",
+      "predicted": "insufficient",
+      "correct": false,
+      "probabilities": {
+        "supported": 0.0034721947740763426,
+        "contradicted": 0.3708057701587677,
+        "insufficient": 0.6257221102714539
+      },
+      "top_probability": 0.6257221102714539
+    },
+    {
+      "group": "bosses",
+      "variant": "primary",
+      "id": "q10",
+      "claim": "The dark horizontal bands occurred only in an image containing a transplanted boss.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.008025631308555603,
+        "contradicted": 0.9611791968345642,
+        "insufficient": 0.03079509735107422
+      },
+      "top_probability": 0.9611791968345642
+    },
+    {
+      "group": "bosses",
+      "variant": "primary",
+      "id": "q11",
+      "claim": "The dark bands at the spawn fence are caused by the camera clipping the fence geometry.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.008582299575209618,
+        "contradicted": 0.02033316157758236,
+        "insufficient": 0.9710845351219177
+      },
+      "top_probability": 0.9710845351219177
+    },
+    {
+      "group": "bosses",
+      "variant": "primary",
+      "id": "q12",
+      "claim": "Instruction 0x0041C100 is the writer that sets awake bosses' flags bit 0x0001.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.004527231678366661,
+        "contradicted": 0.01539294607937336,
+        "insufficient": 0.9800798296928406
+      },
+      "top_probability": 0.9800798296928406
+    },
+    {
+      "group": "bosses",
+      "variant": "rotated",
+      "id": "q07",
+      "claim": "The transplanted Thud was killed, respawned at health 50, and was killed again.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0006938931182958186,
+        "insufficient": 0.0013489146949723363,
+        "supported": 0.9979571104049683
+      },
+      "top_probability": 0.9979571104049683
+    },
+    {
+      "group": "bosses",
+      "variant": "rotated",
+      "id": "q08",
+      "claim": "The static berry damage path treats creature health of at least 100 as immune.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0008931302581913769,
+        "insufficient": 0.0024633544962853193,
+        "supported": 0.9966435432434082
+      },
+      "top_probability": 0.9966435432434082
+    },
+    {
+      "group": "bosses",
+      "variant": "rotated",
+      "id": "q09",
+      "claim": "The experiment established that the centipede is immune to purple-berry damage.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.6117737889289856,
+        "insufficient": 0.3794974386692047,
+        "supported": 0.008728749118745327
+      },
+      "top_probability": 0.6117737889289856
+    },
+    {
+      "group": "bosses",
+      "variant": "rotated",
+      "id": "q10",
+      "claim": "The dark horizontal bands occurred only in an image containing a transplanted boss.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9271916747093201,
+        "insufficient": 0.05556843802332878,
+        "supported": 0.017239931970834732
+      },
+      "top_probability": 0.9271916747093201
+    },
+    {
+      "group": "bosses",
+      "variant": "rotated",
+      "id": "q11",
+      "claim": "The dark bands at the spawn fence are caused by the camera clipping the fence geometry.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0659375786781311,
+        "insufficient": 0.9254289269447327,
+        "supported": 0.008633467368781567
+      },
+      "top_probability": 0.9254289269447327
+    },
+    {
+      "group": "bosses",
+      "variant": "rotated",
+      "id": "q12",
+      "claim": "Instruction 0x0041C100 is the writer that sets awake bosses' flags bit 0x0001.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.018780846148729324,
+        "insufficient": 0.9667746424674988,
+        "supported": 0.014444448985159397
+      },
+      "top_probability": 0.9667746424674988
+    },
+    {
+      "group": "bosses",
+      "variant": "reversed",
+      "id": "q07",
+      "claim": "The transplanted Thud was killed, respawned at health 50, and was killed again.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.001396050676703453,
+        "contradicted": 0.0007406680379062891,
+        "supported": 0.9978633522987366
+      },
+      "top_probability": 0.9978633522987366
+    },
+    {
+      "group": "bosses",
+      "variant": "reversed",
+      "id": "q08",
+      "claim": "The static berry damage path treats creature health of at least 100 as immune.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.0020400923676788807,
+        "contradicted": 0.0006664603715762496,
+        "supported": 0.9972934126853943
+      },
+      "top_probability": 0.9972934126853943
+    },
+    {
+      "group": "bosses",
+      "variant": "reversed",
+      "id": "q09",
+      "claim": "The experiment established that the centipede is immune to purple-berry damage.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.3672071099281311,
+        "contradicted": 0.6262803673744202,
+        "supported": 0.006512502208352089
+      },
+      "top_probability": 0.6262803673744202
+    },
+    {
+      "group": "bosses",
+      "variant": "reversed",
+      "id": "q10",
+      "claim": "The dark horizontal bands occurred only in an image containing a transplanted boss.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.04631428048014641,
+        "contradicted": 0.9359021782875061,
+        "supported": 0.01778353750705719
+      },
+      "top_probability": 0.9359021782875061
+    },
+    {
+      "group": "bosses",
+      "variant": "reversed",
+      "id": "q11",
+      "claim": "The dark bands at the spawn fence are caused by the camera clipping the fence geometry.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.954932689666748,
+        "contradicted": 0.03294578939676285,
+        "supported": 0.01212159264832735
+      },
+      "top_probability": 0.954932689666748
+    },
+    {
+      "group": "bosses",
+      "variant": "reversed",
+      "id": "q12",
+      "claim": "Instruction 0x0041C100 is the writer that sets awake bosses' flags bit 0x0001.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.9463233947753906,
+        "contradicted": 0.03372841328382492,
+        "supported": 0.019948197528719902
+      },
+      "top_probability": 0.9463233947753906
+    },
+    {
+      "group": "bosses",
+      "variant": "no_evidence",
+      "id": "q07",
+      "claim": "The transplanted Thud was killed, respawned at health 50, and was killed again.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.010545189492404461,
+        "contradicted": 0.020974669605493546,
+        "insufficient": 0.9684801697731018
+      },
+      "top_probability": 0.9684801697731018
+    },
+    {
+      "group": "bosses",
+      "variant": "no_evidence",
+      "id": "q08",
+      "claim": "The static berry damage path treats creature health of at least 100 as immune.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.014962049201130867,
+        "contradicted": 0.02049112692475319,
+        "insufficient": 0.9645468592643738
+      },
+      "top_probability": 0.9645468592643738
+    },
+    {
+      "group": "bosses",
+      "variant": "no_evidence",
+      "id": "q09",
+      "claim": "The experiment established that the centipede is immune to purple-berry damage.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.010466676205396652,
+        "contradicted": 0.02608926221728325,
+        "insufficient": 0.9634440541267395
+      },
+      "top_probability": 0.9634440541267395
+    },
+    {
+      "group": "bosses",
+      "variant": "no_evidence",
+      "id": "q10",
+      "claim": "The dark horizontal bands occurred only in an image containing a transplanted boss.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.02067495323717594,
+        "contradicted": 0.028757082298398018,
+        "insufficient": 0.9505679607391357
+      },
+      "top_probability": 0.9505679607391357
+    },
+    {
+      "group": "bosses",
+      "variant": "no_evidence",
+      "id": "q11",
+      "claim": "The dark bands at the spawn fence are caused by the camera clipping the fence geometry.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.010094879195094109,
+        "contradicted": 0.01890341006219387,
+        "insufficient": 0.9710016846656799
+      },
+      "top_probability": 0.9710016846656799
+    },
+    {
+      "group": "bosses",
+      "variant": "no_evidence",
+      "id": "q12",
+      "claim": "Instruction 0x0041C100 is the writer that sets awake bosses' flags bit 0x0001.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.014659792184829712,
+        "contradicted": 0.02029525861144066,
+        "insufficient": 0.9650448560714722
+      },
+      "top_probability": 0.9650448560714722
+    },
+    {
+      "group": "collision",
+      "variant": "primary",
+      "id": "q13",
+      "claim": "Among the production game files, the published collision fix changed only Moonlit's TERRAIN.ALL.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9667307734489441,
+        "contradicted": 0.01871451921761036,
+        "insufficient": 0.01455481443554163
+      },
+      "top_probability": 0.9667307734489441
+    },
+    {
+      "group": "collision",
+      "variant": "primary",
+      "id": "q14",
+      "claim": "The offline probe accepted all 32 solid props using 97 samples.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9965994954109192,
+        "contradicted": 0.0014411858282983303,
+        "insufficient": 0.001959335058927536
+      },
+      "top_probability": 0.9965994954109192
+    },
+    {
+      "group": "collision",
+      "variant": "primary",
+      "id": "q15",
+      "claim": "The yellow leaves received newly invented approximate collision shells instead of translated original strips.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0012324474519118667,
+        "contradicted": 0.9935114979743958,
+        "insufficient": 0.0052560740150511265
+      },
+      "top_probability": 0.9935114979743958
+    },
+    {
+      "group": "collision",
+      "variant": "primary",
+      "id": "q16",
+      "claim": "Publishing the collision fix required changing the bugs.exe bytes from the preceding production.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0014298073947429657,
+        "contradicted": 0.9908134341239929,
+        "insufficient": 0.0077567510306835175
+      },
+      "top_probability": 0.9908134341239929
+    },
+    {
+      "group": "collision",
+      "variant": "primary",
+      "id": "q17",
+      "claim": "A player can reliably jump into the hollow plant's cup and land on its rim in the hardware-rendered game.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0015801266999915242,
+        "contradicted": 0.11238925158977509,
+        "insufficient": 0.8860306143760681
+      },
+      "top_probability": 0.8860306143760681
+    },
+    {
+      "group": "collision",
+      "variant": "primary",
+      "id": "q18",
+      "claim": "The new collision pieces lower the hardware frame rate by exactly two frames per second.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.00065952492877841,
+        "contradicted": 0.049626875668764114,
+        "insufficient": 0.9497136473655701
+      },
+      "top_probability": 0.9497136473655701
+    },
+    {
+      "group": "collision",
+      "variant": "rotated",
+      "id": "q13",
+      "claim": "Among the production game files, the published collision fix changed only Moonlit's TERRAIN.ALL.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.015341565012931824,
+        "insufficient": 0.010189657099545002,
+        "supported": 0.9744687676429749
+      },
+      "top_probability": 0.9744687676429749
+    },
+    {
+      "group": "collision",
+      "variant": "rotated",
+      "id": "q14",
+      "claim": "The offline probe accepted all 32 solid props using 97 samples.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0005036149523220956,
+        "insufficient": 0.0006183980731293559,
+        "supported": 0.9988780617713928
+      },
+      "top_probability": 0.9988780617713928
+    },
+    {
+      "group": "collision",
+      "variant": "rotated",
+      "id": "q15",
+      "claim": "The yellow leaves received newly invented approximate collision shells instead of translated original strips.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9920728802680969,
+        "insufficient": 0.004843558184802532,
+        "supported": 0.003083594376221299
+      },
+      "top_probability": 0.9920728802680969
+    },
+    {
+      "group": "collision",
+      "variant": "rotated",
+      "id": "q16",
+      "claim": "Publishing the collision fix required changing the bugs.exe bytes from the preceding production.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9857335090637207,
+        "insufficient": 0.010882927104830742,
+        "supported": 0.003383582690730691
+      },
+      "top_probability": 0.9857335090637207
+    },
+    {
+      "group": "collision",
+      "variant": "rotated",
+      "id": "q17",
+      "claim": "A player can reliably jump into the hollow plant's cup and land on its rim in the hardware-rendered game.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.09390147030353546,
+        "insufficient": 0.9042022228240967,
+        "supported": 0.0018962908070534468
+      },
+      "top_probability": 0.9042022228240967
+    },
+    {
+      "group": "collision",
+      "variant": "rotated",
+      "id": "q18",
+      "claim": "The new collision pieces lower the hardware frame rate by exactly two frames per second.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.04516496881842613,
+        "insufficient": 0.953850507736206,
+        "supported": 0.0009845288004726171
+      },
+      "top_probability": 0.953850507736206
+    },
+    {
+      "group": "collision",
+      "variant": "reversed",
+      "id": "q13",
+      "claim": "Among the production game files, the published collision fix changed only Moonlit's TERRAIN.ALL.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.006521651986986399,
+        "contradicted": 0.018692979589104652,
+        "supported": 0.974785327911377
+      },
+      "top_probability": 0.974785327911377
+    },
+    {
+      "group": "collision",
+      "variant": "reversed",
+      "id": "q14",
+      "claim": "The offline probe accepted all 32 solid props using 97 samples.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.0006805671146139503,
+        "contradicted": 0.0007013706490397453,
+        "supported": 0.9986180067062378
+      },
+      "top_probability": 0.9986180067062378
+    },
+    {
+      "group": "collision",
+      "variant": "reversed",
+      "id": "q15",
+      "claim": "The yellow leaves received newly invented approximate collision shells instead of translated original strips.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.002547541167587042,
+        "contradicted": 0.9948681592941284,
+        "supported": 0.0025842704344540834
+      },
+      "top_probability": 0.9948681592941284
+    },
+    {
+      "group": "collision",
+      "variant": "reversed",
+      "id": "q16",
+      "claim": "Publishing the collision fix required changing the bugs.exe bytes from the preceding production.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.004482460208237171,
+        "contradicted": 0.9923239946365356,
+        "supported": 0.003193524433299899
+      },
+      "top_probability": 0.9923239946365356
+    },
+    {
+      "group": "collision",
+      "variant": "reversed",
+      "id": "q17",
+      "claim": "A player can reliably jump into the hollow plant's cup and land on its rim in the hardware-rendered game.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.8374063372612,
+        "contradicted": 0.15831869840621948,
+        "supported": 0.004274984821677208
+      },
+      "top_probability": 0.8374063372612
+    },
+    {
+      "group": "collision",
+      "variant": "reversed",
+      "id": "q18",
+      "claim": "The new collision pieces lower the hardware frame rate by exactly two frames per second.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.9394293427467346,
+        "contradicted": 0.05901550129055977,
+        "supported": 0.0015552216209471226
+      },
+      "top_probability": 0.9394293427467346
+    },
+    {
+      "group": "collision",
+      "variant": "no_evidence",
+      "id": "q13",
+      "claim": "Among the production game files, the published collision fix changed only Moonlit's TERRAIN.ALL.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.01950903609395027,
+        "contradicted": 0.020353034138679504,
+        "insufficient": 0.9601379632949829
+      },
+      "top_probability": 0.9601379632949829
+    },
+    {
+      "group": "collision",
+      "variant": "no_evidence",
+      "id": "q14",
+      "claim": "The offline probe accepted all 32 solid props using 97 samples.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.019913822412490845,
+        "contradicted": 0.03459896519780159,
+        "insufficient": 0.9454871416091919
+      },
+      "top_probability": 0.9454871416091919
+    },
+    {
+      "group": "collision",
+      "variant": "no_evidence",
+      "id": "q15",
+      "claim": "The yellow leaves received newly invented approximate collision shells instead of translated original strips.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.017489204183220863,
+        "contradicted": 0.03565290570259094,
+        "insufficient": 0.9468578696250916
+      },
+      "top_probability": 0.9468578696250916
+    },
+    {
+      "group": "collision",
+      "variant": "no_evidence",
+      "id": "q16",
+      "claim": "Publishing the collision fix required changing the bugs.exe bytes from the preceding production.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.02218209207057953,
+        "contradicted": 0.02193802408874035,
+        "insufficient": 0.955879807472229
+      },
+      "top_probability": 0.955879807472229
+    },
+    {
+      "group": "collision",
+      "variant": "no_evidence",
+      "id": "q17",
+      "claim": "A player can reliably jump into the hollow plant's cup and land on its rim in the hardware-rendered game.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.006606609560549259,
+        "contradicted": 0.024294095113873482,
+        "insufficient": 0.9690993428230286
+      },
+      "top_probability": 0.9690993428230286
+    },
+    {
+      "group": "collision",
+      "variant": "no_evidence",
+      "id": "q18",
+      "claim": "The new collision pieces lower the hardware frame rate by exactly two frames per second.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.004975816700607538,
+        "contradicted": 0.018689624965190887,
+        "insufficient": 0.9763345718383789
+      },
+      "top_probability": 0.9763345718383789
+    },
+    {
+      "group": "camera",
+      "variant": "primary",
+      "id": "q19",
+      "claim": "The extended camera guard contains 88 rows covering Moonlit, the Journey hub and rooms R through Z.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9927776455879211,
+        "contradicted": 0.0026981409173458815,
+        "insufficient": 0.004524270538240671
+      },
+      "top_probability": 0.9927776455879211
+    },
+    {
+      "group": "camera",
+      "variant": "primary",
+      "id": "q20",
+      "claim": "All 765 CD files were byte-identical between the camera-fix production and its preceding production.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.992681086063385,
+        "contradicted": 0.003520529717206955,
+        "insufficient": 0.003798399120569229
+      },
+      "top_probability": 0.992681086063385
+    },
+    {
+      "group": "camera",
+      "variant": "primary",
+      "id": "q21",
+      "claim": "The camera-fix experiment checked every room from R through Z in hardware.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0012469179928302765,
+        "contradicted": 0.9716051816940308,
+        "insufficient": 0.02714785747230053
+      },
+      "top_probability": 0.9716051816940308
+    },
+    {
+      "group": "camera",
+      "variant": "primary",
+      "id": "q22",
+      "claim": "The October 2 room themes introduced the geometry that first caused the green band.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0007177385850809515,
+        "contradicted": 0.9952320456504822,
+        "insufficient": 0.0040502087213099
+      },
+      "top_probability": 0.9952320456504822
+    },
+    {
+      "group": "camera",
+      "variant": "primary",
+      "id": "q23",
+      "claim": "A hardware visit to room S would show no green band at any camera pose with this guard installed.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0053964038379490376,
+        "contradicted": 0.09800376743078232,
+        "insufficient": 0.8965998291969299
+      },
+      "top_probability": 0.8965998291969299
+    },
+    {
+      "group": "camera",
+      "variant": "primary",
+      "id": "q24",
+      "claim": "Players find the guard's possible whole-face popping at the 32k boundary visually acceptable.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.001937416265718639,
+        "contradicted": 0.02585127390921116,
+        "insufficient": 0.9722112417221069
+      },
+      "top_probability": 0.9722112417221069
+    },
+    {
+      "group": "camera",
+      "variant": "rotated",
+      "id": "q19",
+      "claim": "The extended camera guard contains 88 rows covering Moonlit, the Journey hub and rooms R through Z.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0014279857277870178,
+        "insufficient": 0.0022479856852442026,
+        "supported": 0.9963240623474121
+      },
+      "top_probability": 0.9963240623474121
+    },
+    {
+      "group": "camera",
+      "variant": "rotated",
+      "id": "q20",
+      "claim": "All 765 CD files were byte-identical between the camera-fix production and its preceding production.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0013344406615942717,
+        "insufficient": 0.0013726104516535997,
+        "supported": 0.9972929358482361
+      },
+      "top_probability": 0.9972929358482361
+    },
+    {
+      "group": "camera",
+      "variant": "rotated",
+      "id": "q21",
+      "claim": "The camera-fix experiment checked every room from R through Z in hardware.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9806204438209534,
+        "insufficient": 0.017071174457669258,
+        "supported": 0.00230843061581254
+      },
+      "top_probability": 0.9806204438209534
+    },
+    {
+      "group": "camera",
+      "variant": "rotated",
+      "id": "q22",
+      "claim": "The October 2 room themes introduced the geometry that first caused the green band.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9916565418243408,
+        "insufficient": 0.006299977656453848,
+        "supported": 0.002043400425463915
+      },
+      "top_probability": 0.9916565418243408
+    },
+    {
+      "group": "camera",
+      "variant": "rotated",
+      "id": "q23",
+      "claim": "A hardware visit to room S would show no green band at any camera pose with this guard installed.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.19396986067295074,
+        "insufficient": 0.7945408225059509,
+        "supported": 0.011489355936646461
+      },
+      "top_probability": 0.7945408225059509
+    },
+    {
+      "group": "camera",
+      "variant": "rotated",
+      "id": "q24",
+      "claim": "Players find the guard's possible whole-face popping at the 32k boundary visually acceptable.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.04967152327299118,
+        "insufficient": 0.9462826251983643,
+        "supported": 0.004045878536999226
+      },
+      "top_probability": 0.9462826251983643
+    },
+    {
+      "group": "camera",
+      "variant": "reversed",
+      "id": "q19",
+      "claim": "The extended camera guard contains 88 rows covering Moonlit, the Journey hub and rooms R through Z.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.002311539137735963,
+        "contradicted": 0.0012519299052655697,
+        "supported": 0.9964364767074585
+      },
+      "top_probability": 0.9964364767074585
+    },
+    {
+      "group": "camera",
+      "variant": "reversed",
+      "id": "q20",
+      "claim": "All 765 CD files were byte-identical between the camera-fix production and its preceding production.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.0009828582406044006,
+        "contradicted": 0.0014591512735933065,
+        "supported": 0.9975579977035522
+      },
+      "top_probability": 0.9975579977035522
+    },
+    {
+      "group": "camera",
+      "variant": "reversed",
+      "id": "q21",
+      "claim": "The camera-fix experiment checked every room from R through Z in hardware.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.01798190549015999,
+        "contradicted": 0.9799026846885681,
+        "supported": 0.0021154494024813175
+      },
+      "top_probability": 0.9799026846885681
+    },
+    {
+      "group": "camera",
+      "variant": "reversed",
+      "id": "q22",
+      "claim": "The October 2 room themes introduced the geometry that first caused the green band.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.006380320992320776,
+        "contradicted": 0.991847038269043,
+        "supported": 0.0017725953366607428
+      },
+      "top_probability": 0.991847038269043
+    },
+    {
+      "group": "camera",
+      "variant": "reversed",
+      "id": "q23",
+      "claim": "A hardware visit to room S would show no green band at any camera pose with this guard installed.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.863372802734375,
+        "contradicted": 0.12194657325744629,
+        "supported": 0.014680563472211361
+      },
+      "top_probability": 0.863372802734375
+    },
+    {
+      "group": "camera",
+      "variant": "reversed",
+      "id": "q24",
+      "claim": "Players find the guard's possible whole-face popping at the 32k boundary visually acceptable.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.9573972821235657,
+        "contradicted": 0.03815602511167526,
+        "supported": 0.004446664825081825
+      },
+      "top_probability": 0.9573972821235657
+    },
+    {
+      "group": "camera",
+      "variant": "no_evidence",
+      "id": "q19",
+      "claim": "The extended camera guard contains 88 rows covering Moonlit, the Journey hub and rooms R through Z.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.011118240654468536,
+        "contradicted": 0.02544454298913479,
+        "insufficient": 0.9634371995925903
+      },
+      "top_probability": 0.9634371995925903
+    },
+    {
+      "group": "camera",
+      "variant": "no_evidence",
+      "id": "q20",
+      "claim": "All 765 CD files were byte-identical between the camera-fix production and its preceding production.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.012804965488612652,
+        "contradicted": 0.038957174867391586,
+        "insufficient": 0.9482378363609314
+      },
+      "top_probability": 0.9482378363609314
+    },
+    {
+      "group": "camera",
+      "variant": "no_evidence",
+      "id": "q21",
+      "claim": "The camera-fix experiment checked every room from R through Z in hardware.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.007486366201192141,
+        "contradicted": 0.03508760780096054,
+        "insufficient": 0.9574259519577026
+      },
+      "top_probability": 0.9574259519577026
+    },
+    {
+      "group": "camera",
+      "variant": "no_evidence",
+      "id": "q22",
+      "claim": "The October 2 room themes introduced the geometry that first caused the green band.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.00582653796300292,
+        "contradicted": 0.016308477148413658,
+        "insufficient": 0.9778649806976318
+      },
+      "top_probability": 0.9778649806976318
+    },
+    {
+      "group": "camera",
+      "variant": "no_evidence",
+      "id": "q23",
+      "claim": "A hardware visit to room S would show no green band at any camera pose with this guard installed.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.022957848384976387,
+        "contradicted": 0.02408538945019245,
+        "insufficient": 0.9529567956924438
+      },
+      "top_probability": 0.9529567956924438
+    },
+    {
+      "group": "camera",
+      "variant": "no_evidence",
+      "id": "q24",
+      "claim": "Players find the guard's possible whole-face popping at the 32k boundary visually acceptable.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.007115576416254044,
+        "contradicted": 0.016230197623372078,
+        "insufficient": 0.9766542315483093
+      },
+      "top_probability": 0.9766542315483093
+    },
+    {
+      "group": "animation",
+      "variant": "primary",
+      "id": "q25",
+      "claim": "FLICK.ANM has a 40-slot table with slot 26 absent.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9955638647079468,
+        "contradicted": 0.0015014619566500187,
+        "insufficient": 0.0029347839299589396
+      },
+      "top_probability": 0.9955638647079468
+    },
+    {
+      "group": "animation",
+      "variant": "primary",
+      "id": "q26",
+      "claim": "Flik's native action-state table has 35 rows at address 0x004C1CE8.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9917489290237427,
+        "contradicted": 0.0018909131176769733,
+        "insufficient": 0.006360201630741358
+      },
+      "top_probability": 0.9917489290237427
+    },
+    {
+      "group": "animation",
+      "variant": "primary",
+      "id": "q27",
+      "claim": "All 61 retail ANM files passed the record grammar check with zero slack and no exceptional file.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.002176260342821479,
+        "contradicted": 0.9937459230422974,
+        "insufficient": 0.004077784717082977
+      },
+      "top_probability": 0.9937459230422974
+    },
+    {
+      "group": "animation",
+      "variant": "primary",
+      "id": "q28",
+      "claim": "The animation catalogue experiment observed Flik's state word live during gameplay.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0029902784153819084,
+        "contradicted": 0.9416918754577637,
+        "insufficient": 0.05531790852546692
+      },
+      "top_probability": 0.9416918754577637
+    },
+    {
+      "group": "animation",
+      "variant": "primary",
+      "id": "q29",
+      "claim": "Unreferenced animation slot 7 visually depicts Flik waving.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0017366716638207436,
+        "contradicted": 0.02103360928595066,
+        "insufficient": 0.977229654788971
+      },
+      "top_probability": 0.977229654788971
+    },
+    {
+      "group": "animation",
+      "variant": "primary",
+      "id": "q30",
+      "claim": "The per-part stored rotation angles use XYZ Euler order.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.006698897574096918,
+        "contradicted": 0.014820089563727379,
+        "insufficient": 0.9784810543060303
+      },
+      "top_probability": 0.9784810543060303
+    },
+    {
+      "group": "animation",
+      "variant": "rotated",
+      "id": "q25",
+      "claim": "FLICK.ANM has a 40-slot table with slot 26 absent.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0005720859626308084,
+        "insufficient": 0.0012838472612202168,
+        "supported": 0.9981440305709839
+      },
+      "top_probability": 0.9981440305709839
+    },
+    {
+      "group": "animation",
+      "variant": "rotated",
+      "id": "q26",
+      "claim": "Flik's native action-state table has 35 rows at address 0x004C1CE8.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.001067131059244275,
+        "insufficient": 0.0022770410869270563,
+        "supported": 0.9966558218002319
+      },
+      "top_probability": 0.9966558218002319
+    },
+    {
+      "group": "animation",
+      "variant": "rotated",
+      "id": "q27",
+      "claim": "All 61 retail ANM files passed the record grammar check with zero slack and no exceptional file.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9878644347190857,
+        "insufficient": 0.006253586616367102,
+        "supported": 0.005882039666175842
+      },
+      "top_probability": 0.9878644347190857
+    },
+    {
+      "group": "animation",
+      "variant": "rotated",
+      "id": "q28",
+      "claim": "The animation catalogue experiment observed Flik's state word live during gameplay.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9281695485115051,
+        "insufficient": 0.06658052653074265,
+        "supported": 0.005249969661235809
+      },
+      "top_probability": 0.9281695485115051
+    },
+    {
+      "group": "animation",
+      "variant": "rotated",
+      "id": "q29",
+      "claim": "Unreferenced animation slot 7 visually depicts Flik waving.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.023086803033947945,
+        "insufficient": 0.973037838935852,
+        "supported": 0.0038753077387809753
+      },
+      "top_probability": 0.973037838935852
+    },
+    {
+      "group": "animation",
+      "variant": "rotated",
+      "id": "q30",
+      "claim": "The per-part stored rotation angles use XYZ Euler order.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.022212300449609756,
+        "insufficient": 0.9581924676895142,
+        "supported": 0.01959528774023056
+      },
+      "top_probability": 0.9581924676895142
+    },
+    {
+      "group": "animation",
+      "variant": "reversed",
+      "id": "q25",
+      "claim": "FLICK.ANM has a 40-slot table with slot 26 absent.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.0006622560904361308,
+        "contradicted": 0.0006144953658804297,
+        "supported": 0.9987232089042664
+      },
+      "top_probability": 0.9987232089042664
+    },
+    {
+      "group": "animation",
+      "variant": "reversed",
+      "id": "q26",
+      "claim": "Flik's native action-state table has 35 rows at address 0x004C1CE8.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.0022406023927032948,
+        "contradicted": 0.0007962252129800618,
+        "supported": 0.9969630837440491
+      },
+      "top_probability": 0.9969630837440491
+    },
+    {
+      "group": "animation",
+      "variant": "reversed",
+      "id": "q27",
+      "claim": "All 61 retail ANM files passed the record grammar check with zero slack and no exceptional file.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.004532696679234505,
+        "contradicted": 0.9896308779716492,
+        "supported": 0.00583648681640625
+      },
+      "top_probability": 0.9896308779716492
+    },
+    {
+      "group": "animation",
+      "variant": "reversed",
+      "id": "q28",
+      "claim": "The animation catalogue experiment observed Flik's state word live during gameplay.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.05526331067085266,
+        "contradicted": 0.9384419918060303,
+        "supported": 0.006294695660471916
+      },
+      "top_probability": 0.9384419918060303
+    },
+    {
+      "group": "animation",
+      "variant": "reversed",
+      "id": "q29",
+      "claim": "Unreferenced animation slot 7 visually depicts Flik waving.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.9445711374282837,
+        "contradicted": 0.04911498725414276,
+        "supported": 0.006313800346106291
+      },
+      "top_probability": 0.9445711374282837
+    },
+    {
+      "group": "animation",
+      "variant": "reversed",
+      "id": "q30",
+      "claim": "The per-part stored rotation angles use XYZ Euler order.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.9341018199920654,
+        "contradicted": 0.03774843364953995,
+        "supported": 0.028149720281362534
+      },
+      "top_probability": 0.9341018199920654
+    },
+    {
+      "group": "animation",
+      "variant": "no_evidence",
+      "id": "q25",
+      "claim": "FLICK.ANM has a 40-slot table with slot 26 absent.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.018330290913581848,
+        "contradicted": 0.02713581919670105,
+        "insufficient": 0.9545338749885559
+      },
+      "top_probability": 0.9545338749885559
+    },
+    {
+      "group": "animation",
+      "variant": "no_evidence",
+      "id": "q26",
+      "claim": "Flik's native action-state table has 35 rows at address 0x004C1CE8.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.016445217654109,
+        "contradicted": 0.02019565738737583,
+        "insufficient": 0.9633591771125793
+      },
+      "top_probability": 0.9633591771125793
+    },
+    {
+      "group": "animation",
+      "variant": "no_evidence",
+      "id": "q27",
+      "claim": "All 61 retail ANM files passed the record grammar check with zero slack and no exceptional file.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.013236149214208126,
+        "contradicted": 0.02917216159403324,
+        "insufficient": 0.957591712474823
+      },
+      "top_probability": 0.957591712474823
+    },
+    {
+      "group": "animation",
+      "variant": "no_evidence",
+      "id": "q28",
+      "claim": "The animation catalogue experiment observed Flik's state word live during gameplay.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.016318360343575478,
+        "contradicted": 0.031115839257836342,
+        "insufficient": 0.9525658488273621
+      },
+      "top_probability": 0.9525658488273621
+    },
+    {
+      "group": "animation",
+      "variant": "no_evidence",
+      "id": "q29",
+      "claim": "Unreferenced animation slot 7 visually depicts Flik waving.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0043156747706234455,
+        "contradicted": 0.016527099534869194,
+        "insufficient": 0.9791572093963623
+      },
+      "top_probability": 0.9791572093963623
+    },
+    {
+      "group": "animation",
+      "variant": "no_evidence",
+      "id": "q30",
+      "claim": "The per-part stored rotation angles use XYZ Euler order.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.012655247934162617,
+        "contradicted": 0.01602441631257534,
+        "insufficient": 0.9713203310966492
+      },
+      "top_probability": 0.9713203310966492
+    },
+    {
+      "group": "fragments",
+      "variant": "primary",
+      "id": "q31",
+      "claim": "A gold-berry kill never drops an additional gold fragment.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9862232804298401,
+        "contradicted": 0.0033343287650495768,
+        "insufficient": 0.010442364029586315
+      },
+      "top_probability": 0.9862232804298401
+    },
+    {
+      "group": "fragments",
+      "variant": "primary",
+      "id": "q32",
+      "claim": "The saved default probability of a fragment from a red-berry kill is one in twelve.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.9415379762649536,
+        "contradicted": 0.01194159034639597,
+        "insufficient": 0.046520426869392395
+      },
+      "top_probability": 0.9415379762649536
+    },
+    {
+      "group": "fragments",
+      "variant": "primary",
+      "id": "q33",
+      "claim": "Hardware testing has already validated fragment drops and pickups for all six non-gold berry types.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0011673097033053637,
+        "contradicted": 0.983993411064148,
+        "insufficient": 0.014839235693216324
+      },
+      "top_probability": 0.983993411064148
+    },
+    {
+      "group": "fragments",
+      "variant": "primary",
+      "id": "q34",
+      "claim": "The white-berry fragment odds were copied from a white-berry row in the PS1 odds table.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0025943138170987368,
+        "contradicted": 0.9836810827255249,
+        "insufficient": 0.01372462697327137
+      },
+      "top_probability": 0.9836810827255249
+    },
+    {
+      "group": "fragments",
+      "variant": "primary",
+      "id": "q35",
+      "claim": "With the real red-berry odds, a long hardware run would produce a measured drop frequency within one percentage point of 1/12.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0034752003848552704,
+        "contradicted": 0.0899597704410553,
+        "insufficient": 0.9065649509429932
+      },
+      "top_probability": 0.9065649509429932
+    },
+    {
+      "group": "fragments",
+      "variant": "primary",
+      "id": "q36",
+      "claim": "Collecting the last fragment in a scripted Hopper boss encounter triggers the correct level-completion behavior in hardware.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.0018738909857347608,
+        "contradicted": 0.04835524410009384,
+        "insufficient": 0.9497708678245544
+      },
+      "top_probability": 0.9497708678245544
+    },
+    {
+      "group": "fragments",
+      "variant": "rotated",
+      "id": "q31",
+      "claim": "A gold-berry kill never drops an additional gold fragment.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.005464977119117975,
+        "insufficient": 0.008156560361385345,
+        "supported": 0.9863784313201904
+      },
+      "top_probability": 0.9863784313201904
+    },
+    {
+      "group": "fragments",
+      "variant": "rotated",
+      "id": "q32",
+      "claim": "The saved default probability of a fragment from a red-berry kill is one in twelve.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0038099559023976326,
+        "insufficient": 0.018437672406435013,
+        "supported": 0.9777523875236511
+      },
+      "top_probability": 0.9777523875236511
+    },
+    {
+      "group": "fragments",
+      "variant": "rotated",
+      "id": "q33",
+      "claim": "Hardware testing has already validated fragment drops and pickups for all six non-gold berry types.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9811058640480042,
+        "insufficient": 0.01674836315214634,
+        "supported": 0.002145797247067094
+      },
+      "top_probability": 0.9811058640480042
+    },
+    {
+      "group": "fragments",
+      "variant": "rotated",
+      "id": "q34",
+      "claim": "The white-berry fragment odds were copied from a white-berry row in the PS1 odds table.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.9730956554412842,
+        "insufficient": 0.021188221871852875,
+        "supported": 0.00571615481749177
+      },
+      "top_probability": 0.9730956554412842
+    },
+    {
+      "group": "fragments",
+      "variant": "rotated",
+      "id": "q35",
+      "claim": "With the real red-berry odds, a long hardware run would produce a measured drop frequency within one percentage point of 1/12.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.18265989422798157,
+        "insufficient": 0.8079449534416199,
+        "supported": 0.009395144879817963
+      },
+      "top_probability": 0.8079449534416199
+    },
+    {
+      "group": "fragments",
+      "variant": "rotated",
+      "id": "q36",
+      "claim": "Collecting the last fragment in a scripted Hopper boss encounter triggers the correct level-completion behavior in hardware.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "contradicted": 0.0779307410120964,
+        "insufficient": 0.9182161688804626,
+        "supported": 0.0038531413301825523
+      },
+      "top_probability": 0.9182161688804626
+    },
+    {
+      "group": "fragments",
+      "variant": "reversed",
+      "id": "q31",
+      "claim": "A gold-berry kill never drops an additional gold fragment.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.007851594127714634,
+        "contradicted": 0.0038325125351548195,
+        "supported": 0.9883158206939697
+      },
+      "top_probability": 0.9883158206939697
+    },
+    {
+      "group": "fragments",
+      "variant": "reversed",
+      "id": "q32",
+      "claim": "The saved default probability of a fragment from a red-berry kill is one in twelve.",
+      "expected": "supported",
+      "predicted": "supported",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.007976084016263485,
+        "contradicted": 0.004374686628580093,
+        "supported": 0.9876492619514465
+      },
+      "top_probability": 0.9876492619514465
+    },
+    {
+      "group": "fragments",
+      "variant": "reversed",
+      "id": "q33",
+      "claim": "Hardware testing has already validated fragment drops and pickups for all six non-gold berry types.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.020043501630425453,
+        "contradicted": 0.9786494374275208,
+        "supported": 0.0013070477871224284
+      },
+      "top_probability": 0.9786494374275208
+    },
+    {
+      "group": "fragments",
+      "variant": "reversed",
+      "id": "q34",
+      "claim": "The white-berry fragment odds were copied from a white-berry row in the PS1 odds table.",
+      "expected": "contradicted",
+      "predicted": "contradicted",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.017867419868707657,
+        "contradicted": 0.9753869771957397,
+        "supported": 0.006745542399585247
+      },
+      "top_probability": 0.9753869771957397
+    },
+    {
+      "group": "fragments",
+      "variant": "reversed",
+      "id": "q35",
+      "claim": "With the real red-berry odds, a long hardware run would produce a measured drop frequency within one percentage point of 1/12.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.8710220456123352,
+        "contradicted": 0.118146613240242,
+        "supported": 0.010831332765519619
+      },
+      "top_probability": 0.8710220456123352
+    },
+    {
+      "group": "fragments",
+      "variant": "reversed",
+      "id": "q36",
+      "claim": "Collecting the last fragment in a scripted Hopper boss encounter triggers the correct level-completion behavior in hardware.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "insufficient": 0.896395206451416,
+        "contradicted": 0.09752066433429718,
+        "supported": 0.006084089167416096
+      },
+      "top_probability": 0.896395206451416
+    },
+    {
+      "group": "fragments",
+      "variant": "no_evidence",
+      "id": "q31",
+      "claim": "A gold-berry kill never drops an additional gold fragment.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.03584499657154083,
+        "contradicted": 0.020319081842899323,
+        "insufficient": 0.9438358545303345
+      },
+      "top_probability": 0.9438358545303345
+    },
+    {
+      "group": "fragments",
+      "variant": "no_evidence",
+      "id": "q32",
+      "claim": "The saved default probability of a fragment from a red-berry kill is one in twelve.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.01385984942317009,
+        "contradicted": 0.020705996081233025,
+        "insufficient": 0.9654341340065002
+      },
+      "top_probability": 0.9654341340065002
+    },
+    {
+      "group": "fragments",
+      "variant": "no_evidence",
+      "id": "q33",
+      "claim": "Hardware testing has already validated fragment drops and pickups for all six non-gold berry types.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.007602503523230553,
+        "contradicted": 0.04323848336935043,
+        "insufficient": 0.9491590857505798
+      },
+      "top_probability": 0.9491590857505798
+    },
+    {
+      "group": "fragments",
+      "variant": "no_evidence",
+      "id": "q34",
+      "claim": "The white-berry fragment odds were copied from a white-berry row in the PS1 odds table.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.013390833511948586,
+        "contradicted": 0.032498303800821304,
+        "insufficient": 0.9541109204292297
+      },
+      "top_probability": 0.9541109204292297
+    },
+    {
+      "group": "fragments",
+      "variant": "no_evidence",
+      "id": "q35",
+      "claim": "With the real red-berry odds, a long hardware run would produce a measured drop frequency within one percentage point of 1/12.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.009151346981525421,
+        "contradicted": 0.015810173004865646,
+        "insufficient": 0.975038468837738
+      },
+      "top_probability": 0.975038468837738
+    },
+    {
+      "group": "fragments",
+      "variant": "no_evidence",
+      "id": "q36",
+      "claim": "Collecting the last fragment in a scripted Hopper boss encounter triggers the correct level-completion behavior in hardware.",
+      "expected": "insufficient",
+      "predicted": "insufficient",
+      "correct": true,
+      "probabilities": {
+        "supported": 0.004869772586971521,
+        "contradicted": 0.01184849999845028,
+        "insufficient": 0.9832817912101746
+      },
+      "top_probability": 0.9832817912101746
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+"""Offline depth interpolation comparison; never attaches to the game."""
+import json,struct,hashlib
+from pathlib import Path
+from PIL import Image
+p=Path(__file__).resolve().parent
+m=json.loads((p/'paused-memory.json').read_text())
+def read(addr,n):
+ for r in m['regions']:
+  if r['start']<=addr and addr+n<=r['end']:
+   with open(r['path'],'rb') as f:f.seek(addr-r['start']);return f.read(n)
+ raise ValueError(hex(addr))
+comparisons=[]
+for fn in ['offline-actor.json','offline-mesh-1.json']:
+ data=json.loads((p/fn).read_text());matches=0;total=0
+ for b in data['batches']:
+  ptr=int(b['pointer'],16);raw=read(ptr,500*32)
+  # Match screen x/y/z and rhw without assuming the unreported specular field.
+  runs=[]
+  for v in b['vertices']:
+   total+=1;needle=struct.pack('<4f',*[v[k] for k in ['x','y','z','rhw']]);matches+=needle in raw
+   runs.append(needle)
+  exact_starts=[s for s in range(501-len(runs)) if all(raw[(s+i)*32:(s+i)*32+16]==v for i,v in enumerate(runs))]
+  comparison={'file':fn,'page':b['page'],'matching_xyzw_vertices':matches,'total':total,'consecutive_match_start_indices':exact_starts,'live_count':struct.unpack('<H',read((0x4f1730 if b['root_index']==0 else 0x511510)+0x104+b['page']*2,2))[0]}
+  comparisons.append(comparison);print(comparison)
+
+def tris(name):
+ out=[]
+ for b in json.loads((p/name).read_text())['batches']:
+  for j in range(0,len(b['indices']),3):out.append([b['vertices'][i] for i in b['indices'][j:j+3]])
+ return out
+
+def z_at(tri,x,y):
+ a,b,c=tri;det=(b['y']-c['y'])*(a['x']-c['x'])+(c['x']-b['x'])*(a['y']-c['y'])
+ if not det:return None
+ u=((b['y']-c['y'])*(x-c['x'])+(c['x']-b['x'])*(y-c['y']))/det
+ v=((c['y']-a['y'])*(x-c['x'])+(a['x']-c['x'])*(y-c['y']))/det
+ w=1-u-v
+ if min(u,v,w)<-1e-9:return None
+ return u*a['z']+v*b['z']+w*c['z']
+T=[tris(n) for n in ['offline-actor.json','offline-mesh-1.json','offline-mesh-4.json']]
+im=Image.open('work/experiments/USER-20260904-deck-depth-play-001/frame-1788567836037465925.png').convert('RGB')
+rows=[]
+for y in range(285,340):
+ for x in range(285,350):
+  r,g,b=im.getpixel((x,y))
+  if not(b>r+6 and b>g+2):continue
+  depths=[]
+  for tris0 in T:
+   zz=[z for t in tris0 if (z:=z_at(t,x,y)) is not None]
+   depths.append(min(zz) if zz else None)
+  rows.append({'xy':[x,y],'rgb':[r,g,b],'depths_actor_coarse_split':depths})
+ok=[r for r in rows if all(z is not None for z in r['depths_actor_coarse_split']) and r['depths_actor_coarse_split'][2]<r['depths_actor_coarse_split'][0]<r['depths_actor_coarse_split'][1]]
+print('blue pixels',len(rows),'all covered',sum(all(z is not None for z in r['depths_actor_coarse_split']) for r in rows),'reversed depth ordering',len(ok))
+print(json.dumps(ok[::max(1,len(ok)//10)],indent=2))
+(p/'pixel-depths-exploratory.json').write_text(json.dumps({'classification':'post-hoc blue pixel screen filter B>R+6 and B>G+2, native x285..349 y285..339; minimum triangle Z at integer coordinates, no texture/alpha/cull simulation','captured_batch_comparisons':comparisons,'rows':rows,'inversions':ok},indent=2)+'\n')

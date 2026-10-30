@@ -1,0 +1,17 @@
+# Preserve runtime evidence bytes and suppress whitespace diagnostics on raw logs.
+dynamic/wine/**/bugs.log -diff
+dynamic/wine/**/stderr.txt -diff
+dynamic/wine/**/wine-debug.txt -diff
+
+# EXP-007 binds this exact disassembly hash; operand-free lines retain their
+# original trailing separator. Keep the evidence bytes intact.
+reports/terrain/EXP-20260904-007-depth-path.asm whitespace=-blank-at-eol
+
+# Raw captured evidence kept byte-for-byte (debugger maps, disc listing, tool
+# logs, PE header dump) and an upstream-format patch whose context lines keep
+# their trailing whitespace.
+dynamic/wine/**/maps.txt whitespace=-blank-at-eol,-blank-at-eof
+reports/disc/*.txt whitespace=-blank-at-eol,-blank-at-eof
+reports/ghidra/*.log whitespace=-blank-at-eol,-blank-at-eof
+static/pe/**/objdump.txt whitespace=-blank-at-eol,-blank-at-eof
+tools/86box/patches/*.patch whitespace=-blank-at-eol,-blank-at-eof

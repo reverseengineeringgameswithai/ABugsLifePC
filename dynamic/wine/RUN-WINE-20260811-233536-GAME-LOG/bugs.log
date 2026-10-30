@@ -1,0 +1,17 @@
+CalculateClockSpeed->time[0]=1
+                   ->time[1]=1
+                   ->time[2]=1
+                   ->time[3]=1
+                   ->time[4]=1
+                   ->time[5]=1
+                   ->time[6]=2
+                   ->time[7]=1
+                   ->time[8]=1
+                   ->time[9]=1
+                   ->avgtime=1
+                   ->CPUSPEED=165425152
+INIT : CPU clock speed is 165.425152 MHZ
+LOADING : App run from R:\.
+LOADING : No CD-ROM found.
+LOAD : Loading file R:\\cd\cd.txt.
+FATAL ERROR - Failed to load file R:\\cd\cd.txt - error was No such file or directory.

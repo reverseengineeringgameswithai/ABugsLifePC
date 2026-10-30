@@ -1,0 +1,153 @@
+{
+  "accepted": true,
+  "all_keys_released": true,
+  "dispatches": [
+    {
+      "action": "down",
+      "dispatched_offset_ns": 6174188992,
+      "drift_ns": 1781163,
+      "keysym": "Down",
+      "scheduled_offset_ns": 6172407829,
+      "sequence": 0
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 6394747380,
+      "drift_ns": 1013117,
+      "keysym": "Down",
+      "scheduled_offset_ns": 6393734263,
+      "sequence": 1
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 7415849726,
+      "drift_ns": 1306019,
+      "keysym": "Return",
+      "scheduled_offset_ns": 7414543707,
+      "sequence": 2
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 7631710683,
+      "drift_ns": 985687,
+      "keysym": "Return",
+      "scheduled_offset_ns": 7630724996,
+      "sequence": 3
+    }
+  ],
+  "emergency_releases": [],
+  "ended": "2026-08-15T12:53:24.932125-04:00",
+  "event_count": 4,
+  "events_dispatched": 4,
+  "failure": null,
+  "implementation_sha256": "a168485131bc54e7c8bdff5cf43f0be17310f0fed77d75d5cb32d3d538ebbeee",
+  "max_drift_ns": 50000000,
+  "maximum_absolute_drift_ns": 1781163,
+  "mode": "replay",
+  "movie_path": "/home/dev/ABLPC/work/copies/EXP-CAP-002/final-hardware-select-movie.json",
+  "movie_sha256": "07b5c3516b86d72add02639a12bb52781848d8b7d890f1b811311eee324b28c8",
+  "ownership": {
+    "checked_at": "2026-08-15T12:53:11.916401-04:00",
+    "cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+    "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+    "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "pid": 548815,
+    "verified": true
+  },
+  "recorded_anchor": {
+    "anchored_at": "2026-08-15T12:51:42.128955-04:00",
+    "arm_delay_ms": 1000,
+    "frame": null,
+    "type": "manual-delay"
+  },
+  "replay_anchor": {
+    "anchored_at": "2026-08-15T12:53:12.922735-04:00",
+    "arm_delay_ms": 1000,
+    "frame": null,
+    "type": "manual-delay"
+  },
+  "run_id": "RUN-INP-REP-20260815-125312",
+  "schedule_sha256": "f2caa3e98a147f6a58fded45827d4c2ddff88980150a3cecc5ddba6688187247",
+  "schema_version": 1,
+  "started": "2026-08-15T12:53:12.923023-04:00",
+  "status": "complete",
+  "tool": "input-movie",
+  "tool_version": "1.0.0",
+  "window_after": {
+    "checked_at": "2026-08-15T12:53:24.932091-04:00",
+    "class": "bugs.exe",
+    "display": ":2",
+    "focused": true,
+    "focused_window_id": 14680071,
+    "game_pgid": 548572,
+    "geometry": {
+      "height": 480,
+      "screen": 0,
+      "width": 640,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Loading - A Bugs Life",
+    "owner_cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "owner_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "owner_pgid": 548572,
+    "pid": 548815,
+    "same_process_group": true,
+    "signature": {
+      "class": "bugs.exe",
+      "height": 480,
+      "owner_exe_basename": "wine-preloader",
+      "screen": 0,
+      "width": 640
+    },
+    "window_id": 14680071,
+    "window_id_hex": "0xe00007"
+  },
+  "window_before": {
+    "checked_at": "2026-08-15T12:53:11.921141-04:00",
+    "class": "bugs.exe",
+    "display": ":2",
+    "focused": true,
+    "focused_window_id": 14680071,
+    "game_pgid": 548572,
+    "geometry": {
+      "height": 480,
+      "screen": 0,
+      "width": 640,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Bugs",
+    "owner_cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "owner_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "owner_pgid": 548572,
+    "pid": 548815,
+    "same_process_group": true,
+    "signature": {
+      "class": "bugs.exe",
+      "height": 480,
+      "owner_exe_basename": "wine-preloader",
+      "screen": 0,
+      "width": 640
+    },
+    "window_id": 14680071,
+    "window_id_hex": "0xe00007"
+  }
+}

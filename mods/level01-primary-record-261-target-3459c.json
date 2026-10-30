@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "name": "level01-primary-record-261-target-3459c",
+  "files": [
+    {
+      "path": "CD/LEVEL01/LEVEL.DAT",
+      "sha256": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53",
+      "format": "pc-level-dat-prefix-v0",
+      "edits": [
+        {
+          "operation": "set-scene-record-payload-target-offset",
+          "section": "primary",
+          "index": 261,
+          "expected_target_offset": 225340,
+          "target_offset": 214428
+        }
+      ]
+    }
+  ]
+}

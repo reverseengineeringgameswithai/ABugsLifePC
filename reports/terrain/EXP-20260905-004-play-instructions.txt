@@ -1,0 +1,30 @@
+# Playable ground-ramp-box area
+
+Launch from the repository:
+
+```bash
+work/copies/EXP-20260905-004/play.sh
+```
+
+At the level carousel press Right once to select Anthill, then Enter. Press
+Enter again at the Level One title. This uses normal game input, not teleport.
+The ramp is on the box's right/east side. Walk around to its low end, walk up
+onto the top, turn around and walk back down. Arrow keys move; Shift jumps.
+The broad deck is elevated above the retail landscape. Stay on the test deck;
+this is a small test area, not a completed replacement level.
+
+Rebuild the same assets into a fresh destination:
+
+```bash
+.venv/bin/python scripts/terrain-play-area.py --write-fixture work/copies/my-ramp-fixture
+.venv/bin/python scripts/terrain-play-area.py --stage-game work/copies/my-ramp-game
+```
+
+Both commands refuse existing output directories. Add `--report` with a new
+JSON path to run the original-instruction route gate before writing assets.
+
+The test instance was closed after two normal-input ascent/descent cycles,
+a jump/landing on top, and a west step-off to the deck. Launching again rewrites
+the game's ordinary log and current launch metadata, not the authored assets.
+Exact scientific evidence is separately banked in the EXP-20260905-004 snapshot.
+No R2q or full-repository test suite is run by this launcher or builder.

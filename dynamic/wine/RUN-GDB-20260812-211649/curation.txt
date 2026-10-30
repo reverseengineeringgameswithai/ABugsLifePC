@@ -1,0 +1,27 @@
+RUN-GDB-20260812-211649 curation
+================================
+
+Disposition: rejected as caller-chain evidence; accepted only as a fresh
+reproduction of the debugger/instrumentation fault tracked by KU-031 and
+CAP-001.
+
+The structured artifacts report target_reached, one stop, verified hardware-
+point deletion, and detach. That status is not a game-survival receipt. The
+ignored raw GDB stdout (SHA-256
+8dee340d13000d5caf43abc0d0b9bfb4ab5d5352c0f80e1c1eb1536bce44390a)
+records SIGSEGV at 0x0044D79A immediately after the breakpoint stop. Wine then
+reported an unhandled read from FFFFFFFF at 0x0044D79A and opened winedbg. An
+isolated game-surface capture of that dialog has SHA-256
+d528b1c97d8820b6e62a36a4e327602276c1244bd8a4b72e6b16618da7105a3b and
+remains ignored under work/copies/EXP-20260812-029/evidence/.
+
+The one stop establishes only the captured gate state. It does not establish
+that the call at 0x0044D7A4 completed, that 0x0044CA00 executed, or that either
+plant 10 +0x2E word was or was not accessed after the fault. The zero-filled
+fixed source-table snapshots describe only the four configured address ranges;
+they do not establish that no live source record exists elsewhere.
+
+The committed bugs.log proves the hardware Direct3D gates, plant10 pair loads,
+End InitMainGame, and an appended NextLife milestone. Because the fatal signal
+and Wine crash dialog independently disprove process survival, NextLife is a
+log milestone only and cannot promote this arm into accepted game behavior.

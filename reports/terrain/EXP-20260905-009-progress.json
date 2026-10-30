@@ -1,0 +1,35 @@
+{
+  "experiment": "EXP-20260905-009",
+  "status": "historical-initial-run-superseded-by-20260906-validation",
+  "current_validation": "reports/terrain/EXP-20260905-009-validation.json",
+  "implementation": "reimplementation/ablpc/terrain_additive.py",
+  "builder": "scripts/terrain-additive-area.py",
+  "native_probe": "scripts/terrain-additive-area-probe.py",
+  "tests": "tests/test_terrain_additive.py",
+  "initial_test_result": {
+    "command": "PYTHONPATH=\"$PWD/reimplementation:${PYTHONPATH:-}\" .venv/bin/python -m pytest -q --basetemp=\"$PWD/work/tmp/pytest-terrain-additive\" -o tmp_path_retention_policy=failed tests/test_terrain_additive.py",
+    "passed": 37,
+    "failed": 2,
+    "seconds": 0.36,
+    "failures": [
+      "test_collision_rejects_mutable_and_truncated_inputs: expected TypeError; immutable() raises ValueError",
+      "test_render_rejects_bad_references_and_mutable_input: expected TypeError; immutable() raises ValueError"
+    ]
+  },
+  "known_draft_issues": [
+    "Initial mutable-input exception mismatch was corrected with user approval on 2026-09-06.",
+    "Initial offline top-landing setup was corrected with user approval on 2026-09-06.",
+    "The redundant overridden initial RETAIL_TERRAIN_SHA assignment was removed in the 2026-09-06 continuation; the effective pinned hash and assets did not change."
+  ],
+  "confirmed_scope": "Passing private-fixture regressions preserve all 188 other collision records/payloads, all 134 original source-99 cells, original mesh-160 vertex/command bytes, and all other supported static mesh references. The candidate is generated in memory by the tests, not staged for play.",
+  "planned_additions": {"source99_cells": 16, "terrain_growth_bytes": 704, "connector_source_cell": 44140},
+  "native_proofs_run": false,
+  "terrain_gate_run": false,
+  "runtime_tested": false,
+  "game_staged": false,
+  "live_process_actions": [],
+  "r2q_tests_run": false,
+  "full_make_check_run": false,
+  "git_actions": [],
+  "next": "This report preserves the initial draft snapshot only. Use EXP-20260905-009-validation.json for the staged copy, passing 224-test gate and incomplete native acceptance recorded on 2026-09-06."
+}

@@ -1,0 +1,572 @@
+{
+  "experiment": "EXP-20261007-001",
+  "frozen_at": "2026-10-08T02:09:47.524164+00:00",
+  "description": "Exploratory, hand-authored evidence classification probe. Labels frozen before inference; not a representative accuracy benchmark or new PC evidence.",
+  "ablpc_commit": "06c27c3d8ca6dd14cf3c6208bdf780b89c61f0f6",
+  "kev_commit": "84847f0a883d900f7de5b7a57eaa341ca7f9a6b4",
+  "runner_sha256": "492732e8d95a11e6e68b1633cb7f2e15dd4877e6fa81add8f6a5acb9962e12bd",
+  "claims_sha256": "45fb194b8cdffc40e240fd144c5b27ef5583fd8e2c40e8d65edf812746111d35",
+  "installation": {
+    "python": "3.12",
+    "cuda": "13.0",
+    "kev_commit": "84847f0a883d900f7de5b7a57eaa341ca7f9a6b4",
+    "modelopt_commit": "6a1068746dd0e746fe4bcb79152b86bdcf58cb41",
+    "source_revision": "af0e6d551bdc2cc724f3e9d7a8bee1cd4fb8f7bf",
+    "packages": {
+      "torch": "2.13.0+cu130",
+      "transformers": "5.17.0",
+      "accelerate": "1.15.0",
+      "huggingface_hub": "1.32.0",
+      "flashinfer-python": "0.6.18.post1",
+      "flash-linear-attention": "0.5.2",
+      "fla-core": "0.5.2",
+      "peft": "0.21.2",
+      "fastapi": "0.136.3",
+      "uvicorn": "0.53.0",
+      "pydantic": "2.13.5",
+      "numpy": "2.2.6",
+      "scipy": "1.18.1",
+      "safetensors": "0.8.0",
+      "omegaconf": "2.3.1",
+      "PuLP": "3.3.2",
+      "flashinfer-jit-cache": "0.6.18.post1+cu130"
+    },
+    "environment": {
+      "KEV_FUSED": "0",
+      "KEV_CUDA_GRAPHS": "0",
+      "KEV_PREFIX_CACHE": "1",
+      "KEV_PREFIX_MAX_TOKENS": "8192"
+    },
+    "loader_args": [
+      "--row-tokens",
+      "2048"
+    ],
+    "limitations": [
+      "Torch 2.13 and NumPy 2.2.6 are outside Kev declared ranges; Kev installed with --no-deps.",
+      "Transformers outside ModelOpt tested range.",
+      "This is the measured environment record; package installation in a clean environment was not separately qualified."
+    ],
+    "package_scope": "Key packages only; runtime-packages.json carries the full measured environment.",
+    "image": {
+      "base": "vllm/vllm-openai:nightly-e9757321527ca1ecd514c07c1418dd2c53da3d19@sha256:e0eee5c5506bea9bfe350f7d99b07dc49e37d42647a128c2a57ff184551fba10",
+      "tested_image_sha256": "b4a9d72ba85fe655f1a5c014ba09546198b668f120de9e2e5d06b98ce99ae81d",
+      "venv_system_site_packages": true
+    },
+    "model_repo": "SVPG-Labs/kev-27b-NVFP4",
+    "model_revision": "ba00fe3c9b43fa59ab3e76199f2292d5ca47e0c7",
+    "installed_utc": "2026-10-08T01:04:56.341620+00:00",
+    "device": "NVIDIA GeForce RTX 5090, 32607 MiB",
+    "status": "installed and locally verified, see verification.json for limits",
+    "host_compiler": "GCC 15 (CUDA host compiler; Fedora default GCC is 16)"
+  },
+  "binary_hashes": {
+    "work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "work/copies/studio-1791244451538294368/bugs.exe": "c3d8b207267b416679e963254dff837b7c8e6060136627e8c991c62120ad9027"
+  },
+  "endpoint": "http://127.0.0.1:8021",
+  "instruction": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: ",
+  "criteria": {
+    "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+    "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+    "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+  },
+  "variants": {
+    "primary": [
+      "supported",
+      "contradicted",
+      "insufficient"
+    ],
+    "rotated": [
+      "contradicted",
+      "insufficient",
+      "supported"
+    ],
+    "reversed": [
+      "insufficient",
+      "contradicted",
+      "supported"
+    ],
+    "no_evidence": [
+      "supported",
+      "contradicted",
+      "insufficient"
+    ]
+  },
+  "high_probability_threshold": 0.9,
+  "packets": [
+    {
+      "id": "thumper",
+      "source": "Vault/30-Experiments/EXP-20261005-001 - Thumper transplanted into Moonlit Cliffs.md",
+      "source_sha256": "abce4220cfae8dce66d5c4838347c9321e5f192e1182864e6d38ea6726edfeb1",
+      "excerpts": [
+        {
+          "heading": "Where Thumper lives (static, PC)",
+          "start_line": 28,
+          "end_line": 44,
+          "text": "## Where Thumper lives (static, PC)\n\n- **Type 16 is Thumper.** Character loader `0x00445020` switches on each pool\n  slot's type; case `0x10` pushes `\"chars2\\thumper\"` (`0x004DDEF0`,\n  referenced at `0x0044531F`). Case `0x1D` (29) is `chars3\\molt`, so the\n  Battle Arena \"grasshopper\" in [[PC original level Blender maps]] is Molt, not\n  Thumper.\n- **One native placement:** Council Chamber (engine 2, `LEVEL02/LEVEL.RAW`),\n  type-35 slot 1, script 9, stored (141, −1857, 101). Its native floor below\n  is 1693.5, so he starts 3,550 units above it\n  (`original-levels/03-council-chamber/original-map.json`).\n- **The RAW pair is the disc files.** Council Chamber's 0x101/0x102 packets\n  whose second dword is 16 equal `CD/CHARS2/THUMPER.ANM` (34,304 B) and\n  `THUMPER.ALL` (11,804 B) after their 8-byte heads, byte for byte. All 174\n  model faces use texture page 21; page 21 is absent from Moonlit's RAW. A\n  render of it shows grasshopper skin, eyes and claws.\n\n"
+        },
+        {
+          "heading": "Hardware arm 1 (classic selector, null sink, controllers disabled)",
+          "start_line": 64,
+          "end_line": 94,
+          "text": "## Hardware arm 1 (classic selector, null sink, controllers disabled)\n\n`make session-audit` clean before launch. Game PID 218674 under gamescope\n218308; 6/6 hardware markers, no software markers.\n\n- **Load:** `bugs.log` shows `LOAD : Loading file R:\\PC\\BUGS\\cd\\chars2\\thumper.anm`\n  then `.all`. Nothing else requested them; the type byte did.\n- **Spawn:** slot 10 read type 16, health 50, flags 0x52, script PC\n  `0x004C7EE8`. The enemy total read 11 (10 + Thumper).\n- **Berry:** walking onto the purple berry right of the spawn set\n  `0x0059D9A7` to 4. It survived three deaths and reset to 0 only on level\n  re-entry (EXP-20260818-004's selector).\n- **Wake and drop:** when Flik approached, Thumper fell from −6766 to about\n  the ground (−3192), flags became 0x4053/0x5053/0x1053, PC `0x004C7F02`.\n  He chased Flik, cornered him against the valley wall and killed him four\n  times. Frames show the tall grasshopper with spiky legs and wings, textured,\n  dimmed by Moonlit's night light, and a purple splash on hits.\n- **Damage:** 28 health changes between samples: 27 of −3 and one −6 (two\n  hits). Health 50 → 32 → 11, then 38 → 32 → 26 → 11 → 0 in the second visit.\n  His health persisted across Flik's deaths; level re-entry reset him.\n- **Death:** at 0 his slot read type 0, health 0, flags 0x18D1 (0x880 set),\n  respawn 0, PC `0x004C7F6A`. The game ran 10 s more with no fault in\n  `launch.log`, and he did not return.\n- **Lives:** before the fight Flik was once back at the spawn with health\n  refilled (cause not sampled; a spider was beside him). The first in-fight\n  death then ended the game (back to the Flik's Journey select). In the second\n  visit three deaths respawned him in-level. Not investigated.\n- **Model records:** `0x005A9660` entries were used up to index 200 of 300;\n  the overflow flag `0x005C5960` read 0.\n- Closed through the packet; audit clean. Log moved to `arm1/bugs.log`.\n\n"
+        },
+        {
+          "heading": "Static audit of the dependencies (research subagent, disassembly)",
+          "start_line": 116,
+          "end_line": 145,
+          "text": "## Static audit of the dependencies (research subagent, disassembly)\n\nConfirmed from instructions or data unless marked:\n\n- **Script 9** (`0x004C7EE8`..`0x004C7F08`): frame sequence, a blocking fall\n  (op6, mode 4) that spawns dust type 1 on landing, op11 subroutine 4\n  (`0x00431C90`: `[0x0059EF70] = 60`, read only by `0x00431CB0`), then a loop\n  of random waits and random targets around home. Nothing reads the engine.\n- **Handler `0x0041C100`** only plays looping sound row 0x1A (sample 31,\n  `WASPBUZZ.WAV`, present in banks 1–18). No damage either way.\n- **The boss fight is engine-2 code.** Per-frame dispatcher `0x00418780`\n  (table `0x004187E8`, called at `0x004145BB` with `[0x00861C84]`) sends\n  engine 2 to `0x00431CB0`; init dispatcher `0x00418690` sends it to\n  `0x00431BF0`. `0x00431CB0` reads slot 1 (`0x0059B6AC`) and slots 2/3. It\n  plays hit voices, makes slot 2 or 3 his thrown projectile, and below\n  health 21 runs a camera cut, script 13 and `[0x0059A5B0] = 1` (level won).\n  The HUD health bar (`0x00416890`, at `0x0041725A`) also draws only in\n  engine 2. Engine 1's routines are `0x004317D0`/`0x00431730`.\n- **Damage** is `0x00429790`: purple −3, gold −4, blue and green −2; red is\n  deflected because flag 0x40 is set. Health is record +0x6E from source\n  +0x10 (50). At ≤ 0 he takes the ordinary kill path and, with source\n  +0x11 = 0, is not respawned.\n- **Sprites:** engine 1 and engine 2 copy byte-identical 50-descriptor sprite\n  tables (`0x004DA6B0`, `0x004DA7B8`), so no effect on his path is missing.\n- **RAW pair (inferred, strong):** `0x00465030` has no 0x101/0x102 case and\n  no instruction compares against those tags; the loader reads the disc\n  files. The pair is kept for parity with Moonlit's other creature types.\n- **Do not use slots 25 or 63:** engine 1's update writes through slot 25\n  (Dot) unchecked, and level start special-cases slot 63.\n\n"
+        },
+        {
+          "heading": "Contradiction (recorded, not resolved)",
+          "start_line": 146,
+          "end_line": 160,
+          "text": "## Contradiction (recorded, not resolved)\n\nThe static audit says homing selection `0x00428400` needs flags bit 0x0001,\nwhich 0x0052 lacks, so green/purple homing \"never\" picks Thumper. At runtime\nhis flags were 0x4053/0x5053/0x1053 after waking, which have bit 0x0001.\nPurple hits landed, but no arm instrumented whether a shot homed.\n**Discriminating experiment:** with Thumper awake and no other enemy near,\nsample the projectile's target pointer +0x10 and flag +0x33 bit 0x08 after a\npurple throw.\n\n*Later (2026-10-05):* [[EXP-20261005-002 - Native bosses and tough enemies in Moonlit Cliffs]]\nsaw bit 0x0001 appear on every boss once awake. Airborne bosses (1,974 and\n2,304 up) took purple hits, and a frame shows a berry climbing toward the\nflying Hopper. That supports lock-on; the projectile sample is still not taken.\n\n"
+        },
+        {
+          "heading": "Confirmed, inferred, unknown",
+          "start_line": 161,
+          "end_line": 172,
+          "text": "## Confirmed, inferred, unknown\n\n- **Confirmed (static + runtime):** a type-35 row brings its character model\n  by type; Thumper loads, renders, wakes, fights, takes −3 per purple hit,\n  dies and is removed in Moonlit without a crash.\n- **Confirmed (static):** the boss behaviour, health bar and win are not in\n  the row; they are engine-2 code bound to slot 1.\n- **Inferred:** the 0x101/0x102 packets are unused on PC.\n- **Unknown:** whether his sound plays (null sink); homing lock-on; behaviour\n  near cliffs or other enemies; a gold kill's enemy-counter effect; the\n  user's play.\n\n"
+        }
+      ],
+      "claims": [
+        {
+          "id": "q01",
+          "claim": "Thumper's creature type is 16, whereas type 29 is Molt.",
+          "expected": "supported",
+          "evidence_heading": "Where Thumper lives (static, PC)",
+          "label_rationale": "Loader case 0x10 versus 0x1D."
+        },
+        {
+          "id": "q02",
+          "claim": "In the Moonlit hardware arm Thumper occupied slot 10 and initially had health 50.",
+          "expected": "supported",
+          "evidence_heading": "Hardware arm 1 (classic selector, null sink, controllers disabled)",
+          "label_rationale": "Spawn readback."
+        },
+        {
+          "id": "q03",
+          "claim": "Each individual purple-berry hit removed four health points from Thumper in the recorded Moonlit arm.",
+          "expected": "contradicted",
+          "evidence_heading": "Hardware arm 1 (classic selector, null sink, controllers disabled)",
+          "label_rationale": "27 deltas of -3; one -6 was two hits."
+        },
+        {
+          "id": "q04",
+          "claim": "Transplanting Thumper's creature row automatically brought his Council Chamber health bar and boss win sequence into Moonlit.",
+          "expected": "contradicted",
+          "evidence_heading": "Static audit of the dependencies (research subagent, disassembly)",
+          "label_rationale": "Engine-2 routines and HUD remain bound to their home context."
+        },
+        {
+          "id": "q05",
+          "claim": "Thumper's buzzing sound is audible to a player in Moonlit Cliffs.",
+          "expected": "insufficient",
+          "evidence_heading": "Confirmed, inferred, unknown",
+          "label_rationale": "Sound was not heard; null sink."
+        },
+        {
+          "id": "q06",
+          "claim": "Purple projectiles actually lock onto the transplanted Thumper after he wakes.",
+          "expected": "insufficient",
+          "evidence_heading": "Contradiction (recorded, not resolved)",
+          "label_rationale": "Suggestive awake flags and hits, no projectile target/flag sample."
+        }
+      ]
+    },
+    {
+      "id": "bosses",
+      "source": "Vault/30-Experiments/EXP-20261005-002 - Native bosses and tough enemies in Moonlit Cliffs.md",
+      "source_sha256": "02e2f7034f11ef1c13130b0e0b3f3b9f85aab0ee9b4bc6cb652eeceb72a98bab",
+      "excerpts": [
+        {
+          "heading": "Hardware arms",
+          "start_line": 84,
+          "end_line": 125,
+          "text": "## Hardware arms\n\n`arm.py NAME [ROUNDS] [SLOTS]` launches through EXP-001's `launch.sh`. Every\narm had 6/6 hardware markers and no software markers. It takes a purple\nberry and walks through the gate. It then fights each slot with EXP-001's\n`goto.py` (camera-relative keys, throws of 16, backing off within 900), and\ncloses through the packet with a clean `make session-audit`. Every run moved\nits `bugs.log` into the packet. No game fault appears in any `launch.log`.\nNo memory was written.\n\n| Creature | Behaviour in Moonlit | Damage | Outcome |\n|---|---|---|---|\n| Molt | On the ground; wandered, then chased and killed Flik once | 14 × −3 | Killed, removed |\n| Hopper (Canyon Showdown) | Dropped 346 to the ground; chased | 10 × −3 | Killed, removed |\n| Hopper (Anthill Pt 2) | Flew at spawn height (1,974 up), drifting | −3 steps, 99 → 0 | Killed, removed |\n| Hopper (Riverbed Flight) | Hovered fixed 2,468 up | none in 96 throws | Immune |\n| Bird (Bird Nest) | Flew 2,304 up, drifting; never hurt Flik | −3 steps, 50 → 0 | Killed, removed |\n| Bird (Cliffside) | Flew 2,035 up, drifting | none | Immune |\n| Bird (Canyon Showdown) | Hovered fixed 1,786 up | none | Immune |\n| Thud | Floated fixed 1,364 up | 50 → 0 twice | Killed, **respawned** at 50, killed again |\n| Grasshopper | Dropped 1,471 to the ground and moved | yes | Killed |\n| Roach | Moved toward Flik; Flik lost health during the fight | yes | Killed |\n| Hspider | Moved about 800 from its spawn | yes | Killed |\n| Taxi bug | Ran far east (to x ≈ 19,000) | yes | Killed |\n| Fly | Dormant until Flik came near, then flew | yes | Killed (respawns natively) |\n| Centipede | Stays at its spawn, pops up (`0x4045`) and retracts (`0x48C5`); killed Flik once | none in 4 rounds | Inconclusive (see below) |\n\n- **Flags on waking.** Every boss gained bit `0x0001` once awake, usually\n  with `0x4000` (for example 0x44 → 0x4045, 0x144 → 0x4145, 0x984 → 0x4985).\n- **Homing reaches airborne targets.** The Anthill Pt 2 Hopper and the Bird\n  Nest bird took −3 hits while 1,974 and 2,304 units up. A frame\n  (`hopper-anthill-2/goto-fight0-throw3-…`) shows a purple berry climbing\n  toward the flying Hopper. This is consistent with homing locking on, which\n  EXP-001 recorded as contradictory. No projectile record was sampled.\n- **Centipede.** The berries homed onto the respawned fly overhead instead.\n  Frames show them climbing toward it while the centipede sits beside Flik.\n  Its damage is untested, not refuted.\n- **Bird height.** The user notes the bird is \"up\" by default, as in the\n  original game, where a berry-shooter plant that fires straight up is\n  needed. All three birds keep their native height (flag 0x04 holds target\n  Y). In Moonlit only the homing berry reaches the vulnerable one.\n\n"
+        },
+        {
+          "heading": "Static audit (research subagent; confirmed unless marked)",
+          "start_line": 126,
+          "end_line": 161,
+          "text": "## Static audit (research subagent; confirmed unless marked)\n\n- **No crash path (inferred from confirmed parts).**\n  - Reachable script code uses no op4, op10 or op11.\n  - Sounds return early when a sample is not loaded (`0049D820`).\n  - Kill and release take the default arm for types 22/29/30/36.\n  - Sprite tables share entries 0–49 across engines 1, 6, 8, 9, 11, 13, 14\n    and 15. The extra entries 50–52 feed only level-routine effects (rain,\n    feathers, crowd).\n- **Health ≥ 100 is immune** (`cmp ax,0x64` at `0x00429C35`). Flag 0x80 makes\n  a creature unhittable, and 0x800 makes the contact routine ignore it\n  (`0x0041CD7F`). Flag 0x04 is flying (holds target Y); 0x40 deflects red.\n- **Respawn byte.** 101 is a literal 101-frame countdown, which is why Thud\n  returns. 100 uses a per-type table delay. 0 removes the creature.\n- **Scripts.** 11, 22 and 26 wander around home; 18 hovers (radius 0); 19\n  and 29 idle. 28's tail runs only when engine 15 writes its program counter.\n- **The fights are level routines**, from per-frame table `0x004187E8` and\n  init table `0x004186FC`:\n  - **Cliffside** `0x004345F0`: the bird tracks Flik and kills him when he\n    falls into a band; an enforcer, not a fight.\n  - **Riverbed Flight** `0x004361C0`: Hopper follows Flik's trail and taunts.\n  - **Anthill Pt 2** `0x004369B0`/`0x00436B40`: Hopper flies a path, lowers\n    per hit and releases Atta at health 90; the win comes from slot 23.\n  - **Bird Nest** `0x00438040`: the bird chases high; below 21 the level\n    is won.\n  - **Battle Arena** `0x00439410`: hurt animation, crowd projectiles; win\n    below 21.\n  - **Bug Bar** `0x00439E90`: Thud shuttles, throws, and hits count only at\n    the two ends; 8 counted hits win.\n  - **Canyon Showdown** `0x0043AE00`: Hopper runs a waypoint table on hits;\n    the bird carries him off with a movie.\n- **Engine 1's routines touch only slot 25 and path 1** (`0x004317D0`,\n  `0x00431730`).\n- **Side effect.** Immune donors keep the enemies-left count\n  (`0x0059D99E`) above 0, so an all-enemies trigger cannot fire.\n\n"
+        },
+        {
+          "heading": "\"Visual artifacts when Flik starts moving\"",
+          "start_line": 198,
+          "end_line": 216,
+          "text": "## \"Visual artifacts when Flik starts moving\"\n\nThree of nine post-move frames in the boss arms showed the view mostly\ncovered by dark horizontal bands. Camera pose and model did not explain it\n(bird-nest and bird-cliffside share both). A **discriminating burst test**\ncaptured about 10 frames per second through three cycles of right, up and\ndown starts:\n\n- the boss-free control copy `EXP-20261005-002-control` (production\n  reflinked);\n- the Thud image.\n\nThe control showed the bands in 2 of 236 frames (`control-burst/burst-right3-00/01`),\nwhile Flik turned beside the spawn with the camera near the east fence\n(about (6870, 14830)). Thud's image showed them in 0 of 234. So the bands\n**predate the transplants**: an intermittent camera view beside the spawn\nfence. Their cause is not identified (camera near the fence or terrain is a\nguess). If the user saw something different, it is still open.\n\n"
+        },
+        {
+          "heading": "Confirmed, inferred, unknown",
+          "start_line": 217,
+          "end_line": 227,
+          "text": "## Confirmed, inferred, unknown\n\n- **Confirmed (runtime):** all 14 load, render and run without a fault. The\n  outcomes in the table. Thud respawns. Three bosses are immune.\n- **Confirmed (static):** immunity at 100+, respawn semantics, the\n  level-routine locations, identical shared sprite entries.\n- **Inferred:** that homing locks on (airborne hits and the frame, no\n  projectile sample); that the bands are a camera clip.\n- **Unknown:** the centipede's damage; sound (null sink); behaviour over\n  long play; the cause of the bands.\n\n"
+        }
+      ],
+      "claims": [
+        {
+          "id": "q07",
+          "claim": "The transplanted Thud was killed, respawned at health 50, and was killed again.",
+          "expected": "supported",
+          "evidence_heading": "Hardware arms",
+          "label_rationale": "Thud outcome table."
+        },
+        {
+          "id": "q08",
+          "claim": "The static berry damage path treats creature health of at least 100 as immune.",
+          "expected": "supported",
+          "evidence_heading": "Static audit (research subagent; confirmed unless marked)",
+          "label_rationale": "cmp ax,0x64 at 0x00429C35."
+        },
+        {
+          "id": "q09",
+          "claim": "The experiment established that the centipede is immune to purple-berry damage.",
+          "expected": "contradicted",
+          "evidence_heading": "Hardware arms",
+          "label_rationale": "Shots chose the fly; damage untested, not refuted."
+        },
+        {
+          "id": "q10",
+          "claim": "The dark horizontal bands occurred only in an image containing a transplanted boss.",
+          "expected": "contradicted",
+          "evidence_heading": "\"Visual artifacts when Flik starts moving\"",
+          "label_rationale": "Boss-free control had 2/236 band frames."
+        },
+        {
+          "id": "q11",
+          "claim": "The dark bands at the spawn fence are caused by the camera clipping the fence geometry.",
+          "expected": "insufficient",
+          "evidence_heading": "\"Visual artifacts when Flik starts moving\"",
+          "label_rationale": "Cause explicitly unidentified; camera clip is an inference."
+        },
+        {
+          "id": "q12",
+          "claim": "Instruction 0x0041C100 is the writer that sets awake bosses' flags bit 0x0001.",
+          "expected": "insufficient",
+          "evidence_heading": "Hardware arms",
+          "label_rationale": "Awake flag is sampled, writer is not identified."
+        }
+      ]
+    },
+    {
+      "id": "collision",
+      "source": "Vault/30-Experiments/EXP-20261005-004 - Original collision for Moonlit leaves and hollow plant.md",
+      "source_sha256": "c6648ad03121867bf81da1da884d37adeb11252d8aa5a108c59c72b4b681b9ad",
+      "excerpts": [
+        {
+          "heading": "Change",
+          "start_line": 26,
+          "end_line": 42,
+          "text": "## Change\n\n`reimplementation/ablpc/anthill_scenery.py`:\n\n- `NATIVE_SHELLS` gains loose leaf 14 → 127, hollow plant 209 → 87 and broad\n  leaf 227 → 175. These are translated like the five existing pairings,\n  with every payload and record byte other than XYZ kept.\n- New `NATIVE_STRIPS` maps yellow leaves 196/197/198/201 → original\n  kind-0x101 strips 183/182/181/179. Only the points' X/Z move; the header,\n  sentinel, middle words and the 76-byte record stay exact.\n- `DEFAULT_SOLID` gains 14, 196–201 and 209. Only shoots, sprouts and daisies\n  (24, 25, 84, 180), which have no original collision, are still refused.\n  The animated/auxiliary guard now applies only to authored shells.\n\nThe hollow plant's 656-byte auxiliary span is still unused for collision;\nits plant base (214) stays visual, as in the original.\n\n"
+        },
+        {
+          "heading": "Builds",
+          "start_line": 43,
+          "end_line": 51,
+          "text": "## Builds\n\n- **Baseline:** recompiling the production scene with current code\n  reproduces all six production level hashes byte for byte.\n- **Candidate:** the same scene with the 12 props marked solid. Only\n  TERRAIN.ALL changes (`37824771…`, 747,502 → 751,302 bytes, 301 sources).\n  Load is 1,948,358 of 2,000,000 bytes (+3,800). The collision density bound\n  stays 234 of 300.\n\n"
+        },
+        {
+          "heading": "Native evidence (offline, original instructions)",
+          "start_line": 52,
+          "end_line": 69,
+          "text": "## Native evidence (offline, original instructions)\n\n`scripts/anthill-scenery-probe.py` (packet `native-candidate-03.json`, copied\nto `reports/anthill-scenery/EXP-20261005-004-native.json`) accepts all 32 solid\nprops, 97 samples, with 1,632 relocation pointers exact. New this time:\n\n- **Loose leaves (3) and broad leaves (2):** landings settle on their own\n  shell.\n- **Hollow plant:** two rim landings, and four lateral wall cases that push\n  Flik 4,605–5,165 world units against the same shell lowered out of reach.\n  The wall case was added for this prop.\n- **Yellow leaves (8 × 4 sides):** grounded walks toward the stem. The loader\n  links strips into `0x007F3D3C`. With the strip, Flik stops 113–142 stored\n  units short of the centre (half-widths 103/130). Without it he walks 130–157\n  past the centre.\n- Every new case reproduces the original source at its original Anthill\n  position, shifted by the translation, step for step.\n\n"
+        },
+        {
+          "heading": "Hardware evidence (matched arms)",
+          "start_line": 70,
+          "end_line": 91,
+          "text": "## Hardware evidence (matched arms)\n\nEach target has two images, both production with the start moved beside the\nprop (12 bytes at VA `004DC7F4`). The candidate image also has the candidate\nTERRAIN.ALL. `make_images.py` checks that nothing else differs. `walk.py` walks\nstraight toward a goal without jumping and logs Flik every step. All eight\narms passed the 6/6 hardware gate, logged no fault and closed with a clean\naudit. A first launch was refused before any process started because the\nimage's `build.json` named the wrong EXE hash; it is kept as\n`control-leaf-e-failed-launch`.\n\n| Target | Control (production) | Candidate |\n|---|---|---|\n| Yellow leaf E, north from z 32300 | crosses the stem, reaches z 33572 in 4 steps | stops at z 32885–32889 (loop edge) for 39 holds |\n| Hollow plant, south from z 32350 | passes 110 units from the cup centre, frame shows him inside | stops at the wall, never nearer than 384 units, frame shows him pressed against it |\n| Grove loose leaf, north from z 33650 | stays at ground height (Y −5150) across the leaf | climbs onto it: Y −5261, then −5395 (245 above ground), frame shows him on top |\n| Grove broad leaf, north from z 31900 | rises 45 units, stops at z ≈ 33120 under the blade | stops at z ≈ 32860 against the leaf's stalk |\n\nThe broad leaf was solid before too, but its edge moves. The original shell\nstops Flik at the stalk lying in front of the blade, where the authored\napproximation let him past it.\n\n"
+        },
+        {
+          "heading": "Publication",
+          "start_line": 92,
+          "end_line": 113,
+          "text": "## Publication\n\n- `tools/blender/woodland_collision.py` saved\n  `levels/anthill/level-woodland-collision.blend` (`0647e759…`). It is a copy\n  of the woodland-solid source (unchanged, `e3209f54…`) with the 12 props\n  marked solid. Its export equals the candidate scene before saving and after\n  reopening, and a solid shoot is still refused.\n- Studio's Moonlit slot now uses it (campaign `2d7e282f…`; the previous\n  manifest is in Studio's history).\n- **New production:** `work/copies/studio-1791244451538294368`, built\n  14 min. Of its 779 files, only Moonlit's `TERRAIN.ALL` differs from the\n  previous production. It is byte-identical to the tested candidate\n  (`37824771…`), with `build.json`, `campaign.json` and `scene.ablpc.json`\n  changed alongside. The EXE is unchanged (`c3d8b207…`). See\n  `compare-production.json`.\n- **Smoke arm on it** (`production-smoke`): normal start, 6/6 markers, no\n  fault, clean audit. Walked west onto the Arrival leaf, a fourth placement,\n  Flik stood 250–440 units above its ground; the frame shows him on the leaf.\n- **Audit rerun:** `reports/moonlit-collision/EXP-20261005-004.json` shows\n  all 12 props and both broad leaves with their own original collision. Only\n  objects that have none in the original lack it.\n\n"
+        },
+        {
+          "heading": "Limits",
+          "start_line": 114,
+          "end_line": 121,
+          "text": "## Limits\n\n- One placement of each family was walked in hardware. The other loose\n  leaves, the other seven yellow leaves and the Arrival broad leaf are\n  covered natively only.\n- Jumping into the hollow plant's cup and landing on the rim were not tried\n  in hardware.\n- Sound and the camera near these props were not assessed. No user play yet.\n"
+        }
+      ],
+      "claims": [
+        {
+          "id": "q13",
+          "claim": "Among the production game files, the published collision fix changed only Moonlit's TERRAIN.ALL.",
+          "expected": "supported",
+          "evidence_heading": "Publication",
+          "label_rationale": "779 files compared; build metadata separately changed."
+        },
+        {
+          "id": "q14",
+          "claim": "The offline probe accepted all 32 solid props using 97 samples.",
+          "expected": "supported",
+          "evidence_heading": "Native evidence (offline, original instructions)",
+          "label_rationale": "Explicit probe totals."
+        },
+        {
+          "id": "q15",
+          "claim": "The yellow leaves received newly invented approximate collision shells instead of translated original strips.",
+          "expected": "contradicted",
+          "evidence_heading": "Change",
+          "label_rationale": "NATIVE_STRIPS maps to original kind-0x101 strips."
+        },
+        {
+          "id": "q16",
+          "claim": "Publishing the collision fix required changing the bugs.exe bytes from the preceding production.",
+          "expected": "contradicted",
+          "evidence_heading": "Publication",
+          "label_rationale": "EXE unchanged at c3d8b207..."
+        },
+        {
+          "id": "q17",
+          "claim": "A player can reliably jump into the hollow plant's cup and land on its rim in the hardware-rendered game.",
+          "expected": "insufficient",
+          "evidence_heading": "Limits",
+          "label_rationale": "Those hardware jumps were not tried."
+        },
+        {
+          "id": "q18",
+          "claim": "The new collision pieces lower the hardware frame rate by exactly two frames per second.",
+          "expected": "insufficient",
+          "evidence_heading": "Limits",
+          "label_rationale": "No comparative frame-rate measurement in this packet."
+        }
+      ]
+    },
+    {
+      "id": "camera",
+      "source": "Vault/30-Experiments/EXP-20261003-001 - R–Z camera wrap bands.md",
+      "source_sha256": "90cd3c7fa45f52b63fbfd6d8dc712682a5320ce3b3105ee47d148bb9219fd9c0",
+      "excerpts": [
+        {
+          "heading": "Diagnosis",
+          "start_line": 39,
+          "end_line": 67,
+          "text": "## Diagnosis\n\n- **Not authored geometry.** `analysis/proj.py` projects every room R scene\n  mesh from the recorded camera (−5173, −3675, −10010; yaw about 1290; f 337,\n  centre row 240). It matches the frame's wall top (row ≈215) and ramp, but\n  rows 158–215 hold only sky and one reed (`analysis/r1.png`).\n- **Not the panorama.** R's 128×96 backdrop has wavy blue, teal and green\n  layers (`analysis/backdropR.png`), and the night sky hides it.\n- **Non-physical motion.** Between two frames, a camera 158 units higher put\n  the band higher on screen (rows 150 vs 158). No world object at any\n  distance can do that.\n- **Wrap.** EXP-20260916-011 showed that `0045A7F0` narrows camera-space\n  coordinates to signed 16 bits. `analysis/wrap.py` applies that to R's eight\n  terrain chunks from the same camera:\n  - chunk 160 has 373 out-of-range vertices, chunk 490 has 326 (up to 40,336\n    ahead) and chunk 489 has 70;\n  - their faces fill a full-width, straight-topped band at rows 140–210\n    (`analysis/wrapR.png`).\n- **Guard absent in the rooms.** The EXP-20260916-011 guard matches by DAT\n  offset and vertex count, for level 1 and only Moonlit's eight rows. In the\n  user's process its counters (`.camdata` stats `0x010E1000`) were all zero.\n  Room R's chunks (scenes 160 and 484–490, offsets 488,620–768,628) are not\n  in the table.\n- **Exposure.** Every room's terrain spans 52–57k units per axis and the hub\n  58.6k along its corridor, past the ±32,767 range. Q is 3k across.\n\nThis dates from the rooms' first build (EXP-20260928-001), not the\n2026-10-02 themes, which changed no geometry.\n\n"
+        },
+        {
+          "heading": "Fix",
+          "start_line": 68,
+          "end_line": 81,
+          "text": "## Fix\n\n`terrain_camera_guard.guard_table` builds one table from every DAT loaded as\nlevel 1: Moonlit, the Journey hub and ROOMR–ROOMZ (8 + 8 + 72 = 88 rows). The\nnative code is unchanged, apart from its row count. The build refuses:\n\n- an offset shared by two DATs, because the native search stops at the\n  first offset match;\n- any DAT holding another row's vertex count at that row's offset, which\n  would let a foreign mesh borrow the row and its byte bound.\n\n`dream_levels` keeps each chunk's `scene_index` in the room receipt, and\nStudio passes the hub and rooms as extra sources.\n\n"
+        },
+        {
+          "heading": "Validation",
+          "start_line": 82,
+          "end_line": 113,
+          "text": "## Validation\n\n- **Tests:** `tests/test_terrain_camera_guard.py` has 24 passing, 2 of them new:\n  - an emulated lookup filters a second row's mesh and never borrows a\n    foreign row;\n  - the private production union is unique, has an exact inverse and\n    rejects collision and borrowing.\n\n  The dream-level, grass, Studio, hub and chunk suites pass: 329 checks.\n  The non-R2q suite had 7,268 passed and 19 failed. All 19 predate this\n  change: they also fail on a clean HEAD checkout\n  ([[Known Unknowns#Current regression-gate failure]]).\n- **Build:** `work/copies/studio-1791047899927549753`, EXE\n  `c3d8b207267b416679e963254dff837b7c8e6060136627e8c991c62120ad9027`, campaign\n  `251578ca…` unchanged. All 765 CD files are byte-identical to\n  `studio-1790963763195020939`. In the EXE only `.camdraw` (700 → 1,660 bytes)\n  and `SizeOfCode` differ.\n- **Matched hardware arms.** Both review copies (`EXP-20260928-001/review_copy.py`)\n  start the hub beside door R and spawn Flik at R (−4363, −10200), heading 1290.\n  All six markers held in both, with a private null sink and controllers off.\n  - `control` (an earlier spawn at the ramp foot, heading 1024) was\n    inconclusive: a reed blocked the spawn view, and the walk ended facing\n    south.\n  - `control2` (old production): the band shows at spawn and after a 0.7 s\n    walk, and the guard counters stay 0.\n  - `candidate` (new build): the band is gone. The lantern tower, a flower\n    and reeds show where the projection predicted them (`before-after.png`).\n    Rejected faces rise from 28,518 to 42,469 as frames draw.\n- **Hub:** the guard matches its chunks (1,196 calls beside door R). It\n  rejected no face there or on a walk from z 21,900 to −8,234, and frames\n  look normal.\n\n"
+        },
+        {
+          "heading": "Limits",
+          "start_line": 114,
+          "end_line": 124,
+          "text": "## Limits\n\n- Only room R was checked in hardware, and only from the reproduced pose.\n  The other rooms rely on the same rows, the emulation and the build checks.\n- The hub's door-A end was not reached; Flik stopped at z −8,234.\n- Whole-face rejection can pop at the 32k boundary (as in EXP-20260916-011).\n  The rooms' distant copies cover the far terrain.\n- `make check` stops at `m4-compatibility` before its tests. That gate expects\n  an exact R2c sentence that the vault audit reworded in `d1d5e08d`, so it\n  already failed at HEAD (`71c1b213`).\n\n"
+        }
+      ],
+      "claims": [
+        {
+          "id": "q19",
+          "claim": "The extended camera guard contains 88 rows covering Moonlit, the Journey hub and rooms R through Z.",
+          "expected": "supported",
+          "evidence_heading": "Fix",
+          "label_rationale": "8 + 8 + 72 rows."
+        },
+        {
+          "id": "q20",
+          "claim": "All 765 CD files were byte-identical between the camera-fix production and its preceding production.",
+          "expected": "supported",
+          "evidence_heading": "Validation",
+          "label_rationale": "Build comparison."
+        },
+        {
+          "id": "q21",
+          "claim": "The camera-fix experiment checked every room from R through Z in hardware.",
+          "expected": "contradicted",
+          "evidence_heading": "Limits",
+          "label_rationale": "Only R at reproduced pose was checked."
+        },
+        {
+          "id": "q22",
+          "claim": "The October 2 room themes introduced the geometry that first caused the green band.",
+          "expected": "contradicted",
+          "evidence_heading": "Diagnosis",
+          "label_rationale": "Dates to first room build; themes changed no geometry."
+        },
+        {
+          "id": "q23",
+          "claim": "A hardware visit to room S would show no green band at any camera pose with this guard installed.",
+          "expected": "insufficient",
+          "evidence_heading": "Limits",
+          "label_rationale": "Other rooms and poses not tested."
+        },
+        {
+          "id": "q24",
+          "claim": "Players find the guard's possible whole-face popping at the 32k boundary visually acceptable.",
+          "expected": "insufficient",
+          "evidence_heading": "Limits",
+          "label_rationale": "No player appearance acceptance reported."
+        }
+      ]
+    },
+    {
+      "id": "animation",
+      "source": "Vault/30-Experiments/EXP-20261001-002 - Flik animation catalog.md",
+      "source_sha256": "2360bcc09bc0b5c7af8824a92b1ed528d001fa425531f32909b7f9c4676122a0",
+      "excerpts": [
+        {
+          "heading": "Inputs",
+          "start_line": 44,
+          "end_line": 57,
+          "text": "## Inputs\n\n- Retail executable SHA-256\n  `97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878`\n  (`work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe`).\n- `CHARS/FLICK.ANM` `1743b26a…e8ab1` (= `CHARS3/FLICKD.ANM`),\n  and:\n  - `CHARS3/FLICKP.ANM` `95e77803dfaef08b616eaed738e3edc183c0de3336f7da6473bb69ad3c0ed3b7`\n  - `CHARS4/FLICKP.ANM` `85ecebab2dc71bb8b6ae23b728ed8f855775dd6cf4ff1ef9be1b3b5a2e6e3fe9`\n  - `CHARS3/FLIKHARV.ANM` `5442b76ff7b0911fed6f79b40390b3f7e83a04b2bcb1d5730fad86d581557f48`\n  - `CHARS2/ATTAFLIK.ANM` `267ba06ac8fbb88aecfe978795e65e2daa0f99b3cac86db46b06b7da4ccefc2d`\n- All 61 retail `.ANM` files for the multi-file check.\n- No PS1 source, runtime, memory access or edit was used.\n\n"
+        },
+        {
+          "heading": "Observed",
+          "start_line": 78,
+          "end_line": 107,
+          "text": "## Observed\n\n- **Record grammar.** `+0x02` frames (`& 0x7FFF`), `+0x04` parts, `+0x06`\n  words per frame, `+0x08` list count, `+0x0A` bitmask length, part list,\n  bitmask, frames. With the bitmask length respected, **303 records in 60 of\n  61 files end with zero slack**; every `+0x00` equals its slot.\n  `LEVEL00/ROSIEWLK.ANM` is the exception (first offset beyond its file).\n- **FLICK.ANM.** 40 slots, slot 26 absent; 24 parts (21 driven, 3 `-2`);\n  frame counts 8–58; words per frame 129/126 (full body), 72 (parts 9–20) and\n  57 (parts 0–8). Five slots are half-body layers.\n- **State table.** 35 rows at `0x004C1CE8`, a `0xFFFFFFFF` word at\n  `0x004C1FA4`, idle tables at `0x004C1FA8/B8/C8`. Every script frame lies\n  within its slots. State `0x20` names absent slot 26 and no store writes\n  `0x20`.\n- **Coverage.** Sampler call sites: `0x004032FE`, `0x004033D9` (Flik),\n  `0x00448569` (entity types), `0x0044CE05` (plants). Slots 7 and 12 have no\n  reference. Berry-throw overlays use slots 2, 11 and 23; the strand swing\n  uses slot 32 through header `+0x88`.\n- **Variants.** FLICKD is identical; both FLICKP files have 29 parts and the\n  same frame count in every present slot; CHARS4/FLICKP also lacks slots 30,\n  31 and 37, exactly the fidgets its levels' idle table never picks.\n- **Non-player models.** ATTAFLIK (actor slot 39, Riverbed Flight only) is\n  drawn instead of Flik: `0x004362D0` copies his position and sets\n  `0x0059D9A0` bit 0 (`0x0043634A`), which Flik's renderer tests at\n  `0x0044C51A`; its slots are a flight loop, hurt, berry throw and death.\n  FLIKHARV (actor slot 63, hook `0x00415E30`) is the rideable harvester:\n  ridden moving, ridden standing, parked (`0x00416038`, `0x00416014`).\n- **Triggers.** As tabulated in [[PC Flik animation catalog]] and\n  `config/animation/pc-flik-animations.json`, each with addresses.\n\n"
+        },
+        {
+          "heading": "Interpretation",
+          "start_line": 108,
+          "end_line": 116,
+          "text": "## Interpretation\n\nThe catalogue is complete for the player model at the slot and state level:\nthe only paths that sample Flik's file are enumerated, and every reachable\nslot is labelled. Twenty-eight state names are confirmed by the code that\nsets them; seven carry `candidate` names (states 1, 2, 6, 7, `0x10`, `0x1C`\nand `0x1F`). One contradiction is recorded (movement state 4,\ngliding versus hover-dive-pound).\n\n"
+        },
+        {
+          "heading": "Result",
+          "start_line": 117,
+          "end_line": 122,
+          "text": "## Result\n\nStatic catalogue complete for the player model and both non-player Flik\nmodels. `tests/test_anm.py` (26) and `tests/test_flik_animation.py` (13) pass; the\ngenerator's `--check` reproduces the committed reports.\n\n"
+        },
+        {
+          "heading": "Follow-up",
+          "start_line": 123,
+          "end_line": 126,
+          "text": "## Follow-up\n\n- A read-only runtime arm on the state word (see [[Known Unknowns#Flik animations]]).\n- `.ALL` hierarchy decoding for visual previews and part names.\n"
+        }
+      ],
+      "claims": [
+        {
+          "id": "q25",
+          "claim": "FLICK.ANM has a 40-slot table with slot 26 absent.",
+          "expected": "supported",
+          "evidence_heading": "Observed",
+          "label_rationale": "40 slots, 39 present."
+        },
+        {
+          "id": "q26",
+          "claim": "Flik's native action-state table has 35 rows at address 0x004C1CE8.",
+          "expected": "supported",
+          "evidence_heading": "Observed",
+          "label_rationale": "State-table count and address."
+        },
+        {
+          "id": "q27",
+          "claim": "All 61 retail ANM files passed the record grammar check with zero slack and no exceptional file.",
+          "expected": "contradicted",
+          "evidence_heading": "Observed",
+          "label_rationale": "60/61; ROSIEWLK has first offset beyond file."
+        },
+        {
+          "id": "q28",
+          "claim": "The animation catalogue experiment observed Flik's state word live during gameplay.",
+          "expected": "contradicted",
+          "evidence_heading": "Inputs",
+          "label_rationale": "Static-only; runtime arm is follow-up."
+        },
+        {
+          "id": "q29",
+          "claim": "Unreferenced animation slot 7 visually depicts Flik waving.",
+          "expected": "insufficient",
+          "evidence_heading": "Observed",
+          "label_rationale": "No reference or visual preview identifies slot 7."
+        },
+        {
+          "id": "q30",
+          "claim": "The per-part stored rotation angles use XYZ Euler order.",
+          "expected": "insufficient",
+          "evidence_heading": "Follow-up",
+          "label_rationale": "Hierarchy/part interpretation not established by packet."
+        }
+      ]
+    },
+    {
+      "id": "fragments",
+      "source": "Vault/40-Implementation/PC gold fragments.md",
+      "source_sha256": "cc5318a8043fc4a7752188408857573cefca368cefcff7c2055218c92aa7f235",
+      "excerpts": [
+        {
+          "heading": "PC gold fragments",
+          "start_line": 10,
+          "end_line": 21,
+          "text": "# PC gold fragments\n\nA non-gold berry kill can drop the native spinning gold glyph as a\n**fragment**. It pops up and falls exactly like the health leaf, then rests\nwhere it lands. When Flik touches\nit, the enemy counts on the gold-berry enemy counter and never respawns, as\nafter a gold-berry kill. Each berry has its own chance; gold already counts\nand never drops one.\n[[EXP-20261001-006 - Gold fragments from non-gold berry kills]] owns the\nevidence; [[XPORT-20261001-013 - Gold fragment drop on non-gold kills]] owns\nthe PS1 comparison.\n\n"
+        },
+        {
+          "heading": "Setting",
+          "start_line": 22,
+          "end_line": 41,
+          "text": "## Setting\n\nSaved campaign key `gold_fragments` (Studio checkbox \"Gold fragments\"):\n\n```json\n\"gold_fragments\": {\"enabled\": true,\n  \"one_in\": {\"red\": 12, \"blue\": 8, \"green\": 4, \"purple\": 2, \"white\": 12, \"blackberry\": 6},\n  \"seconds\": 10}\n```\n\n- `one_in` is the chance per berry, from 1 (always) to 1000; 0 means never.\n  All six keys are required.\n- `seconds` (1–600) is how long a fragment lasts; it fades over its last\n  16 frames.\n\nThese are the PS1 odds; the PS1 odds table has no white row, so white takes\nred's (the PS1 project's white spread is a separate mod,\n[[XPORT-20260909-011 - Custom white and black berry design]]). Save and build\nto apply.\n\n"
+        },
+        {
+          "heading": "How it works",
+          "start_line": 53,
+          "end_line": 80,
+          "text": "## How it works\n\n- **Kill hook** `00429E00`: the berry-vs-enemy routine's call to `0041B9F0`.\n  When the kill bits `[esp+0x10]` are 1 (not gold), it rolls the odds for\n  `0059D9A7`. White and blackberry use the white-berry mode byte (`.wbstate`\n  1/2) and are absent without that section. On a hit it spawns drop type\n  0x78 as `0041B9F0` spawns the health leaf: at `(x, y − 0x1000, z)` with\n  motion 0xD (vy −2048, gravity 128). It sets the leaf's floor and\n  collectible flags and a 200-frame flight. The pool updater `0042B1F0`\n  shadows the fall and lands it at `floor − 90×32`.\n- **Retire hook** `0042B7D9`: the updater's retirement call. Where the leaf\n  becomes the resting leaf (type 0x2A), a landed fragment stays in place:\n  still, collectible, ground shadow (behaviour 2), its lifetime and an\n  end-of-life fade. Any other ending is native. `+0x1C` is the updater's\n  floor cache, so the actor is found from the helper's table, not a tag.\n- **Pickup hook** `0042951E`: the pickup walker's default case. For the\n  actor's latest fragment, while the actor is dying or dead, it does the\n  gold block's bookkeeping: HUD pulse, `+0x62` = 0 (or the type cleared if\n  already removed), the enemy count `0059D99E` down by one (not below 0) and\n  the all-defeated call at zero. It plays the berry pickup sound.\n- **Retirement:** every touched fragment keeps action 7 in `+0x2C`, the\n  glyph's own and the berry pickups'. The walker default's 0xC would make\n  `0042A2E0` call `00428AA0`, spawning type 0x40, whose sprite 0x33 is null\n  in Moonlit Cliffs. That crashed the first hardware pickup (`004536D1`).\n- **State** at the end of `.gfrag`: seed, kills, drops, credits, landed, 64 entries\n  (each actor's latest fragment record) and 64 `cleared` bytes. The receipt\n  gives the offsets.\n\n"
+        },
+        {
+          "heading": "Limits",
+          "start_line": 81,
+          "end_line": 94,
+          "text": "## Limits\n\n- Hardware so far: red-berry kills in Moonlit Cliffs (fixtures with every\n  odds at 1). The fragment's fall was sampled frame by frame and matched the\n  leaf's path; it landed at the game's floor − 90. Collected fragments\n  counted (HUD 01/10, 02/10) and the enemies stayed gone. Other berries,\n  levels, slopes, pits, water and the real odds have native tests only.\n- Only berry kills drop fragments; contact kills (`0041C9B0`) do not.\n- A fragment from an actor that has respawned gives no count and vanishes\n  when touched.\n- Fragments disappear when the camera is very far away (`0042B1F0` distance\n  cull), like other drops.\n- Scripted boss counts (`004369B0`, `0043AD00`, `00438720`) are untested.\n  The fragment credit matches what a gold kill would do in `00429790`.\n"
+        }
+      ],
+      "claims": [
+        {
+          "id": "q31",
+          "claim": "A gold-berry kill never drops an additional gold fragment.",
+          "expected": "supported",
+          "evidence_heading": "PC gold fragments",
+          "label_rationale": "Gold already counts and never drops one."
+        },
+        {
+          "id": "q32",
+          "claim": "The saved default probability of a fragment from a red-berry kill is one in twelve.",
+          "expected": "supported",
+          "evidence_heading": "Setting",
+          "label_rationale": "one_in.red = 12."
+        },
+        {
+          "id": "q33",
+          "claim": "Hardware testing has already validated fragment drops and pickups for all six non-gold berry types.",
+          "expected": "contradicted",
+          "evidence_heading": "Limits",
+          "label_rationale": "Only red in Moonlit with guaranteed-drop fixtures."
+        },
+        {
+          "id": "q34",
+          "claim": "The white-berry fragment odds were copied from a white-berry row in the PS1 odds table.",
+          "expected": "contradicted",
+          "evidence_heading": "Setting",
+          "label_rationale": "No white row; white uses red's odds by assumption."
+        },
+        {
+          "id": "q35",
+          "claim": "With the real red-berry odds, a long hardware run would produce a measured drop frequency within one percentage point of 1/12.",
+          "expected": "insufficient",
+          "evidence_heading": "Limits",
+          "label_rationale": "Real odds not hardware-tested; no measured frequency."
+        },
+        {
+          "id": "q36",
+          "claim": "Collecting the last fragment in a scripted Hopper boss encounter triggers the correct level-completion behavior in hardware.",
+          "expected": "insufficient",
+          "evidence_heading": "Limits",
+          "label_rationale": "Scripted boss counts untested."
+        }
+      ]
+    }
+  ]
+}

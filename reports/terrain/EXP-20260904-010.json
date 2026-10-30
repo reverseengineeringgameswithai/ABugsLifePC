@@ -1,0 +1,911 @@
+{
+  "experiment": "EXP-20260904-010",
+  "status": "completed-bounded-live-comparison-original-restored",
+  "result": "Subdivision removes all255 previously identified inversion-point blue fragments in this exact paused pose; restoring the original mesh restores all3575 ROI pixels. Six other analytically occluded boundary samples remain blue.",
+  "authorization": {
+    "user_text": "go for it. I authorize memory writes ehre",
+    "scope": "The requested 1078-byte mesh swap, paused captures and exact restoration, with brief owned-process suspension/resumption; read-only register inspection guards against interrupting an active mesh read. No gameplay input or restart.",
+    "time": 1788568986.3122706
+  },
+  "process": {
+    "pid": 46701,
+    "start": 1147812,
+    "group": 46458,
+    "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\auto-hardware\\bugs.exe log cheat mpeg                                                                                                   "
+  },
+  "executed_game_sha256": "1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f",
+  "retail_static_executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "reference_experiment": "EXP-20260904-009",
+  "original_plan_sha256": "a6fee8cda76f9c555411232982ed57d25ec81b0ccb90c3b62e0df60954a8e1ba",
+  "source_level_dat_sha256": "b0e6a65a353e7a33c0e72399659a8f3ee6d08380fe45893232281d93c06805cb",
+  "candidate_level_dat_sha256": "8ba384541d80da2e82a3016cf99638476229b4da7d445a9edfafdc34e365b6e5",
+  "terrain_sha256": "26f3e0235533419a80b2a0eff18f423fadc20617a6c2ed2be445abeae87b35d5",
+  "state": {
+    "level": 1,
+    "position": [
+      163024,
+      -102401,
+      509900
+    ],
+    "terrain_base": 0,
+    "barrier_head": 7152075,
+    "contact": [
+      99,
+      6973595
+    ],
+    "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+    "camera_translation": [
+      190254,
+      -115203,
+      500135
+    ]
+  },
+  "writes": [
+    {
+      "phase": "apply",
+      "address": "0x6662a7",
+      "bytes": 1078,
+      "bytes_written": 1078,
+      "before_sha256": "6741aab66d6a191f1e9285a92a0ca4edc3fb5157a384062a6ba52c79b9fe1554",
+      "target_sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1",
+      "after_sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1",
+      "status": "written-and-verified",
+      "elapsed_seconds": 0.003577076000510715,
+      "frame_chain": [
+        [
+          "0x97fe48",
+          "0x405b74"
+        ]
+      ],
+      "renderer_return": "0x44dbf3",
+      "frame_end_gate": true,
+      "state_after_resume": {
+        "level": 1,
+        "position": [
+          163024,
+          -102401,
+          509900
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6973595
+        ],
+        "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+        "camera_translation": [
+          190254,
+          -115203,
+          500135
+        ]
+      }
+    },
+    {
+      "phase": "restore",
+      "address": "0x6662a7",
+      "bytes": 1078,
+      "bytes_written": 1078,
+      "before_sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1",
+      "target_sha256": "6741aab66d6a191f1e9285a92a0ca4edc3fb5157a384062a6ba52c79b9fe1554",
+      "after_sha256": "6741aab66d6a191f1e9285a92a0ca4edc3fb5157a384062a6ba52c79b9fe1554",
+      "status": "written-and-verified",
+      "elapsed_seconds": 0.0033648740009084577,
+      "frame_chain": [
+        [
+          "0x97fe48",
+          "0x405b74"
+        ]
+      ],
+      "renderer_return": "0x44dbf3",
+      "frame_end_gate": true,
+      "state_after_resume": {
+        "level": 1,
+        "position": [
+          163024,
+          -102401,
+          509900
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6973595
+        ],
+        "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+        "camera_translation": [
+          190254,
+          -115203,
+          500135
+        ]
+      }
+    }
+  ],
+  "captures": {
+    "before": [
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788569081104016637.png",
+        "sha256": "2cfd02bb99cfd555b039f8bfe3877c45915989a8a1fe1a3a0e372fa5b8c656f1",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788569081518006159.png",
+        "sha256": "87683bc2179364714b6ec9e05c6b685e5e177f3b23483e4b44ba55615ee3a35b",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788569081931145015.png",
+        "sha256": "54751a6aaa9decd3a024a6f2fa7776be6502f97d28a6b2d749dcf441c578214d",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      }
+    ],
+    "candidate": [
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788569082447027378.png",
+        "sha256": "6fe9d4e4de630e9847af58d15c61fbf59b7148278c5d9ee9c5ca1fc0ef60fd06",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788569082861050370.png",
+        "sha256": "7439b23bde6ec4ae26c0ffd7f41ee3ded7735307215634bca51cd5a76183cc30",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788569083274916101.png",
+        "sha256": "6ca6cd3abfa2b551e5855c1ee3025c12ea595c7cb777941100f1d9c5e0817e82",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      }
+    ],
+    "restored": [
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788569083851348525.png",
+        "sha256": "1bf5687644ef920e16dd691020eac90e56ed0545f4b8371281c8d6e3d851d2e5",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788569084264366570.png",
+        "sha256": "c40b4eeccc74930585c23550a7c4c6d5578c355190e03fca02b3a4b6e5cc2345",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      },
+      {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/frame-1788569084676706200.png",
+        "sha256": "0fa65b0ad6a8591d34e46579abb6c081b106b7302645ab9c6f6ff88bbf6e735a",
+        "state": {
+          "level": 1,
+          "position": [
+            163024,
+            -102401,
+            509900
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+          "camera_translation": [
+            190254,
+            -115203,
+            500135
+          ]
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "roi": [
+      285,
+      285,
+      350,
+      340
+    ],
+    "roi_pixels": 3575,
+    "state_identical_all_9": true,
+    "before_restored_roi_identical": true,
+    "candidate_roi_identical": true,
+    "rgb_roi_sha256": {
+      "before": [
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842",
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842",
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842"
+      ],
+      "candidate": [
+        "4af5055892f27632268e90a66544406e9712540b592ae7a84719af66109f366f",
+        "4af5055892f27632268e90a66544406e9712540b592ae7a84719af66109f366f",
+        "4af5055892f27632268e90a66544406e9712540b592ae7a84719af66109f366f"
+      ],
+      "restored": [
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842",
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842",
+        "e91e53ad293c765759ac459e02290974fdd073e9d24fd923089aa5388339a842"
+      ]
+    },
+    "blue_pixels": {
+      "before": [
+        1034,
+        1034,
+        1034
+      ],
+      "candidate": [
+        779,
+        779,
+        779
+      ],
+      "restored": [
+        1034,
+        1034,
+        1034
+      ]
+    },
+    "prior_255_inversion_points_blue_counts": {
+      "before": [
+        255,
+        255,
+        255
+      ],
+      "candidate": [
+        0,
+        0,
+        0
+      ],
+      "restored": [
+        255,
+        255,
+        255
+      ]
+    },
+    "candidate_changed_roi_pixels": 764,
+    "selected_rgb": {
+      "(301, 319)": {
+        "before": [
+          [
+            24,
+            28,
+            41
+          ],
+          [
+            24,
+            28,
+            41
+          ],
+          [
+            24,
+            28,
+            41
+          ]
+        ],
+        "candidate": [
+          [
+            24,
+            28,
+            41
+          ],
+          [
+            24,
+            28,
+            41
+          ],
+          [
+            24,
+            28,
+            41
+          ]
+        ],
+        "restored": [
+          [
+            24,
+            28,
+            41
+          ],
+          [
+            24,
+            28,
+            41
+          ],
+          [
+            24,
+            28,
+            41
+          ]
+        ]
+      },
+      "(305, 319)": {
+        "before": [
+          [
+            41,
+            44,
+            57
+          ],
+          [
+            41,
+            44,
+            57
+          ],
+          [
+            41,
+            44,
+            57
+          ]
+        ],
+        "candidate": [
+          [
+            90,
+            77,
+            41
+          ],
+          [
+            90,
+            77,
+            41
+          ],
+          [
+            90,
+            77,
+            41
+          ]
+        ],
+        "restored": [
+          [
+            41,
+            44,
+            57
+          ],
+          [
+            41,
+            44,
+            57
+          ],
+          [
+            41,
+            44,
+            57
+          ]
+        ]
+      },
+      "(308, 320)": {
+        "before": [
+          [
+            41,
+            36,
+            57
+          ],
+          [
+            41,
+            36,
+            57
+          ],
+          [
+            41,
+            36,
+            57
+          ]
+        ],
+        "candidate": [
+          [
+            82,
+            69,
+            41
+          ],
+          [
+            82,
+            69,
+            41
+          ],
+          [
+            82,
+            69,
+            41
+          ]
+        ],
+        "restored": [
+          [
+            41,
+            36,
+            57
+          ],
+          [
+            41,
+            36,
+            57
+          ],
+          [
+            41,
+            36,
+            57
+          ]
+        ]
+      },
+      "(312, 321)": {
+        "before": [
+          [
+            24,
+            28,
+            41
+          ],
+          [
+            24,
+            28,
+            41
+          ],
+          [
+            24,
+            28,
+            41
+          ]
+        ],
+        "candidate": [
+          [
+            66,
+            56,
+            33
+          ],
+          [
+            66,
+            56,
+            33
+          ],
+          [
+            66,
+            56,
+            33
+          ]
+        ],
+        "restored": [
+          [
+            24,
+            28,
+            41
+          ],
+          [
+            24,
+            28,
+            41
+          ],
+          [
+            24,
+            28,
+            41
+          ]
+        ]
+      },
+      "(339, 325)": {
+        "before": [
+          [
+            57,
+            65,
+            90
+          ],
+          [
+            57,
+            65,
+            90
+          ],
+          [
+            57,
+            65,
+            90
+          ]
+        ],
+        "candidate": [
+          [
+            82,
+            69,
+            41
+          ],
+          [
+            82,
+            69,
+            41
+          ],
+          [
+            82,
+            69,
+            41
+          ]
+        ],
+        "restored": [
+          [
+            57,
+            65,
+            90
+          ],
+          [
+            57,
+            65,
+            90
+          ],
+          [
+            57,
+            65,
+            90
+          ]
+        ]
+      }
+    },
+    "scope": "ROI/filter inherited from EXP009 before this live comparison; prior255 inversion points were selected from offline geometry/depth analysis. ROI includes legitimate exposed model pixels. Changed textured pixels alone are not disappearance evidence. No full-frame equality claimed."
+  },
+  "prior_259_analytic_top_occluded_samples_blue_counts": {
+    "before": [
+      259,
+      259,
+      259
+    ],
+    "candidate": [
+      6,
+      6,
+      6
+    ],
+    "restored": [
+      259,
+      259,
+      259
+    ]
+  },
+  "control": {
+    "scoped_process_suspensions": 18,
+    "inspection_only_probes": 5,
+    "transaction_stops": 13,
+    "accepted_write_stops": 2,
+    "ptrace": "Each scoped SIGSTOP uses PTRACE_SEIZE/INTERRUPT/GETREGS/DETACH for read-only registers; all threads stop, and SIGCONT resumes the same owned process. No breakpoint or register writes.",
+    "stop_duration_seconds_max": 0.003577076000510715,
+    "frame_end_gate": "First original return reached through a valid live EBP chain must be0x00405B74, with enclosing renderer return0x0044DBF3; PC inside Wine and bounded32-bit stack. Original timer call is0x00405B72; scene driver has finished geometry before0x0044DBEE calls it through0x004017CB.",
+    "other_actions": {
+      "gameplay_keys": 0,
+      "restarts": 0,
+      "launches": 0,
+      "closes": 0,
+      "breakpoints": 0,
+      "register_writes": 0,
+      "collision_writes": 0,
+      "player_or_camera_writes": 0
+    }
+  },
+  "validation": {
+    "synthetic_stop_register_read_detach_resume": "passed on one disposable Python child",
+    "captured_stack_gate": "three genuine recorded frame-limiter chains pass; three corrupted enclosing-return cases reject",
+    "write_guards": "exact process identity, code hash/bytes, object pointers/offset, player/camera/contact, whole expected mesh prefix and readback",
+    "before_after_audit_equal": true,
+    "final": {
+      "time": 1788569171.450081,
+      "process": {
+        "pid": 46701,
+        "start": 1147812,
+        "group": 46458,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\auto-hardware\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "state": {
+        "level": 1,
+        "position": [
+          163024,
+          -102401,
+          509900
+        ],
+        "terrain_base": 0,
+        "barrier_head": 7152075,
+        "contact": [
+          99,
+          6973595
+        ],
+        "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+        "camera_translation": [
+          190254,
+          -115203,
+          500135
+        ]
+      },
+      "original_prefix_sha256": "6741aab66d6a191f1e9285a92a0ca4edc3fb5157a384062a6ba52c79b9fe1554",
+      "audit_equal_before_after": true,
+      "tracer_pid": 0,
+      "thread_states": {
+        "46701": "R",
+        "46704": "S",
+        "46705": "S",
+        "46763": "S",
+        "46764": "S",
+        "46766": "S",
+        "46767": "S",
+        "46769": "S",
+        "46770": "S",
+        "46772": "S",
+        "46777": "S",
+        "46778": "S",
+        "46779": "S",
+        "46780": "S",
+        "46782": "S",
+        "46784": "S"
+      }
+    }
+  },
+  "limits": [
+    "One captured side pose only; oscillating gameplay was not replayed.",
+    "The four-way candidate still leaves six of259 analytic-top boundary samples blue; it is a bounded improvement, not complete occlusion or an all-view fix.",
+    "Some visible model lies legitimately above the box edge; ROI blue count does not directly count defective pixels.",
+    "Subdivision changes UV interpolation too; depth mechanism is independently supported by EXP009 original-instruction analysis.",
+    "No full-frame equality, complete GPU model, general face-size rule, whole-level authoring or EXP005 shared-floor repair is claimed.",
+    "The current game has the original six-quad mesh restored as authorized; the candidate is retained offline and is not installed permanently."
+  ],
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260904-010/authorization.json",
+      "bytes": 338,
+      "sha256": "9be841d8cee95c4c336a6397151580760cdca684609b337bcc64b1a1e4f374f8"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/started.json",
+      "bytes": 543,
+      "sha256": "72f62ee046b34ba5ee42b55fb013a180e4e1e8335d6f3da89ac5ff540e60ab26"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/result.json",
+      "bytes": 11037,
+      "sha256": "f0af6001e97e0c1e3ded937aef4060f4c18651e523f1ae3d67941676a94b6122"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/comparison.json",
+      "bytes": 5053,
+      "sha256": "567f27b960d6a4f40f5bda46171e66b5f72dfc787a096e6688caf8533360f0fd"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/comparison.html",
+      "bytes": 3454,
+      "sha256": "8acb9e47435fbf41b38e618b5dc4ac0521eda97d208ada5b620f8d9979474a9a"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/final-state.json",
+      "bytes": 1107,
+      "sha256": "0504e12ef497fcbfbcf2ec3a94edc1952e9b2d4920ec3e89aeb5b0a4b61df373"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/final-loaded-data.txt",
+      "bytes": 1033,
+      "sha256": "7de8f35d6d1882a31bdca9b357d8f2e849fff6f90d88f76c7f41338eead92137"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/pre-audit.json",
+      "bytes": 3444,
+      "sha256": "d52938990118da40f0721d80d0d9fb4c3b9f57d767c4f442f2f036782059504c"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/post-audit.json",
+      "bytes": 3444,
+      "sha256": "d52938990118da40f0721d80d0d9fb4c3b9f57d767c4f442f2f036782059504c"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/stop-probes.json",
+      "bytes": 12077,
+      "sha256": "8b35f4a001dcdcded88d6f6006fb5ed86ebbb990f83d4a3ce944e66f46ee52e0"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/suspensions.json",
+      "bytes": 17388,
+      "sha256": "f4b631c5539c21d7ca8cac5b1eb408a5834eab4619f327cc311c88ee7c31eb8e"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/apply-write.json",
+      "bytes": 1966,
+      "sha256": "80abffb6da74ae39e8dc9a433164989b5c71ab2f1153e88bfba2340deb72c0ae"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/restore-write.json",
+      "bytes": 1969,
+      "sha256": "dafaabae4765cea44082b40caca94f20903c326f8f2e45964855758b710b3ae6"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/live_compare.py",
+      "bytes": 5169,
+      "sha256": "d9abfb112cfdf955affdac158c47a06f92ade3007b79ac3dd87c77c200a1c4d1"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/common.py",
+      "bytes": 1396,
+      "sha256": "eee3e2a51c64e4dff92bcb8712ca63a63dd420a70ddd9fce534ed3aec14311d2"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/freeze.py",
+      "bytes": 2066,
+      "sha256": "4ad3d5b87a2a0ab32ed31072c0ca828e36a81a0f5820032163ea51f4c2df683f"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-010/compare.py",
+      "bytes": 5269,
+      "sha256": "adc2ae3dc35bc259d1a7283426bc6b17131af3d0edb6b14da6534ab7c6c52f84"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788569081104016637.png",
+      "bytes": 166398,
+      "sha256": "2cfd02bb99cfd555b039f8bfe3877c45915989a8a1fe1a3a0e372fa5b8c656f1"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788569081518006159.png",
+      "bytes": 164705,
+      "sha256": "87683bc2179364714b6ec9e05c6b685e5e177f3b23483e4b44ba55615ee3a35b"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788569081931145015.png",
+      "bytes": 164839,
+      "sha256": "54751a6aaa9decd3a024a6f2fa7776be6502f97d28a6b2d749dcf441c578214d"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788569082447027378.png",
+      "bytes": 165731,
+      "sha256": "6fe9d4e4de630e9847af58d15c61fbf59b7148278c5d9ee9c5ca1fc0ef60fd06"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788569082861050370.png",
+      "bytes": 164164,
+      "sha256": "7439b23bde6ec4ae26c0ffd7f41ee3ded7735307215634bca51cd5a76183cc30"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788569083274916101.png",
+      "bytes": 165723,
+      "sha256": "6ca6cd3abfa2b551e5855c1ee3025c12ea595c7cb777941100f1d9c5e0817e82"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788569083851348525.png",
+      "bytes": 164737,
+      "sha256": "1bf5687644ef920e16dd691020eac90e56ed0545f4b8371281c8d6e3d851d2e5"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788569084264366570.png",
+      "bytes": 166191,
+      "sha256": "c40b4eeccc74930585c23550a7c4c6d5578c355190e03fca02b3a4b6e5cc2345"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788569084676706200.png",
+      "bytes": 164687,
+      "sha256": "0fa65b0ad6a8591d34e46579abb6c081b106b7302645ab9c6f6ff88bbf6e735a"
+    }
+  ]
+}

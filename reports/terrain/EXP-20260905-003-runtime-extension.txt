@@ -1,0 +1,10 @@
+EXP-20260905-003: pre-input extension, after stitched main two-cycle comparison.
+Use only the already guarded stitched instance, normal XTEST input and read-only captures.
+1. Shift_L held 0.15 seconds, release; read-only trace for 2.5 seconds.
+2. Steer to XZ (194000,514000), at most 8 seconds; capture.
+3. Steer to XZ (186000,525000), at most 8 seconds; capture.
+4. Steer back to XZ (194000,514000), at most 8 seconds; capture.
+5. Return toward natural spawn XZ (197091,492897), at most 8 seconds; capture.
+The extension asks whether the six-cell stitched star also admits a live crossing
+between source99 and source100. It is not evidence for all eight boundary routes.
+Retain any obstruction/timeout/fall rather than changing the patch or teleporting.

@@ -1,0 +1,60 @@
+{
+  "model": "kev-latest",
+  "state": "No evidence has been supplied.",
+  "questions": {
+    "q07": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The transplanted Thud was killed, respawned at health 50, and was killed again.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q08": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The static berry damage path treats creature health of at least 100 as immune.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q09": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The experiment established that the centipede is immune to purple-berry damage.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q10": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The dark horizontal bands occurred only in an image containing a transplanted boss.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q11": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The dark bands at the spawn fence are caused by the camera clipping the fence geometry.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q12": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Instruction 0x0041C100 is the writer that sets awake bosses' flags bit 0x0001.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    }
+  }
+}

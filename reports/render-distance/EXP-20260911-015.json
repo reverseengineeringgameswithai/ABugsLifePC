@@ -1,0 +1,432 @@
+{
+  "experiment": "EXP-20260911-015",
+  "status": "confirmed-bounded",
+  "question": "Why does the grass strip persist from the more distant user position?",
+  "retail_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "runtime": {
+    "build": "/home/dev/ABLPC/work/copies/EXP-20260911-013-play",
+    "sha256": "f55c3612f60fb1fba373c55d8cab6afcac96cf00d4156c542963234aa58b7059",
+    "sink": "ablpc_soil_1789159752419995386",
+    "module": 536870916,
+    "code_va": 17313792,
+    "state_va": 17317888,
+    "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-013/play/prefix",
+    "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+    "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+    "audible": false,
+    "expect_auto_hardware": true,
+    "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+    "leader": {
+      "pid": 91091,
+      "start": 5734658,
+      "group": 91091,
+      "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789159752419995386 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-013/play/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-013-play/bugs.exe log cheat mpeg "
+    },
+    "game": {
+      "pid": 91321,
+      "start": 5734777,
+      "group": 91091,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-013-play\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "display": ":2",
+    "xwayland": {
+      "pid": 91119,
+      "start": 5734682,
+      "group": 91091,
+      "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+    },
+    "hardware_before_input": true,
+    "window": "14680071"
+  },
+  "capture": {
+    "time_ns": 1789167948225868868,
+    "flik": [
+      17699,
+      -5761,
+      446467
+    ],
+    "camera_matrix": "3cf000004afd01000010fbffb602faff3cf0",
+    "camera_translation": [
+      12776,
+      -19271,
+      474844
+    ],
+    "camera_phase": 10129,
+    "level": 17
+  },
+  "target": {
+    "section": "secondary",
+    "scene": 15,
+    "object_offset": 17384,
+    "geometry_offset": 116176,
+    "texture_page": 4,
+    "texture_uv_rectangle": [
+      192,
+      192,
+      255,
+      224
+    ],
+    "identification": "Thin grass strip in user crop and passage opening; native secondary15 projection/UVs and all emitted vertices match captured live buffers in both views"
+  },
+  "native_cases": [
+    {
+      "capture": "EXP014 initial",
+      "accepted": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "setup": {
+        "camera": [
+          6288,
+          -8639,
+          76662
+        ],
+        "stored_camera": [
+          196,
+          -269,
+          2395
+        ],
+        "far": 3069,
+        "scratch": 400,
+        "background": 1
+      },
+      "target": {
+        "live_full_vertex_matches": 60,
+        "scene": 15,
+        "section": "secondary",
+        "object": 17384,
+        "geometry": 116176,
+        "vertices": 60,
+        "xy_bounds": [
+          [
+            88.0,
+            472.0
+          ],
+          [
+            210.0,
+            248.0
+          ]
+        ]
+      }
+    },
+    {
+      "capture": "EXP015 farther",
+      "accepted": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        13,
+        14,
+        15
+      ],
+      "setup": {
+        "camera": [
+          3194,
+          -4817,
+          118711
+        ],
+        "stored_camera": [
+          99,
+          -150,
+          3709
+        ],
+        "far": 3069,
+        "scratch": 400,
+        "background": 1
+      },
+      "target": {
+        "live_full_vertex_matches": 92,
+        "scene": 15,
+        "section": "secondary",
+        "object": 17384,
+        "geometry": 116176,
+        "vertices": 92,
+        "xy_bounds": [
+          [
+            230.0,
+            576.0
+          ],
+          [
+            200.0,
+            239.0
+          ]
+        ]
+      }
+    }
+  ],
+  "mechanism": {
+    "tail_range": [
+      "0x0044D83D",
+      "0x0044DBEE"
+    ],
+    "renderer": "0x00448D70",
+    "camera_translation_divisor": 4,
+    "far_during_pass": 3069,
+    "scratch_distance": 400,
+    "secondary_flag": 1,
+    "admission_notes": "Secondary tail divides camera runtime and stored positions by4, uses its own admission and selects its own scratch. The shared far global still participates (temporarily minus0x103); do not call it an unlimited-distance layer."
+  },
+  "code_verification": [
+    {
+      "name": "panorama_submit",
+      "start": "0x404410",
+      "end_exclusive": "0x404980",
+      "retail_file_offset": 14352,
+      "sha256": "271d843a25866d2c345776d715cfb37b60ab4682702cd33aec8ec45b8bc32c56",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "panorama_scroll",
+      "start": "0x405410",
+      "end_exclusive": "0x4055f0",
+      "retail_file_offset": 18448,
+      "sha256": "8e7df751d08e79df002763b4da2e17c1a6300897749d780e74f113b9c9c297dd",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "scene_distance_gate",
+      "start": "0x44d59f",
+      "end_exclusive": "0x44d5f2",
+      "retail_file_offset": 313759,
+      "sha256": "ea4cd4d9474d17b292cf9939edff257e8dc7db0193bc82cd2945e502332d6258",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "quad_distance_gate",
+      "start": "0x45cf63",
+      "end_exclusive": "0x45cf8f",
+      "retail_file_offset": 377699,
+      "sha256": "0ea8fc86d609ec0a534600f401f5293d27fa87daed2ebf7251809efae6495dd5",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "secondary_tail",
+      "start": "0x44d83d",
+      "end_exclusive": "0x44dbee",
+      "retail_file_offset": 314429,
+      "sha256": "c1b8d1ad03bd476dcc22a6296481c841e36d8d3113c4669a39ece2d23f8aa002",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "secondary_renderer",
+      "start": "0x448d70",
+      "end_exclusive": "0x4498f0",
+      "retail_file_offset": 295280,
+      "sha256": "9a38cf8ae95c7b718f1c34b4321812f0c525b851bba8bf27779b51a8929a2325",
+      "resident_equals_retail": true
+    }
+  ],
+  "correction": {
+    "previous_question_answered": "EXP014 identified the painted flowers and measured13 other primary plant meshes; this did not identify the grass strip selected in the new crop.",
+    "retained_facts": "Painted flowers are panorama. The13 selected primary plants fit2x at the initial capture. Neither proves this grass strip uses the primary range.",
+    "resolved": "The grass strip is secondary15 background geometry, distinct from both panorama and primary plants/walls."
+  },
+  "limits": [
+    "Original-PC CPU emission and resident vertex matches, not a GPU command trace or exhaustive foliage census.",
+    "No primary-wall conversion to background, no settings/assets changes, no performance trial, no live writes or gameplay input.",
+    "Background still has clipping/admission rules and the shared far setting participates; this does not show unlimited rendering or prove a safe wall proxy."
+  ],
+  "evidence": [
+    {
+      "path": "work/experiments/EXP-20260911-015/memory.json",
+      "sha256": "1de505159a68ef8001fc5b5b03985c9f0af06b4e3d9a2e96eef03738115ba54f",
+      "bytes": 21043
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/capture.py",
+      "sha256": "8beeacc055e442e27ebd9945507e6082c9e393be8d4b01e7e29c71761ee71363",
+      "bytes": 1483
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/map.py",
+      "sha256": "7d39460b39eb1741c1938b7beaccc2a37ceedcbbe2641086475e0950e9ae9505",
+      "bytes": 5333
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/replay.py",
+      "sha256": "dd71ef75b8daff16aaa8b45ce0cf46872def089498bca7928d43d18e218418c5",
+      "bytes": 2628
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/secondary-probe.py",
+      "sha256": "b43e377fc1c4c9adaa24599fbe3333ac205a1d01ea6f135911c1897cd5c1b8b8",
+      "bytes": 3020
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/secondary-probe.json",
+      "sha256": "e840a236f3d12593a260b8ff129962d3e34cd0b544ab97bf8d700f2621aca5c6",
+      "bytes": 128836
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/initial-secondary-probe.json",
+      "sha256": "0e09eefe18b4f5a5b324fe7fb801861f9bc18dd31d1651eeed193d93366d2b4b",
+      "bytes": 82827
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/grass-candidates.py",
+      "sha256": "8c30dc0b0979876d411a2bbd0a20b567d34c0f50ff9f2da82ab287b5c8035440",
+      "bytes": 1677
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/grass-candidates.json",
+      "sha256": "d56166ff9a853e219f87cf5da2a73c3a186ac4b5e2b9d3f77f42cd37d761c4f8",
+      "bytes": 249542
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/grass-pixels.py",
+      "sha256": "15466544a82adb7c8b3e9b52d4853e36d783846ba51071b597fb3f8183329374",
+      "bytes": 1096
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/grass-pixels.json",
+      "sha256": "2890403e6bec77ab65f3528ed1c91339aa964297b7d38711ed6ae87e1b46b65d",
+      "bytes": 2538
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/all-grass-pixels.py",
+      "sha256": "3cbf42b0428a9db7d801008bfc5cd4180e3c080185f5e8f66fde3c16d2e0d085",
+      "bytes": 1218
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/all-grass-pixels.json",
+      "sha256": "7d93ad0a74ae247489bbedc4222304716fee02ead233b004d01717b3532486ba",
+      "bytes": 8197
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/grass-pixel-colours.json",
+      "sha256": "6dd945f3b9e96acf158659bad9ce83ca7aaf5693ee79adc7842ebbcc6ed90f8b",
+      "bytes": 1438
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/verify.py",
+      "sha256": "94b10f148a12306d6582391b663acf5bfa59676e7d5ef599597ae3b51d8b9020",
+      "bytes": 1133
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/code-verification.json",
+      "sha256": "4bf5fe55e6436937486ab47bf90edc134c86415ebce8e3d2b4b75e7de9e0118f",
+      "bytes": 1504
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/background-tail-disassembly.txt",
+      "sha256": "76262c9dcfeb2848691a7b47e57ae0232ed35ea513b7f302a92c294412f9feb3",
+      "bytes": 8384
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/user-grass-crop.png",
+      "sha256": "ce8c5d45b970e421ee735c5338efb8c4c4adc04800eb06a59bfcc6e8d1ad42e0",
+      "bytes": 29411
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/audit.py",
+      "sha256": "78fbcb08c9dd1d44724e4651d683936bf7778e271c6939a03267e94ffdc02a48",
+      "bytes": 1937
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/memory.json",
+      "sha256": "d11c4d4c1eb6b816cee2fcf0123694898c6f32b31e3025a9116dfb8042ead400",
+      "bytes": 21042
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/play/frame-1789167948196506093.png",
+      "sha256": "713512ab5e3ec26c634fc72976bed8e859e0f7c5c3332764c7febd41126b8c9d",
+      "bytes": 197080
+    },
+    {
+      "path": "work/level-projects/original-training-soil-triggers/textures/page-04.png",
+      "sha256": "16695ec1ee7fba34b35bcc740194ade71a9399c807264a9379d15e0503a17660",
+      "bytes": 35981
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/make-check.log",
+      "sha256": "bf596a7865fe1f185496072a98f0a69c3e6b0c448a0fb60ac7c0f0c9e7e41238",
+      "bytes": 1687
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/claim-sweep.json",
+      "sha256": "e190cee1e3618cceb76cee68a8bae4d2381b44fbb40f8b9d5b7a42aedea050e0",
+      "bytes": 854
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/initial-final-audit.json",
+      "sha256": "52714ac275029c202de2af062e20e8d0077383becbb6c4615880505d325fd9e3",
+      "bytes": 3462
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/initial-final-bindings.json",
+      "sha256": "834e2a88bb30e5a05d0e46eb9cb93367c08e0e6ec4cd0e8230cc00add24d20a6",
+      "bytes": 3497
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/initial-audio-binding.json",
+      "sha256": "21d3daeb35f243a8af46aa9379d2c3090629bec52755d51e53e83cb144538026",
+      "bytes": 1754
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/final-audit.json",
+      "sha256": "52714ac275029c202de2af062e20e8d0077383becbb6c4615880505d325fd9e3",
+      "bytes": 3462
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/final-bindings.json",
+      "sha256": "834e2a88bb30e5a05d0e46eb9cb93367c08e0e6ec4cd0e8230cc00add24d20a6",
+      "bytes": 3497
+    },
+    {
+      "path": "work/experiments/EXP-20260911-015/audio-binding.json",
+      "sha256": "21d3daeb35f243a8af46aa9379d2c3090629bec52755d51e53e83cb144538026",
+      "bytes": 1754
+    }
+  ],
+  "validation": {
+    "command": "PYTEST_ADDOPTS='-k \"render_distance\"' make check",
+    "passed": 26,
+    "deselected": 6510,
+    "seconds": 3.86,
+    "vault_notes": 944,
+    "vault_errors": 0,
+    "vault_warnings": 5,
+    "warning_scope": "Existing historical note/startup budget warnings",
+    "claim_sweep": "new_only"
+  },
+  "lifecycle": {
+    "generic_processes": 7,
+    "bound_processes": 13,
+    "game_left_open": true,
+    "muted": true,
+    "external_live_writes": false,
+    "gameplay_keys": 0,
+    "launches": 0,
+    "closes": 0,
+    "sink": "ablpc_soil_1789159752419995386",
+    "module": 536870916,
+    "stream": 5233
+  },
+  "boundary_relationship_clarification": {
+    "experiment": "EXP-20260911-016",
+    "finding": "Secondary15 is the simplified distant representation of the real grass boundary; detailed primary255..261 and source25 boundary collision confirmed. Geometry and camera are both quarter-scaled, retaining projected placement."
+  }
+}

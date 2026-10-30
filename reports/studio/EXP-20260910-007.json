@@ -1,0 +1,235 @@
+{
+  "experiment": "EXP-20260910-007",
+  "build": "/home/dev/ABLPC/work/copies/studio-1789063650079952066",
+  "executable_sha256": "831a170bc979297a73c25ad1395f7551049a00a0bac2d09249ba954059e48303",
+  "campaign_sha256": "3eca4faf2640b38314423c531043ba69f78eda0c998e4387288d7cda3f555afa",
+  "soil": {
+    "schema": "ablpc.soil-triggers.v1",
+    "parameters": {
+      "throws": 5,
+      "jumps": 6,
+      "bounces": 3,
+      "seed_pickups": 3,
+      "discard_updates": 58,
+      "colour_samples": 2,
+      "ledge_runtime_y": -20000
+    },
+    "lessons": [
+      {
+        "stage": 0,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 1,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 2,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 3,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 4,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 5,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 6,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 7,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 8,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 9,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 10,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 11,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 12,
+        "mode": "original",
+        "tail_ms": 2000
+      },
+      {
+        "stage": 13,
+        "mode": "original",
+        "tail_ms": 2000
+      }
+    ]
+  },
+  "runtime": {
+    "leader": {
+      "pid": 30951,
+      "start": 5016561,
+      "group": 30951,
+      "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260910-007/corrected-play/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/studio-1789063650079952066/bugs.exe log cheat mpeg "
+    },
+    "game": {
+      "pid": 31199,
+      "start": 5016722,
+      "group": 30951,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\studio-1789063650079952066\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "xwayland": {
+      "pid": 30997,
+      "start": 5016585,
+      "group": 30951,
+      "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+    },
+    "window": "14680071",
+    "display": ":2",
+    "audible": true,
+    "module": null,
+    "hardware_before_input": true
+  },
+  "native": [
+    {
+      "base": "0x400000",
+      "proof": {
+        "target": 5,
+        "initial_sign_frame": 4,
+        "transitions": [
+          {
+            "throw": 1,
+            "stage": 0,
+            "counter": 2
+          },
+          {
+            "throw": 2,
+            "stage": 0,
+            "counter": 3
+          },
+          {
+            "throw": 3,
+            "stage": 0,
+            "counter": 4
+          },
+          {
+            "throw": 4,
+            "stage": 0,
+            "counter": 5
+          },
+          {
+            "throw": 5,
+            "stage": 1,
+            "counter": 6
+          }
+        ],
+        "hud_frames": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "negative_timer_values": [
+          0,
+          1,
+          16,
+          18
+        ],
+        "native_pause_updates": 30
+      }
+    },
+    {
+      "base": "0x1000000",
+      "proof": {
+        "target": 5,
+        "initial_sign_frame": 4,
+        "transitions": [
+          {
+            "throw": 1,
+            "stage": 0,
+            "counter": 2
+          },
+          {
+            "throw": 2,
+            "stage": 0,
+            "counter": 3
+          },
+          {
+            "throw": 3,
+            "stage": 0,
+            "counter": 4
+          },
+          {
+            "throw": 4,
+            "stage": 0,
+            "counter": 5
+          },
+          {
+            "throw": 5,
+            "stage": 1,
+            "counter": 6
+          }
+        ],
+        "hud_frames": [
+          3,
+          2,
+          1,
+          0
+        ],
+        "negative_timer_values": [
+          0,
+          1,
+          16,
+          18
+        ],
+        "native_pause_updates": 30
+      }
+    }
+  ],
+  "user_acceptance": "User confirms 5 \u2192 0 and Mr. Soil continuing properly in corrected build; individual input timing was not measured by agent.",
+  "sign_resource": "reports/soil-triggers/EXP-20260910-007-sign-resource.json",
+  "source_inventories_unchanged": {
+    "anthill": 771,
+    "training": 30
+  },
+  "prior_build": "work/copies/studio-1789063161519878185",
+  "prior_game_closed": true,
+  "agent_menu_or_throw_inputs": false,
+  "live_state": {
+    "time_ns": 1789063878156228182,
+    "level": 17,
+    "lesson": 1,
+    "cue": 25,
+    "playing": 0,
+    "owner": 0,
+    "phase": 0,
+    "tail_start": 0,
+    "finished": 0,
+    "stream_size": 254674,
+    "played": 0,
+    "block": 4134,
+    "path": "\\pc\\bugs\\cd\\audio\\less2.wav"
+  }
+}

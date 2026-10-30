@@ -1,0 +1,467 @@
+{
+  "experiment": "EXP-20260905-009",
+  "arm": "additive-originals-retained",
+  "terrain_sha256": "77a77456c3b9a0f4db5e7b20d257a9772e04c0f0ed3d0812590943d630851698",
+  "level_dat_sha256": "24b8c345d82bb3489ab765d3ad24f917fcacf1da4d5a910e715b4daf84b071e8",
+  "source_hashes": {
+    "retail_terrain": "62f3b73f21630eb19c04e585a92e1f3e32a76fdcb6ec36bae18f9c1ec3a2a868",
+    "retail_dat": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53",
+    "authored_terrain": "1ff3af9f0b5b2c2957bde8e877e1d988054455f3e1be18f8ea0e6cb57875d16b",
+    "authored_dat": "99fbff1754fc43979542de40e56c04d10d7af4fccde8d13e919853b679429a21"
+  },
+  "collision_allocation": {
+    "source_index": 99,
+    "payload_offset": 43924,
+    "insertion_offset": 48380,
+    "growth_bytes": 704,
+    "directory_offset_before": 222572,
+    "directory_offset_after": 223276,
+    "record_offset_before": 230100,
+    "record_offset_after": 230804,
+    "payload_size_before": 4460,
+    "payload_size_after": 5164,
+    "original_group_count": 14,
+    "added_group_count": 16,
+    "original_cell_count": 134,
+    "added_cell_count": 16,
+    "original_terminator_before": 48380,
+    "original_terminator_after": 49084,
+    "original_trailer_sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+    "preservation": "Original group/cell bytes, terminator, trailer, other payloads and unknown directory fields retained; only directory locator and this payload word count are rewritten."
+  },
+  "render_allocation": {
+    "record_index": 160,
+    "scene_record_offset": 8580,
+    "object_offset": 18672,
+    "pointer_field_offset": 18692,
+    "previous_geometry_offset": 113136,
+    "geometry_offset": 332820,
+    "stream_bytes": 13054,
+    "stream_sha256": "9b37c8c1e518170f3011bca5bae31888132c736401c779c9045c7d028f2b62d6",
+    "growth_bytes": 13056,
+    "original_vertex_count": 92,
+    "original_face_count": 69,
+    "vertex_count": 439,
+    "face_count": 623,
+    "additions": [
+      {
+        "vertices": 324,
+        "faces": 524,
+        "vertex_index_base": 92
+      },
+      {
+        "vertices": 23,
+        "faces": 30,
+        "vertex_index_base": 416
+      }
+    ],
+    "original_vertex_bytes_sha256": "8877795ca500486792043d672a7f7df7418422d8d8ad58e9ecffc3c383247315",
+    "original_command_bytes_sha256": "4683ab2d7fac35895fd3e93356d5ade862037a6a562c1e16d63e9e26e8bdbdb1",
+    "retained_commands_new_offset": 338092,
+    "retained_commands_size": 1124,
+    "visibility_bound_offset": 8592,
+    "visibility_bound_before": 4442,
+    "visibility_bound_after": 6047,
+    "scene_center_retained": [
+      4243,
+      -570,
+      16018
+    ],
+    "depth_bias_offset": 18690,
+    "depth_bias_before": 8,
+    "depth_bias_after": 0,
+    "footer_offset_before": 332820,
+    "footer_offset_after": 345876,
+    "footer_word_before": 8300,
+    "footer_word_after": 21356,
+    "trailing_data_offset": 324524,
+    "preservation": "All original vertices and full command groups remain active; old payload bytes remain in place. Only the known object pointer, conservative visibility bound, selected depth bias and displaced footer change.",
+    "rendering_limit": "Zero depth bias is inherited from the banked authored area, not a pixel-identical retail sorting claim. Enlarged-batch visibility/performance still need runtime comparison."
+  },
+  "access_ramp": {
+    "source_record": 99,
+    "original_cell_offset": 44140,
+    "foot_z_stored": 10900,
+    "deck_z_stored": 13000,
+    "x_span_stored": [
+      5750,
+      6250
+    ],
+    "collision_corners_stored": [
+      [
+        5750,
+        -3030,
+        10900
+      ],
+      [
+        6250,
+        -3183,
+        10900
+      ],
+      [
+        6250,
+        -3296,
+        13000
+      ],
+      [
+        5750,
+        -3296,
+        13000
+      ]
+    ],
+    "render_corners_stored": [
+      [
+        5750,
+        -2934,
+        10900
+      ],
+      [
+        6250,
+        -3087,
+        10900
+      ],
+      [
+        6250,
+        -3200,
+        13000
+      ],
+      [
+        5750,
+        -3200,
+        13000
+      ]
+    ],
+    "foot_heights": [
+      {
+        "xz_stored": [
+          5750,
+          10900
+        ],
+        "original_plane_y_world": -96952,
+        "authored_plane_y_stored": -3030,
+        "rounding_error_stored": "1/4"
+      },
+      {
+        "xz_stored": [
+          6250,
+          10900
+        ],
+        "original_plane_y_world": -101844,
+        "authored_plane_y_stored": -3183,
+        "rounding_error_stored": "3/8"
+      }
+    ],
+    "max_foot_rounding_error_stored": "3/8",
+    "texture_tiling": {
+      "tile_size_stored": 512,
+      "tile_size_world": 16384,
+      "anchor_stored": [
+        4000,
+        -3200,
+        13000
+      ],
+      "source_vertices": 4,
+      "source_faces": 1,
+      "vertex_count": 23,
+      "face_count": 30,
+      "stream_bytes": 646,
+      "stream_sha256": "1a696c548489b4a86622c84b17ae4f406c8927b0d05d900a46eeb2d16f112109",
+      "tag": 97,
+      "surface_triangles": {
+        "ground": 30,
+        "wall": 0
+      },
+      "degenerate_triangles_omitted": 0,
+      "max_coordinate_rounding_error_stored": "58/125",
+      "projection": "Ground X/Z; vertical-wall U is height and V is X or Z. 512 is an authoring choice, not a native universal tile scale.",
+      "preservation": "Original triangle boundaries before int16 quantization; original corner colours; interpolated known colour bytes; unchanged unknown vertex fields. Collision is not an input to tiling.",
+      "faces": [
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            3,
+            -5
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            3,
+            -5
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            3,
+            -4
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            3,
+            -4
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            3,
+            -3
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            3,
+            -3
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            3,
+            -2
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            4,
+            -5
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            4,
+            -5
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            4,
+            -4
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            4,
+            -4
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            4,
+            -3
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            4,
+            -3
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            4,
+            -2
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            4,
+            -2
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            4,
+            -2
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 0,
+          "tile": [
+            4,
+            -1
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            3,
+            -5
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            3,
+            -4
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            3,
+            -4
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            3,
+            -3
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            3,
+            -3
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            3,
+            -2
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            3,
+            -2
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            3,
+            -2
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            3,
+            -1
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            3,
+            -1
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            4,
+            -2
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            4,
+            -1
+          ],
+          "surface": "ground"
+        },
+        {
+          "source_face": 0,
+          "source_triangle": 1,
+          "tile": [
+            4,
+            -1
+          ],
+          "surface": "ground"
+        }
+      ]
+    },
+    "scope": "Authored 500-unit-wide connection; original terrain is unchanged. Seam/overlap behavior requires native movement proof."
+  },
+  "source99_payload_offset": 43924,
+  "mesh160_geometry_offset": 332820,
+  "mesh160_stream_bytes": 13054,
+  "acceptance": "Terrain-only regressions, native loader/relocator/command traversal, fall/box checks and four continuous crossing/return routes pass. Original point-target controls retain documented controller-stall failures. Runtime appearance and full actor/input behavior remain untested.",
+  "validation_report": "reports/terrain/EXP-20260905-009-validation.json",
+  "fixture": "work/copies/EXP-20260905-009/fixture",
+  "build_seconds": 0.151583,
+  "runtime_tested": false,
+  "live_process_actions": [],
+  "staged_game": "work/copies/EXP-20260905-009/game/PC/BUGS",
+  "staged_level01_sha256": {
+    "TERRAIN.ALL": "77a77456c3b9a0f4db5e7b20d257a9772e04c0f0ed3d0812590943d630851698",
+    "LEVEL.DAT": "24b8c345d82bb3489ab765d3ad24f917fcacf1da4d5a910e715b4daf84b071e8"
+  }
+}

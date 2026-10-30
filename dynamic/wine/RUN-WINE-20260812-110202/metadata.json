@@ -1,0 +1,26 @@
+{
+  "run_id": "RUN-WINE-20260812-110202",
+  "experiment": "EXP-20260812-011",
+  "capture_sequence_started": "2026-08-12T11:02:02.494283177-04:00",
+  "capture_sequence_ended": "2026-08-12T11:02:05.513757923-04:00",
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "input_level_dat_sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+  "staged_level_dat_sha256": "1c7ccb3c21ec4bacf0733ed54466da93d451bd30f671a42eb04c43fc38c69952",
+  "environment": "Fedora Linux 44, Wine 11.0 Staging, Gamescope 3.16.25",
+  "renderer": "Direct3D hardware 640x480x16",
+  "renderer_log_gate": [
+    "INFO Screen mode 640x480x16 selected.",
+    "INIT : Starting Direct3D renderer."
+  ],
+  "working_directory": "/home/dev/ABLPC/work/copies/EXP-20260812-011/record-126-field-04-plus-512/PC/BUGS",
+  "drive_layout": "S:\\PC\\BUGS",
+  "capture_method": "15 native Gamescope 640x480 screenshots at approximately 0.2-second wall-clock intervals after leaving the Training title pause",
+  "capture_storage": "/home/dev/ABLPC/work/copies/EXP-20260812-011/evidence/seq-field-04",
+  "capture_set_sha256": "eee0a756b2f2d23d18e1f2bc2a927f38aa0ffe0fa330b12901b88d65219fa7c2",
+  "selected_frame": "frame-08.png",
+  "selected_frame_sha256": "bfece149ba83b20a632cd9dc4a88c0fa1c1581cb927f30a64a3147252ab0ae6f",
+  "bugs_log_sha256": "371a8487f7db7c0f4b94b392e3fc27469ef6e66bb5fc8357babdec7400129e34",
+  "manifest_receipt_sha256": "1ff401f1ae5fddcc1c10f57aa8205ee7b2f7ad071290f5dc648f99ad45fdd429",
+  "status": "captured then intentionally terminated",
+  "tracked_artifacts": ["bugs.log", "experiment.md", "manifest-receipt.json", "metadata.json"]
+}

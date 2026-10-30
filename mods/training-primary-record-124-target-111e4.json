@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "name": "training-primary-record-124-target-111e4",
+  "files": [
+    {
+      "path": "CD/LEVEL07/LEVEL1.DAT",
+      "sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+      "format": "pc-level-dat-prefix-v0",
+      "edits": [
+        {
+          "operation": "set-scene-record-payload-target-offset",
+          "section": "primary",
+          "index": 124,
+          "expected_target_offset": 78236,
+          "target_offset": 70116
+        }
+      ]
+    }
+  ]
+}

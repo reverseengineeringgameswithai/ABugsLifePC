@@ -1,0 +1,1603 @@
+{
+  "experiment": "EXP-20260908-005",
+  "date": "2026-09-08",
+  "status": "bounded-compact-native-prototype",
+  "baseline_commit": "0449e989e612ea49ccb7282355c13c3080088ea1",
+  "environment": {
+    "python": "3.14.6",
+    "unicorn": "2.1.4",
+    "platform": "Linux-7.0.11-200.fc44.x86_64-x86_64-with-glibc2.43"
+  },
+  "milestone4_complete": false,
+  "native_streaming_enabled_in_normal_game": false,
+  "external_live_memory_writes": 0,
+  "agent_game_input_events": 0,
+  "new_launches": 0,
+  "roadmap": "Vault/40-Implementation/PC Large-Level Engine Roadmap.md",
+  "storage": {
+    "accepted": true,
+    "profiles": [
+      {
+        "profile": "detail",
+        "pages": 4,
+        "original_dat_bytes": 681460,
+        "original_terrain_bytes": 384474,
+        "resident_dat_bytes": 480180,
+        "resident_terrain_bytes": 280414,
+        "removed_dat_bytes": 201280,
+        "removed_terrain_bytes": 104060,
+        "page_bytes": [
+          123410,
+          99988,
+          45096,
+          42216
+        ],
+        "input_sha256": [
+          "1b62f9de63db0cca6cb9b6bcbd64a37e4e80b2a8e219f7ed0a27117f05f749c7",
+          "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc"
+        ],
+        "resident_sha256": [
+          "e94ceeff35e6aa9a3e45cd69424d2de74529f82606d00b01fabe16e4b5253772",
+          "c7700f0c4444dd6005f070de9c8915b9dded576807354d0a98f57def82d1c701"
+        ]
+      },
+      {
+        "profile": "bank",
+        "pages": 6,
+        "original_dat_bytes": 581572,
+        "original_terrain_bytes": 392906,
+        "resident_dat_bytes": 481148,
+        "resident_terrain_bytes": 296018,
+        "removed_dat_bytes": 100424,
+        "removed_terrain_bytes": 96888,
+        "page_bytes": [
+          35994,
+          21368,
+          50524,
+          45264,
+          19788,
+          30200
+        ],
+        "input_sha256": [
+          "49fe2b4549593973963fa8bfd7c5825aaeedc11c65afd93cdd6642e0a2987234",
+          "7e23d8cc95a71a41a52b630696b15273149fb21d492542a856d0a4db211423e1"
+        ],
+        "resident_sha256": [
+          "8c83d54faed75a02fb2994c249985e2b87650cd1446d99f41fe8527fea8b11f9",
+          "202a7d5d9e0c1ef2b6fb5c0f7f15581c65eac53a81849c0f801d651d8a06ca85"
+        ]
+      }
+    ],
+    "scope": "Offline compact native files with placeholders. Adapter must bind all pages before native spatial initialization. No runtime deployment or total game memory acceptance."
+  },
+  "native_storage": {
+    "accepted": true,
+    "rows": [
+      {
+        "profile": "detail",
+        "native_loader_control": {
+          "trailing_data_pointer": 268760900,
+          "trailing_plus_118_pointer": 268761180,
+          "trailer_table_sha256": "6137e0ce6f3f284b432407f1c7089a4e41fb5307420638ef0afb783102f69b9a",
+          "return_address": 805371888
+        },
+        "native_loader_compact": {
+          "trailing_data_pointer": 268760900,
+          "trailing_plus_118_pointer": 268761180,
+          "trailer_table_sha256": "6137e0ce6f3f284b432407f1c7089a4e41fb5307420638ef0afb783102f69b9a",
+          "return_address": 805371888
+        },
+        "scene_object_count": 670,
+        "all_scene_object_nonpointer_bytes_exact": true,
+        "footer_header_exact": true
+      },
+      {
+        "profile": "bank",
+        "native_loader_control": {
+          "trailing_data_pointer": 268761260,
+          "trailing_plus_118_pointer": 268761540,
+          "trailer_table_sha256": "6137e0ce6f3f284b432407f1c7089a4e41fb5307420638ef0afb783102f69b9a",
+          "return_address": 805371888
+        },
+        "native_loader_compact": {
+          "trailing_data_pointer": 268761260,
+          "trailing_plus_118_pointer": 268761540,
+          "trailer_table_sha256": "6137e0ce6f3f284b432407f1c7089a4e41fb5307420638ef0afb783102f69b9a",
+          "return_address": 805371888
+        },
+        "scene_object_count": 688,
+        "all_scene_object_nonpointer_bytes_exact": true,
+        "footer_header_exact": true
+      }
+    ],
+    "scope": "Original PC DAT fixup and complete supported scene/object comparisons over two file profiles; opaque footer header exact. No gameplay, model load, level reset or hardware claim."
+  },
+  "native_actor_selectors": {
+    "actual_placement_tables": [
+      {
+        "file": "creature-packet.bin",
+        "moving_placements": 9,
+        "selectors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "guard_rejection": null
+      },
+      {
+        "file": "crowd-creature-packet.bin",
+        "moving_placements": 27,
+        "selectors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "guard_rejection": "Native actor selector aliases camera slot16 (maximum 15)"
+      }
+    ],
+    "constants_va": [
+      4984832,
+      5099520
+    ],
+    "accepted": true,
+    "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "rows": [
+      {
+        "count": 0,
+        "native_selectors": [],
+        "instructions": 2776,
+        "guard_rejection": null
+      },
+      {
+        "count": 1,
+        "native_selectors": [
+          1
+        ],
+        "instructions": 14924,
+        "guard_rejection": null
+      },
+      {
+        "count": 9,
+        "native_selectors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "instructions": 112108,
+        "guard_rejection": null
+      },
+      {
+        "count": 15,
+        "native_selectors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "instructions": 184996,
+        "guard_rejection": null
+      },
+      {
+        "count": 16,
+        "native_selectors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "instructions": 197144,
+        "guard_rejection": "Native actor selector aliases camera slot16 (maximum 15)"
+      },
+      {
+        "count": 23,
+        "native_selectors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "instructions": 282180,
+        "guard_rejection": "Native actor selector aliases camera slot16 (maximum 15)"
+      },
+      {
+        "count": 24,
+        "native_selectors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "instructions": 294328,
+        "guard_rejection": "Native actor selector aliases camera slot16 (maximum 15)"
+      },
+      {
+        "count": 64,
+        "native_selectors": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
+        "instructions": 780248,
+        "guard_rejection": "Native actor selector aliases camera slot16 (maximum 15)"
+      }
+    ],
+    "entity_initializer_preserves_cached_contacts": true,
+    "scope": "Complete original0041C420 including0041BD10 and native terrain height queries; synthetic complete placement tables. First camera alias at16, initialized table exceeded at24. This is selector assignment evidence, not proof every actor subsequently executes movement. Entity reinitialization alone does not clear old contacts."
+  },
+  "direct_reference_inventory": {
+    "accepted": true,
+    "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "direct_callsite_count": 28,
+    "scope": "Every caller edge returned by the bounded Ghidra queries is corroborated as an exact call/thunk jump in the PC executable. Function ownership remains inferred; indirect calls, unseen query inputs, register/stack liveness and live frame completeness are not established."
+  },
+  "native_collision": {
+    "accepted": true,
+    "arms": [
+      {
+        "patched": false,
+        "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+        "steps": 875,
+        "all_steps_exact": true,
+        "buckets_exact": true,
+        "resident_source_mapping_bytes": 303104,
+        "original_full_level_source_mapped": false,
+        "publications": [
+          {
+            "loaded": [],
+            "retired": [
+              0,
+              2,
+              3
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 118784
+          },
+          {
+            "step": 52,
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 104,
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 181,
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 239,
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 344,
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 396,
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 472,
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 531,
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 636,
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 688,
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 764,
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 823,
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152
+          },
+          {
+            "loaded": [
+              0,
+              2,
+              3
+            ],
+            "retired": [],
+            "resident": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mapped_bytes": 118784,
+            "overlap_bytes": 118784
+          }
+        ],
+        "maximum_route_collision_page_bytes": 49152,
+        "second_owner_slot9_exact": true,
+        "corrupt_second_load_rolled_back": true,
+        "corrupt_rejection": "Impossible page component sizes or trailing bytes",
+        "resident_roots": [
+          {
+            "address": 8338744,
+            "pointer": 0
+          },
+          {
+            "address": 8338748,
+            "pointer": 67328048
+          },
+          {
+            "address": 8338752,
+            "pointer": 0
+          },
+          {
+            "address": 8338756,
+            "pointer": 0
+          },
+          {
+            "address": 8338760,
+            "pointer": 0
+          },
+          {
+            "address": 8338764,
+            "pointer": 0
+          },
+          {
+            "address": 8338768,
+            "pointer": 0
+          },
+          {
+            "address": 8338772,
+            "pointer": 0
+          }
+        ]
+      },
+      {
+        "patched": true,
+        "binary_sha256": "b7566474e809cb6e930f3f674f2e272256d3c6474741f8c2e963a01b64d7ac3b",
+        "steps": 875,
+        "all_steps_exact": true,
+        "buckets_exact": true,
+        "resident_source_mapping_bytes": 303104,
+        "original_full_level_source_mapped": false,
+        "publications": [
+          {
+            "loaded": [],
+            "retired": [
+              0,
+              2,
+              3
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 118784
+          },
+          {
+            "step": 52,
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 104,
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 181,
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 239,
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 344,
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 396,
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 472,
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 531,
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 636,
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 688,
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 764,
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152
+          },
+          {
+            "step": 823,
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152
+          },
+          {
+            "loaded": [
+              0,
+              2,
+              3
+            ],
+            "retired": [],
+            "resident": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mapped_bytes": 118784,
+            "overlap_bytes": 118784
+          }
+        ],
+        "maximum_route_collision_page_bytes": 49152,
+        "second_owner_slot9_exact": true,
+        "corrupt_second_load_rolled_back": true,
+        "corrupt_rejection": "Impossible page component sizes or trailing bytes",
+        "resident_roots": [
+          {
+            "address": 8338744,
+            "pointer": 0
+          },
+          {
+            "address": 8338748,
+            "pointer": 67328048
+          },
+          {
+            "address": 8338752,
+            "pointer": 0
+          },
+          {
+            "address": 8338756,
+            "pointer": 0
+          },
+          {
+            "address": 8338760,
+            "pointer": 0
+          },
+          {
+            "address": 8338764,
+            "pointer": 0
+          },
+          {
+            "address": 8338768,
+            "pointer": 0
+          },
+          {
+            "address": 8338772,
+            "pointer": 0
+          }
+        ]
+      }
+    ],
+    "seconds": 83.42974498200056,
+    "scope": "Compact TERRAIN.ALL only in native source mapping. Actual page files bind before native bounds/bucket construction. Six corridor legs per executable exactly match full-source controls. Separate offline collision adapter; no live frame or total game-memory claim."
+  },
+  "native_renderer": {
+    "accepted": true,
+    "frames": 36,
+    "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "resident_dat_bytes": 480180,
+    "resident_dat_mapping_bytes": 483328,
+    "maximum_transient_mesh_bytes": 208896,
+    "legacy_dat_unmapped": [
+      6598656,
+      7213056
+    ],
+    "driver_calls": 366,
+    "driver_arguments_outside_page_allocations": true,
+    "corrupt_second_load_rolled_back": true,
+    "corrupt_rejection": "Impossible page component sizes or trailing bytes",
+    "seconds": 212.44764553999994,
+    "scope": "Two persistent native CPU renderer fixtures, three camera target cycles, full native DAT fixup, compact DAT only, old captured DAT scrubbed/unmapped, exact admitted geometry/instruction counts/packets. Independently paged meshes load/unmap with failure rollback. Driver COM calls remain explicit stubs; not the whole gameplay frame, real GPU lifetime, hardware traversal or total process-memory acceptance."
+  },
+  "preservation": {
+    "accepted": true,
+    "time_ns": 1788873246201959043,
+    "normal_files_exact": 721,
+    "executable_sha256": "b7566474e809cb6e930f3f674f2e272256d3c6474741f8c2e963a01b64d7ac3b",
+    "saved_blender_sha256": "52cbe34c88ee5f15a2edc242059b166b7276300f2fcbe14f48118c5a27341ca9",
+    "additions": [
+      "PC/BUGS/bugs.log"
+    ],
+    "bank_files_exact": 760,
+    "game": {
+      "pid": 154936,
+      "start": 2024608,
+      "group": 154693,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260908-002\\handoff-detail\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "state": {
+      "level": 1,
+      "position": [
+        207744,
+        -103595,
+        595821
+      ],
+      "heading": 3927,
+      "contact": [
+        178,
+        9911167
+      ],
+      "barrier_head": 9888539,
+      "vertical_velocity": 0,
+      "contact_flags": 257
+    },
+    "scope": "Fresh read-only normal asset/Blender/EXE hashes and live identity/state. Generic audit rows matched to the immutable existing owned/foreign binding. No input or live writes."
+  },
+  "prior_recheck": {
+    "accepted": true,
+    "records": [
+      {
+        "report": "reports/terrain/EXP-20260908-003.json",
+        "sha256": "171ded71f867e8d5bebfb7fa1d2693008221402496c4aa49b05739a1539c9296",
+        "exact": {
+          "private_artifacts": 34,
+          "source_files": 2
+        }
+      },
+      {
+        "report": "reports/terrain/EXP-20260908-004.json",
+        "sha256": "3d63bfad8e3f22fcc49ac55574346eb2a9f81c196e5f27945197d636980e6301",
+        "exact": {
+          "private_artifacts": 47,
+          "source_files": 2
+        }
+      }
+    ]
+  },
+  "source_check": {
+    "accepted": true,
+    "commands": [
+      {
+        "command": [
+          "make",
+          "check"
+        ],
+        "start_ns": 1788872975076819442,
+        "end_ns": 1788873134126573377,
+        "returncode": 0
+      }
+    ],
+    "log": "/home/dev/ABLPC/work/experiments/EXP-20260908-005/source.log",
+    "log_sha256": "b02a49c65386ebe4732be641f2fbee037883e252d41a4080d7f499d9ba3c606f"
+  },
+  "final_fast_gates": {
+    "path": "work/experiments/EXP-20260908-005/final-fast-gates.log",
+    "bytes": 1719,
+    "sha256": "f2742f7e88476676fc9270dedf2e2a908f908383f947524d82a55541e01e4fb6"
+  },
+  "test_selection": {
+    "included": [
+      "tests/test_actor_contact.py",
+      "tests/test_asset_arena.py",
+      "tests/test_auto_hardware_mod.py",
+      "tests/test_dynamic_limits.py",
+      "tests/test_grain_gate_mod.py",
+      "tests/test_level_chunks.py",
+      "tests/test_level_cliffs.py",
+      "tests/test_level_density.py",
+      "tests/test_level_scene.py",
+      "tests/test_level_scene_build.py",
+      "tests/test_level_scene_cli.py",
+      "tests/test_level_trunk.py",
+      "tests/test_level_visual_detail.py",
+      "tests/test_level_wilderness.py",
+      "tests/test_night_mod.py",
+      "tests/test_render_distance.py",
+      "tests/test_terrain_additive.py",
+      "tests/test_terrain_all.py",
+      "tests/test_terrain_barrier_edit.py",
+      "tests/test_terrain_barrier_probe.py",
+      "tests/test_terrain_barriers.py",
+      "tests/test_terrain_bioluminescence.py",
+      "tests/test_terrain_clovers.py",
+      "tests/test_terrain_collision_probe.py",
+      "tests/test_terrain_deck_grid_probe.py",
+      "tests/test_terrain_deck_probe.py",
+      "tests/test_terrain_deck_visual_probe.py",
+      "tests/test_terrain_exit_mod.py",
+      "tests/test_terrain_expansion.py",
+      "tests/test_terrain_floor_edit.py",
+      "tests/test_terrain_floor_patch.py",
+      "tests/test_terrain_floor_visual_fixture.py",
+      "tests/test_terrain_foliage.py",
+      "tests/test_terrain_foliage_layers.py",
+      "tests/test_terrain_foliage_variety.py",
+      "tests/test_terrain_foliage_visibility.py",
+      "tests/test_terrain_height.py",
+      "tests/test_terrain_hills.py",
+      "tests/test_terrain_isolated.py",
+      "tests/test_terrain_page_package.py",
+      "tests/test_terrain_page_residency.py",
+      "tests/test_terrain_pages.py",
+      "tests/test_terrain_perimeter.py",
+      "tests/test_terrain_plant_probe.py",
+      "tests/test_terrain_plant_templates.py",
+      "tests/test_terrain_play_area.py",
+      "tests/test_terrain_ramp_sides.py",
+      "tests/test_terrain_ramp_solid.py",
+      "tests/test_terrain_retail_probe.py",
+      "tests/test_terrain_scenery.py",
+      "tests/test_terrain_texture_tiling.py",
+      "tests/test_terrain_visibility.py",
+      "tests/test_terrain_wall_clearance.py",
+      "tests/test_terrain_wall_material.py",
+      "tests/test_terrain_wall_shading.py"
+    ],
+    "ignored_args": [
+      "--ignore=tests/test_ablrec_analyze.py",
+      "--ignore=tests/test_anm.py",
+      "--ignore=tests/test_apitrace_capture.py",
+      "--ignore=tests/test_audit_tracked_files.py",
+      "--ignore=tests/test_briefing.py",
+      "--ignore=tests/test_claim_sweep.py",
+      "--ignore=tests/test_compatibility.py",
+      "--ignore=tests/test_content_census.py",
+      "--ignore=tests/test_coordinate_overlay.py",
+      "--ignore=tests/test_core_grep.py",
+      "--ignore=tests/test_criu_feasibility.py",
+      "--ignore=tests/test_evidence_lib.py",
+      "--ignore=tests/test_exact_0a6c_admission.py",
+      "--ignore=tests/test_experiment_draft.py",
+      "--ignore=tests/test_frozen_capture.py",
+      "--ignore=tests/test_game_memory.py",
+      "--ignore=tests/test_game_session.py",
+      "--ignore=tests/test_gdb_harness.py",
+      "--ignore=tests/test_ghidra_query.py",
+      "--ignore=tests/test_grain_gate_resolver.py",
+      "--ignore=tests/test_input_movie.py",
+      "--ignore=tests/test_input_movie_controls.py",
+      "--ignore=tests/test_install_git_hooks.py",
+      "--ignore=tests/test_level03_type1_row_mod.py",
+      "--ignore=tests/test_level_dat.py",
+      "--ignore=tests/test_manifest.py",
+      "--ignore=tests/test_memory_snapshot.py",
+      "--ignore=tests/test_note_utils.py",
+      "--ignore=tests/test_play_pristine_launcher.py",
+      "--ignore=tests/test_r2c_f0.py",
+      "--ignore=tests/test_r2c_f0_lifecycle.py",
+      "--ignore=tests/test_r2c_localizer.py",
+      "--ignore=tests/test_r2c_localizer_creator.py",
+      "--ignore=tests/test_r2c_localizer_runtime.py",
+      "--ignore=tests/test_r2c_rc0.py",
+      "--ignore=tests/test_r2d_phase_calibration.py",
+      "--ignore=tests/test_r2e_stable_background.py",
+      "--ignore=tests/test_r2f_phase_agnostic_background.py",
+      "--ignore=tests/test_r2g_exp005_diagnostic.py",
+      "--ignore=tests/test_r2h_d3_combined_holdout.py",
+      "--ignore=tests/test_r2i_replicated_face8_localizer.py",
+      "--ignore=tests/test_r2j_control_trained_mask.py",
+      "--ignore=tests/test_r2k_d4_control_trained_holdout.py",
+      "--ignore=tests/test_r2l_fresh_replicated_face8_localizer.py",
+      "--ignore=tests/test_r2m_cross_time_correspondence.py",
+      "--ignore=tests/test_r2o_completed_present.py",
+      "--ignore=tests/test_r2p_native_x11.py",
+      "--ignore=tests/test_r2p_p0b.py",
+      "--ignore=tests/test_r2p_p0b_native_x11.py",
+      "--ignore=tests/test_r2p_p0b_operator_cleanup.py",
+      "--ignore=tests/test_r2p_p0b_packet_integrity.py",
+      "--ignore=tests/test_r2p_p0b_recovery.py",
+      "--ignore=tests/test_r2p_p0c_attribution.py",
+      "--ignore=tests/test_r2p_p0e.py",
+      "--ignore=tests/test_r2p_p0e_adversarial.py",
+      "--ignore=tests/test_r2p_p0e_packet_integrity.py",
+      "--ignore=tests/test_r2p_p0e_recovery.py",
+      "--ignore=tests/test_r2p_p0e_y_restore.py",
+      "--ignore=tests/test_r2p_p0e_y_restore_recovery.py",
+      "--ignore=tests/test_r2p_p0e_y_restore_recovery2.py",
+      "--ignore=tests/test_r2p_p0e_y_restore_recovery3.py",
+      "--ignore=tests/test_r2p_packet_integrity.py",
+      "--ignore=tests/test_r2p_passive.py",
+      "--ignore=tests/test_r2p_task_lifecycle.py",
+      "--ignore=tests/test_r2q_failed_022_y_restore.py",
+      "--ignore=tests/test_r2q_failed_024_y_restore.py",
+      "--ignore=tests/test_r2q_failed_025_y_restore.py",
+      "--ignore=tests/test_r2q_failed_026_y_restore.py",
+      "--ignore=tests/test_r2q_historical_device_adapter.py",
+      "--ignore=tests/test_r2q_operator_receipt_freezer.py",
+      "--ignore=tests/test_r2q_quiet_census_design.py",
+      "--ignore=tests/test_r2q_quiet_census_runtime.py",
+      "--ignore=tests/test_release.py",
+      "--ignore=tests/test_repo_hygiene.py",
+      "--ignore=tests/test_rr_record.py",
+      "--ignore=tests/test_run_index.py",
+      "--ignore=tests/test_savestate_hotkeys.py",
+      "--ignore=tests/test_send_keys.py",
+      "--ignore=tests/test_session_lib.py",
+      "--ignore=tests/test_smoke.py",
+      "--ignore=tests/test_training_flikflik_mod.py",
+      "--ignore=tests/test_training_grain_counter_mod.py",
+      "--ignore=tests/test_training_grain_mod.py",
+      "--ignore=tests/test_training_letter_mod.py",
+      "--ignore=tests/test_type1_reset.py",
+      "--ignore=tests/test_vault_lint.py",
+      "--ignore=tests/test_wait_for.py",
+      "--ignore=tests/test_wine_capture.py"
+    ],
+    "scope": "terrain, scenery, compiler, night, render distance and dependent formats; unrelated R2q excluded"
+  },
+  "source_files": [
+    {
+      "path": "reimplementation/ablpc/terrain_page_package.py",
+      "bytes": 8651,
+      "sha256": "413ff581c07561a239f6b617fbb418625826ed86b8a7715ad3a849e39a6efd43"
+    },
+    {
+      "path": "tests/test_terrain_page_package.py",
+      "bytes": 7225,
+      "sha256": "98b0ea9619a6581f95be507ec73ec84d4cde3a9530a012a0d1f6bfb8868506bf"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "reimplementation/ablpc/terrain_page_residency.py",
+      "bytes": 9130,
+      "sha256": "31b80368f4e6cdd42f5d9c52d1a21fd6d14bba0e9c10f9b12dc261c22bceb2c7"
+    },
+    {
+      "path": "reimplementation/ablpc/terrain_pages.py",
+      "bytes": 11700,
+      "sha256": "0a371e722ca616d379f1ae2dae84b590a50f28472864803fb2ef0e936d3b42e9"
+    },
+    {
+      "path": "reimplementation/ablpc/terrain_scenery.py",
+      "bytes": 13327,
+      "sha256": "a51fdd5b29381d40645b99c851a7a4dd768075c125cd98bcf1850f35b7cd15f3"
+    },
+    {
+      "path": "reimplementation/ablpc/terrain_all.py",
+      "bytes": 13153,
+      "sha256": "f618f3b4e799b224190c3fcc2ff3fcbd7b1cc62ffba45874abd8a78a1b18d1ab"
+    },
+    {
+      "path": "reimplementation/ablpc/terrain_foliage.py",
+      "bytes": 10369,
+      "sha256": "63546cf169fa1ff09326ddf233449caf6cb70c8305ba511fd8e2e4386dec9896"
+    },
+    {
+      "path": "scripts/terrain-wall-clearance-probe.py",
+      "bytes": 10593,
+      "sha256": "2b2191ee96ac51414d6cd5b7bf024bf00f76670ade6b052d108871179cf7d12b"
+    },
+    {
+      "path": "scripts/terrain-retail-probe.py",
+      "bytes": 17792,
+      "sha256": "52ae78064bea79ec14de8f65e2529aa1b272b147b37e92599e4a9b0f24ec6980"
+    },
+    {
+      "path": "scripts/terrain-collision-probe.py",
+      "bytes": 13957,
+      "sha256": "7f6fa6e0f8b07680247ee2f55db3ba36bed6e6351402f4810ff7edcc74d27e91"
+    },
+    {
+      "path": "scripts/terrain-texture-tiling-probe.py",
+      "bytes": 4247,
+      "sha256": "28d952d6d966888bfc89f7edd0d40466a9fcf805eee21586cbefdf752d5c7cce"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-harness.py",
+      "bytes": 5539,
+      "sha256": "448706b7acc4fcc85c2620ef0da1c72b6193b76f70ccc11e3c922130f8e5fc90"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-026/native-frames.py",
+      "bytes": 7501,
+      "sha256": "2ee018a76173c150d53097a1920e992fe0bcc2ba3735ab800308b8167c867023"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/replay.py",
+      "bytes": 4070,
+      "sha256": "33d3b596f81439b93f8b16f5038665a7267b86d2b948a531db6a683b3438585d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/map.py",
+      "bytes": 6964,
+      "sha256": "2ab965807c7fcdcecd166a84f3abe873fca9a241ef5e6282c1f3ebb031e487a8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/memory.json",
+      "bytes": 22524,
+      "sha256": "744d8630e8a7b6e9739199ca8fae9c657b3f548beca2f546da12b8d71844e443"
+    }
+  ],
+  "remaining": [
+    "Complete actual gameplay frame, anticipated queries and register/stack/driver/actor/trailer reference closure",
+    "Repair native actor slot assignment/table before broader moving populations; offline guard only currently",
+    "In-process bounded loader/publication with combined visual/collision readiness and entry/failure barrier",
+    "Actor/item state persistence over unload/reload, respawn and exit",
+    "Wider coordinate arithmetic/rebasing and long hardware total-memory/model/canary/control acceptance"
+  ],
+  "private_artifact_count": 82,
+  "private_artifacts": [
+    {
+      "path": "work/experiments/EXP-20260908-005/00404da0.json",
+      "bytes": 188,
+      "sha256": "ec015c818de5d73b861fd16feee54e419fdc18c61e38a31d1d74b63446578afa"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/0041ab40.json",
+      "bytes": 3966,
+      "sha256": "213d2b8718e124d8831aced1ebdabd5b8d00566f6c0b0bf2d8d085615be904a6"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/0041adf0.json",
+      "bytes": 17894,
+      "sha256": "8a4aa34e78e1e10c30e5011261c4bb71dd4c70788ed982294f43606dc3b36b38"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/0041c420.json",
+      "bytes": 11637,
+      "sha256": "4dfa5f32bf119606badd08ef21ee55931e2293193ca4caddbbb4dfcb4c898886"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/0041d5b0-callers.json",
+      "bytes": 1346,
+      "sha256": "b3e04837154c2822d9b05242dd3f4229b262caa32e6abc194a139f33546a7ec1"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/0041d5b0.json",
+      "bytes": 11462,
+      "sha256": "03b158090cfb2a5bd1ef5a181a5eb608fcd95100364ff824bedc41f0be84a67d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/0041dc60.json",
+      "bytes": 30029,
+      "sha256": "50d4a42e56213301700fd79f0b9b9af1d2db163a8ecd4b08b83835eee9b46410"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/0041ec40.json",
+      "bytes": 12776,
+      "sha256": "1d6cbf73f5934d73d3c808bbf4c0eaa66ee1630e336b5cefd5d766e623d1e1cd"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/0044bb70.json",
+      "bytes": 15974,
+      "sha256": "b8d5f902778be3c0c9fa0141a6b549f58d442799391d9c3a55959558bab68f7d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/0044ca00.json",
+      "bytes": 33966,
+      "sha256": "1262e5a5097d56d5b816d874908ea71243e0cf618a6a6b4b5d2054c5dbff2c64"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/0044d430.json",
+      "bytes": 28278,
+      "sha256": "cb4b0a22834dd9f30656bec7ca3117baa914ed114fef55ba42d555c232b992db"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/004a8950.json",
+      "bytes": 33339,
+      "sha256": "f14b39a241acfc1e5c562152c7fd01c2d5361ff91a9d7e145c338c73b673d0ae"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/004ab1a0-callers.json",
+      "bytes": 2680,
+      "sha256": "fe898b929cc3c883213291f37139cfd37a0c3f54317d9b6447b6ed40634eabf5"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/004abe00-callers.json",
+      "bytes": 8113,
+      "sha256": "350583310a29ba5154e6efa47bbd63b0d148659d6a0ff6a9ccea1d93290463e0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/004ac140-callers.json",
+      "bytes": 1346,
+      "sha256": "92b49de7d6a5f068c690ffdc8d638a98800db76da2632ca600883835b6f137b7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/004ac460-callers.json",
+      "bytes": 5348,
+      "sha256": "7e381d2eaf6c7afaf5cfcd5ed0576680c0793901a9b0b3d93d7c655d95005ce9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/004ac770-callers.json",
+      "bytes": 1346,
+      "sha256": "5d3edfa17a2b2c0eb373386c72e52de3d216b288a6c4e46b23c5eee60c1388c9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/004acfd0-callers.json",
+      "bytes": 1346,
+      "sha256": "331cd38fbfe978d2433005f1d9cc04de063a5bf965507ff749997d62d73d237d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/004acfd0.json",
+      "bytes": 967,
+      "sha256": "e084d2a145681fbd28d4e658d697a4d61afa8d2c1fd91f667c41cf5e7891cb50"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/actor-selectors.json",
+      "bytes": 3025,
+      "sha256": "3dd3121fee17f4b50b974532a31e230bc4d044c2e1bd9dbffa978f4e3d566c05"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/actors.bin",
+      "bytes": 8448,
+      "sha256": "5699503160ba7f7553ea42aeb6bea91b8c65876469994bf905cccdfa500da22a"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank/LEVEL.DAT",
+      "bytes": 581572,
+      "sha256": "49fe2b4549593973963fa8bfd7c5825aaeedc11c65afd93cdd6642e0a2987234"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank/TERRAIN.ALL",
+      "bytes": 392906,
+      "sha256": "7e23d8cc95a71a41a52b630696b15273149fb21d492542a856d0a4db211423e1"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank/pages/0000.page",
+      "bytes": 35994,
+      "sha256": "573547a777b8b97127547d2f21e3289f175e73eb722cdc857e39a1c9cb67d1f7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank/pages/0001.page",
+      "bytes": 21368,
+      "sha256": "f5583fe50ed89d70b85ca2c034fcf64b8171b27d06ccf4e661fb4400de67292c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank/pages/0002.page",
+      "bytes": 50524,
+      "sha256": "4bcad47cc01e4a1bb001f9cc42ece8181ade59bb2a3a6a98fd07db1368d26dd2"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank/pages/0003.page",
+      "bytes": 45264,
+      "sha256": "33ab3ece3e009ef92805011e1527adf9bc00b9a3933effa43698ed3e1fa3d630"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank/pages/0004.page",
+      "bytes": 19788,
+      "sha256": "95ae7f97b2f82615a1a2bedf1ba4a2f89edd7f7a0b8941e41ab42aaf49f45b20"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank/pages/0005.page",
+      "bytes": 30200,
+      "sha256": "3f41e7d3013a12618ddf821b5f927a2593a61c3b4634bc146e75955aca715b31"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank-compact/LEVEL.DAT",
+      "bytes": 481148,
+      "sha256": "8c83d54faed75a02fb2994c249985e2b87650cd1446d99f41fe8527fea8b11f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank-compact/TERRAIN.ALL",
+      "bytes": 296018,
+      "sha256": "202a7d5d9e0c1ef2b6fb5c0f7f15581c65eac53a81849c0f801d651d8a06ca85"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank-compact/pages/0000.page",
+      "bytes": 35994,
+      "sha256": "573547a777b8b97127547d2f21e3289f175e73eb722cdc857e39a1c9cb67d1f7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank-compact/pages/0001.page",
+      "bytes": 21368,
+      "sha256": "f5583fe50ed89d70b85ca2c034fcf64b8171b27d06ccf4e661fb4400de67292c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank-compact/pages/0002.page",
+      "bytes": 50524,
+      "sha256": "4bcad47cc01e4a1bb001f9cc42ece8181ade59bb2a3a6a98fd07db1368d26dd2"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank-compact/pages/0003.page",
+      "bytes": 45264,
+      "sha256": "33ab3ece3e009ef92805011e1527adf9bc00b9a3933effa43698ed3e1fa3d630"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank-compact/pages/0004.page",
+      "bytes": 19788,
+      "sha256": "95ae7f97b2f82615a1a2bedf1ba4a2f89edd7f7a0b8941e41ab42aaf49f45b20"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank-compact/pages/0005.page",
+      "bytes": 30200,
+      "sha256": "3f41e7d3013a12618ddf821b5f927a2593a61c3b4634bc146e75955aca715b31"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/bank-report.py",
+      "bytes": 4016,
+      "sha256": "abcc1ff633926d328d9387d816f21cb829569ab0978f2b293fd04ad9c4a371a1"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/build-packages.log",
+      "bytes": 1170,
+      "sha256": "c650ef8b68ab88c3a763293271fafd74c4c0f3fd5344dcf2e6db3908bc986498"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/build-packages.py",
+      "bytes": 2173,
+      "sha256": "1f6153581934e8625c8e21480d76d4348057bc5d5386029c67f56e64d2213c32"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/check-storage.py",
+      "bytes": 2301,
+      "sha256": "975a239385a15ecba5861963810d546cdbd1858dfc418504c9b920288434d1de"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/claim-compact.json",
+      "bytes": 934,
+      "sha256": "4b4bb1ce353668b5c4a7955a57d6dc8cbe214087a8349a1be9ff7774d5ce9334"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/claim-selectors.json",
+      "bytes": 873,
+      "sha256": "31b4feb603ca7f130f3749089a5215800a2ffcb5fe769236b55cc60881f260c6"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/compact-patched-rows.json",
+      "bytes": 358379,
+      "sha256": "4fea951e9512bbfc54654f45cf8c240e86fbc9422828eb0ee4be6386763b6041"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/compact-retail-rows.json",
+      "bytes": 358379,
+      "sha256": "4fea951e9512bbfc54654f45cf8c240e86fbc9422828eb0ee4be6386763b6041"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/contact-references.json",
+      "bytes": 7903,
+      "sha256": "5767e8c22e76d89dda8abb2c0cf7f36885fc3a4b3e4ff13d71d2ac099c7db394"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/contacts.bin",
+      "bytes": 480,
+      "sha256": "31f30462a297edb274ff53020aad9ca0d77a1b897ad1e06dc86bd42f8b9aec02"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/detail-compact/LEVEL.DAT",
+      "bytes": 480180,
+      "sha256": "e94ceeff35e6aa9a3e45cd69424d2de74529f82606d00b01fabe16e4b5253772"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/detail-compact/TERRAIN.ALL",
+      "bytes": 280414,
+      "sha256": "c7700f0c4444dd6005f070de9c8915b9dded576807354d0a98f57def82d1c701"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/detail-compact/pages/0000.page",
+      "bytes": 123410,
+      "sha256": "eb1ff657856ee1fa10c0f0b1cfc0a015ab0a6f8540a5ecc65307c59e16187f62"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/detail-compact/pages/0001.page",
+      "bytes": 99988,
+      "sha256": "6c2b285add31177131ec6d149335e40304c2be0a67fde0a50fe5924fc7e7eca4"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/detail-compact/pages/0002.page",
+      "bytes": 45096,
+      "sha256": "9f626814f7457b9c6cb80e6bb2c033a4c3850e7284bd719e98d28a5076db96a9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/detail-compact/pages/0003.page",
+      "bytes": 42216,
+      "sha256": "df25b7ad9977ef9c3270dc32f48740a0dac947ddba6f8b7025358b2bb7afa3b7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/driver-arguments.json",
+      "bytes": 46434,
+      "sha256": "0e2958e94aedf28463c1379ecd2679dde6516df0eed5450b3304c524062751d5"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/final-fast-gates.log",
+      "bytes": 1719,
+      "sha256": "f2742f7e88476676fc9270dedf2e2a908f908383f947524d82a55541e01e4fb6"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/final-preservation.json",
+      "bytes": 6098,
+      "sha256": "0cc6625bf8d3199ea9d658d92563bebd6dafaa66f8017884c2a5963e07f95b3b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/final-preservation.log",
+      "bytes": 947,
+      "sha256": "6c2f0a90e7356584044552e3c918eea6c5b3aa0438566008e4659362da776fc3"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/final-preservation.py",
+      "bytes": 2426,
+      "sha256": "1f58c4d408c0e46cd1cc6ab4b48504360551118bd83162a10bf5c5b0707383f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/live-actor-census.json",
+      "bytes": 7946,
+      "sha256": "b6d7a64d31f363219addebfe3a713dfa2cbd5094c9a9b407bba624f2f27b80c0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-compact-harness.py",
+      "bytes": 3576,
+      "sha256": "8691ecd9371e1c0e0ce58b70910393fbba1886d13413293ec5384c0bdb8f64e5"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-compact-transitions.json",
+      "bytes": 9603,
+      "sha256": "55a985c60070995e6c1e82939110419a5dd911cbed95a53cc33896c77fcfe470"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-compact-transitions.log",
+      "bytes": 354,
+      "sha256": "8fd3229eafb522fec7201b1209092e836f808d7e9a4eeec6b9532d23c1d56e05"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-compact-transitions.py",
+      "bytes": 3383,
+      "sha256": "ec5d41c212a1748eef97f979074930a8971b231fe130563e6c3a6cfc09efa2e7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-persistent-render.json",
+      "bytes": 367856,
+      "sha256": "c8297da36f327de03f3c210d24dda0e21cd18e44b63c040de66f22495b71b46d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-persistent-render.log",
+      "bytes": 1935,
+      "sha256": "a617c0a5c560ef8c7d35266a5ead2fd57d5e8f1a95a961bdc1591c7f64037573"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-persistent-render.py",
+      "bytes": 7214,
+      "sha256": "5c454bbb81549096357c2606ac5bfaef905f353e95d0e07439684617ee7f5950"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-selectors.json",
+      "bytes": 4356,
+      "sha256": "19c51f129a9db61f9d8f18b3654ae2da5b34b9f0cb441278bb9f5964ee2972be"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-selectors.log",
+      "bytes": 614,
+      "sha256": "dc7f7e2716053e264b27a56bf495aabf28dc9be3f0a451f80503c37b13308f09"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-selectors.py",
+      "bytes": 2748,
+      "sha256": "508c5bc944c8c43e1efb6dc6002ce81ece5026fdb9551066b47c2c66f0e6960f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/native-storage.json",
+      "bytes": 1633,
+      "sha256": "d57aadf9b979d4bcab01f8eb29ad5fe4d88946015399bd70f77078a9d59c4d1a"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/packages.json",
+      "bytes": 1742,
+      "sha256": "11710b1529fcc7d54b2ac21587c52ead1f706c7b53f745d20aa2544785a86b43"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/placements.bin",
+      "bytes": 1792,
+      "sha256": "99551432ac2010c37b48782f3bf1286bb4b0e5fcb10724fbbf1be7fff55bebad"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/prior-recheck.json",
+      "bytes": 518,
+      "sha256": "8ab70c652bd09a558d56e2208aa4dc6ecb4a4a0648202f20a3072647e960eed0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/read-actors.py",
+      "bytes": 1302,
+      "sha256": "1bcc188f785ce031e3afd59570e7f6e6bbf36bd8372d02d85aa2da7cc7fb39f0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/reference-audit.json",
+      "bytes": 12993,
+      "sha256": "e2d06d0fc9d268cb2f7107e1e8acf36be04ea5d99c3f2eee38bffef97c3a9d9e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/reference-audit.py",
+      "bytes": 2071,
+      "sha256": "73363f6e9e98f6a4118452f8a1778c88195a5f0243f8b287cd4b6968bf2fbfda"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/run-check.py",
+      "bytes": 1459,
+      "sha256": "1a5580a2e1ab48d5f1d3bf3798f22bd2cd7a04d784fd47b2bdf73b2d34e39ed9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/source-receipt.json",
+      "bytes": 373,
+      "sha256": "59b3d8d896138d5989a2c17e51d88d2b557eb01de937aff5c58e7059041654ba"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/source.log",
+      "bytes": 3459,
+      "sha256": "b02a49c65386ebe4732be641f2fbee037883e252d41a4080d7f499d9ba3c606f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/static-inventory.py",
+      "bytes": 1725,
+      "sha256": "d8b83bfaa1d0fe1ef5b3c085f35a18cb39f31645e09836f7439de1faa1091155"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/test-selection.json",
+      "bytes": 6566,
+      "sha256": "98bb3d318dee1228099033492449e6d6720749109cb427c67bf51f02ddb32dda"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-005/text-asm.txt",
+      "bytes": 17015358,
+      "sha256": "8d45fa884e73821548e1ceec264b344ca26c710ffcf1ef02765cd3390e5df192"
+    }
+  ]
+}

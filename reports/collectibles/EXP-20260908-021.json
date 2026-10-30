@@ -1,0 +1,1007 @@
+{
+  "experiment": "EXP-20260908-021",
+  "status": "implemented-bounded; full successor user-tested and banked in EXP-20260909-001",
+  "project": "work/level-projects/moonlit-cliffs-collectibles/level.blend",
+  "build": "work/copies/moonlit-cliffs-collectibles-01",
+  "play": "work/copies/moonlit-cliffs-collectibles-play-01",
+  "rollback_commit": "270fe0e",
+  "rollback_bank": "work/design-banks/EXP-20260908-020-scattered-enemies",
+  "original_pc_exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "source_table_sha256": "fcbbdd49563118806c9b91f81921a0506401616eeb50d262b1b9350245df9ca0",
+  "hashes": {
+    "LEVEL.DAT": "8018395b9b0bf67bdf9e664b40614ce4365891ef5da59f76697de59cbf46bbe4",
+    "TERRAIN.ALL": "314d3cf4d98cf4466376543bf7f47399506eb119732be1f64ebe725d0345ca98",
+    "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+    "bugs.exe": "e16d96c7f7e96a2f88bc5b41f43a410166c1c103bbb3d4c4339d5468a372fb6e",
+    "LEVEL.RAW": "b29cd09868a1e3978f4c0e98b5b5ed7de411c453106afaef06a343c5ffb044a0"
+  },
+  "counts": {
+    "grain": 50,
+    "letter-f": 1,
+    "letter-l": 1,
+    "letter-i": 1,
+    "letter-k": 1,
+    "token-yellow": 3,
+    "token-blue": 3,
+    "token-green": 3,
+    "berry-blue": 1,
+    "berry-green": 1,
+    "berry-gold": 1,
+    "berry-purple": 1
+  },
+  "collectibles": {
+    "source_sha256": "c0c138ce8148bce7ad41ab2ec8aa3415352b50d0054c459feaf054966ec8ba94",
+    "output_sha256": "a7a83aae85fcb25b93e2d5cc0064bb54f4360e10b7ebba64aca0db2c5afee42c",
+    "source_size": 476086,
+    "output_size": 476086,
+    "table_offset": 4,
+    "source_table_count": 70,
+    "output_table_count": 70,
+    "table_size_delta": 0,
+    "relocated_pointer_fields": 1248,
+    "inverse_matches_source": true,
+    "placements": [
+      {
+        "id": "Letter F 01",
+        "kind": "letter-f",
+        "position": [
+          7300,
+          -3459,
+          17800
+        ],
+        "selector": 16,
+        "table_index": 0
+      },
+      {
+        "id": "Letter L 01",
+        "kind": "letter-l",
+        "position": [
+          11500,
+          -5148,
+          20100
+        ],
+        "selector": 17,
+        "table_index": 1
+      },
+      {
+        "id": "Letter I 01",
+        "kind": "letter-i",
+        "position": [
+          16300,
+          -3435,
+          24200
+        ],
+        "selector": 18,
+        "table_index": 2
+      },
+      {
+        "id": "Letter K 01",
+        "kind": "letter-k",
+        "position": [
+          22300,
+          -4334,
+          25400
+        ],
+        "selector": 19,
+        "table_index": 3
+      },
+      {
+        "id": "Grain 01",
+        "kind": "grain",
+        "position": [
+          6000,
+          -3500,
+          14600
+        ],
+        "selector": 20,
+        "table_index": 4
+      },
+      {
+        "id": "Grain 02",
+        "kind": "grain",
+        "position": [
+          6000,
+          -3494,
+          15000
+        ],
+        "selector": 20,
+        "table_index": 5
+      },
+      {
+        "id": "Grain 03",
+        "kind": "grain",
+        "position": [
+          6000,
+          -3496,
+          15400
+        ],
+        "selector": 20,
+        "table_index": 6
+      },
+      {
+        "id": "Grain 04",
+        "kind": "grain",
+        "position": [
+          6000,
+          -3500,
+          15800
+        ],
+        "selector": 20,
+        "table_index": 7
+      },
+      {
+        "id": "Grain 05",
+        "kind": "grain",
+        "position": [
+          6000,
+          -3500,
+          16200
+        ],
+        "selector": 20,
+        "table_index": 8
+      },
+      {
+        "id": "Grain 06",
+        "kind": "grain",
+        "position": [
+          4500,
+          -3475,
+          18200
+        ],
+        "selector": 20,
+        "table_index": 9
+      },
+      {
+        "id": "Grain 07",
+        "kind": "grain",
+        "position": [
+          4500,
+          -3461,
+          18600
+        ],
+        "selector": 20,
+        "table_index": 10
+      },
+      {
+        "id": "Grain 08",
+        "kind": "grain",
+        "position": [
+          4500,
+          -3449,
+          19000
+        ],
+        "selector": 20,
+        "table_index": 11
+      },
+      {
+        "id": "Grain 09",
+        "kind": "grain",
+        "position": [
+          4500,
+          -3435,
+          19400
+        ],
+        "selector": 20,
+        "table_index": 12
+      },
+      {
+        "id": "Grain 10",
+        "kind": "grain",
+        "position": [
+          4500,
+          -3428,
+          19800
+        ],
+        "selector": 20,
+        "table_index": 13
+      },
+      {
+        "id": "Grain 11",
+        "kind": "grain",
+        "position": [
+          6100,
+          -3414,
+          22700
+        ],
+        "selector": 20,
+        "table_index": 14
+      },
+      {
+        "id": "Grain 12",
+        "kind": "grain",
+        "position": [
+          6500,
+          -3425,
+          22700
+        ],
+        "selector": 20,
+        "table_index": 15
+      },
+      {
+        "id": "Grain 13",
+        "kind": "grain",
+        "position": [
+          6900,
+          -3469,
+          22700
+        ],
+        "selector": 20,
+        "table_index": 16
+      },
+      {
+        "id": "Grain 14",
+        "kind": "grain",
+        "position": [
+          7300,
+          -3528,
+          22700
+        ],
+        "selector": 20,
+        "table_index": 17
+      },
+      {
+        "id": "Grain 15",
+        "kind": "grain",
+        "position": [
+          7700,
+          -3572,
+          22700
+        ],
+        "selector": 20,
+        "table_index": 18
+      },
+      {
+        "id": "Grain 16",
+        "kind": "grain",
+        "position": [
+          10000,
+          -5140,
+          19200
+        ],
+        "selector": 20,
+        "table_index": 19
+      },
+      {
+        "id": "Grain 17",
+        "kind": "grain",
+        "position": [
+          10000,
+          -5157,
+          19600
+        ],
+        "selector": 20,
+        "table_index": 20
+      },
+      {
+        "id": "Grain 18",
+        "kind": "grain",
+        "position": [
+          10000,
+          -5169,
+          20000
+        ],
+        "selector": 20,
+        "table_index": 21
+      },
+      {
+        "id": "Grain 19",
+        "kind": "grain",
+        "position": [
+          10000,
+          -5170,
+          20400
+        ],
+        "selector": 20,
+        "table_index": 22
+      },
+      {
+        "id": "Grain 20",
+        "kind": "grain",
+        "position": [
+          10000,
+          -5158,
+          20800
+        ],
+        "selector": 20,
+        "table_index": 23
+      },
+      {
+        "id": "Grain 21",
+        "kind": "grain",
+        "position": [
+          12000,
+          -5102,
+          22000
+        ],
+        "selector": 20,
+        "table_index": 24
+      },
+      {
+        "id": "Grain 22",
+        "kind": "grain",
+        "position": [
+          12400,
+          -4997,
+          22000
+        ],
+        "selector": 20,
+        "table_index": 25
+      },
+      {
+        "id": "Grain 23",
+        "kind": "grain",
+        "position": [
+          12800,
+          -4881,
+          22000
+        ],
+        "selector": 20,
+        "table_index": 26
+      },
+      {
+        "id": "Grain 24",
+        "kind": "grain",
+        "position": [
+          13200,
+          -4735,
+          22000
+        ],
+        "selector": 20,
+        "table_index": 27
+      },
+      {
+        "id": "Grain 25",
+        "kind": "grain",
+        "position": [
+          13600,
+          -4586,
+          22000
+        ],
+        "selector": 20,
+        "table_index": 28
+      },
+      {
+        "id": "Grain 26",
+        "kind": "grain",
+        "position": [
+          14700,
+          -3865,
+          24900
+        ],
+        "selector": 20,
+        "table_index": 29
+      },
+      {
+        "id": "Grain 27",
+        "kind": "grain",
+        "position": [
+          15100,
+          -3897,
+          24900
+        ],
+        "selector": 20,
+        "table_index": 30
+      },
+      {
+        "id": "Grain 28",
+        "kind": "grain",
+        "position": [
+          15500,
+          -3920,
+          24900
+        ],
+        "selector": 20,
+        "table_index": 31
+      },
+      {
+        "id": "Grain 29",
+        "kind": "grain",
+        "position": [
+          15900,
+          -3933,
+          24900
+        ],
+        "selector": 20,
+        "table_index": 32
+      },
+      {
+        "id": "Grain 30",
+        "kind": "grain",
+        "position": [
+          16300,
+          -3930,
+          24900
+        ],
+        "selector": 20,
+        "table_index": 33
+      },
+      {
+        "id": "Grain 31",
+        "kind": "grain",
+        "position": [
+          18200,
+          -1054,
+          19700
+        ],
+        "selector": 20,
+        "table_index": 34
+      },
+      {
+        "id": "Grain 32",
+        "kind": "grain",
+        "position": [
+          18200,
+          -1089,
+          20100
+        ],
+        "selector": 20,
+        "table_index": 35
+      },
+      {
+        "id": "Grain 33",
+        "kind": "grain",
+        "position": [
+          18200,
+          -1172,
+          20500
+        ],
+        "selector": 20,
+        "table_index": 36
+      },
+      {
+        "id": "Grain 34",
+        "kind": "grain",
+        "position": [
+          18200,
+          -1300,
+          20900
+        ],
+        "selector": 20,
+        "table_index": 37
+      },
+      {
+        "id": "Grain 35",
+        "kind": "grain",
+        "position": [
+          18200,
+          -1474,
+          21300
+        ],
+        "selector": 20,
+        "table_index": 38
+      },
+      {
+        "id": "Grain 36",
+        "kind": "grain",
+        "position": [
+          21200,
+          -5623,
+          21600
+        ],
+        "selector": 20,
+        "table_index": 39
+      },
+      {
+        "id": "Grain 37",
+        "kind": "grain",
+        "position": [
+          21200,
+          -5471,
+          22000
+        ],
+        "selector": 20,
+        "table_index": 40
+      },
+      {
+        "id": "Grain 38",
+        "kind": "grain",
+        "position": [
+          21200,
+          -5303,
+          22400
+        ],
+        "selector": 20,
+        "table_index": 41
+      },
+      {
+        "id": "Grain 39",
+        "kind": "grain",
+        "position": [
+          21200,
+          -5121,
+          22800
+        ],
+        "selector": 20,
+        "table_index": 42
+      },
+      {
+        "id": "Grain 40",
+        "kind": "grain",
+        "position": [
+          21200,
+          -4941,
+          23200
+        ],
+        "selector": 20,
+        "table_index": 43
+      },
+      {
+        "id": "Grain 41",
+        "kind": "grain",
+        "position": [
+          18700,
+          -4351,
+          25900
+        ],
+        "selector": 20,
+        "table_index": 44
+      },
+      {
+        "id": "Grain 42",
+        "kind": "grain",
+        "position": [
+          19100,
+          -4363,
+          25900
+        ],
+        "selector": 20,
+        "table_index": 45
+      },
+      {
+        "id": "Grain 43",
+        "kind": "grain",
+        "position": [
+          19500,
+          -4376,
+          25900
+        ],
+        "selector": 20,
+        "table_index": 46
+      },
+      {
+        "id": "Grain 44",
+        "kind": "grain",
+        "position": [
+          19900,
+          -4394,
+          25900
+        ],
+        "selector": 20,
+        "table_index": 47
+      },
+      {
+        "id": "Grain 45",
+        "kind": "grain",
+        "position": [
+          20300,
+          -4409,
+          25900
+        ],
+        "selector": 20,
+        "table_index": 48
+      },
+      {
+        "id": "Grain 46",
+        "kind": "grain",
+        "position": [
+          21900,
+          -4392,
+          25000
+        ],
+        "selector": 20,
+        "table_index": 49
+      },
+      {
+        "id": "Grain 47",
+        "kind": "grain",
+        "position": [
+          22300,
+          -4387,
+          25000
+        ],
+        "selector": 20,
+        "table_index": 50
+      },
+      {
+        "id": "Grain 48",
+        "kind": "grain",
+        "position": [
+          22700,
+          -4371,
+          25000
+        ],
+        "selector": 20,
+        "table_index": 51
+      },
+      {
+        "id": "Grain 49",
+        "kind": "grain",
+        "position": [
+          23100,
+          -4351,
+          25000
+        ],
+        "selector": 20,
+        "table_index": 52
+      },
+      {
+        "id": "Grain 50",
+        "kind": "grain",
+        "position": [
+          23500,
+          -4332,
+          25000
+        ],
+        "selector": 20,
+        "table_index": 53
+      },
+      {
+        "id": "Green berry power-up 01",
+        "kind": "berry-green",
+        "position": [
+          9100,
+          -5021,
+          20800
+        ],
+        "selector": 33,
+        "table_index": 54
+      },
+      {
+        "id": "Gold berry power-up 01",
+        "kind": "berry-gold",
+        "position": [
+          17800,
+          -4218,
+          25600
+        ],
+        "selector": 34,
+        "table_index": 55
+      },
+      {
+        "id": "Blue berry power-up 01",
+        "kind": "berry-blue",
+        "position": [
+          7200,
+          -3513,
+          15000
+        ],
+        "selector": 35,
+        "table_index": 56
+      },
+      {
+        "id": "Purple berry power-up 01",
+        "kind": "berry-purple",
+        "position": [
+          22500,
+          -5121,
+          23100
+        ],
+        "selector": 36,
+        "table_index": 57
+      },
+      {
+        "id": "Yellow seed token 01",
+        "kind": "token-yellow",
+        "position": [
+          5000,
+          -3505,
+          15200
+        ],
+        "selector": 41,
+        "table_index": 58
+      },
+      {
+        "id": "Yellow seed token 02",
+        "kind": "token-yellow",
+        "position": [
+          8600,
+          -4963,
+          23200
+        ],
+        "selector": 41,
+        "table_index": 59
+      },
+      {
+        "id": "Yellow seed token 03",
+        "kind": "token-yellow",
+        "position": [
+          15700,
+          -1827,
+          22300
+        ],
+        "selector": 41,
+        "table_index": 60
+      },
+      {
+        "id": "Blue seed token 01",
+        "kind": "token-blue",
+        "position": [
+          7700,
+          -3430,
+          19600
+        ],
+        "selector": 42,
+        "table_index": 61
+      },
+      {
+        "id": "Blue seed token 02",
+        "kind": "token-blue",
+        "position": [
+          13700,
+          -4078,
+          24800
+        ],
+        "selector": 42,
+        "table_index": 62
+      },
+      {
+        "id": "Blue seed token 03",
+        "kind": "token-blue",
+        "position": [
+          22200,
+          -5922,
+          20800
+        ],
+        "selector": 42,
+        "table_index": 63
+      },
+      {
+        "id": "Green seed token 01",
+        "kind": "token-green",
+        "position": [
+          5200,
+          -3458,
+          22200
+        ],
+        "selector": 43,
+        "table_index": 64
+      },
+      {
+        "id": "Green seed token 02",
+        "kind": "token-green",
+        "position": [
+          15200,
+          -853,
+          20300
+        ],
+        "selector": 43,
+        "table_index": 65
+      },
+      {
+        "id": "Green seed token 03",
+        "kind": "token-green",
+        "position": [
+          19700,
+          -3848,
+          24900
+        ],
+        "selector": 43,
+        "table_index": 66
+      }
+    ],
+    "retained_unmanaged_records": 3,
+    "replaces_original_pickups": 67,
+    "capacity": 95,
+    "scope": "Native pickups and progression; XYZ requires the paired initialization patch",
+    "initialization_patch": {
+      "source_sha256": "16b41c4cd0aebe8800d902e14331d8b30d58030a62e865f5fc5fb08952d11dbf",
+      "output_sha256": "e16d96c7f7e96a2f88bc5b41f43a410166c1c103bbb3d4c4339d5468a372fb6e",
+      "hook_va": 4549324,
+      "code_va": 4549472,
+      "sites": [
+        {
+          "file_offset": 351948,
+          "before_hex": "8a460c3ac3",
+          "after_hex": "e98f000000"
+        },
+        {
+          "file_offset": 352096,
+          "before_hex": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+          "after_hex": "807e0d800f8469ffffff8a460c3ac3e95dffffffcccccccccccccccccccccccc"
+        }
+      ],
+      "scope": "Marker80 uses native literal-Y initialization; unmarked rows are unchanged"
+    }
+  },
+  "confirmed": [
+    "Native table stride16 and selectors;67 original requested pickups replaced,3 unmanaged rows retained",
+    "Marked authored XYZ initialization; unmarked native height parity",
+    "Native all-kind pickup/progression with explicitly stubbed feedback/audio/HUD callbacks",
+    "Real Blender5.2 add-all-kinds, moveXYZ, snap, duplicate, delete-all, save/reopen",
+    "13-item and0-item exports build; six chunk meshes and unrelated assets exact",
+    "Live hardware startup,170 models,six chunks,67 authored positions; ordinary movement collects2 grains",
+    "All771 previous project files remain exact"
+  ],
+  "limits": [
+    "50 grains, one of each letter, three tokens per color,32 total berries; profile limits, not general native capacity",
+    "Placement mesh rotation/scale edits rejected; raised objects need vertical placement",
+    "Individual glyph/color/effect close-ups, full traversal/collect-all, planting tiers, reset/respawn and future placements untested",
+    "Three source selector30 rows retained unmanaged; no new claim for full behavior",
+    "No live writes; no PS1 consultation; streaming remains paused; no new bank/commit request"
+  ],
+  "runtime": {
+    "game": {
+      "pid": 177254,
+      "start": 2076754,
+      "group": 177013,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\moonlit-cliffs-collectibles-play-01\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "owned_processes": 14,
+    "reported_processes": 7,
+    "sink": [
+      {
+        "module_id": 536870916,
+        "sink_name": "ablpc_mute_177013",
+        "arguments": "sink_name=ablpc_mute_177013 sink_properties=device.description=ABLPC-Mute",
+        "owned": false
+      }
+    ]
+  },
+  "validation": {
+    "selected_make_check_passed": 429,
+    "blender": "5.2.0 LTS",
+    "vault_notes": 834,
+    "vault_errors": 0,
+    "vault_existing_warnings": 7,
+    "tracked_asset_violations": 0
+  },
+  "evidence": [
+    {
+      "path": "work/experiments/EXP-20260908-021/initial-audit.json",
+      "sha256": "3c6f962c43c794bf949220113d83d5b48ad85c10e64ddda6ba5495ee463d7e5d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/native-pickup.json",
+      "sha256": "de8eb69a4fe4c79c581f11a2fb7ec2cf157148d4e4b3306dea066274996cc68f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/native-progression.json",
+      "sha256": "b06aef865783c2fc977201da28e342b5019761dea80dbb5753ef0390a08300da"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/native-sprites.json",
+      "sha256": "a792b65dca358e9beed10f066e8c7fec6acf7226866fb210981dc1a1ec878932"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/collect-00417720.json",
+      "sha256": "1d7cfeb3cdf0d0109ba8b844dc252c7173162a7ce5c04bd87525c85305fd4919"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/initialize-00456a90.json",
+      "sha256": "a1573062f26fd4d277fd7e6df82ac5580b2be183129c4560ae699508a6394fe0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/resources-00416100.json",
+      "sha256": "1128707909769ea8bcf9c1d1834350621c569d90402cb48697d55c9c91041480"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/draw-00456ba0.json",
+      "sha256": "98f6c8aa450cbabd9cd9d431e8d6a6c9bb2d51f6c439acb2b2258b783d8a2c10"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/blender-authoring.json",
+      "sha256": "72164b410c6196b4135b2c26b544fd95494b8b58cc35d8b280bf2dc00df2e055"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/blender-workflow/result.json",
+      "sha256": "4901c513309e93e5d4df2ddefd63276831fa6a299bb56d1d2afc83bc789198b0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/edited-builds.json",
+      "sha256": "a29fe2b946f57d48ea3986ec2a20e48f24477bea48210be8c366ca56f0c2a7de"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/play-copy.json",
+      "sha256": "59442984538748fb7661cd0ddb54c2812f2f7dc13256ccefeac941518407a709"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/before-launch.json",
+      "sha256": "9b9e38424f52b8c62b7981347796d54567f2842cbd40fdaf2f73da3810318a86"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/verification.json",
+      "sha256": "c611a19466316f10c20505fd0d05737af6a768ba0102548781f4e384845382b2"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/preview/live-handoff-binding.json",
+      "sha256": "498d26e8f0ecf81c950708acf0fe81174ab3de6f3a282aa02945d598761ac3dd"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/final-audit.json",
+      "sha256": "ec2840c81aed4b31f6e63b11a2084ff657bbf0fe42e2ae1ef37f37d5e4f38510"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/source-project-manifest.json",
+      "sha256": "87ae7eddf88f6daa36e4db0adecdc01f49fac4cf14590ef8819db281e07a9b41"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/test-selection.json",
+      "sha256": "6c125c98416cc6a6fa4f0d1ee7292a7b2d245efa947e94433ab749c5dcdfd413"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/check.log",
+      "sha256": "1ae2fc9c8b70d572548ab6239fc966187c788f72bb0d1a4afa31b7781ebd7c1a"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/claim-current.json",
+      "sha256": "eebf1dc5780efa2fb317481754b3e0fe6f1f12c79ed31947882befa192d4b810"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/claim-mod.json",
+      "sha256": "f703945721846650316c4e2d0937af6f49456cfbd9433a9325b50149f1a4c89f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/claim-runtime.json",
+      "sha256": "7133b7a5ac5799c4a7d81ee9a17b4e479b19ced9eae3ebf5c707596de1f851e0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/pickups-1788922234406186269.json",
+      "sha256": "3f9888cae76c39065dde492cb81cb39986e4ff01ff4454d356f01988e0253b2e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/pickups-1788922246410497794.json",
+      "sha256": "ee1848f666ce1c5ba610cffc1ee0f5cc9fe40187d903aa2228c87f80f4722e5d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/pickups-1788922263297515921.json",
+      "sha256": "be728c91592c94bdca036d2e39e9694fa756f9c92b9f5862cc182ef0e6e3e1bb"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/pickups-1788922362565343755.json",
+      "sha256": "1b476c572561a574de72383b244c3a54d2fb7fd19c41174c16dfd086adc13f5c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/preview/frame-1788922163112601877.png",
+      "sha256": "99308dab5cc19e4395a478f96a46e7043d0456b8234c03c315b84c071b500c02"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/preview/frame-1788922164749536777.png",
+      "sha256": "2fe4448e99b6b4528bac20be256d296e0dd6fa820efd64cdaa7add35c4a3b80d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/preview/frame-1788922189408822799.png",
+      "sha256": "75486540b8bb23f3135b024ff30a95c81e56834820a9e5fb15caeebf429cf5f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/preview/frame-1788922198897344641.png",
+      "sha256": "5c06f4ac032d79fe62d3d9bc83d60ab4a31b59a94bb42b13f626edb902d54e29"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/preview/frame-1788922234527917339.png",
+      "sha256": "29d5093f99cbb32d0e7e26d43dd0499947166a8d658e577c597c919ecef80196"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/preview/frame-1788922246435051597.png",
+      "sha256": "0c741b16a7a2dade1886e5b284e580a15ccb52bb98d3cb5101ba2ad4e4857065"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/runtime/preview/frame-1788922362588760185.png",
+      "sha256": "4ff03e80778ce440638a1194f8ccaf3bce4020aff39d2120b07c11b059b0b3b9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/memory.json",
+      "sha256": "2ce19c745101d60e34ea54cd78ab23d404a4cea8a54bf8ebb0c72e6f2f1229fd"
+    },
+    {
+      "path": "work/copies/moonlit-cliffs-collectibles-01/build.json",
+      "sha256": "179aea83c1c8eb24684a858b757c5d440890708c58ab8efc746e66a838bbfff0"
+    },
+    {
+      "path": "work/level-projects/moonlit-cliffs-collectibles/scene.ablpc.json",
+      "sha256": "5ae7f1bf9628f8d5beb617fd2e15f67075dbaa494527a793e108107d3fa5caf7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/vault-final.log",
+      "sha256": "6bf2eb19fdd837b9f02ea7dcc9e06cef76dd38aaa2e7aabc95b812640815b584"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/check-first.log",
+      "sha256": "9050d6ce2ab0db22613fd28ac95f4a98aeae3df796fb9c52967b5180a7426170"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-021/claim-index.json",
+      "sha256": "bd7bdf219e53855533f37bf0367ba5e0de9ecc30e668315c17d6a15b1d7c1fe3"
+    }
+  ],
+  "subsequent_bank": "work/design-banks/EXP-20260909-001-end-marker"
+}

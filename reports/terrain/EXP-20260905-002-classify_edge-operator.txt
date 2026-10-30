@@ -1,0 +1,65 @@
+"""Exploratory edge classification from copied RAM and original PC output."""
+from pathlib import Path
+import json,struct,hashlib
+from PIL import Image
+ROOT=Path('/home/dev/ABLPC');HERE=Path(__file__).resolve().parent
+D=HERE/'stationary/diagnostic'
+load=lambda name:json.loads((D/name).read_text())
+m=load('paused-memory.json');actor=load('offline-actor.json');mesh=load('offline-mesh-1.json')
+def tris(d):
+    return [[b['vertices'][i] for i in b['indices'][j:j+3]] for b in d['batches'] for j in range(0,len(b['indices']),3)]
+def depth(t,x,y):
+    a,b,c=t;det=(b['y']-c['y'])*(a['x']-c['x'])+(c['x']-b['x'])*(a['y']-c['y'])
+    if not det:return None
+    u=((b['y']-c['y'])*(x-c['x'])+(c['x']-b['x'])*(y-c['y']))/det
+    v=((c['y']-a['y'])*(x-c['x'])+(a['x']-c['x'])*(y-c['y']))/det;w=1-u-v
+    return u*a['z']+v*b['z']+w*c['z'] if min(u,v,w)>=-1e-9 else None
+def inverse(v):
+    a,b,c,d,e,f,g,h,i=v;det=a*(e*i-f*h)-b*(d*i-f*g)+c*(d*h-e*g)
+    assert abs(det)>.9
+    return [x/det for x in (e*i-f*h,c*h-b*i,b*f-c*e,f*g-d*i,a*i-c*g,c*d-a*f,d*h-e*g,b*g-a*h,a*e-b*d)]
+matrix=[v/4096 for v in struct.unpack('<9h',bytes.fromhex(m['before']['camera_matrix_hex']))]
+inv=inverse(matrix);camera=m['before']['camera_translation']
+def ideal(x,y):
+    ray=[(x-320)/320,(y-240)/320,1]
+    direction=[sum(inv[j*3+k]*ray[k] for k in range(3)) for j in range(3)]
+    if direction[1]<=0:return None,None
+    z=(-108544-camera[1])/direction[1]
+    point=[camera[k]+direction[k]*z for k in range(3)]
+    if z>0 and 200800<=point[0]<=221600 and 473600<=point[2]<=496000:return z/524288,point
+    return None,point
+T=[tris(actor),tris(mesh)];roi=(260,275,355,340);blue=lambda rgb:rgb[2]>rgb[0]+6 and rgb[2]>rgb[1]+2
+frames=m['frames'];ims=[Image.open(r['frame']).convert('RGB') for r in frames]
+assert len({im.crop(roi).tobytes() for im in ims})==1
+rows=[]
+for y in range(roi[1],roi[3]):
+    for x in range(roi[0],roi[2]):
+        rgb=ims[0].getpixel((x,y))
+        if not blue(rgb):continue
+        zz=[]
+        for tt in T:
+            values=[v for t in tt if (v:=depth(t,x,y)) is not None];zz.append(min(values) if values else None)
+        target,point=ideal(x,y)
+        rows.append({'xy':[x,y],'rgb':rgb,'actor_z':zz[0],'mesh_z':zz[1],'ideal_top_z':target,'top_world':point,
+                     'ideal_top_ahead':target is not None and zz[0] is not None and target<zz[0],
+                     'mesh_loses':zz[0] is not None and (zz[1] is None or zz[0]<zz[1])})
+def read(addr,n):
+    for r in m['regions']:
+        if r['start']<=addr and addr+n<=r['end']:
+            with open(ROOT/r['path'],'rb') as f:f.seek(addr-r['start']);return f.read(n)
+    raise ValueError(hex(addr))
+matches=[]
+for name,d in [('actor',actor),('mesh',mesh)]:
+    for b in d['batches']:
+        raw=read(int(b['pointer'],16),500*32)
+        needles=[struct.pack('<4f',*[v[k] for k in ['x','y','z','rhw']]) for v in b['vertices']]
+        starts=[s for s in range(501-len(needles)) if all(raw[(s+i)*32:(s+i)*32+16]==n for i,n in enumerate(needles))]
+        matches.append({'name':name,'page':b['page'],'vertices':len(needles),'matched_tuples':sum(n in raw for n in needles),'consecutive_starts':starts,'instructions':d['instruction_count']})
+candidate=[r for r in rows if r['ideal_top_ahead']]
+coverage={'actor_covered_blue_pixels':sum(r['actor_z'] is not None for r in rows),
+          'analytic_top_covered_blue_pixels':sum(r['ideal_top_z'] is not None for r in rows),
+          'top_covered_actor_unknown':sum(r['ideal_top_z'] is not None and r['actor_z'] is None for r in rows)}
+result={'scope':'Post-hoc exploratory ROI below pause menu, blue classifier inherited but sample positions new. General inverse camera and analytic top plane vs original emitted triangle depth; partial/non-atomic actor reconstruction and integer pixel sampling are limits. No texture/alpha/cull rasterizer.','roi':roi,'frames':frames,'state':m['before'],'triplet_roi_identical':True,'captured_batch_matches':matches,'blue_pixels':len(rows),'analytic_top_ahead_blue_pixels':len(candidate),'current_mesh_loses_among_them':sum(r['mesh_loses'] for r in candidate),'candidate_samples':candidate,'rows':rows}
+result.update(coverage)
+(D/'edge-classification.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps({k:v for k,v in result.items() if k not in ['frames','rows','state']},indent=2))

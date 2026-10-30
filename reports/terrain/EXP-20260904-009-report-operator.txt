@@ -1,0 +1,31 @@
+from pathlib import Path
+import json,hashlib,struct
+ROOT=Path('/home/dev/ABLPC');HERE=Path(__file__).resolve().parent
+manifest=json.loads((HERE/'paused-memory.json').read_text());analysis=json.loads((HERE/'pixel-depths-exploratory.json').read_text());plan=json.loads((HERE/'candidate-plan.json').read_text())
+c=manifest['before']['camera_translation'];a=1409/4096;b=3845/4096;den=a*a+b*b
+counts={'blue_roi_pixels':len(analysis['rows']),'blue_with_all_three_depths':0,'split_actor_coarse_order':len(analysis['inversions']),'ray_hits_box_top':0,'ray_hit_and_ideal_top_before_actor':0,'coarse_loses_where_ideal_top_before_actor':0,'split_loses_where_ideal_top_before_actor':0}
+selected=[]
+for r in analysis['rows']:
+ sx,sy=r['xy'];zz=(-108544-c[1])/32*320/(sy-240);xx=(sx-320)/320*zz
+ wx=c[0]+32*(a*xx-b*zz)/den;wz=c[2]+32*(b*xx+a*zz)/den
+ inside=163200<=wx<=184000 and 497600<=wz<=520000
+ za,zc,zs=r['depths_actor_coarse_split']
+ counts['blue_with_all_three_depths']+=all(z is not None for z in (za,zc,zs))
+ counts['ray_hits_box_top']+=inside
+ if inside and za is not None and zz/16384<za:
+  counts['ray_hit_and_ideal_top_before_actor']+=1
+  counts['coarse_loses_where_ideal_top_before_actor']+=zc is not None and za<zc
+  counts['split_loses_where_ideal_top_before_actor']+=zs is None or za<zs
+ if (sx,sy) in ((339,325),(312,321),(308,320),(305,319),(301,319)):
+  selected.append(r|{'ideal_top_depth':zz/16384,'ray_box_top_world':[wx,-108544,wz],'ray_inside_box_top':inside})
+files=[HERE/n for n in ('paused-memory.json','maps.txt','pre-audit.json','offline_mesh.py','depth_compare.py','prepare_candidate.py','candidate-plan.json','offline-actor.json','offline-mesh-1.json','offline-mesh-4.json','pixel-depths-exploratory.json','user-paused-image.png')]
+files += [ROOT/'work/experiments/USER-20260904-deck-depth-play-001/frame-1788567836037465925.png']
+artifacts=[{'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in files]
+executions=[]
+for n in ('offline-mesh-1.json','offline-mesh-4.json','offline-actor.json'):
+ j=json.loads((HERE/n).read_text());executions.append({'artifact':n,'entry':'0x0044C440' if j['actor'] else '0x004498F0','instruction_count':j['instruction_count'],'returned':True,'batches':[{'page':q['page'],'vertices':len(q['vertices']),'indices':len(q['indices'])} for q in j['batches']]})
+report={'experiment':'EXP-20260904-009','status':'read-only-live-observation-and-offline-diagnosis; candidate-not-applied','retail_executable_sha256':'97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878','executed_game_sha256':'1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f','game':manifest['game'],'paused_state':manifest['before'],'capture_before_after_equal':manifest['before']==manifest['after'],'readable_memory_capture':{'regions':len(manifest['regions']),'bytes':sum(r['end']-r['start'] for r in manifest['regions']),'seconds':manifest['capture_finished']-manifest['capture_started'],'atomic':False,'restorable_save_state':False},'known_box_world':{'x':[163200,184000],'z':[497600,520000],'top_y':-108544,'deck_y':-102400},'player_x_outside_left_plane_by':176,'loaded_offset_byte':0,'static_depth_evidence':{'prior_experiment':'EXP-20260904-007','object_offset_byte_file':18690,'dispatcher':['0x00449B22','0x00449B25'],'camera_z_quarter':['0x0045CFE8','0x0045D05F'],'tlvertex_z_store':['0x0045E9BF','0x0045E9D4'],'scale_address':'0x004C00E8','scale_value':1/4096},'original_instruction_executions':executions,'captured_batch_matches':analysis['captured_batch_comparisons'],'exploratory_counts':counts,'selected_pixels':selected,'numeric_model':'Barycentric interpolation of emitted TLvertex z at integer pixel coordinates. Box top ray intersection uses captured camera, exact authored top plane, focal320 and center320,240. No texture, alpha, culling, depth-quantization or complete GPU simulation. Post-hoc blue filter and ROI are explanatory, not an independent acceptance gate.','conclusion':'Strong evidence that large-face depth interpolation contributes to residual side-view bleed after the bounded offset correction: original mesh outputs match captured static vertices; visible pixel depths put a physically nearer top behind the actor. Subdivision reduces this error offline. A live changed/restored paused-frame comparison is still needed.','limits':['User triggered oscillation before observation; no attempted movement replay.','Read-only capture spans frames; only stated player/contact/camera values are stable, not atomic RAM.','All12 static emitted XYZRHW vertices match consecutive captured slots232..243. Actor buffer is only partially matched:75/387 vertices; remaining buffer content is not claimed to be current Flik.','Four-way subdivision still has six analytically occluded blue pixel samples whose modeled depth does not beat the actor; these are near boundaries and are not resolved by this test.','Physical body-extent contact at all poses, material rules, arbitrary face sizes and full level behavior remain open.','EXP-005 return-floor fall remains a separate unresolved defect.'],'candidate':plan,'actions':{'gameplay_input':0,'live_memory_writes':0,'debugger_attachment':0,'signals':0,'launches':0,'closes':0,'restarts':0,'save_states':0,'process_memory_access':'read-only','captures':'existing owned paused window; no gameplay keys'},'artifacts':artifacts}
+path=ROOT/'reports/terrain/EXP-20260904-009.json';path.write_text(json.dumps(report,indent=2)+'\n')
+for source,dest in [('offline_mesh.py','offline-operator.txt'),('depth_compare.py','depth-comparison-operator.txt'),('build_report.py','report-operator.txt'),('prepare_candidate.py','candidate-preflight-operator.txt')]:
+ (ROOT/'reports/terrain'/('EXP-20260904-009-'+dest)).write_text((HERE/source).read_text())
+print(json.dumps({'report_sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'report_bytes':path.stat().st_size,'counts':counts,'executions':executions,'selected_pixels':selected},indent=2))

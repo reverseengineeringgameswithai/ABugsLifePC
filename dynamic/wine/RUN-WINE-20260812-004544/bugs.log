@@ -1,0 +1,478 @@
+ONEINIT : Mpeg play OFF.
+CalculateClockSpeed->time[0]=2
+                   ->time[1]=1
+                   ->time[2]=1
+                   ->time[3]=1
+                   ->time[4]=1
+                   ->time[5]=1
+                   ->time[6]=1
+                   ->time[7]=2
+                   ->time[8]=1
+                   ->time[9]=1
+                   ->avgtime=1
+                   ->CPUSPEED=165425152
+INIT : CPU clock speed is 165.425152 MHZ
+LOADING : App run from S:\PC\BUGS.
+LOADING : No CD-ROM found.
+LOAD : Loading file S:\PC\BUGS\cd\cd.txt.
+---------------------
+BEGIN EXAMINE MACHINE
+
+DIRECT DRAW DEVICE BASE NAME : display.
+DIRECT DRAW DEVICE DESCRIPTION : DirectDraw HAL.
+DIRECT DRAW DEVICE 3D SUPPORT : TRUE.
+DIRECT DRAW DEVICE HARDWARE : FALSE.
+DIRECT DRAW SYSTEM-VIDEO DMA : TRUE.
+DIRECT DRAW DEVICE SCREEN MODES.
+
+DDMODE 0 - 320x200x8 bit.
+DDMODE 1 - 320x240x8 bit.
+DDMODE 2 - 640x350x8 bit.
+DDMODE 3 - 640x400x8 bit.
+DDMODE 4 - 640x480x8 bit.
+DDMODE 5 - 720x400x8 bit.
+DDMODE 6 - 720x480x8 bit.
+DDMODE 7 - 768x480x8 bit.
+DDMODE 8 - 800x500x8 bit.
+DDMODE 9 - 800x600x8 bit.
+DDMODE 10 - 864x486x8 bit.
+DDMODE 11 - 928x580x8 bit.
+DDMODE 12 - 960x600x8 bit.
+DDMODE 13 - 1024x576x8 bit.
+DDMODE 14 - 1024x768x8 bit.
+DDMODE 15 - 1152x720x8 bit.
+DDMODE 16 - 1152x864x8 bit.
+DDMODE 17 - 1280x720x8 bit.
+DDMODE 18 - 1280x800x8 bit.
+DDMODE 19 - 1280x960x8 bit.
+DDMODE 20 - 1280x1024x8 bit.
+DDMODE 21 - 1368x768x8 bit.
+DDMODE 22 - 1400x1050x8 bit.
+DDMODE 23 - 1440x900x8 bit.
+DDMODE 24 - 1440x1080x8 bit.
+DDMODE 25 - 1600x900x8 bit.
+DDMODE 26 - 1680x1050x8 bit.
+DDMODE 27 - 1920x1080x8 bit.
+DDMODE 28 - 320x200x16 bit.
+DDMODE 29 - 320x240x16 bit.
+DDMODE 30 - 640x350x16 bit.
+DDMODE 31 - 640x400x16 bit.
+DDMODE 32 - 640x480x16 bit.
+DDMODE 33 - 720x400x16 bit.
+DDMODE 34 - 720x480x16 bit.
+DDMODE 35 - 768x480x16 bit.
+DDMODE 36 - 800x500x16 bit.
+DDMODE 37 - 800x600x16 bit.
+DDMODE 38 - 864x486x16 bit.
+DDMODE 39 - 928x580x16 bit.
+DDMODE 40 - 960x600x16 bit.
+DDMODE 41 - 1024x576x16 bit.
+DDMODE 42 - 1024x768x16 bit.
+DDMODE 43 - 1152x720x16 bit.
+DDMODE 44 - 1152x864x16 bit.
+DDMODE 45 - 1280x720x16 bit.
+DDMODE 46 - 1280x800x16 bit.
+DDMODE 47 - 1280x960x16 bit.
+DDMODE 48 - 1280x1024x16 bit.
+DDMODE 49 - 1368x768x16 bit.
+DDMODE 50 - 1400x1050x16 bit.
+DDMODE 51 - 1440x900x16 bit.
+DDMODE 52 - 1440x1080x16 bit.
+DDMODE 53 - 1600x900x16 bit.
+DDMODE 54 - 1680x1050x16 bit.
+DDMODE 55 - 1920x1080x16 bit.
+DDMODE 56 - 320x200x32 bit.
+DDMODE 57 - 320x240x32 bit.
+DDMODE 58 - 640x350x32 bit.
+DDMODE 59 - 640x400x32 bit.
+DDMODE 60 - 640x480x32 bit.
+DDMODE 61 - 720x400x32 bit.
+DDMODE 62 - 720x480x32 bit.
+DDMODE 63 - 768x480x32 bit.
+DDMODE 64 - 800x500x32 bit.
+DDMODE 65 - 800x600x32 bit.
+DDMODE 66 - 864x486x32 bit.
+DDMODE 67 - 928x580x32 bit.
+DDMODE 68 - 960x600x32 bit.
+DDMODE 69 - 1024x576x32 bit.
+DDMODE 70 - 1024x768x32 bit.
+DDMODE 71 - 1152x720x32 bit.
+DDMODE 72 - 1152x864x32 bit.
+DDMODE 73 - 1280x720x32 bit.
+DDMODE 74 - 1280x800x32 bit.
+DDMODE 75 - 1280x960x32 bit.
+DDMODE 76 - 1280x1024x32 bit.
+DDMODE 77 - 1368x768x32 bit.
+DDMODE 78 - 1400x1050x32 bit.
+DDMODE 79 - 1440x900x32 bit.
+DDMODE 80 - 1440x1080x32 bit.
+DDMODE 81 - 1600x900x32 bit.
+DDMODE 82 - 1680x1050x32 bit.
+DDMODE 83 - 1920x1080x32 bit.
+
+DIRECT 3D DEVICE BASE NAME : RGB Emulation.
+DIRECT 3D DEVICE DESCRIPTION : RGB Direct3D emulation.
+DIRECT 3D DEVICE TextureFlag	:	TRUE.
+DIRECT 3D DEVICE ZBufferFlag : TRUE.
+DIRECT 3D DEVICE HardwareAccel : FALSE.
+DIRECT 3D DEVICE SquareOnly : FALSE.
+DIRECT 3D DEVICE Alpha blending is ON.
+
+
+DIRECT 3D DEVICE BASE NAME : Direct3D HAL.
+DIRECT 3D DEVICE DESCRIPTION : Wine D3DDevice using WineD3D and OpenGL.
+DIRECT 3D DEVICE TextureFlag	:	TRUE.
+DIRECT 3D DEVICE ZBufferFlag : TRUE.
+DIRECT 3D DEVICE HardwareAccel : TRUE.
+DIRECT 3D DEVICE SquareOnly : FALSE.
+DIRECT 3D DEVICE Alpha blending is ON.
+
+END EXAMINE MACHINE
+-------------------
+
+--------------------
+BEGIN SELECT DRIVERS
+
+INFO DirectDraw - Default driver >>>display,DirectDraw HAL<<< selected.
+INFO DirectDraw - Device has no hardware acceleration.
+
+INFO Direct3D - Hardware driver >>>Direct3D HAL, Wine D3DDevice using WineD3D and OpenGL<<< selected
+INFO Direct3D - Device has hardware acceleration.
+
+INFO Fullscreen mode is TRUE.
+INFO Native software render mode is FALSE.
+INFO RenderMode set to Direct3d render mode.
+INFO Screen mode 640x480x16 selected.
+
+END SELECT DRIVERS
+------------------
+
+EVENT : Event >>>WINDOWS<<< create function  called.
+LOADING : App run from S:\PC\BUGS.
+LOADING : No CD-ROM found.
+EVENT : Event >>>WINDOWS<<< added.
+
+SwitchDriverScreen
+LoadSwitchWallpaper
+LOAD : Loading file S:\PC\BUGS\cd\sky1.raw.
+LoadSwitchTPage
+LOAD : Loading file S:\PC\BUGS\cd\soft.raw.
+ok!
+RELEASE : DDBack.
+RELEASE : DDFront.
+RELEASE : DDObject.
+EVENT : Event >>>DIRECTX<<< create function  called.
+LOAD : Loading file S:\PC\BUGS\cd\cd.txt.
+CONFIG : Base CD track is 2.
+SYSTEM : OnlySystemMemory status SYSTEM MEMORY ONLY.
+D3DAPPCREATE : Mode set to 320x200.
+MODE: Width = 320 Height = 200 Bpp = 8.
+EVENT : Event >>>DIRECTX<<< added.
+
+INITSOFTRENDER : Start.
+SOFTRENDER : Screen set to 320x200.
+SOFTRENDER : Bit's per pixel set to 8.
+SOFTRENDER : RGB shifts - R<<0, G<<0, B<<0.
+SOFTRENDER : RGB masks - R&0, G&0, B&0.
+SOFT : SetNewPalette.
+InitSoftWindow(320,200)
+INITSOFTRENDER : End.
+
+
+ROUTINE : LevelSel.
+ROUTINE : ---Start CallOptions---
+SOFT : SetNewPalette.
+ROUTINE : Loading packet data level00\level.raw, level 0.
+LOAD : Getting length of file \pc\bugs\cd\level00\level.raw.
+LOAD : Length found - file \pc\bugs\cd\level00\level.raw is 394492 bytes long.
+LOAD : Loading file S:\PC\BUGS\cd\level00\level.raw.
+CONVPSXTPAGE8: Converting 256 colour tpage 0, size 256x256.
+MEM : SOFT Pixel buffer for tpage 0 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 1, size 256x256.
+MEM : SOFT Pixel buffer for tpage 1 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 2, size 256x256.
+MEM : SOFT Pixel buffer for tpage 2 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 3, size 256x256.
+MEM : SOFT Pixel buffer for tpage 3 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 4, size 256x256.
+MEM : SOFT Pixel buffer for tpage 4 created.
+LOAD: Type 48, system memory tpage 12 setup.
+LOAD : ConvPsxPage - Tpage 12.
+MEM : SOFT Pixel buffer for tpage 12 created.
+LOAD: Type 49, system memory tpage 13 setup.
+LOAD : ConvPsxPage - Tpage 13.
+MEM : SOFT Pixel buffer for tpage 13 created.
+LOAD: Type 50, system memory tpage 14 setup.
+LOAD : ConvPsxPage - Tpage 14.
+MEM : SOFT Pixel buffer for tpage 14 created.
+LOAD: Type 51, system memory tpage 15 setup.
+LOAD : ConvPsxPage - Tpage 15.
+MEM : SOFT Pixel buffer for tpage 15 created.
+LOAD: Type 52, system memory tpage 16 setup.
+LOAD : ConvPsxPage - Tpage 16.
+MEM : SOFT Pixel buffer for tpage 16 created.
+LOAD: Type 53, system memory tpage 17 setup.
+LOAD : ConvPsxPage - Tpage 17.
+MEM : SOFT Pixel buffer for tpage 17 created.
+LOAD: Type 54, system memory tpage 18 setup.
+LOAD : ConvPsxPage - Tpage 18.
+MEM : SOFT Pixel buffer for tpage 18 created.
+LOAD: Type 55, system memory tpage 19 setup.
+LOAD : ConvPsxPage - Tpage 19.
+MEM : SOFT Pixel buffer for tpage 19 created.
+LOAD: Type 56, system memory tpage 20 setup.
+LOAD : ConvPsxPage - Tpage 20.
+MEM : SOFT Pixel buffer for tpage 20 created.
+LOAD: Type 57, system memory tpage 21 setup.
+LOAD : ConvPsxPage - Tpage 21.
+MEM : SOFT Pixel buffer for tpage 21 created.
+LOAD: Type 58, system memory tpage 22 setup.
+LOAD : ConvPsxPage - Tpage 22.
+MEM : SOFT Pixel buffer for tpage 22 created.
+LOAD: Type 59, system memory tpage 23 setup.
+LOAD : ConvPsxPage - Tpage 23.
+MEM : SOFT Pixel buffer for tpage 23 created.
+LOAD: Type 60, system memory tpage 24 setup.
+LOAD : ConvPsxPage - Tpage 24.
+MEM : SOFT Pixel buffer for tpage 24 created.
+LOAD: Type 61, system memory tpage 25 setup.
+LOAD : ConvPsxPage - Tpage 25.
+MEM : SOFT Pixel buffer for tpage 25 created.
+LOAD: Type 62, system memory tpage 26 setup.
+LOAD : ConvPsxPage - Tpage 26.
+MEM : SOFT Pixel buffer for tpage 26 created.
+LOAD: Type 63, system memory tpage 27 setup.
+LOAD : ConvPsxPage - Tpage 27.
+MEM : SOFT Pixel buffer for tpage 27 created.
+LOAD: Type 64, system memory tpage 28 setup.
+LOAD : ConvPsxPage - Tpage 28.
+MEM : SOFT Pixel buffer for tpage 28 created.
+LOAD: Type 65, system memory tpage 29 setup.
+LOAD : ConvPsxPage - Tpage 29.
+MEM : SOFT Pixel buffer for tpage 29 created.
+LOAD: Type 66, system memory tpage 30 setup.
+LOAD : ConvPsxPage - Tpage 30.
+MEM : SOFT Pixel buffer for tpage 30 created.
+LOAD: Type 90, plaxset256 2 setup.
+LOAD : CONVPSXTPAGE16 tpage 32, 256x256
+MEM : SOFT Pixel buffer for tpage 32 created.
+LOAD: Type 34, anim 68 setup.
+LOAD: Type 34, anim 69 setup.
+LOAD: Type 34, anim 70 setup.
+LOAD: Type 69, system memory tpage 33 setup.
+LOAD : ConvPsxPage - Tpage 33.
+MEM : SOFT Pixel buffer for tpage 33 created.
+LOAD: Type 70, system memory tpage 34 setup.
+LOAD : ConvPsxPage - Tpage 34.
+MEM : SOFT Pixel buffer for tpage 34 created.
+LOAD: Type 71, system memory tpage 35 setup.
+LOAD : ConvPsxPage - Tpage 35.
+MEM : SOFT Pixel buffer for tpage 35 created.
+LOAD: Type 72, system memory tpage 36 setup.
+LOAD : ConvPsxPage - Tpage 36.
+MEM : SOFT Pixel buffer for tpage 36 created.
+LOAD: Type 73, system memory tpage 37 setup.
+LOAD : ConvPsxPage - Tpage 37.
+MEM : SOFT Pixel buffer for tpage 37 created.
+LOAD: Type 74, system memory tpage 38 setup.
+LOAD : ConvPsxPage - Tpage 38.
+MEM : SOFT Pixel buffer for tpage 38 created.
+LOAD: Type 75, system memory tpage 39 setup.
+LOAD : ConvPsxPage - Tpage 39.
+MEM : SOFT Pixel buffer for tpage 39 created.
+LOAD: Type 76, system memory tpage 40 setup.
+LOAD : ConvPsxPage - Tpage 40.
+MEM : SOFT Pixel buffer for tpage 40 created.
+LOAD: Type 77, system memory tpage 41 setup.
+LOAD : ConvPsxPage - Tpage 41.
+MEM : SOFT Pixel buffer for tpage 41 created.
+LOAD: Type 78, system memory tpage 42 setup.
+LOAD : ConvPsxPage - Tpage 42.
+MEM : SOFT Pixel buffer for tpage 42 created.
+LOAD: Type 79, system memory tpage 43 setup.
+LOAD : ConvPsxPage - Tpage 43.
+MEM : SOFT Pixel buffer for tpage 43 created.
+LOAD: Type 80, system memory tpage 44 setup.
+LOAD : ConvPsxPage - Tpage 44.
+MEM : SOFT Pixel buffer for tpage 44 created.
+LOAD: Type 81, system memory tpage 45 setup.
+LOAD : ConvPsxPage - Tpage 45.
+MEM : SOFT Pixel buffer for tpage 45 created.
+LOAD: Type 82, system memory tpage 46 setup.
+LOAD : ConvPsxPage - Tpage 46.
+MEM : SOFT Pixel buffer for tpage 46 created.
+LOAD: Type 83, system memory tpage 47 setup.
+LOAD : ConvPsxPage - Tpage 47.
+MEM : SOFT Pixel buffer for tpage 47 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 54, size 256x256.
+MEM : SOFT Pixel buffer for tpage 54 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 55, size 64x256.
+MEM : SOFT Pixel buffer for tpage 55 created.
+LOAD: Type 84, system memory tpage 48 setup.
+LOAD : ConvPsxPage - Tpage 48.
+MEM : SOFT Pixel buffer for tpage 48 created.
+LOAD: Type 85, system memory tpage 49 setup.
+LOAD : ConvPsxPage - Tpage 49.
+MEM : SOFT Pixel buffer for tpage 49 created.
+LOAD: Type 86, system memory tpage 50 setup.
+LOAD : ConvPsxPage - Tpage 50.
+MEM : SOFT Pixel buffer for tpage 50 created.
+ROUTINE : --- Start LevelSelect ---
+CODE : Changing parallax to plaxset256 2.
+MEM : Pixel buffer for tpage 32 destroyed.
+CONVPSXTPAGE8: Converting 256 colour tpage 32, size 256x256.
+MEM : SOFT Pixel buffer for tpage 32 created.
+PLAYTRACK : Attempting to play track \pc\bugs\cd\audio\bugs2ma.wav.
+SETMUSICVOL : Vol -820 
+ROUTINE : ---End CallOptions---
+
+ROUTINE : ReStart.
+ROUTINE : ---Start DestroyMainGame---
+MEM : Pixel buffer for tpage 0 destroyed.
+MEM : Pixel buffer for tpage 1 destroyed.
+MEM : Pixel buffer for tpage 2 destroyed.
+MEM : Pixel buffer for tpage 3 destroyed.
+MEM : Pixel buffer for tpage 4 destroyed.
+MEM : Pixel buffer for tpage 7 destroyed.
+MEM : Pixel buffer for tpage 8 destroyed.
+MEM : Pixel buffer for tpage 9 destroyed.
+MEM : Pixel buffer for tpage 10 destroyed.
+MEM : Pixel buffer for tpage 11 destroyed.
+MEM : Pixel buffer for tpage 12 destroyed.
+MEM : Pixel buffer for tpage 17 destroyed.
+MEM : Pixel buffer for tpage 18 destroyed.
+MEM : Pixel buffer for tpage 19 destroyed.
+MEM : Pixel buffer for tpage 20 destroyed.
+MEM : Pixel buffer for tpage 21 destroyed.
+MEM : Pixel buffer for tpage 22 destroyed.
+MEM : Pixel buffer for tpage 23 destroyed.
+MEM : Pixel buffer for tpage 24 destroyed.
+MEM : Pixel buffer for tpage 25 destroyed.
+MEM : Pixel buffer for tpage 26 destroyed.
+MEM : Pixel buffer for tpage 27 destroyed.
+MEM : Pixel buffer for tpage 28 destroyed.
+MEM : Pixel buffer for tpage 29 destroyed.
+MEM : Pixel buffer for tpage 30 destroyed.
+MEM : Pixel buffer for tpage 32 destroyed.
+MEM : Pixel buffer for tpage 33 destroyed.
+MEM : Pixel buffer for tpage 35 destroyed.
+MEM : Pixel buffer for tpage 36 destroyed.
+MEM : Pixel buffer for tpage 37 destroyed.
+MEM : Pixel buffer for tpage 38 destroyed.
+MEM : Pixel buffer for tpage 39 destroyed.
+MEM : Pixel buffer for tpage 40 destroyed.
+MEM : Pixel buffer for tpage 41 destroyed.
+MEM : Pixel buffer for tpage 42 destroyed.
+MEM : Pixel buffer for tpage 43 destroyed.
+MEM : Pixel buffer for tpage 44 destroyed.
+MEM : Pixel buffer for tpage 45 destroyed.
+MEM : Pixel buffer for tpage 46 destroyed.
+MEM : Pixel buffer for tpage 47 destroyed.
+MEM : Pixel buffer for tpage 48 destroyed.
+MEM : Pixel buffer for tpage 49 destroyed.
+MEM : Pixel buffer for tpage 50 destroyed.
+MEM : Pixel buffer for tpage 54 destroyed.
+MEM : Pixel buffer for tpage 55 destroyed.
+RELEASE : d3dappi.lpSkyMat.
+RELEASE : d3dappi.lpGroundMat.
+ROUTINE : ---End DestroyMainGame---
+ROUTINE : ---Start InitMainGame---
+LOAD : Loading file S:\PC\BUGS\cd\rand.dat.
+ROUTINE : ---Start DestroyMainGame---
+RELEASE : d3dappi.lpSkyMat.
+RELEASE : d3dappi.lpGroundMat.
+ROUTINE : ---End DestroyMainGame---
+SOFT : SetNewPalette.
+ROUTINE : Start InitLoadScreen.
+ROUTINE : Loading packet data gfx\training.raw, level 17.
+LOAD : Getting length of file \pc\bugs\cd\gfx\training.raw.
+LOAD : Length found - file \pc\bugs\cd\gfx\training.raw is 120488 bytes long.
+LOAD : Loading file S:\PC\BUGS\cd\gfx\training.raw.
+CONVPSXTPAGE4: Converting 16 colour tpage 13, size 256x256.
+MEM : SOFT Pixel buffer for tpage 13 created.
+LOAD : Type 126/127, dimensions 256x256.
+LOAD : CONVPSXTPAGE16 tpage 33, 256x256
+MEM : SOFT Pixel buffer for tpage 33 created.
+LOAD : Type 126/127, dimensions 64x256.
+LOAD : CONVPSXTPAGE16 tpage 34, 256x256
+MEM : SOFT Pixel buffer for tpage 34 created.
+ROUTINE : Loading packet data level07\level1.raw, level 17.
+LOAD : Getting length of file \pc\bugs\cd\level07\level1.raw.
+LOAD : Length found - file \pc\bugs\cd\level07\level1.raw is 565740 bytes long.
+LOAD : Loading file S:\PC\BUGS\cd\level07\level1.raw.
+CONVPSXTPAGE4: Converting 16 colour tpage 0, size 256x256.
+MEM : SOFT Pixel buffer for tpage 0 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 1, size 256x256.
+MEM : SOFT Pixel buffer for tpage 1 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 2, size 256x256.
+MEM : SOFT Pixel buffer for tpage 2 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 4, size 256x256.
+MEM : SOFT Pixel buffer for tpage 4 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 14, size 128x128.
+MEM : SOFT Pixel buffer for tpage 14 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 16, size 256x256.
+MEM : SOFT Pixel buffer for tpage 16 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 17, size 256x256.
+MEM : SOFT Pixel buffer for tpage 17 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 18, size 256x256.
+MEM : SOFT Pixel buffer for tpage 18 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 20, size 256x256.
+MEM : SOFT Pixel buffer for tpage 20 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 11, size 256x256.
+MEM : SOFT Pixel buffer for tpage 11 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 12, size 256x256.
+MEM : SOFT Pixel buffer for tpage 12 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 28, size 256x256.
+MEM : SOFT Pixel buffer for tpage 28 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 15, size 256x256.
+MEM : SOFT Pixel buffer for tpage 15 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 29, size 256x256.
+MEM : SOFT Pixel buffer for tpage 29 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 30, size 256x256.
+MEM : SOFT Pixel buffer for tpage 30 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 10, size 256x256.
+MEM : SOFT Pixel buffer for tpage 10 created.
+LOAD: Type 34, anim 16 setup.
+LOAD: Type 34, anim 17 setup.
+LOAD: Type 34, anim 18 setup.
+LOAD: Type 34, anim 19 setup.
+LOAD: Type 34, anim 29 setup.
+LOAD: Type 34, anim 32 setup.
+LOAD: Type 34, anim 41 setup.
+LOAD: Type 34, anim 2 setup.
+LOAD: Type 34, anim 20 setup.
+LOAD: Type 34, anim 5 setup.
+LOAD: Type 34, anim 6 setup.
+LOAD: Type 34, anim 124 setup.
+LOAD: Type 34, anim 125 setup.
+ConvPsxPlax : Enter
+MEM : SOFT Pixel buffer for tpage 32 created.
+ConvPsxPlax : Exit
+CONVPSXTPAGE4: Converting 16 colour tpage 19, size 256x256.
+MEM : SOFT Pixel buffer for tpage 19 created.
+LOAD: Type 35, CreatListRam.
+LOAD : Loading file S:\PC\BUGS\cd\level07\level1.dat.
+LOAD : Loading file S:\PC\BUGS\cd\level07\terr1.all.
+LOAD : Loading file S:\PC\BUGS\cd\bits\plantter.all.
+LOAD : Loading file S:\PC\BUGS\cd\chars\flick.anm.
+LOAD : Loading file S:\PC\BUGS\cd\chars\flick.all.
+LOAD : Loading file S:\PC\BUGS\cd\chars3\soil.anm.
+LOAD : Loading file S:\PC\BUGS\cd\chars3\soil.all.
+LOAD : Loading file S:\PC\BUGS\cd\bits\seed.all.
+LOAD : Loading file S:\PC\BUGS\cd\chars\badbug.anm.
+LOAD : Loading file S:\PC\BUGS\cd\chars\badbug.all.
+LOAD : Loading file S:\PC\BUGS\cd\plants\plant05.anm.
+LOAD : Loading file S:\PC\BUGS\cd\plants\plant05.all.
+LOAD : Loading file S:\PC\BUGS\cd\plants\plant04.anm.
+LOAD : Loading file S:\PC\BUGS\cd\plants\plant04.all.
+LOAD : Loading file S:\PC\BUGS\cd\plants\plant10.anm.
+LOAD : Loading file S:\PC\BUGS\cd\plants\plant10.all.
+LOAD : Loading file S:\PC\BUGS\cd\plants\plant06.anm.
+LOAD : Loading file S:\PC\BUGS\cd\plants\plant06.all.
+ROUTINE : Start ClearLoadScreen.
+ROUTINE : End ClearLoadScreen.
+ROUTINE : ---End InitMainGame---
+
+ROUTINE : NextLife.
+PLAYTRACK : Attempting to play track \pc\bugs\cd\audio\less1.wav.
+SETMUSICVOL : Vol -820 

@@ -1,0 +1,26 @@
+{
+  "experiment": "EXP-20260909-005",
+  "synthetic_overlay_only": true,
+  "not_launched": true,
+  "ffmpeg_decode_passed": true,
+  "files": [
+    {
+      "path": "work/copies/EXP-20260909-005-soil-audio-overlay/PC/BUGS/CD/AUDIO/LESS1.WAV",
+      "sha256": "3f3c6fb503282f608af28416c986c0dd8143c787fab60250c920da5376473816",
+      "channels": 2,
+      "rate": 22050,
+      "bits": 8,
+      "frames": 27563,
+      "seconds": 1.2500226757369615
+    },
+    {
+      "path": "work/copies/EXP-20260909-005-soil-audio-overlay/PC/BUGS/CD/AUDIO/LESS8A.WAV",
+      "sha256": "65bc4c2be160902d6279c1337588d9d9f667048044da998b2ddb32baf9118f34",
+      "channels": 1,
+      "rate": 22050,
+      "bits": 8,
+      "frames": 99225,
+      "seconds": 4.5
+    }
+  ]
+}

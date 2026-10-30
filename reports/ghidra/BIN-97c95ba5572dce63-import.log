@@ -1,0 +1,148 @@
+openjdk version "21.0.12" 2026-07-21 LTS
+OpenJDK Runtime Environment Temurin-21.0.12+8 (build 21.0.12+8-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.12+8 (build 21.0.12+8-LTS, mixed mode)
+INFO  Using log config file: jar:file:/home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml (LoggingInitialization)  
+INFO  Using log file: /home/dev/.config/ghidra/ghidra_12.1.2_PUBLIC/application.log (LoggingInitialization)  
+INFO  Loading user preferences: /home/dev/.config/ghidra/ghidra_12.1.2_PUBLIC/preferences (Preferences)  
+INFO  Searching for classes... (ClassSearcher)  
+INFO  Class search complete (314 ms) (ClassSearcher)  
+INFO  Initializing SSL Context (DefaultSSLContextInitializer)  
+INFO  Initializing Random Number Generator... (SecureRandomFactory)  
+INFO  Random Number Generator initialization complete: NativePRNGNonBlocking (SecureRandomFactory)  
+INFO  Trust manager disabled, cacerts have not been set (DefaultTrustManagerFactory)  
+INFO  Headless startup complete (822 ms) (AnalyzeHeadless)  
+INFO  Class searcher loaded 59 extension points (20 false positives) (ClassSearcher)  
+INFO  HEADLESS Script Paths:
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/PyGhidra/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/DecompilerDependent/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts (HeadlessAnalyzer)  
+INFO  HEADLESS: execution starts (HeadlessAnalyzer)  
+INFO  Creating project: /home/dev/ABLPC/work/ghidra/ABLPC_BUGS_97c95ba5 (HeadlessAnalyzer)  
+INFO  Creating project: /home/dev/ABLPC/work/ghidra/ABLPC_BUGS_97c95ba5 (DefaultProject)  
+INFO  REPORT: Processing input files:  (HeadlessAnalyzer)  
+INFO       project: /home/dev/ABLPC/work/ghidra/ABLPC_BUGS_97c95ba5 (HeadlessAnalyzer)  
+INFO  IMPORTING: file:///home/dev/ABLPC/work/copies/BUGS_PC-disc/bugs.exe (HeadlessAnalyzer)  
+INFO  Using Loader: Portable Executable (PE) (ProgramLoader)  
+INFO  Using Language/Compiler: x86:LE:32:default:windows (ProgramLoader)  
+INFO  Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64] (ProgramLoader)  
+INFO  Additional info:
+Loading file:///home/dev/ABLPC/work/copies/BUGS_PC-disc/bugs.exe?MD5=01028a9f85a0732f964786d0cd7d339d...
+------------------------------------------------
+
+Searching 7 paths for library DDRAW.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 7 paths for library DINPUT.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 7 paths for library DSOUND.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 7 paths for library GDI32.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 7 paths for library KERNEL32.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 7 paths for library OLE32.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 7 paths for library USER32.DLL...
+Library not found.
+------------------------------------------------
+
+Searching 7 paths for library WINMM.DLL...
+Library not found.
+------------------------------------------------
+
+Linking the External Programs of 'bugs.exe' to imported libraries...
+  [KERNEL32.DLL] -> not found in project
+  [USER32.DLL] -> not found in project
+  [GDI32.DLL] -> not found in project
+  [OLE32.DLL] -> not found in project
+  [DDRAW.DLL] -> not found in project
+  [DINPUT.DLL] -> not found in project
+  [DSOUND.DLL] -> not found in project
+  [WINMM.DLL] -> not found in project
+------------------------------------------------
+
+ (ProgramLoader)  
+INFO  IMPORTING: Loaded 0 additional files (HeadlessAnalyzer)  
+INFO  ANALYZING all memory and code: file:///home/dev/ABLPC/work/copies/BUGS_PC-disc/bugs.exe (HeadlessAnalyzer)  
+WARN  Ignoring leading '_' chars on no-return name '___raise_securityfailure' specified in file: /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/Base/data/PEFunctionsThatDoNotReturn (NoReturnFunctionAnalyzer)  
+WARN  Ignoring leading '_' chars on no-return name '___report_rangecheckfailure' specified in file: /home/dev/ABLPC/tools/ghidra/ghidra_12.1.2_PUBLIC/Ghidra/Features/Base/data/PEFunctionsThatDoNotReturn (NoReturnFunctionAnalyzer)  
+INFO  Skipping PDB processing: failed to locate PDB file in configured locations (PdbUniversalAnalyzer)  
+INFO  Use a script to set the PDB file location. I.e.,
+    PdbAnalyzer.setPdbFileOption(currentProgram, new File("/path/to/pdb/file.pdb")); or
+    PdbUniversalAnalyzer.setPdbFileOption(currentProgram, new File("/path/to/pdb/file.pdb"));
+Or set the symbol server search configuration using:    PdbPlugin.saveSymbolServerServiceConfig(...);
+ This must be done using a pre-script (prior to analysis). (PdbUniversalAnalyzer)  
+INFO  Packed database cache: /var/tmp/dev-ghidra/packed-db-cache (PackedDatabaseCache)  
+INFO  Applied data type archive: windows_vs12_32 (ApplyDataArchiveAnalyzer)  
+INFO  Applied data type archive: windows_vs12_32 (ApplyDataArchiveAnalyzer)  
+INFO  -----------------------------------------------------
+    ASCII Strings                              0.307 secs
+    Apply Data Archives                        0.378 secs
+    Call Convention ID                         0.000 secs
+    Call-Fixup Installer                       0.015 secs
+    Create Address Tables                      0.100 secs
+    Create Address Tables - One Time           0.214 secs
+    Create Function                            0.348 secs
+    Data Reference                             0.085 secs
+    Decompiler Switch Analysis                32.332 secs
+    Demangler Microsoft                        0.005 secs
+    Disassemble                                0.264 secs
+    Disassemble Entry Points                   0.795 secs
+    Embedded Media                             0.022 secs
+    External Entry References                  0.001 secs
+    Function ID                                0.417 secs
+    Function Start Pre Search                  0.015 secs
+    Function Start Search                      0.447 secs
+    Function Start Search After Code           0.012 secs
+    Function Start Search After Data           0.472 secs
+    Function Start Search delayed - One Time   0.000 secs
+    Non-Returning Functions - Discovered       0.104 secs
+    Non-Returning Functions - Known            0.004 secs
+    PDB Universal                              0.006 secs
+    Reference                                  0.176 secs
+    Scalar Operand References                  0.517 secs
+    Shared Return Calls                        0.111 secs
+    Stack                                      1.559 secs
+    Subroutine References                      0.073 secs
+    Subroutine References - One Time           0.000 secs
+    WindowsResourceReference                   1.374 secs
+    X86 Function Callee Purge                  0.078 secs
+    x86 Constant Reference Analyzer            1.556 secs
+-----------------------------------------------------
+     Total Time   41 secs
+-----------------------------------------------------
+ (AutoAnalysisManager)  
+INFO  REPORT: Analysis succeeded for file: file:///home/dev/ABLPC/work/copies/BUGS_PC-disc/bugs.exe (HeadlessAnalyzer)  
+INFO  /bugs.exe: file created (dev) (LocalFileSystem)  
+INFO  REPORT: Save succeeded for: /bugs.exe (ABLPC_BUGS_97c95ba5:/bugs.exe) (HeadlessAnalyzer)  
+INFO  REPORT: Import succeeded (HeadlessAnalyzer)  

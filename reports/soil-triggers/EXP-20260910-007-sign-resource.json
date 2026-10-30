@@ -1,0 +1,20 @@
+{
+  "experiment": "EXP-20260910-007",
+  "raw_sha256": "c5f81eed3c9d1a01cc188ead50fc10a5ae0f213b0ca165764fa7b311a02a0926",
+  "live_pointer": "0x893f37",
+  "width": 32,
+  "height": 32,
+  "frames": 6,
+  "palette_entries": 0,
+  "frame_bytes": 1024,
+  "matching_native_packet": {
+    "file_offset": 314731,
+    "packet_bytes": 1274,
+    "decoded_bytes": 6160,
+    "payload_offset": 8,
+    "header_hex": "26000000330000002000200006000000",
+    "payload_sha256": "d6d5df3362e5d2bdf3f98ff6d90e4f0183986bb221f0d4748a360dd2f69e7f55"
+  },
+  "native_renderer": "00410A20 computes frame_offset=width*height*frame; no frame-count guard",
+  "scope": "Read-only live header/data match against bounded decoded private PC RAW, no game bytes published"
+}

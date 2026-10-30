@@ -1,0 +1,836 @@
+{
+  "experiment": "EXP-20260910-006",
+  "source_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "method": "Native countdown slice00403274\u2013004032E6 and whole lesson0043C340; offline fixture starts each throw timer at18, not live input. Audio/OS/HUD backends stubbed.",
+  "bases": [
+    "0x400000",
+    "0x1000000"
+  ],
+  "stock": {
+    "target": 6,
+    "transitions": [
+      {
+        "throw": 1,
+        "stage": 0,
+        "counter": 2
+      },
+      {
+        "throw": 2,
+        "stage": 0,
+        "counter": 3
+      },
+      {
+        "throw": 3,
+        "stage": 0,
+        "counter": 4
+      },
+      {
+        "throw": 4,
+        "stage": 0,
+        "counter": 5
+      },
+      {
+        "throw": 5,
+        "stage": 0,
+        "counter": 6
+      },
+      {
+        "throw": 6,
+        "stage": 1,
+        "counter": 7
+      }
+    ],
+    "hud_frames": [
+      4,
+      3,
+      2,
+      1,
+      0
+    ],
+    "negative_timer_values": [
+      0,
+      1,
+      16,
+      18
+    ],
+    "native_pause_updates": 30
+  },
+  "configured": [
+    {
+      "target": 1,
+      "transitions": [
+        {
+          "throw": 1,
+          "stage": 1,
+          "counter": 2
+        }
+      ],
+      "hud_frames": [],
+      "negative_timer_values": [
+        0,
+        1,
+        16,
+        18
+      ],
+      "native_pause_updates": 30,
+      "executable_sha256": "ccce673832eddd0bcca3ced023750f31dd382c16f665da6f53569b18244ecb2b",
+      "config": {
+        "schema": "ablpc.soil-triggers.v1",
+        "parameters": {
+          "throws": 1,
+          "jumps": 6,
+          "bounces": 3,
+          "seed_pickups": 3,
+          "discard_updates": 58,
+          "colour_samples": 2,
+          "ledge_runtime_y": -20000
+        },
+        "lessons": [
+          {
+            "stage": 0,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 1,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 2,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 3,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 4,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 5,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 6,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 7,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 8,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 9,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 10,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 11,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 12,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 13,
+            "mode": "original",
+            "tail_ms": 2000
+          }
+        ]
+      },
+      "changed_bytes_vs_six": [
+        {
+          "file_offset": 243650,
+          "before": 6,
+          "after": 1
+        },
+        {
+          "file_offset": 243663,
+          "before": 6,
+          "after": 1
+        }
+      ]
+    },
+    {
+      "target": 2,
+      "transitions": [
+        {
+          "throw": 1,
+          "stage": 0,
+          "counter": 2
+        },
+        {
+          "throw": 2,
+          "stage": 1,
+          "counter": 3
+        }
+      ],
+      "hud_frames": [
+        0
+      ],
+      "negative_timer_values": [
+        0,
+        1,
+        16,
+        18
+      ],
+      "native_pause_updates": 30,
+      "executable_sha256": "585688d3e72898682d77648fc9dba9ed29c31c7ed75a243a9fd00c888ac5dd24",
+      "config": {
+        "schema": "ablpc.soil-triggers.v1",
+        "parameters": {
+          "throws": 2,
+          "jumps": 6,
+          "bounces": 3,
+          "seed_pickups": 3,
+          "discard_updates": 58,
+          "colour_samples": 2,
+          "ledge_runtime_y": -20000
+        },
+        "lessons": [
+          {
+            "stage": 0,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 1,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 2,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 3,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 4,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 5,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 6,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 7,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 8,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 9,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 10,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 11,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 12,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 13,
+            "mode": "original",
+            "tail_ms": 2000
+          }
+        ]
+      },
+      "changed_bytes_vs_six": [
+        {
+          "file_offset": 243650,
+          "before": 6,
+          "after": 2
+        },
+        {
+          "file_offset": 243663,
+          "before": 6,
+          "after": 2
+        }
+      ]
+    },
+    {
+      "target": 3,
+      "transitions": [
+        {
+          "throw": 1,
+          "stage": 0,
+          "counter": 2
+        },
+        {
+          "throw": 2,
+          "stage": 0,
+          "counter": 3
+        },
+        {
+          "throw": 3,
+          "stage": 1,
+          "counter": 4
+        }
+      ],
+      "hud_frames": [
+        1,
+        0
+      ],
+      "negative_timer_values": [
+        0,
+        1,
+        16,
+        18
+      ],
+      "native_pause_updates": 30,
+      "executable_sha256": "f83ecec3da6816602c3100c2f1336dcb47def9be5868239f845f34fe1ffb0905",
+      "config": {
+        "schema": "ablpc.soil-triggers.v1",
+        "parameters": {
+          "throws": 3,
+          "jumps": 6,
+          "bounces": 3,
+          "seed_pickups": 3,
+          "discard_updates": 58,
+          "colour_samples": 2,
+          "ledge_runtime_y": -20000
+        },
+        "lessons": [
+          {
+            "stage": 0,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 1,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 2,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 3,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 4,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 5,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 6,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 7,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 8,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 9,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 10,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 11,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 12,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 13,
+            "mode": "original",
+            "tail_ms": 2000
+          }
+        ]
+      },
+      "changed_bytes_vs_six": [
+        {
+          "file_offset": 243650,
+          "before": 6,
+          "after": 3
+        },
+        {
+          "file_offset": 243663,
+          "before": 6,
+          "after": 3
+        }
+      ]
+    },
+    {
+      "target": 4,
+      "transitions": [
+        {
+          "throw": 1,
+          "stage": 0,
+          "counter": 2
+        },
+        {
+          "throw": 2,
+          "stage": 0,
+          "counter": 3
+        },
+        {
+          "throw": 3,
+          "stage": 0,
+          "counter": 4
+        },
+        {
+          "throw": 4,
+          "stage": 1,
+          "counter": 5
+        }
+      ],
+      "hud_frames": [
+        2,
+        1,
+        0
+      ],
+      "negative_timer_values": [
+        0,
+        1,
+        16,
+        18
+      ],
+      "native_pause_updates": 30,
+      "executable_sha256": "932c089a7e0678e38a7a332719a776c07d39d5f0c4bb44662bfcefbb988b84b4",
+      "config": {
+        "schema": "ablpc.soil-triggers.v1",
+        "parameters": {
+          "throws": 4,
+          "jumps": 6,
+          "bounces": 3,
+          "seed_pickups": 3,
+          "discard_updates": 58,
+          "colour_samples": 2,
+          "ledge_runtime_y": -20000
+        },
+        "lessons": [
+          {
+            "stage": 0,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 1,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 2,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 3,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 4,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 5,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 6,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 7,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 8,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 9,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 10,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 11,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 12,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 13,
+            "mode": "original",
+            "tail_ms": 2000
+          }
+        ]
+      },
+      "changed_bytes_vs_six": [
+        {
+          "file_offset": 243650,
+          "before": 6,
+          "after": 4
+        },
+        {
+          "file_offset": 243663,
+          "before": 6,
+          "after": 4
+        }
+      ]
+    },
+    {
+      "target": 5,
+      "transitions": [
+        {
+          "throw": 1,
+          "stage": 0,
+          "counter": 2
+        },
+        {
+          "throw": 2,
+          "stage": 0,
+          "counter": 3
+        },
+        {
+          "throw": 3,
+          "stage": 0,
+          "counter": 4
+        },
+        {
+          "throw": 4,
+          "stage": 0,
+          "counter": 5
+        },
+        {
+          "throw": 5,
+          "stage": 1,
+          "counter": 6
+        }
+      ],
+      "hud_frames": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "negative_timer_values": [
+        0,
+        1,
+        16,
+        18
+      ],
+      "native_pause_updates": 30,
+      "executable_sha256": "0570c69d4e8274d446f865ad09a960c0413f999ca4a6c56d34c13bf34b4584a3",
+      "config": {
+        "schema": "ablpc.soil-triggers.v1",
+        "parameters": {
+          "throws": 5,
+          "jumps": 6,
+          "bounces": 3,
+          "seed_pickups": 3,
+          "discard_updates": 58,
+          "colour_samples": 2,
+          "ledge_runtime_y": -20000
+        },
+        "lessons": [
+          {
+            "stage": 0,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 1,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 2,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 3,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 4,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 5,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 6,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 7,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 8,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 9,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 10,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 11,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 12,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 13,
+            "mode": "original",
+            "tail_ms": 2000
+          }
+        ]
+      },
+      "changed_bytes_vs_six": [
+        {
+          "file_offset": 243650,
+          "before": 6,
+          "after": 5
+        },
+        {
+          "file_offset": 243663,
+          "before": 6,
+          "after": 5
+        }
+      ]
+    },
+    {
+      "target": 6,
+      "transitions": [
+        {
+          "throw": 1,
+          "stage": 0,
+          "counter": 2
+        },
+        {
+          "throw": 2,
+          "stage": 0,
+          "counter": 3
+        },
+        {
+          "throw": 3,
+          "stage": 0,
+          "counter": 4
+        },
+        {
+          "throw": 4,
+          "stage": 0,
+          "counter": 5
+        },
+        {
+          "throw": 5,
+          "stage": 0,
+          "counter": 6
+        },
+        {
+          "throw": 6,
+          "stage": 1,
+          "counter": 7
+        }
+      ],
+      "hud_frames": [
+        4,
+        3,
+        2,
+        1,
+        0
+      ],
+      "negative_timer_values": [
+        0,
+        1,
+        16,
+        18
+      ],
+      "native_pause_updates": 30,
+      "executable_sha256": "5a841380f88df8fdc27adc0381dff49e836f7e639b700366395bbf38095e83e1",
+      "config": {
+        "schema": "ablpc.soil-triggers.v1",
+        "parameters": {
+          "throws": 6,
+          "jumps": 6,
+          "bounces": 3,
+          "seed_pickups": 3,
+          "discard_updates": 58,
+          "colour_samples": 2,
+          "ledge_runtime_y": -20000
+        },
+        "lessons": [
+          {
+            "stage": 0,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 1,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 2,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 3,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 4,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 5,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 6,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 7,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 8,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 9,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 10,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 11,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 12,
+            "mode": "original",
+            "tail_ms": 2000
+          },
+          {
+            "stage": 13,
+            "mode": "original",
+            "tail_ms": 2000
+          }
+        ]
+      },
+      "changed_bytes_vs_six": []
+    }
+  ],
+  "actual_game_launched": false,
+  "user_project_modified": false
+}

@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+"""Build the exact PC TRAINING 51-of-50 tally executable from a work copy."""
+
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+import shutil
+import sys
+
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "reimplementation"))
+
+from ablpc.training_grain_counter_mod import (  # noqa: E402
+    TrainingGrainCounterModError,
+    build_training_51_counter_executable,
+)
+
+
+def _within(path: Path, root: Path) -> bool:
+    try:
+        path.relative_to(root)
+    except ValueError:
+        return False
+    return True
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description="Build the exact PC TRAINING 51-of-50 tally bugs.exe recipe."
+    )
+    parser.add_argument("source", type=Path, help="retail bugs.exe in work/copies")
+    parser.add_argument("output", type=Path, help="new patched bugs.exe in work/copies")
+    args = parser.parse_args()
+
+    source = args.source.resolve()
+    output = args.output.resolve()
+    copies_root = (ROOT / "work" / "copies").resolve()
+    if not _within(source, copies_root) or not _within(output, copies_root):
+        parser.error("source and output must both be below work/copies/")
+    if source == output:
+        parser.error("source and output must be different paths")
+    if not source.is_file():
+        parser.error(f"source is not a regular file: {source}")
+    if output.exists():
+        parser.error(f"refusing to overwrite existing output: {output}")
+    if not output.parent.is_dir():
+        parser.error(f"output parent directory does not exist: {output.parent}")
+
+    try:
+        result, receipt = build_training_51_counter_executable(source.read_bytes())
+    except TrainingGrainCounterModError as error:
+        parser.error(str(error))
+    output.write_bytes(result)
+    shutil.copymode(source, output)
+    print(json.dumps(receipt, sort_keys=True))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

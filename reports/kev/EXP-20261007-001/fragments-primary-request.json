@@ -1,0 +1,60 @@
+{
+  "model": "kev-latest",
+  "state": "Evidence source: Vault/40-Implementation/PC gold fragments.md\n\n# PC gold fragments\n\nA non-gold berry kill can drop the native spinning gold glyph as a\n**fragment**. It pops up and falls exactly like the health leaf, then rests\nwhere it lands. When Flik touches\nit, the enemy counts on the gold-berry enemy counter and never respawns, as\nafter a gold-berry kill. Each berry has its own chance; gold already counts\nand never drops one.\n[[EXP-20261001-006 - Gold fragments from non-gold berry kills]] owns the\nevidence; [[XPORT-20261001-013 - Gold fragment drop on non-gold kills]] owns\nthe PS1 comparison.\n\n\n## Setting\n\nSaved campaign key `gold_fragments` (Studio checkbox \"Gold fragments\"):\n\n```json\n\"gold_fragments\": {\"enabled\": true,\n  \"one_in\": {\"red\": 12, \"blue\": 8, \"green\": 4, \"purple\": 2, \"white\": 12, \"blackberry\": 6},\n  \"seconds\": 10}\n```\n\n- `one_in` is the chance per berry, from 1 (always) to 1000; 0 means never.\n  All six keys are required.\n- `seconds` (1–600) is how long a fragment lasts; it fades over its last\n  16 frames.\n\nThese are the PS1 odds; the PS1 odds table has no white row, so white takes\nred's (the PS1 project's white spread is a separate mod,\n[[XPORT-20260909-011 - Custom white and black berry design]]). Save and build\nto apply.\n\n\n## How it works\n\n- **Kill hook** `00429E00`: the berry-vs-enemy routine's call to `0041B9F0`.\n  When the kill bits `[esp+0x10]` are 1 (not gold), it rolls the odds for\n  `0059D9A7`. White and blackberry use the white-berry mode byte (`.wbstate`\n  1/2) and are absent without that section. On a hit it spawns drop type\n  0x78 as `0041B9F0` spawns the health leaf: at `(x, y − 0x1000, z)` with\n  motion 0xD (vy −2048, gravity 128). It sets the leaf's floor and\n  collectible flags and a 200-frame flight. The pool updater `0042B1F0`\n  shadows the fall and lands it at `floor − 90×32`.\n- **Retire hook** `0042B7D9`: the updater's retirement call. Where the leaf\n  becomes the resting leaf (type 0x2A), a landed fragment stays in place:\n  still, collectible, ground shadow (behaviour 2), its lifetime and an\n  end-of-life fade. Any other ending is native. `+0x1C` is the updater's\n  floor cache, so the actor is found from the helper's table, not a tag.\n- **Pickup hook** `0042951E`: the pickup walker's default case. For the\n  actor's latest fragment, while the actor is dying or dead, it does the\n  gold block's bookkeeping: HUD pulse, `+0x62` = 0 (or the type cleared if\n  already removed), the enemy count `0059D99E` down by one (not below 0) and\n  the all-defeated call at zero. It plays the berry pickup sound.\n- **Retirement:** every touched fragment keeps action 7 in `+0x2C`, the\n  glyph's own and the berry pickups'. The walker default's 0xC would make\n  `0042A2E0` call `00428AA0`, spawning type 0x40, whose sprite 0x33 is null\n  in Moonlit Cliffs. That crashed the first hardware pickup (`004536D1`).\n- **State** at the end of `.gfrag`: seed, kills, drops, credits, landed, 64 entries\n  (each actor's latest fragment record) and 64 `cleared` bytes. The receipt\n  gives the offsets.\n\n\n## Limits\n\n- Hardware so far: red-berry kills in Moonlit Cliffs (fixtures with every\n  odds at 1). The fragment's fall was sampled frame by frame and matched the\n  leaf's path; it landed at the game's floor − 90. Collected fragments\n  counted (HUD 01/10, 02/10) and the enemies stayed gone. Other berries,\n  levels, slopes, pits, water and the real odds have native tests only.\n- Only berry kills drop fragments; contact kills (`0041C9B0`) do not.\n- A fragment from an actor that has respawned gives no count and vanishes\n  when touched.\n- Fragments disappear when the camera is very far away (`0042B1F0` distance\n  cull), like other drops.\n- Scripted boss counts (`004369B0`, `0043AD00`, `00438720`) are untested.\n  The fragment credit matches what a gold kill would do in `00429790`.\n",
+  "questions": {
+    "q31": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: A gold-berry kill never drops an additional gold fragment.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q32": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The saved default probability of a fragment from a red-berry kill is one in twelve.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q33": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Hardware testing has already validated fragment drops and pickups for all six non-gold berry types.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q34": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The white-berry fragment odds were copied from a white-berry row in the PS1 odds table.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q35": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: With the real red-berry odds, a long hardware run would produce a measured drop frequency within one percentage point of 1/12.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q36": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Collecting the last fragment in a scripted Hopper boss encounter triggers the correct level-completion behavior in hardware.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    }
+  }
+}

@@ -1,0 +1,1646 @@
+{
+  "date": "2026-09-08",
+  "baseline_commit": "0449e989e612ea49ccb7282355c13c3080088ea1",
+  "milestone4_complete": false,
+  "external_live_memory_writes": 0,
+  "debugger_stops": 0,
+  "environment": {
+    "python": "3.14.6",
+    "unicorn": "2.1.4",
+    "platform": "Linux-7.0.11-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "wine": "wine-11.0 (Staging)"
+  },
+  "roadmap": "Vault/40-Implementation/PC Large-Level Engine Roadmap.md",
+  "source_check": {
+    "accepted": true,
+    "commands": [
+      {
+        "command": [
+          "make",
+          "check"
+        ],
+        "start_ns": 1788877129849308270,
+        "end_ns": 1788877300699349291,
+        "returncode": 0
+      }
+    ],
+    "log": "/home/dev/ABLPC/work/experiments/EXP-20260908-007/source.log",
+    "log_sha256": "59844eccc08a3cc876668b65f5810e33e1ec5fe1da4393c6baee6bad1d43f581"
+  },
+  "test_selection": {
+    "included": [
+      "tests/test_actor_contact.py",
+      "tests/test_asset_arena.py",
+      "tests/test_auto_hardware_mod.py",
+      "tests/test_contact_slots.py",
+      "tests/test_dynamic_limits.py",
+      "tests/test_grain_gate_mod.py",
+      "tests/test_level_chunks.py",
+      "tests/test_level_cliffs.py",
+      "tests/test_level_density.py",
+      "tests/test_level_scene.py",
+      "tests/test_level_scene_build.py",
+      "tests/test_level_scene_cli.py",
+      "tests/test_level_trunk.py",
+      "tests/test_level_visual_detail.py",
+      "tests/test_level_wilderness.py",
+      "tests/test_night_mod.py",
+      "tests/test_render_distance.py",
+      "tests/test_terrain_additive.py",
+      "tests/test_terrain_all.py",
+      "tests/test_terrain_barrier_edit.py",
+      "tests/test_terrain_barrier_probe.py",
+      "tests/test_terrain_barriers.py",
+      "tests/test_terrain_bioluminescence.py",
+      "tests/test_terrain_clovers.py",
+      "tests/test_terrain_collision_probe.py",
+      "tests/test_terrain_deck_grid_probe.py",
+      "tests/test_terrain_deck_probe.py",
+      "tests/test_terrain_deck_visual_probe.py",
+      "tests/test_terrain_exit_mod.py",
+      "tests/test_terrain_expansion.py",
+      "tests/test_terrain_floor_edit.py",
+      "tests/test_terrain_floor_patch.py",
+      "tests/test_terrain_floor_visual_fixture.py",
+      "tests/test_terrain_foliage.py",
+      "tests/test_terrain_foliage_layers.py",
+      "tests/test_terrain_foliage_variety.py",
+      "tests/test_terrain_foliage_visibility.py",
+      "tests/test_terrain_height.py",
+      "tests/test_terrain_hills.py",
+      "tests/test_terrain_isolated.py",
+      "tests/test_terrain_page_bootstrap.py",
+      "tests/test_terrain_page_package.py",
+      "tests/test_terrain_page_residency.py",
+      "tests/test_terrain_pages.py",
+      "tests/test_terrain_perimeter.py",
+      "tests/test_terrain_plant_probe.py",
+      "tests/test_terrain_plant_templates.py",
+      "tests/test_terrain_play_area.py",
+      "tests/test_terrain_ramp_sides.py",
+      "tests/test_terrain_ramp_solid.py",
+      "tests/test_terrain_retail_probe.py",
+      "tests/test_terrain_scenery.py",
+      "tests/test_terrain_texture_tiling.py",
+      "tests/test_terrain_visibility.py",
+      "tests/test_terrain_wall_clearance.py",
+      "tests/test_terrain_wall_material.py",
+      "tests/test_terrain_wall_shading.py"
+    ],
+    "ignored_args": [
+      "--ignore=tests/test_ablrec_analyze.py",
+      "--ignore=tests/test_anm.py",
+      "--ignore=tests/test_apitrace_capture.py",
+      "--ignore=tests/test_audit_tracked_files.py",
+      "--ignore=tests/test_briefing.py",
+      "--ignore=tests/test_claim_sweep.py",
+      "--ignore=tests/test_compatibility.py",
+      "--ignore=tests/test_content_census.py",
+      "--ignore=tests/test_coordinate_overlay.py",
+      "--ignore=tests/test_core_grep.py",
+      "--ignore=tests/test_criu_feasibility.py",
+      "--ignore=tests/test_evidence_lib.py",
+      "--ignore=tests/test_exact_0a6c_admission.py",
+      "--ignore=tests/test_experiment_draft.py",
+      "--ignore=tests/test_frozen_capture.py",
+      "--ignore=tests/test_game_memory.py",
+      "--ignore=tests/test_game_session.py",
+      "--ignore=tests/test_gdb_harness.py",
+      "--ignore=tests/test_ghidra_query.py",
+      "--ignore=tests/test_grain_gate_resolver.py",
+      "--ignore=tests/test_input_movie.py",
+      "--ignore=tests/test_input_movie_controls.py",
+      "--ignore=tests/test_install_git_hooks.py",
+      "--ignore=tests/test_level03_type1_row_mod.py",
+      "--ignore=tests/test_level_dat.py",
+      "--ignore=tests/test_manifest.py",
+      "--ignore=tests/test_memory_snapshot.py",
+      "--ignore=tests/test_note_utils.py",
+      "--ignore=tests/test_play_pristine_launcher.py",
+      "--ignore=tests/test_r2c_f0.py",
+      "--ignore=tests/test_r2c_f0_lifecycle.py",
+      "--ignore=tests/test_r2c_localizer.py",
+      "--ignore=tests/test_r2c_localizer_creator.py",
+      "--ignore=tests/test_r2c_localizer_runtime.py",
+      "--ignore=tests/test_r2c_rc0.py",
+      "--ignore=tests/test_r2d_phase_calibration.py",
+      "--ignore=tests/test_r2e_stable_background.py",
+      "--ignore=tests/test_r2f_phase_agnostic_background.py",
+      "--ignore=tests/test_r2g_exp005_diagnostic.py",
+      "--ignore=tests/test_r2h_d3_combined_holdout.py",
+      "--ignore=tests/test_r2i_replicated_face8_localizer.py",
+      "--ignore=tests/test_r2j_control_trained_mask.py",
+      "--ignore=tests/test_r2k_d4_control_trained_holdout.py",
+      "--ignore=tests/test_r2l_fresh_replicated_face8_localizer.py",
+      "--ignore=tests/test_r2m_cross_time_correspondence.py",
+      "--ignore=tests/test_r2o_completed_present.py",
+      "--ignore=tests/test_r2p_native_x11.py",
+      "--ignore=tests/test_r2p_p0b.py",
+      "--ignore=tests/test_r2p_p0b_native_x11.py",
+      "--ignore=tests/test_r2p_p0b_operator_cleanup.py",
+      "--ignore=tests/test_r2p_p0b_packet_integrity.py",
+      "--ignore=tests/test_r2p_p0b_recovery.py",
+      "--ignore=tests/test_r2p_p0c_attribution.py",
+      "--ignore=tests/test_r2p_p0e.py",
+      "--ignore=tests/test_r2p_p0e_adversarial.py",
+      "--ignore=tests/test_r2p_p0e_packet_integrity.py",
+      "--ignore=tests/test_r2p_p0e_recovery.py",
+      "--ignore=tests/test_r2p_p0e_y_restore.py",
+      "--ignore=tests/test_r2p_p0e_y_restore_recovery.py",
+      "--ignore=tests/test_r2p_p0e_y_restore_recovery2.py",
+      "--ignore=tests/test_r2p_p0e_y_restore_recovery3.py",
+      "--ignore=tests/test_r2p_packet_integrity.py",
+      "--ignore=tests/test_r2p_passive.py",
+      "--ignore=tests/test_r2p_task_lifecycle.py",
+      "--ignore=tests/test_r2q_failed_022_y_restore.py",
+      "--ignore=tests/test_r2q_failed_024_y_restore.py",
+      "--ignore=tests/test_r2q_failed_025_y_restore.py",
+      "--ignore=tests/test_r2q_failed_026_y_restore.py",
+      "--ignore=tests/test_r2q_historical_device_adapter.py",
+      "--ignore=tests/test_r2q_operator_receipt_freezer.py",
+      "--ignore=tests/test_r2q_quiet_census_design.py",
+      "--ignore=tests/test_r2q_quiet_census_runtime.py",
+      "--ignore=tests/test_release.py",
+      "--ignore=tests/test_repo_hygiene.py",
+      "--ignore=tests/test_rr_record.py",
+      "--ignore=tests/test_run_index.py",
+      "--ignore=tests/test_savestate_hotkeys.py",
+      "--ignore=tests/test_send_keys.py",
+      "--ignore=tests/test_session_lib.py",
+      "--ignore=tests/test_smoke.py",
+      "--ignore=tests/test_training_flikflik_mod.py",
+      "--ignore=tests/test_training_grain_counter_mod.py",
+      "--ignore=tests/test_training_grain_mod.py",
+      "--ignore=tests/test_training_letter_mod.py",
+      "--ignore=tests/test_type1_reset.py",
+      "--ignore=tests/test_vault_lint.py",
+      "--ignore=tests/test_wait_for.py",
+      "--ignore=tests/test_wine_capture.py"
+    ],
+    "scope": "terrain, scenery, compiler, native contacts, page bootstrap, night, render distance and dependent formats; unrelated R2q/tool suites excluded"
+  },
+  "final_fast_gates": {
+    "path": "work/experiments/EXP-20260908-007/final-fast-gates.log",
+    "bytes": 1719,
+    "sha256": "884c10ceccb6211d931977dc8935d41f1cb5020f987f67511b4c2435e45dce69"
+  },
+  "preservation": {
+    "accepted": true,
+    "time_ns": 1788877225585592856,
+    "normal_files_exact": 721,
+    "executable_sha256": "b7566474e809cb6e930f3f674f2e272256d3c6474741f8c2e963a01b64d7ac3b",
+    "saved_blender_sha256": "52cbe34c88ee5f15a2edc242059b166b7276300f2fcbe14f48118c5a27341ca9",
+    "additions": [
+      "PC/BUGS/bugs.log"
+    ],
+    "bank_files_exact": 760,
+    "game": {
+      "pid": 154936,
+      "start": 2024608,
+      "group": 154693,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260908-002\\handoff-detail\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "state": {
+      "level": 1,
+      "position": [
+        159916,
+        -131785,
+        416757
+      ],
+      "heading": 420,
+      "contact": [
+        197,
+        9973349
+      ],
+      "barrier_head": 9888539,
+      "vertical_velocity": 0,
+      "contact_flags": 257
+    },
+    "scope": "Fresh read-only normal asset/Blender/EXE hashes and live identity/state. Generic audit rows matched to the immutable existing owned/foreign binding. No input or live writes."
+  },
+  "remaining": [
+    "Actual frame, query, register/stack, driver and trailer reference lifetime closure",
+    "In-process transition readiness, safe eviction and retained old ground on load failure",
+    "Actor/item persistence across real unload/reload, respawn and exit; high-slot live actor interaction",
+    "Wider coordinates and long hardware traversal with bounded actual memory and unchanged models/controls"
+  ],
+  "experiment": "EXP-20260908-006",
+  "status": "bounded-native-contact-repair",
+  "normal_runtime_executable_changed": false,
+  "future_chunk_compiler_repair_enabled": true,
+  "patch": {
+    "source_sha256": "b7566474e809cb6e930f3f674f2e272256d3c6474741f8c2e963a01b64d7ac3b",
+    "output_sha256": "16b41c4cd0aebe8800d902e14331d8b30d58030a62e865f5fc5fb08952d11dbf",
+    "contact_base": 17293312,
+    "contact_count": 66,
+    "contact_size": 20,
+    "camera_slot": 65,
+    "actor_slots": [
+      1,
+      64
+    ],
+    "player_slot": 0,
+    "added_image_bytes": 0,
+    "relocations_unchanged": true,
+    "exact_inverse": true,
+    "patches": [
+      {
+        "file_offset": 310929,
+        "before_hex": "683d7f00",
+        "after_hex": "00e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 311118,
+        "before_hex": "683d7f00",
+        "after_hex": "00e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 689273,
+        "before_hex": "683d7f00",
+        "after_hex": "00e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 689289,
+        "before_hex": "483f7f00",
+        "after_hex": "28e50701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 693062,
+        "before_hex": "a83e7f00",
+        "after_hex": "14e50701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 693288,
+        "before_hex": "a83e7f00",
+        "after_hex": "14e50701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 695396,
+        "before_hex": "a83e7f00",
+        "after_hex": "14e50701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 695684,
+        "before_hex": "a83e7f00",
+        "after_hex": "14e50701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 697896,
+        "before_hex": "6c3d7f00",
+        "after_hex": "04e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 697975,
+        "before_hex": "6c3d7f00",
+        "after_hex": "04e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 698058,
+        "before_hex": "6c3d7f00",
+        "after_hex": "04e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 699230,
+        "before_hex": "763d7f00",
+        "after_hex": "0ee00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 699384,
+        "before_hex": "683d7f00",
+        "after_hex": "00e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 699438,
+        "before_hex": "683d7f00",
+        "after_hex": "00e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 699602,
+        "before_hex": "783d7f00",
+        "after_hex": "10e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 699610,
+        "before_hex": "783d7f00",
+        "after_hex": "10e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 699616,
+        "before_hex": "783d7f00",
+        "after_hex": "10e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 699625,
+        "before_hex": "783d7f00",
+        "after_hex": "10e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 705212,
+        "before_hex": "683d7f00",
+        "after_hex": "00e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 705446,
+        "before_hex": "683d7f00",
+        "after_hex": "00e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 705512,
+        "before_hex": "6c3d7f00",
+        "after_hex": "04e00701",
+        "purpose": "Contact reference; HIGHLOW retained"
+      },
+      {
+        "file_offset": 108300,
+        "before_hex": "10",
+        "after_hex": "41",
+        "purpose": "Camera selector separate from all 64 actors"
+      },
+      {
+        "file_offset": 765548,
+        "before_hex": "683d3f00",
+        "after_hex": "00e0c700",
+        "purpose": "PIC exit contact reader"
+      }
+    ],
+    "scope": "Bounded 64-placement actor population; native initialization retains the unknown +8/+12 bytes. Cached contacts still require lifetime pins."
+  },
+  "static_references": {
+    "source_sha256": "b7566474e809cb6e930f3f674f2e272256d3c6474741f8c2e963a01b64d7ac3b",
+    "references": [
+      {
+        "operand_va": 4508305,
+        "value": 8338792,
+        "instruction_va": 4508303,
+        "bytes": "390d683d7f00",
+        "instruction": "cmp dword ptr [0x7f3d68], ecx",
+        "changed": true
+      },
+      {
+        "operand_va": 4508494,
+        "value": 8338792,
+        "instruction_va": 4508492,
+        "bytes": "3905683d7f00",
+        "instruction": "cmp dword ptr [0x7f3d68], eax",
+        "changed": true
+      },
+      {
+        "operand_va": 4886649,
+        "value": 8338792,
+        "instruction_va": 4886648,
+        "bytes": "b8683d7f00",
+        "instruction": "mov eax, 0x7f3d68",
+        "changed": true
+      },
+      {
+        "operand_va": 4886665,
+        "value": 8339272,
+        "instruction_va": 4886664,
+        "bytes": "3d483f7f00",
+        "instruction": "cmp eax, 0x7f3f48",
+        "changed": true
+      },
+      {
+        "operand_va": 4890438,
+        "value": 8339112,
+        "instruction_va": 4890436,
+        "bytes": "81faa83e7f00",
+        "instruction": "cmp edx, 0x7f3ea8",
+        "changed": true
+      },
+      {
+        "operand_va": 4890664,
+        "value": 8339112,
+        "instruction_va": 4890663,
+        "bytes": "3da83e7f00",
+        "instruction": "cmp eax, 0x7f3ea8",
+        "changed": true
+      },
+      {
+        "operand_va": 4892772,
+        "value": 8339112,
+        "instruction_va": 4892770,
+        "bytes": "81faa83e7f00",
+        "instruction": "cmp edx, 0x7f3ea8",
+        "changed": true
+      },
+      {
+        "operand_va": 4893060,
+        "value": 8339112,
+        "instruction_va": 4893059,
+        "bytes": "3da83e7f00",
+        "instruction": "cmp eax, 0x7f3ea8",
+        "changed": true
+      },
+      {
+        "operand_va": 4895272,
+        "value": 8338796,
+        "instruction_va": 4895269,
+        "bytes": "8b1c856c3d7f00",
+        "instruction": "mov ebx, dword ptr [eax*4 + 0x7f3d6c]",
+        "changed": true
+      },
+      {
+        "operand_va": 4895351,
+        "value": 8338796,
+        "instruction_va": 4895348,
+        "bytes": "8b3c856c3d7f00",
+        "instruction": "mov edi, dword ptr [eax*4 + 0x7f3d6c]",
+        "changed": true
+      },
+      {
+        "operand_va": 4895434,
+        "value": 8338796,
+        "instruction_va": 4895431,
+        "bytes": "8b04956c3d7f00",
+        "instruction": "mov eax, dword ptr [edx*4 + 0x7f3d6c]",
+        "changed": true
+      },
+      {
+        "operand_va": 4896606,
+        "value": 8338806,
+        "instruction_va": 4896603,
+        "bytes": "6689b5763d7f00",
+        "instruction": "mov word ptr [ebp + 0x7f3d76], si",
+        "changed": true
+      },
+      {
+        "operand_va": 4896760,
+        "value": 8338792,
+        "instruction_va": 4896758,
+        "bytes": "8db5683d7f00",
+        "instruction": "lea esi, [ebp + 0x7f3d68]",
+        "changed": true
+      },
+      {
+        "operand_va": 4896814,
+        "value": 8338792,
+        "instruction_va": 4896812,
+        "bytes": "8d95683d7f00",
+        "instruction": "lea edx, [ebp + 0x7f3d68]",
+        "changed": true
+      },
+      {
+        "operand_va": 4896978,
+        "value": 8338808,
+        "instruction_va": 4896976,
+        "bytes": "ff85783d7f00",
+        "instruction": "inc dword ptr [ebp + 0x7f3d78]",
+        "changed": true
+      },
+      {
+        "operand_va": 4896986,
+        "value": 8338808,
+        "instruction_va": 4896984,
+        "bytes": "89b5783d7f00",
+        "instruction": "mov dword ptr [ebp + 0x7f3d78], esi",
+        "changed": true
+      },
+      {
+        "operand_va": 4896992,
+        "value": 8338808,
+        "instruction_va": 4896990,
+        "bytes": "83bd783d7f000a",
+        "instruction": "cmp dword ptr [ebp + 0x7f3d78], 0xa",
+        "changed": true
+      },
+      {
+        "operand_va": 4897001,
+        "value": 8338808,
+        "instruction_va": 4896999,
+        "bytes": "c785783d7f000b000000",
+        "instruction": "mov dword ptr [ebp + 0x7f3d78], 0xb",
+        "changed": true
+      },
+      {
+        "operand_va": 4902588,
+        "value": 8338792,
+        "instruction_va": 4902587,
+        "bytes": "a1683d7f00",
+        "instruction": "mov eax, dword ptr [0x7f3d68]",
+        "changed": true
+      },
+      {
+        "operand_va": 4902822,
+        "value": 8338792,
+        "instruction_va": 4902819,
+        "bytes": "8b048d683d7f00",
+        "instruction": "mov eax, dword ptr [ecx*4 + 0x7f3d68]",
+        "changed": true
+      },
+      {
+        "operand_va": 4902888,
+        "value": 8338796,
+        "instruction_va": 4902885,
+        "bytes": "8b148d6c3d7f00",
+        "instruction": "mov edx, dword ptr [ecx*4 + 0x7f3d6c]",
+        "changed": true
+      },
+      {
+        "operand_va": 4900026,
+        "value": 8339272,
+        "instruction_va": 4900024,
+        "bytes": "890d483f7f00",
+        "instruction": "mov dword ptr [0x7f3f48], ecx",
+        "changed": false
+      },
+      {
+        "operand_va": 4900822,
+        "value": 8339272,
+        "instruction_va": 4900820,
+        "bytes": "8935483f7f00",
+        "instruction": "mov dword ptr [0x7f3f48], esi",
+        "changed": false
+      },
+      {
+        "operand_va": 4962924,
+        "value": 4144488,
+        "instruction_va": 4962922,
+        "bytes": "8b8b683d3f00",
+        "instruction": "mov ecx, dword ptr [ebx + 0x3f3d68]",
+        "changed": true
+      }
+    ],
+    "windows": [
+      [
+        4305671,
+        30,
+        "0bc776c5569b161acfa491f4fd95ca59b03b2e7de2d8eb208f2ea94483d79582"
+      ],
+      [
+        4508160,
+        512,
+        "3d1d20f8c44f76f29a5a7509e22edb708efe9708e70d49194d834c853bebf54a"
+      ],
+      [
+        4886648,
+        23,
+        "c9f4cabf7820d2c2dc5965b81623fcd99c688695d076ee686a50a93dee85b63a"
+      ],
+      [
+        4889504,
+        2346,
+        "c37588295682b4bbd9cd7a9453f9029054c792940692f4131f952daa0064ca59"
+      ],
+      [
+        4891856,
+        3104,
+        "59bf94db0db8aa8c3b2e4a8c02c64bd75823d7263e5e1323b58b47fc61ff36ee"
+      ],
+      [
+        4895136,
+        3168,
+        "6cc7ef207744e3d52674c6162bfec57c75bfb894daff03ca9fbcea3ad9678b5f"
+      ],
+      [
+        4902576,
+        356,
+        "d67d43aa1d8f9fb5060a6f6131d17503e4fe02c1e013b071979347f92cf59df9"
+      ],
+      [
+        4962852,
+        151,
+        "d1e1cd383eae13f87fb9f96c35ea9dc4fbd596dc983dff15f907df067b97da8f"
+      ]
+    ]
+  },
+  "summary": {
+    "accepted": true,
+    "contact_slots": 66,
+    "native_movement_comparisons": 3960,
+    "camera_cell_approaches": 80,
+    "camera_branches": [
+      4890527,
+      4890814,
+      4892919,
+      4893210
+    ],
+    "native_high_slots_pin": true,
+    "entity_reset_preserves_contacts": true,
+    "hardware_crowd_selectors": 27,
+    "hardware_crowd_plants": 20,
+    "hardware_crowd_contact_slots": [
+      0,
+      6,
+      7
+    ],
+    "hardware_crowd_samples": 998,
+    "hardware_crowd_correct_lives_samples": 300,
+    "hardware_64_selector_assignment": true,
+    "hardware_high_slot_movement_accepted": false,
+    "rejected_attempts": [
+      "seeds64 initial menu presses during fade; no initial level entry until retry at confirmed training carousel",
+      "seeds64 high-slot approach left preregistered interior rectangle and stopped; no pickup sent",
+      "seeds64-near Flik displaced from nominal spawn; nearby seed63 remained uncarried after one pickup input; live high-slot movement not established"
+    ],
+    "bounded_scope": "Native table/slot repair and exact original movement response are verified; every actor class/state is not. 64-seed interaction route and cause of initial displacement remain unresolved. No item persistence or eviction claim."
+  },
+  "predecessor_recheck": {
+    "accepted": true,
+    "predecessor_report": "reports/terrain/EXP-20260908-005.json",
+    "predecessor_private_artifacts_exact": 82,
+    "archived_sources": [
+      {
+        "path": "work/experiments/EXP-20260908-006/superseded/terrain_page_package-EXP005.py",
+        "sha256": "413ff581c07561a239f6b617fbb418625826ed86b8a7715ad3a849e39a6efd43"
+      },
+      {
+        "path": "work/experiments/EXP-20260908-006/superseded/terrain_page_residency-EXP005.py",
+        "sha256": "31b80368f4e6cdd42f5d9c52d1a21fd6d14bba0e9c10f9b12dc261c22bceb2c7"
+      }
+    ],
+    "scope": "The uncommitted EXP005 package source is reconstructed by exact inverse of the explicit EXP006 edits and matches its frozen SHA-256. Residency matches HEAD and predecessor dependency hash. Historical artifacts remain untouched; new implementation supersedes their current-source hashes."
+  },
+  "harness_corrections": {
+    "native_pin_expectation": {
+      "incorrect": [
+        1,
+        3
+      ],
+      "observed": [
+        1,
+        2
+      ],
+      "source_records": [
+        189,
+        190
+      ],
+      "reason": "Wrong fixture key assumption; resolved against actual contact pointer/source mappings."
+    },
+    "live_discovery": {
+      "rejected_before_input": true,
+      "reason": "Matched both gamescope-1 and gamescope-1-ei; discovery now restricts numeric compositor socket names and verifies peer group."
+    },
+    "scope": "Rejected harness assertions, no engine-fault claim.",
+    "model_expectation": {
+      "rejected_without_native_data_change": true,
+      "incorrect_delta": 0,
+      "correct_delta": 88190,
+      "static_derivation": "Native model reference uses 593276-byte DAT/367744-byte retained terrain; current uses 681460/367750. Difference 88184+6. PLANTTER retained16692 unchanged."
+    },
+    "first_observation_lives": {
+      "incorrect_address": "0059A610",
+      "correct_address": "0059D9B0",
+      "action": "First observation accepted only for contact/storage fields; lives field rejected. observe-initial.py preserves source. Fresh corrected observation follows."
+    }
+  },
+  "hardware_arms": [
+    {
+      "arm": "crowd27",
+      "prepare": {
+        "arm": "crowd27",
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260908-006/crowd27/game",
+        "exe": "/home/dev/ABLPC/work/copies/EXP-20260908-006/crowd27/bugs.exe",
+        "exe_sha256": "16b41c4cd0aebe8800d902e14331d8b30d58030a62e865f5fc5fb08952d11dbf",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "284ed42580bcd5d902eca55f60daaf7c57f7624be3a2f5d7ea10a4e9dd7075b4",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "1b62f9de63db0cca6cb9b6bcbd64a37e4e80b2a8e219f7ed0a27117f05f749c7",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "changed_assets": [
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW"
+        ],
+        "file_count": 721,
+        "input_plan": "Derived auto-hardware image, six-marker/CD gates. Right once / Return / title Return. Private contact population, passive endurance plus bounded ordinary movement. Read-only proc observations; no external writes. Existing normal and aqua-glow sessions protected."
+      },
+      "active": {
+        "leader": {
+          "pid": 238443,
+          "start": 4855349,
+          "group": 238443,
+          "cmd": "/usr/bin/bash /home/dev/ABLPC/work/experiments/EXP-20260908-006/crowd27/launch.sh "
+        },
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260908-006/crowd27/game",
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260908-006/crowd27/prefix",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "284ed42580bcd5d902eca55f60daaf7c57f7624be3a2f5d7ea10a4e9dd7075b4",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "1b62f9de63db0cca6cb9b6bcbd64a37e4e80b2a8e219f7ed0a27117f05f749c7",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "game": {
+          "pid": 238693,
+          "start": 4855492,
+          "group": 238443,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260908-006\\crowd27\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":3",
+        "xwayland": {
+          "pid": 238481,
+          "start": 4855369,
+          "group": 238443,
+          "cmd": "Xwayland :3 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "socket": "gamescope-1",
+        "window": 14680071
+      },
+      "close": {
+        "path": "work/experiments/EXP-20260908-006/crowd27/close-receipt.json",
+        "bytes": 8538,
+        "sha256": "305ca65b24ae5782081eb0a12f1b94a269637f5693a4717858b4b8811b3fd112"
+      },
+      "after_audit": {
+        "path": "work/experiments/EXP-20260908-006/crowd27/after-close-audit.json",
+        "bytes": 5483,
+        "sha256": "bfce4c3d51d9dbb6372385e1858022c9de776faed62f8574ce79615f59c7b98c"
+      }
+    },
+    {
+      "arm": "seeds64",
+      "prepare": {
+        "arm": "seeds64",
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260908-006/seeds64/game",
+        "exe": "/home/dev/ABLPC/work/copies/EXP-20260908-006/seeds64/bugs.exe",
+        "exe_sha256": "16b41c4cd0aebe8800d902e14331d8b30d58030a62e865f5fc5fb08952d11dbf",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "a849f25bc823ee6eaf59878423a0de0be7bc0ac86507c8c674135ac62621047b",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "1b62f9de63db0cca6cb9b6bcbd64a37e4e80b2a8e219f7ed0a27117f05f749c7",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "changed_assets": [
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW"
+        ],
+        "file_count": 721,
+        "input_plan": "Derived auto-hardware image, six-marker/CD gates. Right once / Return / title Return. Private contact population, passive endurance plus bounded ordinary movement. Read-only proc observations; no external writes. Existing normal and aqua-glow sessions protected."
+      },
+      "active": {
+        "leader": {
+          "pid": 259878,
+          "start": 4896287,
+          "group": 259878,
+          "cmd": "/usr/bin/bash /home/dev/ABLPC/work/experiments/EXP-20260908-006/seeds64/launch.sh "
+        },
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260908-006/seeds64/game",
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260908-006/seeds64/prefix",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "a849f25bc823ee6eaf59878423a0de0be7bc0ac86507c8c674135ac62621047b",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "1b62f9de63db0cca6cb9b6bcbd64a37e4e80b2a8e219f7ed0a27117f05f749c7",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "game": {
+          "pid": 260113,
+          "start": 4896431,
+          "group": 259878,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260908-006\\seeds64\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":3",
+        "xwayland": {
+          "pid": 259908,
+          "start": 4896311,
+          "group": 259878,
+          "cmd": "Xwayland :3 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "socket": "gamescope-1",
+        "window": 14680071
+      },
+      "close": {
+        "path": "work/experiments/EXP-20260908-006/seeds64/close-receipt.json",
+        "bytes": 8538,
+        "sha256": "aad12b489edbc1d45dab8a90d69d219633d4608c7d206a2ab8f3c28250ffd85b"
+      },
+      "after_audit": {
+        "path": "work/experiments/EXP-20260908-006/seeds64/after-close-audit.json",
+        "bytes": 5483,
+        "sha256": "bfce4c3d51d9dbb6372385e1858022c9de776faed62f8574ce79615f59c7b98c"
+      }
+    },
+    {
+      "arm": "seeds64-near",
+      "prepare": {
+        "arm": "seeds64-near",
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260908-006/seeds64-near/game",
+        "exe": "/home/dev/ABLPC/work/copies/EXP-20260908-006/seeds64-near/bugs.exe",
+        "exe_sha256": "16b41c4cd0aebe8800d902e14331d8b30d58030a62e865f5fc5fb08952d11dbf",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "3940ac9d2a61c39cbff0ea396b3baebfc3161a44c7a4c0e3ba803666ff241bc7",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "1b62f9de63db0cca6cb9b6bcbd64a37e4e80b2a8e219f7ed0a27117f05f749c7",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "changed_assets": [
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW"
+        ],
+        "file_count": 721,
+        "input_plan": "Derived auto-hardware image, six-marker/CD gates. Right once / Return / title Return. Private contact population, passive endurance plus bounded ordinary movement. Read-only proc observations; no external writes. Existing normal and aqua-glow sessions protected."
+      },
+      "active": {
+        "leader": {
+          "pid": 263136,
+          "start": 4984555,
+          "group": 263136,
+          "cmd": "/usr/bin/bash /home/dev/ABLPC/work/experiments/EXP-20260908-006/seeds64-near/launch.sh "
+        },
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260908-006/seeds64-near/game",
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260908-006/seeds64-near/prefix",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "3940ac9d2a61c39cbff0ea396b3baebfc3161a44c7a4c0e3ba803666ff241bc7",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "1b62f9de63db0cca6cb9b6bcbd64a37e4e80b2a8e219f7ed0a27117f05f749c7",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "game": {
+          "pid": 263366,
+          "start": 4984689,
+          "group": 263136,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260908-006\\seeds64-near\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":3",
+        "xwayland": {
+          "pid": 263165,
+          "start": 4984581,
+          "group": 263136,
+          "cmd": "Xwayland :3 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "socket": "gamescope-1",
+        "window": 14680071
+      },
+      "close": {
+        "path": "work/experiments/EXP-20260908-006/seeds64-near/close-receipt.json",
+        "bytes": 8524,
+        "sha256": "2ed069472e3c96d28430a07e2855048516e79a59f7c877c0ba8cfa8133bbc83f"
+      },
+      "after_audit": {
+        "path": "work/experiments/EXP-20260908-006/seeds64-near/after-close-audit.json",
+        "bytes": 5483,
+        "sha256": "bfce4c3d51d9dbb6372385e1858022c9de776faed62f8574ce79615f59c7b98c"
+      }
+    }
+  ],
+  "source_files": [
+    {
+      "path": "reimplementation/ablpc/contact_slots.py",
+      "bytes": 7119,
+      "sha256": "840b54a258f0401e120e4e5c50563de2084a463931113ea8aeeb1c35f6196792",
+      "snapshot": {
+        "path": "work/experiments/EXP-20260908-006/source-snapshots/reimplementation/ablpc/contact_slots.py",
+        "bytes": 7119,
+        "sha256": "840b54a258f0401e120e4e5c50563de2084a463931113ea8aeeb1c35f6196792"
+      }
+    },
+    {
+      "path": "reimplementation/ablpc/terrain_page_package.py",
+      "bytes": 9009,
+      "sha256": "0177f87a00d4e0ad83fe827b491edad1fa07c448dfda58ad589db00f6f8e3961",
+      "snapshot": {
+        "path": "work/experiments/EXP-20260908-006/source-snapshots/reimplementation/ablpc/terrain_page_package.py",
+        "bytes": 9009,
+        "sha256": "0177f87a00d4e0ad83fe827b491edad1fa07c448dfda58ad589db00f6f8e3961"
+      }
+    },
+    {
+      "path": "reimplementation/ablpc/terrain_page_residency.py",
+      "bytes": 9586,
+      "sha256": "0a715be34925f9d03764df55f480d7c9376facc5b095a272a23110353d066170",
+      "snapshot": {
+        "path": "work/experiments/EXP-20260908-006/source-snapshots/reimplementation/ablpc/terrain_page_residency.py",
+        "bytes": 9586,
+        "sha256": "0a715be34925f9d03764df55f480d7c9376facc5b095a272a23110353d066170"
+      }
+    },
+    {
+      "path": "reimplementation/ablpc/level_scene_build.py",
+      "bytes": 24111,
+      "sha256": "58d93932aa47a9c4a9021c618edba66e2c61718acbb491ed08d35d304fcbf9f5",
+      "snapshot": {
+        "path": "work/experiments/EXP-20260908-006/source-snapshots/reimplementation/ablpc/level_scene_build.py",
+        "bytes": 24111,
+        "sha256": "58d93932aa47a9c4a9021c618edba66e2c61718acbb491ed08d35d304fcbf9f5"
+      }
+    },
+    {
+      "path": "tests/test_contact_slots.py",
+      "bytes": 7669,
+      "sha256": "d2f45b139b898c0aebf2d02643d01b2eec80b375982bb244601bc1928cd0fc4f",
+      "snapshot": {
+        "path": "work/experiments/EXP-20260908-006/source-snapshots/tests/test_contact_slots.py",
+        "bytes": 7669,
+        "sha256": "d2f45b139b898c0aebf2d02643d01b2eec80b375982bb244601bc1928cd0fc4f"
+      }
+    },
+    {
+      "path": "tests/test_terrain_page_residency.py",
+      "bytes": 6019,
+      "sha256": "96ac4f3b665bda6b900ea42dae25692675f7e3f8d52348d76bc8c681b9da037e",
+      "snapshot": {
+        "path": "work/experiments/EXP-20260908-006/source-snapshots/tests/test_terrain_page_residency.py",
+        "bytes": 6019,
+        "sha256": "96ac4f3b665bda6b900ea42dae25692675f7e3f8d52348d76bc8c681b9da037e"
+      }
+    }
+  ],
+  "private_artifact_count": 121,
+  "private_artifacts": [
+    {
+      "path": "work/experiments/EXP-20260908-006/audit-close.py",
+      "bytes": 1663,
+      "sha256": "4c10e169ad78a9d281c8a1b8940bf4220ec5ed38fb3560757ef32113a9602f0c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/bugs.exe",
+      "bytes": 1072128,
+      "sha256": "16b41c4cd0aebe8800d902e14331d8b30d58030a62e865f5fc5fb08952d11dbf"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/build.py",
+      "bytes": 1462,
+      "sha256": "152a4b99da040ffcd47ebc2a2500cc59cdd96b1f17c0699e5f771d709d449d10"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/camera-solvers.json",
+      "bytes": 45042,
+      "sha256": "039ac189f0b7d1ab2b7621b15650d0c58c13f2092dc62f6f8814c9454dde1bce"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/camera-solvers.py",
+      "bytes": 2191,
+      "sha256": "f41d86614414a42e634a90bbbec161150e523a79ced64eb68393c717e5369db8"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd-model-expected.json",
+      "bytes": 59557,
+      "sha256": "635eb4174c2dab1cb021833944c388dbdd5f2b40750856ef599da501037c30ba"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd-state.py",
+      "bytes": 1290,
+      "sha256": "f97e360a425dbec9bc7af248f8e36fc360c5bdf215a9f1b14c6bd7e7c2c686e4"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/active.json",
+      "bytes": 2802,
+      "sha256": "6e32eb1dc53d65721e96ed9b5b04b77cac1534af881a4f15c8f4c792973ebf60"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/after-close-audit.json",
+      "bytes": 5483,
+      "sha256": "bfce4c3d51d9dbb6372385e1858022c9de776faed62f8574ce79615f59c7b98c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/audio-module.txt",
+      "bytes": 10,
+      "sha256": "6eff38e45666d431cdfc21730001a386f894e5cbe573203776436c524d2a78da"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/before-close-audit.json",
+      "bytes": 11759,
+      "sha256": "2eaa7810507d5a87e5e213b191d29a7faf250bf1837df49ba875a006ba5a497a"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/close-pinned.py",
+      "bytes": 2964,
+      "sha256": "cacc91f3db0b0e3414d68973b1feb68c470dded1c366237a788895e1526cfe61"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/close-receipt.json",
+      "bytes": 8538,
+      "sha256": "305ca65b24ae5782081eb0a12f1b94a269637f5693a4717858b4b8811b3fd112"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/close.log",
+      "bytes": 8538,
+      "sha256": "305ca65b24ae5782081eb0a12f1b94a269637f5693a4717858b4b8811b3fd112"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/contacts-1788875327287435411.json",
+      "bytes": 2375229,
+      "sha256": "1b00f41e815bae79de0ca13f37fe4ff1023ae192f549ff496dae06c28fa5e144"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/contacts-1788875478541121177.json",
+      "bytes": 1021433,
+      "sha256": "115969d1bff00fadaeea145dc279bdbdaeef842d9c1dfc1d1d648d4c9eb35802"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/control.py",
+      "bytes": 19060,
+      "sha256": "342e81ff62280a6819190dc742a2dde2b6f2dc1f95212c85531b22d97a1ec119"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/donor-bugs.log",
+      "bytes": 371132,
+      "sha256": "264330cf3e387eb72388eb79f3d6060eeb294797544fc14c3c10d79f8104cf4e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/frame-1788875364661025797.png",
+      "bytes": 204776,
+      "sha256": "4066bcdf00b429505a4602c028c4390b6a888b52f34e50da2acf584d42d704db"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/launch.json",
+      "bytes": 2229,
+      "sha256": "8ff4f5e83b586f142a2cd1927720b91c23dcac5d9b20dbbe577b4aef018a0a65"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/launch.log",
+      "bytes": 11229,
+      "sha256": "fbc558ebe71af233788212f57d784e33b139ef81d60f8e94266cca75234192a0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/launch.sh",
+      "bytes": 886,
+      "sha256": "94d856fe4a3e0e3684eefad019b62ce6713429b5d40a8fb9b7879a743fd87b70"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/models-1788875420462503493.json",
+      "bytes": 35218,
+      "sha256": "8e1f52ae19ae892256e13c3ae964f10a098f2f6aa211c5f3f8ff3ee55a9203f3"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/prepare.json",
+      "bytes": 2513,
+      "sha256": "1f31f86ecda0f86ecee0a1f343e3c0b897a1951e58b11d67234fc37413ca3387"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/receipt-1788875144228543552.json",
+      "bytes": 2369,
+      "sha256": "cdc42f7dee737ff7d2824e5cff1cff2dac87af86bff1b8e08c009a496fae3969"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/receipt-1788875210825565095.json",
+      "bytes": 3332,
+      "sha256": "d201d8528596f86c92c3918c8a0b1e8dd21e1c280fbd4aecbfc411274da1d724"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/receipt-1788875210851310132.json",
+      "bytes": 287,
+      "sha256": "fd2a6ae88c9c21fd8d6ea53888aef67757f45a5188b82f14fedae01ec9e70486"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/receipt-1788875211118736697.json",
+      "bytes": 692,
+      "sha256": "7fa1971f7435e98466f0d3b91487f97f38dba91025d1489374ccc14110fddba9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/receipt-1788875211791313104.json",
+      "bytes": 695,
+      "sha256": "369344f78ed6fe25f19ba9c7393d75762d35ff0e99c5118ecd2de26ace4af5c4"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/receipt-1788875212864770393.json",
+      "bytes": 705,
+      "sha256": "dd02ba8b3807b1be14922dd9c2a7140db2edcbf85e3956e1963c54223298474e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/receipt-1788875214094150029.json",
+      "bytes": 319,
+      "sha256": "c3a921ae5db46397fa30b35d0870726707c5d184fc46be354095740be1735f23"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/receipt-1788875365005440890.json",
+      "bytes": 841,
+      "sha256": "1a1dc1c25e8f4cadd2b6061cc6a0ffb43a63c70c02280d05fca075e9e853b069"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/receipt-1788875421255586013.json",
+      "bytes": 11399,
+      "sha256": "4a9a5d86970eba16d46de3556bc7cf9d77c7829401a5699f514dfa2de2ec25f7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/crowd27/resident-chunks.json",
+      "bytes": 2287,
+      "sha256": "49a6446b9630f874ef2192b4ad1d4c444b3be0bf96135edb6b92761698ebc4de"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/enter-level-stable.py",
+      "bytes": 1091,
+      "sha256": "e1096443be682b905f1912138f797e4306be9c2e41f5bd2448d0930e2f87e2ed"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/enter-level.py",
+      "bytes": 1015,
+      "sha256": "a153b12ba69e8961429a0365e3db887283e01d952a1b2b7cbfa466217e958907"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/harness-corrections.json",
+      "bytes": 1144,
+      "sha256": "a95beab4706f1e5592951c35c9687e835582453d601ad5ad3c0ffee1093a75af"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/level-init-ghidra.json",
+      "bytes": 44525,
+      "sha256": "29e967769f66b9e25a203308836d10e8dadd9b46bbd8c2ded2044a777445f1f3"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/local-move.py",
+      "bytes": 1802,
+      "sha256": "7c40f29d8bf3c0930ab46512db818ff3c761e5facb3914df33c374b8ace3589b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/make-seeds64-near.py",
+      "bytes": 1504,
+      "sha256": "26eb75c673839842c67aef46b20acb2de963c9588037878ea5ab2dfcb4d616b6"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/make-seeds64.py",
+      "bytes": 1410,
+      "sha256": "4e364a7ef17454a28480ad38cc4961572de16d27385d2009f6b439839a4784a0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/native-contacts.json",
+      "bytes": 27902,
+      "sha256": "1a9b83ddd253f18e423b922a8ed6af010e9a8b9229e9e164792a1e846ff28c46"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/native-contacts.py",
+      "bytes": 4401,
+      "sha256": "b4a52d0d61437cd1075649debd69a5a65c0b5df797f7f07b19a9c825fbe29204"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/observe-initial.py",
+      "bytes": 2446,
+      "sha256": "bb569af2c20b64bfc0a9f1d0ff591fcf440a4333de7e3339c25262ec1bf4be9b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/observe.py",
+      "bytes": 2426,
+      "sha256": "1fa776db28a61fd671fa0d9eeaf409fc426c44e72d41adddd98d417eb02418f7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/patch.json",
+      "bytes": 4250,
+      "sha256": "ba7fc16a864c179a6402688eb964882eb0249b740786c5f3d85757c7dc9a33ba"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/pre-preservation.json",
+      "bytes": 6097,
+      "sha256": "fa7bce72d68a54fcb7286740e4f4b2e8e2090dbfe450f599c2bbddc4b8e67277"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/pre-preservation.py",
+      "bytes": 2424,
+      "sha256": "81c7b16abe1ad0b27fbd7eb5ce1fd0de039d3132c4049480ae8ff5d797134ac3"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/predecessor-recheck.json",
+      "bytes": 842,
+      "sha256": "3ad450171bcd36447b5286316f4ab81152e7b16a9cc38134943d66fe5e866946"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/prepare-live.py",
+      "bytes": 4151,
+      "sha256": "e3f14913d3ccf817de8d93e265cb4e2ed65ce6c8e437c832252057a9d683b655"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/preserve-predecessor.py",
+      "bytes": 2222,
+      "sha256": "fad7709689157e78b569e31df82f42fc26d6311149e94e2121003661c8307acc"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/active.json",
+      "bytes": 2802,
+      "sha256": "746e872dc2e2792d4fe43caeb4357a4a0ebcb29465a9e1b4c56e510f1d4b9f1a"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/after-close-audit.json",
+      "bytes": 5483,
+      "sha256": "bfce4c3d51d9dbb6372385e1858022c9de776faed62f8574ce79615f59c7b98c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/approach-high.json",
+      "bytes": 64667,
+      "sha256": "4524672bdc1d5e6ee144630b4bd5677bed5ef511dd901ec108f7ea053f0de2a3"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/audio-module.txt",
+      "bytes": 10,
+      "sha256": "6eff38e45666d431cdfc21730001a386f894e5cbe573203776436c524d2a78da"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/before-close-audit.json",
+      "bytes": 11759,
+      "sha256": "3a5425d5ccd8b64ce8b652303f556a11108244b51dc91fced0e01b9d35e22acf"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/close-pinned.py",
+      "bytes": 2964,
+      "sha256": "49ae0925ecb265d97a0d6bdaee264d32d456b276aea576021b4e938253b4e572"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/close-receipt.json",
+      "bytes": 8538,
+      "sha256": "aad12b489edbc1d45dab8a90d69d219633d4608c7d206a2ab8f3c28250ffd85b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/close.log",
+      "bytes": 8538,
+      "sha256": "aad12b489edbc1d45dab8a90d69d219633d4608c7d206a2ab8f3c28250ffd85b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/contacts-1788876056369804282.json",
+      "bytes": 4319376,
+      "sha256": "62ed4fb7707d9388dc47c23021c027affd0ff041939997b07a0d435950df1f16"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/control.py",
+      "bytes": 19060,
+      "sha256": "0b79750a52105a51c02ccf127127cd10ad85d2823323f8648cf2933d54e1e972"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/donor-bugs.log",
+      "bytes": 371132,
+      "sha256": "264330cf3e387eb72388eb79f3d6060eeb294797544fc14c3c10d79f8104cf4e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/frame-1788875618698534051.png",
+      "bytes": 312668,
+      "sha256": "3086cdcd3c818aa8fcf08335db48a5c7e2c9ff79afe318a676d4ced698499672"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/launch.json",
+      "bytes": 2229,
+      "sha256": "6cb94faeeb9c3d2db5d0b3be3ccdb893a25ebe17abf888694fbee4ae18f684d9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/launch.log",
+      "bytes": 49857,
+      "sha256": "17c5a16236f16c4aeb837f828f75dd441fede1bd5aab8fad010ab550da96adda"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/launch.sh",
+      "bytes": 886,
+      "sha256": "df180fe9c515a6489c57264c12651d9328de2cf47a61b69c75f8617f7c4e56b8"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/menu-right.json",
+      "bytes": 521,
+      "sha256": "05dc75ac9412e7566ebe0758e09ce1a616cdac77634c17bd3f5ee526978500a2"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/menu-select.json",
+      "bytes": 523,
+      "sha256": "2cf1372b997fe9b21b96109038d273b9afdb1496ee95eb7b46bb46fdf1d0b0f1"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/menu-title.json",
+      "bytes": 534,
+      "sha256": "1d211d57de4dc1b783ee9ef15a223a8e621ef8594bbbc39a9a8bde510335891d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/prepare.json",
+      "bytes": 2513,
+      "sha256": "61e1963f69399a9ac6d6a582cfc826bd814759c0bfd2e8f829d7274172e7d77d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/receipt-1788875553608310743.json",
+      "bytes": 2369,
+      "sha256": "96d15522169b93fc6b81f206e5927cdaeb4607fd9a14360d59e73ea6eb884f65"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/receipt-1788875556784168110.json",
+      "bytes": 3332,
+      "sha256": "92e9aa66e13ca87e161000450727b8f7cf998a241444c83fa801e16ec490486f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/receipt-1788875556809628503.json",
+      "bytes": 287,
+      "sha256": "8cfcde9f986d252b3d5f83cd448d0da13e3a0454d8c3852b7c27a8fdd5cbb005"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/receipt-1788875596779603659.json",
+      "bytes": 287,
+      "sha256": "7df31d6f3e5b594c96d261b02a3f11a0d0ba81e3453bb4a55630d3fc60123ebd"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/receipt-1788875619045287850.json",
+      "bytes": 777,
+      "sha256": "5596ac4bc8ed79c56365735015c11d671cdde6026ebe01b902210996050b906f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/receipt-1788876018800105173.json",
+      "bytes": 692,
+      "sha256": "e7795a7923066e3e11af0e79a0ab84f6db3ff7c5cdb08e09265aaeddf0bc2289"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/receipt-1788876020071344193.json",
+      "bytes": 695,
+      "sha256": "6027328fc0c01678b193995df1986e629cac338f2deecc32589e4e50ddf3f66b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64/receipt-1788876021342846385.json",
+      "bytes": 705,
+      "sha256": "3027a6254cb97fcae558e422b68327e1bb1780844b30c4f4ddefa5c7fbd16881"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-LEVEL.RAW",
+      "bytes": 749187,
+      "sha256": "a849f25bc823ee6eaf59878423a0de0be7bc0ac86507c8c674135ac62621047b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-creature-packet.bin",
+      "bytes": 1796,
+      "sha256": "424123bf4033c0c741c5b0e168111e0eeeb12f93a25f079515dca582b1d6bd9e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-fixture.json",
+      "bytes": 569,
+      "sha256": "f613415cf8892bae1207c94f72bccf47171df754921cab64c561d21cefa8c533"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/active.json",
+      "bytes": 2822,
+      "sha256": "e2b49d3760794632ba27ecc36868f38fcdf764381bbf08d39c54b51c0fe727e2"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/after-close-audit.json",
+      "bytes": 5483,
+      "sha256": "bfce4c3d51d9dbb6372385e1858022c9de776faed62f8574ce79615f59c7b98c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/after-pickup.json",
+      "bytes": 24327,
+      "sha256": "443260d8087855f5ca4f1622fe33fcea1735e3e5c2e7ee14e43ec5d21ea14bea"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/audio-module.txt",
+      "bytes": 10,
+      "sha256": "6eff38e45666d431cdfc21730001a386f894e5cbe573203776436c524d2a78da"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/before-close-audit.json",
+      "bytes": 11819,
+      "sha256": "b69f0bceeb48987d5550e6d251b63e57d990905ab4bde625b8def21ac95d6e2b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/close-pinned.py",
+      "bytes": 2969,
+      "sha256": "75f8b1acf9d4627dc4a90732729dc93da77c4f2c8552fac5864a453639da2d5d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/close-receipt.json",
+      "bytes": 8524,
+      "sha256": "2ed069472e3c96d28430a07e2855048516e79a59f7c877c0ba8cfa8133bbc83f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/close.log",
+      "bytes": 8524,
+      "sha256": "2ed069472e3c96d28430a07e2855048516e79a59f7c877c0ba8cfa8133bbc83f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/control.py",
+      "bytes": 19070,
+      "sha256": "f1d9a5237f3f795ed7ba4f00b6db36befea79344759a4c17411d9bf5f1b5e77f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/donor-bugs.log",
+      "bytes": 371132,
+      "sha256": "264330cf3e387eb72388eb79f3d6060eeb294797544fc14c3c10d79f8104cf4e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/launch-output.json",
+      "bytes": 2244,
+      "sha256": "1831caff4bacd950fa59f04ee3e12f9a25fd563d349773af232701bef3a7b806"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/launch.json",
+      "bytes": 2244,
+      "sha256": "1831caff4bacd950fa59f04ee3e12f9a25fd563d349773af232701bef3a7b806"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/launch.log",
+      "bytes": 10923,
+      "sha256": "d0aa0e00d3af5f78055bad996713c9c7367204c6c750a3a61b6ec29dd73558de"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/launch.sh",
+      "bytes": 901,
+      "sha256": "a8799aba1f7ab1509327f5ce43f5758a8fd6cd51804d89595c6a40dbe61bf82a"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/passive-after-release.json",
+      "bytes": 4833,
+      "sha256": "9e9fab88784916ee1a8d5605eb4ad5c86b0e9d26cdebf7ef52bcc27bd9f0cd61"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/pickup-key.json",
+      "bytes": 3019,
+      "sha256": "2e4d41126ffabf30bb34e91a005cffa0837462590f85f4cef8d3ad5bb44a01be"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/prepare.json",
+      "bytes": 2528,
+      "sha256": "849c56c900cf30ab0757fb088cdb04b9e1f6f8d2b4f3a800a27130cc16145088"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/receipt-1788876436292244098.json",
+      "bytes": 2384,
+      "sha256": "43512a28099fbd826e17e31e6525bb3fd3df88180d003e83c7bba49c9e92602e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/receipt-1788876498409202852.json",
+      "bytes": 3352,
+      "sha256": "d48b835d3b8c47d490dd73d4636d0796e9f3d102340a72b6595adae500207fcb"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/receipt-1788876501435963818.json",
+      "bytes": 287,
+      "sha256": "9a6d03427c7e4ccfd33c29bed18f8272087e7f58534b5028766425b26f14be0f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/receipt-1788876501703115306.json",
+      "bytes": 692,
+      "sha256": "dab25f4e407f38250a151ab51def56c181e1d5d487a1d1f68907def4d3b161ee"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/receipt-1788876502972383421.json",
+      "bytes": 695,
+      "sha256": "c0bbbfa92293856eb720507811a4fdb4f0ad247ef2472ef452b3274247af4bac"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/receipt-1788876504043336911.json",
+      "bytes": 705,
+      "sha256": "961544399881df79698d6403e973f6af9fd43e10ec59383e691f99dec0e2b3f0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/receipt-1788876505271223511.json",
+      "bytes": 320,
+      "sha256": "4170c9b3d19f0225d5c2e2a1f659be75ce60f68346a2dd6567bf2967dd7bf619"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near/receipt-1788876635886114073.json",
+      "bytes": 3489,
+      "sha256": "319bfc91fd1a76c6c685aaddf9f58aa88b13979de140b685cc8de7292ab08075"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near-LEVEL.RAW",
+      "bytes": 749187,
+      "sha256": "3940ac9d2a61c39cbff0ea396b3baebfc3161a44c7a4c0e3ba803666ff241bc7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near-creature-packet.bin",
+      "bytes": 1796,
+      "sha256": "2def65e34ba634e2b6d7e6a945924ab8a031d8bec8342382a4fa6eaedaec7c13"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/seeds64-near-fixture.json",
+      "bytes": 631,
+      "sha256": "3968c2a7681ced3b620faf04ae5754058ea753c2681a7b828769005ef7519604"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/source-snapshots/reimplementation/ablpc/contact_slots.py",
+      "bytes": 7119,
+      "sha256": "840b54a258f0401e120e4e5c50563de2084a463931113ea8aeeb1c35f6196792"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/source-snapshots/reimplementation/ablpc/level_scene_build.py",
+      "bytes": 24111,
+      "sha256": "58d93932aa47a9c4a9021c618edba66e2c61718acbb491ed08d35d304fcbf9f5"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/source-snapshots/reimplementation/ablpc/terrain_page_package.py",
+      "bytes": 9009,
+      "sha256": "0177f87a00d4e0ad83fe827b491edad1fa07c448dfda58ad589db00f6f8e3961"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/source-snapshots/reimplementation/ablpc/terrain_page_residency.py",
+      "bytes": 9586,
+      "sha256": "0a715be34925f9d03764df55f480d7c9376facc5b095a272a23110353d066170"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/source-snapshots/tests/test_contact_slots.py",
+      "bytes": 7669,
+      "sha256": "d2f45b139b898c0aebf2d02643d01b2eec80b375982bb244601bc1928cd0fc4f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/source-snapshots/tests/test_terrain_page_residency.py",
+      "bytes": 6019,
+      "sha256": "96ac4f3b665bda6b900ea42dae25692675f7e3f8d52348d76bc8c681b9da037e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/static-contact-references.json",
+      "bytes": 5975,
+      "sha256": "f340fdca5c727bd4df623f8bbd2521454c2a3da0e9682f77b35f1671e3ae396d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/summary.json",
+      "bytes": 1214,
+      "sha256": "071f7498bc57398e639b88dd274c1cd7bda3ede930ea8c73110f7ae8441097b7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/superseded/terrain_page_package-EXP005.py",
+      "bytes": 8651,
+      "sha256": "413ff581c07561a239f6b617fbb418625826ed86b8a7715ad3a849e39a6efd43"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/superseded/terrain_page_residency-EXP005.py",
+      "bytes": 9130,
+      "sha256": "31b80368f4e6cdd42f5d9c52d1a21fd6d14bba0e9c10f9b12dc261c22bceb2c7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/verify-chunks.py",
+      "bytes": 2879,
+      "sha256": "42c6cf9cfd9bad4e38a591a462bd4f74af2a0c5194fd50f044ed995382d5f1eb"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-006/verify-models.py",
+      "bytes": 2066,
+      "sha256": "d8270ff1882bd34f478465ac8cac860091f404df364c25b3dcab08f92c26cb86"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "run_id": "RUN-WINE-20260812-150805",
+  "experiment": "EXP-20260812-020",
+  "capture_sequence_started": "2026-08-12T15:08:05.811604630-04:00",
+  "capture_sequence_ended": "2026-08-12T15:08:09.700624981-04:00",
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "level_dat_sha256": "bcf6b8390f8ddcfebeb3411807f60f2dee0fc73a6cbd9d63a9daa1a3c7f1370e",
+  "environment": "Fedora Linux 44, Wine 11.0 Staging, Gamescope 3.16.25",
+  "renderer": "Direct3D hardware 640x480x16",
+  "renderer_log_gate": [
+    "INFO Screen mode 640x480x16 selected.",
+    "INIT : Starting Direct3D renderer."
+  ],
+  "working_directory": "/home/dev/ABLPC/work/copies/EXP-20260812-020/suppression/PC/BUGS",
+  "drive_layout": "X:\\PC\\BUGS",
+  "capture_method": "15 frames from Gamescope PipeWire node 100 at approximately 0.2-second intervals after NextLife",
+  "capture_storage": "/home/dev/ABLPC/work/copies/EXP-20260812-020/evidence/suppression/frames",
+  "capture_size": "2560x1440",
+  "capture_set_sha256": "903e3a56483de54bc27bf3e2c37194c9472ad0078f41baf7e41ae3e9a38e80d5",
+  "normalized_capture_set_sha256": "5d6d74b70e34f02165ab3144d98b015f07747b94d901b5c611e048191d1cfbaf",
+  "bugs_log_sha256": "73d35b768375fe813e100e315976433a26805f3fabcb9f0d3c23c7fb7c8ff355",
+  "status": "captured then intentionally terminated",
+  "tracked_artifacts": ["bugs.log", "experiment.md", "metadata.json"]
+}

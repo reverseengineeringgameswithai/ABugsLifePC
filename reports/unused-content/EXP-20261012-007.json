@@ -1,0 +1,318 @@
+{
+ "experiment": "EXP-20261012-007",
+ "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+ "images": "work/experiments/EXP-20261012-007/ (ignored; derived from game assets, not committed)",
+ "renderer": "research/unused-content/render-model.py (system python3, numpy, Pillow)",
+ "copyofle_vs_level_raw": {
+  "packets": {
+   "COPYOFLE.RAW": 28,
+   "LEVEL.RAW": 65
+  },
+  "page_difference": {
+   "0": "14.8%, palette differs",
+   "1": "69.3%, palette differs (cola can)",
+   "2": "same",
+   "3": "only in LEVEL.RAW",
+   "4": "99.8% (outdoor textures: clover, soil, clouds, bark in COPYOFLE; box textures shipped)",
+   "10": "same",
+   "11": "same",
+   "12": "41.7%",
+   "14": "100% (abstract pattern vs boxes backdrop)",
+   "15": "same",
+   "16": "23.9%",
+   "25": "1.7%",
+   "28": "37.5% (HUD plant sprite sheet)",
+   "29": "13.9% (dandelion seed, super-jump power-up, grey placeholder block)",
+   "30": "46.8% (HUD plants row, PAUSE/DEMO lettering, veined ball)",
+   "31": "same"
+  },
+  "tcrf_items_located": {
+   "cola texture": "page 1",
+   "HUD plant spritesheet": "page 28 (and plant row on page 30)",
+   "dandelion flight seed": "page 29",
+   "super jump power-up": "page 29 top right; page 28 arrow plants",
+   "bubble shield power-up": "page 28 grey spheres (inferred)"
+  }
+ },
+ "test_model": {
+  "faces": 327,
+  "parts": 37,
+  "texture_pages": {
+   "16": 327
+  },
+  "extent_stored": "x -298..298, y -619..823, z -689..290",
+  "shape": "humanoid upper body with arms, tapering tail ending in a forked fin (mermaid silhouette)",
+  "texturing": "page 16 only, the character page Flik also uses; its own texture is not on the disc, so any level shows it with that level's character art"
+ },
+ "plant12": {
+  "faces": 79,
+  "texture_pages": {
+   "12": 75,
+   "11": 4
+  },
+  "petals": "75 faces sample the gold-berry cluster art at the bottom-left of page 12; page 12 is byte-identical in all 17 levels",
+  "bulb": "page 11 UV 129..189 square, the red-orange bulb texels shared only with plant 7 (24 faces)",
+  "shape": "red-orange striped bulb in a ring of spiky golden petals, stem and leaves"
+ },
+ "plant_requests_per_level": {
+  "1": {
+   "seeds": [
+    5,
+    7
+   ],
+   "tokens": [
+    4,
+    10,
+    7,
+    7,
+    9,
+    3,
+    8,
+    2,
+    6
+   ]
+  },
+  "2": {
+   "seeds": [
+    3,
+    5,
+    7
+   ],
+   "tokens": [
+    6,
+    6,
+    6,
+    6
+   ]
+  },
+  "3": {
+   "seeds": [
+    3,
+    5,
+    10
+   ],
+   "tokens": [
+    4,
+    10,
+    6,
+    6,
+    6,
+    6
+   ]
+  },
+  "4": {
+   "seeds": [
+    5,
+    7,
+    14
+   ],
+   "tokens": [
+    4,
+    7,
+    14,
+    10,
+    9,
+    1,
+    6,
+    6,
+    6,
+    6,
+    13
+   ]
+  },
+  "5": {
+   "seeds": [
+    3,
+    5
+   ],
+   "tokens": [
+    4,
+    10,
+    7,
+    7,
+    6,
+    7,
+    6,
+    6,
+    6,
+    6,
+    3
+   ]
+  },
+  "6": {
+   "seeds": [
+    3,
+    5,
+    8
+   ],
+   "tokens": [
+    4,
+    3,
+    10,
+    8
+   ]
+  },
+  "7": {
+   "seeds": [
+    3,
+    5,
+    7
+   ],
+   "tokens": [
+    3,
+    8,
+    4,
+    10,
+    2,
+    6,
+    6,
+    7,
+    7,
+    6
+   ]
+  },
+  "8": {
+   "seeds": [
+    7
+   ],
+   "tokens": []
+  },
+  "9": {
+   "seeds": [
+    5,
+    7
+   ],
+   "tokens": [
+    4,
+    10,
+    9,
+    1,
+    7,
+    7,
+    6,
+    7,
+    3,
+    14,
+    13,
+    11
+   ]
+  },
+  "10": {
+   "seeds": [
+    3,
+    5,
+    7
+   ],
+   "tokens": [
+    4,
+    10,
+    9,
+    1,
+    7,
+    7,
+    6,
+    3
+   ]
+  },
+  "11": {
+   "seeds": [
+    3,
+    5
+   ],
+   "tokens": [
+    7,
+    7,
+    6,
+    7,
+    14,
+    13
+   ]
+  },
+  "12": {
+   "seeds": [
+    3,
+    5
+   ],
+   "tokens": [
+    4,
+    10,
+    9,
+    1,
+    3,
+    8,
+    2
+   ]
+  },
+  "13": {
+   "seeds": [
+    5
+   ],
+   "tokens": [
+    4,
+    10,
+    6,
+    6,
+    6,
+    6,
+    9
+   ]
+  },
+  "14": {
+   "seeds": [],
+   "tokens": []
+  },
+  "15": {
+   "seeds": [
+    3,
+    5,
+    8
+   ],
+   "tokens": [
+    3,
+    7,
+    7,
+    6
+   ]
+  },
+  "16": {
+   "seeds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14
+   ],
+   "tokens": [
+    4,
+    10,
+    9,
+    1,
+    3,
+    8,
+    2
+   ]
+  },
+  "17": {
+   "seeds": [
+    5
+   ],
+   "tokens": [
+    4,
+    10,
+    6,
+    6,
+    6,
+    6
+   ]
+  },
+  "note": "Plant 5 is always added. Seeds are listed regardless of the 0x00416100 activity condition (a superset). Plant 11 is requested only by Anthill Pt 2 and engine 16."
+ }
+}

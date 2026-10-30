@@ -1,0 +1,21 @@
+{
+  "run_id": "RUN-WINE-20260812-000215",
+  "started": "2026-08-12T00:02:15-04:00",
+  "executable": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "argv": [
+    "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+    "log",
+    "cheat",
+    "mpeg"
+  ],
+  "environment": "Wine",
+  "environment_version": "wine-11.0 (Staging)",
+  "working_directory": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+  "prefix": "/home/dev/ABLPC/work/wine/baseline",
+  "wine_debug_channels": "-all",
+  "syscall_capture": "disabled",
+  "status": "complete",
+  "ended": "2026-08-12T00:05:51-04:00",
+  "exit_status": 1
+}

@@ -1,0 +1,36 @@
+EXP-20260812-008 matched hardware-renderer comparison
+
+Normalization applied to every portal capture:
+  crop 1440x1080+240+0, reset page, point-filter resize to 640x480
+
+Control:
+  RUN-WINE-20260812-022754/training-hardware-control.png
+  SHA-256 c751205a62c3bee44f116b0b1396f6d07c86c5aa21a50acb4c931549e17410fe
+
+Variants compared with ImageMagick 7 `compare -metric AE` and
+`compare -metric RMSE`; difference bounding boxes were obtained by exact
+difference, threshold zero, and trim.
+
+Record 124, RUN-WINE-20260812-022322:
+  capture SHA-256 ca3c5ab307a8c1945756d096abd4454d115e99a9908e89a22cfa9cc24bc2e35a
+  differing pixels: 2942 of 307200 (0.957682%)
+  normalized RMSE: 0.0123622
+  exact difference bounding box: 52x241+369+0
+
+Record 125, RUN-WINE-20260812-022549:
+  capture SHA-256 b0f7d3899f4704b967d47a6c011ecf1d1ff82c70f5ae470b0d619ea361de6658
+  differing pixels: 642 of 307200 (0.208984%)
+  normalized RMSE: 0.00579734
+  exact difference bounding box: 24x99+616+124
+
+Record 126, RUN-WINE-20260812-022649:
+  capture SHA-256 267ce9884b82dc7c255cd4cf18f9bc328cc529721cb90af50c63214b9f8ba4be
+  differing pixels: 8265 of 307200 (2.69043%)
+  normalized RMSE: 0.0272343
+  exact difference bounding box: 109x250+438+0
+
+All nonzero differences for each comparison are confined to the stated box.
+The three boxes are disjoint: each one-record mutation removes a different
+screen-space plant element in the matched starting camera. Record 126 removes
+the prominent flower and stalk; record 124 removes a thin, top-clipped plant
+element; record 125 removes a partially visible element at the right edge.

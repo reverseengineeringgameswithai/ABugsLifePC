@@ -1,0 +1,154 @@
+{
+  "experiment": "EXP-20260909-001",
+  "status": "user-tested-approved-banked",
+  "user_approval": "looks good, tested, works, bank it",
+  "project": "work/level-projects/moonlit-cliffs-end-marker/level.blend",
+  "build": "work/copies/moonlit-cliffs-end-marker-02",
+  "play": "work/copies/moonlit-cliffs-end-marker-play-01",
+  "bank": {
+    "accepted": true,
+    "manifest": "work/design-banks/EXP-20260909-001-end-marker/manifest.json",
+    "manifest_sha256": "01c9dd44f66addc1b3d74ae8deb8017a00cd7bc93d17ef14d415e42cbd0a3aa7",
+    "rollback_files_verified": {
+      "moonlit-cliffs-collectibles": 771
+    },
+    "roles": {
+      "project": {
+        "source": "work/level-projects/moonlit-cliffs-end-marker",
+        "bank": "work/design-banks/EXP-20260909-001-end-marker/project",
+        "file_count": 771
+      },
+      "build": {
+        "source": "work/copies/moonlit-cliffs-end-marker-02",
+        "bank": "work/design-banks/EXP-20260909-001-end-marker/build",
+        "file_count": 724
+      }
+    }
+  },
+  "hashes": {
+    "LEVEL.DAT": "049075592fbef92a94ebc1475b18fc63b8e7b841ffaebf2daa552ea34c8a71ed",
+    "TERRAIN.ALL": "c4fc04b1103288b7d136e9f89c59af18216e81a5c7991c83e4aed9b58c560d60",
+    "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+    "bugs.exe": "e16d96c7f7e96a2f88bc5b41f43a410166c1c103bbb3d4c4339d5468a372fb6e",
+    "LEVEL.RAW": "b29cd09868a1e3978f4c0e98b5b5ed7de411c453106afaef06a343c5ffb044a0"
+  },
+  "original_pc_exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "marker": {
+    "asset": "marker.end-of-stage",
+    "name": "end-of-stage marker",
+    "donor_scene": 82,
+    "donor_record_offset": 7020,
+    "donor_object_offset": 21232,
+    "donor_geometry_offset": 211780,
+    "geometry_bytes": 682,
+    "geometry_sha256": "027039db0c92ad8b2460e0a4a0524ef36e59ede3001c26fff4beec719cb2cafa",
+    "vertices": 27,
+    "primitives": 23,
+    "original_live_projected_matches": 47,
+    "position_stored": [
+      5500,
+      -3303,
+      24800
+    ],
+    "collision": "none authored; original dedicated collision/top support remains unmapped",
+    "exit_trigger": "separate unchanged object"
+  },
+  "counts": {
+    "meshes": 10,
+    "scenery": 64,
+    "enemies": 10,
+    "collectibles": 67
+  },
+  "removed_scenery": [
+    "Blue mushroom 01"
+  ],
+  "checks": {
+    "blender_editing": true,
+    "compiled_marker_counts": [
+      0,
+      1,
+      2
+    ],
+    "native_relocator": true,
+    "translated_renderer_equivalence": true,
+    "live_native_marker": true,
+    "live_models": 170,
+    "live_chunks": 6,
+    "make_check": {
+      "passed": 432,
+      "seconds": 44.48,
+      "vault_errors": 0,
+      "vault_warnings": 8,
+      "tracked_asset_violations": 0,
+      "selection": "work/experiments/EXP-20260909-001/test-selection.json",
+      "log": "work/experiments/EXP-20260909-001/final-check.log"
+    }
+  },
+  "proofs": {
+    "memory.json": {
+      "path": "work/experiments/EXP-20260909-001/memory.json",
+      "sha256": "4a355668a501610898f6b8398926f50eb99678a4658668e0d2030fc7a8163d3f"
+    },
+    "sign-projection.json": {
+      "path": "work/experiments/EXP-20260909-001/sign-projection.json",
+      "sha256": "b253cfcf65d14a8d76c10a976c8eb643595e947f66e6b4690e8382e865e8c824"
+    },
+    "collision.json": {
+      "path": "work/experiments/EXP-20260909-001/collision.json",
+      "sha256": "db4f3953a5adcf7876666b0ece750c27ff3d520810157b3de3a5b056714a7d9f"
+    },
+    "collision-census-corrected.json": {
+      "path": "work/experiments/EXP-20260909-001/collision-census-corrected.json",
+      "sha256": "39f11f03711f0ad74a30794ffa1bf54ed809a26c201dd0e580b58fe1fb93b308"
+    },
+    "native-translated-render.json": {
+      "path": "work/experiments/EXP-20260909-001/native-translated-render.json",
+      "sha256": "599ed744e1d5f78aa9eac4fd5f8812806f25c23eacf8b7a710692886d74a4110"
+    },
+    "blender-authoring.json": {
+      "path": "work/experiments/EXP-20260909-001/blender-authoring.json",
+      "sha256": "b76845bc244175e69a5afc16b5f3491602f99aa8f959d1e5f2c2f88cd809e18c"
+    },
+    "edited-builds.json": {
+      "path": "work/experiments/EXP-20260909-001/edited-builds.json",
+      "sha256": "c7f52e08e804eeaf93ed7a51ed1e1fce642df4afc4bf020a8e5598ea15f196c4"
+    },
+    "blender-workflow/result.json": {
+      "path": "work/experiments/EXP-20260909-001/blender-workflow/result.json",
+      "sha256": "847fcdad3c834305f278ae1c3296e024255fb620a8c9b798fe10b488d3d783db"
+    },
+    "runtime/verification-latest-load.json": {
+      "path": "work/experiments/EXP-20260909-001/runtime/verification-latest-load.json",
+      "sha256": "9b511499f7808c67e369570df959bdc60549f2e2016adc05dd3ea3ece80f899f"
+    },
+    "runtime/live-marker.json": {
+      "path": "work/experiments/EXP-20260909-001/runtime/live-marker.json",
+      "sha256": "d7a69549fa2ca44f8f593f326f2002d97f7b243b37b60e1a5cac3e3de2cd98fe"
+    },
+    "runtime/final-audit.json": {
+      "path": "work/experiments/EXP-20260909-001/runtime/final-audit.json",
+      "sha256": "351cf0f0f6d4f47b9f20b7edd8ba268f519876f3a27ccae9cb486879aebf6065"
+    },
+    "blender-open.json": {
+      "path": "work/experiments/EXP-20260909-001/blender-open.json",
+      "sha256": "8465a508b582f214ccd293f2cd6ade100d82f991afff897c3477febe006e4078"
+    },
+    "bank.json": {
+      "path": "work/experiments/EXP-20260909-001/bank.json",
+      "sha256": "8dfb0eafe14933f0c5da5ca28f300ecd1d52b53ffb1861276abda36b2751cff8"
+    },
+    "final-check.log": {
+      "path": "work/experiments/EXP-20260909-001/final-check.log",
+      "sha256": "dcb711106061b82e05c2af3aff4f47e31ce0baa9c8ed5170eb3c452929e0534f"
+    }
+  },
+  "runtime": {
+    "game_pid": 14159,
+    "game_start": 158538,
+    "group": 13925,
+    "blender_pid": 13435,
+    "blender_start": 146871,
+    "intentionally_open": true
+  },
+  "scope": "Native PC only. No live memory writes. User approval plus bounded checks; exhaustive future placements, original sign collision and all gameplay paths are not claimed."
+}

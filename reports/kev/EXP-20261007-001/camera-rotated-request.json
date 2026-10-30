@@ -1,0 +1,60 @@
+{
+  "model": "kev-latest",
+  "state": "Evidence source: Vault/30-Experiments/EXP-20261003-001 - R–Z camera wrap bands.md\n\n## Diagnosis\n\n- **Not authored geometry.** `analysis/proj.py` projects every room R scene\n  mesh from the recorded camera (−5173, −3675, −10010; yaw about 1290; f 337,\n  centre row 240). It matches the frame's wall top (row ≈215) and ramp, but\n  rows 158–215 hold only sky and one reed (`analysis/r1.png`).\n- **Not the panorama.** R's 128×96 backdrop has wavy blue, teal and green\n  layers (`analysis/backdropR.png`), and the night sky hides it.\n- **Non-physical motion.** Between two frames, a camera 158 units higher put\n  the band higher on screen (rows 150 vs 158). No world object at any\n  distance can do that.\n- **Wrap.** EXP-20260916-011 showed that `0045A7F0` narrows camera-space\n  coordinates to signed 16 bits. `analysis/wrap.py` applies that to R's eight\n  terrain chunks from the same camera:\n  - chunk 160 has 373 out-of-range vertices, chunk 490 has 326 (up to 40,336\n    ahead) and chunk 489 has 70;\n  - their faces fill a full-width, straight-topped band at rows 140–210\n    (`analysis/wrapR.png`).\n- **Guard absent in the rooms.** The EXP-20260916-011 guard matches by DAT\n  offset and vertex count, for level 1 and only Moonlit's eight rows. In the\n  user's process its counters (`.camdata` stats `0x010E1000`) were all zero.\n  Room R's chunks (scenes 160 and 484–490, offsets 488,620–768,628) are not\n  in the table.\n- **Exposure.** Every room's terrain spans 52–57k units per axis and the hub\n  58.6k along its corridor, past the ±32,767 range. Q is 3k across.\n\nThis dates from the rooms' first build (EXP-20260928-001), not the\n2026-10-02 themes, which changed no geometry.\n\n\n## Fix\n\n`terrain_camera_guard.guard_table` builds one table from every DAT loaded as\nlevel 1: Moonlit, the Journey hub and ROOMR–ROOMZ (8 + 8 + 72 = 88 rows). The\nnative code is unchanged, apart from its row count. The build refuses:\n\n- an offset shared by two DATs, because the native search stops at the\n  first offset match;\n- any DAT holding another row's vertex count at that row's offset, which\n  would let a foreign mesh borrow the row and its byte bound.\n\n`dream_levels` keeps each chunk's `scene_index` in the room receipt, and\nStudio passes the hub and rooms as extra sources.\n\n\n## Validation\n\n- **Tests:** `tests/test_terrain_camera_guard.py` has 24 passing, 2 of them new:\n  - an emulated lookup filters a second row's mesh and never borrows a\n    foreign row;\n  - the private production union is unique, has an exact inverse and\n    rejects collision and borrowing.\n\n  The dream-level, grass, Studio, hub and chunk suites pass: 329 checks.\n  The non-R2q suite had 7,268 passed and 19 failed. All 19 predate this\n  change: they also fail on a clean HEAD checkout\n  ([[Known Unknowns#Current regression-gate failure]]).\n- **Build:** `work/copies/studio-1791047899927549753`, EXE\n  `c3d8b207267b416679e963254dff837b7c8e6060136627e8c991c62120ad9027`, campaign\n  `251578ca…` unchanged. All 765 CD files are byte-identical to\n  `studio-1790963763195020939`. In the EXE only `.camdraw` (700 → 1,660 bytes)\n  and `SizeOfCode` differ.\n- **Matched hardware arms.** Both review copies (`EXP-20260928-001/review_copy.py`)\n  start the hub beside door R and spawn Flik at R (−4363, −10200), heading 1290.\n  All six markers held in both, with a private null sink and controllers off.\n  - `control` (an earlier spawn at the ramp foot, heading 1024) was\n    inconclusive: a reed blocked the spawn view, and the walk ended facing\n    south.\n  - `control2` (old production): the band shows at spawn and after a 0.7 s\n    walk, and the guard counters stay 0.\n  - `candidate` (new build): the band is gone. The lantern tower, a flower\n    and reeds show where the projection predicted them (`before-after.png`).\n    Rejected faces rise from 28,518 to 42,469 as frames draw.\n- **Hub:** the guard matches its chunks (1,196 calls beside door R). It\n  rejected no face there or on a walk from z 21,900 to −8,234, and frames\n  look normal.\n\n\n## Limits\n\n- Only room R was checked in hardware, and only from the reproduced pose.\n  The other rooms rely on the same rows, the emulation and the build checks.\n- The hub's door-A end was not reached; Flik stopped at z −8,234.\n- Whole-face rejection can pop at the 32k boundary (as in EXP-20260916-011).\n  The rooms' distant copies cover the far terrain.\n- `make check` stops at `m4-compatibility` before its tests. That gate expects\n  an exact R2c sentence that the vault audit reworded in `d1d5e08d`, so it\n  already failed at HEAD (`71c1b213`).\n\n",
+  "questions": {
+    "q19": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The extended camera guard contains 88 rows covering Moonlit, the Journey hub and rooms R through Z.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q20": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: All 765 CD files were byte-identical between the camera-fix production and its preceding production.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q21": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The camera-fix experiment checked every room from R through Z in hardware.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q22": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The October 2 room themes introduced the geometry that first caused the green band.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q23": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: A hardware visit to room S would show no green band at any camera pose with this guard installed.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q24": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Players find the guard's possible whole-face popping at the 32k boundary visually acceptable.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    }
+  }
+}

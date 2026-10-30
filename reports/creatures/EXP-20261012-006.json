@@ -1,0 +1,939 @@
+{
+ "experiment": "EXP-20261012-006",
+ "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+ "method": "character loader 0x00445020 switch (type -> file) + retail type-35 census (17 engines) + saved bugs.log LOAD lines",
+ "runtime_per_engine": {
+  "1": {
+   "predicted": [
+    "chars2\\dot",
+    "chars3\\flikharv",
+    "chars3\\protect",
+    "chars4\\badworm",
+    "chars\\badbug",
+    "chars\\mos",
+    "chars\\wasp"
+   ],
+   "observed": [
+    "chars2\\dot",
+    "chars2\\ggrassh",
+    "chars2\\hopper",
+    "chars2\\hspider",
+    "chars2\\roach",
+    "chars2\\taxibug",
+    "chars2\\thumper",
+    "chars3\\bbird",
+    "chars3\\flikharv",
+    "chars3\\molt",
+    "chars3\\protect",
+    "chars3\\thud",
+    "chars4\\badcent",
+    "chars4\\badworm",
+    "chars\\badbug",
+    "chars\\fly",
+    "chars\\mos",
+    "chars\\wasp"
+   ],
+   "missing": [],
+   "extra": [
+    "chars2\\ggrassh",
+    "chars2\\hopper",
+    "chars2\\hspider",
+    "chars2\\roach",
+    "chars2\\taxibug",
+    "chars2\\thumper",
+    "chars3\\bbird",
+    "chars3\\molt",
+    "chars3\\thud",
+    "chars4\\badcent",
+    "chars\\fly"
+   ]
+  },
+  "3": {
+   "predicted": [
+    "chars2\\ggrassh",
+    "chars3\\flikharv",
+    "chars4\\badcent",
+    "chars4\\badworm",
+    "chars\\badbug",
+    "chars\\grub"
+   ],
+   "observed": [
+    "chars2\\ggrassh",
+    "chars3\\flikharv",
+    "chars4\\badcent",
+    "chars4\\badworm",
+    "chars\\badbug",
+    "chars\\grub"
+   ],
+   "missing": [],
+   "extra": []
+  },
+  "4": {
+   "predicted": [
+    "chars2\\hspider",
+    "chars2\\taxibug",
+    "chars\\fly",
+    "chars\\fran",
+    "chars\\heim",
+    "chars\\slim"
+   ],
+   "observed": [
+    "chars2\\hspider",
+    "chars2\\taxibug",
+    "chars\\fly",
+    "chars\\fran",
+    "chars\\heim",
+    "chars\\slim"
+   ],
+   "missing": [],
+   "extra": []
+  },
+  "6": {
+   "predicted": [
+    "chars3\\bbird",
+    "chars3\\dragfly",
+    "chars3\\weevil"
+   ],
+   "observed": [
+    "chars3\\bbird",
+    "chars3\\dragfly",
+    "chars3\\weevil"
+   ],
+   "missing": [],
+   "extra": []
+  },
+  "7": {
+   "predicted": [
+    "chars2\\franslim",
+    "chars2\\gypsy",
+    "chars2\\manny2",
+    "chars3\\flikharv",
+    "chars3\\protect",
+    "chars4\\badworm",
+    "chars\\badbug",
+    "chars\\heim",
+    "chars\\mos",
+    "chars\\wasp"
+   ],
+   "observed": [
+    "chars\\badbug"
+   ],
+   "missing": [
+    "chars2\\franslim",
+    "chars2\\gypsy",
+    "chars2\\manny2",
+    "chars3\\flikharv",
+    "chars3\\protect",
+    "chars4\\badworm",
+    "chars\\heim",
+    "chars\\mos",
+    "chars\\wasp"
+   ],
+   "extra": []
+  },
+  "15": {
+   "predicted": [
+    "chars2\\ggrassh",
+    "chars2\\hopper",
+    "chars3\\bbird"
+   ],
+   "observed": [
+    "chars2\\ggrassh",
+    "chars2\\hopper",
+    "chars3\\bbird"
+   ],
+   "missing": [],
+   "extra": []
+  },
+  "16": {
+   "predicted": [
+    "chars\\badbug"
+   ],
+   "observed": [
+    "chars\\badbug"
+   ],
+   "missing": [],
+   "extra": []
+  },
+  "17": {
+   "predicted": [
+    "chars3\\soil",
+    "chars\\badbug"
+   ],
+   "observed": [
+    "chars3\\soil",
+    "chars\\badbug",
+    "chars\\mos",
+    "chars\\wasp"
+   ],
+   "missing": [],
+   "extra": [
+    "chars\\mos",
+    "chars\\wasp"
+   ]
+  }
+ },
+ "types": [
+  {
+   "type": 1,
+   "file": "chars\\gypsy",
+   "placements": 1,
+   "levels": {
+    "City Square": 1
+   },
+   "scripts": [
+    12
+   ],
+   "prior_name": null,
+   "appearance": "winged moth",
+   "reading": "Gypsy (moth)",
+   "runtime": null
+  },
+  {
+   "type": 2,
+   "file": "chars\\manny",
+   "placements": 1,
+   "levels": {
+    "City Square": 1
+   },
+   "scripts": [
+    12
+   ],
+   "prior_name": null,
+   "appearance": "mantis",
+   "reading": "Manny (mantis)",
+   "runtime": null
+  },
+  {
+   "type": 3,
+   "file": "chars\\fran",
+   "placements": 1,
+   "levels": {
+    "City Entrance": 1
+   },
+   "scripts": [
+    6
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Francis (\"fran\")",
+   "runtime": [
+    "exact per-level match in engines 4"
+   ]
+  },
+  {
+   "type": 4,
+   "file": "chars\\rosie",
+   "placements": 4,
+   "levels": {
+    "City Square": 1,
+    "The Tree": 3
+   },
+   "scripts": [
+    12,
+    31
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Rosie",
+   "runtime": null
+  },
+  {
+   "type": 5,
+   "file": "chars\\slim",
+   "placements": 1,
+   "levels": {
+    "City Entrance": 1
+   },
+   "scripts": [
+    6
+   ],
+   "prior_name": null,
+   "appearance": "stick insect",
+   "reading": "Slim (stick insect)",
+   "runtime": [
+    "exact per-level match in engines 4"
+   ]
+  },
+  {
+   "type": 6,
+   "file": "chars\\fly",
+   "placements": 22,
+   "levels": {
+    "City Entrance": 9,
+    "City Square": 9,
+    "Riverbed Canyon": 4
+   },
+   "scripts": [
+    15
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "fly",
+   "runtime": [
+    "exact per-level match in engines 4",
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  },
+  {
+   "type": 7,
+   "file": "chars\\heim",
+   "placements": 2,
+   "levels": {
+    "City Entrance": 1,
+    "Clover Forest": 1
+   },
+   "scripts": [
+    20,
+    24
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Heimlich (\"heim\")",
+   "runtime": [
+    "exact per-level match in engines 4"
+   ]
+  },
+  {
+   "type": 8,
+   "file": "chars\\dim",
+   "placements": 1,
+   "levels": {
+    "City Square": 1
+   },
+   "scripts": [
+    12
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Dim",
+   "runtime": null
+  },
+  {
+   "type": 9,
+   "file": "chars\\badbug",
+   "placements": 65,
+   "levels": {
+    "Anthill": 7,
+    "Tunnels": 14,
+    "Clover Forest": 10,
+    "Anthill Pt 2": 5,
+    "The Tree": 11,
+    "Battle Arena": 3,
+    "engine 16": 11,
+    "Training": 4
+   },
+   "scripts": [
+    1
+   ],
+   "prior_name": "spider",
+   "appearance": null,
+   "reading": "\"bad bug\": the common enemy (earlier label: spider)",
+   "runtime": [
+    "exact per-level match in engines 3, 16",
+    "in engine 1 runs (retail Anthill set)"
+   ]
+  },
+  {
+   "type": 10,
+   "file": "chars\\mos",
+   "placements": 33,
+   "levels": {
+    "Anthill": 4,
+    "Council Chamber": 2,
+    "Clover Forest": 6,
+    "Anthill Pt 2": 2,
+    "Riverbed Canyon": 4,
+    "The Tree": 15
+   },
+   "scripts": [
+    3,
+    4,
+    10,
+    16
+   ],
+   "prior_name": "mosquito",
+   "appearance": null,
+   "reading": "mosquito",
+   "runtime": [
+    "in engine 1 runs (retail Anthill set)"
+   ]
+  },
+  {
+   "type": 11,
+   "file": "bits\\seed",
+   "placements": 130,
+   "levels": {
+    "Anthill": 9,
+    "Council Chamber": 3,
+    "Tunnels": 13,
+    "City Entrance": 10,
+    "City Square": 6,
+    "Cliffside": 15,
+    "Clover Forest": 9,
+    "Riverbed Flight": 3,
+    "Anthill Pt 2": 7,
+    "Riverbed Canyon": 12,
+    "Bird Nest": 3,
+    "The Tree": 7,
+    "Battle Arena": 1,
+    "Canyon Showdown": 7,
+    "engine 16": 21,
+    "Training": 4
+   },
+   "scripts": [
+    0,
+    3,
+    4
+   ],
+   "prior_name": "seed",
+   "appearance": null,
+   "reading": "seed",
+   "runtime": [
+    "bits\\seed.all in 496 saved logs"
+   ]
+  },
+  {
+   "type": 12,
+   "file": "chars\\grub",
+   "placements": 11,
+   "levels": {
+    "Tunnels": 11
+   },
+   "scripts": [
+    6
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "grub",
+   "runtime": [
+    "exact per-level match in engines 3"
+   ]
+  },
+  {
+   "type": 13,
+   "file": "chars\\wasp",
+   "placements": 43,
+   "levels": {
+    "Anthill": 5,
+    "Clover Forest": 4,
+    "Riverbed Flight": 16,
+    "Anthill Pt 2": 1,
+    "Riverbed Canyon": 11,
+    "The Tree": 6
+   },
+   "scripts": [
+    5
+   ],
+   "prior_name": "bee",
+   "appearance": null,
+   "reading": "wasp (earlier label: bee)",
+   "runtime": [
+    "in engine 1 runs (retail Anthill set)"
+   ]
+  },
+  {
+   "type": 14,
+   "file": "chars2\\dot",
+   "placements": 2,
+   "levels": {
+    "Anthill": 1,
+    "The Tree": 1
+   },
+   "scripts": [
+    7,
+    15
+   ],
+   "prior_name": "Dot",
+   "appearance": null,
+   "reading": "Dot",
+   "runtime": [
+    "in engine 1 runs (retail Anthill set)"
+   ]
+  },
+  {
+   "type": 15,
+   "file": "chars2\\ggrassh",
+   "placements": 42,
+   "levels": {
+    "Tunnels": 19,
+    "Anthill Pt 2": 7,
+    "Canyon Showdown": 16
+   },
+   "scripts": [
+    4,
+    8,
+    21
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "green grasshopper",
+   "runtime": [
+    "exact per-level match in engines 3, 15",
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  },
+  {
+   "type": 16,
+   "file": "chars2\\thumper",
+   "placements": 1,
+   "levels": {
+    "Council Chamber": 1
+   },
+   "scripts": [
+    9
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Thumper",
+   "runtime": [
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  },
+  {
+   "type": 17,
+   "file": "chars2\\hspider",
+   "placements": 25,
+   "levels": {
+    "City Entrance": 11,
+    "City Square": 8,
+    "Riverbed Canyon": 6
+   },
+   "scripts": [
+    11
+   ],
+   "prior_name": null,
+   "appearance": "long-legged spider",
+   "reading": "\"hspider\" (long-legged spider)",
+   "runtime": [
+    "exact per-level match in engines 4",
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  },
+  {
+   "type": 18,
+   "file": "chars2\\taxibug",
+   "placements": 6,
+   "levels": {
+    "City Entrance": 6
+   },
+   "scripts": [
+    23
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "taxi bug",
+   "runtime": [
+    "exact per-level match in engines 4",
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  },
+  {
+   "type": 19,
+   "file": "chars2\\roach",
+   "placements": 6,
+   "levels": {
+    "City Square": 6
+   },
+   "scripts": [
+    12
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "roach",
+   "runtime": [
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  },
+  {
+   "type": 20,
+   "file": "chars2\\tuckroll",
+   "placements": 1,
+   "levels": {
+    "City Square": 1
+   },
+   "scripts": [
+    14
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Tuck and Roll (combined)",
+   "runtime": null
+  },
+  {
+   "type": 21,
+   "file": "chars2\\attaflik",
+   "placements": 1,
+   "levels": {
+    "Riverbed Flight": 1
+   },
+   "scripts": [
+    19
+   ],
+   "prior_name": null,
+   "appearance": "ant",
+   "reading": "Atta with Flik (\"attaflik\")",
+   "runtime": null
+  },
+  {
+   "type": 22,
+   "file": "chars2\\hopper",
+   "placements": 3,
+   "levels": {
+    "Riverbed Flight": 1,
+    "Anthill Pt 2": 1,
+    "Canyon Showdown": 1
+   },
+   "scripts": [
+    18,
+    22,
+    28
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Hopper",
+   "runtime": [
+    "exact per-level match in engines 15",
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  },
+  {
+   "type": 23,
+   "file": "chars2\\tuck",
+   "placements": 1,
+   "levels": {
+    "Anthill Pt 2": 1
+   },
+   "scripts": [
+    33
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Tuck",
+   "runtime": null
+  },
+  {
+   "type": 24,
+   "file": "chars2\\roll",
+   "placements": 1,
+   "levels": {
+    "Anthill Pt 2": 1
+   },
+   "scripts": [
+    33
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Roll",
+   "runtime": null
+  },
+  {
+   "type": 25,
+   "file": "chars2\\gypsy",
+   "placements": 1,
+   "levels": {
+    "Clover Forest": 1
+   },
+   "scripts": [
+    17
+   ],
+   "prior_name": null,
+   "appearance": "winged moth",
+   "reading": "Gypsy, second model",
+   "runtime": null
+  },
+  {
+   "type": 26,
+   "file": "chars2\\manny2",
+   "placements": 1,
+   "levels": {
+    "Clover Forest": 1
+   },
+   "scripts": [
+    6
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Manny, second model",
+   "runtime": null
+  },
+  {
+   "type": 27,
+   "file": "chars2\\franslim",
+   "placements": 1,
+   "levels": {
+    "Clover Forest": 1
+   },
+   "scripts": [
+    32
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Francis and Slim (combined)",
+   "runtime": null
+  },
+  {
+   "type": 28,
+   "file": "chars3\\atta",
+   "placements": 1,
+   "levels": {
+    "Anthill Pt 2": 1
+   },
+   "scripts": [
+    25
+   ],
+   "prior_name": null,
+   "appearance": "ant",
+   "reading": "Atta",
+   "runtime": null
+  },
+  {
+   "type": 29,
+   "file": "chars3\\molt",
+   "placements": 1,
+   "levels": {
+    "Battle Arena": 1
+   },
+   "scripts": [
+    11
+   ],
+   "prior_name": null,
+   "appearance": "grasshopper",
+   "reading": "Molt",
+   "runtime": [
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  },
+  {
+   "type": 30,
+   "file": "chars3\\bbird",
+   "placements": 3,
+   "levels": {
+    "Cliffside": 1,
+    "Bird Nest": 1,
+    "Canyon Showdown": 1
+   },
+   "scripts": [
+    26,
+    29
+   ],
+   "prior_name": null,
+   "appearance": "bird",
+   "reading": "bird",
+   "runtime": [
+    "exact per-level match in engines 6, 15",
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  },
+  {
+   "type": 31,
+   "file": "chars3\\acorn",
+   "placements": 7,
+   "levels": {
+    "The Tree": 7
+   },
+   "scripts": [
+    27
+   ],
+   "prior_name": null,
+   "appearance": "flytrap plant",
+   "reading": "acorn (appearance hint said flytrap plant)",
+   "runtime": null
+  },
+  {
+   "type": 32,
+   "file": "chars3\\bluescot",
+   "placements": 5,
+   "levels": {
+    "The Tree": 5
+   },
+   "scripts": [
+    30
+   ],
+   "prior_name": null,
+   "appearance": "ant",
+   "reading": "blue scout",
+   "runtime": null
+  },
+  {
+   "type": 33,
+   "file": "chars3\\fdim",
+   "placements": 1,
+   "levels": {
+    "The Tree": 1
+   },
+   "scripts": [
+    19
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "\"fdim\" (a Dim variant)",
+   "runtime": null
+  },
+  {
+   "type": 34,
+   "file": "chars3\\dragfly",
+   "placements": 34,
+   "levels": {
+    "Cliffside": 10,
+    "Riverbed Flight": 20,
+    "Bird Nest": 4
+   },
+   "scripts": [
+    4
+   ],
+   "prior_name": null,
+   "appearance": "dragonfly",
+   "reading": "dragonfly",
+   "runtime": [
+    "exact per-level match in engines 6"
+   ]
+  },
+  {
+   "type": 35,
+   "file": "chars3\\flikharv",
+   "placements": 6,
+   "levels": {
+    "Anthill": 1,
+    "Tunnels": 1,
+    "City Square": 1,
+    "Clover Forest": 1,
+    "Riverbed Canyon": 1,
+    "The Tree": 1
+   },
+   "scripts": [
+    34
+   ],
+   "prior_name": "harvester",
+   "appearance": null,
+   "reading": "Flik's harvester",
+   "runtime": [
+    "exact per-level match in engines 3",
+    "in engine 1 runs (retail Anthill set)"
+   ]
+  },
+  {
+   "type": 36,
+   "file": "chars3\\thud",
+   "placements": 1,
+   "levels": {
+    "Bug Bar": 1
+   },
+   "scripts": [
+    19
+   ],
+   "prior_name": null,
+   "appearance": null,
+   "reading": "Thud",
+   "runtime": [
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  },
+  {
+   "type": 37,
+   "file": "chars3\\weevil",
+   "placements": 35,
+   "levels": {
+    "Cliffside": 2,
+    "Riverbed Flight": 16,
+    "Riverbed Canyon": 13,
+    "Bird Nest": 4
+   },
+   "scripts": [
+    1
+   ],
+   "prior_name": null,
+   "appearance": "dandelion seed",
+   "reading": "weevil (appearance hint said dandelion seed)",
+   "runtime": [
+    "exact per-level match in engines 6"
+   ]
+  },
+  {
+   "type": 38,
+   "file": "chars3\\soil",
+   "placements": 1,
+   "levels": {
+    "Training": 1
+   },
+   "scripts": [
+    39
+   ],
+   "prior_name": "Mr. Soil",
+   "appearance": null,
+   "reading": "Mr. Soil",
+   "runtime": [
+    "Training logs"
+   ]
+  },
+  {
+   "type": 39,
+   "file": "chars3\\protect",
+   "placements": 8,
+   "levels": {
+    "Anthill": 2,
+    "Clover Forest": 2,
+    "Riverbed Canyon": 4
+   },
+   "scripts": [
+    36
+   ],
+   "prior_name": "pill bug",
+   "appearance": null,
+   "reading": "\"protect\" (earlier label: pill bug)",
+   "runtime": [
+    "in engine 1 runs (retail Anthill set)"
+   ]
+  },
+  {
+   "type": 40,
+   "file": "chars4\\badworm",
+   "placements": 15,
+   "levels": {
+    "Anthill": 3,
+    "Tunnels": 2,
+    "Clover Forest": 2,
+    "Riverbed Flight": 4,
+    "Riverbed Canyon": 4
+   },
+   "scripts": [
+    37
+   ],
+   "prior_name": "caterpillar",
+   "appearance": null,
+   "reading": "\"bad worm\" (earlier label: caterpillar)",
+   "runtime": [
+    "exact per-level match in engines 3",
+    "in engine 1 runs (retail Anthill set)"
+   ]
+  },
+  {
+   "type": 41,
+   "file": "chars4\\badcent",
+   "placements": 9,
+   "levels": {
+    "Tunnels": 4,
+    "Riverbed Canyon": 5
+   },
+   "scripts": [
+    38
+   ],
+   "prior_name": null,
+   "appearance": "centipede",
+   "reading": "\"bad centipede\"",
+   "runtime": [
+    "exact per-level match in engines 3",
+    "loaded when moved into engine 1 (EXP-20261005-001/002)"
+   ]
+  }
+ ],
+ "counts": {
+  "types": 41,
+  "runtime_confirmed": 26,
+  "static_only": 15
+ },
+ "disc_models_side_note": {
+  "test": "CHARS/TEST.ALL 22804 B + TEST.ANM 9896 B, dated 1998-06-28; no reference in the executable",
+  "plant12": "PLANTS2/PLANT12.ALL 4620 B + .ANM 4418 B; plants2\\plant12 is case 0xC of the plant loader in 0x00445020 (resource slot 0x73, sole reference 0x00445A11). Unused on PC: 0x00416100's request tables (constant 5, seed table 0x004DE9F0, token lists 0x004DE9F4..0x004DEA30) yield only 1-11, 13, 14; saved logs load every plant except 12. User-reported as unused on TCRF (page not readable by agents)."
+ }
+}

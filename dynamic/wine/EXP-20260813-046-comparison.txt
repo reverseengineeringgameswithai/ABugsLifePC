@@ -1,0 +1,96 @@
+EXP-20260813-046 exact 0A6C live admission receipt
+Date: 2026-08-13
+Executable SHA-256: 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+
+Accepted arms
+-------------
+control A:   RUN-GDB-20260813-142433
+replacement: RUN-GDB-20260813-142708
+control B:   RUN-GDB-20260813-142853
+
+Staged SHA-256 receipts
+-----------------------
+All three bugs.exe:
+97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+control A/B CD/CHARS/FLICK.ALL:
+a2f23220392d7fb4880bbab7acab9393fe6da059961d620e7b85c8df3f4f4ac6
+replacement CD/CHARS/FLICK.ALL (equal to source CD/CHARS3/FLICKD.ALL):
+6e5afb4f9ea649bc305fdafeb027aece25914b27a017d04841bf4298634079a4
+
+Fresh game-log receipts
+-----------------------
+control A bugs.log SHA-256:
+0387a06a000ffb0ca105c8155e663e5e561cf91f2534e1d593f14e7043cb252c
+replacement bugs.log SHA-256:
+ac69d57ba30c56986126051dc5171a2821723c6d6023ced2484c665399193c88
+control B bugs.log SHA-256:
+0387a06a000ffb0ca105c8155e663e5e561cf91f2534e1d593f14e7043cb252c
+
+Each log contains these exact bounded receipts at lines 74, 75, 76, 127,
+1456, 1460, and 1478:
+
+  INFO Native software render mode is FALSE.
+  INFO RenderMode set to Direct3d render mode.
+  INFO Screen mode 640x480x16 selected.
+  INIT : Starting Direct3D renderer.
+  LOAD : Loading file R:\PC\BUGS\cd\level07\level1.dat.
+  LOAD : Loading file R:\PC\BUGS\cd\chars\flick.all.
+  ROUTINE : NextLife.
+
+Direct search finds no INITSOFTRENDER line in any accepted log.
+
+Capture-envelope receipts
+-------------------------
+Every accepted arm reports capture_complete at exactly 400 stops; validates
+the complete ordered 168-call plan at SHA-256
+5eb280a7bd54b56a9654fed7984e9677a15618c5376be703a85718ea3bb2ffec;
+observes two rollovers and one captured cycle; installs and deletes exactly
+three conditioned data watches and no breakpoints; verifies cleanup and
+detach; observes no target signal; and passes five resumed/untraced survival
+samples. Each exact receipt validates entry 7, file offset 0x0A6C, form 0x3C,
+page 16, and caller mode 2. The predicted append equals the observed count
+outcome in every arm. Retained output declares raw_inputs_retained false and
+payload_bytes_retained 0; stop rows retain no register, watched, or memory-
+read values.
+
+Exact receipt comparison
+------------------------
+
+arm          predicted/observed  first reject  evaluated  active-state SHA-256
+control A    0/0                 0x004065B0    7          72c9ae8aa3a7ad1282bb2bb4f61bdbbeada986b156df76e7d047e59396741d13
+replacement  0/0                 0x004065B0    7          334d0186e7cadec3582c3fc14088f842e8891fba0104c15daa0609c80974c05e
+control B    1/1                 none          12         7d0211dfa941d9dfe37811c1a0040e5c22a61a46bec43f39b88dc0ccb9b17d7c
+
+The fresh append pattern is 0/0/1, not M2.29's retained 0/1/0. Control A and
+the replacement both reject at the slot-7 instruction 0x004065B0; control B
+passes all 12 logical admission slots and appends four vertices/six indices.
+The two unchanged controls therefore disagree, while the replacement does not
+pass. This fails the stable-control/replacement-pass selection gate.
+
+The evaluator itself does not disagree with native count behavior: all three
+prediction_matches_observation values are true. The result is a precise
+temporal/process-state ambiguity. It does not invalidate M2.29's within-arm
+measurement, but proves that its 0/1/0 pattern is not source-stable across
+fresh launches. No active-state digest matches another arm, and the digest is
+coherence metadata rather than a semantic or causal attribution.
+
+Rejected timing calibrations
+----------------------------
+RUN-GDB-20260813-141810 attached at the natural Training title and recorded
+1,000 unmatched flush-marker stops, zero rollovers, and no captured cycle.
+RUN-GDB-20260813-142155 attached at the same boundary and received title input
+only after the stop stream had begun; it recorded 1,000 stops, one warmup
+rollover, 801 unmatched flushes, and no captured cycle. Both failed closed at
+max_stops, deleted all three watches, detached, observed no target signal,
+passed five survival samples, and retained no raw input or payload. Neither is
+admission-outcome evidence. The accepted ordering is to reach logged NextLife
+before attaching the exact receipt.
+
+Scope
+-----
+This comparison establishes live schema-6 evaluator/count agreement and the
+fresh temporal contradiction only. It does not select a stable non-source
+input, attribute admission to the replacement bytes, identify a field,
+primitive, policy, asset, or pixel, or promote an editor/parser. No source or
+target state was written, no new execution point or watch was added, no other
+record/family was inspected, and no PS1 evidence was used.

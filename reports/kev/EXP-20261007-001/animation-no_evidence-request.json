@@ -1,0 +1,60 @@
+{
+  "model": "kev-latest",
+  "state": "No evidence has been supplied.",
+  "questions": {
+    "q25": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: FLICK.ANM has a 40-slot table with slot 26 absent.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q26": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Flik's native action-state table has 35 rows at address 0x004C1CE8.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q27": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: All 61 retail ANM files passed the record grammar check with zero slack and no exceptional file.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q28": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The animation catalogue experiment observed Flik's state word live during gameplay.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q29": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Unreferenced animation slot 7 visually depicts Flik waving.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q30": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The per-part stored rotation angles use XYZ Euler order.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    }
+  }
+}

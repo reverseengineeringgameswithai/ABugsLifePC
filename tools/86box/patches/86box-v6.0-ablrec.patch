@@ -1,0 +1,145 @@
+diff --git a/src/mem/mem.c b/src/mem/mem.c
+index 5c10282..9dca1d9 100644
+--- a/src/mem/mem.c
++++ b/src/mem/mem.c
+@@ -23,6 +23,7 @@
+ #include <string.h>
+ #include <stdlib.h>
+ #include <wchar.h>
++#include <signal.h>
+ #define HAVE_STDARG_H
+ #include <86box/86box.h>
+ #include <86box/version.h>
+@@ -38,6 +39,74 @@
+ #include <86box/plat.h>
+ #include <86box/rom.h>
+ #include <86box/gdbstub.h>
++/* ==== ABLREC: flight-recorder hook (DEC-20260818-149, Phase 1) ==== */
++#define ABLREC_BITS     16
++#define ABLREC_N        (1u << ABLREC_BITS)
++static const struct { uint32_t lo, hi; } ablrec_ranges[] = {
++    { 0x0059D900u, 0x0059D930u },  /* Flik position struct (XYZW + neighbour triple) */
++    { 0x00861C80u, 0x00861C88u },  /* level global 0x00861C84 */
++    { 0x00599AF4u, 0x00599AFCu },  /* carousel counter 0x00599AF8 */
++    { 0x0059A5ACu, 0x0059A5B4u },  /* NextLife 0x0059A5B0 */
++    { 0x0059D960u, 0x0059D96Cu },  /* auxiliary/reset-query triple 0x0059D960/64/68 (KU-062) */
++    { 0x00599C60u, 0x00599C80u },  /* Tunnels grain-gate state incl. 0x00599C69 (KU-067) */
++    { 0x0059D9B0u, 0x0059D9C0u },  /* grain-count candidate (Training counter was 0x0059D9B1) */
++};
++#define ABLREC_NRANGES (sizeof(ablrec_ranges) / sizeof(ablrec_ranges[0]))
++typedef struct {
++    uint64_t cyc;
++    uint32_t cr3v, pc, oldpc, addr, val;
++    uint16_t width;
++} ablrec_t;
++static ablrec_t ablrec_ring[ABLREC_N];
++static uint32_t ablrec_head = 0;
++static int      ablrec_inited = 0;
++static int ablrec_in_range(uint32_t a) {
++    for (unsigned i = 0; i < ABLREC_NRANGES; i++)
++        if (a >= ablrec_ranges[i].lo && a < ablrec_ranges[i].hi)
++            return 1;
++    return 0;
++}
++static void ablrec_dump(int sig) {
++    (void) sig;
++    FILE *f = fopen("/vm/logs/ablrec.txt", "w");
++    if (!f) return;
++    uint32_t total = ablrec_head;
++    uint32_t n = (total < ABLREC_N) ? total : ABLREC_N;
++    uint32_t start = (total < ABLREC_N) ? 0u : (total & (ABLREC_N - 1u));
++    fprintf(f, "# ABLREC total=%u shown=%u nranges=%u dump_eip=%08x dump_cr3=%08x\n",
++            (unsigned) total, (unsigned) n, (unsigned) ABLREC_NRANGES,
++            (unsigned) cpu_state.pc, (unsigned) cr3);
++    for (unsigned i = 0; i < ABLREC_NRANGES; i++)
++        fprintf(f, "# range %u [%08x,%08x)\n", i,
++                (unsigned) ablrec_ranges[i].lo, (unsigned) ablrec_ranges[i].hi);
++    for (uint32_t i = 0; i < n; i++) {
++        ablrec_t *r = &ablrec_ring[(start + i) & (ABLREC_N - 1u)];
++        fprintf(f, "%llu cr3=%08x pc=%08x oldpc=%08x addr=%08x val=%08x w=%u\n",
++                (unsigned long long) r->cyc, (unsigned) r->cr3v, (unsigned) r->pc,
++                (unsigned) r->oldpc, (unsigned) r->addr, (unsigned) r->val, (unsigned) r->width);
++    }
++    fclose(f);
++}
++static inline void ablrec_hook(uint32_t addr, uint32_t val, uint16_t width) {
++    if (!ablrec_inited) {
++        signal(SIGUSR1, ablrec_dump);
++        for (unsigned i = 0; i < ABLREC_NRANGES; i++) {
++            uint32_t p0 = ablrec_ranges[i].lo >> MEM_GRANULARITY_BITS;
++            uint32_t p1 = (ablrec_ranges[i].hi - 1u) >> MEM_GRANULARITY_BITS;
++            for (uint32_t pg = p0; pg <= p1; pg++)
++                gdbstub_watch_pages[pg >> 6] |= (1ULL << (pg & 63));
++        }
++        flushmmucache_write();
++        ablrec_inited = 1;
++    }
++    if (ablrec_in_range(addr)) {
++        ablrec_t *r = &ablrec_ring[ablrec_head & (ABLREC_N - 1u)];
++        r->cyc = tsc; r->cr3v = cr3; r->pc = cpu_state.pc; r->oldpc = cpu_state.oldpc;
++        r->addr = addr; r->val = val; r->width = width;
++        ablrec_head++;
++    }
++}
++/* ==== end ABLREC ==== */
+ #ifdef USE_DYNAREC
+ #    include "codegen_public.h"
+ #else
+@@ -599,6 +668,9 @@ addwritelookup(uint32_t virt, uint32_t phys)
+     if (virt == 0xffffffff)
+         return;
+ 
++    if (gdbstub_watch_pages[(virt >> MEM_GRANULARITY_BITS) >> 6] & (1ULL << ((virt >> MEM_GRANULARITY_BITS) & 63)))
++        return;
++
+     if (page_lookup[virt >> 12])
+         return;
+ 
+@@ -782,6 +854,7 @@ writemembl(uint32_t addr, uint8_t val)
+     uint64_t       a;
+ 
+     GDBSTUB_MEM_ACCESS(addr, GDBSTUB_MEM_WRITE, 1);
++    ablrec_hook(addr, val, 1);
+ #ifdef USE_DEBUG_REGS_486
+     mem_debug_check_addr(addr, 2);
+ #endif
+@@ -842,6 +915,7 @@ writemembl_no_mmut(uint32_t addr, uint32_t a64, uint8_t val)
+     mem_mapping_t *map;
+ 
+     GDBSTUB_MEM_ACCESS(addr, GDBSTUB_MEM_WRITE, 1);
++    ablrec_hook(addr, val, 1);
+ 
+     mem_logical_addr = addr;
+ 
+@@ -936,6 +1010,7 @@ writememwl(uint32_t addr, uint16_t val)
+     mem_debug_check_addr(addr + 1, 2);
+ #endif
+     GDBSTUB_MEM_ACCESS_FAST(addr64a, GDBSTUB_MEM_WRITE, 2);
++    ablrec_hook(addr, val, 2);
+ 
+     mem_logical_addr = addr;
+ 
+@@ -1050,6 +1125,7 @@ writememwl_no_mmut(uint32_t addr, uint32_t *a64, uint16_t val)
+     mem_mapping_t *map;
+ 
+     GDBSTUB_MEM_ACCESS(addr, GDBSTUB_MEM_WRITE, 2);
++    ablrec_hook(addr, val, 2);
+ 
+     mem_logical_addr = addr;
+ 
+@@ -1188,6 +1264,7 @@ writememll(uint32_t addr, uint32_t val)
+ #endif
+     }
+     GDBSTUB_MEM_ACCESS_FAST(addr64a, GDBSTUB_MEM_WRITE, 4);
++    ablrec_hook(addr, val, 4);
+ 
+     mem_logical_addr = addr;
+ 
+@@ -1322,6 +1399,7 @@ writememll_no_mmut(uint32_t addr, uint32_t *a64, uint32_t val)
+     mem_mapping_t *map;
+ 
+     GDBSTUB_MEM_ACCESS(addr, GDBSTUB_MEM_WRITE, 4);
++    ablrec_hook(addr, val, 4);
+ 
+     mem_logical_addr = addr;
+ 

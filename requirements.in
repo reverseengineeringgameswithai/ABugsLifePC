@@ -1,0 +1,11 @@
+pefile
+lief
+capstone
+construct
+rich
+pytest
+hypothesis
+pyyaml
+pydantic
+networkx
+unicorn

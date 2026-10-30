@@ -1,0 +1,2145 @@
+{
+  "experiment": "EXP-20260904-011",
+  "status": "offline-original-instruction-discriminator-complete-live-comparison-prepared",
+  "retail_executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "executed_game_sha256": "1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f",
+  "baseline": "EXP-20260904-009 captured RAM/actor geometry, EXP-20260904-010 exact paused visibility controls",
+  "inference": "The residual samples are consistent with the remaining depth interpolation error inside the 4x4 top cells. Rotating each top quad by one corner changes its emitted triangle diagonal and improves depth ordering without adding vertices/faces or moving geometry. Live visibility causality is still pending.",
+  "candidate_plan": {
+    "experiment": "EXP-20260904-011",
+    "status": "prepared-not-authorized-not-executed",
+    "created": 1788573477.4205358,
+    "process": {
+      "pid": 46701,
+      "start": 1147812,
+      "group": 46458,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\auto-hardware\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "state": {
+      "level": 1,
+      "position": [
+        163024,
+        -102401,
+        509900
+      ],
+      "terrain_base": 0,
+      "barrier_head": 7152075,
+      "contact": [
+        99,
+        6973595
+      ],
+      "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+      "camera_translation": [
+        190254,
+        -115203,
+        500135
+      ]
+    },
+    "address": "0x6662a7",
+    "prefix_bytes": 1078,
+    "diagonal_slice_offset": 564,
+    "diagonal_slice_bytes": 256,
+    "changed_bytes_between_fine_variants": 138,
+    "collision_address": "0x6a6863",
+    "files": {
+      "original-prefix.bin": {
+        "path": "work/experiments/EXP-20260904-011/original-prefix.bin",
+        "bytes": 1078,
+        "sha256": "6741aab66d6a191f1e9285a92a0ca4edc3fb5157a384062a6ba52c79b9fe1554"
+      },
+      "control-prefix.bin": {
+        "path": "work/experiments/EXP-20260904-011/control-prefix.bin",
+        "bytes": 1078,
+        "sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1"
+      },
+      "alternate-prefix.bin": {
+        "path": "work/experiments/EXP-20260904-011/alternate-prefix.bin",
+        "bytes": 1078,
+        "sha256": "e1a21b5f0bf96e7980fa992b94fc0ce4ea246127c5338a8c2ef5d32cd65e3fb5"
+      },
+      "collision-prefix.bin": {
+        "path": "work/experiments/EXP-20260904-011/collision-prefix.bin",
+        "bytes": 530,
+        "sha256": "068f8a4925848faabe608e04631aacac93d2597594c1f8bc8701e271bc94413f"
+      }
+    },
+    "helper_sha256": {
+      "common.py": "eee3e2a51c64e4dff92bcb8712ca63a63dd420a70ddd9fce534ed3aec14311d2",
+      "freeze.py": "4ad3d5b87a2a0ab32ed31072c0ca828e36a81a0f5820032163ea51f4c2df683f",
+      "live_compare.py": "d9abfb112cfdf955affdac158c47a06f92ade3007b79ac3dd87c77c200a1c4d1"
+    },
+    "builder_sha256": "c5010cc56a665b58647539e09ca6f246a4dfa77832824c6c6042d1fbb9b3d76e",
+    "candidate_dat_sha256": "572d244f1cc053ef29d2c343e4311a6ff20237c2259c5e84867bade53d57c247",
+    "control_dat_sha256": "8ba384541d80da2e82a3016cf99638476229b4da7d445a9edfafdc34e365b6e5",
+    "terrain_sha256": "26f3e0235533419a80b2a0eff18f423fadc20617a6c2ed2be445abeae87b35d5",
+    "writes": [
+      {
+        "label": "apply_control",
+        "from": "original-prefix.bin",
+        "to": "control-prefix.bin",
+        "offset": 0,
+        "bytes": 1078
+      },
+      {
+        "label": "apply_diagonal",
+        "from": "control-prefix.bin",
+        "to": "alternate-prefix.bin",
+        "offset": 564,
+        "bytes": 256
+      },
+      {
+        "label": "restore_control",
+        "from": "alternate-prefix.bin",
+        "to": "control-prefix.bin",
+        "offset": 564,
+        "bytes": 256
+      },
+      {
+        "label": "restore_original",
+        "from": "control-prefix.bin",
+        "to": "original-prefix.bin",
+        "offset": 0,
+        "bytes": 1078
+      }
+    ],
+    "capture_labels": [
+      "original_before",
+      "control_before",
+      "alternate",
+      "control_restored",
+      "original_restored"
+    ],
+    "acceptance": "All five triplets match paused player/contact/camera state; control/restored-control ROI exact; original/restored-original ROI exact; classify all 259 prior analytic samples, six residual samples, and all 255 prior inversion points; no all-view claim.",
+    "scope": "Four guarded writes, including restoration of original 1078-byte prefix; brief same-process stops and read-only register inspection at retained frame-limiter gate. No gameplay input, restart, collision/player/camera write. On early failure use remaining final restoration to restore any exact old/new byte mixture; no retry of an attempted write."
+  },
+  "comparison": {
+    "scope": "Original emitted hardware z, integer screen sample positions, 259 prior analytic-top samples; offline candidate screening, not live acceptance. Camera/actor reconstruction limitations from EXP009 remain.",
+    "variants": [
+      {
+        "variant": "grid-3-6-flip",
+        "grid": [
+          3,
+          6
+        ],
+        "flip_top": true,
+        "span": 1202,
+        "retained_targets": 259,
+        "box_wins": 259,
+        "residual_box_wins": 6,
+        "prior255_still_occluded": 255,
+        "prior255_losing_points": [],
+        "losing_points": [],
+        "six_prior_residuals": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.05400823147345252,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.05401135814100854,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.05144938702504841,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.05146522189617619,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05148105676730397,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.051496891638431755,
+            "box_wins": true,
+            "was_residual": true
+          }
+        ]
+      },
+      {
+        "variant": "grid-3-6",
+        "grid": [
+          3,
+          6
+        ],
+        "flip_top": false,
+        "span": 1202,
+        "retained_targets": 259,
+        "box_wins": 256,
+        "residual_box_wins": 3,
+        "prior255_still_occluded": 255,
+        "prior255_losing_points": [],
+        "losing_points": [
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.05170833906938327,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05172920395099119,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.05175006883259912,
+            "box_wins": false,
+            "was_residual": true
+          }
+        ],
+        "six_prior_residuals": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.054097887264784955,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.0541032197459644,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.05168747418777533,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.05170833906938327,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05172920395099119,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.05175006883259912,
+            "box_wins": false,
+            "was_residual": true
+          }
+        ]
+      },
+      {
+        "variant": "grid-4-4-flip",
+        "grid": [
+          4,
+          4
+        ],
+        "flip_top": true,
+        "span": 1078,
+        "retained_targets": 259,
+        "box_wins": 259,
+        "residual_box_wins": 6,
+        "prior255_still_occluded": 255,
+        "prior255_losing_points": [],
+        "losing_points": [],
+        "six_prior_residuals": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.05400278376436782,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.05400558997844827,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.05135923873546512,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.05136718750000001,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.051375136264534875,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.05138308502906977,
+            "box_wins": true,
+            "was_residual": true
+          }
+        ]
+      },
+      {
+        "variant": "grid-4-4",
+        "grid": [
+          4,
+          4
+        ],
+        "flip_top": false,
+        "span": 1078,
+        "retained_targets": 259,
+        "box_wins": 253,
+        "residual_box_wins": 0,
+        "prior255_still_occluded": 255,
+        "prior255_losing_points": [],
+        "losing_points": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.05426916173986487,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.054287637246621626,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.05170054494598766,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.0516937725360577,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05167893629807692,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.051664100060096155,
+            "box_wins": false,
+            "was_residual": true
+          }
+        ],
+        "six_prior_residuals": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.05426916173986487,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.054287637246621626,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.05170054494598766,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.0516937725360577,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05167893629807692,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.051664100060096155,
+            "box_wins": false,
+            "was_residual": true
+          }
+        ]
+      },
+      {
+        "variant": "grid-4-5-flip",
+        "grid": [
+          4,
+          5
+        ],
+        "flip_top": true,
+        "span": 1258,
+        "retained_targets": 259,
+        "box_wins": 259,
+        "residual_box_wins": 6,
+        "prior255_still_occluded": 255,
+        "prior255_losing_points": [],
+        "losing_points": [],
+        "six_prior_residuals": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.054039713541666666,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.05402669270833333,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.051223795143469655,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.051228948507585755,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05123410187170184,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.051239255235817946,
+            "box_wins": true,
+            "was_residual": true
+          }
+        ]
+      },
+      {
+        "variant": "grid-4-5",
+        "grid": [
+          4,
+          5
+        ],
+        "flip_top": false,
+        "span": 1258,
+        "retained_targets": 259,
+        "box_wins": 258,
+        "residual_box_wins": 5,
+        "prior255_still_occluded": 254,
+        "prior255_losing_points": [
+          [
+            308,
+            315
+          ]
+        ],
+        "losing_points": [
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.05151962652439024,
+            "box_wins": false,
+            "was_residual": true
+          }
+        ],
+        "six_prior_residuals": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.05414148749109686,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.05415261640847578,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.05148389862804878,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.05149580792682927,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.051507717225609755,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.05151962652439024,
+            "box_wins": false,
+            "was_residual": true
+          }
+        ]
+      },
+      {
+        "variant": "grid-5-4-flip",
+        "grid": [
+          5,
+          4
+        ],
+        "flip_top": true,
+        "span": 1258,
+        "retained_targets": 259,
+        "box_wins": 259,
+        "residual_box_wins": 6,
+        "prior255_still_occluded": 255,
+        "prior255_losing_points": [],
+        "losing_points": [],
+        "six_prior_residuals": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.053955078125,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.053955078125,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.05138517680921053,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.05139374314692983,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05140230948464913,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.051410875822368425,
+            "box_wins": true,
+            "was_residual": true
+          }
+        ]
+      },
+      {
+        "variant": "grid-5-4",
+        "grid": [
+          5,
+          4
+        ],
+        "flip_top": false,
+        "span": 1258,
+        "retained_targets": 259,
+        "box_wins": 254,
+        "residual_box_wins": 2,
+        "prior255_still_occluded": 254,
+        "prior255_losing_points": [
+          [
+            343,
+            316
+          ]
+        ],
+        "losing_points": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.054293885522959176,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.05431381536989796,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              343,
+              316
+            ],
+            "actor_z": 0.05366711738782051,
+            "box_z": 0.05368104272959184,
+            "box_wins": false,
+            "was_residual": false
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05161073083906728,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.05160326476490826,
+            "box_wins": false,
+            "was_residual": true
+          }
+        ],
+        "six_prior_residuals": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.054293885522959176,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.05431381536989796,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.05162566298738532,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.0516181969132263,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05161073083906728,
+            "box_wins": false,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.05160326476490826,
+            "box_wins": false,
+            "was_residual": true
+          }
+        ]
+      },
+      {
+        "variant": "grid-6-3-flip",
+        "grid": [
+          6,
+          3
+        ],
+        "flip_top": true,
+        "span": 1202,
+        "retained_targets": 259,
+        "box_wins": 259,
+        "residual_box_wins": 6,
+        "prior255_still_occluded": 255,
+        "prior255_losing_points": [],
+        "losing_points": [],
+        "six_prior_residuals": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.0536679387374409,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.05367082456043144,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.05092174602004717,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.05092059441332548,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05091944280660377,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.05091829119988208,
+            "box_wins": true,
+            "was_residual": true
+          }
+        ]
+      },
+      {
+        "variant": "grid-6-3",
+        "grid": [
+          6,
+          3
+        ],
+        "flip_top": false,
+        "span": 1202,
+        "retained_targets": 259,
+        "box_wins": 259,
+        "residual_box_wins": 6,
+        "prior255_still_occluded": 255,
+        "prior255_losing_points": [],
+        "losing_points": [],
+        "six_prior_residuals": [
+          {
+            "xy": [
+              342,
+              315
+            ],
+            "actor_z": 0.05426580255681818,
+            "box_z": 0.053809303608515054,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              344,
+              315
+            ],
+            "actor_z": 0.054219563802083336,
+            "box_z": 0.053786486727673936,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              298,
+              319
+            ],
+            "actor_z": 0.05169439935064935,
+            "box_z": 0.05133373790429481,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              299,
+              319
+            ],
+            "actor_z": 0.051630986201298704,
+            "box_z": 0.05134538830527572,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              300,
+              319
+            ],
+            "actor_z": 0.051567573051948055,
+            "box_z": 0.05135703870625663,
+            "box_wins": true,
+            "was_residual": true
+          },
+          {
+            "xy": [
+              301,
+              319
+            ],
+            "actor_z": 0.05150415990259741,
+            "box_z": 0.05136868910723755,
+            "box_wins": true,
+            "was_residual": true
+          }
+        ]
+      }
+    ]
+  },
+  "projection_sensitivity": [
+    {
+      "xy": [
+        342,
+        315
+      ],
+      "samples": [
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 138,
+              "z": 0.05426580255681818,
+              "reciprocal_depth": 0.054369039235899974
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05677750918409907,
+              "reciprocal_depth": 0.05394217977600523
+            },
+            "split": {
+              "triangle": 19,
+              "z": 0.05426916173986486,
+              "reciprocal_depth": 0.05395599290984486
+            }
+          }
+        },
+        {
+          "offset": [
+            0.5,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 138,
+              "z": 0.053777521306818184,
+              "reciprocal_depth": 0.053940547089740665
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05675788268416325,
+              "reciprocal_depth": 0.05358914689544854
+            },
+            "split": {
+              "triangle": 19,
+              "z": 0.053958377322635136,
+              "reciprocal_depth": 0.05358580340662631
+            }
+          }
+        },
+        {
+          "offset": [
+            -0.5,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 144,
+              "z": 0.054585774739583336,
+              "reciprocal_depth": 0.054672840353824685
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05679713568403491,
+              "reciprocal_depth": 0.05429989489969932
+            },
+            "split": {
+              "triangle": 19,
+              "z": 0.05457994615709459,
+              "reciprocal_depth": 0.05433133279124159
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 138,
+              "z": 0.05431019176136363,
+              "reciprocal_depth": 0.05440281453303903
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05673162628737808,
+              "reciprocal_depth": 0.053587874925812386
+            },
+            "split": {
+              "triangle": 19,
+              "z": 0.05395375844594595,
+              "reciprocal_depth": 0.053588437315934885
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 138,
+              "z": 0.05422141335227273,
+              "reciprocal_depth": 0.05433530585066981
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05682339208082007,
+              "reciprocal_depth": 0.054301200895525564
+            },
+            "split": {
+              "triangle": 19,
+              "z": 0.05458456503378378,
+              "reciprocal_depth": 0.054328625349919106
+            }
+          }
+        }
+      ]
+    },
+    {
+      "xy": [
+        344,
+        315
+      ],
+      "samples": [
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 140,
+              "z": 0.054219563802083336,
+              "reciprocal_depth": 0.05438515738413058
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05688253477123973,
+              "reciprocal_depth": 0.05394733552598495
+            },
+            "split": {
+              "triangle": 19,
+              "z": 0.05428763724662162,
+              "reciprocal_depth": 0.05394531384110059
+            }
+          }
+        },
+        {
+          "offset": [
+            0.5,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 140,
+              "z": 0.05445353190104167,
+              "reciprocal_depth": 0.054626804151495977
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.0568629082713039,
+              "reciprocal_depth": 0.05359423537788363
+            },
+            "split": {
+              "triangle": 19,
+              "z": 0.053976852829391894,
+              "reciprocal_depth": 0.053575270358052915
+            }
+          }
+        },
+        {
+          "offset": [
+            -0.5,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 140,
+              "z": 0.053985595703125,
+              "reciprocal_depth": 0.05414563909530615
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05690216127117557,
+              "reciprocal_depth": 0.05430511925996592
+            },
+            "split": {
+              "triangle": 19,
+              "z": 0.05459842166385135,
+              "reciprocal_depth": 0.05432050464471765
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 140,
+              "z": 0.0541839599609375,
+              "reciprocal_depth": 0.05435215565577939
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05683665187451873,
+              "reciprocal_depth": 0.05359296316668269
+            },
+            "split": {
+              "triangle": 19,
+              "z": 0.0539722339527027,
+              "reciprocal_depth": 0.05357790323197346
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 140,
+              "z": 0.054255167643229164,
+              "reciprocal_depth": 0.054418199213035465
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05692841766796073,
+              "reciprocal_depth": 0.05430642550711504
+            },
+            "split": {
+              "triangle": 19,
+              "z": 0.054603040540540534,
+              "reciprocal_depth": 0.05431779828243807
+            }
+          }
+        }
+      ]
+    },
+    {
+      "xy": [
+        298,
+        319
+      ],
+      "samples": [
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.05169439935064935,
+              "reciprocal_depth": 0.05174513932159723
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05409988309323665,
+              "reciprocal_depth": 0.05113023044722083
+            },
+            "split": {
+              "triangle": 11,
+              "z": 0.05170054494598766,
+              "reciprocal_depth": 0.0513164929802382
+            }
+          }
+        },
+        {
+          "offset": [
+            0.5,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 158,
+              "z": 0.05174671519886364,
+              "reciprocal_depth": 0.05182221228959639
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.054080256593300825,
+              "reciprocal_depth": 0.05081293644397526
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05140183668870192,
+              "reciprocal_depth": 0.05098280161094078
+            }
+          }
+        },
+        {
+          "offset": [
+            -0.5,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.0517483005275974,
+              "reciprocal_depth": 0.05180120758238212
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05411950959317248,
+              "reciprocal_depth": 0.05145151194244112
+            },
+            "split": {
+              "triangle": 11,
+              "z": 0.05195423016332305,
+              "reciprocal_depth": 0.05164460857887885
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 158,
+              "z": 0.05174671519886364,
+              "reciprocal_depth": 0.05181459148122762
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.054054000196515656,
+              "reciprocal_depth": 0.050811792849159834
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05140925480769231,
+              "reciprocal_depth": 0.05098379734758121
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.05171659395292208,
+              "reciprocal_depth": 0.051764353332054425
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05414576598995765,
+              "reciprocal_depth": 0.05145268451451246
+            },
+            "split": {
+              "triangle": 11,
+              "z": 0.05196226771476337,
+              "reciprocal_depth": 0.0516470097532482
+            }
+          }
+        }
+      ]
+    },
+    {
+      "xy": [
+        299,
+        319
+      ],
+      "samples": [
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.051630986201298704,
+              "reciprocal_depth": 0.0516716424714029
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05415239588680698,
+              "reciprocal_depth": 0.051132546447103265
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05169377253605769,
+              "reciprocal_depth": 0.051316238581540725
+            }
+          }
+        },
+        {
+          "offset": [
+            0.5,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 158,
+              "z": 0.05174671519886364,
+              "reciprocal_depth": 0.05183746063345158
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05413276938687115,
+              "reciprocal_depth": 0.05081522378804287
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05138700045072115,
+              "reciprocal_depth": 0.05098081025433848
+            }
+          }
+        },
+        {
+          "offset": [
+            -0.5,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.05168488737824675,
+              "reciprocal_depth": 0.05172755148475723
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05417202238674281,
+              "reciprocal_depth": 0.051453857140030486
+            },
+            "split": {
+              "triangle": 11,
+              "z": 0.051970305266203706,
+              "reciprocal_depth": 0.05164941115090925
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 158,
+              "z": 0.05174671519886364,
+              "reciprocal_depth": 0.05182983534000786
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05410651299008599,
+              "reciprocal_depth": 0.05081408009026844
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05139441856971154,
+              "reciprocal_depth": 0.05098180591319396
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.05165318080357143,
+              "reciprocal_depth": 0.05169080192880217
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.054198278783527974,
+              "reciprocal_depth": 0.051455029818998875
+            },
+            "split": {
+              "triangle": 11,
+              "z": 0.05197834281764403,
+              "reciprocal_depth": 0.051651812771893145
+            }
+          }
+        }
+      ]
+    },
+    {
+      "xy": [
+        300,
+        319
+      ],
+      "samples": [
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.05156757305194805,
+              "reciprocal_depth": 0.05159835410940461
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.054204908680377306,
+              "reciprocal_depth": 0.05113486265680672
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05167893629807692,
+              "reciprocal_depth": 0.05131422109259305
+            }
+          }
+        },
+        {
+          "offset": [
+            0.5,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.051513671875,
+              "reciprocal_depth": 0.05154272387951487
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05418528218044148,
+              "reciprocal_depth": 0.050817511338049313
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.051372164212740386,
+              "reciprocal_depth": 0.05097881905329243
+            }
+          }
+        },
+        {
+          "offset": [
+            -0.5,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.0516214742288961,
+              "reciprocal_depth": 0.051654104552818096
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05422453518031315,
+              "reciprocal_depth": 0.05145620255142126
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05198570838341346,
+              "reciprocal_depth": 0.05165406574396844
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 158,
+              "z": 0.05174671519886364,
+              "reciprocal_depth": 0.051845088170917715
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05415902578365631,
+              "reciprocal_depth": 0.050816367537301996
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05137958233173077,
+              "reciprocal_depth": 0.05097981463437207
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.051589767654220776,
+              "reciprocal_depth": 0.051617459245749855
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.054250791577098306,
+              "reciprocal_depth": 0.051457375337301305
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05197829026442308,
+              "reciprocal_depth": 0.05165304365420137
+            }
+          }
+        }
+      ]
+    },
+    {
+      "xy": [
+        301,
+        319
+      ],
+      "samples": [
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.05150415990259741,
+              "reciprocal_depth": 0.05152527334973249
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05425742147394764,
+              "reciprocal_depth": 0.051137179076359715
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.051664100060096155,
+              "reciprocal_depth": 0.05131220376227358
+            }
+          }
+        },
+        {
+          "offset": [
+            0.5,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.05145025872564935,
+              "reciprocal_depth": 0.05146980050606489
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05423779497401181,
+              "reciprocal_depth": 0.05081979909402239
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05135732797475962,
+              "reciprocal_depth": 0.05097682800778437
+            }
+          }
+        },
+        {
+          "offset": [
+            -0.5,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.051558061079545456,
+              "reciprocal_depth": 0.05158086589685726
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05427704797388347,
+              "reciprocal_depth": 0.051458548176642666
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.051970872145432695,
+              "reciprocal_depth": 0.051652021604882095
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.05148196530032468,
+              "reciprocal_depth": 0.05150623638127605
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05421153857722664,
+              "reciprocal_depth": 0.05081865519028829
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.05136474609375,
+              "reciprocal_depth": 0.05097782351109728
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 160,
+              "z": 0.05152635450487013,
+              "reciprocal_depth": 0.05154432439571391
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05430330437066863,
+              "reciprocal_depth": 0.05145972106944899
+            },
+            "split": {
+              "triangle": 10,
+              "z": 0.051963454026442306,
+              "reciprocal_depth": 0.05165099959600824
+            }
+          }
+        }
+      ]
+    },
+    {
+      "xy": [
+        339,
+        325
+      ],
+      "samples": [
+        {
+          "offset": [
+            0,
+            0
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 141,
+              "z": 0.054443359375,
+              "reciprocal_depth": 0.05455717070422037
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05570231286896817,
+              "reciprocal_depth": 0.047636255628639226
+            },
+            "split": {
+              "triangle": 18,
+              "z": 0.047876317223837214,
+              "reciprocal_depth": 0.04746480081654681
+            }
+          }
+        },
+        {
+          "offset": [
+            0.5,
+            0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 141,
+              "z": 0.05426025390625,
+              "reciprocal_depth": 0.054389863937290464
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05568268636903234,
+              "reciprocal_depth": 0.04736072758811134
+            },
+            "split": {
+              "triangle": 18,
+              "z": 0.047530659520348836,
+              "reciprocal_depth": 0.04718117013203432
+            }
+          }
+        },
+        {
+          "offset": [
+            -0.5,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 141,
+              "z": 0.05462646484375,
+              "reciprocal_depth": 0.05472550994013445
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.055721939368904,
+              "reciprocal_depth": 0.04791500827910171
+            },
+            "split": {
+              "triangle": 18,
+              "z": 0.048221974927325585,
+              "reciprocal_depth": 0.04775186222967085
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            0.5
+          ],
+          "depths": {
+            "actor": null,
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05565642997224718,
+              "reciprocal_depth": 0.047359734103860615
+            },
+            "split": {
+              "triangle": 18,
+              "z": 0.04753872183866279,
+              "reciprocal_depth": 0.047182091227062566
+            }
+          }
+        },
+        {
+          "offset": [
+            0,
+            -0.5
+          ],
+          "depths": {
+            "actor": {
+              "triangle": 141,
+              "z": 0.05449329723011364,
+              "reciprocal_depth": 0.05460057335772219
+            },
+            "coarse": {
+              "triangle": 3,
+              "z": 0.05574819576568917,
+              "reciprocal_depth": 0.04791602519659404
+            },
+            "split": {
+              "triangle": 18,
+              "z": 0.04821391260901163,
+              "reciprocal_depth": 0.0477509187542521
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "original_executions": [
+    {
+      "file": "grid-3-6-flip.json",
+      "entry": "0x004498F0",
+      "instructions": 24107,
+      "returned": true,
+      "vertices": 84,
+      "indices": 126
+    },
+    {
+      "file": "grid-3-6.json",
+      "entry": "0x004498F0",
+      "instructions": 24105,
+      "returned": true,
+      "vertices": 84,
+      "indices": 126
+    },
+    {
+      "file": "grid-4-4-flip.json",
+      "entry": "0x004498F0",
+      "instructions": 21211,
+      "returned": true,
+      "vertices": 72,
+      "indices": 108
+    },
+    {
+      "file": "grid-4-4.json",
+      "entry": "0x004498F0",
+      "instructions": 21209,
+      "returned": true,
+      "vertices": 72,
+      "indices": 108
+    },
+    {
+      "file": "grid-4-5-flip.json",
+      "entry": "0x004498F0",
+      "instructions": 25799,
+      "returned": true,
+      "vertices": 92,
+      "indices": 138
+    },
+    {
+      "file": "grid-4-5.json",
+      "entry": "0x004498F0",
+      "instructions": 25797,
+      "returned": true,
+      "vertices": 92,
+      "indices": 138
+    },
+    {
+      "file": "grid-5-4-flip.json",
+      "entry": "0x004498F0",
+      "instructions": 25353,
+      "returned": true,
+      "vertices": 88,
+      "indices": 132
+    },
+    {
+      "file": "grid-5-4.json",
+      "entry": "0x004498F0",
+      "instructions": 25351,
+      "returned": true,
+      "vertices": 88,
+      "indices": 132
+    },
+    {
+      "file": "grid-6-3-flip.json",
+      "entry": "0x004498F0",
+      "instructions": 24146,
+      "returned": true,
+      "vertices": 84,
+      "indices": 126
+    },
+    {
+      "file": "grid-6-3.json",
+      "entry": "0x004498F0",
+      "instructions": 24141,
+      "returned": true,
+      "vertices": 84,
+      "indices": 126
+    }
+  ],
+  "four_by_four_batches_exactly_match_prior": true,
+  "limits": [
+    "No new live memory write, stop, debugger attachment, input, launch or restart. Existing session audited and guarded read-only.",
+    "Integer sample calculations are not a complete rasterizer; all six predicates are sensitive to a +0.5 Y sample shift.",
+    "Actor reconstruction still has only 75/387 vertex tuples matched to the earlier non-atomic captured live buffer.",
+    "The alternate diagonal was selected using the known failure view. Other camera angles and oscillating movement remain untested.",
+    "The 4x5 and 5x4 unflipped grids each regress one of the previous 255 inversion samples offline. More faces alone are not an acceptance rule.",
+    "EXP-005 shared-floor return failure remains open.",
+    "Fresh explicit authorization is required before the prepared four live mesh writes and brief stops/register inspection."
+  ],
+  "checks": {
+    "command": "PYTHONPATH=reimplementation .venv/bin/python -m pytest -q tests/test_terrain_deck_grid_probe.py tests/test_terrain_deck_visual_probe.py",
+    "source": "retained exec tool result during this session",
+    "exit_code": 0,
+    "passed": 33,
+    "pytest_seconds": 0.36,
+    "builder_sha256": "c5010cc56a665b58647539e09ca6f246a4dfa77832824c6c6042d1fbb9b3d76e",
+    "new_tests_sha256": "70d87a44251abd38409f64ab9faee8cfdf002088bbfe41f001350db2f16392bc",
+    "operator_synthetic_cases": 5,
+    "operator_fixture_path": "work/experiments/EXP-20260904-011/operator-fixture.json",
+    "full_make_check_run": false,
+    "commit_performed": false
+  },
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260904-011/edge-depths.json",
+      "bytes": 146850,
+      "sha256": "1d41b445fde9242989445d4864f64e679c7dc6f052bd524d288c9c651c5cbe05"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-comparison.json",
+      "bytes": 20976,
+      "sha256": "1e871fe2f01e1c8478468c2d47be620eb2bee408a9aadbc3543f60690a5cea84"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/candidate-plan.json",
+      "bytes": 3855,
+      "sha256": "3c808a26cfca977045b23aabf8c8323ead9d10c2ceafcde22875aef7b076063f"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/live-preflight.json",
+      "bytes": 588,
+      "sha256": "cc08a28c1e8cffe607e49d96c6db9a453dacaff63d8bb5791d55c2e071485f17"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/operator-fixture.json",
+      "bytes": 662,
+      "sha256": "4632be2b38ca3d424d119e79f18abf3604a8c32c32dbfd4c8f04da9928de4294"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/checks.json",
+      "bytes": 634,
+      "sha256": "fb924ffe566a719c8a73df847746f5ca8c8864215f6e50ffe6b904b14a2c501e"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/pre-audit.json",
+      "bytes": 3444,
+      "sha256": "d52938990118da40f0721d80d0d9fb4c3b9f57d767c4f442f2f036782059504c"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/preflight-state.json",
+      "bytes": 644,
+      "sha256": "8870fc59216bd7323cc67050781ff11d49de15d322979c1d0a5be037a968629c"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/live_compare.py",
+      "bytes": 5753,
+      "sha256": "3bd8d81482ce7760070c2a57b61a8ce6bde65e18803f14838887ce03481ceae3"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/operator_fixture.py",
+      "bytes": 3174,
+      "sha256": "d4667bb562b7136edd3fbb35dddef0ec809c5fd264f8920b9167cffc90cc8285"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/offline_grids.py",
+      "bytes": 3061,
+      "sha256": "2f64fbdc42c46d2ae8a4344d61bbfbc6135f227f325e10c5b3f505d1e50fdc4a"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/edge_depths.py",
+      "bytes": 2105,
+      "sha256": "bf4c55c6993ebbc52ae536ac4feaaae6a64ec06fd0e39ed391245962bfe39b8b"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/compare_grids.py",
+      "bytes": 2733,
+      "sha256": "92245da3ce4eef8b7c59cc1546ec2653c2cdc75033a42038395173d187d21010"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-3-6-flip.json",
+      "bytes": 31517,
+      "sha256": "06f0440919107ec1cf12b4c2942f2819e4257f928140ea96da19b4b5d3735d96"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-3-6.json",
+      "bytes": 31519,
+      "sha256": "787046bb9e57f5443b0eccdd6a0c6c3b53c2e34231cf87345264ab33e2851e6a"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-4-4-flip.json",
+      "bytes": 27807,
+      "sha256": "06aade04f4d33a8e592830e6e0ee785ce59a819bd30d1be58f5dc33e3f38f2ff"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-4-4.json",
+      "bytes": 27809,
+      "sha256": "c1d8b99b89804301c963f6d14789a38671e5cfb5c3cdb3310b7db0d8247f00f6"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-4-5-flip.json",
+      "bytes": 33831,
+      "sha256": "69c640c4de65bbeaf50618a5877eb6d7d6abd42dd35a9acc8980037233e29c3a"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-4-5.json",
+      "bytes": 33833,
+      "sha256": "200f791b0f79332806640c5dce5f5df5d3e5b502954a6bb4fcdc84bd765d48ac"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-5-4-flip.json",
+      "bytes": 32673,
+      "sha256": "37b2ae21d8ed69b8d4266ff46a0f000f4a476fd6a9cc5d8f8b5bff42d2992a61"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-5-4.json",
+      "bytes": 32675,
+      "sha256": "655b41deb67c064c6e30e34c7574f7f5025128df56c1a99f6d869f747d88a634"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-6-3-flip.json",
+      "bytes": 31505,
+      "sha256": "40a5fd893f2f7890550b0e4ad337dadda1d17b447382b94f479cc6b8e9b40396"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-011/grid-6-3.json",
+      "bytes": 31507,
+      "sha256": "dd59be7ef9e0bf7f2d5f1b278d29ca57485b084fc108fa138e5465d8aeff7e08"
+    },
+    {
+      "path": "scripts/terrain-deck-grid-probe.py",
+      "bytes": 5362,
+      "sha256": "c5010cc56a665b58647539e09ca6f246a4dfa77832824c6c6042d1fbb9b3d76e"
+    },
+    {
+      "path": "tests/test_terrain_deck_grid_probe.py",
+      "bytes": 4936,
+      "sha256": "70d87a44251abd38409f64ab9faee8cfdf002088bbfe41f001350db2f16392bc"
+    }
+  ]
+}

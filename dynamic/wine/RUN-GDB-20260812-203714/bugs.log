@@ -1,0 +1,1480 @@
+ONEINIT : Mpeg play OFF.
+CalculateClockSpeed->time[0]=1
+                   ->time[1]=1
+                   ->time[2]=1
+                   ->time[3]=1
+                   ->time[4]=2
+                   ->time[5]=1
+                   ->time[6]=1
+                   ->time[7]=1
+                   ->time[8]=1
+                   ->time[9]=1
+                   ->avgtime=1
+                   ->CPUSPEED=165425152
+INIT : CPU clock speed is 165.425152 MHZ
+LOADING : App run from R:\PC\BUGS.
+LOADING : No CD-ROM found.
+LOAD : Loading file R:\PC\BUGS\cd\cd.txt.
+---------------------
+BEGIN EXAMINE MACHINE
+
+DIRECT DRAW DEVICE BASE NAME : display.
+DIRECT DRAW DEVICE DESCRIPTION : DirectDraw HAL.
+DIRECT DRAW DEVICE 3D SUPPORT : TRUE.
+DIRECT DRAW DEVICE HARDWARE : FALSE.
+DIRECT DRAW SYSTEM-VIDEO DMA : TRUE.
+DIRECT DRAW DEVICE SCREEN MODES.
+
+DDMODE 0 - 320x200x8 bit.
+DDMODE 1 - 320x240x8 bit.
+DDMODE 2 - 640x350x8 bit.
+DDMODE 3 - 640x400x8 bit.
+DDMODE 4 - 640x480x8 bit.
+DDMODE 5 - 320x200x16 bit.
+DDMODE 6 - 320x240x16 bit.
+DDMODE 7 - 640x350x16 bit.
+DDMODE 8 - 640x400x16 bit.
+DDMODE 9 - 640x480x16 bit.
+DDMODE 10 - 320x200x32 bit.
+DDMODE 11 - 320x240x32 bit.
+DDMODE 12 - 640x350x32 bit.
+DDMODE 13 - 640x400x32 bit.
+DDMODE 14 - 640x480x32 bit.
+
+DIRECT 3D DEVICE BASE NAME : RGB Emulation.
+DIRECT 3D DEVICE DESCRIPTION : RGB Direct3D emulation.
+DIRECT 3D DEVICE TextureFlag	:	TRUE.
+DIRECT 3D DEVICE ZBufferFlag : TRUE.
+DIRECT 3D DEVICE HardwareAccel : FALSE.
+DIRECT 3D DEVICE SquareOnly : FALSE.
+DIRECT 3D DEVICE Alpha blending is ON.
+
+
+DIRECT 3D DEVICE BASE NAME : Direct3D HAL.
+DIRECT 3D DEVICE DESCRIPTION : Wine D3DDevice using WineD3D and OpenGL.
+DIRECT 3D DEVICE TextureFlag	:	TRUE.
+DIRECT 3D DEVICE ZBufferFlag : TRUE.
+DIRECT 3D DEVICE HardwareAccel : TRUE.
+DIRECT 3D DEVICE SquareOnly : FALSE.
+DIRECT 3D DEVICE Alpha blending is ON.
+
+END EXAMINE MACHINE
+-------------------
+
+--------------------
+BEGIN SELECT DRIVERS
+
+INFO DirectDraw - Default driver >>>display,DirectDraw HAL<<< selected.
+INFO DirectDraw - Device has no hardware acceleration.
+
+INFO Direct3D - Hardware driver >>>Direct3D HAL, Wine D3DDevice using WineD3D and OpenGL<<< selected
+INFO Direct3D - Device has hardware acceleration.
+
+INFO Fullscreen mode is TRUE.
+INFO Native software render mode is FALSE.
+INFO RenderMode set to Direct3d render mode.
+INFO Screen mode 640x480x16 selected.
+
+END SELECT DRIVERS
+------------------
+
+EVENT : Event >>>WINDOWS<<< create function  called.
+LOADING : App run from R:\PC\BUGS.
+LOADING : No CD-ROM found.
+EVENT : Event >>>WINDOWS<<< added.
+
+SwitchDriverScreen
+LoadSwitchWallpaper
+LOAD : Loading file R:\PC\BUGS\cd\sky1.raw.
+LoadSwitchTPage
+LOAD : Loading file R:\PC\BUGS\cd\soft.raw.
+ok!
+RELEASE : DDBack.
+RELEASE : DDFront.
+RELEASE : DDObject.
+EVENT : Event >>>DIRECTX<<< create function  called.
+LOAD : Loading file R:\PC\BUGS\cd\cd.txt.
+CONFIG : Base CD track is 2.
+SYSTEM : OnlySystemMemory status VIDEO MEMORY ONLY.
+D3DAPPCREATE : Mode set to 640x480.
+MODE: Width = 640 Height = 480 Bpp = 16.
+
+DIRECT 3D Texture Format 0.
+Type RGB16 ARGB 0x5x5x5 PIXELS
+
+
+DIRECT 3D Texture Format 1.
+Type RGB16 ARGB 1x5x5x5 ALPHAPIXELS
+
+
+DIRECT 3D Texture Format 2.
+Type RGB16 ARGB 4x4x4x4 ALPHAPIXELS
+
+
+DIRECT 3D Texture Format 3.
+Type RGB16 ARGB 0x5x6x5 PIXELS
+
+
+DIRECT 3D Texture Format 4.
+Type RGB32 ARGB 0x8x8x8 PIXELS
+
+
+DIRECT 3D Texture Format 5.
+Type RGB32 ARGB 8x8x8x8 ALPHAPIXELS
+
+EVENT : Event >>>DIRECTX<<< added.
+
+INIT : Starting Direct3D renderer.
+
+ROUTINE : LevelSel.
+ROUTINE : ---Start CallOptions---
+ROUTINE : Loading packet data level00\level.raw, level 0.
+LOAD : Getting length of file \pc\bugs\cd\level00\level.raw.
+LOAD : Length found - file \pc\bugs\cd\level00\level.raw is 394492 bytes long.
+LOAD : Loading file R:\PC\BUGS\cd\level00\level.raw.
+CONVPSXTPAGE8: Converting 256 colour tpage 0, size 256x256.
+MEM : D3D Pixel buffer for tpage 0 created.
+TEXTURES : Attempting to create tpage 0, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 0 is 8bit palletized format.
+FAILURE to map tpage 0 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 0 ended up in video memory.
+MEM : Vertex buffer for tpage 0 created.
+MEM : Trans vertex buffer for tpage 0 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 1, size 256x256.
+MEM : D3D Pixel buffer for tpage 1 created.
+TEXTURES : Attempting to create tpage 1, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 1 is 8bit palletized format.
+FAILURE to map tpage 1 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 1 ended up in video memory.
+MEM : Vertex buffer for tpage 1 created.
+MEM : Trans vertex buffer for tpage 1 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 2, size 256x256.
+MEM : D3D Pixel buffer for tpage 2 created.
+TEXTURES : Attempting to create tpage 2, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 2 is 8bit palletized format.
+FAILURE to map tpage 2 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 2 ended up in video memory.
+MEM : Vertex buffer for tpage 2 created.
+MEM : Trans vertex buffer for tpage 2 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 3, size 256x256.
+MEM : D3D Pixel buffer for tpage 3 created.
+TEXTURES : Attempting to create tpage 3, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 3 is 8bit palletized format.
+FAILURE to map tpage 3 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 3 ended up in video memory.
+MEM : Vertex buffer for tpage 3 created.
+MEM : Trans vertex buffer for tpage 3 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 4, size 256x256.
+MEM : D3D Pixel buffer for tpage 4 created.
+TEXTURES : Attempting to create tpage 4, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 4 is 8bit palletized format.
+FAILURE to map tpage 4 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 4 ended up in video memory.
+MEM : Vertex buffer for tpage 4 created.
+MEM : Trans vertex buffer for tpage 4 created.
+LOAD: Type 48, system memory tpage 12 setup.
+LOAD : ConvPsxPage - Tpage 12.
+MEM : D3D Pixel buffer for tpage 12 created.
+TEXTURES : Attempting to create tpage 12, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 12 is 8bit palletized format.
+FAILURE to map tpage 12 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 12 ended up in system memory.
+MEM : Vertex buffer for tpage 12 created.
+MEM : Trans vertex buffer for tpage 12 created.
+LOAD: Type 49, system memory tpage 13 setup.
+LOAD : ConvPsxPage - Tpage 13.
+MEM : D3D Pixel buffer for tpage 13 created.
+TEXTURES : Attempting to create tpage 13, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 13 is 8bit palletized format.
+FAILURE to map tpage 13 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 13 ended up in system memory.
+MEM : Vertex buffer for tpage 13 created.
+MEM : Trans vertex buffer for tpage 13 created.
+LOAD: Type 50, system memory tpage 14 setup.
+LOAD : ConvPsxPage - Tpage 14.
+MEM : D3D Pixel buffer for tpage 14 created.
+TEXTURES : Attempting to create tpage 14, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 14 is 8bit palletized format.
+FAILURE to map tpage 14 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 14 ended up in system memory.
+MEM : Vertex buffer for tpage 14 created.
+MEM : Trans vertex buffer for tpage 14 created.
+LOAD: Type 51, system memory tpage 15 setup.
+LOAD : ConvPsxPage - Tpage 15.
+MEM : D3D Pixel buffer for tpage 15 created.
+TEXTURES : Attempting to create tpage 15, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 15 is 8bit palletized format.
+FAILURE to map tpage 15 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 15 ended up in system memory.
+MEM : Vertex buffer for tpage 15 created.
+MEM : Trans vertex buffer for tpage 15 created.
+LOAD: Type 52, system memory tpage 16 setup.
+LOAD : ConvPsxPage - Tpage 16.
+MEM : D3D Pixel buffer for tpage 16 created.
+TEXTURES : Attempting to create tpage 16, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 16 is 8bit palletized format.
+FAILURE to map tpage 16 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 16 ended up in system memory.
+MEM : Vertex buffer for tpage 16 created.
+MEM : Trans vertex buffer for tpage 16 created.
+LOAD: Type 53, system memory tpage 17 setup.
+LOAD : ConvPsxPage - Tpage 17.
+MEM : D3D Pixel buffer for tpage 17 created.
+TEXTURES : Attempting to create tpage 17, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 17 is 8bit palletized format.
+FAILURE to map tpage 17 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 17 ended up in system memory.
+MEM : Vertex buffer for tpage 17 created.
+MEM : Trans vertex buffer for tpage 17 created.
+LOAD: Type 54, system memory tpage 18 setup.
+LOAD : ConvPsxPage - Tpage 18.
+MEM : D3D Pixel buffer for tpage 18 created.
+TEXTURES : Attempting to create tpage 18, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 18 is 8bit palletized format.
+FAILURE to map tpage 18 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 18 ended up in system memory.
+MEM : Vertex buffer for tpage 18 created.
+MEM : Trans vertex buffer for tpage 18 created.
+LOAD: Type 55, system memory tpage 19 setup.
+LOAD : ConvPsxPage - Tpage 19.
+MEM : D3D Pixel buffer for tpage 19 created.
+TEXTURES : Attempting to create tpage 19, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 19 is 8bit palletized format.
+FAILURE to map tpage 19 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 19 ended up in system memory.
+MEM : Vertex buffer for tpage 19 created.
+MEM : Trans vertex buffer for tpage 19 created.
+LOAD: Type 56, system memory tpage 20 setup.
+LOAD : ConvPsxPage - Tpage 20.
+MEM : D3D Pixel buffer for tpage 20 created.
+TEXTURES : Attempting to create tpage 20, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 20 is 8bit palletized format.
+FAILURE to map tpage 20 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 20 ended up in system memory.
+MEM : Vertex buffer for tpage 20 created.
+MEM : Trans vertex buffer for tpage 20 created.
+LOAD: Type 57, system memory tpage 21 setup.
+LOAD : ConvPsxPage - Tpage 21.
+MEM : D3D Pixel buffer for tpage 21 created.
+TEXTURES : Attempting to create tpage 21, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 21 is 8bit palletized format.
+FAILURE to map tpage 21 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 21 ended up in system memory.
+MEM : Vertex buffer for tpage 21 created.
+MEM : Trans vertex buffer for tpage 21 created.
+LOAD: Type 58, system memory tpage 22 setup.
+LOAD : ConvPsxPage - Tpage 22.
+MEM : D3D Pixel buffer for tpage 22 created.
+TEXTURES : Attempting to create tpage 22, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 22 is 8bit palletized format.
+FAILURE to map tpage 22 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 22 ended up in system memory.
+MEM : Vertex buffer for tpage 22 created.
+MEM : Trans vertex buffer for tpage 22 created.
+LOAD: Type 59, system memory tpage 23 setup.
+LOAD : ConvPsxPage - Tpage 23.
+MEM : D3D Pixel buffer for tpage 23 created.
+TEXTURES : Attempting to create tpage 23, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 23 is 8bit palletized format.
+FAILURE to map tpage 23 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 23 ended up in system memory.
+MEM : Vertex buffer for tpage 23 created.
+MEM : Trans vertex buffer for tpage 23 created.
+LOAD: Type 60, system memory tpage 24 setup.
+LOAD : ConvPsxPage - Tpage 24.
+MEM : D3D Pixel buffer for tpage 24 created.
+TEXTURES : Attempting to create tpage 24, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 24 is 8bit palletized format.
+FAILURE to map tpage 24 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 24 ended up in system memory.
+MEM : Vertex buffer for tpage 24 created.
+MEM : Trans vertex buffer for tpage 24 created.
+LOAD: Type 61, system memory tpage 25 setup.
+LOAD : ConvPsxPage - Tpage 25.
+MEM : D3D Pixel buffer for tpage 25 created.
+TEXTURES : Attempting to create tpage 25, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 25 is 8bit palletized format.
+FAILURE to map tpage 25 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 25 ended up in system memory.
+MEM : Vertex buffer for tpage 25 created.
+MEM : Trans vertex buffer for tpage 25 created.
+LOAD: Type 62, system memory tpage 26 setup.
+LOAD : ConvPsxPage - Tpage 26.
+MEM : D3D Pixel buffer for tpage 26 created.
+TEXTURES : Attempting to create tpage 26, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 26 is 8bit palletized format.
+FAILURE to map tpage 26 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 26 ended up in system memory.
+MEM : Vertex buffer for tpage 26 created.
+MEM : Trans vertex buffer for tpage 26 created.
+LOAD: Type 63, system memory tpage 27 setup.
+LOAD : ConvPsxPage - Tpage 27.
+MEM : D3D Pixel buffer for tpage 27 created.
+TEXTURES : Attempting to create tpage 27, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 27 is 8bit palletized format.
+FAILURE to map tpage 27 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 27 ended up in system memory.
+MEM : Vertex buffer for tpage 27 created.
+MEM : Trans vertex buffer for tpage 27 created.
+LOAD: Type 64, system memory tpage 28 setup.
+LOAD : ConvPsxPage - Tpage 28.
+MEM : D3D Pixel buffer for tpage 28 created.
+TEXTURES : Attempting to create tpage 28, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 28 is 8bit palletized format.
+FAILURE to map tpage 28 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 28 ended up in system memory.
+MEM : Vertex buffer for tpage 28 created.
+MEM : Trans vertex buffer for tpage 28 created.
+LOAD: Type 65, system memory tpage 29 setup.
+LOAD : ConvPsxPage - Tpage 29.
+MEM : D3D Pixel buffer for tpage 29 created.
+TEXTURES : Attempting to create tpage 29, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 29 is 8bit palletized format.
+FAILURE to map tpage 29 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 29 ended up in system memory.
+MEM : Vertex buffer for tpage 29 created.
+MEM : Trans vertex buffer for tpage 29 created.
+LOAD: Type 66, system memory tpage 30 setup.
+LOAD : ConvPsxPage - Tpage 30.
+MEM : D3D Pixel buffer for tpage 30 created.
+TEXTURES : Attempting to create tpage 30, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 30 is 8bit palletized format.
+FAILURE to map tpage 30 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 30 ended up in system memory.
+MEM : Vertex buffer for tpage 30 created.
+MEM : Trans vertex buffer for tpage 30 created.
+LOAD: Type 90, plaxset256 2 setup.
+LOAD : CONVPSXTPAGE16 tpage 32, 256x256
+MEM : D3D Pixel buffer for tpage 32 created.
+TEXTURES : Attempting to create tpage 32, type D3DTEXTURE_TYPE_16BIT_RGB, size 256x256
+TEXTURES : TPage 32 is 16bit raw format.
+TEXTURES : TPage 32 ended up in video memory.
+MEM : Vertex buffer for tpage 32 created.
+LOAD: Type 34, anim 68 setup.
+LOAD: Type 34, anim 69 setup.
+LOAD: Type 34, anim 70 setup.
+LOAD: Type 69, system memory tpage 33 setup.
+LOAD : ConvPsxPage - Tpage 33.
+MEM : D3D Pixel buffer for tpage 33 created.
+TEXTURES : Attempting to create tpage 33, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 33 is 8bit palletized format.
+FAILURE to map tpage 33 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 33 ended up in system memory.
+MEM : Vertex buffer for tpage 33 created.
+LOAD: Type 70, system memory tpage 34 setup.
+LOAD : ConvPsxPage - Tpage 34.
+MEM : D3D Pixel buffer for tpage 34 created.
+TEXTURES : Attempting to create tpage 34, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 34 is 8bit palletized format.
+FAILURE to map tpage 34 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 34 ended up in system memory.
+MEM : Vertex buffer for tpage 34 created.
+LOAD: Type 71, system memory tpage 35 setup.
+LOAD : ConvPsxPage - Tpage 35.
+MEM : D3D Pixel buffer for tpage 35 created.
+TEXTURES : Attempting to create tpage 35, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 35 is 8bit palletized format.
+FAILURE to map tpage 35 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 35 ended up in system memory.
+MEM : Vertex buffer for tpage 35 created.
+LOAD: Type 72, system memory tpage 36 setup.
+LOAD : ConvPsxPage - Tpage 36.
+MEM : D3D Pixel buffer for tpage 36 created.
+TEXTURES : Attempting to create tpage 36, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 36 is 8bit palletized format.
+FAILURE to map tpage 36 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 36 ended up in system memory.
+MEM : Vertex buffer for tpage 36 created.
+LOAD: Type 73, system memory tpage 37 setup.
+LOAD : ConvPsxPage - Tpage 37.
+MEM : D3D Pixel buffer for tpage 37 created.
+TEXTURES : Attempting to create tpage 37, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 37 is 8bit palletized format.
+FAILURE to map tpage 37 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 37 ended up in system memory.
+MEM : Vertex buffer for tpage 37 created.
+LOAD: Type 74, system memory tpage 38 setup.
+LOAD : ConvPsxPage - Tpage 38.
+MEM : D3D Pixel buffer for tpage 38 created.
+TEXTURES : Attempting to create tpage 38, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 38 is 8bit palletized format.
+FAILURE to map tpage 38 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 38 ended up in system memory.
+MEM : Vertex buffer for tpage 38 created.
+LOAD: Type 75, system memory tpage 39 setup.
+LOAD : ConvPsxPage - Tpage 39.
+MEM : D3D Pixel buffer for tpage 39 created.
+TEXTURES : Attempting to create tpage 39, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 39 is 8bit palletized format.
+FAILURE to map tpage 39 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 39 ended up in system memory.
+MEM : Vertex buffer for tpage 39 created.
+LOAD: Type 76, system memory tpage 40 setup.
+LOAD : ConvPsxPage - Tpage 40.
+MEM : D3D Pixel buffer for tpage 40 created.
+TEXTURES : Attempting to create tpage 40, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 40 is 8bit palletized format.
+FAILURE to map tpage 40 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 40 ended up in system memory.
+MEM : Vertex buffer for tpage 40 created.
+LOAD: Type 77, system memory tpage 41 setup.
+LOAD : ConvPsxPage - Tpage 41.
+MEM : D3D Pixel buffer for tpage 41 created.
+TEXTURES : Attempting to create tpage 41, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 41 is 8bit palletized format.
+FAILURE to map tpage 41 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 41 ended up in system memory.
+MEM : Vertex buffer for tpage 41 created.
+LOAD: Type 78, system memory tpage 42 setup.
+LOAD : ConvPsxPage - Tpage 42.
+MEM : D3D Pixel buffer for tpage 42 created.
+TEXTURES : Attempting to create tpage 42, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 42 is 8bit palletized format.
+FAILURE to map tpage 42 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 42 ended up in system memory.
+MEM : Vertex buffer for tpage 42 created.
+LOAD: Type 79, system memory tpage 43 setup.
+LOAD : ConvPsxPage - Tpage 43.
+MEM : D3D Pixel buffer for tpage 43 created.
+TEXTURES : Attempting to create tpage 43, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 43 is 8bit palletized format.
+FAILURE to map tpage 43 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 43 ended up in system memory.
+MEM : Vertex buffer for tpage 43 created.
+LOAD: Type 80, system memory tpage 44 setup.
+LOAD : ConvPsxPage - Tpage 44.
+MEM : D3D Pixel buffer for tpage 44 created.
+TEXTURES : Attempting to create tpage 44, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 44 is 8bit palletized format.
+FAILURE to map tpage 44 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 44 ended up in system memory.
+MEM : Vertex buffer for tpage 44 created.
+LOAD: Type 81, system memory tpage 45 setup.
+LOAD : ConvPsxPage - Tpage 45.
+MEM : D3D Pixel buffer for tpage 45 created.
+TEXTURES : Attempting to create tpage 45, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 45 is 8bit palletized format.
+FAILURE to map tpage 45 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 45 ended up in system memory.
+MEM : Vertex buffer for tpage 45 created.
+LOAD: Type 82, system memory tpage 46 setup.
+LOAD : ConvPsxPage - Tpage 46.
+MEM : D3D Pixel buffer for tpage 46 created.
+TEXTURES : Attempting to create tpage 46, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 46 is 8bit palletized format.
+FAILURE to map tpage 46 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 46 ended up in system memory.
+MEM : Vertex buffer for tpage 46 created.
+LOAD: Type 83, system memory tpage 47 setup.
+LOAD : ConvPsxPage - Tpage 47.
+MEM : D3D Pixel buffer for tpage 47 created.
+TEXTURES : Attempting to create tpage 47, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 47 is 8bit palletized format.
+FAILURE to map tpage 47 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 47 ended up in system memory.
+MEM : Vertex buffer for tpage 47 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 54, size 256x256.
+MEM : D3D Pixel buffer for tpage 54 created.
+TEXTURES : Attempting to create tpage 54, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 54 is 8bit palletized format.
+FAILURE to map tpage 54 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 54 ended up in video memory.
+MEM : Vertex buffer for tpage 54 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 55, size 64x256.
+MEM : D3D Pixel buffer for tpage 55 created.
+TEXTURES : Attempting to create tpage 55, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 55 is 8bit palletized format.
+FAILURE to map tpage 55 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 55 ended up in video memory.
+MEM : Vertex buffer for tpage 55 created.
+LOAD: Type 84, system memory tpage 48 setup.
+LOAD : ConvPsxPage - Tpage 48.
+MEM : D3D Pixel buffer for tpage 48 created.
+TEXTURES : Attempting to create tpage 48, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 48 is 8bit palletized format.
+FAILURE to map tpage 48 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 48 ended up in system memory.
+MEM : Vertex buffer for tpage 48 created.
+LOAD: Type 85, system memory tpage 49 setup.
+LOAD : ConvPsxPage - Tpage 49.
+MEM : D3D Pixel buffer for tpage 49 created.
+TEXTURES : Attempting to create tpage 49, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 49 is 8bit palletized format.
+FAILURE to map tpage 49 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 49 ended up in system memory.
+MEM : Vertex buffer for tpage 49 created.
+LOAD: Type 86, system memory tpage 50 setup.
+LOAD : ConvPsxPage - Tpage 50.
+MEM : D3D Pixel buffer for tpage 50 created.
+TEXTURES : Attempting to create tpage 50, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 50 is 8bit palletized format.
+FAILURE to map tpage 50 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 50 ended up in system memory.
+MEM : Vertex buffer for tpage 50 created.
+RELEASE : d3dappi.lpSkyMat.
+RELEASE : d3dappi.lpGroundMat.
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+ROUTINE : --- Start LevelSelect ---
+CODE : Changing parallax to plaxset256 2.
+MEM : Vertex buffer for tpage 32 destroyed.
+MEM : Pixel buffer for tpage 32 destroyed.
+CONVPSXTPAGE8: Converting 256 colour tpage 32, size 256x256.
+MEM : D3D Pixel buffer for tpage 32 created.
+TEXTURES : Attempting to create tpage 32, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 32 is 8bit palletized format.
+FAILURE to map tpage 32 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 32 ended up in video memory.
+MEM : Vertex buffer for tpage 32 created.
+RELEASE : d3dappi.lpSkyMat.
+RELEASE : d3dappi.lpGroundMat.
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+INFO : Changing tpage 7 for 13.
+RELEASE : d3dappi.lpTextureSurf[dst].
+RELEASE : d3dappi.lpTexture[dst].
+RELEASE : d3dappi.lpTextureSurfORIG[dst].
+RELEASE : d3dappi.lpTextureORIG[dst].
+RELEASE : d3dappi.lpTextureMat[dst].
+MEM : Vertex buffer for tpage 7 created.
+MEM : Trans vertex buffer for tpage 7 created.
+INFO : Changed tpage 7 for 13.
+INFO : Changing tpage 8 for 14.
+RELEASE : d3dappi.lpTextureSurf[dst].
+RELEASE : d3dappi.lpTexture[dst].
+RELEASE : d3dappi.lpTextureSurfORIG[dst].
+RELEASE : d3dappi.lpTextureORIG[dst].
+RELEASE : d3dappi.lpTextureMat[dst].
+MEM : Vertex buffer for tpage 8 created.
+MEM : Trans vertex buffer for tpage 8 created.
+INFO : Changed tpage 8 for 14.
+INFO : Changing tpage 9 for 15.
+RELEASE : d3dappi.lpTextureSurf[dst].
+RELEASE : d3dappi.lpTexture[dst].
+RELEASE : d3dappi.lpTextureSurfORIG[dst].
+RELEASE : d3dappi.lpTextureORIG[dst].
+RELEASE : d3dappi.lpTextureMat[dst].
+MEM : Vertex buffer for tpage 9 created.
+MEM : Trans vertex buffer for tpage 9 created.
+INFO : Changed tpage 9 for 15.
+INFO : Changing tpage 10 for 16.
+RELEASE : d3dappi.lpTextureSurf[dst].
+RELEASE : d3dappi.lpTexture[dst].
+RELEASE : d3dappi.lpTextureSurfORIG[dst].
+RELEASE : d3dappi.lpTextureORIG[dst].
+RELEASE : d3dappi.lpTextureMat[dst].
+MEM : Vertex buffer for tpage 10 created.
+MEM : Trans vertex buffer for tpage 10 created.
+INFO : Changed tpage 10 for 16.
+INFO : Changing tpage 11 for 34.
+RELEASE : d3dappi.lpTextureSurf[dst].
+RELEASE : d3dappi.lpTexture[dst].
+RELEASE : d3dappi.lpTextureSurfORIG[dst].
+RELEASE : d3dappi.lpTextureORIG[dst].
+RELEASE : d3dappi.lpTextureMat[dst].
+MEM : Vertex buffer for tpage 11 created.
+MEM : Trans vertex buffer for tpage 11 created.
+INFO : Changed tpage 11 for 34.
+RELEASE : d3dappi.lpSkyMat.
+RELEASE : d3dappi.lpGroundMat.
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+PLAYTRACK : Attempting to play track \pc\bugs\cd\audio\bugs2ma.wav.
+SETMUSICVOL : Vol -820 
+ROUTINE : ---End CallOptions---
+
+ROUTINE : ReStart.
+ROUTINE : ---Start DestroyMainGame---
+MEM : Vertex buffer for tpage 0 destroyed.
+MEM : Trans vertex buffer for tpage 0 destroyed.
+MEM : Pixel buffer for tpage 0 destroyed.
+MEM : Vertex buffer for tpage 1 destroyed.
+MEM : Trans vertex buffer for tpage 1 destroyed.
+MEM : Pixel buffer for tpage 1 destroyed.
+MEM : Vertex buffer for tpage 2 destroyed.
+MEM : Trans vertex buffer for tpage 2 destroyed.
+MEM : Pixel buffer for tpage 2 destroyed.
+MEM : Vertex buffer for tpage 3 destroyed.
+MEM : Trans vertex buffer for tpage 3 destroyed.
+MEM : Pixel buffer for tpage 3 destroyed.
+MEM : Vertex buffer for tpage 4 destroyed.
+MEM : Trans vertex buffer for tpage 4 destroyed.
+MEM : Pixel buffer for tpage 4 destroyed.
+MEM : Vertex buffer for tpage 7 destroyed.
+MEM : Trans vertex buffer for tpage 7 destroyed.
+MEM : Vertex buffer for tpage 8 destroyed.
+MEM : Trans vertex buffer for tpage 8 destroyed.
+MEM : Vertex buffer for tpage 9 destroyed.
+MEM : Trans vertex buffer for tpage 9 destroyed.
+MEM : Vertex buffer for tpage 10 destroyed.
+MEM : Trans vertex buffer for tpage 10 destroyed.
+MEM : Vertex buffer for tpage 11 destroyed.
+MEM : Trans vertex buffer for tpage 11 destroyed.
+MEM : Vertex buffer for tpage 12 destroyed.
+MEM : Trans vertex buffer for tpage 12 destroyed.
+MEM : Pixel buffer for tpage 12 destroyed.
+MEM : Vertex buffer for tpage 13 destroyed.
+MEM : Trans vertex buffer for tpage 13 destroyed.
+MEM : Pixel buffer for tpage 13 destroyed.
+MEM : Vertex buffer for tpage 14 destroyed.
+MEM : Trans vertex buffer for tpage 14 destroyed.
+MEM : Pixel buffer for tpage 14 destroyed.
+MEM : Vertex buffer for tpage 15 destroyed.
+MEM : Trans vertex buffer for tpage 15 destroyed.
+MEM : Pixel buffer for tpage 15 destroyed.
+MEM : Vertex buffer for tpage 16 destroyed.
+MEM : Trans vertex buffer for tpage 16 destroyed.
+MEM : Pixel buffer for tpage 16 destroyed.
+MEM : Vertex buffer for tpage 17 destroyed.
+MEM : Trans vertex buffer for tpage 17 destroyed.
+MEM : Pixel buffer for tpage 17 destroyed.
+MEM : Vertex buffer for tpage 18 destroyed.
+MEM : Trans vertex buffer for tpage 18 destroyed.
+MEM : Pixel buffer for tpage 18 destroyed.
+MEM : Vertex buffer for tpage 19 destroyed.
+MEM : Trans vertex buffer for tpage 19 destroyed.
+MEM : Pixel buffer for tpage 19 destroyed.
+MEM : Vertex buffer for tpage 20 destroyed.
+MEM : Trans vertex buffer for tpage 20 destroyed.
+MEM : Pixel buffer for tpage 20 destroyed.
+MEM : Vertex buffer for tpage 21 destroyed.
+MEM : Trans vertex buffer for tpage 21 destroyed.
+MEM : Pixel buffer for tpage 21 destroyed.
+MEM : Vertex buffer for tpage 22 destroyed.
+MEM : Trans vertex buffer for tpage 22 destroyed.
+MEM : Pixel buffer for tpage 22 destroyed.
+MEM : Vertex buffer for tpage 23 destroyed.
+MEM : Trans vertex buffer for tpage 23 destroyed.
+MEM : Pixel buffer for tpage 23 destroyed.
+MEM : Vertex buffer for tpage 24 destroyed.
+MEM : Trans vertex buffer for tpage 24 destroyed.
+MEM : Pixel buffer for tpage 24 destroyed.
+MEM : Vertex buffer for tpage 25 destroyed.
+MEM : Trans vertex buffer for tpage 25 destroyed.
+MEM : Pixel buffer for tpage 25 destroyed.
+MEM : Vertex buffer for tpage 26 destroyed.
+MEM : Trans vertex buffer for tpage 26 destroyed.
+MEM : Pixel buffer for tpage 26 destroyed.
+MEM : Vertex buffer for tpage 27 destroyed.
+MEM : Trans vertex buffer for tpage 27 destroyed.
+MEM : Pixel buffer for tpage 27 destroyed.
+MEM : Vertex buffer for tpage 28 destroyed.
+MEM : Trans vertex buffer for tpage 28 destroyed.
+MEM : Pixel buffer for tpage 28 destroyed.
+MEM : Vertex buffer for tpage 29 destroyed.
+MEM : Trans vertex buffer for tpage 29 destroyed.
+MEM : Pixel buffer for tpage 29 destroyed.
+MEM : Vertex buffer for tpage 30 destroyed.
+MEM : Trans vertex buffer for tpage 30 destroyed.
+MEM : Pixel buffer for tpage 30 destroyed.
+MEM : Vertex buffer for tpage 32 destroyed.
+MEM : Pixel buffer for tpage 32 destroyed.
+MEM : Vertex buffer for tpage 33 destroyed.
+MEM : Pixel buffer for tpage 33 destroyed.
+MEM : Vertex buffer for tpage 34 destroyed.
+MEM : Pixel buffer for tpage 34 destroyed.
+MEM : Vertex buffer for tpage 35 destroyed.
+MEM : Pixel buffer for tpage 35 destroyed.
+MEM : Vertex buffer for tpage 36 destroyed.
+MEM : Pixel buffer for tpage 36 destroyed.
+MEM : Vertex buffer for tpage 37 destroyed.
+MEM : Pixel buffer for tpage 37 destroyed.
+MEM : Vertex buffer for tpage 38 destroyed.
+MEM : Pixel buffer for tpage 38 destroyed.
+MEM : Vertex buffer for tpage 39 destroyed.
+MEM : Pixel buffer for tpage 39 destroyed.
+MEM : Vertex buffer for tpage 40 destroyed.
+MEM : Pixel buffer for tpage 40 destroyed.
+MEM : Vertex buffer for tpage 41 destroyed.
+MEM : Pixel buffer for tpage 41 destroyed.
+MEM : Vertex buffer for tpage 42 destroyed.
+MEM : Pixel buffer for tpage 42 destroyed.
+MEM : Vertex buffer for tpage 43 destroyed.
+MEM : Pixel buffer for tpage 43 destroyed.
+MEM : Vertex buffer for tpage 44 destroyed.
+MEM : Pixel buffer for tpage 44 destroyed.
+MEM : Vertex buffer for tpage 45 destroyed.
+MEM : Pixel buffer for tpage 45 destroyed.
+MEM : Vertex buffer for tpage 46 destroyed.
+MEM : Pixel buffer for tpage 46 destroyed.
+MEM : Vertex buffer for tpage 47 destroyed.
+MEM : Pixel buffer for tpage 47 destroyed.
+MEM : Vertex buffer for tpage 48 destroyed.
+MEM : Pixel buffer for tpage 48 destroyed.
+MEM : Vertex buffer for tpage 49 destroyed.
+MEM : Pixel buffer for tpage 49 destroyed.
+MEM : Vertex buffer for tpage 50 destroyed.
+MEM : Pixel buffer for tpage 50 destroyed.
+MEM : Vertex buffer for tpage 54 destroyed.
+MEM : Pixel buffer for tpage 54 destroyed.
+MEM : Vertex buffer for tpage 55 destroyed.
+MEM : Pixel buffer for tpage 55 destroyed.
+RELEASE : d3dappi.lpSkyMat.
+RELEASE : d3dappi.lpGroundMat.
+ROUTINE : ---End DestroyMainGame---
+ROUTINE : ---Start InitMainGame---
+LOAD : Loading file R:\PC\BUGS\cd\rand.dat.
+ROUTINE : ---Start DestroyMainGame---
+RELEASE : d3dappi.lpSkyMat.
+RELEASE : d3dappi.lpGroundMat.
+ROUTINE : ---End DestroyMainGame---
+ROUTINE : Start InitLoadScreen.
+ROUTINE : Loading packet data gfx\training.raw, level 17.
+LOAD : Getting length of file \pc\bugs\cd\gfx\training.raw.
+LOAD : Length found - file \pc\bugs\cd\gfx\training.raw is 120488 bytes long.
+LOAD : Loading file R:\PC\BUGS\cd\gfx\training.raw.
+CONVPSXTPAGE4: Converting 16 colour tpage 13, size 256x256.
+MEM : D3D Pixel buffer for tpage 13 created.
+TEXTURES : Attempting to create tpage 13, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 13 is 8bit palletized format.
+FAILURE to map tpage 13 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 13 ended up in video memory.
+MEM : Vertex buffer for tpage 13 created.
+MEM : Trans vertex buffer for tpage 13 created.
+LOAD : Type 126/127, dimensions 256x256.
+LOAD : CONVPSXTPAGE16 tpage 33, 256x256
+MEM : D3D Pixel buffer for tpage 33 created.
+TEXTURES : Attempting to create tpage 33, type D3DTEXTURE_TYPE_16BIT_RGB, size 256x256
+TEXTURES : TPage 33 is 16bit raw format.
+TEXTURES : TPage 33 ended up in video memory.
+MEM : Vertex buffer for tpage 33 created.
+LOAD : Type 126/127, dimensions 64x256.
+LOAD : CONVPSXTPAGE16 tpage 34, 256x256
+MEM : D3D Pixel buffer for tpage 34 created.
+TEXTURES : Attempting to create tpage 34, type D3DTEXTURE_TYPE_16BIT_RGB, size 256x256
+TEXTURES : TPage 34 is 16bit raw format.
+TEXTURES : TPage 34 ended up in video memory.
+MEM : Vertex buffer for tpage 34 created.
+RELEASE : d3dappi.lpSkyMat.
+RELEASE : d3dappi.lpGroundMat.
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+ROUTINE : Loading packet data level07\level1.raw, level 17.
+LOAD : Getting length of file \pc\bugs\cd\level07\level1.raw.
+LOAD : Length found - file \pc\bugs\cd\level07\level1.raw is 565740 bytes long.
+LOAD : Loading file R:\PC\BUGS\cd\level07\level1.raw.
+CONVPSXTPAGE4: Converting 16 colour tpage 0, size 256x256.
+MEM : D3D Pixel buffer for tpage 0 created.
+TEXTURES : Attempting to create tpage 0, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 0 is 8bit palletized format.
+FAILURE to map tpage 0 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 0 ended up in video memory.
+MEM : Vertex buffer for tpage 0 created.
+MEM : Trans vertex buffer for tpage 0 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 1, size 256x256.
+MEM : D3D Pixel buffer for tpage 1 created.
+TEXTURES : Attempting to create tpage 1, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 1 is 8bit palletized format.
+FAILURE to map tpage 1 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 1 ended up in video memory.
+MEM : Vertex buffer for tpage 1 created.
+MEM : Trans vertex buffer for tpage 1 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 2, size 256x256.
+MEM : D3D Pixel buffer for tpage 2 created.
+TEXTURES : Attempting to create tpage 2, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 2 is 8bit palletized format.
+FAILURE to map tpage 2 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 2 ended up in video memory.
+MEM : Vertex buffer for tpage 2 created.
+MEM : Trans vertex buffer for tpage 2 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 4, size 256x256.
+MEM : D3D Pixel buffer for tpage 4 created.
+TEXTURES : Attempting to create tpage 4, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 4 is 8bit palletized format.
+FAILURE to map tpage 4 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 4 ended up in video memory.
+MEM : Vertex buffer for tpage 4 created.
+MEM : Trans vertex buffer for tpage 4 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 14, size 128x128.
+MEM : D3D Pixel buffer for tpage 14 created.
+TEXTURES : Attempting to create tpage 14, type D3DTEXTURE_TYPE_8BIT_PALL, size 128x128
+TEXTURES : TPage 14 is 8bit palletized format.
+FAILURE to map tpage 14 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 14 ended up in video memory.
+MEM : Vertex buffer for tpage 14 created.
+MEM : Trans vertex buffer for tpage 14 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 16, size 256x256.
+MEM : D3D Pixel buffer for tpage 16 created.
+TEXTURES : Attempting to create tpage 16, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 16 is 8bit palletized format.
+FAILURE to map tpage 16 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 16 ended up in video memory.
+MEM : Vertex buffer for tpage 16 created.
+MEM : Trans vertex buffer for tpage 16 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 17, size 256x256.
+MEM : D3D Pixel buffer for tpage 17 created.
+TEXTURES : Attempting to create tpage 17, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 17 is 8bit palletized format.
+FAILURE to map tpage 17 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 17 ended up in video memory.
+MEM : Vertex buffer for tpage 17 created.
+MEM : Trans vertex buffer for tpage 17 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 18, size 256x256.
+MEM : D3D Pixel buffer for tpage 18 created.
+TEXTURES : Attempting to create tpage 18, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 18 is 8bit palletized format.
+FAILURE to map tpage 18 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 18 ended up in video memory.
+MEM : Vertex buffer for tpage 18 created.
+MEM : Trans vertex buffer for tpage 18 created.
+CONVPSXTPAGE8: Converting 256 colour tpage 20, size 256x256.
+MEM : D3D Pixel buffer for tpage 20 created.
+TEXTURES : Attempting to create tpage 20, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 20 is 8bit palletized format.
+FAILURE to map tpage 20 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 20 ended up in video memory.
+MEM : Vertex buffer for tpage 20 created.
+MEM : Trans vertex buffer for tpage 20 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 11, size 256x256.
+MEM : D3D Pixel buffer for tpage 11 created.
+TEXTURES : Attempting to create tpage 11, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 11 is 8bit palletized format.
+FAILURE to map tpage 11 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 11 ended up in video memory.
+MEM : Vertex buffer for tpage 11 created.
+MEM : Trans vertex buffer for tpage 11 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 12, size 256x256.
+MEM : D3D Pixel buffer for tpage 12 created.
+TEXTURES : Attempting to create tpage 12, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 12 is 8bit palletized format.
+FAILURE to map tpage 12 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 12 ended up in video memory.
+MEM : Vertex buffer for tpage 12 created.
+MEM : Trans vertex buffer for tpage 12 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 28, size 256x256.
+MEM : D3D Pixel buffer for tpage 28 created.
+TEXTURES : Attempting to create tpage 28, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 28 is 8bit palletized format.
+FAILURE to map tpage 28 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 28 ended up in video memory.
+MEM : Vertex buffer for tpage 28 created.
+MEM : Trans vertex buffer for tpage 28 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 15, size 256x256.
+MEM : D3D Pixel buffer for tpage 15 created.
+TEXTURES : Attempting to create tpage 15, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 15 is 8bit palletized format.
+FAILURE to map tpage 15 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 15 ended up in video memory.
+MEM : Vertex buffer for tpage 15 created.
+MEM : Trans vertex buffer for tpage 15 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 29, size 256x256.
+MEM : D3D Pixel buffer for tpage 29 created.
+TEXTURES : Attempting to create tpage 29, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 29 is 8bit palletized format.
+FAILURE to map tpage 29 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 29 ended up in video memory.
+MEM : Vertex buffer for tpage 29 created.
+MEM : Trans vertex buffer for tpage 29 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 30, size 256x256.
+MEM : D3D Pixel buffer for tpage 30 created.
+TEXTURES : Attempting to create tpage 30, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 30 is 8bit palletized format.
+FAILURE to map tpage 30 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 30 ended up in video memory.
+MEM : Vertex buffer for tpage 30 created.
+MEM : Trans vertex buffer for tpage 30 created.
+CONVPSXTPAGE4: Converting 16 colour tpage 10, size 256x256.
+MEM : D3D Pixel buffer for tpage 10 created.
+TEXTURES : Attempting to create tpage 10, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 10 is 8bit palletized format.
+FAILURE to map tpage 10 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 10 ended up in video memory.
+MEM : Vertex buffer for tpage 10 created.
+MEM : Trans vertex buffer for tpage 10 created.
+LOAD: Type 34, anim 16 setup.
+LOAD: Type 34, anim 17 setup.
+LOAD: Type 34, anim 18 setup.
+LOAD: Type 34, anim 19 setup.
+LOAD: Type 34, anim 29 setup.
+LOAD: Type 34, anim 32 setup.
+LOAD: Type 34, anim 41 setup.
+LOAD: Type 34, anim 2 setup.
+LOAD: Type 34, anim 20 setup.
+LOAD: Type 34, anim 5 setup.
+LOAD: Type 34, anim 6 setup.
+LOAD: Type 34, anim 124 setup.
+LOAD: Type 34, anim 125 setup.
+ConvPsxPlax : Enter
+MEM : D3D Pixel buffer for tpage 32 created.
+TEXTURES : Attempting to create tpage 32, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 32 is 8bit palletized format.
+FAILURE to map tpage 32 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 32 ended up in video memory.
+MEM : Vertex buffer for tpage 32 created.
+ConvPsxPlax : Exit
+CONVPSXTPAGE4: Converting 16 colour tpage 19, size 256x256.
+MEM : D3D Pixel buffer for tpage 19 created.
+TEXTURES : Attempting to create tpage 19, type D3DTEXTURE_TYPE_8BIT_PALL, size 256x256
+TEXTURES : TPage 19 is 8bit palletized format.
+FAILURE to map tpage 19 as a 8 bit palettized surface - searching for 16bit instead.
+Found 16bit texture ARGB 0x5x5x5.
+TEXTURES : TPage 19 ended up in video memory.
+MEM : Vertex buffer for tpage 19 created.
+MEM : Trans vertex buffer for tpage 19 created.
+LOAD: Type 35, CreatListRam.
+RELEASE : d3dappi.lpSkyMat.
+RELEASE : d3dappi.lpGroundMat.
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+RELEASE : d3dappi.lpTextureMat[i].
+LOAD : Loading file R:\PC\BUGS\cd\level07\level1.dat.
+LOAD : Loading file R:\PC\BUGS\cd\level07\terr1.all.
+LOAD : Loading file R:\PC\BUGS\cd\bits\plantter.all.
+LOAD : Loading file R:\PC\BUGS\cd\chars\flick.anm.
+LOAD : Loading file R:\PC\BUGS\cd\chars\flick.all.
+LOAD : Loading file R:\PC\BUGS\cd\chars3\soil.anm.
+LOAD : Loading file R:\PC\BUGS\cd\chars3\soil.all.
+LOAD : Loading file R:\PC\BUGS\cd\bits\seed.all.
+LOAD : Loading file R:\PC\BUGS\cd\chars\badbug.anm.
+LOAD : Loading file R:\PC\BUGS\cd\chars\badbug.all.
+LOAD : Loading file R:\PC\BUGS\cd\plants\plant05.anm.
+LOAD : Loading file R:\PC\BUGS\cd\plants\plant05.all.
+LOAD : Loading file R:\PC\BUGS\cd\plants\plant04.anm.
+LOAD : Loading file R:\PC\BUGS\cd\plants\plant04.all.
+LOAD : Loading file R:\PC\BUGS\cd\plants\plant10.anm.
+LOAD : Loading file R:\PC\BUGS\cd\plants\plant10.all.
+LOAD : Loading file R:\PC\BUGS\cd\plants\plant06.anm.
+LOAD : Loading file R:\PC\BUGS\cd\plants\plant06.all.
+ROUTINE : Start ClearLoadScreen.
+ROUTINE : End ClearLoadScreen.
+ROUTINE : ---End InitMainGame---
+
+ROUTINE : NextLife.
+PLAYTRACK : Attempting to play track \pc\bugs\cd\audio\less1.wav.
+SETMUSICVOL : Vol -820 

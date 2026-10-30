@@ -1,0 +1,493 @@
+{
+  "experiment": "EXP-20260907-014",
+  "git_reference": "8dc881d",
+  "authority": "Windows PC; original executable 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878; no cross-port evidence",
+  "floor": {
+    "capture": "EXP-20260907-013/up-02-floor",
+    "samples": 487,
+    "frames": 38,
+    "limitation": "Frame018 is a black death fade; original postvalidation rejected it. Raw trace and video retained; final settling samples were not persisted.",
+    "start_world": [
+      270257,
+      -100631,
+      439052
+    ],
+    "edge_x_stored": 8448,
+    "old_wall_x_stored": 8400,
+    "start_x_stored": 8445.53125,
+    "native_entry_va": "0x004AB1A0",
+    "native_step": [
+      400,
+      512,
+      -680
+    ],
+    "old_max_below_visible_floor_world": 60736,
+    "aligned_max_below_visible_floor_world": 89,
+    "repair": "All 261 authored cliff wall triangles share adjacent floor X/Z edges, retaining vertical -96 stored offset.",
+    "sweep": {
+      "strips": 49,
+      "passed": 49,
+      "max_allowed_gap_world": 512
+    }
+  },
+  "jolt": {
+    "confirmed": "Live extreme-position type11 seeds reproduce exact sideways velocity at native actor contact stores 0041CD5B/0041CD60. 32-bit squared-distance overflow admits distant colliders.",
+    "runtime_native_matches": [
+      {
+        "spike": 2,
+        "pointers": [
+          "0x59b6ac",
+          "0x59c078",
+          "0x59c204",
+          "0x59c288",
+          "0x59c30c",
+          "0x59c390"
+        ],
+        "seeds": [
+          {
+            "ptr": "0x59b6ac",
+            "type": 10,
+            "position": [
+              128468,
+              -102284,
+              476272
+            ],
+            "flags": 16384
+          },
+          {
+            "ptr": "0x59c078",
+            "type": 11,
+            "position": [
+              -37834514,
+              -2145129472,
+              -22967450
+            ],
+            "flags": 16433
+          },
+          {
+            "ptr": "0x59c204",
+            "type": 11,
+            "position": [
+              215217,
+              -100775,
+              695831
+            ],
+            "flags": 16433
+          },
+          {
+            "ptr": "0x59c288",
+            "type": 11,
+            "position": [
+              273379,
+              -102933,
+              428545
+            ],
+            "flags": 16432
+          },
+          {
+            "ptr": "0x59c30c",
+            "type": 14,
+            "position": [
+              167235,
+              -96910,
+              517344
+            ],
+            "flags": 16516
+          },
+          {
+            "ptr": "0x59c390",
+            "type": 11,
+            "position": [
+              193799,
+              -101245,
+              679482
+            ],
+            "flags": 16433
+          }
+        ],
+        "velocity_after": [
+          3972,
+          85,
+          6132
+        ],
+        "writes": [
+          {
+            "pc": "0x41cd5b",
+            "esi": "0x2",
+            "address": "0x59d93c",
+            "value": 3972,
+            "size": 4
+          },
+          {
+            "pc": "0x41cd60",
+            "esi": "0x2",
+            "address": "0x59d944",
+            "value": 6132,
+            "size": 4
+          }
+        ]
+      },
+      {
+        "spike": 3,
+        "pointers": [
+          "0x59bff4",
+          "0x59c0fc",
+          "0x59c180",
+          "0x59c204",
+          "0x59c30c",
+          "0x59c390"
+        ],
+        "seeds": [
+          {
+            "ptr": "0x59bff4",
+            "type": 11,
+            "position": [
+              154784,
+              -2145068832,
+              90016
+            ],
+            "flags": 16432
+          },
+          {
+            "ptr": "0x59c0fc",
+            "type": 11,
+            "position": [
+              -67424,
+              -2145068832,
+              -318912
+            ],
+            "flags": 16432
+          },
+          {
+            "ptr": "0x59c180",
+            "type": 11,
+            "position": [
+              -55904,
+              -2145068832,
+              -332096
+            ],
+            "flags": 16432
+          },
+          {
+            "ptr": "0x59c204",
+            "type": 11,
+            "position": [
+              215217,
+              -100775,
+              695831
+            ],
+            "flags": 16433
+          },
+          {
+            "ptr": "0x59c30c",
+            "type": 14,
+            "position": [
+              158841,
+              -96841,
+              527461
+            ],
+            "flags": 16516
+          },
+          {
+            "ptr": "0x59c390",
+            "type": 11,
+            "position": [
+              193799,
+              -101245,
+              679482
+            ],
+            "flags": 16433
+          }
+        ],
+        "velocity_after": [
+          4110,
+          -54,
+          -963
+        ],
+        "writes": [
+          {
+            "pc": "0x41cd5b",
+            "esi": "0x2",
+            "address": "0x59d93c",
+            "value": 0,
+            "size": 4
+          },
+          {
+            "pc": "0x41cd60",
+            "esi": "0x2",
+            "address": "0x59d944",
+            "value": 0,
+            "size": 4
+          },
+          {
+            "pc": "0x41cd5b",
+            "esi": "0x2",
+            "address": "0x59d93c",
+            "value": 6892,
+            "size": 4
+          },
+          {
+            "pc": "0x41cd60",
+            "esi": "0x2",
+            "address": "0x59d944",
+            "value": 4294965460,
+            "size": 4
+          },
+          {
+            "pc": "0x41cd5b",
+            "esi": "0x2",
+            "address": "0x59d93c",
+            "value": 4110,
+            "size": 4
+          },
+          {
+            "pc": "0x41cd60",
+            "esi": "0x2",
+            "address": "0x59d944",
+            "value": 4294966333,
+            "size": 4
+          }
+        ]
+      }
+    ],
+    "repair": {
+      "hook_va": "0x0041CA02",
+      "code_va": "0x004BBB00",
+      "bytes": 116,
+      "scope": "64-bit broad-phase squared-distance sum plus rejection of overflowing coordinate arithmetic; native nearby contact path retained"
+    },
+    "nearby_regression": "Native seed present/absent VX -512/0; stomp countdown10, constructor reaches type5.",
+    "unresolved": "Why each retained seed entered its extreme state remains untraced. Missing support from retained original off-layout placements is an inference, not a confirmed lifecycle."
+  },
+  "tests": {
+    "affected_unique_passed": 81,
+    "initial_final_run": "75 passed, 6 obsolete full-executable preservation expectations failed",
+    "corrected_compiler_run": "20 passed; expected base now includes explicit reversible actor guard",
+    "floor_initial": "11 passed",
+    "dependent_initial": "57 passed"
+  },
+  "live_after": {
+    "samples": 2643,
+    "seconds": 39.99393301199598,
+    "max_horizontal_component": 2068,
+    "max_floor_gap_world": 138,
+    "min_floor_gap_world": -38394,
+    "outside": 0,
+    "below_floor_samples": 0,
+    "worst": [],
+    "start": [
+      278931,
+      -153569,
+      591684
+    ],
+    "end": [
+      281685,
+      -152227,
+      687361
+    ],
+    "input_words": [
+      0,
+      16,
+      32,
+      48,
+      64,
+      96,
+      128,
+      144,
+      192
+    ]
+  },
+  "build": {
+    "asset_count": 721,
+    "changed_assets": [
+      "PC/BUGS/CD/LEVEL01/TERRAIN.ALL"
+    ],
+    "build": "/home/dev/ABLPC/work/copies/EXP-20260907-014/candidate-final",
+    "source": "/home/dev/ABLPC/work/copies/EXP-20260907-014/candidate-final/game",
+    "stage": "/home/dev/ABLPC/work/copies/EXP-20260907-014/preview-01/game",
+    "exe": "/home/dev/ABLPC/work/copies/EXP-20260907-014/preview-01/bugs.exe",
+    "exe_sha256": "3a2e6ca8463752463751c5eefc031e109d17e1ddaa9dc079615446b1f0454a77",
+    "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260907-014/preview-01/prefix",
+    "hashes": {
+      "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+      "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+      "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+      "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+      "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+      "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+      "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+      "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+      "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+      "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+      "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+      "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+      "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+      "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+      "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "77949f180aeeeab73d3695de638344f20762ed869b2439d04ae7e14689504d21",
+      "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "431d35809dcf2a56e2e2247b815ef2c3fe04b7605e00404797048328b6aa7d25",
+      "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+      "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+    },
+    "input_plan": "Automatic hardware; guarded Right, Return, Return. Ordinary controls toward reported cliff seam; no live memory writes."
+  },
+  "runtime": {
+    "leader": {
+      "pid": 625261,
+      "start": 8349242,
+      "group": 625261,
+      "cmd": "/usr/bin/bash /home/dev/ABLPC/work/experiments/EXP-20260907-014/preview-01/launch.sh "
+    },
+    "stage": "/home/dev/ABLPC/work/copies/EXP-20260907-014/preview-01/game",
+    "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260907-014/preview-01/prefix",
+    "hashes": {
+      "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+      "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+      "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+      "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+      "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+      "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+      "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+      "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+      "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+      "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+      "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+      "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+      "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+      "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+      "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "77949f180aeeeab73d3695de638344f20762ed869b2439d04ae7e14689504d21",
+      "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "431d35809dcf2a56e2e2247b815ef2c3fe04b7605e00404797048328b6aa7d25",
+      "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+      "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+    },
+    "game": {
+      "pid": 625497,
+      "start": 8349368,
+      "group": 625261,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-014\\preview-01\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "display": ":2",
+    "xwayland": {
+      "pid": 625290,
+      "start": 8349263,
+      "group": 625261,
+      "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+    },
+    "window": 14680071
+  },
+  "lifecycle": {
+    "old_game_pid": 600258,
+    "old_closed": true,
+    "postclose_clean": true,
+    "prelaunch_clean": true,
+    "new_game_keys_by_agent": 0,
+    "live_memory_writes": 0
+  },
+  "invalid_or_limited_arms": [
+    "probe.py source99_no_walls wrote zero markers, which do not disable groups; invalid no-wall control and unused for conclusions.",
+    "Early one-step player/current-world snapshots lacked contemporaneous actor state. Their no-push result does not exclude late actor contacts.",
+    "Runtime snapshots were asynchronous read-only captures, not atomic save states. Native replay reproduced both exact captured horizontal vectors.",
+    "Offline movement sweeps have synthetic fixed deltas and bounded trajectories; no universal movement or mesh guarantee."
+  ],
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260907-014/probe-01.json",
+      "sha256": "5e28d691ac16b6921c1b3e4b2f2724b4d39a555cb698d8d534b6bb9b98f9d15d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/probe-walls-aligned.json",
+      "sha256": "09b58feb80072c64463b1bce6088bc8fba63d9d0b91342f01173496b2c9c495c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/player-step-heading.json",
+      "sha256": "5d43f9fc2652e87edb0b90835b54562052e88b12bf70972e57c8ab9842da5b24"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/spike-collision.json",
+      "sha256": "42cbbf88fbfbc94af0e73ed1ea4016794e85a60125e6e2d72c145a9a2517c69e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/wall-sweep.json",
+      "sha256": "f6c864f283bd97f50c5ee9daedcab6c97ed97809bfb1ba9da0fba3ea6a364f65"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/fixed-watch-analysis.json",
+      "sha256": "25ee89dcac5f95a9f87c0f17b40b97fd7b9b841cb8afc806c4ddfc55d45dc282"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/resident-final.json",
+      "sha256": "e9323342c4c441763902002fcfd3972d2c1b53de15982dc60f8328fc729308ef"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/preview-01/prepare.json",
+      "sha256": "7d79c5a2a1f60ece5594de626bce7dfc135ebf19851177acec77c06d48b3846e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/preview-01/active.json",
+      "sha256": "97328e97cd449f09b50b3b54141c46d06e042ebbf49e0441355de55decc95ce0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/preview-01/live-handoff-binding.json",
+      "sha256": "e28257af7275398f67126bec91346ea40aa7d570f10a3fdec9acc93fc4bb3278"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/postclose-audit.json",
+      "sha256": "6917d6c14a86459c85a15100f6cbc87045b2cd721d81046767a219816bf3e879"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/prelaunch-audit.json",
+      "sha256": "6917d6c14a86459c85a15100f6cbc87045b2cd721d81046767a219816bf3e879"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/final-tests.log",
+      "sha256": "4b7220d53175dda62813a2e0b4a36ab9bc0b6765bdbf6d5e97d661b1b2ebdbf3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/compiler-tests-final.log",
+      "sha256": "ab564cd5a2578146456a5f3754348c4d8769c952efc303fa258b0adb7b428697"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-013/up-02-floor/floor-fall.mp4",
+      "sha256": "3405e923d1b517e551128fb2ace892b9c3b4bf38435b1314940c222d5eb8a5ae"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-013/up-02-floor/trace.json",
+      "sha256": "7e21fa5b44bb4e5f52ff491f8289b32b82e5618d90daa11131306d53b9f7e83d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-013/up-02-floor/capture-status.json",
+      "sha256": "bd2bc8e6f8f2799f74857f322d7feb6d21f78d6c9c8c6c671d4191bad426beb7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/fixed-clip-01/trace.json",
+      "sha256": "3e44b1d46569c45bf794a6be326b0588101cdd8db22bf84898ff247331683263"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/fixed-clip-01/fixed-preview.mp4",
+      "sha256": "14808af6d175b42ba4f8429e53cdef9212d56b2850cef3fbcf44a0f7ba1cb05d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/hygiene-final.log",
+      "sha256": "c3f36829db1d3430fe50113b9a93a144dc963136a2d4039bc5000e1ac216486b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/claim-sweep-jolt.json",
+      "sha256": "07463a376aa4d488693f8a874ed5d852b2014d2bd84d9baa3f1a5d8fa6f27f77"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/claim-sweep-wall.json",
+      "sha256": "925ab6c9f23d9712aa9ac952c6d3e03e5f69793c983f1c1129a44bd3a952a107"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-014/final-audit-binding.json",
+      "sha256": "f90b3d6fc6922f3989e6a4334f3ae94dc8cc0f7635de362ba2295cc9b5aaf6a0"
+    }
+  ],
+  "hygiene": {
+    "vault_errors": 0,
+    "vault_existing_warnings": 8,
+    "tracked_file_violations": 0,
+    "claim_sweeps": "Both new_only",
+    "python_dependencies": "pass",
+    "M4_compatibility": "pass"
+  }
+}

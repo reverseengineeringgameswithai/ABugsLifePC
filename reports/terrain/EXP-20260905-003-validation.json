@@ -1,0 +1,79 @@
+{
+  "experiment": "EXP-20260905-003",
+  "final_audits": {
+    "claim_sweep": "reports/terrain/EXP-20260905-003-claim-sweep.json",
+    "pre_commit_hook_scope": "Whitespace, tracked-file provenance, Vault lint and staged Python syntax only; no pytest or R2q.",
+    "preservation_manifest": "reports/terrain/EXP-20260905-003-preservation.json",
+    "protected_stash_object": "76db1c9ee1ffffce52cea6aee591c24ab6a1c39a",
+    "runtime_session_audit_clean": true,
+    "staged_diff_whitespace_errors": 0,
+    "staged_protected_paths": [],
+    "staged_tracked_file_violations": 0,
+    "vault_lint": {
+      "errors": 0,
+      "notes": 659,
+      "warnings": 8
+    }
+  },
+  "full_check": {
+    "cancellation_receipt": "work/experiments/EXP-20260905-003/full-check-cancellation.json",
+    "command": "make check",
+    "complete_repository_verdict": "not established",
+    "configuration": "First full-repository measured two-worker loadfile trial; serial fallback only on evidence of ordering/shared-resource failures.",
+    "duration_seconds": 360.849,
+    "environment": {
+      "PYTEST_ADDOPTS": "-n 2 --dist=loadfile --basetemp=/home/dev/ABLPC/work/tmp/pytest-full -o tmp_path_retention_policy=failed",
+      "TMPDIR": "/home/dev/ABLPC/work/tmp"
+    },
+    "exit_code": 2,
+    "finished_utc": "2026-09-05T21:13:03.676463+00:00",
+    "log": "work/experiments/EXP-20260905-003/full-check-two-workers.log",
+    "log_sha256": "dcac9a67ff4889c63c2150af7d92ee18f914eb3f3ef622fb79e51d076459213c",
+    "partial_result": {
+      "failed": 1,
+      "failure_matches_known_preexisting_r2q_sha_mismatch": true,
+      "passed": 885,
+      "pytest_duration_seconds": 359.8
+    },
+    "process_cleanup": "SIGINT completed the trial; all pinned supervisor/make/pytest/worker PIDs exited. No SIGTERM/SIGKILL was needed.",
+    "retry": "None. User clarified that R2q is not to be rerun for these terrain tests.",
+    "started_utc": "2026-09-05T21:07:02.827170+00:00",
+    "status": "cancelled_by_user"
+  },
+  "known_preexisting_failure": {
+    "actual_sha256": "7d826b13a2e419c2911240eae44707e74569e1c316391f2b43d1f2e6e88ec554",
+    "baseline": "Isolated at parent e5f4a3c and banked 68ce28a; not repaired by terrain session.",
+    "expected_sha256": "6cd3d734d0dcbe34eedc163b96b784773fdbce1c23c07dd229818cdbf9e93da0",
+    "nodeid": "tests/test_r2q_quiet_census_design.py::test_historical_validation_protocol_is_remount_stable_and_bounded"
+  },
+  "prebank_audits": {
+    "claim_sweep": "reports/terrain/EXP-20260905-003-claim-sweep.json",
+    "diff_whitespace_errors": 0,
+    "original_iso_modes_unchanged": "0644; user-approved procedural read-only handling",
+    "protected_paths": "work/experiments/EXP-20260905-003/prebank-audit.txt",
+    "run_index": "Historical 14 uncited runs and one dangling RUN-WINE-20260819-003708 citation remain.",
+    "runtime_audit": "Unrestricted final audit clean after explicit permission to close historical game.",
+    "stash_object": "76db1c9ee1ffffce52cea6aee591c24ab6a1c39a",
+    "tracked_file_violations": 0,
+    "vault_lint": {
+      "errors": 0,
+      "notes": 659,
+      "warnings": 8
+    }
+  },
+  "terrain_gate_final": {
+    "duration_seconds": 27.66,
+    "log": "work/experiments/EXP-20260905-003/terrain-gate-final.txt",
+    "passed": 72
+  },
+  "terrain_gate_pre_runtime": {
+    "duration_seconds": 27.5,
+    "passed": 72
+  },
+  "terrain_regressions": {
+    "duration_seconds": 6.44,
+    "log": "work/experiments/EXP-20260905-003/patch-tests.txt",
+    "passed": 27
+  },
+  "validation_policy": "User-directed terrain-only validation for this session supersedes the initial request for a completed full-suite trial. The exact 72-test gate and 27 added regressions passed; do not claim the repository suite passed."
+}

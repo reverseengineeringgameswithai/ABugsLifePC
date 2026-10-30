@@ -1,0 +1,161 @@
+{
+  "experiment": "EXP-20260904-007",
+  "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "input_level_dat_sha256": "364d665aa2935f1a7aed3694e849ab6bc292af376fde33c44ff4ddbbac967bae",
+  "candidate_level_dat_sha256": "b0e6a65a353e7a33c0e72399659a8f3ee6d08380fe45893232281d93c06805cb",
+  "candidate": "work/copies/EXP-20260904-007/LEVEL-depth-zero.DAT",
+  "candidate_launched": false,
+  "changed_offsets": [
+    18690
+  ],
+  "object_offset": 18672,
+  "cases": [
+    {
+      "object_byte": 8,
+      "param_3": 64,
+      "camera_z": [
+        800,
+        1200,
+        1600,
+        1000
+      ],
+      "depth_words": [
+        264,
+        364,
+        464,
+        314
+      ]
+    },
+    {
+      "object_byte": 0,
+      "param_3": 0,
+      "camera_z": [
+        800,
+        1200,
+        1600,
+        1000
+      ],
+      "depth_words": [
+        200,
+        300,
+        400,
+        250
+      ]
+    }
+  ],
+  "delta_depth_words": 64,
+  "live_depth_scale": 0.000244140625,
+  "normalized_depth_delta": 0.015625,
+  "scope": "Two isolated original-instruction slices with synthetic registers; not a full renderer execution or runtime visual fix.",
+  "remaining": "Causal live zero-offset comparison; face-size/depth interpolation and other rendering effects remain possible.",
+  "runtime_observations": [
+    {
+      "path": "work/experiments/USER-20260904-deck-play-001/receipt-1788566305152712674.json",
+      "sha256": "289d2ee7a31dee67e213c6c3794acef921ba4d9deb7abf62321a00f76fb5615e",
+      "time": 1788566305.1527107,
+      "command": [
+        "capture"
+      ],
+      "result": {
+        "frame": "/home/dev/ABLPC/work/experiments/USER-20260904-deck-play-001/frame-1788566305052357975.png",
+        "sha256": "93d5146dc23745cc224a0e5cd6f5f02f95e1ebb5f2a3556439e84d077d7050f7",
+        "state": {
+          "level": 1,
+          "position": [
+            171003,
+            -102402,
+            522024
+          ],
+          "terrain_base": 0,
+          "barrier_head": 7152075,
+          "contact": [
+            99,
+            6973595
+          ],
+          "camera_matrix_hex": "930e0000980600000010000068f90000930e",
+          "camera_translation": [
+            183270,
+            -115207,
+            495970
+          ]
+        }
+      }
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-play-001/receipt-1788566353696524945.json",
+      "sha256": "0bae42489e16b3ee8dbb16bdf0dc8bb493d7a8ce2a6c1e240ae28d9ff2e1e069",
+      "time": 1788566353.6965244,
+      "command": [
+        "read",
+        "0x64f1a7",
+        "24"
+      ],
+      "result": {
+        "address": "0x64f1a7",
+        "hex": "0020000000e0ffff0020000000000000000008c0a7626600"
+      }
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-play-001/receipt-1788566353721539789.json",
+      "sha256": "15ca4dd8936fe84fe9777ec0d82ccc4cb6106699171b02f5210a686e791d3a72",
+      "time": 1788566353.7215388,
+      "command": [
+        "read",
+        "0x4c00e0",
+        "20"
+      ],
+      "result": {
+        "address": "0x4c00e0",
+        "hex": "000000000000f03f000080390000803f00000000"
+      }
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-play-001/receipt-1788566353744689227.json",
+      "sha256": "1b424e0bb13d8d1bcb2c518bee1fd09d0a63d613e76819d559365a8e2eaaf767",
+      "time": 1788566353.7446883,
+      "command": [
+        "read",
+        "0x511508",
+        "4"
+      ],
+      "result": {
+        "address": "0x511508",
+        "hex": "40010000"
+      }
+    }
+  ],
+  "current_session": {
+    "game_pid": 40214,
+    "start_ticks": 965017,
+    "group": 39970,
+    "display": ":2",
+    "left_open": true,
+    "handoff": "work/experiments/USER-20260904-deck-play-001/handoff.json",
+    "input_actions_this_turn": []
+  },
+  "user_confirmation": "User confirms Flik can land on and collide with the block; reports legs visible over it while standing on lower deck behind it.",
+  "images": [
+    {
+      "path": "work/experiments/EXP-20260904-007/user-image-1.png",
+      "sha256": "9631de46cf57a3552c0d1a419919c402e3b763dabb816e0ff5df7e07a935bb61"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-007/user-image-2.png",
+      "sha256": "b27dd73a5304d72465f3fe3d23050e617f38103b382799a80450e6aa4b81343e"
+    }
+  ],
+  "distinctions": {
+    "deck": "Authored broad level catch floor, geometry and collision from EXP-006.",
+    "black_oval": "Visually consistent with native actor shadow; shadow renderer not traced.",
+    "visibility_cause": "Inherited object depth offset is a specific candidate; no causal live intervention yet.",
+    "collision_acceptance": "User-confirmed block landing/contact only; not all paths or original EXP-005 return defect."
+  },
+  "assembly": {
+    "path": "reports/terrain/EXP-20260904-007-depth-path.asm",
+    "sha256": "28bb844e3249a733376806d30af11919a66b07682497c30640cc4030b5f23777"
+  },
+  "operator": {
+    "path": "reports/terrain/EXP-20260904-007-depth-operator.txt",
+    "sha256": "249e00b0279c6901f489e1cd11feb1bba667035e06e8ecaf8b97d03bbdb629b2"
+  }
+}

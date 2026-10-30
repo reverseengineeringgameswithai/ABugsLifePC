@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "run_id": "RUN-KU057-20260815-192558",
+  "experiment_id": "EXP-20260815-130",
+  "date": "2026-08-15",
+  "purpose": "Bound the safety and evidence semantics of write-assisted Flik teleportation in Level03/Tunnels.",
+  "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "game_copy": "work/copies/BUGS_PC-full-disc/PC/BUGS",
+  "renderer": "Direct3D 640x480x16 under Gamescope 3.16.25 and Wine 11 Staging",
+  "accepted_level": "Level03 / Tunnels / internal level 3",
+  "addresses": {
+    "current_xyz": "0x0059D910/14/18",
+    "preceding_xyz": "0x0059D920/24/28",
+    "auxiliary_xyz": "0x0059D960/64/68",
+    "flags": "0x0059D9A0",
+    "next_life": "0x0059A5B0",
+    "grain": "0x0059D9B1",
+    "level": "0x00861C84",
+    "collision_index": "0x007F3D68",
+    "collision_result_offset": "0x007F45A0 + index*48 + 0x1E"
+  },
+  "processes": [
+    {
+      "role": "first Tunnels teleport arm",
+      "gamescope_pgid": 137594,
+      "bugs_pid": 137854,
+      "bugs_start_ticks": 1791674,
+      "internal_display": ":2",
+      "game_window": "0xe00007",
+      "input_focus_verified": true
+    },
+    {
+      "role": "fresh Tunnels floor-and-pit arm",
+      "gamescope_pgid": 139189,
+      "bugs_pid": 139445,
+      "bugs_start_ticks": 1831054,
+      "internal_display": ":2",
+      "game_window": "0xe00007",
+      "input_focus_verified": true
+    }
+  ],
+  "writes": [
+    {
+      "target": "current + preceding + auxiliary XYZ",
+      "bytes": 36,
+      "value": [501696, 65000, 494016],
+      "result": "readback exact; unsupported point became a repeating NextLife=2 reset anchor"
+    },
+    {
+      "target": "current + preceding XYZ only",
+      "bytes": 24,
+      "value": [501696, 30092, 494016],
+      "result": "readback exact; stable known walkable floor; engine copied target into auxiliary approximately 10 ms later"
+    },
+    {
+      "target": "current + preceding XYZ only",
+      "bytes": 24,
+      "value": [494438, 68730, 526143],
+      "result": "readback exact; engine copied unsupported point into auxiliary approximately 10 ms later, then entered a repeating generic NextLife=2 fall"
+    }
+  ],
+  "grain_writes": 0,
+  "collision_value_1_samples": 0,
+  "natural_gameplay_claim": false,
+  "result": "safe-known-floor-teleport-bounded-unsupported-equal-current-preceding-unsafe-ku057-unchanged",
+  "rejected_setup_arms": [
+    "PGID 135423 selected software rendering; no target write",
+    "PGID 136203 had internal X focus 0 and failed user input; no target write",
+    "PGID 138560 loaded Training rather than Tunnels; no target write"
+  ],
+  "lifecycle": {
+    "target_process_groups_remaining": 0,
+    "private_sinks_remaining": 0,
+    "wine_y_target": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc",
+    "originals_modified": false
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "tool": "gdb-harness",
+  "tool_version": "1.5.0",
+  "schema_version": 6,
+  "spec_schema_version": 6,
+  "time_window_start": "2026-08-13T14:27:08.716260-04:00",
+  "time_window_end": "2026-08-13T14:27:09.126779-04:00",
+  "log_start_offset": 64723,
+  "completion": {
+    "completed": true,
+    "accepted": true,
+    "stop_reason": "capture_complete",
+    "stops_observed": 400,
+    "watchpoints_installed": 3,
+    "watchpoints_deleted": 3,
+    "breakpoints_installed": 0,
+    "breakpoints_deleted": 0,
+    "cleanup_verified": true,
+    "detached": true,
+    "target_signal": null,
+    "error": null,
+    "survival_required": true,
+    "survival_verified": true,
+    "survival_receipt": {
+      "schema_version": 1,
+      "probe": "proc-identity-state-tracer",
+      "pid": 2661312,
+      "time_start": "2026-08-13T14:27:09.173132-04:00",
+      "time_end": "2026-08-13T14:27:10.474891-04:00",
+      "configuration": {
+        "required": true,
+        "settle_ms": 500,
+        "sample_count": 5,
+        "sample_interval_ms": 200,
+        "require_untraced": true,
+        "require_resumed": true
+      },
+      "identity_verified": true,
+      "identity": {
+        "pid": 2661312,
+        "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+        "cmdline": [
+          "R:\\PC\\BUGS\\bugs.exe",
+          "log",
+          "cheat",
+          "mpeg"
+        ],
+        "cwd": "/home/dev/ABLPC/work/copies/EXP-20260812-033/replacement/PC/BUGS",
+        "exe_path": "/home/dev/ABLPC/work/copies/EXP-20260812-033/replacement/PC/BUGS/bugs.exe",
+        "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+        "verified": true,
+        "checked_at": "2026-08-13T14:27:09.674150-04:00"
+      },
+      "samples": [
+        {
+          "index": 0,
+          "t_wall": "2026-08-13T14:27:09.674187-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 1,
+          "t_wall": "2026-08-13T14:27:09.874315-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 2,
+          "t_wall": "2026-08-13T14:27:10.074467-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 3,
+          "t_wall": "2026-08-13T14:27:10.274625-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 4,
+          "t_wall": "2026-08-13T14:27:10.474788-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        }
+      ],
+      "passed": true,
+      "failure_reasons": []
+    }
+  },
+  "direct3d_batch_capture": {
+    "schema_version": 3,
+    "completed": true,
+    "capture_mode": "exact_0a6c_admission",
+    "algorithm": "native-first-reject/count-delta/sha256",
+    "raw_inputs_retained": false,
+    "payload_bytes_retained": 0,
+    "candidate_indices": [
+      7
+    ],
+    "candidate_record_offsets": [
+      2668
+    ],
+    "record_plan_count": 168,
+    "record_plan_sha256": "5eb280a7bd54b56a9654fed7984e9677a15618c5376be703a85718ea3bb2ffec",
+    "family_ids": [
+      "root_004c4108",
+      "root_004c410c"
+    ],
+    "allowed_outcome_family_id": "root_004c4108",
+    "allowed_outcome_page": 16,
+    "warmup_rollovers_required": 1,
+    "rollovers_observed": 2,
+    "capture_cycles_requested": 1,
+    "ignored_unmatched_flushes": 16,
+    "cycles": [
+      {
+        "cycle_index": 0,
+        "records": [
+          {
+            "schema_version": 1,
+            "entry_index": 7,
+            "file_offset": 2668,
+            "form": 60,
+            "page_16_validated": true,
+            "caller_mode_2_validated": true,
+            "active_state_sha256": "334d0186e7cadec3582c3fc14088f842e8891fba0104c15daa0609c80974c05e",
+            "evaluated_predicate_count": 7,
+            "first_reject_pc": "0x004065B0",
+            "predicted_append": false,
+            "observed_append": false,
+            "prediction_matches_observation": true,
+            "raw_inputs_retained": false,
+            "payload_bytes_retained": 0
+          }
+        ]
+      }
+    ],
+    "failure": null
+  }
+}

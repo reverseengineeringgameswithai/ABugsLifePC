@@ -1,0 +1,32 @@
+RUN-GDB-20260812-214545 curation
+================================
+
+Disposition: accepted M2.17 safe-live regression control for gdb-harness 1.1.0
+and watch-spec schema 2. It is not a new plant/resource semantic experiment.
+
+The unchanged hardware Direct3D Training run watched the previously proven
+plant 10 ANM slot 0x005B1AA4. Four stops reproduced the exact prior PC/value
+sequence from RUN-GDB-20260812-182412:
+
+  0x00445089 -> 00000000
+  0x00444C58 -> 00000000
+  0x00444D0C -> 2b346c00 (0x006C342B little-endian)
+  0x00445973 -> 2b346c00
+
+The result contains no target signal. It reports target_reached, cleanup and
+detach, then a required independent survival receipt: identity re-verification
+and five /proc samples from 2026-08-12T21:46:11.724632-04:00 through
+2026-08-12T21:46:12.525318-04:00, all state R with TracerPid 0. The isolated
+post-detach game frame is live Training gameplay, SHA-256
+cbb437fea77643a7989ee26ee121dcf1c0342603fc24c1ade85250af31fd7062,
+and remains ignored under work/copies/EXP-20260812-030/evidence/.
+
+The committed bugs.log has SHA-256
+8b331970c547406864ce26d1afee9367683cf34b62b39bd379206fa6ffcfd500 and
+proves 640x480x16 hardware selection, Direct3D start, no INITSOFTRENDER, the
+plant10 pair requests, End InitMainGame, and NextLife.
+
+Raw GDB stdout/stderr remain ignored. Stdout SHA-256 is
+41853e9a8f850d0c7c3c493a6b89ed0e199ed7de2e16587a87d8ba281d3cb016;
+stderr is empty. No caller-gate address was armed, and this run does not resolve
+the cause or safe continuation behavior of 0x0044D79A.

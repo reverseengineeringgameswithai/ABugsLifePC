@@ -1,0 +1,60 @@
+{
+  "model": "kev-latest",
+  "state": "No evidence has been supplied.",
+  "questions": {
+    "q31": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: A gold-berry kill never drops an additional gold fragment.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q32": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The saved default probability of a fragment from a red-berry kill is one in twelve.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q33": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Hardware testing has already validated fragment drops and pickups for all six non-gold berry types.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q34": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The white-berry fragment odds were copied from a white-berry row in the PS1 odds table.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q35": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: With the real red-berry odds, a long hardware run would produce a measured drop frequency within one percentage point of 1/12.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q36": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Collecting the last fragment in a scripted Hopper boss encounter triggers the correct level-completion behavior in hardware.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    }
+  }
+}

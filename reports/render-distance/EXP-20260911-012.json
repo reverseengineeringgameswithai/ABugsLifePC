@@ -1,0 +1,910 @@
+{
+  "experiment": "EXP-20260911-012",
+  "status": "investigated-no-implementation-change",
+  "current_build": "work/copies/EXP-20260911-011-garden-preview",
+  "executable_sha256": "62a5cb52935d4ff8760b1f224ddcd68effcac8c277d0516f0913aa45df5d6193",
+  "training_dat_sha256": "d5ed5105a41814ae7a0acfc1d25793eb589428494373dd98046a67542a995bcc",
+  "reference_scope": "Existing user camera; no keys, pause, live writes, relaunch or settings change",
+  "camera": {
+    "before": {
+      "time_ns": 1789158714301251071,
+      "flik": [
+        42261,
+        -32962,
+        581896
+      ],
+      "camera_matrix": "110c00007ff5000000100000810a0000110c",
+      "camera_translation": [
+        23019,
+        -45769,
+        560462
+      ],
+      "camera_phase": 467,
+      "level": 17
+    },
+    "after": {
+      "time_ns": 1789158720853000503,
+      "flik": [
+        42261,
+        -32962,
+        581896
+      ],
+      "camera_matrix": "110c00007ff5000000100000810a0000110c",
+      "camera_translation": [
+        23019,
+        -45769,
+        560462
+      ],
+      "camera_phase": 467,
+      "level": 17
+    },
+    "capture_seconds": 6.553064307001478,
+    "atomic": false
+  },
+  "current_settings": {
+    "near": 1728,
+    "far": 2496
+  },
+  "candidate_settings": {
+    "near": 2304,
+    "far": 3328
+  },
+  "distance_ratio": 1.3333333333333333,
+  "confirmed": {
+    "walls_already_longer_group": true,
+    "all_25_staged_resident_flags": "0x59",
+    "corner_scene": 300,
+    "corner_admitted": true,
+    "corner_depth_range": [
+      11440,
+      11556
+    ],
+    "current_depth_limit": 9984,
+    "candidate_depth_limit": 13312,
+    "current_corner_vertices": 0,
+    "candidate_corner_vertices": 64,
+    "three_wall_rejected_quads_restored": 52,
+    "all_admission_results_unchanged": true
+  },
+  "native": {
+    "cases": 50,
+    "seconds": 0.8044748879983672,
+    "rows": [
+      {
+        "variant": "current",
+        "scene": 297,
+        "near": 1728,
+        "far": 2496,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            6044,
+            550,
+            5971
+          ],
+          "flags": 89
+        },
+        "vertices": 64,
+        "xy_bounds": [
+          [
+            550.0,
+            654.0
+          ],
+          [
+            216.0,
+            324.0
+          ]
+        ],
+        "faces": 16,
+        "depth_pass": 16,
+        "depth_reject": 0,
+        "min_depth": 5867,
+        "max_depth": 7064,
+        "limits": [
+          9984
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 298,
+        "near": 1728,
+        "far": 2496,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            4140,
+            550,
+            8158
+          ],
+          "flags": 89
+        },
+        "vertices": 96,
+        "xy_bounds": [
+          [
+            430.0,
+            550.0
+          ],
+          [
+            220.0,
+            310.0
+          ]
+        ],
+        "faces": 24,
+        "depth_pass": 24,
+        "depth_reject": 0,
+        "min_depth": 7065,
+        "max_depth": 9251,
+        "limits": [
+          9984
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 299,
+        "near": 1728,
+        "far": 2496,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            2236,
+            550,
+            10346
+          ],
+          "flags": 89
+        },
+        "vertices": 48,
+        "xy_bounds": [
+          [
+            397.0,
+            430.0
+          ],
+          [
+            225.0,
+            293.0
+          ]
+        ],
+        "faces": 28,
+        "depth_pass": 12,
+        "depth_reject": 16,
+        "min_depth": 9253,
+        "max_depth": 11439,
+        "limits": [
+          9984
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 300,
+        "near": 1728,
+        "far": 2496,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            438,
+            550,
+            11498
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 16,
+        "depth_pass": 0,
+        "depth_reject": 16,
+        "min_depth": 11440,
+        "max_depth": 11556,
+        "limits": [
+          9984
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 301,
+        "near": 1728,
+        "far": 2496,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -1509,
+            550,
+            10598
+          ],
+          "flags": 89
+        },
+        "vertices": 32,
+        "xy_bounds": [
+          [
+            234.0,
+            256.0
+          ],
+          [
+            226.0,
+            291.0
+          ]
+        ],
+        "faces": 28,
+        "depth_pass": 8,
+        "depth_reject": 20,
+        "min_depth": 9640,
+        "max_depth": 11556,
+        "limits": [
+          9984
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 302,
+        "near": 1728,
+        "far": 2496,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -3711,
+            550,
+            8681
+          ],
+          "flags": 89
+        },
+        "vertices": 112,
+        "xy_bounds": [
+          [
+            121.0,
+            234.0
+          ],
+          [
+            222.0,
+            304.0
+          ]
+        ],
+        "faces": 28,
+        "depth_pass": 28,
+        "depth_reject": 0,
+        "min_depth": 7723,
+        "max_depth": 9639,
+        "limits": [
+          9984
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 303,
+        "near": 1728,
+        "far": 2496,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -5913,
+            550,
+            6764
+          ],
+          "flags": 89
+        },
+        "vertices": 80,
+        "xy_bounds": [
+          [
+            -31.0,
+            121.0
+          ],
+          [
+            217.0,
+            321.0
+          ]
+        ],
+        "faces": 20,
+        "depth_pass": 20,
+        "depth_reject": 0,
+        "min_depth": 6093,
+        "max_depth": 7722,
+        "limits": [
+          9984
+        ]
+      },
+      {
+        "variant": "distance_2x",
+        "scene": 297,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            6044,
+            550,
+            5971
+          ],
+          "flags": 89
+        },
+        "vertices": 64,
+        "xy_bounds": [
+          [
+            550.0,
+            654.0
+          ],
+          [
+            216.0,
+            324.0
+          ]
+        ],
+        "faces": 16,
+        "depth_pass": 16,
+        "depth_reject": 0,
+        "min_depth": 5867,
+        "max_depth": 7064,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "distance_2x",
+        "scene": 298,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            4140,
+            550,
+            8158
+          ],
+          "flags": 89
+        },
+        "vertices": 96,
+        "xy_bounds": [
+          [
+            430.0,
+            550.0
+          ],
+          [
+            220.0,
+            310.0
+          ]
+        ],
+        "faces": 24,
+        "depth_pass": 24,
+        "depth_reject": 0,
+        "min_depth": 7065,
+        "max_depth": 9251,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "distance_2x",
+        "scene": 299,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            2236,
+            550,
+            10346
+          ],
+          "flags": 89
+        },
+        "vertices": 112,
+        "xy_bounds": [
+          [
+            355.0,
+            430.0
+          ],
+          [
+            225.0,
+            293.0
+          ]
+        ],
+        "faces": 28,
+        "depth_pass": 28,
+        "depth_reject": 0,
+        "min_depth": 9253,
+        "max_depth": 11439,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "distance_2x",
+        "scene": 300,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            438,
+            550,
+            11498
+          ],
+          "flags": 89
+        },
+        "vertices": 64,
+        "xy_bounds": [
+          [
+            309.0,
+            355.0
+          ],
+          [
+            228.0,
+            283.0
+          ]
+        ],
+        "faces": 16,
+        "depth_pass": 16,
+        "depth_reject": 0,
+        "min_depth": 11440,
+        "max_depth": 11556,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "distance_2x",
+        "scene": 301,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -1509,
+            550,
+            10598
+          ],
+          "flags": 89
+        },
+        "vertices": 112,
+        "xy_bounds": [
+          [
+            234.0,
+            309.0
+          ],
+          [
+            226.0,
+            291.0
+          ]
+        ],
+        "faces": 28,
+        "depth_pass": 28,
+        "depth_reject": 0,
+        "min_depth": 9640,
+        "max_depth": 11556,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "distance_2x",
+        "scene": 302,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -3711,
+            550,
+            8681
+          ],
+          "flags": 89
+        },
+        "vertices": 112,
+        "xy_bounds": [
+          [
+            121.0,
+            234.0
+          ],
+          [
+            222.0,
+            304.0
+          ]
+        ],
+        "faces": 28,
+        "depth_pass": 28,
+        "depth_reject": 0,
+        "min_depth": 7723,
+        "max_depth": 9639,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "distance_2x",
+        "scene": 303,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -5913,
+            550,
+            6764
+          ],
+          "flags": 89
+        },
+        "vertices": 80,
+        "xy_bounds": [
+          [
+            -31.0,
+            121.0
+          ],
+          [
+            217.0,
+            321.0
+          ]
+        ],
+        "faces": 20,
+        "depth_pass": 20,
+        "depth_reject": 0,
+        "min_depth": 6093,
+        "max_depth": 7722,
+        "limits": [
+          13312
+        ]
+      }
+    ],
+    "scope": "Original retail x86 on read-only captured state; variants affect offline Unicorn only; no GPU emulation or live writes"
+  },
+  "code_identity": {
+    "retail_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "live_executable_sha256": "62a5cb52935d4ff8760b1f224ddcd68effcac8c277d0516f0913aa45df5d6193",
+    "regions": [
+      {
+        "name": "admission",
+        "va": "0x44d59f",
+        "size": 415,
+        "sha256": "36dd1bc4b8e167d7db68713114ebb64208b76868249885cb0d4c27ca0efd17db",
+        "resident_equals_retail": true
+      },
+      {
+        "name": "group_passes",
+        "va": "0x44d73e",
+        "size": 258,
+        "sha256": "78a5ddc67657fc5884c6ea4c0d404c38a218089a8aa066fa23d4ad56b3a4ef43",
+        "resident_equals_retail": true
+      },
+      {
+        "name": "quad_depth",
+        "va": "0x45cf63",
+        "size": 44,
+        "sha256": "0ea8fc86d609ec0a534600f401f5293d27fa87daed2ebf7251809efae6495dd5",
+        "resident_equals_retail": true
+      }
+    ]
+  },
+  "correction": "Initial adapted mushroom probe used near scratch unless flag override supplied, ignoring pre-existing 0x59. Its labelled current/2x rows are superseded; corrected replay respects actual flags. No group change is recommended.",
+  "checks": {
+    "command": "PYTEST_ADDOPTS='-k render_distance' make check",
+    "passed": 26,
+    "deselected": 6510,
+    "seconds": 3.95,
+    "compatibility": true,
+    "tracked_file_audit": true,
+    "vault": {
+      "notes": 938,
+      "errors": 0,
+      "warnings": 5
+    },
+    "claim_sweep": "new_only",
+    "full_suite_rerun": false
+  },
+  "runtime": {
+    "unchanged": true,
+    "ownership": {
+      "build": "/home/dev/ABLPC/work/copies/EXP-20260911-011-garden-preview",
+      "sha256": "62a5cb52935d4ff8760b1f224ddcd68effcac8c277d0516f0913aa45df5d6193",
+      "sink": "ablpc_soil_1789157919736578866",
+      "module": 536870916,
+      "code_va": 17313792,
+      "state_va": 17317888,
+      "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-011/garden-preview/prefix",
+      "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+      "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+      "audible": false,
+      "expect_auto_hardware": true,
+      "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+      "leader": {
+        "pid": 86212,
+        "start": 5551390,
+        "group": 86212,
+        "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789157919736578866 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-011/garden-preview/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-011-garden-preview/bugs.exe log cheat mpeg "
+      },
+      "game": {
+        "pid": 86443,
+        "start": 5551524,
+        "group": 86212,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-011-garden-preview\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "display": ":2",
+      "xwayland": {
+        "pid": 86241,
+        "start": 5551415,
+        "group": 86212,
+        "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+      },
+      "hardware_before_input": true,
+      "window": "14680071"
+    },
+    "bindings": [
+      {
+        "pid": 86212,
+        "start": 5551390,
+        "group": 86212,
+        "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789157919736578866 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-011/garden-preview/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-011-garden-preview/bugs.exe log cheat mpeg ",
+        "binding": "group"
+      },
+      {
+        "pid": 86241,
+        "start": 5551415,
+        "group": 86212,
+        "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation ",
+        "binding": "group"
+      },
+      {
+        "pid": 86364,
+        "start": 5551426,
+        "group": 86212,
+        "cmd": "gamescopereaper -- env PULSE_SINK=ablpc_soil_1789157919736578866 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-011/garden-preview/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-011-garden-preview/bugs.exe log cheat mpeg ",
+        "binding": "group"
+      },
+      {
+        "pid": 86366,
+        "start": 5551426,
+        "group": 86212,
+        "cmd": "start.exe /exec /home/dev/ABLPC/work/copies/EXP-20260911-011-garden-preview/bugs.exe log cheat                                                                                        ",
+        "binding": "group"
+      },
+      {
+        "pid": 86368,
+        "start": 5551426,
+        "group": 86368,
+        "cmd": "/usr/lib64/wine-wow64/wine/../../../bin/wineserver ",
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 86374,
+        "start": 5551431,
+        "group": 86374,
+        "cmd": "C:\\windows\\system32\\services.exe                                                                                                   ",
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 86377,
+        "start": 5551433,
+        "group": 86377,
+        "cmd": "C:\\windows\\system32\\winedevice.exe                                                                                                   ",
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 86389,
+        "start": 5551434,
+        "group": 86389,
+        "cmd": "C:\\windows\\system32\\plugplay.exe                                                                                                   ",
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 86391,
+        "start": 5551435,
+        "group": 86391,
+        "cmd": "C:\\windows\\system32\\explorer.exe /desktop                                                                                                   ",
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 86397,
+        "start": 5551437,
+        "group": 86397,
+        "cmd": "C:\\windows\\system32\\svchost.exe -k LocalServiceNetworkRestricted                                                                                                   ",
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 86403,
+        "start": 5551438,
+        "group": 86403,
+        "cmd": "C:\\windows\\system32\\winedevice.exe                                                                                                   ",
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 86434,
+        "start": 5551516,
+        "group": 86434,
+        "cmd": "C:\\windows\\system32\\rpcss.exe                                                                                                   ",
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 86443,
+        "start": 5551524,
+        "group": 86212,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-011-garden-preview\\bugs.exe log cheat mpeg                                                                                                   ",
+        "binding": "group"
+      }
+    ],
+    "audit_unattributed": 7,
+    "all_reported_processes_bound": true,
+    "audio": {
+      "sink": {
+        "index": 4636,
+        "name": "ablpc_soil_1789157919736578866",
+        "owner_module": 536870916
+      },
+      "streams": [
+        {
+          "index": 4729,
+          "sink": 4636,
+          "mute": false,
+          "properties": {
+            "client.api": "pipewire-pulse",
+            "pulse.server.type": "unix",
+            "application.name": "Travellers Tales bugs",
+            "application.process.id": "86443",
+            "application.process.user": "dev",
+            "application.process.host": "fedora",
+            "application.process.binary": "wine-preloader",
+            "application.language": "C.UTF-8",
+            "window.x11.display": ":2",
+            "application.process.machine_id": "a959c6830a494191b12b8af35d09fa6b",
+            "media.name": "audio stream #1",
+            "pulse.corked": "false",
+            "node.rate": "1/48000",
+            "node.latency": "256/48000",
+            "target.object": "ablpc_soil_1789157919736578866",
+            "stream.is-live": "true",
+            "node.name": "Travellers Tales bugs",
+            "node.want-driver": "true",
+            "node.autoconnect": "true",
+            "media.class": "Stream/Output/Audio",
+            "port.group": "stream.0",
+            "adapt.follower.spa-node": "",
+            "object.register": "false",
+            "factory.id": "7",
+            "clock.quantum-limit": "8192",
+            "node.loop.name": "data-loop.0",
+            "library.name": "audioconvert/libspa-audioconvert",
+            "client.id": "241",
+            "object.id": "244",
+            "object.serial": "4729",
+            "pulse.attr.maxlength": "30720",
+            "pulse.attr.tlength": "9600",
+            "pulse.attr.prebuf": "8",
+            "pulse.attr.minreq": "3840",
+            "node.driver-id": "188",
+            "module-stream-restore.id": "sink-input-by-application-name:Travellers Tales bugs"
+          }
+        }
+      ]
+    },
+    "registered_sessions": []
+  },
+  "limits": [
+    "No 2x build installed or live preview launched.",
+    "CPU output does not establish full-frame capacities, GPU appearance, all-camera coverage or performance.",
+    "2x remains a finite cutoff; it is sufficient for this captured corner.",
+    "Shared initializer affects other levels unless separately scoped; global versus Training-only change is undecided.",
+    "Prior full-suite R2p/R2q issues remain; five Vault size warnings are pre-existing."
+  ],
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260911-012/before.png",
+      "sha256": "49e060f610459490965854f0670d35f9ba649754095d42abb2e97549d59d228d"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/capture.py",
+      "sha256": "37a971fd7d777f2a26c64f0e22ce6afaed097d1eca4dc4c66bebb898549dbcde"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/memory.json",
+      "sha256": "1bfc37897083d7598f565321df9be08d6f35511478f9f9bda6e9b4bb32b83a17"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/code-identity.json",
+      "sha256": "122ca3adc5dac3ed7a0c611e242c406954499b3c5dc8bdc2f5e3721c241288f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/admission-disassembly.txt",
+      "sha256": "a3ff188b10e9769878e313a07d7207c5da5376c27549085f347f93b149b5015a"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/group_passes-disassembly.txt",
+      "sha256": "0010a145848eaf508cb8f751070f06df066be07741efcba4e9ffbfba2f2554cc"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/quad_depth-disassembly.txt",
+      "sha256": "2f80a48f8667433f174da9fca74c0771635ffec97005f36f9f8e2009a27a12f2"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/resident.json",
+      "sha256": "2b3f3d1f0119ceb11d593483df1b98d8f0b6c287a4c0bf9999381328d08a9c38"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/map.py",
+      "sha256": "82e26b6e4dd32c88ed1fc641c48235ed89d20f258ae978cbb1eda0a7099235fe"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/replay.py",
+      "sha256": "dd71ef75b8daff16aaa8b45ce0cf46872def089498bca7928d43d18e218418c5"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/diagnose.py",
+      "sha256": "89fb948622c6eaa1366689c5b3cb817ebe2816ba4ba13b4c0a4fd7d8cfe40e71"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/diagnosis.json",
+      "sha256": "625d4bf28458455770fdf79c2443509313677a0d8355a996f7a896e3e710c4d0"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/diagnose-superseded.py",
+      "sha256": "7c0046af6df417df682006e2f3e1c9e02b422f6803fca122e37fd99eddb641d7"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/diagnosis-superseded-labels.json",
+      "sha256": "c2b5e34ac1cf6907531d633ee80687aeacae6446a06098ab7be73fb54722999c"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/check.log",
+      "sha256": "3a9bfd37df70f2599ef595e20d4645ab19d1e6ea1d9bd2933cbc91ebfef0055d"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/final-vault.log",
+      "sha256": "a3805fe000768f8338ecd32f7b95097f116f42a9132f39475fe698c0f9ae61b6"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/final-audit.json",
+      "sha256": "7278117f8e87216dafbcde9d50088806eca25ad0f533c8fcee2e72cd58fc6cbb"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/final-bindings.json",
+      "sha256": "1dcb3550788a50bb6ed74943fc2bbbc957e136476b3948fddc524fe16a8d669d"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/audio-binding.json",
+      "sha256": "3bb092e2a7fb71dc14221fb6fb8ba1a4c51c23556b5f0f4988598dedacc277e2"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/claim-group.json",
+      "sha256": "352759b48d3b227ce373151d5a53e19770ad4672d7756ac6ea5dd107a1044ac1"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-012/briefing.txt",
+      "sha256": "0399c1b7d4889af535c8ec4784801c3d6c77ee9e86e1563805353bc6d060413e"
+    }
+  ],
+  "originals_modified": false,
+  "source_or_settings_modified": false,
+  "ps1_consulted": false
+}

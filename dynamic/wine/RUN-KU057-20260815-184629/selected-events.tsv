@@ -1,0 +1,17 @@
+phase	t_ms	x	y	z	grain	flags	next_life	state_counter	collision_index	collision_value	note
+gate	0	492728	33085	509556	1	0x0008	0	1	552	0	pre-write stationary reference
+gate	89692	491530	30462	482056	10	0x0008	0	0	552	0	authorized one-byte grain write observed
+gate	129120	493260	30190	509766	10	0x0000	0	0	552	0	gate approach
+gate	129822	499439	31731	541382	10	0x0008	0	0	543	0	user-confirmed gate crossing
+gate	149039	520294	30419	648021	11	0x0008	0	0	543	0	post-gate grain pickup
+gate	149190	526856	30405	649913	12	0x0000	0	0	543	0	second post-gate grain pickup
+spider	150042	533535	29515	639927	12	0x0006	2	-1	543	0	user-confirmed spider final hit
+spider	150293	539577	30289	645022	12	0x0004	2	-1	543	0	death transition continues
+spider	151951	522629	30419	649284	12	0x0000	0	4	543	0	first sampled spider respawn
+pit_far	376026	501522	31785	540782	13	0x0008	0	3	543	0	pre-fall floor
+pit_far	376327	496952	32654	530244	13	0x0000	0	3	543	0	falling
+pit_far	376829	494438	68730	526143	13	0x0014	2	3	572	1	material-1 reset transition
+pit_far	377531	497247	31299	547255	13	0x0000	0	4	543	0	first sampled row-7-like respawn
+pit_gate	546280	505289	32608	531057	13	0x0000	0	4	543	0	gate-side fall approach
+pit_gate	546781	505717	66713	526449	13	0x0014	2	4	572	1	repeated material-1 reset transition
+pit_gate	547534	497247	31299	547255	13	0x0001	0	4	543	0	repeated identical row-7-like respawn

@@ -1,0 +1,93 @@
+RUN-GDB-20260812-161520
+Experiment: EXP-20260812-023
+Executable SHA-256: 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+LEVEL1.DAT SHA-256: 494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+Environment: Fedora Linux 44; Wine 11.0 Staging; GNU GDB 17.1-6.fc44
+Renderer: Direct3D hardware, 640x480x16
+
+This is a curated record of hardware break/watchpoint stops and read-only
+memory observations. No game memory, register, executable byte, or game file
+was changed. Raw GDB text and the title capture remain ignored under
+work/copies/EXP-20260812-023/evidence/. The raw transcript SHA-256 is
+52ab9d31b4ac09681671a51127a8b8abd78d254c7c4f7285d0df9ff4430e9f84.
+
+Rejected unguarded boundary
+---------------------------
+
+The first direct hardware breakpoint at 0x00445B01 stopped before plant 10:
+0x005B1AA4, 0x005AAB20, 0x005AAB70, and 0x005AAB24 were all zero. Three
+temporary watches were therefore outside the proposed M2.10 start. One was
+reported at PC 0x00448107 while the exact preceding instructions
+0x004480FB/0x00448103 were populating bytes in the watched +0x24/+0x26 range.
+Registers placed EDX at 0x005AAB20 and EDI at 0x005AAB00. This was explicitly
+marked rejected, and all four temporary break/watchpoints were deleted.
+
+Static instructions show that 0x00445B01 is a common resource-ID loop tail,
+not a plant-10-unique address. No consumer conclusion uses this window.
+
+Accepted plant-10-specific start
+--------------------------------
+
+A hardware breakpoint at unique plant 10 post-call address 0x0044596D then
+stopped with retained resource ID 0x71 and path 0x004DDC6C. Read-only checks
+at 2026-08-12T16:17:33.432010028-04:00 reproduced:
+
+  0x005B1AA4 = 0x006C342B
+  ANM words +0x00/+0x02/+0x04/+0x06 = 1/3/66/68
+  0x005AAB20 = 0x006C3B3B
+  0x005AAB70 = 0x006C3E57
+  0x005AAB24 = 0x00000000
+
+The immediately following 0x00445B01 stop was accepted as the M2.10 start at
+2026-08-12T16:17:50.724669406-04:00. Header indices and both +0x20 values
+were unchanged. The caller adjustment was complete:
+
+  0x005AAB24 = 0xD7E00218
+  0x005AAB24 halfword = 0x0218
+  0x005AAB26 halfword = 0xD7E0
+
+After deleting the execution breakpoint, three hardware read watchpoints were
+armed on 0x005AAB20, 0x005AAB70, and dword 0x005AAB24. A fourth hardware slot
+bounded the resource batch at 0x004679C7.
+
+Resource-batch-return boundary
+------------------------------
+
+The 0x004679C7 execution breakpoint won before any accepted watchpoint. At
+2026-08-12T16:18:12.439777208-04:00, `info breakpoints` listed the three read
+watchpoints with no hit counts and the execution breakpoint with exactly one
+hit. The three watched dwords retained 0x006C3B3B, 0x006C3E57, and
+0xD7E00218. The execution breakpoint was deleted, leaving the watches active.
+
+Natural-title boundary
+----------------------
+
+No watchpoint stopped execution between 0x004679C7 and the natural Training
+Level "press a key to start" pause. An ignored native capture at
+2026-08-12T16:19:17.788233063-04:00 proves that boundary and has SHA-256
+5e5ad5bd714b7d73cf8cce2d55b1521d5c9e4206584ee6a31d9b8e63343df5e4.
+
+At the debugger stop recorded at
+2026-08-12T16:19:34.783658587-04:00, all three watchpoints remained enabled
+with no hit counts. The three dwords and the 0x0218/0xD7E0 halfwords were
+unchanged. All watches were deleted, `info breakpoints` reported none, and GDB
+detached. Execution was resumed, a title key was sent, and the log reached
+End InitMainGame and NextLife.
+
+Boundary and limitations
+------------------------
+
+This is a bounded negative for CPU reads overlapping exactly the two plant 10
+entry +0x20 dwords and adjusted first-entry +0x24/+0x26 range after the unique
+plant 10 caller adjustment. It includes explicit sub-boundaries at the scene-
+resource batch return and natural title. It does not cover other dwords in the
+two 0x50-byte entries, an event after the title, or non-CPU consumers.
+
+Run gates and closure
+---------------------
+
+The committed log contains one `Screen mode 640x480x16 selected`, one
+`Starting Direct3D renderer`, no `INITSOFTRENDER`, both plant 10 request lines,
+one `End InitMainGame`, and one `NextLife`. Its SHA-256 is
+8b331970c547406864ce26d1afee9367683cf34b62b39bd379206fa6ffcfd500.
+All accepted and rejected break/watchpoints were deleted before detach.

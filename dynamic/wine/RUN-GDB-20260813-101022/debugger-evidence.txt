@@ -1,0 +1,28 @@
+# RUN-GDB-20260813-101022
+
+Experiment: EXP-20260813-038
+Tool: gdb-harness 1.2.0 (read-only hardware watch/breakpoints)
+Window start: 2026-08-13T10:10:22.533090-04:00
+Window end:   2026-08-13T10:10:22.547067-04:00
+
+This is an auto-generated draft of read-only debugger stops. No game memory, register, executable byte, or game file was changed. Read watchpoints are read-class hardware traps on x86 and may report during writes; treat them as access evidence, not proof of a read.
+
+Completion: target_signal (completed=False, accepted=False, stops=1, cleanup_verified=True, detached=True)
+
+Stops
+-----
+seq 1: breakpoint entry_pre at PC 0x44c898 watched=None
+
+Target signal
+-------------
+SIGSEGV at PC 0x44c898 (fatal, stop-print-nopass)
+
+Submission capture
+------------------
+completed=False cycles=0 algorithm=sha256 payload_bytes_retained=False failure=None
+
+Post-detach survival
+--------------------
+passed=True identity_verified=True samples=5 failure_reasons=[]
+
+Interpretation is intentionally left for a linked experiment note.

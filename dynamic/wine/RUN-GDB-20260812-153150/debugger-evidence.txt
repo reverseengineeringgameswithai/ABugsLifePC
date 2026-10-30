@@ -1,0 +1,80 @@
+RUN-GDB-20260812-153150
+Experiment: EXP-20260812-021
+Executable SHA-256: 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+LEVEL1.DAT SHA-256: 494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+Environment: Fedora Linux 44; Wine 11.0 Staging; GNU GDB 17.1-6.fc44
+Renderer: Direct3D hardware, 640x480x16
+
+This is a curated record of read-only memory observations and hardware
+break/watchpoint stops. No game memory, register, executable byte, or game file
+was changed. The raw interactive transcript remains ignored under
+work/copies/EXP-20260812-021/evidence/ and has SHA-256
+ea4e166939a6cdf43a3e3a74d46db21d3a77fc998960ccade2b37d4a9c26de87.
+
+Plant 10 post-call boundary
+---------------------------
+
+A hardware execution breakpoint at 0x0044596D stopped immediately after the
+plant 10 call through thunk 0x004018A7 to 0x00444C40. The still-present cdecl
+arguments were:
+
+  path                 0x004DDC6C = "plants\\plant10"
+  first caller pointer 0x0097FE04
+  second caller pointer 0x0097FE00
+  resource ID          0x00000071
+  output pointer 1     0x0097F924
+  output pointer 2     0x0097FCE8
+
+The resource-ID-specific dword at 0x005B1AA4 held 0x006C342B. Its runtime
+header words were:
+
+  +0x00 = 1
+  +0x02 = 3
+  +0x04 = 66
+  +0x06 = 68
+
+Using the statically established 0x50-byte table rooted at 0x005A9660, the
+two index values delimit [0x005AAB00, 0x005AABA0), exactly two entries. The
+nonzero dwords at entry-relative +0x20 were 0x006C3B3B and 0x006C3E57. The
+four resource-ID-specific auxiliary slots at 0x005B14E0 through 0x005B14EC
+were all zero at this boundary.
+
+A second hardware execution stop at 0x00445B01, after the plant 10 caller's
+two field writes, retained the same slot and bounds. The first entry dword at
+0x005AAB24 changed from zero to 0xD7E00218; the second entry did not receive
+that caller adjustment in this path. These are address/offset observations,
+not semantic structure names.
+
+M1 record windows
+-----------------
+
+Hardware read watchpoints on each relocated record +0x10 stopped immediately
+after 0x00449B61 at 0x00449B64:
+
+  record 124: record 0x00659F37, payload 0x0065B7B3, target 0x0066C273
+  record 125: record 0x00659F4B, payload 0x0065B7D3, target 0x0066A2BB
+  record 126: record 0x00659F5F, payload 0x0065B7F3, target 0x0066A2BB
+
+For each record independently, three read watchpoints were then armed on:
+
+  0x005B1AA4  plant-10-specific ANM slot
+  0x005AAB20  first bounded entry +0x20
+  0x005AAB70  second bounded entry +0x20
+
+In every case, the next stop was the hardware execution breakpoint at
+0x00449E25, immediately after the 0x00449E20 target-renderer call. None of the
+three read watchpoints fired. At the three return stops, the first stack
+argument was respectively 0x0066C273, 0x0066A2BB, and 0x0066A2BB.
+
+This is a bounded negative result for three exact pointer-bearing destinations
+during each direct record-dispatch-to-target-renderer window. It is not an
+absence claim for the other dwords in [0x005AAB00, 0x005AABA0), later engine
+phases, other scene records, or indirect state copied elsewhere.
+
+Run gates and closure
+---------------------
+
+The game log contains one `Screen mode 640x480x16 selected` marker, one
+`Starting Direct3D renderer` marker, no `INITSOFTRENDER`, both plant 10 request
+lines, `End InitMainGame`, and `NextLife`. All breakpoints and watchpoints were
+removed before detach. The unchanged process reached gameplay after detach.

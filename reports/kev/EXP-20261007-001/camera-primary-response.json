@@ -1,0 +1,77 @@
+{
+  "response": {
+    "model": "kev-latest",
+    "answers": {
+      "q19": {
+        "type": "choice",
+        "choice": "supported",
+        "confidence": 0.9891663834346075,
+        "probabilities": {
+          "supported": 0.9927776455879211,
+          "contradicted": 0.0026981409173458815,
+          "insufficient": 0.004524270538240671
+        }
+      },
+      "q20": {
+        "type": "choice",
+        "choice": "supported",
+        "confidence": 0.9890216069069265,
+        "probabilities": {
+          "supported": 0.992681086063385,
+          "contradicted": 0.003520529717206955,
+          "insufficient": 0.003798399120569229
+        }
+      },
+      "q21": {
+        "type": "choice",
+        "choice": "contradicted",
+        "confidence": 0.9574078349776197,
+        "probabilities": {
+          "supported": 0.0012469179928302765,
+          "contradicted": 0.9716051816940308,
+          "insufficient": 0.02714785747230053
+        }
+      },
+      "q22": {
+        "type": "choice",
+        "choice": "contradicted",
+        "confidence": 0.9928480789900417,
+        "probabilities": {
+          "supported": 0.0007177385850809515,
+          "contradicted": 0.9952320456504822,
+          "insufficient": 0.0040502087213099
+        }
+      },
+      "q23": {
+        "type": "choice",
+        "choice": "insufficient",
+        "confidence": 0.8448997431691272,
+        "probabilities": {
+          "supported": 0.0053964038379490376,
+          "contradicted": 0.09800376743078232,
+          "insufficient": 0.8965998291969299
+        }
+      },
+      "q24": {
+        "type": "choice",
+        "choice": "insufficient",
+        "confidence": 0.9583169618988667,
+        "probabilities": {
+          "supported": 0.001937416265718639,
+          "contradicted": 0.02585127390921116,
+          "insufficient": 0.9722112417221069
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 2378,
+      "output_tokens": 724
+    },
+    "latency_ms": 936.2
+  },
+  "wall_ms": 941.2305759997253,
+  "headers": {
+    "x-typesafe-request-id": "f46015a4d0e84883983254c38f2b442d",
+    "server-timing": "app;dur=940.4"
+  }
+}

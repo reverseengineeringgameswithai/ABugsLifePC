@@ -1,0 +1,75 @@
+EXP-20260812-010 matched Direct3D target-rebind comparison
+
+Inputs
+  bugs.exe SHA-256:
+    97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+  unchanged Training LEVEL1.DAT SHA-256:
+    494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+  record-124 target-0x111E4 DAT SHA-256:
+    b8012a95f7ec0254805bdd3cf32df2b16f2ad0926308fe8678cc2360027f720e
+  record-125 target-0x1319C DAT SHA-256:
+    b8ea00be86de53a9b659a20f8b0023369e687c9309b61dd61fe8496393d90ed9
+
+Every accepted run logged both hardware gates:
+  INFO Screen mode 640x480x16 selected.
+  INIT : Starting Direct3D renderer.
+No accepted run logged INITSOFTRENDER. Every accepted run loaded
+level07\level1.dat, ended InitMainGame, and entered NextLife.
+
+Capture method
+  RUN-WINE-20260812-102953: unchanged control
+  RUN-WINE-20260812-103136: record 124, 0x1319C -> 0x111E4
+  RUN-WINE-20260812-103354: record 125, 0x111E4 -> 0x1319C
+
+After the natural Training title pause, each run requested 15 native Gamescope
+640x480 screenshots at approximately 0.2-second wall-clock intervals. Capture
+bytes remain under ignored work/copies/EXP-20260812-010/evidence/. Ordered
+capture-set checksum-list SHA-256 values are, respectively:
+  control:    115b8ae30412f6d5607738351b70f961833d8d3fbe5426295731d87105ad6694
+  record 124: 47cfc6a42f3278bbf4cac9a9d29b603ab9b45c50d4cd6e76ec8775498ba619e4
+  record 125: 3b02b60a476bc75b6c21b00df60d281826a9bd75d6a00278a1776b1ec1af6c76
+
+Frame 07 was the first same-index frame for which both candidate comparisons
+were pixel-identical to the control outside their affected placement boxes.
+Selected-frame SHA-256 values:
+  control:    55fed33a53a8ac3abaaa8584ce76938a4cdea65075efb7db2faf8a1ef37f318a
+  record 124: ddd4c41228f32d0c31b3d46e0c12d3c1d70fde20f8abc6c70024d6f00e561933
+  record 125: 7fefcd05e7f916ad974256b97b0853279e8e95cc6436b18dca2afa40ef826857
+
+ImageMagick 7 exact comparison, frame 07
+  Record 124:
+    differing pixels: 2980 of 307200 (0.969727%)
+    normalized RMSE: 0.00819391
+    exact difference union: 61x242+369+0
+    differing pixels outside that union: 0
+    prior move-away difference: 52x241+369+0 (EXP-20260812-008)
+  Record 125:
+    differing pixels: 1076 of 307200 (0.350260%)
+    normalized RMSE: 0.00553624
+    exact difference union: 24x127+616+101
+    differing pixels outside that union: 0
+    prior move-away difference: 24x99+616+124 (EXP-20260812-008)
+
+Receipts and byte locality
+  Record-124 receipt SHA-256:
+    5dcdd7c7ee9531d6a446f41476673cb85dbfb264449ec3c01a192207fdb60d74
+  Record-125 receipt SHA-256:
+    af6880ff3580e1e9a96c18be9d86649d1f564204da66a792c0c14853b13a790d
+  Exact comparison against the unchanged DAT found changes only at 0x26F8-0x26F9
+  for record 124 and 0x2718-0x2719 for record 125. These are the low two bytes
+  of the guarded four-byte target fields; the remaining two bytes were already
+  equal for these offsets.
+
+Interpretation boundary
+  The phase-matched control and reciprocal four-byte edits confirm that the
+  selected positive target contributes visible render content at the selected
+  placement. They do not establish that the target is a complete object
+  definition or identify exact entry/command semantics.
+
+Negative result and reconciliation
+  A preliminary control accidentally accepted the default software option and
+  entered the 320x200 INITSOFTRENDER path. It was rejected before comparison.
+  Single captures taken at a fixed wall-clock delay also produced animation-
+  phase noise in one record-124 attempt. The 15-frame sequence and exact
+  outside-region identity above replace those uncontrolled observations; no
+  conclusion relies on the rejected software run or the noisy single capture.

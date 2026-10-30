@@ -1,0 +1,36 @@
+First Tunnels arm: all three position triples
+pid=137854
+before current=-15959,32079,2745
+before preceding=-15959,32079,2745
+before auxiliary=-15959,32079,2745
+target=501696,65000,494016
+process_vm_writev_bytes=36
+current_readback=501696,65000,494016
+preceding_readback=501696,65000,494016
+auxiliary_readback=501696,65000,494016
+
+Fresh Tunnels arm: known row-6 walkable floor, auxiliary omitted
+pid=139445
+before current=-16896,32043,6631
+before preceding=-16896,32043,6631
+before auxiliary=-16896,32043,6631
+target=501696,30092,494016
+process_vm_writev_bytes=24
+current_readback=501696,30092,494016
+preceding_readback=501696,30092,494016
+auxiliary_readback=-16896,32043,6631
+
+Fresh Tunnels arm: known prior pit-contact tuple, auxiliary omitted
+pid=139445
+before current=501696,30092,494016
+before preceding=501696,30092,494016
+before auxiliary=501696,30092,494016
+target=494438,68730,526143
+process_vm_writev_bytes=24
+current_readback=494438,68730,526143
+preceding_readback=494438,68730,526143
+auxiliary_readback=501696,30092,494016
+
+No helper wrote grain, flags, NextLife, the state counter, an executable,
+an asset, or original media. The receipts above are volatile process-position
+writes; ordinary work-copy log/Wine runtime churn is outside this claim.

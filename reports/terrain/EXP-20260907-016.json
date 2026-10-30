@@ -1,0 +1,118 @@
+{
+  "experiment": "EXP-20260907-016",
+  "session": "2026-09-07 - Codex - Original game and trunk sampling",
+  "scope": "Read-only current-view trunk sampling feasibility; complete five native meshes, whole-tree completeness unresolved",
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260907-016/capture.log",
+      "sha256": "6a1e3b0c3a403015b435c9c98e794ea4a799ab751bd4ba41c41a045420c01e33"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-016/memory.json",
+      "sha256": "5aa1cea7d68e6c6b2543250fecc6e00b6a44ac8152ffae7d45e15582ac7c3b78"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-016/mapping.log",
+      "sha256": "e74c28ec606343ddf03d208d6fb9331993c4c2a5736719996445af9179940e1c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-016/nearby-meshes.json",
+      "sha256": "c532ad9f5aea96513ea47c8a116062d6f6678bda042de2579858e4f6b9b8d078"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-016/tree-census.json",
+      "sha256": "3648176ab16de977122973280190edfe779d43f17482404dd4c944210ca40b29"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-016/trunk-section-summary.json",
+      "sha256": "0944e035c6d3ff59270871984d61dfb981c8a857ccc220ed88e6339ff5215728"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-016/resident-tree.json",
+      "sha256": "f55eac2c30e262a8917eec17e767dba05f43ff8d236d475964384673fb54ab2c"
+    }
+  ],
+  "meshes": [
+    {
+      "scene": 5,
+      "object_offset": 19032,
+      "geometry_offset": 141968,
+      "mesh_bytes": 1834,
+      "sha256": "8ca9e2b05aac7b9c6692fc8b41f193acf7b5ab2a659484465e53a79d75237fca",
+      "resident_exact": true
+    },
+    {
+      "scene": 6,
+      "object_offset": 19056,
+      "geometry_offset": 143804,
+      "mesh_bytes": 4630,
+      "sha256": "9bed7e704b8f0ee9fb3847da55867abce6f9ea5a6aca759f61bcdd54e7ddb479",
+      "resident_exact": true
+    },
+    {
+      "scene": 7,
+      "object_offset": 19080,
+      "geometry_offset": 148436,
+      "mesh_bytes": 2754,
+      "sha256": "741edd5b9f1ceea96a6a6023bca1a07341fb039458538275c62388ae47fe41d6",
+      "resident_exact": true
+    },
+    {
+      "scene": 8,
+      "object_offset": 19104,
+      "geometry_offset": 151192,
+      "mesh_bytes": 738,
+      "sha256": "73aed29bd699db92c311fdb449f109ab0153605da0c2a33129409a6b191dd07f",
+      "resident_exact": true
+    },
+    {
+      "scene": 17,
+      "object_offset": 19008,
+      "geometry_offset": 140560,
+      "mesh_bytes": 1406,
+      "sha256": "8b733fb48c7f7eb99b31a6921b2289ffbc42c64a8ee6960868028b3566a6934e",
+      "resident_exact": true
+    }
+  ],
+  "section": {
+    "scenes": [
+      5,
+      6,
+      7,
+      8,
+      17
+    ],
+    "vertices_with_seams": 467,
+    "faces": 358,
+    "bounds": [
+      [
+        -19136,
+        -5827
+      ],
+      [
+        -10015,
+        -960
+      ],
+      [
+        -11301,
+        8588
+      ]
+    ],
+    "open_edges_after_coordinate_weld": 105,
+    "more_than_two_face_edges": 0,
+    "scope": "Bounded adjoining trunk mesh group; open boundaries and further adjoining scenery do not establish a complete freestanding tree."
+  },
+  "native_live_xyzw": {
+    "scene5": [
+      163,
+      163
+    ],
+    "scene6": [
+      41,
+      41
+    ]
+  },
+  "private_obj": "work/experiments/EXP-20260907-016/connected-trunk-section.obj",
+  "live_inputs": 0,
+  "live_writes": 0
+}

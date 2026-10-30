@@ -1,0 +1,2569 @@
+{
+  "accepted": true,
+  "all_keys_released": true,
+  "dispatches": [
+    {
+      "action": "down",
+      "dispatched_offset_ns": 5337964812,
+      "drift_ns": 1568800,
+      "keysym": "Return",
+      "scheduled_offset_ns": 5336396012,
+      "sequence": 0
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 5427862142,
+      "drift_ns": 913334,
+      "keysym": "Return",
+      "scheduled_offset_ns": 5426948808,
+      "sequence": 1
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 6730402089,
+      "drift_ns": 1339054,
+      "keysym": "Return",
+      "scheduled_offset_ns": 6729063035,
+      "sequence": 2
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 6820575701,
+      "drift_ns": 982890,
+      "keysym": "Return",
+      "scheduled_offset_ns": 6819592811,
+      "sequence": 3
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 7369048986,
+      "drift_ns": 1047854,
+      "keysym": "x",
+      "scheduled_offset_ns": 7368001132,
+      "sequence": 4
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 7434547578,
+      "drift_ns": 1071541,
+      "keysym": "x",
+      "scheduled_offset_ns": 7433476037,
+      "sequence": 5
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 7595436478,
+      "drift_ns": 995786,
+      "keysym": "x",
+      "scheduled_offset_ns": 7594440692,
+      "sequence": 6
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 7675749452,
+      "drift_ns": 876573,
+      "keysym": "x",
+      "scheduled_offset_ns": 7674872879,
+      "sequence": 7
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 7867644156,
+      "drift_ns": 1505256,
+      "keysym": "z",
+      "scheduled_offset_ns": 7866138900,
+      "sequence": 8
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 7937735660,
+      "drift_ns": 1122110,
+      "keysym": "z",
+      "scheduled_offset_ns": 7936613550,
+      "sequence": 9
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 8129362632,
+      "drift_ns": 1632532,
+      "keysym": "z",
+      "scheduled_offset_ns": 8127730100,
+      "sequence": 10
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 8163954971,
+      "drift_ns": 999331,
+      "keysym": "z",
+      "scheduled_offset_ns": 8162955640,
+      "sequence": 11
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 8581840694,
+      "drift_ns": 1629496,
+      "keysym": "a",
+      "scheduled_offset_ns": 8580211198,
+      "sequence": 12
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 8636436261,
+      "drift_ns": 894037,
+      "keysym": "a",
+      "scheduled_offset_ns": 8635542224,
+      "sequence": 13
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 8817456700,
+      "drift_ns": 928435,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 8816528265,
+      "sequence": 14
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 8907951554,
+      "drift_ns": 888013,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 8907063541,
+      "sequence": 15
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 9089114984,
+      "drift_ns": 969011,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 9088145973,
+      "sequence": 16
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 9164595205,
+      "drift_ns": 949678,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 9163645527,
+      "sequence": 17
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 9360786779,
+      "drift_ns": 972818,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 9359813961,
+      "sequence": 18
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 9441222774,
+      "drift_ns": 893995,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 9440328779,
+      "sequence": 19
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 9602331376,
+      "drift_ns": 1004802,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 9601326574,
+      "sequence": 20
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 9657558127,
+      "drift_ns": 845256,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 9656712871,
+      "sequence": 21
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 9753322427,
+      "drift_ns": 958675,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 9752363752,
+      "sequence": 22
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 9818686158,
+      "drift_ns": 893671,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 9817792487,
+      "sequence": 23
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 9909213793,
+      "drift_ns": 839510,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 9908374283,
+      "sequence": 24
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 9979686789,
+      "drift_ns": 904957,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 9978781832,
+      "sequence": 25
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 10075328999,
+      "drift_ns": 961087,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10074367912,
+      "sequence": 26
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 10140626120,
+      "drift_ns": 835373,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10139790747,
+      "sequence": 27
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 10226175640,
+      "drift_ns": 857511,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10225318129,
+      "sequence": 28
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 10291622162,
+      "drift_ns": 844228,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10290777934,
+      "sequence": 29
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 10397360231,
+      "drift_ns": 893328,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10396466903,
+      "sequence": 30
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 10457693688,
+      "drift_ns": 857294,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10456836394,
+      "sequence": 31
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 10553282377,
+      "drift_ns": 801503,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10552480874,
+      "sequence": 32
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 10618637558,
+      "drift_ns": 747059,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10617890499,
+      "sequence": 33
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 10714371949,
+      "drift_ns": 858719,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10713513230,
+      "sequence": 34
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 10779828560,
+      "drift_ns": 963866,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10778864694,
+      "sequence": 35
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 10885486919,
+      "drift_ns": 932786,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10884554133,
+      "sequence": 36
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 10920618292,
+      "drift_ns": 837219,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 10919781073,
+      "sequence": 37
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 11041518806,
+      "drift_ns": 990032,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 11040528774,
+      "sequence": 38
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 11117441430,
+      "drift_ns": 1378252,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 11116063178,
+      "sequence": 39
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 11228269525,
+      "drift_ns": 1447923,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 11226821602,
+      "sequence": 40
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 11293626466,
+      "drift_ns": 1332799,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 11292293667,
+      "sequence": 41
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 11403933627,
+      "drift_ns": 935617,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 11402998010,
+      "sequence": 42
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 11584871505,
+      "drift_ns": 845593,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 11584025912,
+      "sequence": 43
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 11680403874,
+      "drift_ns": 813562,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 11679590312,
+      "sequence": 44
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 11745942706,
+      "drift_ns": 940559,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 11745002147,
+      "sequence": 45
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 11881657663,
+      "drift_ns": 855843,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 11880801820,
+      "sequence": 46
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 11936926004,
+      "drift_ns": 799247,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 11936126757,
+      "sequence": 47
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 12042571043,
+      "drift_ns": 819388,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 12041751655,
+      "sequence": 48
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 12148214072,
+      "drift_ns": 870698,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 12147343374,
+      "sequence": 49
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 12168356911,
+      "drift_ns": 880410,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 12167476501,
+      "sequence": 50
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 12273961810,
+      "drift_ns": 837881,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 12273123929,
+      "sequence": 51
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 12379782910,
+      "drift_ns": 1046792,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 12378736118,
+      "sequence": 52
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 12450049705,
+      "drift_ns": 871928,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 12449177777,
+      "sequence": 53
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 12555786684,
+      "drift_ns": 988019,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 12554798665,
+      "sequence": 54
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 12636078578,
+      "drift_ns": 847566,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 12635231012,
+      "sequence": 55
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 12716625334,
+      "drift_ns": 939894,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 12715685440,
+      "sequence": 56
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 12776814350,
+      "drift_ns": 823350,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 12775991000,
+      "sequence": 57
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 13460835829,
+      "drift_ns": 1049967,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 13459785862,
+      "sequence": 58
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 13556248608,
+      "drift_ns": 887416,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 13555361192,
+      "sequence": 59
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 14109549395,
+      "drift_ns": 1021390,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 14108528005,
+      "sequence": 60
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 14154672717,
+      "drift_ns": 869064,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 14153803653,
+      "sequence": 61
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 14672988503,
+      "drift_ns": 1399118,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 14671589385,
+      "sequence": 62
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 14737878371,
+      "drift_ns": 905951,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 14736972420,
+      "sequence": 63
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 15291109508,
+      "drift_ns": 1072136,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 15290037372,
+      "sequence": 64
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 15346209478,
+      "drift_ns": 841330,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 15345368148,
+      "sequence": 65
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 15904714572,
+      "drift_ns": 1103066,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 15903611506,
+      "sequence": 66
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 15979919641,
+      "drift_ns": 889952,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 15979029689,
+      "sequence": 67
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 16493098002,
+      "drift_ns": 1320735,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 16491777267,
+      "sequence": 68
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 16573061094,
+      "drift_ns": 849920,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 16572211174,
+      "sequence": 69
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 17413087200,
+      "drift_ns": 1133294,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 17411953906,
+      "sequence": 70
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 17563808340,
+      "drift_ns": 926797,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 17562881543,
+      "sequence": 71
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 17704550841,
+      "drift_ns": 888180,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 17703662661,
+      "sequence": 72
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 17785073227,
+      "drift_ns": 912179,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 17784161048,
+      "sequence": 73
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 18308851860,
+      "drift_ns": 1034690,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 18307817170,
+      "sequence": 74
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 18404387740,
+      "drift_ns": 936129,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 18403451611,
+      "sequence": 75
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 18545156131,
+      "drift_ns": 925872,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 18544230259,
+      "sequence": 76
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 18635650555,
+      "drift_ns": 829080,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 18634821475,
+      "sequence": 77
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 19139192210,
+      "drift_ns": 993891,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 19138198319,
+      "sequence": 78
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 19234625268,
+      "drift_ns": 844719,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 19233780549,
+      "sequence": 79
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 19340336888,
+      "drift_ns": 962800,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 19339374088,
+      "sequence": 80
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 19460836209,
+      "drift_ns": 811781,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 19460024428,
+      "sequence": 81
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 20321227616,
+      "drift_ns": 1206687,
+      "keysym": "Left",
+      "scheduled_offset_ns": 20320020929,
+      "sequence": 82
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 20633015937,
+      "drift_ns": 996736,
+      "keysym": "Left",
+      "scheduled_offset_ns": 20632019201,
+      "sequence": 83
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 20905278316,
+      "drift_ns": 1418786,
+      "keysym": "Left",
+      "scheduled_offset_ns": 20903859530,
+      "sequence": 84
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 21000595764,
+      "drift_ns": 1078613,
+      "keysym": "Left",
+      "scheduled_offset_ns": 20999517151,
+      "sequence": 85
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 21116256331,
+      "drift_ns": 920472,
+      "keysym": "Up",
+      "scheduled_offset_ns": 21115335859,
+      "sequence": 86
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 21226977565,
+      "drift_ns": 915593,
+      "keysym": "Left",
+      "scheduled_offset_ns": 21226061972,
+      "sequence": 87
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 21362942464,
+      "drift_ns": 954217,
+      "keysym": "Left",
+      "scheduled_offset_ns": 21361988247,
+      "sequence": 88
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 21746019147,
+      "drift_ns": 1530648,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 21744488499,
+      "sequence": 89
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 21770602997,
+      "drift_ns": 927167,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 21769675830,
+      "sequence": 90
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 21901342189,
+      "drift_ns": 816809,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 21900525380,
+      "sequence": 91
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 21931590377,
+      "drift_ns": 882731,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 21930707646,
+      "sequence": 92
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 22027161717,
+      "drift_ns": 846371,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22026315346,
+      "sequence": 93
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 22072562990,
+      "drift_ns": 939416,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22071623574,
+      "sequence": 94
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 22153005945,
+      "drift_ns": 851213,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22152154732,
+      "sequence": 95
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 22243557290,
+      "drift_ns": 833192,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22242724098,
+      "sequence": 96
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 22339224370,
+      "drift_ns": 817361,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22338407009,
+      "sequence": 97
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 22409697236,
+      "drift_ns": 815728,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22408881508,
+      "sequence": 98
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 22505406157,
+      "drift_ns": 866188,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22504539969,
+      "sequence": 99
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 22585809872,
+      "drift_ns": 840416,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22584969456,
+      "sequence": 100
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 22681402541,
+      "drift_ns": 823414,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22680579127,
+      "sequence": 101
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 22772012446,
+      "drift_ns": 877754,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22771134692,
+      "sequence": 102
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 22852487432,
+      "drift_ns": 803531,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22851683901,
+      "sequence": 103
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 22948157282,
+      "drift_ns": 801951,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 22947355331,
+      "sequence": 104
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 23033775392,
+      "drift_ns": 846009,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 23032929383,
+      "sequence": 105
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 23124377648,
+      "drift_ns": 840458,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 23123537190,
+      "sequence": 106
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 23195014655,
+      "drift_ns": 987236,
+      "keysym": "Up",
+      "scheduled_offset_ns": 23194027419,
+      "sequence": 107
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 23315724028,
+      "drift_ns": 925927,
+      "keysym": "Down",
+      "scheduled_offset_ns": 23314798101,
+      "sequence": 108
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 23818452077,
+      "drift_ns": 961697,
+      "keysym": "Down",
+      "scheduled_offset_ns": 23817490380,
+      "sequence": 109
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 23883725747,
+      "drift_ns": 818912,
+      "keysym": "Left",
+      "scheduled_offset_ns": 23882906835,
+      "sequence": 110
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 24034666699,
+      "drift_ns": 847817,
+      "keysym": "Left",
+      "scheduled_offset_ns": 24033818882,
+      "sequence": 111
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 24331742288,
+      "drift_ns": 954476,
+      "keysym": "Left",
+      "scheduled_offset_ns": 24330787812,
+      "sequence": 112
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 24437251456,
+      "drift_ns": 853426,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 24436398030,
+      "sequence": 113
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 24497525072,
+      "drift_ns": 820771,
+      "keysym": "Left",
+      "scheduled_offset_ns": 24496704301,
+      "sequence": 114
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 24552881414,
+      "drift_ns": 804436,
+      "keysym": "Up",
+      "scheduled_offset_ns": 24552076978,
+      "sequence": 115
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 24573111394,
+      "drift_ns": 908940,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 24572202454,
+      "sequence": 116
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 24688786582,
+      "drift_ns": 902021,
+      "keysym": "Up",
+      "scheduled_offset_ns": 24687884561,
+      "sequence": 117
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 24713903465,
+      "drift_ns": 813532,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 24713089933,
+      "sequence": 118
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 24804569641,
+      "drift_ns": 991293,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 24803578348,
+      "sequence": 119
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 24818068094,
+      "drift_ns": 14473906,
+      "keysym": "Right",
+      "scheduled_offset_ns": 24803594188,
+      "sequence": 120
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 24925130393,
+      "drift_ns": 889404,
+      "keysym": "Right",
+      "scheduled_offset_ns": 24924240989,
+      "sequence": 121
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 25418372946,
+      "drift_ns": 1072773,
+      "keysym": "Right",
+      "scheduled_offset_ns": 25417300173,
+      "sequence": 122
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 25820950224,
+      "drift_ns": 1036392,
+      "keysym": "Right",
+      "scheduled_offset_ns": 25819913832,
+      "sequence": 123
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 25851094022,
+      "drift_ns": 945304,
+      "keysym": "Left",
+      "scheduled_offset_ns": 25850148718,
+      "sequence": 124
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 26213443622,
+      "drift_ns": 959040,
+      "keysym": "Up",
+      "scheduled_offset_ns": 26212484582,
+      "sequence": 125
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 26309148352,
+      "drift_ns": 1010559,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 26308137793,
+      "sequence": 126
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 26322946538,
+      "drift_ns": 14803605,
+      "keysym": "Left",
+      "scheduled_offset_ns": 26308142933,
+      "sequence": 127
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 26394581972,
+      "drift_ns": 901487,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 26393680485,
+      "sequence": 128
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 26500195661,
+      "drift_ns": 878667,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 26499316994,
+      "sequence": 129
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 26540371278,
+      "drift_ns": 827881,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 26539543397,
+      "sequence": 130
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 26585661850,
+      "drift_ns": 793984,
+      "keysym": "Left",
+      "scheduled_offset_ns": 26584867866,
+      "sequence": 131
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 26651239363,
+      "drift_ns": 939432,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 26650299931,
+      "sequence": 132
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 26716550923,
+      "drift_ns": 847097,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 26715703826,
+      "sequence": 133
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 26837349027,
+      "drift_ns": 926150,
+      "keysym": "Left",
+      "scheduled_offset_ns": 26836422877,
+      "sequence": 134
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 26937892471,
+      "drift_ns": 892810,
+      "keysym": "Right",
+      "scheduled_offset_ns": 26936999661,
+      "sequence": 135
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 26978067188,
+      "drift_ns": 823993,
+      "keysym": "Up",
+      "scheduled_offset_ns": 26977243195,
+      "sequence": 136
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 27385966283,
+      "drift_ns": 1260997,
+      "keysym": "Right",
+      "scheduled_offset_ns": 27384705286,
+      "sequence": 137
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 27667424884,
+      "drift_ns": 943071,
+      "keysym": "Up",
+      "scheduled_offset_ns": 27666481813,
+      "sequence": 138
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 27813524433,
+      "drift_ns": 1143487,
+      "keysym": "Up",
+      "scheduled_offset_ns": 27812380946,
+      "sequence": 139
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 27827195607,
+      "drift_ns": 14797491,
+      "keysym": "Left",
+      "scheduled_offset_ns": 27812398116,
+      "sequence": 140
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 27923973775,
+      "drift_ns": 881316,
+      "keysym": "Left",
+      "scheduled_offset_ns": 27923092459,
+      "sequence": 141
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 28210922825,
+      "drift_ns": 924294,
+      "keysym": "Right",
+      "scheduled_offset_ns": 28209998531,
+      "sequence": 142
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 28266229046,
+      "drift_ns": 896359,
+      "keysym": "Right",
+      "scheduled_offset_ns": 28265332687,
+      "sequence": 143
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 28316462813,
+      "drift_ns": 802654,
+      "keysym": "Up",
+      "scheduled_offset_ns": 28315660159,
+      "sequence": 144
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 28396979588,
+      "drift_ns": 898232,
+      "keysym": "Up",
+      "scheduled_offset_ns": 28396081356,
+      "sequence": 145
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 28532664875,
+      "drift_ns": 838985,
+      "keysym": "Up",
+      "scheduled_offset_ns": 28531825890,
+      "sequence": 146
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 28628294784,
+      "drift_ns": 928084,
+      "keysym": "Up",
+      "scheduled_offset_ns": 28627366700,
+      "sequence": 147
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 29060499927,
+      "drift_ns": 923237,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 29059576690,
+      "sequence": 148
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 29291808903,
+      "drift_ns": 1023470,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 29290785433,
+      "sequence": 149
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 29412980759,
+      "drift_ns": 1451695,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 29411529064,
+      "sequence": 150
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 29523177609,
+      "drift_ns": 1033492,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 29522144117,
+      "sequence": 151
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 29739358931,
+      "drift_ns": 1028724,
+      "keysym": "Down",
+      "scheduled_offset_ns": 29738330207,
+      "sequence": 152
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 30092085595,
+      "drift_ns": 1656033,
+      "keysym": "Left",
+      "scheduled_offset_ns": 30090429562,
+      "sequence": 153
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 30156784161,
+      "drift_ns": 953144,
+      "keysym": "Down",
+      "scheduled_offset_ns": 30155831017,
+      "sequence": 154
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 30322672736,
+      "drift_ns": 869910,
+      "keysym": "Left",
+      "scheduled_offset_ns": 30321802826,
+      "sequence": 155
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 30513799484,
+      "drift_ns": 944188,
+      "keysym": "Up",
+      "scheduled_offset_ns": 30512855296,
+      "sequence": 156
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 30684817715,
+      "drift_ns": 933926,
+      "keysym": "Up",
+      "scheduled_offset_ns": 30683883789,
+      "sequence": 157
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 30740139206,
+      "drift_ns": 879900,
+      "keysym": "Alt_L",
+      "scheduled_offset_ns": 30739259306,
+      "sequence": 158
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 30825579276,
+      "drift_ns": 873869,
+      "keysym": "Alt_L",
+      "scheduled_offset_ns": 30824705407,
+      "sequence": 159
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 31243042406,
+      "drift_ns": 1024840,
+      "keysym": "Up",
+      "scheduled_offset_ns": 31242017566,
+      "sequence": 160
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 31268096569,
+      "drift_ns": 877571,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 31267218998,
+      "sequence": 161
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 31444111124,
+      "drift_ns": 876709,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 31443234415,
+      "sequence": 162
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 31489380136,
+      "drift_ns": 842913,
+      "keysym": "Up",
+      "scheduled_offset_ns": 31488537223,
+      "sequence": 163
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 31595031745,
+      "drift_ns": 861793,
+      "keysym": "Up",
+      "scheduled_offset_ns": 31594169952,
+      "sequence": 164
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 31897024389,
+      "drift_ns": 1086605,
+      "keysym": "Left",
+      "scheduled_offset_ns": 31895937784,
+      "sequence": 165
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 32113299861,
+      "drift_ns": 998625,
+      "keysym": "Left",
+      "scheduled_offset_ns": 32112301236,
+      "sequence": 166
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 32500819715,
+      "drift_ns": 1093263,
+      "keysym": "Left",
+      "scheduled_offset_ns": 32499726452,
+      "sequence": 167
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 32722050351,
+      "drift_ns": 1012734,
+      "keysym": "Left",
+      "scheduled_offset_ns": 32721037617,
+      "sequence": 168
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 32852775273,
+      "drift_ns": 1016416,
+      "keysym": "Up",
+      "scheduled_offset_ns": 32851758857,
+      "sequence": 169
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 32938180103,
+      "drift_ns": 896005,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 32937284098,
+      "sequence": 170
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 33139311800,
+      "drift_ns": 931964,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 33138379836,
+      "sequence": 171
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 33275148348,
+      "drift_ns": 849317,
+      "keysym": "Down",
+      "scheduled_offset_ns": 33274299031,
+      "sequence": 172
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 33667324164,
+      "drift_ns": 981186,
+      "keysym": "Left",
+      "scheduled_offset_ns": 33666342978,
+      "sequence": 173
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 33747664408,
+      "drift_ns": 877713,
+      "keysym": "Down",
+      "scheduled_offset_ns": 33746786695,
+      "sequence": 174
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 33813019629,
+      "drift_ns": 838279,
+      "keysym": "Left",
+      "scheduled_offset_ns": 33812181350,
+      "sequence": 175
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 34305852970,
+      "drift_ns": 956738,
+      "keysym": "Left",
+      "scheduled_offset_ns": 34304896232,
+      "sequence": 176
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 34466612989,
+      "drift_ns": 898503,
+      "keysym": "Left",
+      "scheduled_offset_ns": 34465714486,
+      "sequence": 177
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 34808764790,
+      "drift_ns": 1134408,
+      "keysym": "Alt_L",
+      "scheduled_offset_ns": 34807630382,
+      "sequence": 178
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 34909056602,
+      "drift_ns": 908817,
+      "keysym": "Alt_L",
+      "scheduled_offset_ns": 34908147785,
+      "sequence": 179
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 34949222449,
+      "drift_ns": 824640,
+      "keysym": "Left",
+      "scheduled_offset_ns": 34948397809,
+      "sequence": 180
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 35019711925,
+      "drift_ns": 930607,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 35018781318,
+      "sequence": 181
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 35140405018,
+      "drift_ns": 909599,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 35139495419,
+      "sequence": 182
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 35321398857,
+      "drift_ns": 913337,
+      "keysym": "Left",
+      "scheduled_offset_ns": 35320485520,
+      "sequence": 183
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 35386785648,
+      "drift_ns": 891483,
+      "keysym": "Left",
+      "scheduled_offset_ns": 35385894165,
+      "sequence": 184
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 35728919549,
+      "drift_ns": 999997,
+      "keysym": "Left",
+      "scheduled_offset_ns": 35727919552,
+      "sequence": 185
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 35769096886,
+      "drift_ns": 911910,
+      "keysym": "Right",
+      "scheduled_offset_ns": 35768184976,
+      "sequence": 186
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 36091135218,
+      "drift_ns": 1049172,
+      "keysym": "Up",
+      "scheduled_offset_ns": 36090086046,
+      "sequence": 187
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 36297143240,
+      "drift_ns": 952882,
+      "keysym": "Right",
+      "scheduled_offset_ns": 36296190358,
+      "sequence": 188
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 36357391435,
+      "drift_ns": 856477,
+      "keysym": "Up",
+      "scheduled_offset_ns": 36356534958,
+      "sequence": 189
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 36634106615,
+      "drift_ns": 904255,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 36633202360,
+      "sequence": 190
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 36825155233,
+      "drift_ns": 953314,
+      "keysym": "Right",
+      "scheduled_offset_ns": 36824201919,
+      "sequence": 191
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 36865323600,
+      "drift_ns": 901057,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 36864422543,
+      "sequence": 192
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 37428919989,
+      "drift_ns": 1147634,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37427772355,
+      "sequence": 193
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 37442571313,
+      "drift_ns": 14776198,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37427795115,
+      "sequence": 194
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 37468791814,
+      "drift_ns": 776435,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37468015379,
+      "sequence": 195
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 37482359468,
+      "drift_ns": 14337839,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37468021629,
+      "sequence": 196
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 37504084287,
+      "drift_ns": 830508,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37503253779,
+      "sequence": 197
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 37517684131,
+      "drift_ns": 14412282,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37503271849,
+      "sequence": 198
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 37549411430,
+      "drift_ns": 853143,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37548558287,
+      "sequence": 199
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 37563003554,
+      "drift_ns": 14430267,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37548573287,
+      "sequence": 200
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 37584589743,
+      "drift_ns": 783326,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37583806417,
+      "sequence": 201
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 37598198757,
+      "drift_ns": 14376770,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37583821987,
+      "sequence": 202
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 37624981732,
+      "drift_ns": 928762,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37624052970,
+      "sequence": 203
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 37638637496,
+      "drift_ns": 14565646,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37624071850,
+      "sequence": 204
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 37665065988,
+      "drift_ns": 765944,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37664300044,
+      "sequence": 205
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 37678626382,
+      "drift_ns": 14317868,
+      "keysym": "Right",
+      "scheduled_offset_ns": 37664308514,
+      "sequence": 206
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 37692142215,
+      "drift_ns": 17771362,
+      "keysym": "Up",
+      "scheduled_offset_ns": 37674370853,
+      "sequence": 207
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 37931772139,
+      "drift_ns": 864441,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 37930907698,
+      "sequence": 208
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38057520046,
+      "drift_ns": 853013,
+      "keysym": "Right",
+      "scheduled_offset_ns": 38056667033,
+      "sequence": 209
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38203443143,
+      "drift_ns": 888677,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 38202554466,
+      "sequence": 210
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38273841839,
+      "drift_ns": 850254,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38272991585,
+      "sequence": 211
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 38287478833,
+      "drift_ns": 14470088,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38273008745,
+      "sequence": 212
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 38301030816,
+      "drift_ns": 12874208,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 38288156608,
+      "sequence": 213
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38314590430,
+      "drift_ns": 1252691,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38313337739,
+      "sequence": 214
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 38329241351,
+      "drift_ns": 15886862,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38313354489,
+      "sequence": 215
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38354370034,
+      "drift_ns": 773981,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38353596053,
+      "sequence": 216
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 38367985678,
+      "drift_ns": 14372595,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38353613083,
+      "sequence": 217
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38394645862,
+      "drift_ns": 793425,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38393852437,
+      "sequence": 218
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 38408200756,
+      "drift_ns": 14329959,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38393870797,
+      "sequence": 219
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38434968711,
+      "drift_ns": 857440,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38434111271,
+      "sequence": 220
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 38448489044,
+      "drift_ns": 14358063,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38434130981,
+      "sequence": 221
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38461983167,
+      "drift_ns": 12735303,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 38449247864,
+      "sequence": 222
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38475589881,
+      "drift_ns": 1160146,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38474429735,
+      "sequence": 223
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 38489041234,
+      "drift_ns": 14596219,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38474445015,
+      "sequence": 224
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38515490566,
+      "drift_ns": 798707,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38514691859,
+      "sequence": 225
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 38529161490,
+      "drift_ns": 14451671,
+      "keysym": "Up",
+      "scheduled_offset_ns": 38514709819,
+      "sequence": 226
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 38542747264,
+      "drift_ns": 12897662,
+      "keysym": "Right",
+      "scheduled_offset_ns": 38529849602,
+      "sequence": 227
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 38666541388,
+      "drift_ns": 862172,
+      "keysym": "Right",
+      "scheduled_offset_ns": 38665679216,
+      "sequence": 228
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 38973487986,
+      "drift_ns": 924152,
+      "keysym": "Right",
+      "scheduled_offset_ns": 38972563834,
+      "sequence": 229
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39572127187,
+      "drift_ns": 1064642,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39571062545,
+      "sequence": 230
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39585866762,
+      "drift_ns": 14780257,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39571086505,
+      "sequence": 231
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39612109423,
+      "drift_ns": 780384,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39611329039,
+      "sequence": 232
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39625791887,
+      "drift_ns": 14444558,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39611347329,
+      "sequence": 233
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39652482621,
+      "drift_ns": 894978,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39651587643,
+      "sequence": 234
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39666067795,
+      "drift_ns": 14463282,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39651604513,
+      "sequence": 235
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39692753589,
+      "drift_ns": 891322,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39691862267,
+      "sequence": 236
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39706339273,
+      "drift_ns": 14460426,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39691878847,
+      "sequence": 237
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39732966877,
+      "drift_ns": 827306,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39732139571,
+      "sequence": 238
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39746558840,
+      "drift_ns": 14400729,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39732158111,
+      "sequence": 239
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39773233905,
+      "drift_ns": 840910,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39772392995,
+      "sequence": 240
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39786812308,
+      "drift_ns": 14400573,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39772411735,
+      "sequence": 241
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39808539708,
+      "drift_ns": 905284,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39807634424,
+      "sequence": 242
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39822100592,
+      "drift_ns": 14457798,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39807642794,
+      "sequence": 243
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39848678035,
+      "drift_ns": 801097,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39847876938,
+      "sequence": 244
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39862160528,
+      "drift_ns": 14267700,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39847892828,
+      "sequence": 245
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39888912663,
+      "drift_ns": 779181,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39888133482,
+      "sequence": 246
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39902475226,
+      "drift_ns": 14323924,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39888151302,
+      "sequence": 247
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39929158621,
+      "drift_ns": 779275,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39928379346,
+      "sequence": 248
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39942697864,
+      "drift_ns": 14303188,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39928394676,
+      "sequence": 249
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 39969483539,
+      "drift_ns": 856270,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39968627269,
+      "sequence": 250
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 39983052422,
+      "drift_ns": 14409862,
+      "keysym": "Right",
+      "scheduled_offset_ns": 39968642560,
+      "sequence": 251
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 40009689576,
+      "drift_ns": 813743,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40008875833,
+      "sequence": 252
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 40023337830,
+      "drift_ns": 14447197,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40008890633,
+      "sequence": 253
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 40050154255,
+      "drift_ns": 1011938,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40049142317,
+      "sequence": 254
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 40063665688,
+      "drift_ns": 14506431,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40049159257,
+      "sequence": 255
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 40090182692,
+      "drift_ns": 765111,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40089417581,
+      "sequence": 256
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 40103663884,
+      "drift_ns": 14228123,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40089435761,
+      "sequence": 257
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 40130430349,
+      "drift_ns": 761544,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40129668805,
+      "sequence": 258
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 40143949173,
+      "drift_ns": 14265178,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40129683995,
+      "sequence": 259
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 40170670027,
+      "drift_ns": 760938,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40169909089,
+      "sequence": 260
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 40184179800,
+      "drift_ns": 14255021,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40169924779,
+      "sequence": 261
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 40210910604,
+      "drift_ns": 744591,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40210166013,
+      "sequence": 262
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 40224361897,
+      "drift_ns": 14180834,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40210181063,
+      "sequence": 263
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 40251201893,
+      "drift_ns": 787697,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40250414196,
+      "sequence": 264
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 40264776256,
+      "drift_ns": 14347460,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40250428796,
+      "sequence": 265
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 40292514908,
+      "drift_ns": 1852358,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40290662550,
+      "sequence": 266
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 40306015011,
+      "drift_ns": 15334691,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40290680320,
+      "sequence": 267
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 40321627489,
+      "drift_ns": 774253,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40320853236,
+      "sequence": 268
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 40714099476,
+      "drift_ns": 1068173,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40713031303,
+      "sequence": 269
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 40834566077,
+      "drift_ns": 882233,
+      "keysym": "Right",
+      "scheduled_offset_ns": 40833683844,
+      "sequence": 270
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 41216963726,
+      "drift_ns": 1134612,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 41215829114,
+      "sequence": 271
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 41282169086,
+      "drift_ns": 900467,
+      "keysym": "Left",
+      "scheduled_offset_ns": 41281268619,
+      "sequence": 272
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 41418035703,
+      "drift_ns": 943070,
+      "keysym": "Left",
+      "scheduled_offset_ns": 41417092633,
+      "sequence": 273
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 41493422833,
+      "drift_ns": 854237,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 41492568596,
+      "sequence": 274
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 41508493857,
+      "drift_ns": 770708,
+      "keysym": "Right",
+      "scheduled_offset_ns": 41507723149,
+      "sequence": 275
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 41971290720,
+      "drift_ns": 1030034,
+      "keysym": "Right",
+      "scheduled_offset_ns": 41970260686,
+      "sequence": 276
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 42177536063,
+      "drift_ns": 1082485,
+      "keysym": "Right",
+      "scheduled_offset_ns": 42176453578,
+      "sequence": 277
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 42363691518,
+      "drift_ns": 1207424,
+      "keysym": "Right",
+      "scheduled_offset_ns": 42362484094,
+      "sequence": 278
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 42755759063,
+      "drift_ns": 1156652,
+      "keysym": "Right",
+      "scheduled_offset_ns": 42754602411,
+      "sequence": 279
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 42956575049,
+      "drift_ns": 907610,
+      "keysym": "Right",
+      "scheduled_offset_ns": 42955667439,
+      "sequence": 280
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 43299076582,
+      "drift_ns": 1572188,
+      "keysym": "Left",
+      "scheduled_offset_ns": 43297504394,
+      "sequence": 281
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 43901834331,
+      "drift_ns": 972272,
+      "keysym": "Left",
+      "scheduled_offset_ns": 43900862059,
+      "sequence": 282
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 43915698077,
+      "drift_ns": 14813588,
+      "keysym": "Left",
+      "scheduled_offset_ns": 43900884489,
+      "sequence": 283
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 43941929258,
+      "drift_ns": 829955,
+      "keysym": "Left",
+      "scheduled_offset_ns": 43941099303,
+      "sequence": 284
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 43955635862,
+      "drift_ns": 14530719,
+      "keysym": "Left",
+      "scheduled_offset_ns": 43941105143,
+      "sequence": 285
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 43982136415,
+      "drift_ns": 819449,
+      "keysym": "Left",
+      "scheduled_offset_ns": 43981316966,
+      "sequence": 286
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 43995704589,
+      "drift_ns": 14383313,
+      "keysym": "Left",
+      "scheduled_offset_ns": 43981321276,
+      "sequence": 287
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 44017364508,
+      "drift_ns": 831932,
+      "keysym": "Left",
+      "scheduled_offset_ns": 44016532576,
+      "sequence": 288
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 44030949262,
+      "drift_ns": 14412346,
+      "keysym": "Left",
+      "scheduled_offset_ns": 44016536916,
+      "sequence": 289
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 44044550776,
+      "drift_ns": 2850949,
+      "keysym": "Left",
+      "scheduled_offset_ns": 44041699827,
+      "sequence": 290
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 44424930320,
+      "drift_ns": 1020963,
+      "keysym": "Left",
+      "scheduled_offset_ns": 44423909357,
+      "sequence": 291
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 44500408061,
+      "drift_ns": 963070,
+      "keysym": "Left",
+      "scheduled_offset_ns": 44499444991,
+      "sequence": 292
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 44626404181,
+      "drift_ns": 1216965,
+      "keysym": "Left",
+      "scheduled_offset_ns": 44625187216,
+      "sequence": 293
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 44706498143,
+      "drift_ns": 883890,
+      "keysym": "Left",
+      "scheduled_offset_ns": 44705614253,
+      "sequence": 294
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 44802091683,
+      "drift_ns": 888820,
+      "keysym": "Left",
+      "scheduled_offset_ns": 44801202863,
+      "sequence": 295
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 44857362854,
+      "drift_ns": 821764,
+      "keysym": "Left",
+      "scheduled_offset_ns": 44856541090,
+      "sequence": 296
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 44988255287,
+      "drift_ns": 880467,
+      "keysym": "Left",
+      "scheduled_offset_ns": 44987374820,
+      "sequence": 297
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 45003297461,
+      "drift_ns": 791788,
+      "keysym": "Left",
+      "scheduled_offset_ns": 45002505673,
+      "sequence": 298
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 45476550597,
+      "drift_ns": 1489520,
+      "keysym": "Left",
+      "scheduled_offset_ns": 45475061077,
+      "sequence": 299
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 45556486558,
+      "drift_ns": 967023,
+      "keysym": "Left",
+      "scheduled_offset_ns": 45555519535,
+      "sequence": 300
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 46225303893,
+      "drift_ns": 1101220,
+      "keysym": "Up",
+      "scheduled_offset_ns": 46224202673,
+      "sequence": 301
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 46979451627,
+      "drift_ns": 1035963,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 46978415664,
+      "sequence": 302
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 47089943009,
+      "drift_ns": 923373,
+      "keysym": "Shift_L",
+      "scheduled_offset_ns": 47089019636,
+      "sequence": 303
+    },
+    {
+      "action": "down",
+      "dispatched_offset_ns": 47532785165,
+      "drift_ns": 1088087,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 47531697078,
+      "sequence": 304
+    },
+    {
+      "action": "up",
+      "dispatched_offset_ns": 47738989097,
+      "drift_ns": 1008446,
+      "keysym": "Control_L",
+      "scheduled_offset_ns": 47737980651,
+      "sequence": 305
+    }
+  ],
+  "emergency_releases": [],
+  "ended": "2026-08-15T15:04:39.236463-04:00",
+  "event_count": 306,
+  "events_dispatched": 306,
+  "failure": null,
+  "implementation_sha256": "a168485131bc54e7c8bdff5cf43f0be17310f0fed77d75d5cb32d3d538ebbeee",
+  "max_drift_ns": 50000000,
+  "maximum_absolute_drift_ns": 17771362,
+  "mode": "replay",
+  "movie_path": "/home/dev/ABLPC/work/copies/input-movies/input-20260815-145429.input-movie.json",
+  "movie_sha256": "49261fa3efc66dd3ec5c2b56ad0733b4ff02dadd6bbd023be42198916eeb73f9",
+  "ownership": {
+    "checked_at": "2026-08-15T15:03:46.779120-04:00",
+    "cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+    "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+    "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "pid": 19114,
+    "verified": true
+  },
+  "recorded_anchor": {
+    "anchored_at": "2026-08-15T14:54:56.521297-04:00",
+    "arm_delay_ms": 3000,
+    "frame": null,
+    "type": "manual-delay"
+  },
+  "replay_anchor": {
+    "anchored_at": "2026-08-15T15:03:49.784932-04:00",
+    "arm_delay_ms": 3000,
+    "frame": null,
+    "type": "manual-delay"
+  },
+  "run_id": "RUN-INP-REP-20260815-150349",
+  "schedule_sha256": "e93b9574b121768a20b7113ab95d2eee6c308e8d093bee2290a10b6eabb17960",
+  "schema_version": 1,
+  "started": "2026-08-15T15:03:49.785221-04:00",
+  "status": "complete",
+  "tool": "input-movie",
+  "tool_version": "1.0.0",
+  "window_after": {
+    "checked_at": "2026-08-15T15:04:39.236411-04:00",
+    "class": "bugs.exe",
+    "display": ":2",
+    "focused": true,
+    "focused_window_id": 14680071,
+    "game_pgid": 18873,
+    "geometry": {
+      "height": 480,
+      "screen": 0,
+      "width": 640,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Loading - A Bugs Life",
+    "owner_cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "owner_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "owner_pgid": 18873,
+    "pid": 19114,
+    "same_process_group": true,
+    "signature": {
+      "class": "bugs.exe",
+      "height": 480,
+      "owner_exe_basename": "wine-preloader",
+      "screen": 0,
+      "width": 640
+    },
+    "window_id": 14680071,
+    "window_id_hex": "0xe00007"
+  },
+  "window_before": {
+    "checked_at": "2026-08-15T15:03:46.783490-04:00",
+    "class": "bugs.exe",
+    "display": ":2",
+    "focused": true,
+    "focused_window_id": 14680071,
+    "game_pgid": 18873,
+    "geometry": {
+      "height": 480,
+      "screen": 0,
+      "width": 640,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Bugs",
+    "owner_cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "owner_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "owner_pgid": 18873,
+    "pid": 19114,
+    "same_process_group": true,
+    "signature": {
+      "class": "bugs.exe",
+      "height": 480,
+      "owner_exe_basename": "wine-preloader",
+      "screen": 0,
+      "width": 640
+    },
+    "window_id": 14680071,
+    "window_id_hex": "0xe00007"
+  }
+}

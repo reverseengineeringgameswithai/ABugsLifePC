@@ -1,0 +1,1 @@
+{"schema_version": 3, "seq": 1, "t_mono_ns": 13366540, "t_wall": "2026-08-13T10:10:22.546474-04:00", "kind": "breakpoint", "trigger_id": "entry_pre", "pc": "0x44c898", "registers": {"rip": "0x44c898", "rsi": "0x5a9660"}, "watched_value_hex": null, "memory_reads": [], "backtrace_pcs": ["0x44c898", "0x100000000"], "backtrace_truncated": true}

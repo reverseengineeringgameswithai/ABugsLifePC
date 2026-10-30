@@ -1,0 +1,2512 @@
+{
+  "experiment": "EXP-20260907-027",
+  "base_commit": "3718a22",
+  "recorded_time_ns": 1788839494888505130,
+  "milestone3_complete": false,
+  "native_lifecycle_code": {
+    "original": "work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+    "original_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "derived": "work/copies/EXP-20260907-027/normal-control/bugs.exe",
+    "derived_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+    "ranges": [
+      {
+        "va": "0x42ddb0",
+        "bytes": 496,
+        "code_sha256": "b1ee94b655f1802248d93912334bb5c3de19e7c8b4017dbba5098325617be09e",
+        "original_equal_derived": true
+      },
+      {
+        "va": "0x4189e0",
+        "bytes": 416,
+        "code_sha256": "1ca11b014fc2feebaeba62d9da79aec25ffbf8719bccdb306ca2aa05d55a2cfe",
+        "original_equal_derived": true
+      },
+      {
+        "va": "0x41c6c0",
+        "bytes": 560,
+        "code_sha256": "cafa79fc938daeb25b4d79d796dd341176a14a3e69e6ebd81bfb9edbc7be3722",
+        "original_equal_derived": true
+      },
+      {
+        "va": "0x4acf90",
+        "bytes": 130,
+        "code_sha256": "9ec678b0d3ba6daf6097e0bbb609cb790f8b231aacaff8e67de9a5bc5c355934",
+        "original_equal_derived": true
+      }
+    ],
+    "scope": "Static original PC and derived bytes equal in bounded damage/reset/safe-position/contact helper ranges. Runtime controller compares the first three ranges again. No code or memory writes."
+  },
+  "hazard_fixture": {
+    "source_sha256": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+    "output_sha256": "7462385d0a72ca78917202b880357b9ce7430349d145a2a0db506d43daf087f9",
+    "source_record": 191,
+    "file_offset": 382310,
+    "before_hex": "0000",
+    "after_hex": "0400",
+    "changed_bytes": 1,
+    "rows": [
+      {
+        "point": [
+          10000,
+          20000
+        ],
+        "arms": [
+          {
+            "landing": {
+              "position": [
+                319885,
+                -155797,
+                639979
+              ],
+              "flags": [
+                1,
+                1
+              ],
+              "contact": {
+                "source": "level01",
+                "source_record": 191,
+                "file_offset": 318288
+              },
+              "requested_delta": [
+                0,
+                1024,
+                0
+              ],
+              "instruction_count": 8967
+            },
+            "native_result": 0
+          },
+          {
+            "landing": {
+              "position": [
+                319885,
+                -155797,
+                639979
+              ],
+              "flags": [
+                1,
+                1
+              ],
+              "contact": {
+                "source": "level01",
+                "source_record": 191,
+                "file_offset": 318288
+              },
+              "requested_delta": [
+                0,
+                1024,
+                0
+              ],
+              "instruction_count": 8967
+            },
+            "native_result": 4
+          }
+        ]
+      },
+      {
+        "point": [
+          10000,
+          19000
+        ],
+        "arms": [
+          {
+            "landing": {
+              "position": [
+                319965,
+                -154627,
+                607962
+              ],
+              "flags": [
+                1,
+                1
+              ],
+              "contact": {
+                "source": "level01",
+                "source_record": 190,
+                "file_offset": 306274
+              },
+              "requested_delta": [
+                0,
+                1024,
+                0
+              ],
+              "instruction_count": 14022
+            },
+            "native_result": 0
+          },
+          {
+            "landing": {
+              "position": [
+                319965,
+                -154627,
+                607962
+              ],
+              "flags": [
+                1,
+                1
+              ],
+              "contact": {
+                "source": "level01",
+                "source_record": 190,
+                "file_offset": 306274
+              },
+              "requested_delta": [
+                0,
+                1024,
+                0
+              ],
+              "instruction_count": 14022
+            },
+            "native_result": 0
+          }
+        ]
+      },
+      {
+        "point": [
+          6000,
+          14000
+        ],
+        "arms": [
+          {
+            "landing": {
+              "position": [
+                192000,
+                -102401,
+                448000
+              ],
+              "flags": [
+                1,
+                1
+              ],
+              "contact": {
+                "source": "level01",
+                "source_record": 189,
+                "file_offset": 286120
+              },
+              "requested_delta": [
+                0,
+                1024,
+                0
+              ],
+              "instruction_count": 15161
+            },
+            "native_result": 0
+          },
+          {
+            "landing": {
+              "position": [
+                192000,
+                -102401,
+                448000
+              ],
+              "flags": [
+                1,
+                1
+              ],
+              "contact": {
+                "source": "level01",
+                "source_record": 189,
+                "file_offset": 286120
+              },
+              "requested_delta": [
+                0,
+                1024,
+                0
+              ],
+              "instruction_count": 15161
+            },
+            "native_result": 0
+          }
+        ]
+      }
+    ],
+    "scope": "Private lifecycle test fixture: only native result_word of NE chunk changes from0 to4. No geometry/code/live memory changes. Original native query proves hazard result on NE and unchanged support elsewhere; normal project unaffected."
+  },
+  "rejected_instant_death_fixture": {
+    "state": {
+      "level": 0,
+      "position": [
+        324729,
+        -92029,
+        625649
+      ],
+      "heading": 3923,
+      "contact": [
+        180,
+        9854351
+      ],
+      "barrier_head": 9801887,
+      "vertical_velocity": 4096,
+      "contact_flags": 0
+    },
+    "log_sha256": "4cc3fe6b04362d732b249867449f9d445d6aadc5378043ae273f26fabfa6701e",
+    "life_byte": 5,
+    "gameover_events": 1,
+    "scope": "Rejected instant-death fixture: safe-position can update on native result1. Repeated resets inside lethal region reach gameover; normal game data unaffected. Model observer rejected pointer0 after transition to menu, not evidence of in-game model corruption."
+  },
+  "exploratory_exit": {
+    "game": {
+      "pid": 100253,
+      "start": 938029,
+      "group": 100011,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-026\\live-detail\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "state": {
+      "level": 0,
+      "position": [
+        199277,
+        -39367,
+        801758
+      ],
+      "heading": 2703,
+      "contact": [
+        99,
+        9681787
+      ],
+      "barrier_head": 9888539,
+      "vertical_velocity": 4096,
+      "contact_flags": 0
+    },
+    "transition": 1,
+    "input": 0,
+    "log_sha256": "061f65fc57c53634ce31ed4d4056799564009f11b8e62e532a8a451c025fd541",
+    "events": {
+      "Level done variable is 1": 1,
+      "Level done variable is 2": 0,
+      "LEVELDONE : Start.": 1,
+      "LEVELDONE : End.": 1,
+      "ROUTINE : NextLife.": 1,
+      "ROUTINE : ReStart.": 1,
+      "ROUTINE : LevelSel.": 2
+    },
+    "scope": "Exploratory exit during explore-05; user observed completion. Not an accepted complete controlled route."
+  },
+  "arms": {
+    "hazard-control": {
+      "game": {
+        "pid": 111140,
+        "start": 1124897,
+        "group": 110899,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-027\\hazard-control\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "prepare": {
+        "arm": "hazard-control",
+        "build": "/home/dev/ABLPC/work/copies/blender-level-1788835455830418517",
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260907-027/hazard-control/game",
+        "exe": "/home/dev/ABLPC/work/copies/EXP-20260907-027/hazard-control/bugs.exe",
+        "exe_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "63f2f61d355b827b0ff4e8b8700e23c51475c97b01ac2938eaa4455ad0e5a5f9",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "7cb935ec839a56a4b9f98e081d18c52a6867b8c3fb8bf881a4824e2e58ebc35f",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "changed_assets_vs_normal_detail": [
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT"
+        ],
+        "file_count": 721,
+        "input_plan": "Guarded Right/Return/Return to Anthill, then identical camera-relative route to SE/NE boundary. Hazard arms repeat native death/NextLife path three times and verify memory/ground/camera. Normal arms traverse four sections and authored exit. Ordinary input only; no live debugger or external memory writes."
+      },
+      "log_sha256": "4cc3fe6b04362d732b249867449f9d445d6aadc5378043ae273f26fabfa6701e",
+      "hardware_markers": true,
+      "deaths": 6,
+      "completed_exits": 0,
+      "initializations": 1,
+      "model_samples": 98,
+      "model_count": 170,
+      "closed": true
+    },
+    "hazard4-control": {
+      "game": {
+        "pid": 112893,
+        "start": 1150467,
+        "group": 112640,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-027\\hazard4-control\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "prepare": {
+        "arm": "hazard4-control",
+        "build": "/home/dev/ABLPC/work/copies/blender-level-1788835455830418517",
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260907-027/hazard4-control/game",
+        "exe": "/home/dev/ABLPC/work/copies/EXP-20260907-027/hazard4-control/bugs.exe",
+        "exe_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "7462385d0a72ca78917202b880357b9ce7430349d145a2a0db506d43daf087f9",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "7cb935ec839a56a4b9f98e081d18c52a6867b8c3fb8bf881a4824e2e58ebc35f",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "changed_assets_vs_normal_detail": [
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT"
+        ],
+        "file_count": 721,
+        "input_plan": "Guarded Right/Return/Return to Anthill, then identical camera-relative route to SE/NE boundary. Hazard arms repeat native death/NextLife path three times and verify memory/ground/camera. Normal arms traverse four sections and authored exit. Ordinary input only; no live debugger or external memory writes."
+      },
+      "log_sha256": "3c653122f70e22ff41ecfc3b924c4fa9276b9ff2f54cdd295ba65ca8c7a5960b",
+      "hardware_markers": true,
+      "deaths": 3,
+      "completed_exits": 0,
+      "initializations": 1,
+      "model_samples": 427,
+      "model_count": 170,
+      "closed": true,
+      "lifecycle": {
+        "arm": "hazard4-control",
+        "three_native_reset_cycles": true,
+        "rows": [
+          {
+            "file": "work/experiments/EXP-20260907-027/hazard4-control-death-01.json",
+            "sha256": "848836e77a208471c27817a4cc64a3d490c76c5b1519d47f1cfa53d8d9356aa6",
+            "life_before": 5,
+            "life_after": 4,
+            "native_events_delta": {
+              "Level done variable is 1": 0,
+              "Level done variable is 2": 1,
+              "LEVELDONE : Start.": 0,
+              "LEVELDONE : End.": 0,
+              "ROUTINE : NextLife.": 1,
+              "ROUTINE : ReStart.": 0,
+              "ROUTINE : LevelSel.": 0,
+              "End InitMainGame": 0
+            },
+            "death_seconds": 6.980839028999981,
+            "reset_seconds": 8.889340367999466,
+            "saved_before_death": [
+              319656,
+              -155393,
+              626631
+            ],
+            "first_observed_reset_position": [
+              319631,
+              -155392,
+              626621
+            ],
+            "reset_residual_world": [
+              -25,
+              1,
+              -10
+            ],
+            "residual_length": 26.94438717061496,
+            "after": {
+              "level": 1,
+              "position": [
+                319631,
+                -155391,
+                626621
+              ],
+              "heading": 419,
+              "contact": [
+                179,
+                9841017
+              ],
+              "barrier_head": 9801887,
+              "vertical_velocity": 0,
+              "contact_flags": 257,
+              "camera_matrix": [
+                3278,
+                0,
+                -2455,
+                0,
+                4096,
+                0,
+                2455,
+                0,
+                3278
+              ],
+              "camera_translation": [
+                302388,
+                -166867,
+                603574
+              ],
+              "native_input": 0,
+              "transition": 0,
+              "countdown": 43,
+              "safe_position": [
+                319656,
+                -155393,
+                626631
+              ],
+              "safe_heading": 419,
+              "player_flags": 0,
+              "life_byte": 4,
+              "damage_field": 4,
+              "damage_timer": 33,
+              "arena_root": 8892416,
+              "arena_cursor": 10300825
+            },
+            "sample_count": 318,
+            "damaging_field_values": [
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "file": "work/experiments/EXP-20260907-027/hazard4-control-death-02.json",
+            "sha256": "7acd26320ac65027cbd91f95dcb9f789184434904ee9a0b70d501080b2141324",
+            "life_before": 4,
+            "life_after": 3,
+            "native_events_delta": {
+              "Level done variable is 1": 0,
+              "Level done variable is 2": 1,
+              "LEVELDONE : Start.": 0,
+              "LEVELDONE : End.": 0,
+              "ROUTINE : NextLife.": 1,
+              "ROUTINE : ReStart.": 0,
+              "ROUTINE : LevelSel.": 0,
+              "End InitMainGame": 0
+            },
+            "death_seconds": 6.375402440000471,
+            "reset_seconds": 8.307902278998881,
+            "saved_before_death": [
+              328233,
+              -155486,
+              622071
+            ],
+            "first_observed_reset_position": [
+              328211,
+              -155484,
+              622046
+            ],
+            "reset_residual_world": [
+              -22,
+              2,
+              -25
+            ],
+            "residual_length": 33.36165463522455,
+            "after": {
+              "level": 1,
+              "position": [
+                328211,
+                -155486,
+                622046
+              ],
+              "heading": 770,
+              "contact": [
+                180,
+                9854351
+              ],
+              "barrier_head": 9801887,
+              "vertical_velocity": 0,
+              "contact_flags": 257,
+              "camera_matrix": [
+                1555,
+                0,
+                -3789,
+                5,
+                4096,
+                2,
+                3789,
+                -6,
+                1555
+              ],
+              "camera_translation": [
+                301585,
+                -166494,
+                611126
+              ],
+              "native_input": 0,
+              "transition": 0,
+              "countdown": 43,
+              "safe_position": [
+                328233,
+                -155486,
+                622071
+              ],
+              "safe_heading": 770,
+              "player_flags": 0,
+              "life_byte": 3,
+              "damage_field": 4,
+              "damage_timer": 33,
+              "arena_root": 8892416,
+              "arena_cursor": 10300825
+            },
+            "sample_count": 298,
+            "damaging_field_values": [
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "file": "work/experiments/EXP-20260907-027/hazard4-control-death-03.json",
+            "sha256": "73da8ee91200ab91a5acb60de283266652a2ac25317048b44fab72e442fbf6be",
+            "life_before": 3,
+            "life_after": 2,
+            "native_events_delta": {
+              "Level done variable is 1": 0,
+              "Level done variable is 2": 1,
+              "LEVELDONE : Start.": 0,
+              "LEVELDONE : End.": 0,
+              "ROUTINE : NextLife.": 1,
+              "ROUTINE : ReStart.": 0,
+              "ROUTINE : LevelSel.": 0,
+              "End InitMainGame": 0
+            },
+            "death_seconds": 4.57878052399974,
+            "reset_seconds": 6.511683954999171,
+            "saved_before_death": [
+              327601,
+              -155500,
+              622869
+            ],
+            "first_observed_reset_position": [
+              327578,
+              -155506,
+              622844
+            ],
+            "reset_residual_world": [
+              -23,
+              -6,
+              -25
+            ],
+            "residual_length": 34.49637662132068,
+            "after": {
+              "level": 1,
+              "position": [
+                327578,
+                -155505,
+                622844
+              ],
+              "heading": 3714,
+              "contact": [
+                180,
+                9854351
+              ],
+              "barrier_head": 9801887,
+              "vertical_velocity": 0,
+              "contact_flags": 257,
+              "camera_matrix": [
+                3412,
+                0,
+                2265,
+                -3,
+                4096,
+                4,
+                -2265,
+                -6,
+                3412
+              ],
+              "camera_translation": [
+                343506,
+                -168303,
+                598849
+              ],
+              "native_input": 0,
+              "transition": 0,
+              "countdown": 0,
+              "safe_position": [
+                327601,
+                -155500,
+                622869
+              ],
+              "safe_heading": 3714,
+              "player_flags": 0,
+              "life_byte": 2,
+              "damage_field": 4,
+              "damage_timer": 33,
+              "arena_root": 8892416,
+              "arena_cursor": 10300825
+            },
+            "sample_count": 293,
+            "damaging_field_values": [
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ],
+        "scope": "Native death flag, life decrement, NextLife increment without asset restart; asynchronous first post-reset position residual reported. Does not establish a hazard-free respawn on the chunk boundary, deterministic input, all actor resets or full stage3 acceptance."
+      }
+    },
+    "hazard4-detail": {
+      "game": {
+        "pid": 114764,
+        "start": 1178637,
+        "group": 114521,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-027\\hazard4-detail\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "prepare": {
+        "arm": "hazard4-detail",
+        "build": "/home/dev/ABLPC/work/copies/blender-level-1788835455830418517",
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260907-027/hazard4-detail/game",
+        "exe": "/home/dev/ABLPC/work/copies/EXP-20260907-027/hazard4-detail/bugs.exe",
+        "exe_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "7462385d0a72ca78917202b880357b9ce7430349d145a2a0db506d43daf087f9",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "1b62f9de63db0cca6cb9b6bcbd64a37e4e80b2a8e219f7ed0a27117f05f749c7",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "changed_assets_vs_normal_detail": [
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL"
+        ],
+        "file_count": 721,
+        "input_plan": "Guarded Right/Return/Return to Anthill, then identical camera-relative route to SE/NE boundary. Hazard arms repeat native death/NextLife path three times and verify memory/ground/camera. Normal arms traverse four sections and authored exit. Ordinary input only; no live debugger or external memory writes."
+      },
+      "log_sha256": "0f3c055b9d506593eab10585fe6d58eee54c5617893b3e64adc2aa4d5d376c12",
+      "hardware_markers": true,
+      "deaths": 3,
+      "completed_exits": 0,
+      "initializations": 1,
+      "model_samples": 429,
+      "model_count": 170,
+      "closed": true,
+      "lifecycle": {
+        "arm": "hazard4-detail",
+        "three_native_reset_cycles": true,
+        "rows": [
+          {
+            "file": "work/experiments/EXP-20260907-027/hazard4-detail-death-01.json",
+            "sha256": "a0ead97b419df4b1e1970097e894d8264c468ae4343d9cb05d9e09fd0f88d444",
+            "life_before": 5,
+            "life_after": 4,
+            "native_events_delta": {
+              "Level done variable is 1": 0,
+              "Level done variable is 2": 1,
+              "LEVELDONE : Start.": 0,
+              "LEVELDONE : End.": 0,
+              "ROUTINE : NextLife.": 1,
+              "ROUTINE : ReStart.": 0,
+              "ROUTINE : LevelSel.": 0,
+              "End InitMainGame": 0
+            },
+            "death_seconds": 7.117892739999661,
+            "reset_seconds": 9.050426130001142,
+            "saved_before_death": [
+              327229,
+              -155481,
+              622739
+            ],
+            "first_observed_reset_position": [
+              327221,
+              -155478,
+              622729
+            ],
+            "reset_residual_world": [
+              -8,
+              3,
+              -10
+            ],
+            "residual_length": 13.152946437965905,
+            "after": {
+              "level": 1,
+              "position": [
+                327221,
+                -155478,
+                622729
+              ],
+              "heading": 1008,
+              "contact": [
+                179,
+                9929121
+              ],
+              "barrier_head": 9888539,
+              "vertical_velocity": 0,
+              "contact_flags": 257,
+              "camera_matrix": [
+                100,
+                0,
+                -4094,
+                11,
+                4096,
+                0,
+                4094,
+                -12,
+                100
+              ],
+              "camera_translation": [
+                298430,
+                -168273,
+                622023
+              ],
+              "native_input": 0,
+              "transition": 0,
+              "countdown": 0,
+              "safe_position": [
+                327229,
+                -155481,
+                622739
+              ],
+              "safe_heading": 1008,
+              "player_flags": 0,
+              "life_byte": 4,
+              "damage_field": 4,
+              "damage_timer": 33,
+              "arena_root": 8892416,
+              "arena_cursor": 10387477
+            },
+            "sample_count": 379,
+            "damaging_field_values": [
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "file": "work/experiments/EXP-20260907-027/hazard4-detail-death-02.json",
+            "sha256": "c8ad2c230befcfcc3c2b0378e7bf809a2244fd44077f7b424ea194c142e39263",
+            "life_before": 4,
+            "life_after": 3,
+            "native_events_delta": {
+              "Level done variable is 1": 0,
+              "Level done variable is 2": 1,
+              "LEVELDONE : Start.": 0,
+              "LEVELDONE : End.": 0,
+              "ROUTINE : NextLife.": 1,
+              "ROUTINE : ReStart.": 0,
+              "ROUTINE : LevelSel.": 0,
+              "End InitMainGame": 0
+            },
+            "death_seconds": 6.004184876001091,
+            "reset_seconds": 7.911782552000659,
+            "saved_before_death": [
+              327076,
+              -155502,
+              623380
+            ],
+            "first_observed_reset_position": [
+              327053,
+              -155508,
+              623355
+            ],
+            "reset_residual_world": [
+              -23,
+              -6,
+              -25
+            ],
+            "residual_length": 34.49637662132068,
+            "after": {
+              "level": 1,
+              "position": [
+                327053,
+                -155510,
+                623355
+              ],
+              "heading": 3952,
+              "contact": [
+                180,
+                9941003
+              ],
+              "barrier_head": 9888539,
+              "vertical_velocity": 0,
+              "contact_flags": 257,
+              "camera_matrix": [
+                3996,
+                0,
+                897,
+                -1,
+                4096,
+                5,
+                -897,
+                -6,
+                3996
+              ],
+              "camera_translation": [
+                333364,
+                -168308,
+                595255
+              ],
+              "native_input": 0,
+              "transition": 0,
+              "countdown": 0,
+              "safe_position": [
+                327076,
+                -155502,
+                623380
+              ],
+              "safe_heading": 3952,
+              "player_flags": 0,
+              "life_byte": 3,
+              "damage_field": 4,
+              "damage_timer": 33,
+              "arena_root": 8892416,
+              "arena_cursor": 10387477
+            },
+            "sample_count": 351,
+            "damaging_field_values": [
+              -1,
+              0,
+              1,
+              2,
+              3,
+              4
+            ]
+          },
+          {
+            "file": "work/experiments/EXP-20260907-027/hazard4-detail-death-03.json",
+            "sha256": "7937e1af5548e7ef2c6a5d62427217e54c054c0fe4ab03739fd2d29f6b9e9fab",
+            "life_before": 3,
+            "life_after": 2,
+            "native_events_delta": {
+              "Level done variable is 1": 0,
+              "Level done variable is 2": 1,
+              "LEVELDONE : Start.": 0,
+              "LEVELDONE : End.": 0,
+              "ROUTINE : NextLife.": 1,
+              "ROUTINE : ReStart.": 0,
+              "ROUTINE : LevelSel.": 0,
+              "End InitMainGame": 0
+            },
+            "death_seconds": 3.0513505960007024,
+            "reset_seconds": 4.984409390001019,
+            "saved_before_death": [
+              326849,
+              -155501,
+              623557
+            ],
+            "first_observed_reset_position": [
+              326827,
+              -155504,
+              623532
+            ],
+            "reset_residual_world": [
+              -22,
+              -3,
+              -25
+            ],
+            "residual_length": 33.436506994600975,
+            "after": {
+              "level": 1,
+              "position": [
+                326827,
+                -155506,
+                623532
+              ],
+              "heading": 3952,
+              "contact": [
+                180,
+                9941003
+              ],
+              "barrier_head": 9888539,
+              "vertical_velocity": 0,
+              "contact_flags": 257,
+              "camera_matrix": [
+                3996,
+                0,
+                897,
+                -1,
+                4096,
+                5,
+                -897,
+                -6,
+                3996
+              ],
+              "camera_translation": [
+                333138,
+                -168304,
+                595432
+              ],
+              "native_input": 0,
+              "transition": 0,
+              "countdown": 0,
+              "safe_position": [
+                326849,
+                -155501,
+                623557
+              ],
+              "safe_heading": 3952,
+              "player_flags": 1,
+              "life_byte": 2,
+              "damage_field": 4,
+              "damage_timer": 33,
+              "arena_root": 8892416,
+              "arena_cursor": 10387477
+            },
+            "sample_count": 240,
+            "damaging_field_values": [
+              -1,
+              0,
+              1,
+              2,
+              4
+            ]
+          }
+        ],
+        "scope": "Native death flag, life decrement, NextLife increment without asset restart; asynchronous first post-reset position residual reported. Does not establish a hazard-free respawn on the chunk boundary, deterministic input, all actor resets or full stage3 acceptance."
+      }
+    },
+    "normal-control": {
+      "game": {
+        "pid": 115965,
+        "start": 1202389,
+        "group": 115725,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-027\\normal-control\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "prepare": {
+        "arm": "normal-control",
+        "build": "/home/dev/ABLPC/work/copies/blender-level-1788835455830418517",
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260907-027/normal-control/game",
+        "exe": "/home/dev/ABLPC/work/copies/EXP-20260907-027/normal-control/bugs.exe",
+        "exe_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "7cb935ec839a56a4b9f98e081d18c52a6867b8c3fb8bf881a4824e2e58ebc35f",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "changed_assets_vs_normal_detail": [
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT"
+        ],
+        "file_count": 721,
+        "input_plan": "Guarded Right/Return/Return to Anthill, then identical camera-relative route to SE/NE boundary. Hazard arms repeat native death/NextLife path three times and verify memory/ground/camera. Normal arms traverse four sections and authored exit. Ordinary input only; no live debugger or external memory writes."
+      },
+      "log_sha256": "8e7942014ea2546c1c5c216c3cb01e53d1a97bef2a7cace0cd594545c1a15cfe",
+      "hardware_markers": true,
+      "deaths": 0,
+      "completed_exits": 1,
+      "initializations": 2,
+      "model_samples": 342,
+      "model_count": 170,
+      "closed": true
+    },
+    "normal-detail": {
+      "game": {
+        "pid": 119064,
+        "start": 1237365,
+        "group": 118809,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-027\\normal-detail\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "prepare": {
+        "arm": "normal-detail",
+        "build": "/home/dev/ABLPC/work/copies/blender-level-1788835455830418517",
+        "stage": "/home/dev/ABLPC/work/copies/EXP-20260907-027/normal-detail/game",
+        "exe": "/home/dev/ABLPC/work/copies/EXP-20260907-027/normal-detail/bugs.exe",
+        "exe_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+        "hashes": {
+          "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+          "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+          "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+          "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+          "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+          "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+          "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+          "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+          "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+          "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+          "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+          "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "1b62f9de63db0cca6cb9b6bcbd64a37e4e80b2a8e219f7ed0a27117f05f749c7",
+          "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+          "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+        },
+        "changed_assets_vs_normal_detail": [],
+        "file_count": 721,
+        "input_plan": "Guarded Right/Return/Return to Anthill, then identical camera-relative route to SE/NE boundary. Hazard arms repeat native death/NextLife path three times and verify memory/ground/camera. Normal arms traverse four sections and authored exit. Ordinary input only; no live debugger or external memory writes."
+      },
+      "log_sha256": "bfc64c29b63596ede9e694b1ea0f235aca37d42b86cc098dfe28c3a2910997e1",
+      "hardware_markers": true,
+      "deaths": 0,
+      "completed_exits": 1,
+      "initializations": 2,
+      "model_samples": 488,
+      "model_count": 170,
+      "closed": false
+    }
+  },
+  "ordinary_loops": {
+    "normal-control": {
+      "arm": "normal-control",
+      "goals": [
+        [
+          10000,
+          18500
+        ],
+        [
+          10000,
+          23500
+        ],
+        [
+          4500,
+          22000
+        ],
+        [
+          6000,
+          14000
+        ]
+      ],
+      "legs": [
+        {
+          "goal": [
+            10000,
+            18500
+          ],
+          "file": "normal-control-loop-01.json",
+          "accepted": true,
+          "seconds_including_settle_and_process": 17.500214375000724,
+          "returncode": 0
+        },
+        {
+          "goal": [
+            10000,
+            23500
+          ],
+          "file": "normal-control-loop-02.json",
+          "accepted": true,
+          "seconds_including_settle_and_process": 8.812800119001622,
+          "returncode": 0
+        },
+        {
+          "goal": [
+            4500,
+            22000
+          ],
+          "file": "normal-control-loop-03.json",
+          "accepted": true,
+          "seconds_including_settle_and_process": 18.520749426999828,
+          "returncode": 0
+        },
+        {
+          "goal": [
+            6000,
+            14000
+          ],
+          "file": "normal-control-loop-04.json",
+          "accepted": true,
+          "seconds_including_settle_and_process": 17.077954603000762,
+          "returncode": 0
+        }
+      ],
+      "complete": true,
+      "total_seconds_including_settles": 61.91185487599978,
+      "scope": "Same four goal sequence with camera feedback and ordinary keys; each leg bounded50s plus settle. Includes host observer and four settled stops, not a frame-time or GPU measurement or deterministic input movie.",
+      "contact_sections": [
+        99,
+        178,
+        179,
+        180
+      ],
+      "samples": 1686,
+      "minimum_exit_distance_stored": 1416.0221586918228
+    },
+    "normal-detail": {
+      "arm": "normal-detail",
+      "goals": [
+        [
+          10000,
+          18500
+        ],
+        [
+          10000,
+          23500
+        ],
+        [
+          4500,
+          22000
+        ],
+        [
+          6000,
+          14000
+        ]
+      ],
+      "legs": [
+        {
+          "goal": [
+            10000,
+            18500
+          ],
+          "file": "normal-detail-loop-01.json",
+          "accepted": true,
+          "seconds_including_settle_and_process": 15.93171248499857,
+          "returncode": 0
+        },
+        {
+          "goal": [
+            10000,
+            23500
+          ],
+          "file": "normal-detail-loop-02.json",
+          "accepted": true,
+          "seconds_including_settle_and_process": 9.594965526001033,
+          "returncode": 0
+        },
+        {
+          "goal": [
+            4500,
+            22000
+          ],
+          "file": "normal-detail-loop-03.json",
+          "accepted": true,
+          "seconds_including_settle_and_process": 16.717233343999396,
+          "returncode": 0
+        },
+        {
+          "goal": [
+            6000,
+            14000
+          ],
+          "file": "normal-detail-loop-04.json",
+          "accepted": true,
+          "seconds_including_settle_and_process": 17.758455821000098,
+          "returncode": 0
+        }
+      ],
+      "complete": true,
+      "total_seconds_including_settles": 60.002494406999176,
+      "scope": "Same four goal sequence with camera feedback and ordinary keys; each leg bounded50s plus settle. Includes host observer and four settled stops, not a frame-time or GPU measurement or deterministic input movie.",
+      "contact_sections": [
+        99,
+        178,
+        179,
+        180
+      ],
+      "samples": 1654,
+      "minimum_exit_distance_stored": 1501.1397574140333
+    }
+  },
+  "saved_project": {
+    "path": "work/level-projects/moonlit-cliffs-visual-detail/level.blend",
+    "sha256": "52cbe34c88ee5f15a2edc242059b166b7276300f2fcbe14f48118c5a27341ca9",
+    "unchanged_from_EXP026": true,
+    "scope": "Saved normal Blender project untouched by all diagnostic arms"
+  },
+  "final_binding": "work/experiments/EXP-20260907-027/normal-detail/live-handoff-binding.json",
+  "source_check": {
+    "accepted": true,
+    "commands": [
+      {
+        "command": [
+          "make",
+          "check"
+        ],
+        "start_ns": 1788839263028864414,
+        "end_ns": 1788839416844013000,
+        "returncode": 0
+      }
+    ],
+    "log": "/home/dev/ABLPC/work/experiments/EXP-20260907-027/source.log",
+    "log_sha256": "f7a343e3848fbb6d90eb3480fda4b197ea168e04e7748952dd540d2d2eeb9fb3"
+  },
+  "normal_assets_unchanged": 721,
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260907-027/004144c0.c",
+      "bytes": 2089,
+      "sha256": "61f69be9ef7e030a882b62377eecc3d9b70eda35e0d06c82e386641c8c175c76"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/004189e0.c",
+      "bytes": 1380,
+      "sha256": "f1dcea03d51bc407f236296c9587fc360f1adeed9d7a7a232748b6e397810f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/0041c6c0.c",
+      "bytes": 2379,
+      "sha256": "b584afcfa9d7a745fd7216c966c7089595032cd729614b64e79e4fdd72b88c3e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/0042ddb0.c",
+      "bytes": 2155,
+      "sha256": "7cdbfec0c61d1b6844d4e2f179d6dc4a33eeea0f9a2f60ebd0c8c82ceafac2c0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/0043da40.c",
+      "bytes": 6113,
+      "sha256": "266b6838932c0417d24fc1057d2cf9339c26cf64b1601c87cb2d7b4c0d988437"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/0043f9e0.c",
+      "bytes": 19813,
+      "sha256": "1ce523048520d9ccc3762c420900add9d3d3b2cfb3c68993456dbb7c8bfe19f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/after-hazard-control-close.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/after-hazard4-control-close.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/after-hazard4-detail-close.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/after-normal-control-close.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/analyze-lifecycle.py",
+      "bytes": 2249,
+      "sha256": "71c0cd7ec633d5013a6cd4d805b7c9d4ecd8fb1b6ba3b6a26766dca45784fa43"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/audit.py",
+      "bytes": 1592,
+      "sha256": "a761bb80e76d6b8ca50a55adacdde98aed9fec0e9cd6c0efd553038f795af26c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-hazard-control-anthill-capture.json",
+      "bytes": 5403,
+      "sha256": "90d68f9163f9374c42376d83b6784ec77140cba935b80e79def1cb77dac7bba3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-hazard-control-close.json",
+      "bytes": 5403,
+      "sha256": "90d68f9163f9374c42376d83b6784ec77140cba935b80e79def1cb77dac7bba3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-hazard-control-launch.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-hazard-control-menu-capture.json",
+      "bytes": 5403,
+      "sha256": "90d68f9163f9374c42376d83b6784ec77140cba935b80e79def1cb77dac7bba3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-hazard4-control-close.json",
+      "bytes": 5409,
+      "sha256": "f49e3103ec7ed11772e35eeda893ef45a283238ae9ae9b4e02ec7d3235d818ea"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-hazard4-control-launch.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-hazard4-control-menu-capture.json",
+      "bytes": 5409,
+      "sha256": "f49e3103ec7ed11772e35eeda893ef45a283238ae9ae9b4e02ec7d3235d818ea"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-hazard4-detail-close.json",
+      "bytes": 5403,
+      "sha256": "91d6a221470372d8697b4dc9c6ad46b17a63e5ebbce04c417969c4ed31842aa7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-hazard4-detail-launch.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-hazard4-detail-menu-capture.json",
+      "bytes": 5403,
+      "sha256": "91d6a221470372d8697b4dc9c6ad46b17a63e5ebbce04c417969c4ed31842aa7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-normal-control-close.json",
+      "bytes": 5403,
+      "sha256": "a75e061bbf6d11bb7ea2853d117054d8f4e887c9e55d430ca417314884cca965"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-normal-control-completion-capture.json",
+      "bytes": 5403,
+      "sha256": "a75e061bbf6d11bb7ea2853d117054d8f4e887c9e55d430ca417314884cca965"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-normal-control-launch.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-normal-control-menu-capture.json",
+      "bytes": 5403,
+      "sha256": "a75e061bbf6d11bb7ea2853d117054d8f4e887c9e55d430ca417314884cca965"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-normal-detail-completion-capture.json",
+      "bytes": 5397,
+      "sha256": "7c28ebf0bb71c9481e14718a3d42f487cf52ba94c464fa2af372082573abc66e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-normal-detail-final-capture.json",
+      "bytes": 5397,
+      "sha256": "7c28ebf0bb71c9481e14718a3d42f487cf52ba94c464fa2af372082573abc66e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-normal-detail-launch.json",
+      "bytes": 1714,
+      "sha256": "3182442e41cf0b5c7a2113c372297de675e0735f6e17cfd0e244b55372f80f3d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/before-normal-detail-menu-capture.json",
+      "bytes": 5397,
+      "sha256": "7c28ebf0bb71c9481e14718a3d42f487cf52ba94c464fa2af372082573abc66e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/build-hazard.py",
+      "bytes": 2345,
+      "sha256": "5058b86cd4b463e5ed5cee956e23ba604b437ddcd5d81135a3c3a7724f862a4d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/build-hazard4.py",
+      "bytes": 2347,
+      "sha256": "2bd4bf3b88d8987bc6bfe468af31a5a0d3eec274d84d3b09eec472adf7bbeb29"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/claim-sweep.json",
+      "bytes": 819,
+      "sha256": "a94809f8914d2f81c343113611c13ebbb4c96cecbfd92939bd3813a40f372272"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/close-arm.py",
+      "bytes": 1071,
+      "sha256": "c4fa78ca1f4f24a54f9f4ae3ac6591fea9bd9c3a2b4a77bb5cd0abc8e270503a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/document.py",
+      "bytes": 12594,
+      "sha256": "7625cc8ba8b0fe5902f1774946a8e2dcf34885830c7dc9dbcd54ac6a5a4dab98"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/drive-lifecycle-wait-ready.py",
+      "bytes": 4654,
+      "sha256": "c3cf943486091123e98a13a1449b81b769fd4ea6198a4dd38884eff7b31f6ca5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/drive-lifecycle.py",
+      "bytes": 4632,
+      "sha256": "725299afdc290d635abbceca27df07aea29c273b77e431b12aed4c942e486d82"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/drive.py",
+      "bytes": 2683,
+      "sha256": "7af33a345f9b5da75b8df124d3f57e523a976d7d66fc98f261ab03ddaf6309d5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/enter-level.py",
+      "bytes": 1015,
+      "sha256": "a153b12ba69e8961429a0365e3db887283e01d952a1b2b7cbfa466217e958907"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/enter-selected.py",
+      "bytes": 945,
+      "sha256": "f96799ca515719afc225b14287d9776f1404a9e875665c1e82f237b8f8d8af28"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/exploratory-exit.json",
+      "bytes": 1007,
+      "sha256": "6bf03413b96eb7c09bc46c6efd6e51ccbddd752eb2f85bccb5f0ec2a9b0b61e1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/exploratory-exit.log",
+      "bytes": 117192,
+      "sha256": "061f65fc57c53634ce31ed4d4056799564009f11b8e62e532a8a451c025fd541"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/explore-01.json",
+      "bytes": 639330,
+      "sha256": "50d49f09a828b56d2f71da4714023f41bac8867d3865d135e02c3c52784a130d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/explore-02.json",
+      "bytes": 145211,
+      "sha256": "750b81cffa1be7cde112c23b75d428fc5c0f1ec8ef510a3f52cc3f497a04e302"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/explore-03.json",
+      "bytes": 814368,
+      "sha256": "11fc019a1fa10693130830a94a09b7102378ae4a3a9c473d39c51b402933ca42"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/explore-04.json",
+      "bytes": 621127,
+      "sha256": "069e9ca9d3940d3ae86bc35b76c523cc0264c1d717af3568c5f524ea8160ed7a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/explore-05.json",
+      "bytes": 163867,
+      "sha256": "3e0fe0256a5c40ba95f3e2d18504ec5508a8eff2c215eb93711002ce4285586b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/final-handoff.py",
+      "bytes": 2362,
+      "sha256": "b44e6c95624c45bad58dc5f6f817842605f2106bcade1f9b947aaf090104fbc5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/final-owned-audit.json",
+      "bytes": 5397,
+      "sha256": "7c28ebf0bb71c9481e14718a3d42f487cf52ba94c464fa2af372082573abc66e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/final-state.json",
+      "bytes": 625,
+      "sha256": "e4f9b65969bf5d9f4a79317df5bd22426f4d11ae70efa6ea5a41774bf8e848fe"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-TERRAIN.ALL",
+      "bytes": 384474,
+      "sha256": "63f2f61d355b827b0ff4e8b8700e23c51475c97b01ac2938eaa4455ad0e5a5f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-build.json",
+      "bytes": 4135,
+      "sha256": "795fdb8fb9c78f30d4c05caf25ca5578de57a597e22ba8e79105586a04598f1f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/active.json",
+      "bytes": 2803,
+      "sha256": "9c0c4cc2fc665572abaf180147403bc86e8708a963d028463d71407deec5bbc3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/audio-module.txt",
+      "bytes": 10,
+      "sha256": "cb1c82eefc1b74a058dc1f90971f4c657cfa996f0b2b87191206b0edbe74915c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/close-pinned.py",
+      "bytes": 2971,
+      "sha256": "d3951420f83db1887c6f5a73700593a72120def9e3622d6e3dca3ca0315e817c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/close-receipt.json",
+      "bytes": 8636,
+      "sha256": "6de53f9b6f811c7eb3a57cf2539b918973d01c4319e127a5b4f0c8237858e35a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/close.log",
+      "bytes": 8636,
+      "sha256": "6de53f9b6f811c7eb3a57cf2539b918973d01c4319e127a5b4f0c8237858e35a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/control.py",
+      "bytes": 18390,
+      "sha256": "57d010176ac725e8eba51650fdbd38ce22499de71f219e981d8d14fa9bad9566"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/frame-1788837885748759715.png",
+      "bytes": 312091,
+      "sha256": "8704545aa4fc5e11e7fb4f826c7488068753b3859b6ccdd8f78bae690ab694d3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/frame-1788837903739165571.png",
+      "bytes": 307534,
+      "sha256": "e017e6da0cb668fdad83dc31a67549056db11f1cd5a2a237baa1dbf0705148a9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/gameover.log",
+      "bytes": 112819,
+      "sha256": "4cc3fe6b04362d732b249867449f9d445d6aadc5378043ae273f26fabfa6701e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/launch.json",
+      "bytes": 2250,
+      "sha256": "c3b7b7f42a3528050c2d3ed736ef11fa0becefa07aa53739d431e35c84fd9d74"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/launch.log",
+      "bytes": 11356,
+      "sha256": "74bc44a3c9c51eba3ab4dea00f3051807fe52534cebc2fc1b3c4e76152454ed7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/launch.sh",
+      "bytes": 907,
+      "sha256": "1bde3b126812b6ff582de968d7ee7c720849f9a2369d7fbb28a522efbca1fe6e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/models-1788837952428509547.json",
+      "bytes": 81731,
+      "sha256": "6aaa9dc0ddbc2bb5534d8ade22fc76e4f34c0a7ed532213c1017c1dea6d397f6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/prepare.json",
+      "bytes": 2710,
+      "sha256": "758b16af18c1652c05699ce0b8475f31c08a944e05b68a1c02445fa890c53ff0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/receipt-1788837838558744429.json",
+      "bytes": 2390,
+      "sha256": "bdf87b8175784e20e88d7ea5156bf3380d73b09655b1fb1fa53cebcae5371193"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/receipt-1788837841402669367.json",
+      "bytes": 3329,
+      "sha256": "f6c24ee4053652d97f0cfcf67db2a1dcf75cbebb781859e87e669ecc3d7a14fb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/receipt-1788837841426583365.json",
+      "bytes": 287,
+      "sha256": "5f193de0c09b074b03a932d85b48a3b64bad9273eed2f9cbc84bd5f99d918047"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/receipt-1788837876076619763.json",
+      "bytes": 287,
+      "sha256": "47a6f629c7b2a24ba1171293421b1b4fbe601980e3388c6a956ddf8428aec238"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/receipt-1788837886094532045.json",
+      "bytes": 784,
+      "sha256": "f699a9e8a5c8d65bbecf7bbee9e67ee8287fac9d36361a0561dab83e152af177"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/receipt-1788837903606086328.json",
+      "bytes": 692,
+      "sha256": "e91b86273e0a3551133e79a02dc1dc893b05e1d87b495cd4ecd2e4fdc8d798fb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/receipt-1788837904083827164.json",
+      "bytes": 784,
+      "sha256": "6699b2b502170257eabd20ccc114253a4d32c1df61c990d4e60043017c0b608c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/receipt-1788837918378290579.json",
+      "bytes": 695,
+      "sha256": "5c584d762b6cbc7fa27ecfd90691ab650a706d2159b059a29d7a5961c3959372"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/receipt-1788837919471838876.json",
+      "bytes": 705,
+      "sha256": "d9c0ab8de1361fc4e38dd4c46a4654ccf956b8f3f8e4e73242277c4975f8eae9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/receipt-1788837956907380592.json",
+      "bytes": 322,
+      "sha256": "a5e0ef09d9131c2ac4d1c225a42ed6b7d03e9c18c67b29b8f50dcb89b1b4d745"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/rejection.json",
+      "bytes": 655,
+      "sha256": "2c7d8b21b07eba7f670865d6b96e214f6c478ba0958ddc8c5eb71c92199fe666"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control/resident-chunks.json",
+      "bytes": 2294,
+      "sha256": "19b919281db94ffb12ed192ca72457ecd3e3058d075a1a6d46d059c0098a9152"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control-approach.json",
+      "bytes": 468312,
+      "sha256": "621eb4b72c7a6fb9e28c0402dfa4b2ef6fe0d137df9f89f8ac32d5fe199249c4"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-control-death-01.json",
+      "bytes": 214291,
+      "sha256": "3c29aa9b32bc68beceaddcef568fc5f76ba2044f396212a3287612440c074d90"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-detail/control.py",
+      "bytes": 18388,
+      "sha256": "09920793ab4bab2c7058ee574197c181495dcf17ac6903189731e39cf9ce237c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-detail/launch.sh",
+      "bytes": 904,
+      "sha256": "e62d18282f666e997bab842e141ebed7361ed0861061d470c2681e80f60b548f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard-detail/prepare.json",
+      "bytes": 2671,
+      "sha256": "6b2a8affd157bd870a90e232751a8cc9e8d81666aeab4fd40fbcfc7b04402aef"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-TERRAIN.ALL",
+      "bytes": 384474,
+      "sha256": "7462385d0a72ca78917202b880357b9ce7430349d145a2a0db506d43daf087f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-build.json",
+      "bytes": 4135,
+      "sha256": "313281d0f4b4e7c67d1813166baec47c030f1cb3d73295c83517c012d79ccc42"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/active.json",
+      "bytes": 2807,
+      "sha256": "8256ed20ce9462b6fd8340a8ac7f954e9bceadf508f19633758d4970a998c594"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/audio-module.txt",
+      "bytes": 10,
+      "sha256": "cb1c82eefc1b74a058dc1f90971f4c657cfa996f0b2b87191206b0edbe74915c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/close-pinned.py",
+      "bytes": 2972,
+      "sha256": "32d61b0b1106887add845d037b23bd3e5fcd2f50fd4c307d80f88685cfd8e26d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/close-receipt.json",
+      "bytes": 8650,
+      "sha256": "82a7fefd5b475345e4ad8a3c148a8d6e91c8aec925b3099f5d1a54a501253b4c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/close.log",
+      "bytes": 8650,
+      "sha256": "82a7fefd5b475345e4ad8a3c148a8d6e91c8aec925b3099f5d1a54a501253b4c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/control.py",
+      "bytes": 18392,
+      "sha256": "d27190a0b9c5b7e43e607be72831181f603d856ef7baa4d85d3f0304f5c5e8d2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/final-game.log",
+      "bytes": 66392,
+      "sha256": "3c653122f70e22ff41ecfc3b924c4fa9276b9ff2f54cdd295ba65ca8c7a5960b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/frame-1788838103484090071.png",
+      "bytes": 299593,
+      "sha256": "ac30518bd1e15125da6e88319495ac8f5071a3294fb07444e2ee431f57f6b423"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/launch.json",
+      "bytes": 2253,
+      "sha256": "d0314e4c0340bf170af0434222f2ebe9b18a8fba00bab5cbbec2a4ddfdfcdbc1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/launch.log",
+      "bytes": 11081,
+      "sha256": "5870dcb5f7850a68af2eac87576412f537dc1deb4d5fc8cb41c63a2df7746c80"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/launch.sh",
+      "bytes": 910,
+      "sha256": "f1a69774811ad8fb905c9c5d532990cf2e47a8a96c3b76136343dd7d2b3bc03e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/models-1788838197768328111.json",
+      "bytes": 161157,
+      "sha256": "8fe033ca8b52b4d64895dbdc794bfa36f145faa402f4955e606db3a6a0354614"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/models-1788838284653377778.json",
+      "bytes": 127937,
+      "sha256": "5aab472e8e31516e42afe2ed14c9b2f47b98e193609eee054d33e6e43b7f3ab0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/prepare.json",
+      "bytes": 2713,
+      "sha256": "9ee1ddf1ee1a7108fbd9ac584dcdf855031ee0f9b53a47a871fbb5017855e832"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/receipt-1788838093843715086.json",
+      "bytes": 2393,
+      "sha256": "529346a5ac12aa67acb323d77cd5ced28e0bddf411c863c3d4a6f3c011e69c00"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/receipt-1788838097096037952.json",
+      "bytes": 3333,
+      "sha256": "316131c9b54a5703f8d9dcc49d658fb6b1b9d0a4a06e35594c3afdf02343c984"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/receipt-1788838102127374236.json",
+      "bytes": 287,
+      "sha256": "795ea6ea26c105292a9441f21a0c795175b75761f38e5ac3a96f11bf82b66048"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/receipt-1788838102396866214.json",
+      "bytes": 692,
+      "sha256": "156808c9391b69f29db70012d6cbefd5af8265438c6fa491a48db54c4823f1ca"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/receipt-1788838103832551688.json",
+      "bytes": 785,
+      "sha256": "21fc337a197cfd2019004de96ae62e6895eb132a3e5c1c9051141a727801eb7d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/receipt-1788838126407901316.json",
+      "bytes": 3333,
+      "sha256": "cd7e7a456be3dcab3b3961f3a4bac60b28360b44a3d67aabe9e5091dee632234"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/receipt-1788838126434073848.json",
+      "bytes": 287,
+      "sha256": "7a6a123c221eb3e408a238ffed3d9c2e634e43b1fdb61b1d46178fea1e61140c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/receipt-1788838126701968926.json",
+      "bytes": 695,
+      "sha256": "069863acc8b26e549436f45dc106fb9b530f0f8ab96090a2c141d19db96d322a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/receipt-1788838128274729938.json",
+      "bytes": 705,
+      "sha256": "eb2e5fc3eef42dc1cdf6a309339ff3692c376a3cab40019b386abe7b53df6d6c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/receipt-1788838129704714877.json",
+      "bytes": 319,
+      "sha256": "c86da8b6f742864fdb92d7128874f94cbe71bca477ce3f0778517cffefacbb5c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/resident-chunks-after-cycles.json",
+      "bytes": 2296,
+      "sha256": "66db2fb743fcc5a4f6b7b3d98da608884d5eed469e3e734abd8e0849a236f0ad"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control/resident-chunks.json",
+      "bytes": 2295,
+      "sha256": "f3d1a5d9a4ea4bfcddc1bb0149f412c46538e755d5a88aacfadf898487168712"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control-approach.json",
+      "bytes": 479609,
+      "sha256": "f29d886bf348487fdc50456ae764af817e4990aeebb073dc4608a650d09445f8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control-death-01.json",
+      "bytes": 294929,
+      "sha256": "848836e77a208471c27817a4cc64a3d490c76c5b1519d47f1cfa53d8d9356aa6"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control-death-02.json",
+      "bytes": 273166,
+      "sha256": "7acd26320ac65027cbd91f95dcb9f789184434904ee9a0b70d501080b2141324"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control-death-03.json",
+      "bytes": 268109,
+      "sha256": "73da8ee91200ab91a5acb60de283266652a2ac25317048b44fab72e442fbf6be"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control-lifecycle-summary.json",
+      "bytes": 6408,
+      "sha256": "29292a8eb744b0260705084b32cd07af72f2e07c00cd9b8c03f140d6fdbb4be2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-control-retreat.json",
+      "bytes": 185590,
+      "sha256": "6dd4a77d020e2fa2da5e1a663c91b56ff15855434258d513b5356da5de9385b9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/active.json",
+      "bytes": 2803,
+      "sha256": "b3162782044f52c0e78c7e1b6fec20bd4ff5517550525fc1c3da093168417285"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/audio-module.txt",
+      "bytes": 10,
+      "sha256": "cb1c82eefc1b74a058dc1f90971f4c657cfa996f0b2b87191206b0edbe74915c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/close-pinned.py",
+      "bytes": 2971,
+      "sha256": "e165d3e47de0556fe81f4ebdf3836ee968b4ee132f3ff8df27174dcee6a3c13c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/close-receipt.json",
+      "bytes": 8636,
+      "sha256": "f3f28f785fcdcea64e1b7a1740d6aa62285142e4edf24f13bbf8e1df2a5d2bbb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/close.log",
+      "bytes": 8636,
+      "sha256": "f3f28f785fcdcea64e1b7a1740d6aa62285142e4edf24f13bbf8e1df2a5d2bbb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/control.py",
+      "bytes": 18390,
+      "sha256": "b064b241b1ff144247d8f1b23046c4a70b1979932bdd30807353217b068ea1dd"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/final-game.log",
+      "bytes": 66392,
+      "sha256": "0f3c055b9d506593eab10585fe6d58eee54c5617893b3e64adc2aa4d5d376c12"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/frame-1788838385092145684.png",
+      "bytes": 299593,
+      "sha256": "ac30518bd1e15125da6e88319495ac8f5071a3294fb07444e2ee431f57f6b423"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/launch.json",
+      "bytes": 2250,
+      "sha256": "0643cac4ed8507ff4c836a0c50cf3c0e38d2974a4f3d390c9742a92e33f6172e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/launch.log",
+      "bytes": 10843,
+      "sha256": "693ef3fe1cfbacfd3d39c1fb07d354956dae25d72ed8da9a247a89b20b05a0a0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/launch.sh",
+      "bytes": 907,
+      "sha256": "8d02e17a6b1f8db365da8ca627874af63b6ad751d32e0dda5c9fe167fb4efd4d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/models-1788838510887393841.json",
+      "bytes": 161644,
+      "sha256": "8d3b719f86932f2010209fc77f72ccf68ed2cc77c958655b041bef331122fcc9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/models-1788838580560138299.json",
+      "bytes": 128534,
+      "sha256": "e10370976aaca77f44d6bd71df0b9dc38c55af32c850ba7bbf6fbb83cd899ce4"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/prepare.json",
+      "bytes": 2674,
+      "sha256": "cde2218e2bb0306ca95769fd41995855c0aa1fae91b8ac20f941ddef2f0e6107"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/receipt-1788838375834167661.json",
+      "bytes": 2390,
+      "sha256": "136d8f07adf060d5d451b750054693abee2a4c8e8d7396456edfa0432cf652e7"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/receipt-1788838378711016452.json",
+      "bytes": 3329,
+      "sha256": "b55c165198e1d862250d8fe5988206a564950764af0c321234e076b0362fdbfe"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/receipt-1788838383740283457.json",
+      "bytes": 287,
+      "sha256": "c102288326a480d1cf79959be003c34b3c083b35e60a4cbab7bdd861ec33aa17"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/receipt-1788838384007594372.json",
+      "bytes": 692,
+      "sha256": "70f4b62e8f7e3c111bc9560093e7dc1774a7818ac158a7333f76727e8b2a3a7d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/receipt-1788838385437451962.json",
+      "bytes": 784,
+      "sha256": "f4eb3f75ea473db902e5e44247ba4a83fa66826a5603a58fb126d9fef725815a"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/receipt-1788838431411152618.json",
+      "bytes": 3329,
+      "sha256": "8445194177e91456529e5627f4df9efabbddadc605ec199491bc1fd0e7fdb1b0"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/receipt-1788838431435430787.json",
+      "bytes": 287,
+      "sha256": "e1ebdb04abf979d78783fdf22a1502302b5298e38102d1a791ac43fb0bc2acbe"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/receipt-1788838431702951413.json",
+      "bytes": 695,
+      "sha256": "5a5ed2742013a65e6860ec27f6e1492967a583c05675b91ddb681dac770b4f23"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/receipt-1788838433274249271.json",
+      "bytes": 705,
+      "sha256": "398743f8d0e58985b7e60e4310a1a6efaf089d559d9aa17bef92ff850d39da25"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/receipt-1788838434502050254.json",
+      "bytes": 319,
+      "sha256": "463089e44ffe228bf56c2a688966a4f26e70daebfb4ff31704bd43379e60aa63"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/resident-chunks-after-cycles.json",
+      "bytes": 2296,
+      "sha256": "39e7d911fd9244e8c81661d21b0dd7a9e61311d0c8a002c725935a70d2fda628"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail/resident-chunks.json",
+      "bytes": 2294,
+      "sha256": "5e5d7fe84085e4aaf04de5b9b850b92d40d1342cab89ef3467e47b9a79d139e2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail-approach.json",
+      "bytes": 488488,
+      "sha256": "c89bec2d1b8dc81381af49a78b6c6faef5b976e526729650f6856f40e0fe69cd"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail-death-01.json",
+      "bytes": 348653,
+      "sha256": "a0ead97b419df4b1e1970097e894d8264c468ae4343d9cb05d9e09fd0f88d444"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail-death-02.json",
+      "bytes": 321664,
+      "sha256": "c8ad2c230befcfcc3c2b0378e7bf809a2244fd44077f7b424ea194c142e39263"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail-death-03.json",
+      "bytes": 220812,
+      "sha256": "7937e1af5548e7ef2c6a5d62427217e54c054c0fe4ab03739fd2d29f6b9e9fab"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail-lifecycle-summary.json",
+      "bytes": 6397,
+      "sha256": "c7b7e1feeca45893868c4ed6d58b7cf6b96ca8b9408d010097d575940a05eb99"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/hazard4-detail-retreat.json",
+      "bytes": 185917,
+      "sha256": "6c92ba6d3afd28f0bd72ae41b89ca938e7ee52d8ee1361caa70b298f56bc461c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/initial-menu.py",
+      "bytes": 1240,
+      "sha256": "3fc295a7af6cc0aeb9aeb61f3b15191ca364cb2719209d666b8b9fdc3b571022"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/live-order-expected.json",
+      "bytes": 58474,
+      "sha256": "a1fe9c5155dd3d93458edf189bc6fba9bc74f530c26111d38aeeb510ea1e45de"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/native-lifecycle-code.json",
+      "bytes": 1265,
+      "sha256": "3fa9e6022b2980be07515cbb5cb11f0256357075466ed33f3c533786b7b24077"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/nav.py",
+      "bytes": 3095,
+      "sha256": "51c560e1c51ed8970fa5a384a45e17af7b9587c36cc815653922d4eb48e21b32"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/active.json",
+      "bytes": 2803,
+      "sha256": "065ad5997052559d34cd36eab4739a7742b61781b8d30b7bcc67010805e8d055"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/audio-module.txt",
+      "bytes": 10,
+      "sha256": "cb1c82eefc1b74a058dc1f90971f4c657cfa996f0b2b87191206b0edbe74915c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/close-pinned.py",
+      "bytes": 2971,
+      "sha256": "62651c053ecba2b40dba1c2b82ad993f2d694e4471b412c79ece74520986a62c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/close-receipt.json",
+      "bytes": 8552,
+      "sha256": "888a3a2a8d075d0f42464ab8898a9a01f7c73c5febe9c116660bcf9d439d9278"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/close.log",
+      "bytes": 8552,
+      "sha256": "888a3a2a8d075d0f42464ab8898a9a01f7c73c5febe9c116660bcf9d439d9278"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/completion-1.log",
+      "bytes": 142080,
+      "sha256": "2b1274f9c5dab52e084f130253f4fecde04c7fb9e864d02f2bc201fd6ebf09fa"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/control.py",
+      "bytes": 18390,
+      "sha256": "891bd8d64b7450243120ddb60a5b1f973464fecc602245bca106199497fdf1d1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/final-game.log",
+      "bytes": 142263,
+      "sha256": "8e7942014ea2546c1c5c216c3cb01e53d1a97bef2a7cace0cd594545c1a15cfe"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/frame-1788838622732818257.png",
+      "bytes": 299593,
+      "sha256": "ac30518bd1e15125da6e88319495ac8f5071a3294fb07444e2ee431f57f6b423"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/frame-1788838843508008103.png",
+      "bytes": 290747,
+      "sha256": "777df21a7b1b0815e02224fa4d3b335b37e7079b415804145c612693f28a7259"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/launch.json",
+      "bytes": 2250,
+      "sha256": "bf78d8433c15a2f9d4128d10a0d78ff3ca583a69edb5f657d11006e04f299f3b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/launch.log",
+      "bytes": 11207,
+      "sha256": "7d917b8ef203ec17ec698b7e3f975b932984a5a1e4bb049fbb9faa900db4ba67"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/launch.sh",
+      "bytes": 907,
+      "sha256": "98b3df940ac1ac7552d296fd2c9482bbc721bf188f4586ffed33fc90df3db0f8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/models-1788838768643976336.json",
+      "bytes": 161218,
+      "sha256": "d25b57c7298119e97907a35a273d096820ba9c96a1e48c359487e94995bfb911"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/models-1788838932667899174.json",
+      "bytes": 81317,
+      "sha256": "221d8ade829b7e6c0d4a6f0d7c561cab3654cbe5fd6c82ac5c83a5ffd6c256b2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/prepare.json",
+      "bytes": 2672,
+      "sha256": "e7b44e2c75b166c3121bf5699a18a735860f894d758ae89de7e4624c9c3ccc33"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838613501456239.json",
+      "bytes": 2390,
+      "sha256": "985588ffbcf12f0aaf1d8e0eb9ce9d4614346a1285bbefbec527d10e0a18ba67"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838616352221519.json",
+      "bytes": 3329,
+      "sha256": "75e0e2ea2c6e4ee341f95ec18ca1d0a82ff1e95838d6dc8b0a2b0a79f8da7863"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838621380916050.json",
+      "bytes": 287,
+      "sha256": "8d1e6b5aafdb50c1d84a6f1291d16bf12acee045da086b5529c16fa07e7d4c57"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838621648034624.json",
+      "bytes": 692,
+      "sha256": "17de7640640f7784e4299028df54d73cd17236e0f510734e6f367483e54988f5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838623076285382.json",
+      "bytes": 784,
+      "sha256": "ce8094e5c22178858e658af71a37126fb880cb1838f4dc56cd67b232335ca85b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838630687035039.json",
+      "bytes": 3329,
+      "sha256": "d6297f3b6b18edc7c984907c23550b89272a17c2819f73c926ec4e3c5671eb26"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838630712128704.json",
+      "bytes": 287,
+      "sha256": "fd256e4c80f287dd17617ad2b68c0529d75fd6e3d048ff2376c6c3c4cbda3c76"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838630977790948.json",
+      "bytes": 695,
+      "sha256": "30133af54d8027db838234d17ec58499d0a5cb9c23cb325da2827b07d5646756"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838632547215374.json",
+      "bytes": 705,
+      "sha256": "ccf573f169fa4ee861e855bda13f349e2827edd5ab2149d77247dada34aea7ce"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838633972876345.json",
+      "bytes": 319,
+      "sha256": "4d40702da3e3e3eaa25a6801287ad2ead7f12ec00f18f36a1935a2126243b1f5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/receipt-1788838843851349257.json",
+      "bytes": 856,
+      "sha256": "bb99721a84ed5821d6388c98d2286048372dfe820e782ceb5b42425d33ac7b78"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/reentry-1.json",
+      "bytes": 1762,
+      "sha256": "c18da591a90d0b6076dbbeb9509c72541d803439ad537c47255d3de88dd19e7f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/resident-chunks-after-loop.json",
+      "bytes": 2296,
+      "sha256": "95430142f1df86bc9dea28ec4bad9251f180aacaea41691fa4ceb31391a12f88"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/resident-chunks-after-reentry.json",
+      "bytes": 2294,
+      "sha256": "fda6fef9caf7500aa839c12060ebb795c763946659cd87d3239c51f3578d0808"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control/resident-chunks.json",
+      "bytes": 2294,
+      "sha256": "fda6fef9caf7500aa839c12060ebb795c763946659cd87d3239c51f3578d0808"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control-deliberate-exit.json",
+      "bytes": 708710,
+      "sha256": "704afb093aa6b2da9409be268b2b49cb8da57d6add05c408314ccab7478010bb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control-loop-01.json",
+      "bytes": 474591,
+      "sha256": "ac9191aa8c2e4d1a4a2ba199f60a598bb21f2a25ce8320ecb96f2ea8deb2f092"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control-loop-01.log",
+      "bytes": 1376,
+      "sha256": "b1ec95d3e410bd81da73a88da2847c6356d3ac39c3a649575f5eb0e73f53df85"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control-loop-02.json",
+      "bytes": 263837,
+      "sha256": "4ea22a198cc8b5deef2a0db4b93af1f225f5a7a72229f2b77f2baffabbd0ff63"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control-loop-02.log",
+      "bytes": 1377,
+      "sha256": "f2c7f59f75419392c0f196e1f7193e3a8429431c1b1a08d54474b4800cef7878"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control-loop-03.json",
+      "bytes": 497040,
+      "sha256": "e4bf57ffff908f01eca9adf96928ef04ef311a0da5a33e63d206486ee2e6b876"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control-loop-03.log",
+      "bytes": 1374,
+      "sha256": "2f8792fc3984ca79e1c34db75e9374a2fde594327d0ff9b88e759ebeef990e6f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control-loop-04.json",
+      "bytes": 459746,
+      "sha256": "15d49b96cb6bbd9fc14f7b095730109832427b06aeb373c2d317ef9b52c05224"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control-loop-04.log",
+      "bytes": 1376,
+      "sha256": "7e50bd0e4a55d90107cc0279986df9524f2d7000961ba995c0ae92de5a7926bc"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-control-loop-summary.json",
+      "bytes": 1406,
+      "sha256": "13cc11d6209c0764b9f6a70754be34ef0083724cf64afd94899a5ea828f052e9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/active.json",
+      "bytes": 2799,
+      "sha256": "beff728edc5ba1beb80c123093c638a985411e20d40bf2447b689f2e2108cc57"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/audio-module.txt",
+      "bytes": 10,
+      "sha256": "cb1c82eefc1b74a058dc1f90971f4c657cfa996f0b2b87191206b0edbe74915c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/control.py",
+      "bytes": 18388,
+      "sha256": "e8e545d0484be3969c4a5340537b7c9f537eecf01ccba45cffcee926a6608d66"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/final-full-inventory.json",
+      "bytes": 101754,
+      "sha256": "d0141f13767fc3cbf3ca4189e6bfd0d6ace4939e0c6d98de27e2ca603250d21b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/final-game.log",
+      "bytes": 142263,
+      "sha256": "bfc64c29b63596ede9e694b1ea0f235aca37d42b86cc098dfe28c3a2910997e1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/frame-1788838972388826493.png",
+      "bytes": 299593,
+      "sha256": "ac30518bd1e15125da6e88319495ac8f5071a3294fb07444e2ee431f57f6b423"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/frame-1788839205247743422.png",
+      "bytes": 294752,
+      "sha256": "4fef9a43c80550363363985215d3be47af632debfa63f357b687036107c45e98"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/frame-1788839243401727892.png",
+      "bytes": 205959,
+      "sha256": "7d24cc59730a68ba7b9509e4bce0b9ff99cc4de1df20e235e84f51a742f4d3aa"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/launch.json",
+      "bytes": 2247,
+      "sha256": "738b06c2ec7faed54a97d936b184739ee26b214e5bd65d85929645ae69adb31d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/launch.log",
+      "bytes": 11056,
+      "sha256": "74537278c399e2869d60f2007de70485b939755eb8e3aca21c2c6c78ea8643fc"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/launch.sh",
+      "bytes": 904,
+      "sha256": "4c9586afea857d2ad8f1d6bac31fdd4910702573229838d9580fb44c1e0e5691"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/live-handoff-binding.json",
+      "bytes": 18857,
+      "sha256": "e6543b11dc2f1f4710fbd8d12b81ceb5bb1320a97b0f1ef55bd7099d943ce0a1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/models-1788839020540863911.json",
+      "bytes": 161526,
+      "sha256": "1b39c7783ddf588de86ffc166bacba93cdeff7390d83434a62b06cd2d3f60bbb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/models-1788839262165296353.json",
+      "bytes": 160526,
+      "sha256": "02a62461ffadee7ddfe773d1035ae0d40f09f7d79ac7b1c6e4288e8ca42bfff2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/prepare.json",
+      "bytes": 2631,
+      "sha256": "447dc0b35a9c031c443bb93da37cf1217266e983e422b8cf142eed8b246a00ab"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788838963002186215.json",
+      "bytes": 2387,
+      "sha256": "125e710d214736c5b8c8700b1a080714c282c8f158777c0f03f775cfe4dca2df"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788838966207035390.json",
+      "bytes": 3325,
+      "sha256": "09a09b346ce70ffd6b3a93cd3557c8131691770155d4da792af83ce2825d05d9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788838971035569017.json",
+      "bytes": 287,
+      "sha256": "4ecb2c0893f8de0cffdb4c4d7586379eac979768ff8ac4577067452d503ad0c5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788838971302236238.json",
+      "bytes": 692,
+      "sha256": "80cb8f713f36964b5ecfe0c5b308bd71d114af8913899815546665156929a000"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788838972733957659.json",
+      "bytes": 783,
+      "sha256": "b0d4dcd4f1ec683e052b6e52f018639f21edd9de52c801d79746a08600132c4d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788838977053016160.json",
+      "bytes": 3325,
+      "sha256": "612e47f10c27c4f3e65ffe9103e6635880a2435c9828307474da4e78497b367e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788838977077755613.json",
+      "bytes": 287,
+      "sha256": "b4cf9ead7db1ff878a64e9880dd3c312e6d23a28f9e21c9925d461453652e347"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788838977347862367.json",
+      "bytes": 695,
+      "sha256": "be4d46e749d9e349df4b56c4fd0e40086da43cb982d495c0991cd21b6771015f"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788838978920214162.json",
+      "bytes": 705,
+      "sha256": "343ff83f26c4c8eb2324ceabb7a05e6e85e7ed591b9298c012732b4ee9db0aa4"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788838980348177898.json",
+      "bytes": 319,
+      "sha256": "bb13ef4b921f71a121c52ffd16a80714a04214780e43e19235546ad481cec08d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788839205592658767.json",
+      "bytes": 855,
+      "sha256": "dfbb4e7710629de5f0628878c633c2ec85d87016965a0e11eabb5d3f5fa6d2f1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/receipt-1788839243745332768.json",
+      "bytes": 847,
+      "sha256": "884fb3e3f8e2bfcb21769d8584800a476e8655e565be4b286ae070bcf4ce9b57"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/reentry-1.json",
+      "bytes": 1763,
+      "sha256": "9ac1079f5661ab95d8191443690092076b7af223e60d8f7a1cf89b8b2eef801c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/resident-chunks-after-loop.json",
+      "bytes": 2296,
+      "sha256": "60dbf9c6e23c98bf209688eb625b16576d5a7c7b25409b6d7c48c92e7f54e411"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/resident-chunks-after-reentry.json",
+      "bytes": 2293,
+      "sha256": "4674a72cd7b246d28057702aebd3f322bc2bab5f398ee89898209f9ea9faf9bc"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail/resident-chunks.json",
+      "bytes": 2293,
+      "sha256": "4674a72cd7b246d28057702aebd3f322bc2bab5f398ee89898209f9ea9faf9bc"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail-deliberate-exit.json",
+      "bytes": 658303,
+      "sha256": "eb7774a1dbb27d46c934a73b2d6bb36930103bafb005dbd555059de4f9ad0032"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail-loop-01.json",
+      "bytes": 436736,
+      "sha256": "927bdf5f6f66bb5b6e8ca0610e60e142641c321a3e69156b422c08c70a6e0c86"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail-loop-01.log",
+      "bytes": 1377,
+      "sha256": "2b19cd5f65f5a99133b995520287e320af070e925595182d0d4d672c9690756d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail-loop-02.json",
+      "bytes": 277971,
+      "sha256": "0eb7b1f4c5a9504c49253908c426a98c50de8fa99c17af7d717f1b482ad32ce9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail-loop-02.log",
+      "bytes": 1375,
+      "sha256": "c794834baa83de62b93d95734778c6bae17741d37de6ac4f2a515cd720b7431e"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail-loop-03.json",
+      "bytes": 463745,
+      "sha256": "9a92a978652207d6cb46f9a1cff0a3fa72821156d06f2eb2a4408087318677e5"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail-loop-03.log",
+      "bytes": 1373,
+      "sha256": "978a45e59d30d417f0e7fe253abeb3fbeb4751b81c6536ee042502b9da519542"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail-loop-04.json",
+      "bytes": 483258,
+      "sha256": "1516c9ec1d2fa9bf185263d7b382a820f3436f2b20605f6b290068a5c2a41700"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail-loop-04.log",
+      "bytes": 1375,
+      "sha256": "4c90b46991ceb2ca1bc1405d8a344546e8860700f3d443f3e21caca5f3ab2d78"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/normal-detail-loop-summary.json",
+      "bytes": 1401,
+      "sha256": "0676898cd35f43cbbe932008a635c95e84979b6bea260781da4a24a97340e86c"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/ordinary-loop-plan.json",
+      "bytes": 3070,
+      "sha256": "daaf1fd03079139e21a2aee82e937c8e42bbbbe099111161ca45bb79abf025e2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/planned-route.json",
+      "bytes": 29434,
+      "sha256": "2438ce1357bc73c94cd46f16ec5c2b82ab1ff718ce2562c56f47628b76899440"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/prepare-live.py",
+      "bytes": 3801,
+      "sha256": "34000131ea05f808e38aa0fd0ccbc05fb0923f08f67afc2cf78c60f03d68696b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/reenter-selected.py",
+      "bytes": 1999,
+      "sha256": "a71dad33c9363f059595714766d1c24f9874d8950baf12373edfe18654be1860"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/report.py",
+      "bytes": 4920,
+      "sha256": "8c17254cc6bea735e37bc52520f5ef3e9de3de21f3973b8851182454665f67e2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/run-check.py",
+      "bytes": 1459,
+      "sha256": "1a5580a2e1ab48d5f1d3bf3798f22bd2cd7a04d784fd47b2bdf73b2d34e39ed9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/run-index-orphans.json",
+      "bytes": 3571,
+      "sha256": "803ef73e026138e9ceaabad4f5b5db7a26488e63d812f04afa5d7746388bc260"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/run-index-orphans.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/run-loop.py",
+      "bytes": 1666,
+      "sha256": "9265ab521982c08f94395a158e4c1a396d9d8e68ffdf34c0f4bfaae9129716c2"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/saved-project-preserved.json",
+      "bytes": 266,
+      "sha256": "143ab10a16cbe99abe6ec1a97593b65b0c98b7f301a732e3d3afa1d51f93b190"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/source-receipt.json",
+      "bytes": 373,
+      "sha256": "0f5b048b4d38fa1868f499fa0cbc955f5a4372484ecd4c7a543427b822f69121"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/source.log",
+      "bytes": 3299,
+      "sha256": "f7a343e3848fbb6d90eb3480fda4b197ea168e04e7748952dd540d2d2eeb9fb3"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/test-selection.json",
+      "bytes": 6333,
+      "sha256": "327a1bbe611d6a48502fe051374b23ec46f25e74b690c2e359432b184f9fa138"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/verify-chunks.py",
+      "bytes": 2879,
+      "sha256": "42c6cf9cfd9bad4e38a591a462bd4f74af2a0c5194fd50f044ed995382d5f1eb"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-027/verify-models.py",
+      "bytes": 2005,
+      "sha256": "3bd5f00c88e7b87d5f075e5c146cc12aa4230e1419154fd91cd4a0ed8da7d411"
+    }
+  ],
+  "remaining": [
+    "Representative camera/route frame-work headroom",
+    "Broader actor and candidate-count endurance",
+    "Wider-coordinate validation before increasing extent",
+    "Safe interior respawn placement before authoring hazards"
+  ],
+  "scope": "Six finite native reset cycles, two ordinary four-section traversal loops and paired exit/re-entry checks. Read-only asynchronous state/model observations with ordinary XTEST keys; feedback route timing is not a frame-time/GPU comparison. One result1 fixture reached GameOver and is explicitly rejected. Normal assets/code/projects unchanged; protected foreign tree/session untouched."
+}

@@ -1,0 +1,70 @@
+{
+  "anchor": {
+    "anchored_at": "2026-08-15T12:51:42.128955-04:00",
+    "arm_delay_ms": 1000,
+    "frame": null,
+    "type": "manual-delay"
+  },
+  "clock": "monotonic-offset-ns",
+  "complete": true,
+  "duration_ns": 12004493278,
+  "events": [
+    {
+      "action": "down",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 6172407829,
+      "send_event": false,
+      "sequence": 0,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 6393734263,
+      "send_event": false,
+      "sequence": 1,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "down",
+      "keycode": 36,
+      "keysym": "Return",
+      "offset_ns": 7414543707,
+      "send_event": false,
+      "sequence": 2,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 36,
+      "keysym": "Return",
+      "offset_ns": 7630724996,
+      "send_event": false,
+      "sequence": 3,
+      "source": "window-event",
+      "state": 0
+    }
+  ],
+  "recorded_at": "2026-08-15T12:51:54.131936-04:00",
+  "recording_backend": "x11-window-select-v1",
+  "schedule_sha256": "f2caa3e98a147f6a58fded45827d4c2ddff88980150a3cecc5ddba6688187247",
+  "schema_version": 1,
+  "target": {
+    "exe_basename": "bugs.exe",
+    "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "window_signature": {
+      "class": "bugs.exe",
+      "height": 480,
+      "owner_exe_basename": "wine-preloader",
+      "screen": 0,
+      "width": 640
+    }
+  },
+  "termination": "max-duration",
+  "tool": "ablpc-input-movie"
+}

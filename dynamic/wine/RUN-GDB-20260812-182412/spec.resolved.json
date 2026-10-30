@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "experiment_id": "EXP-VALIDATION-gdb-harness",
+  "target": {
+    "mode": "pid",
+    "pid": 2498490,
+    "exe_basename": "bugs.exe",
+    "expected_exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878"
+  },
+  "watchpoints": [
+    {
+      "id": "plant10_anm_slot",
+      "address": "0x005B1AA4",
+      "kind": "access",
+      "size": 4
+    }
+  ],
+  "breakpoints": [],
+  "window": {
+    "max_stops": 20,
+    "timeout_seconds": 200,
+    "end_milestones": [
+      "NextLife"
+    ],
+    "log_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.log"
+  },
+  "on_stop": {
+    "registers": [
+      "rax",
+      "rbx",
+      "rcx",
+      "rdx",
+      "rsi",
+      "rdi",
+      "rip"
+    ],
+    "memory_reads": [
+      {
+        "id": "slot_value",
+        "address": "0x005B1AA4",
+        "size": 4
+      }
+    ],
+    "backtrace_limit": 8
+  }
+}

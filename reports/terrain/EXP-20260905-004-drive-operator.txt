@@ -1,0 +1,109 @@
+"""Normal-input, read-only area operator. No live process-state writes."""
+from pathlib import Path
+import hashlib
+import json
+import math
+import os
+import struct
+import sys
+import time
+import traceback
+
+ROOT=Path('/home/dev/ABLPC'); HERE=Path(__file__).resolve().parent
+ns={'__file__':str(HERE/'runtime.py')}
+exec((HERE/'runtime.py').read_text().split('\ntry:\n action=')[0],ns)
+sys.path.insert(0,str(ROOT/'reimplementation'))
+from ablpc.terrain_all import TerrainAll
+from ablpc.terrain_height import TerrainHeightModel
+
+
+def save(label,value):
+    with (HERE/(label+'.json')).open('x') as f:json.dump(value,f,indent=2);f.write('\n')
+
+
+def capture(meta,label):
+    binding=ns['bind_socket'](meta); path=HERE/(label+'.png')
+    assert not path.exists()
+    env=os.environ.copy();env['GAMESCOPE_WAYLAND_DISPLAY']=meta['gamescope_display']
+    before=ns['state'](meta);ns['run'](['gamescopectl','screenshot',str(path)],env)
+    previous=None;stable=0
+    for _ in range(120):
+        if path.exists():
+            current=(path.stat().st_size,path.stat().st_mtime_ns)
+            stable=stable+1 if current==previous else 0;previous=current
+            if stable>=3:
+                ns['run'](['/usr/bin/python3','-c',
+                    "from PIL import Image;import sys;im=Image.open(sys.argv[1]).convert('RGB');assert im.size==(640,480) and len(set(im.getdata()))>1",str(path)])
+                break
+        time.sleep(.05)
+    else:raise RuntimeError('capture did not stabilize')
+    row={'path':str(path),'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),
+         'binding':binding,'before':before,'after':ns['state'](ns['guard']())}
+    save(label,row);return row
+
+
+def observe(meta,terrain,model,fixture):
+    state=ns['state'](meta);index,pointer=state['contact']
+    if index==99:
+        base=struct.unpack_from('<I',ns['mem'](meta,0x7f4590+99*48,48),16)[0]
+        record=terrain.records[99]
+        if base<=pointer<=base+record.payload_size-32:
+            offset=record.payload_offset+pointer-base
+            state['contact_locator']={'source_record':99,'file_offset':offset}
+            state['contact_surface']=next((c['surface'] for c in fixture['cells'] if c['file_offset']==offset),'unknown')
+    x,y,z=state['position']
+    floors=[p for p in model.planes(x,z) if p.descriptor_index==99 and p.divisor<0]
+    state['floor_planes']=[p.plane_height for p in floors]
+    # The deck remains underneath the ramp/box. Test against the upper surface,
+    # not the lower catch deck, so lost ramp/top admission cannot masquerade as success.
+    state['below_floor_world']=y-min(p.plane_height+3200 for p in floors) if floors else None
+    return state
+
+
+def steer(label,tx,tz,seconds=8):
+    assert 140000<=tx<=250000 and 430000<=tz<=560000 and 0<seconds<=8
+    meta=ns['guard']();ns['bind_socket'](meta);env=ns['focus'](meta)
+    terrain=TerrainAll.from_path(Path(meta['stage'])/'PC/BUGS/CD/LEVEL01/TERRAIN.ALL')
+    model=TerrainHeightModel(terrain);fixture=json.loads((HERE/'fixture.json').read_text())
+    samples=[];events=[];held=set();old=None;outcome='timeout';error=None;started=time.monotonic()
+    try:
+        while time.monotonic()-started<seconds:
+            current=observe(ns['guard'](),terrain,model,fixture);now=time.monotonic()
+            x,y,z=current['position']
+            assert current['level']==1 and 132800<x<260800 and 420800<z<574400 and -135000<y<-96000
+            distance=math.hypot(tx-x,tz-z)
+            samples.append({'elapsed':now-started,'target_distance':distance,**current})
+            if current['below_floor_world'] is not None and current['below_floor_world']>1536:
+                outcome='below-floor';break
+            if distance<750:outcome='target-reached';break
+            vx=vz=0
+            if old:vx,vz=(x-old[1])/(now-old[0]),(z-old[2])/(now-old[0])
+            old=now,x,z;dx,dz=tx-x-vx*.09,tz-z-vz*.09
+            m=struct.unpack('<9h',bytes.fromhex(current['camera_matrix_hex']));a,b=m[0]/4096,m[2]/4096
+            sector=round(math.atan2(-b*dx+a*dz,a*dx+b*dz)/(math.pi/4))%8
+            desired=[{'Right'},{'Right','Up'},{'Up'},{'Up','Left'},
+                     {'Left'},{'Left','Down'},{'Down'},{'Down','Right'}][sector]
+            if desired!=held:
+                for key in sorted(held-desired):ns['run'](['xdotool','keyup',key],env)
+                for key in sorted(desired-held):ns['run'](['xdotool','keydown',key],env)
+                held=set(desired);events.append({'elapsed':time.monotonic()-started,'held':sorted(held)})
+            time.sleep(.04)
+    except BaseException:error=traceback.format_exc()
+    finally:
+        for key in ('Up','Down','Left','Right'):ns['run'](['xdotool','keyup',key],env)
+        row={'target':[tx,tz],'limit_seconds':seconds,'outcome':outcome,'error':error,
+             'samples':samples,'events':events,'after_release':observe(ns['guard'](),terrain,model,fixture)}
+        save(label,row)
+    frame=capture(ns['guard'](),label+'-frame')
+    print(json.dumps({'label':label,'outcome':outcome,'error':error,'samples':len(samples),
+                      'after':row['after_release'],'frame':frame['path']},indent=2))
+    if error:raise RuntimeError(error)
+    if outcome!='target-reached':raise SystemExit(2)
+
+
+if __name__=='__main__':
+    if sys.argv[1]=='steer':steer(sys.argv[2],int(sys.argv[3]),int(sys.argv[4]))
+    elif sys.argv[1]=='capture':
+        meta=ns['guard']();ns['focus'](meta)
+        print(json.dumps(capture(meta,sys.argv[2]),indent=2))
+    else:raise SystemExit('use steer LABEL X Z or capture LABEL')

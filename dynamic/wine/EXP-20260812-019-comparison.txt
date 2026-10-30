@@ -1,0 +1,87 @@
+EXP-20260812-019 same-size paired plant replacement comparison
+
+Inputs
+  bugs.exe SHA-256:
+    97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+  control PLANT04.ANM SHA-256 / size:
+    32dce9588272d4bd4d0b2054e58de2b9ca5ae563826d56f7cd12abe8b001e7ce / 0x70A
+  PLANT10.ANM / staged PLANT04.ANM SHA-256 / size:
+    12d2550ea89b9156acd04ce403d1754aa244d1cedf8531eaca2c8e7bf22b5194 / 0x70A
+  control PLANT04.ALL SHA-256 / size:
+    486bd73c54b96f9b0ef41e2c9ccc6029c95772619feaacb8885f4f1cc424f14a / 0xE08
+  PLANT10.ALL / staged PLANT04.ALL SHA-256 / size:
+    0c0f244b5bef3b5a3f7148744aad9ac223b7fdeaeb0eecaa561193e7a30bf714 / 0xE08
+
+Staging and locality
+  The control recursively matches the exact derived source tree before
+  execution. The replacement differs at exactly two paths:
+    CD/PLANTS/PLANT04.ANM
+    CD/PLANTS/PLANT04.ALL
+  Each staged destination is byte-identical to its exact plant 10 source.
+  PLANT04/10.ANM differ at 884 byte positions from 0x26 through 0x708.
+  PLANT04/10.ALL differ at 3,087 byte positions from 0x4 through 0xDEF.
+  Runtime locality remains the same when generated bugs.log is excluded.
+
+Runtime gate and acceptance
+  Control:     RUN-WINE-20260812-140325, U:\PC\BUGS
+  Replacement: RUN-WINE-20260812-141020, V:\PC\BUGS
+  Both retained logs contain exactly one of each required hardware marker:
+    INFO Screen mode 640x480x16 selected.
+    INIT : Starting Direct3D renderer.
+  Neither retained log contains INITSOFTRENDER. Both load
+  level07\level1.dat, the plant 04 and plant 10 ANM/ALL paths, end
+  InitMainGame, and enter NextLife. One earlier replacement launch entered
+  INITSOFTRENDER and was rejected before evidence capture; it is not one of
+  the retained arms.
+
+Log comparison
+  Control bugs.log SHA-256:
+    6cd279cf1c4a7b8b5994a0d5314dfcc241056b33504fb3c2ea417c897dfb947f
+  Replacement bugs.log SHA-256:
+    6cdebd0303a67cf1ec3140f0cd3f5d5c1b508a96e7ef48d730c71a1a91021cd0
+  Both logs contain 1,480 lines and ten diagnostic ->time[] lines. After
+  normalizing U:/V: to one drive label and removing those timing diagnostics,
+  the logs are byte-identical. Normalized SHA-256:
+    73a6a08e91af54b11905c8866c6149eee7bfa7c3c6f735c97af7e69b04625110
+
+Visual capture
+  Each accepted arm has 15 Gamescope PipeWire frames captured after NextLife
+  at approximately 0.2-second intervals. Both streams are 2560x1440 with a
+  centered 1920x1440 4:3 game image. Captures remain under ignored
+  work/copies/EXP-20260812-019/evidence/.
+
+  Control raw capture-set checksum-list SHA-256:
+    1d26c85b3b4f329da1197bec7df4ba61084cd9f95339977689925ff0681e5c5b
+  Replacement raw capture-set checksum-list SHA-256:
+    b9871e4f35a265166fe14fe4d9229db38f118a35531b57635161ece33efd6c2a
+  Control normalized 640x480 set SHA-256:
+    6d0b3605663817a076f7eb16cea28cc418b5c44975ad761c6262751c73c1c7d1
+  Replacement normalized 640x480 set SHA-256:
+    473a1aab234ae073d823701a630b84f35e77ba8bd81d240e071fad243a779c3d
+
+  Closest all-pairs normalized comparison:
+    control frame-12 vs replacement frame-06
+    22,627 differing pixels of 307,200 (7.36556%)
+    normalized RMSE 0.0272229
+  Current temporal medians:
+    control vs replacement: AE 33,485, normalized RMSE 0.0357224
+  Cross-session control-variance check using EXP-20260812-018 medians:
+    prior primary control vs current control: AE 25,113, RMSE 0.0267928
+    prior rerun control vs current control:   AE 35,153, RMSE 0.0387554
+  The paired replacement median delta lies inside the measured control-to-
+  control range. Visual inspection shows the same scene content; residuals
+  follow animated characters, stems, flowers, and edges rather than a stable
+  replacement-only region. The wall-clock sequences are not engine-frame
+  locked.
+
+Classification and boundary
+  accepted-no-visible-change-at-tested-start-camera
+
+  Confirmed: the exact executable accepts the equal-size plant 10 ANM/ALL
+  pair at the two plant 04 request paths and reaches Direct3D gameplay.
+  Confirmed within the recorded visual procedure: no stable start-camera
+  change is discriminated beyond inter-run animation variance.
+  Unknown: later/off-camera/nonvisual effects, general pair compatibility,
+  complete ANM/ALL semantics, and which M1 placement consumes plant 04.
+
+No PS1 source or finding was consulted. No game asset or screenshot is tracked.

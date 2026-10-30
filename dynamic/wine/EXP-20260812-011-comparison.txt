@@ -1,0 +1,65 @@
+EXP-20260812-011 matched Direct3D record-center comparison
+
+Inputs
+  bugs.exe SHA-256:
+    97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+  unchanged Training LEVEL1.DAT SHA-256:
+    494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+  record-126 +0x04 candidate DAT SHA-256:
+    1c7ccb3c21ec4bacf0733ed54466da93d451bd30f671a42eb04c43fc38c69952
+  record-126 +0x08 candidate DAT SHA-256:
+    9513fdfb7ace1fd6179054631cb3a735b5212bb645c75640736ddbdd50ea64c0
+
+Every accepted run logged both hardware gates:
+  INFO Screen mode 640x480x16 selected.
+  INIT : Starting Direct3D renderer.
+No accepted run logged INITSOFTRENDER. Every accepted run loaded
+level07\level1.dat, ended InitMainGame, and entered NextLife.
+
+Capture method
+  RUN-WINE-20260812-105947: unchanged control
+  RUN-WINE-20260812-110202: record 126, +0x04 -757 -> -245
+  RUN-WINE-20260812-110625: record 126, +0x08 70 -> 582
+
+Each run requested 15 native Gamescope 640x480 screenshots at approximately
+0.2-second wall-clock intervals after leaving the Training title pause. Capture
+bytes remain under ignored work/copies/EXP-20260812-011/evidence/. Ordered
+capture-set checksum-list SHA-256 values are:
+  control:  0a4509ed352623bd8221ef002ab348fb22e98e88db3a52bb7e2f83d8cc57ca4d
+  +0x04:    eee0a756b2f2d23d18e1f2bc2a927f38aa0ffe0fa330b12901b88d65219fa7c2
+  +0x08:    1496f2d32dc748e5701fa5c2363c68f76f5594f105e5bbd7b7666282fa25d5a7
+
+Frame 08 is byte-identical across all three runs:
+  bfece149ba83b20a632cd9dc4a88c0fa1c1581cb927f30a64a3147252ab0ae6f
+  exact differing pixels, control versus +0x04: 0
+  exact differing pixels, control versus +0x08: 0
+
+Receipts and byte locality
+  +0x04 receipt SHA-256:
+    1ff401f1ae5fddcc1c10f57aa8205ee7b2f7ad071290f5dc648f99ad45fdd429
+  +0x08 receipt SHA-256:
+    88098ef0164a2c6e48429db6d6f12427a96bf9a2df91f902ff9f53843ccbdc8b
+  Exact DAT comparison found one changed byte per candidate: zero-based 0x0E8D
+  inside field +0x04 and zero-based 0x0E91 inside field +0x08. Every other
+  source byte is unchanged.
+
+Static interpretation boundary
+  In 0x0044D430, +0x08 is read as a dword at 0x0044D59F and 0x0044D6AD for
+  candidate-distance tests; +0x04 and +0x08 are read as words at 0x0044D612
+  and 0x0044D623 for the camera-relative test. At 0x00449B61, the dispatch-0x49
+  path replaces the record pointer with record +0x10, then uses that relocated
+  payload's own first three dwords for render placement. The record-center
+  values are not passed as that dispatch's render placement.
+
+Interpretation boundary
+  The accepted +512 edits do not visibly move record 126 in the tested start
+  view. Together with the static pointer switch, this supports an upstream
+  visibility-center role rather than a render-placement role for these fields
+  in the bounded dispatch. The edits may still change selection at another
+  camera position; one identical phase does not prove global irrelevance.
+
+Negative result and reconciliation
+  Same-index frames outside the exact match contain animation-phase noise in
+  one or both comparisons. Frame 08 is exact across all three runs and is the
+  retained discriminator. One first +0x08 attempt reached Direct3D but did not
+  accept the Training menu input; it was terminated and is not evidence.

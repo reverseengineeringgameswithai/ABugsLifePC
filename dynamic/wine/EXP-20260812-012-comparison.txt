@@ -1,0 +1,65 @@
+EXP-20260812-012 matched Direct3D record +0x0C visibility-bound comparison
+
+Inputs
+  bugs.exe SHA-256:
+    97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+  unchanged Training LEVEL1.DAT SHA-256:
+    494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+  record-125 +0x0C-zero DAT SHA-256:
+    47b7f45e39137f7decdd4ca94db2ef663ee868e6d506bc88511569ded74d7c00
+
+Accepted runs
+  RUN-WINE-20260812-105947: unchanged control reused from EXP-20260812-011
+  RUN-WINE-20260812-111403: record 125, signed +0x0C 1259 -> 0
+
+Both logs contain the 640x480x16 and Direct3D hardware gates, omit
+INITSOFTRENDER, load level07\level1.dat, end InitMainGame, and enter NextLife.
+
+Capture method
+  The accepted candidate run requested 15 native Gamescope 640x480 screenshots
+  at approximately 0.2-second intervals two seconds after the accepted key at
+  the Training title pause. Capture bytes remain under ignored
+  work/copies/EXP-20260812-012/evidence/seq-field-0c-zero-rerun/.
+
+Ordered capture-set checksum-list SHA-256 values:
+  control:    0a4509ed352623bd8221ef002ab348fb22e98e88db3a52bb7e2f83d8cc57ca4d
+  candidate:  1ee812d92fab172fe0aa83e8a7a6cc2657ba61f47a3b0cb82dc7f1c80fbe2997
+
+Frame 02 is the first same-index frame after initial phase noise whose exact
+differences are confined to record 125's independently identified right-edge
+region:
+  control SHA-256:
+    6573d0ed641f0391baf7d39ff7cb6bbd1f26ac5debff97fffc585104da27403f
+  candidate SHA-256:
+    be4550442a9c4dffcd39bd619999dc1d79fb786a1d0139bba378be99b1f711ec
+  differing pixels: 756 of 307200 (0.246094%)
+  normalized RMSE: 0.00556606
+  exact difference union: 25x109+615+158
+  differing pixels outside that union: 0
+  prior record-125 move-away union: 24x99+616+124 (EXP-20260812-008)
+
+Frames 08, 09, 10, 13, and 14 are byte-identical. In the other phase-matched
+frames, the only differences are portions of the same animated right-edge
+element as it enters or leaves the frame. Zeroing +0x0C therefore changes
+selection of the partially visible placement; it does not reposition content.
+
+Receipt and byte locality
+  receipt SHA-256:
+    1fbaf30adfbb31e1f29a646db235380839e0b16f0173083f693a59dfa0f7d4d9
+  Exact DAT comparison found changes only at zero-based 0x0E80-0x0E81, record
+  125 field +0x0C. Every other source byte is unchanged.
+
+Static interpretation boundary
+  0x0044D5C4 reads signed +0x0C, divides it toward zero by 16, squares it, and
+  subtracts the result in the coarse center-distance test. 0x0044D63A reads it
+  again and uses it as the near and screen-bound margin after the center
+  transform. This establishes a visibility-bound use for positive values. The
+  meaning of the 508 negative signed +0x0C values in the local corpus remains
+  unknown.
+
+Negative result and reconciliation
+  An earlier candidate sequence remained on the Training title because the
+  exit key was not accepted; a subsequent sequence began several seconds late.
+  Both were rejected for visual comparison. The retained rerun ties capture
+  timing directly to the accepted title input and reaches NextLife before the
+  sequence conclusion is used.

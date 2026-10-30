@@ -1,0 +1,110 @@
+{
+  "release_schema_version": 1,
+  "release_id": "ablpc-toolkit-v1.0.0",
+  "toolkit_version": "1.0.0",
+  "archive_name": "ablpc-toolkit-v1.0.0.tar",
+  "package_root": "ablpc-toolkit-v1.0.0",
+  "source_date_epoch": 1786737600,
+  "package_files": [
+    "README.md",
+    "Vault/00-System/Environment Status.md",
+    "Vault/10-Environment/Wine Linux Play Baseline.md",
+    "mods/chars-flick-all-from-chars3-flickd-all.json",
+    "mods/level01-primary-record-261-candidate-far.json",
+    "mods/level01-primary-record-261-target-3459c.json",
+    "mods/training-central-flower-cluster-candidate-far.json",
+    "mods/training-primary-record-124-candidate-far.json",
+    "mods/training-primary-record-124-target-111e4.json",
+    "mods/training-primary-record-125-candidate-far.json",
+    "mods/training-primary-record-125-field-0c-zero.json",
+    "mods/training-primary-record-125-target-1319c.json",
+    "mods/training-primary-record-126-candidate-far.json",
+    "mods/training-primary-record-126-field-04-plus-512.json",
+    "mods/training-primary-record-126-field-08-plus-512.json",
+    "reimplementation/M6-RELEASE.md",
+    "reimplementation/README.md",
+    "reimplementation/ablpc/__init__.py",
+    "reimplementation/ablpc/__main__.py",
+    "reimplementation/ablpc/anm.py",
+    "reimplementation/ablpc/cli.py",
+    "reimplementation/ablpc/compatibility.py",
+    "reimplementation/ablpc/content_census.py",
+    "reimplementation/ablpc/level_dat.py",
+    "reimplementation/ablpc/manifest.py",
+    "reimplementation/ablpc/release.py",
+    "reimplementation/ablpc/release_cli.py",
+    "reimplementation/ablpc/smoke.py",
+    "reimplementation/compatibility/m4-v0.1.json",
+    "reimplementation/compatibility/m4-v0.2.json",
+    "reimplementation/release/m6-v1.0.0.json",
+    "scripts/ablpc-mod",
+    "scripts/ablpc-release",
+    "scripts/check-m4-compatibility.py",
+    "scripts/m6-smoke",
+    "scripts/play-pristine.sh"
+  ],
+  "supported_inputs": {
+    "disc_iso_sha256": "b0c3da82688c511f920a5559bdc3dcb8354d253182790a239665c8cd080d9ed9",
+    "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "manifest_schema_versions": [
+      1,
+      2
+    ],
+    "compatibility_statements": {
+      "reimplementation/compatibility/m4-v0.1.json": "c3427d44cf32619a1f9bbcab7c51e67c0846b35d9d53eab7632ff6356c0beaf0",
+      "reimplementation/compatibility/m4-v0.2.json": "dacfcab8c1d27e5a63db870f347eb08701f868ca678cafdd178913266f20ccb2"
+    },
+    "data_hashes": {
+      "CD/CHARS/FLICK.ALL": "a2f23220392d7fb4880bbab7acab9393fe6da059961d620e7b85c8df3f4f4ac6",
+      "CD/CHARS3/FLICKD.ALL": "6e5afb4f9ea649bc305fdafeb027aece25914b27a017d04841bf4298634079a4",
+      "CD/LEVEL01/LEVEL.DAT": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53",
+      "CD/LEVEL07/LEVEL1.DAT": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22"
+    },
+    "level_dat_corpus_count": 21
+  },
+  "primary_environment": {
+    "os": "Linux",
+    "distribution": "Fedora Linux 44 (Workstation Edition)",
+    "kernel": "7.0.11-200.fc44.x86_64",
+    "architecture": "x86_64",
+    "python": "3.14.6",
+    "wine": "wine-11.0 (Staging)",
+    "gamescope_package": "gamescope-3.16.25-1.fc44.x86_64",
+    "renderer": "WineD3D Direct3D hardware path via EGL",
+    "game_surface": "640x480x16",
+    "presentation": "Gamescope fit scaling with nearest filter"
+  },
+  "smoke_matrix": [
+    {
+      "case_id": "training-scene-target",
+      "scope": "Training / CD/LEVEL07/LEVEL1.DAT",
+      "manifest": "mods/training-primary-record-124-target-111e4.json",
+      "workflow": "stage-launch-dry-run-restore"
+    },
+    {
+      "case_id": "level01-scene-target",
+      "scope": "Level 01 / CD/LEVEL01/LEVEL.DAT",
+      "manifest": "mods/level01-primary-record-261-target-3459c.json",
+      "workflow": "stage-launch-dry-run-restore"
+    },
+    {
+      "case_id": "training-character-whole-file",
+      "scope": "Training / CD/CHARS/FLICK.ALL",
+      "manifest": "mods/chars-flick-all-from-chars3-flickd-all.json",
+      "workflow": "stage-launch-dry-run-restore"
+    }
+  ],
+  "limitations": [
+    "Only the named executable, data, manifest schema, and compatibility-statement hashes are supported; other versions are untested.",
+    "The automated matrix proves clean staging, launcher readiness, and exact restoration; it does not automate gameplay or claim a rendered result.",
+    "Hardware acceleration remains a manual Down-then-confirm selection and a run is accepted only with all four documented Direct3D log markers and no INITSOFTRENDER.",
+    "WineD3D, driver, texture filtering, host compositor, and capture differences outside the recorded primary configuration are untested.",
+    "The tested display path is a 640x480x16 game surface with Gamescope fit/nearest presentation; other displays and filters are untested.",
+    "The smoke dry-run validates private null-sink command construction but does not play or measure audio; other audio servers and devices are untested.",
+    "Input automation is not provided; menu, level, and gameplay input remain manual.",
+    "Toolkit rollback changes only the selected asset-free installed tool version and never rolls back, deletes, or backs up game files.",
+    "Manifest schemas 1 and 2 require no release migration; unknown future schemas fail closed rather than being rewritten.",
+    "Installed lifecycle checks require lexical non-link directories, canonical single-link schema-2 state/package files, exact package topology, and state-locked archive/manifest/tree identities for every installed version before mutation; concurrent replacement after inspection is unsupported.",
+    "Windows 98, modern Windows, non-x86_64 Linux, other Wine/Gamescope versions, other kernels, and other filesystems are untested."
+  ]
+}

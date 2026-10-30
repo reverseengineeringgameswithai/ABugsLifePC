@@ -1,0 +1,391 @@
+{
+  "experiment": "EXP-20260908-020",
+  "result": "User-approved scattered population banked; bounded native, Blender and live acceptance",
+  "user_approval": {
+    "group": "good work, they are all here",
+    "scattered": "The general thing looks good: enemies are scattered. Bank this"
+  },
+  "counts": {
+    "spider": 2,
+    "mosquito": 3,
+    "bee": 2,
+    "pill-bug": 2,
+    "caterpillar": 1
+  },
+  "placements": [
+    {
+      "id": "Bee / wasp 01",
+      "kind": "bee",
+      "position": [
+        6200,
+        -3665,
+        22000
+      ],
+      "slot": 3,
+      "native_type": 13,
+      "donor_slot": 3,
+      "script": 5
+    },
+    {
+      "id": "Bee / wasp 02",
+      "kind": "bee",
+      "position": [
+        19000,
+        -1445,
+        20400
+      ],
+      "slot": 0,
+      "native_type": 13,
+      "donor_slot": 3,
+      "script": 5
+    },
+    {
+      "id": "Caterpillar 01",
+      "kind": "caterpillar",
+      "position": [
+        11100,
+        -4881,
+        19600
+      ],
+      "slot": 13,
+      "native_type": 40,
+      "donor_slot": 13,
+      "script": 37
+    },
+    {
+      "id": "Mosquito 01",
+      "kind": "mosquito",
+      "position": [
+        7600,
+        -3883,
+        18000
+      ],
+      "slot": 4,
+      "native_type": 10,
+      "donor_slot": 4,
+      "script": 4
+    },
+    {
+      "id": "Mosquito 02",
+      "kind": "mosquito",
+      "position": [
+        13200,
+        -5119,
+        22200
+      ],
+      "slot": 1,
+      "native_type": 10,
+      "donor_slot": 4,
+      "script": 4
+    },
+    {
+      "id": "Mosquito 03",
+      "kind": "mosquito",
+      "position": [
+        22000,
+        -5800,
+        22400
+      ],
+      "slot": 2,
+      "native_type": 10,
+      "donor_slot": 4,
+      "script": 4
+    },
+    {
+      "id": "Pill bug 01",
+      "kind": "pill-bug",
+      "position": [
+        4500,
+        -3133,
+        20300
+      ],
+      "slot": 5,
+      "native_type": 39,
+      "donor_slot": 2,
+      "script": 36
+    },
+    {
+      "id": "Pill bug 02",
+      "kind": "pill-bug",
+      "position": [
+        17200,
+        -4111,
+        26000
+      ],
+      "slot": 6,
+      "native_type": 39,
+      "donor_slot": 2,
+      "script": 36
+    },
+    {
+      "id": "Spider 01",
+      "kind": "spider",
+      "position": [
+        5200,
+        -3199,
+        17000
+      ],
+      "slot": 7,
+      "native_type": 9,
+      "donor_slot": 0,
+      "script": 1
+    },
+    {
+      "id": "Spider 02",
+      "kind": "spider",
+      "position": [
+        18500,
+        -1436,
+        21800
+      ],
+      "slot": 8,
+      "native_type": 9,
+      "donor_slot": 0,
+      "script": 1
+    }
+  ],
+  "hashes": {
+    "LEVEL.DAT": "cf12f4e15d07f88360b0728b5f47792b55eb19f30cc5da5b3f14e5c618c93edb",
+    "TERRAIN.ALL": "314d3cf4d98cf4466376543bf7f47399506eb119732be1f64ebe725d0345ca98",
+    "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+    "bugs.exe": "16b41c4cd0aebe8800d902e14331d8b30d58030a62e865f5fc5fb08952d11dbf",
+    "LEVEL.RAW": "b29cd09868a1e3978f4c0e98b5b5ed7de411c453106afaef06a343c5ffb044a0"
+  },
+  "original_raw_sha256": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+  "retail_exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "native": {
+    "decoder": "0049A200",
+    "loader": "00465030",
+    "source_copy": "0046574D",
+    "source_base": "00599EB0",
+    "actor_pool": "0059B628",
+    "builder": "0041C420",
+    "initializer": "0041BD10",
+    "vm": "0041DC60",
+    "models": "00445020",
+    "packet_index": 31,
+    "packet_offset": 299129,
+    "rows": 64,
+    "stride": 28,
+    "native_packets": 169,
+    "initialization_cases": [
+      0,
+      5,
+      53
+    ]
+  },
+  "bank": {
+    "accepted": true,
+    "manifest": "work/design-banks/EXP-20260908-020-scattered-enemies/manifest.json",
+    "manifest_sha256": "24ea179fb9ff994bbf0e54452892bf3c9493bda255eded9fb4c182e47198f582",
+    "rollback_files_verified": {
+      "moonlit-cliffs-berries-flowers": 771,
+      "moonlit-cliffs-enemies": 771
+    },
+    "roles": {
+      "project": {
+        "source": "work/level-projects/moonlit-cliffs-enemies-scattered",
+        "bank": "work/design-banks/EXP-20260908-020-scattered-enemies/project",
+        "file_count": 771
+      },
+      "build": {
+        "source": "work/copies/moonlit-cliffs-enemies-scattered-01",
+        "bank": "work/design-banks/EXP-20260908-020-scattered-enemies/build",
+        "file_count": 724
+      }
+    }
+  },
+  "current_project": "work/level-projects/moonlit-cliffs-enemies-scattered",
+  "current_build": "work/copies/moonlit-cliffs-enemies-scattered-01",
+  "runtime": {
+    "meta": {
+      "leader": {
+        "pid": 173648,
+        "start": 1886516,
+        "group": 173648,
+        "cmd": "/usr/bin/bash /home/dev/ABLPC/work/experiments/EXP-20260908-020/scattered/preview/launch.sh "
+      },
+      "stage": "/home/dev/ABLPC/work/copies/moonlit-cliffs-enemies-scattered-play-01/game",
+      "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260908-020/scattered/preview/prefix",
+      "hashes": {
+        "PC/BUGS/CD/LEVEL01/DP_PREFS": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+        "PC/BUGS/CD/LEVEL01/LEVEL.BIN": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+        "PC/BUGS/CD/LEVEL01/LEVEL.KEP": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+        "PC/BUGS/CD/LEVEL01/LEVEL.RAW": "b29cd09868a1e3978f4c0e98b5b5ed7de411c453106afaef06a343c5ffb044a0",
+        "PC/BUGS/CD/LEVEL01/LEVEL1.BIN": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+        "PC/BUGS/CD/LEVEL01/LEVEL1.DAT": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+        "PC/BUGS/CD/LEVEL01/LEVEL1.RAW": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+        "PC/BUGS/CD/LEVEL01/LEVEL1A.VB": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+        "PC/BUGS/CD/LEVEL01/LEVEL1A.VH": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+        "PC/BUGS/CD/LEVEL01/LEVEL2.DAT": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+        "PC/BUGS/CD/LEVEL01/LEVEL2C.VB": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+        "PC/BUGS/CD/LEVEL01/LEVEL2C.VH": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+        "PC/BUGS/CD/LEVEL01/TERR1.ALL": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+        "PC/BUGS/CD/LEVEL01/WALLSPL-.SPL": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+        "PC/BUGS/CD/LEVEL01/TERRAIN.ALL": "314d3cf4d98cf4466376543bf7f47399506eb119732be1f64ebe725d0345ca98",
+        "PC/BUGS/CD/LEVEL01/LEVEL.DAT": "cf12f4e15d07f88360b0728b5f47792b55eb19f30cc5da5b3f14e5c618c93edb",
+        "PC/BUGS/CD/BITS/PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+        "PC/BUGS/CD/CD.TXT": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d"
+      },
+      "game": {
+        "pid": 173884,
+        "start": 1886667,
+        "group": 173648,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\moonlit-cliffs-enemies-scattered-play-01\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "display": ":2",
+      "xwayland": {
+        "pid": 173678,
+        "start": 1886541,
+        "group": 173648,
+        "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+      },
+      "window": 14680071
+    },
+    "owned_process_count": 17,
+    "status": "intentionally open"
+  },
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260908-020/raw-check.json",
+      "sha256": "6de746f8c8d7a6f75d0e3eb09d76fd4cf0d9e9f14fa3d5125d9ae5f1973c0ebc"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/native-actors.json",
+      "sha256": "420992c897fde74d554a9f8e18b20c5862c223adf4d8cc6e88d4e1a9a62adb3f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/actor-census.json",
+      "sha256": "ac52fa0d3cd9c38c194df93b3fb3aac3e2c0b3a8aab03f6ef6e7dedb249d4f4e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/blender-authoring.json",
+      "sha256": "cdfbe59037885294bebf37c74c00a1fc781b02c6bb66b24ef21a5fb880b607a4"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/blender-authoring-scattered.json",
+      "sha256": "52b87bd58b71b3b34eb417ffc7e96e51ac2a764cfe4b149d0f50a551c0258fd8"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/blender-tests/result.json",
+      "sha256": "68b72c53fd08a7aa26114cbbab6e3c3112c92af36e8cc3f1f38b9ab45fe27c55"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/blender-scattered-tests/result.json",
+      "sha256": "68b72c53fd08a7aa26114cbbab6e3c3112c92af36e8cc3f1f38b9ab45fe27c55"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/edited-builds.json",
+      "sha256": "81ae9e17093c5d7f8f275e7cb83c81aef9c90d3321b5117e7dbb9ca9afa3fdf5"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/live-enemies.json",
+      "sha256": "1d6de9417c70f9c62a266d4bc59b4dfad16a083aecb5faf2ef116bcf4b90af44"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/scattered/live-enemies.json",
+      "sha256": "2f0b3d43232be3bd830cd493869eb3dc80b0ba27c61da7cc840972f39dcf4702"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/previous-close.json",
+      "sha256": "515c819c908a10bc5124536b765b6feb2d6bc54d9636beb701208d3d8923b53f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/scattered/previous-close.json",
+      "sha256": "9a35e3b6b689a754240fe3303ce9c0c7ef4c2627460f8bccc58917783927be88"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/scattered/play-copy.json",
+      "sha256": "0aaa5a80c48ca6fcbb746099cef9ad0381f7c9f314ee8eb5875c01ef30919869"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/scattered/preview/live-handoff-binding.json",
+      "sha256": "4554e12d86a2c3fdcbd140a9301e2444f0ea5005cf35125e89d1ee4f541a054f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/scattered/live-frame.json",
+      "sha256": "2a9515f31a2b79bf7f0299f4af7be489a9b16fcdd6ff29282c3847efbeec7751"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/final-audit.json",
+      "sha256": "ef19a8ead42bb0600b12ecad9bcb13e989ac0f025176bd8ac422e96fce9466a8"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/bank.json",
+      "sha256": "b6516ffb804bf7c9417146abd5147637c10e42e47f58d4571a28db4993c0ea03"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/bank-readme-update.json",
+      "sha256": "17d0d0f188a96f2055fed7bf9d66fa01f24704d86cf1ab8896ec8cd609f514ae"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/test-selection.json",
+      "sha256": "95f209a421a782b945c0a5b4d599eab2ad75439f5e26d0ebea1a965a83c4dad1"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/check.log",
+      "sha256": "705440dab897190054a054d77cfdc6342a460b7d29a0745827e1b5e57ac79d66"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/vault-final.log",
+      "sha256": "707666609199d4bc96198aed81745b2ea1fa64fca1e27c986421c27fc08f194d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/claim-current.json",
+      "sha256": "3dda3cc7b1f9a2cb25504986502d01ca9d8c3013a59d82740a80164b900019ca"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/claim-runtime.json",
+      "sha256": "02f410648ebad87b8aa2264b33dce0499d1aa1a091984299c5ba5da2d2579ecd"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/claim-mod.json",
+      "sha256": "d0988e185baf0d1f3d1732b0dd4df8e7f6e3748098bbfd3c80b8bf8bbe0c31fd"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/claim-route.json",
+      "sha256": "b4b31f8a17a0e2b32630f771bcdbb8a559a9892de26ba8cd0ea66b1edf625e1d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/function-00445020.json",
+      "sha256": "f6544f4b1fdbaac7a85343a45a336356c020c3882e173736de8e2463b2abfcd0"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/build-0041c420.json",
+      "sha256": "4dfa5f32bf119606badd08ef21ee55931e2293193ca4caddbbb4dfcb4c898886"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/init-0041bd10.json",
+      "sha256": "609fae8cf2f4397c0f3d3ad16abd6a75ec819b19ff51cdbd92393105bdfe7145"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/vm-0041dc60.json",
+      "sha256": "50d4a42e56213301700fd79f0b9b9af1d2db163a8ecd4b08b83835eee9b46410"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/decompress-0049a200.json",
+      "sha256": "c27b45c5a6df78a6a47ce2fc9c3a0a02d8597a233fe47e9eb83d4ab9d84d49e3"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-020/loader-00465030.json",
+      "sha256": "cc445c52cf9e09bb15eefd237e1431cc8cc9ee7930511209b39953a225797d3d"
+    }
+  ],
+  "limits": [
+    "Editor silhouettes only; rotation/scale/AI/path editing unsupported",
+    "No exhaustive combat/respawn/full-pool/placement/performance claim",
+    "No live writes; streaming remains paused"
+  ],
+  "cross_port": {
+    "source": "SRC-PS1-ABL",
+    "commit": "1186eb6eb9712689a0ebd6a5d1d5c1ba61cc2f51",
+    "note": "XPORT-20260908-009 - Anthill enemy placement and model correspondences"
+  },
+  "validation": {
+    "selected_make_check_passed": 379,
+    "vault_notes": 831,
+    "vault_errors": 0,
+    "vault_existing_warnings": 7,
+    "tracked_asset_violations": 0
+  }
+}

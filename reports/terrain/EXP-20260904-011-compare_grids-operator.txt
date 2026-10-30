@@ -1,0 +1,35 @@
+"""Compare bounded grid candidates against EXP009's already selected samples."""
+from pathlib import Path
+import json
+HERE=Path(__file__).resolve().parent;OLD=HERE.parent/'EXP-20260904-009'
+def tris(d):
+ return [[b['vertices'][i] for i in b['indices'][j:j+3]] for b in d['batches'] for j in range(0,len(b['indices']),3)]
+def depth(t,x,y):
+ a,b,c=t;det=(b['y']-c['y'])*(a['x']-c['x'])+(c['x']-b['x'])*(a['y']-c['y'])
+ if det==0:return None
+ u=((b['y']-c['y'])*(x-c['x'])+(c['x']-b['x'])*(y-c['y']))/det
+ v=((c['y']-a['y'])*(x-c['x'])+(a['x']-c['x'])*(y-c['y']))/det;w=1-u-v
+ if min(u,v,w)<-1e-9:return None
+ return u*a['z']+v*b['z']+w*c['z']
+analysis=json.loads((OLD/'pixel-depths-exploratory.json').read_text())
+c=json.loads((OLD/'paused-memory.json').read_text())['before']['camera_translation'];a=1409/4096;b=3845/4096;den=a*a+b*b
+targets=[]
+for row in analysis['rows']:
+ x,y=row['xy'];z=(-108544-c[1])/32*320/(y-240);xc=(x-320)/320*z
+ wx=c[0]+32*(a*xc-b*z)/den;wz=c[2]+32*(b*xc+a*z)/den;za,zc,zs=row['depths_actor_coarse_split']
+ if 163200<=wx<=184000 and 497600<=wz<=520000 and za is not None and z/16384<za:
+  targets.append(row|{'ideal_top_z':z/16384,'prior_split_loses':zs is None or za<zs})
+assert len(targets)==259
+results=[]
+for p in sorted(HERE.glob('grid-[0-9]-[0-9]*.json')):
+ d=json.loads(p.read_text());tt=tris(d);rows=[]
+ for row in targets:
+  zz=[z for t in tt if (z:=depth(t,*row['xy'])) is not None];z=min(zz) if zz else None
+  rows.append({'xy':row['xy'],'actor_z':row['depths_actor_coarse_split'][0],'box_z':z,'box_wins':z is not None and z<row['depths_actor_coarse_split'][0],'was_residual':row['prior_split_loses']})
+ prior255=[]
+ for row in analysis['inversions']:
+  zz=[z for t in tt if (z:=depth(t,*row['xy'])) is not None]
+  if not zz or min(zz)>=row['depths_actor_coarse_split'][0]:prior255.append(row['xy'])
+ result={'variant':p.stem,'grid':[d['nx'],d['nz']],'flip_top':d['flip_top'],'span':d['metadata']['mesh160_replaced_prefix_bytes'],'retained_targets':259,'box_wins':sum(r['box_wins'] for r in rows),'residual_box_wins':sum(r['was_residual'] and r['box_wins'] for r in rows),'prior255_still_occluded':255-len(prior255),'prior255_losing_points':prior255,'losing_points':[r for r in rows if not r['box_wins']],'six_prior_residuals':[r for r in rows if r['was_residual']]}
+ results.append(result);print({k:v for k,v in result.items() if k not in ('losing_points','six_prior_residuals')},flush=True)
+(HERE/'grid-comparison.json').write_text(json.dumps({'scope':'Original emitted hardware z, integer screen sample positions, 259 prior analytic-top samples; offline candidate screening, not live acceptance. Camera/actor reconstruction limitations from EXP009 remain.','variants':results},indent=2)+'\n')

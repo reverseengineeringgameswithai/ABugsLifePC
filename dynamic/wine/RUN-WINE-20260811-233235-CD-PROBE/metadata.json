@@ -1,0 +1,28 @@
+{
+  "run_id": "RUN-WINE-20260811-233235-CD-PROBE",
+  "started": "2026-08-11T23:32:35-04:00",
+  "ended": "2026-08-11T23:32:47-04:00",
+  "executable": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/bugs.exe",
+  "launched_as": "R:\\bugs.exe",
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "working_directory": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc",
+  "prefix": "/home/dev/ABLPC/work/wine/baseline",
+  "environment": "Wine",
+  "environment_version": "wine-11.0 (Staging)",
+  "cdrom_mapping": {
+    "drive": "R:",
+    "path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc",
+    "type": "cdrom",
+    "label": "BUGS_PC",
+    "verified_sentinel": "R:\\PC\\BUGS\\CD\\CD.TXT"
+  },
+  "wine_debug_channels": "+file,+drive,+mountmgr,+timestamp",
+  "time_limit_seconds": 12,
+  "exit_status": 124,
+  "outcome": "time-limit",
+  "status": "complete",
+  "artifacts": [
+    "stdout.txt",
+    "wine-debug.txt"
+  ]
+}

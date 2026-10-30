@@ -1,0 +1,1134 @@
+{
+  "tool": "gdb-harness",
+  "tool_version": "1.3.0",
+  "schema_version": 4,
+  "spec_schema_version": 4,
+  "time_window_start": "2026-08-13T11:36:20.803997-04:00",
+  "time_window_end": "2026-08-13T11:36:21.283104-04:00",
+  "log_start_offset": 64815,
+  "completion": {
+    "completed": true,
+    "accepted": true,
+    "stop_reason": "capture_complete",
+    "stops_observed": 417,
+    "watchpoints_installed": 3,
+    "watchpoints_deleted": 3,
+    "breakpoints_installed": 0,
+    "breakpoints_deleted": 0,
+    "cleanup_verified": true,
+    "detached": true,
+    "target_signal": null,
+    "error": null,
+    "survival_required": true,
+    "survival_verified": true,
+    "survival_receipt": {
+      "schema_version": 1,
+      "probe": "proc-identity-state-tracer",
+      "pid": 2626539,
+      "time_start": "2026-08-13T11:36:21.313578-04:00",
+      "time_end": "2026-08-13T11:36:22.615529-04:00",
+      "configuration": {
+        "required": true,
+        "settle_ms": 500,
+        "sample_count": 5,
+        "sample_interval_ms": 200,
+        "require_untraced": true,
+        "require_resumed": true
+      },
+      "identity_verified": true,
+      "identity": {
+        "pid": 2626539,
+        "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+        "cmdline": [
+          "R:\\PC\\BUGS\\bugs.exe",
+          "log",
+          "cheat",
+          "mpeg"
+        ],
+        "cwd": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS",
+        "exe_path": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS/bugs.exe",
+        "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+        "verified": true,
+        "checked_at": "2026-08-13T11:36:21.814607-04:00"
+      },
+      "samples": [
+        {
+          "index": 0,
+          "t_wall": "2026-08-13T11:36:21.814649-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 1,
+          "t_wall": "2026-08-13T11:36:22.014788-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 2,
+          "t_wall": "2026-08-13T11:36:22.215000-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 3,
+          "t_wall": "2026-08-13T11:36:22.415197-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 4,
+          "t_wall": "2026-08-13T11:36:22.615391-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        }
+      ],
+      "passed": true,
+      "failure_reasons": []
+    }
+  },
+  "direct3d_batch_capture": {
+    "schema_version": 1,
+    "completed": true,
+    "algorithm": "sha256",
+    "payload_bytes_retained": false,
+    "candidate_indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23
+    ],
+    "family_ids": [
+      "root_004c4108",
+      "root_004c410c"
+    ],
+    "warmup_rollovers_required": 1,
+    "rollovers_observed": 2,
+    "capture_cycles_requested": 1,
+    "ignored_unmatched_flushes": 32,
+    "cycles": [
+      {
+        "cycle_index": 0,
+        "entries": [
+          {
+            "entry_index": 0,
+            "vertex_count": 12,
+            "index_count": 18,
+            "byte_count": 420,
+            "sha256": "2cb5035f522be531235139e1d73c1be0969208b379864ba486bcc952ba5b4ecd",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 12,
+                "index_count": 18,
+                "vertex_byte_count": 384,
+                "index_byte_count": 36,
+                "flush_count": 0,
+                "sha256": "b0644e324c5f296f524c845a11af7a4109b01f9548dba99bb7259686bffff8b0",
+                "segments": [
+                  {
+                    "event_index": 1296,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 0,
+                    "post_vertex_count": 12,
+                    "vertex_count": 12,
+                    "vertex_byte_count": 384,
+                    "vertex_sha256": "27411782585ce8a7bdbd95e489b4f9154e78e3951056547f18a1de00d54ff08b",
+                    "pre_index_count": 0,
+                    "post_index_count": 18,
+                    "index_count": 18,
+                    "index_byte_count": 36,
+                    "index_sha256": "7f8ce26048620e460bfc2538587487a389b467ec75d3fe1101ac0f7efb543916"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 1,
+            "vertex_count": 11,
+            "index_count": 15,
+            "byte_count": 382,
+            "sha256": "58f81268d987bd49fea3c35d82eed171962b80e3ec49cf1220baf8489c91e895",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 11,
+                "index_count": 15,
+                "vertex_byte_count": 352,
+                "index_byte_count": 30,
+                "flush_count": 0,
+                "sha256": "58fddfdfd6059a0cf9f8e563bf4303be950b5312f0f6ecbd174f5bf1f773d94a",
+                "segments": [
+                  {
+                    "event_index": 1360,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 12,
+                    "post_vertex_count": 23,
+                    "vertex_count": 11,
+                    "vertex_byte_count": 352,
+                    "vertex_sha256": "edd9867eb217a7f8100309226634efac1a9a3878cf3833d009d766a38b18bad0",
+                    "pre_index_count": 18,
+                    "post_index_count": 33,
+                    "index_count": 15,
+                    "index_byte_count": 30,
+                    "index_sha256": "0a1e1575bee2a6fe643434ca59d78858a04e0a5f6045396888603781fc2400d8"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 2,
+            "vertex_count": 18,
+            "index_count": 24,
+            "byte_count": 624,
+            "sha256": "6b6d985f0428abb398c89d72db6e0874525aed6211e340143ca93d4639d0b388",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 18,
+                "index_count": 24,
+                "vertex_byte_count": 576,
+                "index_byte_count": 48,
+                "flush_count": 0,
+                "sha256": "730970bc2bd262ed8981867816dd2a4db654648bccbb1b820c09fa2f0ff847a3",
+                "segments": [
+                  {
+                    "event_index": 1424,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 23,
+                    "post_vertex_count": 41,
+                    "vertex_count": 18,
+                    "vertex_byte_count": 576,
+                    "vertex_sha256": "01a314c2f99645f8ab5c1cdec6e40ff8652c5f6e74e3e4de9b6f500cbea5ef8b",
+                    "pre_index_count": 33,
+                    "post_index_count": 57,
+                    "index_count": 24,
+                    "index_byte_count": 48,
+                    "index_sha256": "97783e64a7e777fec7bc24d407e6f10be625a83eea4a52ab2d21242fc3f1334d"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 3,
+            "vertex_count": 11,
+            "index_count": 15,
+            "byte_count": 382,
+            "sha256": "76bd7d3ec5967d46ddcd92ad9efae00d6f9ef89aac330d178a2c46d574ff5fae",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 11,
+                "index_count": 15,
+                "vertex_byte_count": 352,
+                "index_byte_count": 30,
+                "flush_count": 0,
+                "sha256": "bdbad2e4ecc2ae31c480efa78cb8be672375a8901ad14342aee1d09d474a0ce4",
+                "segments": [
+                  {
+                    "event_index": 1488,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 41,
+                    "post_vertex_count": 52,
+                    "vertex_count": 11,
+                    "vertex_byte_count": 352,
+                    "vertex_sha256": "4ace98ad0a4f2783e3c981b91862849789287f27b7ffce1a3ae56d742d550853",
+                    "pre_index_count": 57,
+                    "post_index_count": 72,
+                    "index_count": 15,
+                    "index_byte_count": 30,
+                    "index_sha256": "13e690fe9d83b9ef92d5ec917116ac3eec7174e3335ad8a7e46c7e7b4f04bb86"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 4,
+            "vertex_count": 18,
+            "index_count": 24,
+            "byte_count": 624,
+            "sha256": "69280857c05f6397280d660972a613c6d175a0ce6f600d4cefa9c0035a2b9b54",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 18,
+                "index_count": 24,
+                "vertex_byte_count": 576,
+                "index_byte_count": 48,
+                "flush_count": 0,
+                "sha256": "413ab604d6a066315d3f441b66beffb170fad04bd66d31859ea34d5879f26b05",
+                "segments": [
+                  {
+                    "event_index": 1552,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 52,
+                    "post_vertex_count": 70,
+                    "vertex_count": 18,
+                    "vertex_byte_count": 576,
+                    "vertex_sha256": "0da5e3e061562663d76b03d4b5f9b37de28d69e8c14bf7bec3a1ee7a6d1b4731",
+                    "pre_index_count": 72,
+                    "post_index_count": 96,
+                    "index_count": 24,
+                    "index_byte_count": 48,
+                    "index_sha256": "c1d533f568682629611eb5fb28446a697baec641aea0d5f087b9a60b6e44a812"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 5,
+            "vertex_count": 18,
+            "index_count": 24,
+            "byte_count": 624,
+            "sha256": "132d96408fbc34a28d4da00f86abb602bb750b854c9bd1b161564b4b01c8896c",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 18,
+                "index_count": 24,
+                "vertex_byte_count": 576,
+                "index_byte_count": 48,
+                "flush_count": 0,
+                "sha256": "fdfa396b9fa6ff5e8ec528189c2d7288fc300406f1d0eeb65ed8716579ab433a",
+                "segments": [
+                  {
+                    "event_index": 1616,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 70,
+                    "post_vertex_count": 88,
+                    "vertex_count": 18,
+                    "vertex_byte_count": 576,
+                    "vertex_sha256": "5789fcdfbdad40185bfc2fedfc5c9b6c9aa9f5fac942afe86622800db4ebdb65",
+                    "pre_index_count": 96,
+                    "post_index_count": 120,
+                    "index_count": 24,
+                    "index_byte_count": 48,
+                    "index_sha256": "fb06fc2e92d096b75b6e5f0b10e54cce7ccb46d77b0a5873ff449a0f6fa37399"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 6,
+            "vertex_count": 11,
+            "index_count": 15,
+            "byte_count": 382,
+            "sha256": "e527d9567f7d465a0b688197c212f4576366c7e4724b34c98287f16731a0d8f3",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 11,
+                "index_count": 15,
+                "vertex_byte_count": 352,
+                "index_byte_count": 30,
+                "flush_count": 0,
+                "sha256": "7eda043481a01ab9417ede07e6d50886f119b094e7a41d077e33a6a5cb2d9eb9",
+                "segments": [
+                  {
+                    "event_index": 1680,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 88,
+                    "post_vertex_count": 99,
+                    "vertex_count": 11,
+                    "vertex_byte_count": 352,
+                    "vertex_sha256": "bbb96fac407aaf4fb65ba81cfeaf6e384614ae02960c813c38c86f05d4803254",
+                    "pre_index_count": 120,
+                    "post_index_count": 135,
+                    "index_count": 15,
+                    "index_byte_count": 30,
+                    "index_sha256": "56452207a203f6f4f5002244dce3a14dce237b6ff3e7354d085ef685215c2b5a"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 7,
+            "vertex_count": 18,
+            "index_count": 24,
+            "byte_count": 624,
+            "sha256": "ca6e3ec3eb6eedc07daae49157fd620bcc8670c2996a8248746510cf23fb3d39",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 18,
+                "index_count": 24,
+                "vertex_byte_count": 576,
+                "index_byte_count": 48,
+                "flush_count": 0,
+                "sha256": "d4f6a20ec0bab395a642a9397f2ccdfdfcc0c9f047a141ed49d7a573a03edca8",
+                "segments": [
+                  {
+                    "event_index": 1744,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 99,
+                    "post_vertex_count": 117,
+                    "vertex_count": 18,
+                    "vertex_byte_count": 576,
+                    "vertex_sha256": "9eb767afac38eb9f50c02aedafebafebae2b3b63e85232e9942664a6241c9b2a",
+                    "pre_index_count": 135,
+                    "post_index_count": 159,
+                    "index_count": 24,
+                    "index_byte_count": 48,
+                    "index_sha256": "9350a2d59ea0187c1dcfdd2131b29c0c220ccdb0b60de22650c13b73dadd0fe6"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 9,
+            "vertex_count": 24,
+            "index_count": 36,
+            "byte_count": 840,
+            "sha256": "6905a401e86dfc70637b5b04868964bf166a219cf86c327ae20370f5684b3cff",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 24,
+                "index_count": 36,
+                "vertex_byte_count": 768,
+                "index_byte_count": 72,
+                "flush_count": 0,
+                "sha256": "16e316c7eeb04526a9bf3cd90ba7e3a0455aac89974f806c18a476402fd3717a",
+                "segments": [
+                  {
+                    "event_index": 1808,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 117,
+                    "post_vertex_count": 141,
+                    "vertex_count": 24,
+                    "vertex_byte_count": 768,
+                    "vertex_sha256": "dff101de427f4db73941454091bfa8afcfb29223332d00dc758f15c598d8abe5",
+                    "pre_index_count": 159,
+                    "post_index_count": 195,
+                    "index_count": 36,
+                    "index_byte_count": 72,
+                    "index_sha256": "487dea03368722177961652de0cb559285ad158ea5a58982a8f218a14ced8e26"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 10,
+            "vertex_count": 98,
+            "index_count": 144,
+            "byte_count": 3424,
+            "sha256": "425ae3e7e692d57b93418794a5b65ea38cd6d38b300c052cc310acbee1721dee",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 98,
+                "index_count": 144,
+                "vertex_byte_count": 3136,
+                "index_byte_count": 288,
+                "flush_count": 0,
+                "sha256": "5b0b11fb3a2ab9c0ac28f01e81da052ec940ec85d1082d6295793bc03bb86998",
+                "segments": [
+                  {
+                    "event_index": 1872,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 141,
+                    "post_vertex_count": 239,
+                    "vertex_count": 98,
+                    "vertex_byte_count": 3136,
+                    "vertex_sha256": "5014c6f8ad0da9c5433c170f6a05582dd7857e5c634ddc6d599724e0843cb341",
+                    "pre_index_count": 195,
+                    "post_index_count": 339,
+                    "index_count": 144,
+                    "index_byte_count": 288,
+                    "index_sha256": "8c3acb8120a22ae77f92efd10777cb484dbfc4cb6653e1b01085567867d4afe8"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 11,
+            "vertex_count": 4,
+            "index_count": 6,
+            "byte_count": 140,
+            "sha256": "0db3f1728856190b57b8fc04cab9e9e38b0c355e5279b5b2f56288d6cb4574c2",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 4,
+                "index_count": 6,
+                "vertex_byte_count": 128,
+                "index_byte_count": 12,
+                "flush_count": 0,
+                "sha256": "4fd677dc581e54e0e595d2a821f862f7e5c87e4a67b47bf7e039e4e27fc00d67",
+                "segments": [
+                  {
+                    "event_index": 1936,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 239,
+                    "post_vertex_count": 243,
+                    "vertex_count": 4,
+                    "vertex_byte_count": 128,
+                    "vertex_sha256": "0de93b4ea316ebad2113ef6af6772918600306900b821f13fb9ef056c0088109",
+                    "pre_index_count": 339,
+                    "post_index_count": 345,
+                    "index_count": 6,
+                    "index_byte_count": 12,
+                    "index_sha256": "e8fcd65453b649c63027e5806d402b2471b53449824e852ea7e4b441f73781bd"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 12,
+            "vertex_count": 4,
+            "index_count": 6,
+            "byte_count": 140,
+            "sha256": "a2242981618e65ea7b1d385ded0f4d3bd72aa99584465be6fe883a83521c1260",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 4,
+                "index_count": 6,
+                "vertex_byte_count": 128,
+                "index_byte_count": 12,
+                "flush_count": 0,
+                "sha256": "f33f8da01c6e24fe4b95a9f843321b4652c131815936b87fe0e95a09e7ce8d81",
+                "segments": [
+                  {
+                    "event_index": 2000,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 243,
+                    "post_vertex_count": 247,
+                    "vertex_count": 4,
+                    "vertex_byte_count": 128,
+                    "vertex_sha256": "3962ad2e188cd9dce3b8f4c101df36528cd4f02269da008580607c4e8809969b",
+                    "pre_index_count": 345,
+                    "post_index_count": 351,
+                    "index_count": 6,
+                    "index_byte_count": 12,
+                    "index_sha256": "f241acea35d0f4b16e97c5b441dceb30186f33f38d4e240151db81f432b19048"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 13,
+            "vertex_count": 11,
+            "index_count": 15,
+            "byte_count": 382,
+            "sha256": "a2a86275ffbe516726f1636ea9bdbd00f5a2c90bf1e8c43bfcda8dc81eff96d5",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 11,
+                "index_count": 15,
+                "vertex_byte_count": 352,
+                "index_byte_count": 30,
+                "flush_count": 0,
+                "sha256": "e90e4dac882d1514adbe52d05340c5917e1ee2a69b78afc89ae0ea03cbf99218",
+                "segments": [
+                  {
+                    "event_index": 2064,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 247,
+                    "post_vertex_count": 258,
+                    "vertex_count": 11,
+                    "vertex_byte_count": 352,
+                    "vertex_sha256": "fbdae6232bea26f5da83db04ab8407172b6a0d5b1bf23d3754a0178cd2109f2d",
+                    "pre_index_count": 351,
+                    "post_index_count": 366,
+                    "index_count": 15,
+                    "index_byte_count": 30,
+                    "index_sha256": "32f25c8213e8a6e175efbcfa683d2383f052751cbc931ba71a2f2117746ab681"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 14,
+            "vertex_count": 11,
+            "index_count": 15,
+            "byte_count": 382,
+            "sha256": "9e7fa84c9f6e4703a4d188981d213d660d3e24331e790611386cb5c5a9713969",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 11,
+                "index_count": 15,
+                "vertex_byte_count": 352,
+                "index_byte_count": 30,
+                "flush_count": 0,
+                "sha256": "d2054b526cce14bfee4fbae514f99bb7d62ecf2f54f3f2e41ead611566b89490",
+                "segments": [
+                  {
+                    "event_index": 2128,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 258,
+                    "post_vertex_count": 269,
+                    "vertex_count": 11,
+                    "vertex_byte_count": 352,
+                    "vertex_sha256": "b06791b3e6b4fcb0a68480d52320bb2832327bd43ff2d4682cd32a82c0174454",
+                    "pre_index_count": 366,
+                    "post_index_count": 381,
+                    "index_count": 15,
+                    "index_byte_count": 30,
+                    "index_sha256": "37f6d2c905e37ac713d23c7f8bc72073085108cb731685478307fc73b30f322b"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 15,
+            "vertex_count": 19,
+            "index_count": 27,
+            "byte_count": 662,
+            "sha256": "74cd36ba17ee34322f0f128f977f2685058d399826ca3117978db075df914b4d",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 19,
+                "index_count": 27,
+                "vertex_byte_count": 608,
+                "index_byte_count": 54,
+                "flush_count": 0,
+                "sha256": "293f188e2dfd8e56c8d4903cde0bbd5532579486a3a4c3a7333d1de139ad8640",
+                "segments": [
+                  {
+                    "event_index": 2192,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 269,
+                    "post_vertex_count": 288,
+                    "vertex_count": 19,
+                    "vertex_byte_count": 608,
+                    "vertex_sha256": "6ba34ee9ab9a4511235cfd23f924a405ca278804d00266aee94eab939a29b966",
+                    "pre_index_count": 381,
+                    "post_index_count": 408,
+                    "index_count": 27,
+                    "index_byte_count": 54,
+                    "index_sha256": "a9af30f730f78e4a64df088d94cac6398c34865ef8399849f584926d1fbffc2c"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 16,
+            "vertex_count": 4,
+            "index_count": 6,
+            "byte_count": 140,
+            "sha256": "d1c585830468dd898ddc62b2ff86473466fe9975acf6919572e925a2b08ef6e6",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 4,
+                "index_count": 6,
+                "vertex_byte_count": 128,
+                "index_byte_count": 12,
+                "flush_count": 0,
+                "sha256": "afab026d7e9027694c71f152e3d706e7ce0a38752f59ef7dba16fb5f56c23aa7",
+                "segments": [
+                  {
+                    "event_index": 2256,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 288,
+                    "post_vertex_count": 292,
+                    "vertex_count": 4,
+                    "vertex_byte_count": 128,
+                    "vertex_sha256": "ce111bb191c30dbaca3f97b1cece2dfd8526d188bcdd39bb598ffb817c645cab",
+                    "pre_index_count": 408,
+                    "post_index_count": 414,
+                    "index_count": 6,
+                    "index_byte_count": 12,
+                    "index_sha256": "93a32998ca9c74438d4eb88043e95a24e3653d38321af9121e02cc6fcbbcdaca"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 17,
+            "vertex_count": 4,
+            "index_count": 6,
+            "byte_count": 140,
+            "sha256": "430b83293d7d0cf234d9bdd7d1a6d88cb22ac914b4fa7f05b685d96b0ce55d77",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 4,
+                "index_count": 6,
+                "vertex_byte_count": 128,
+                "index_byte_count": 12,
+                "flush_count": 0,
+                "sha256": "4091dba063f72b2952f036e4442d1e8a0845030b202241fa85bc8aa7b4e5cb55",
+                "segments": [
+                  {
+                    "event_index": 2320,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 292,
+                    "post_vertex_count": 296,
+                    "vertex_count": 4,
+                    "vertex_byte_count": 128,
+                    "vertex_sha256": "e331030bdb3ee2b7a98edd16362887606da1beac09314ad6fd5bf616409af3e6",
+                    "pre_index_count": 414,
+                    "post_index_count": 420,
+                    "index_count": 6,
+                    "index_byte_count": 12,
+                    "index_sha256": "6c671ce378878979e26f98f1ff22a99d1a126e528610604f01cec59d5978df3d"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 18,
+            "vertex_count": 11,
+            "index_count": 15,
+            "byte_count": 382,
+            "sha256": "45aadc4f53a92007b644472745a0894a8b150f8cb1ec50c0b6bc141ee9b76047",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 11,
+                "index_count": 15,
+                "vertex_byte_count": 352,
+                "index_byte_count": 30,
+                "flush_count": 0,
+                "sha256": "17ff5f83d22ba35ae368c58c8d1846b430c0fd3118c5d8dc23770addf2a75b07",
+                "segments": [
+                  {
+                    "event_index": 2384,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 296,
+                    "post_vertex_count": 307,
+                    "vertex_count": 11,
+                    "vertex_byte_count": 352,
+                    "vertex_sha256": "38113cb827cda250396ec6ff365988e5f5e1bd62c2fe6fb960a7d95748d7682e",
+                    "pre_index_count": 420,
+                    "post_index_count": 435,
+                    "index_count": 15,
+                    "index_byte_count": 30,
+                    "index_sha256": "e36531e3b0267883f9ef167afbf143792f45dc888ef52122d4d25a33a550aac8"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 19,
+            "vertex_count": 11,
+            "index_count": 15,
+            "byte_count": 382,
+            "sha256": "534f8e6706d1dfaaf114fe55931bb25c9e06caef9349354731bb60e96f6224ce",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 11,
+                "index_count": 15,
+                "vertex_byte_count": 352,
+                "index_byte_count": 30,
+                "flush_count": 0,
+                "sha256": "edcd573c3226b0b94f9e53e98619615c590c27e1ba3b3ee22ecf5e26f2616deb",
+                "segments": [
+                  {
+                    "event_index": 2448,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 307,
+                    "post_vertex_count": 318,
+                    "vertex_count": 11,
+                    "vertex_byte_count": 352,
+                    "vertex_sha256": "8771cd4a863e7cc95a0fb48853dc0e248cdb7afe0fd19e68d250f87963508450",
+                    "pre_index_count": 435,
+                    "post_index_count": 450,
+                    "index_count": 15,
+                    "index_byte_count": 30,
+                    "index_sha256": "c89195532bd88de57c53d65611e515782cef0c980e9e5a2b8d076341979ba89b"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 20,
+            "vertex_count": 19,
+            "index_count": 27,
+            "byte_count": 662,
+            "sha256": "1d03043277e29a8c2d130deebadb304599a8cb2ceaf94d1ee9a6eb55a11daff2",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 19,
+                "index_count": 27,
+                "vertex_byte_count": 608,
+                "index_byte_count": 54,
+                "flush_count": 0,
+                "sha256": "92a301ae6c0ba966e4c3d99d13524ffc5ee33787b4f8cfa6cc4d8da9ae133589",
+                "segments": [
+                  {
+                    "event_index": 2512,
+                    "page_index": 16,
+                    "flushed": false,
+                    "pre_vertex_count": 318,
+                    "post_vertex_count": 337,
+                    "vertex_count": 19,
+                    "vertex_byte_count": 608,
+                    "vertex_sha256": "95af5344165a1dead4edb83f621dcb5df3f91cf3f47c502cf97b3e8b46d6e102",
+                    "pre_index_count": 450,
+                    "post_index_count": 477,
+                    "index_count": 27,
+                    "index_byte_count": 54,
+                    "index_sha256": "cabdb839c6e37ef2a6620d0bdd3d28d2acb42b426ddf080ae8e0d992af80bcf0"
+                  }
+                ]
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 21,
+            "vertex_count": 0,
+            "index_count": 0,
+            "byte_count": 0,
+            "sha256": "9cf856691454ae7768306f2931965f6107e4d390bbfaad7ebae28bd5448175c6",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 22,
+            "vertex_count": 0,
+            "index_count": 0,
+            "byte_count": 0,
+            "sha256": "9cf856691454ae7768306f2931965f6107e4d390bbfaad7ebae28bd5448175c6",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          },
+          {
+            "entry_index": 23,
+            "vertex_count": 0,
+            "index_count": 0,
+            "byte_count": 0,
+            "sha256": "9cf856691454ae7768306f2931965f6107e4d390bbfaad7ebae28bd5448175c6",
+            "families": [
+              {
+                "family_id": "root_004c4108",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              },
+              {
+                "family_id": "root_004c410c",
+                "vertex_count": 0,
+                "index_count": 0,
+                "vertex_byte_count": 0,
+                "index_byte_count": 0,
+                "flush_count": 0,
+                "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+                "segments": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "failure": null
+  }
+}

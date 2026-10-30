@@ -1,0 +1,33 @@
+{
+  "run_id": "RUN-CORE-20260812-182803",
+  "pid": 2498490,
+  "tool": "memory-snapshot",
+  "ownership": {
+    "pid": 2498490,
+    "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+    "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+    "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "verified": true,
+    "checked_at": "2026-08-12T18:28:03.800477-04:00"
+  },
+  "core_path": "work/copies/EXP-VALIDATION-mem/evidence/bugs-20260812-182803.2498490",
+  "core_sha256": "acaf6fd78d18a0638e6380a2885e2b2a10e8bd9fd0833d699a3eb1faffb14d3b",
+  "core_size_bytes": 3316520960,
+  "gcore_all_mappings": false,
+  "pause_started": "2026-08-12T18:28:03-04:00",
+  "pause_ended": "2026-08-12T18:28:04-04:00",
+  "debugger": "GNU gdb (Fedora Linux) 17.1-6.fc44",
+  "core_committed": false,
+  "status": "complete",
+  "artifacts": [
+    "maps.txt",
+    "metadata.json"
+  ]
+}

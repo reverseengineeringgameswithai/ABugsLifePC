@@ -1,0 +1,97 @@
+{
+  "run_id": "RUN-GDB-20260812-182412",
+  "experiment_id": "EXP-VALIDATION-gdb-harness",
+  "tool": "gdb-harness",
+  "tool_version": "1.0.0",
+  "schema_version": 1,
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "environment": "Fedora Linux 44 (Workstation Edition), kernel 7.0.11-200.fc44.x86_64, wine-11.0 (Staging)",
+  "debugger": "GNU gdb (Fedora Linux) 17.1-6.fc44",
+  "working_directory": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+  "target_pid": 2498490,
+  "ownership": {
+    "pid": 2498490,
+    "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+    "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+    "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "verified": true,
+    "checked_at": "2026-08-12T18:24:12.535341-04:00"
+  },
+  "status": "target_reached",
+  "spec": {
+    "schema_version": 1,
+    "experiment_id": "EXP-VALIDATION-gdb-harness",
+    "target": {
+      "mode": "pid",
+      "pid": 2498490,
+      "exe_basename": "bugs.exe",
+      "expected_exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878"
+    },
+    "watchpoints": [
+      {
+        "id": "plant10_anm_slot",
+        "address": "0x005B1AA4",
+        "kind": "access",
+        "size": 4
+      }
+    ],
+    "breakpoints": [],
+    "window": {
+      "max_stops": 20,
+      "timeout_seconds": 200,
+      "end_milestones": [
+        "NextLife"
+      ],
+      "log_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.log"
+    },
+    "on_stop": {
+      "registers": [
+        "rax",
+        "rbx",
+        "rcx",
+        "rdx",
+        "rsi",
+        "rdi",
+        "rip"
+      ],
+      "memory_reads": [
+        {
+          "id": "slot_value",
+          "address": "0x005B1AA4",
+          "size": 4
+        }
+      ],
+      "backtrace_limit": 8
+    }
+  },
+  "log_start_offset": 40716,
+  "gdb_arch_warning": null,
+  "artifacts": [
+    "debugger-evidence.txt",
+    "metadata.json",
+    "result.json",
+    "spec.resolved.json",
+    "stops.jsonl"
+  ],
+  "time_window_start": "2026-08-12T18:24:12.627418-04:00",
+  "time_window_end": "2026-08-12T18:26:59.410258-04:00",
+  "completion": {
+    "completed": true,
+    "stop_reason": "target_reached",
+    "stops_observed": 4,
+    "watchpoints_installed": 1,
+    "watchpoints_deleted": 1,
+    "breakpoints_installed": 0,
+    "breakpoints_deleted": 0,
+    "cleanup_verified": true,
+    "detached": true,
+    "error": null
+  }
+}

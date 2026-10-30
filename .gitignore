@@ -1,0 +1,94 @@
+# Original copyrighted material
+/originals/*
+!/originals/.gitkeep
+
+/media/*
+!/media/.gitkeep
+
+# Working copies
+/work/copies/
+/work/experiments/
+/work/playtests/
+/work/snapshots/
+/work/tmp/
+/work/mod-overlays/
+/work/releases/
+/work/toolkit-install/
+/work/level-projects/
+/work/tools/
+/work/m6-smoke-report.json
+
+# Ghidra databases
+/work/ghidra/
+
+# Wine prefixes
+/work/wine/
+
+# Emulator/VM state
+/work/86box/
+/work/pcem/
+/work/windows-vm/
+
+# Recorder traces (may contain game bytes)
+/work/rr/
+/work/apitrace/
+
+# Large/generated binary artifacts
+*.iso
+*.bin
+*.cue
+*.img
+*.raw
+*.qcow2
+*.vdi
+*.vhd
+*.vhdx
+*.vmdk
+*.dmp
+*.core
+
+# Raw runtime output where appropriate
+/tmp/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Obsidian machine-local state
+/Vault/.obsidian/workspace.json
+/Vault/.obsidian/workspace-mobile.json
+/Vault/.obsidian/appearance.json
+/Vault/.obsidian/graph.json
+/Vault/.obsidian/cache/
+/Vault/.trash/
+
+# Don't commit downloaded tool binaries
+/tools/ghidra/*
+!/tools/ghidra/README.md
+/tools/86box/*
+!/tools/86box/README.md
+!/tools/86box/patches/
+/tools/pcem/*
+!/tools/pcem/README.md
+/tools/windows/*
+!/tools/windows/README.md
+/tools/jdk/*
+!/tools/jdk/README.md
+
+# Regenerable run-to-note cross-reference (make run-index); the durable
+# finding lives in Vault/40-Implementation/Agent evidence and query tooling.md
+/reports/run-index.json
+/reports/run-index.md
+
+# Full decompiler and string dumps of the executable are regenerated locally from
+# your own copy (scripts/ghidra-export.sh, scripts/pe-triage.sh) and never committed.
+/static/exports/*/ghidra-evidence.json
+/static/pe/*/strings.txt
+/static/pe/*/rabin2-strings.json
+
+# Regenerable Ghidra query index cache (make/ghidra-query index)
+/static/exports/*/ghidra-evidence.index.json
+# Private storage-cleanup receipts include retained game executables.
+/work/storage-cleanup/

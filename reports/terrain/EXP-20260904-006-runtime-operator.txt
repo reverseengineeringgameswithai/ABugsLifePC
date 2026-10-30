@@ -1,0 +1,239 @@
+"""Disposable direct runtime operator: owned processes, read-only memory, XTEST.
+No live memory writes, save states, debugger attachment, or historical wrapper.
+"""
+import os,sys,json,time,subprocess,struct,signal,hashlib
+from pathlib import Path
+ROOT=Path('/home/dev/ABLPC'); HERE=Path(__file__).resolve().parent
+
+def ident(pid):
+ p=Path('/proc')/str(pid)
+ try:
+  s=(p/'stat').read_text().rsplit(')',1)[1].split()
+  return dict(pid=pid,start=int(s[19]),group=int(s[2]),cmd=(p/'cmdline').read_bytes().replace(b'\0',b' ').decode(errors='replace'))
+ except (FileNotFoundError,ProcessLookupError): return None
+
+def members(group):
+ return [v for q in Path('/proc').iterdir() if q.name.isdigit() and (v:=ident(int(q.name))) and v['group']==group]
+
+def run(args,env=None):
+ r=subprocess.run(args,env=env,capture_output=True,text=True,timeout=10)
+ if r.returncode: raise RuntimeError((args,r.returncode,r.stderr))
+ return r.stdout.strip()
+
+def emit(value):
+ data={'time':time.time(),'command':sys.argv[1:],'result':value}
+ (HERE/('receipt-%d.json'%time.time_ns())).write_text(json.dumps(data,indent=2)+'\n')
+ print(json.dumps(value,indent=2),flush=True)
+
+def guard():
+ meta=json.loads((HERE/'active.json').read_text()); game=meta['game']; now=ident(game['pid'])
+ log=(Path(meta['stage'])/'PC/BUGS/bugs.log').read_text()
+ for marker in ('Native software render mode is FALSE','RenderMode set to Direct3d render mode','Screen mode 640x480x16 selected','OnlySystemMemory status VIDEO MEMORY ONLY','D3DAPPCREATE : Mode set to 640x480','INIT : Starting Direct3D renderer'):
+  assert marker in log, 'missing hardware marker: '+marker
+ assert 'INITSOFTRENDER' not in log and 'SYSTEM MEMORY ONLY' not in log
+ assert now and (now['start'],now['group'])==(game['start'],game['group']), 'game identity changed'
+ assert Path('/proc/%d/cwd'%game['pid']).resolve()==Path(meta['stage'])/'PC/BUGS', 'game cwd changed'
+ # Revalidate instruction bytes on every input/read operation.
+ import pefile
+ exe=ROOT/'work/copies/auto-hardware/bugs.exe'
+ raw=exe.read_bytes(); assert hashlib.sha256(raw).hexdigest()=='1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f'
+ pe=pefile.PE(data=raw,fast_load=True); expected=pe.get_data(0xab1a0,32)
+ with open('/proc/%d/mem'%game['pid'],'rb',buffering=0) as f:
+  assert os.pread(f.fileno(),32,0x4ab1a0)==expected, 'mapped movement code mismatch'
+ return meta
+
+def mem(meta,address,n):
+ assert n<=4096
+ with open('/proc/%d/mem'%meta['game']['pid'],'rb',buffering=0) as f:
+  data=os.pread(f.fileno(),n,address)
+ assert len(data)==n
+ return data
+
+def focus(meta):
+ env=os.environ.copy();env['DISPLAY']=meta['display']; win=str(meta['window'])
+ assert int(run(['xdotool','getwindowpid',win],env))==meta['game']['pid']
+ run(['xdotool','windowactivate','--sync',win],env)
+ run(['xdotool','windowfocus','--sync',win],env)
+ assert int(run(['xdotool','getwindowfocus'],env))==meta['window']
+ return env
+
+def state(meta):
+ return {'level':struct.unpack('<I',mem(meta,0x861c84,4))[0],
+         'position':struct.unpack('<3i',mem(meta,0x59d910,12)),
+         'terrain_base':struct.unpack('<I',mem(meta,0x7f3d60,4))[0],
+         'barrier_head':struct.unpack('<I',mem(meta,0x7f3d3c,4))[0],
+         'contact':struct.unpack('<2I',mem(meta,0x7f3d68,8)),
+         'camera_matrix_hex':mem(meta,0x5b58e0,18).hex(),
+         'camera_translation':struct.unpack('<3i',mem(meta,0x5bdb8c,12))}
+
+try:
+ action=sys.argv[1]
+ if action=='launch':
+  stage=Path(sys.argv[2]).resolve();prefix=HERE/'prefix'
+  assert not (HERE/'active.json').exists()
+  assert Path(prefix/'dosdevices/r:').resolve()==stage
+  args=[str(ROOT/'scripts/play-pristine.sh'),'--game-dir',str(stage/'PC/BUGS'),'--prefix',str(prefix),'--auto-hardware','--research','--windowed','--mute']
+  out=open(HERE/('launch-%d.log'%time.time_ns()),'wb')
+  p=subprocess.Popen(args,stdout=out,stderr=subprocess.STDOUT,stdin=subprocess.DEVNULL,start_new_session=True)
+  meta={'leader':ident(p.pid),'stage':str(stage),'args':args}
+  (HERE/'launch.json').write_text(json.dumps(meta,indent=2));emit(meta)
+ elif action=='discover':
+  meta=json.loads((HERE/'launch.json').read_text()); rows=members(meta['leader']['group']);emit(rows)
+  games=[r for r in rows if 'wine' not in r['cmd'].split(' ')[0] and '/auto-hardware/bugs.exe' in r['cmd']]
+  # Wine names the process by its Windows command. Choose the mapped PE process.
+  games=[r for r in rows if r['cmd'].split(' ')[0].replace('\\','/').endswith('/auto-hardware/bugs.exe')]
+  assert len(games)==1, games
+  x=[r for r in rows if 'Xwayland :' in r['cmd']];assert len(x)==1
+  meta['game']=games[0];meta['display']=x[0]['cmd'].split('Xwayland ',1)[1].split()[0]
+  env=os.environ.copy();env['DISPLAY']=meta['display']
+  windows=run(['xdotool','search','--pid',str(games[0]['pid'])],env).splitlines()
+  selected=[]
+  for w in windows:
+   g=run(['xdotool','getwindowgeometry','--shell',w],env)
+   if 'WIDTH=640\nHEIGHT=480' in g:selected.append(int(w))
+  assert len(selected)==1, windows
+  meta['window']=selected[0];(HERE/'active.json').write_text(json.dumps(meta,indent=2))
+  emit({'active':meta,'state':state(guard())})
+ elif action=='state':emit(state(guard()))
+ elif action=='key':
+  meta=guard();key=sys.argv[2];seconds=float(sys.argv[3]);assert key in ['Right','Left','Up','Down','Return','space','Shift_L','Alt_L+F4'];assert 0<seconds<=4
+  env=focus(meta);before=state(meta)
+  try:
+   run(['xdotool','keydown',key],env);time.sleep(seconds)
+  finally:run(['xdotool','keyup',key],env)
+  time.sleep(.15)
+  emit({'key':key,'seconds':seconds,'before':before,'after':state(guard())})
+ elif action=='walk':
+  meta=guard();assert state(meta)['level']==1;env=focus(meta);seconds=float(sys.argv[2]);assert 0<seconds<=4
+  samples=[];start=time.monotonic()
+  try:
+   run(['xdotool','keydown','Up'],env)
+   while time.monotonic()-start < seconds:
+    samples.append({'elapsed':time.monotonic()-start,**state(meta)})
+    time.sleep(.02)
+  finally:run(['xdotool','keyup','Up'],env)
+  time.sleep(.3);emit({'walk_seconds':seconds,'samples':samples,'settled':state(guard())})
+ elif action=='floor':
+  meta=guard();raw=(Path(meta['stage'])/'PC/BUGS/CD/LEVEL01/TERRAIN.ALL').read_bytes()
+  descriptor=mem(meta,0x7f4590+99*48,48);base=struct.unpack_from('<I',descriptor,16)[0]
+  data=mem(meta,base+47640-43924,204)
+  assert data==raw[47640:47844], 'loaded floor group differs'
+  emit({'loaded_floor_verified':True,'source_record':99,'group_file_offset':47640,'runtime_group':base+47640-43924,'height_words':[struct.unpack_from('<h',data,12+i*32+8)[0] for i in range(6)],'group_sha256':hashlib.sha256(data).hexdigest(),'terrain_sha256':hashlib.sha256(raw).hexdigest()})
+ elif action=='mesh':
+  meta=guard();sys.path.insert(0,str(ROOT/'reimplementation'))
+  from ablpc.level_dat import LevelDat
+  dat=LevelDat.from_path(Path(meta['stage'])/'PC/BUGS/CD/LEVEL01/LEVEL.DAT')
+  refs=[dat.static_mesh_reference('primary',i) for i in (160,213,280)]
+  first=refs[0];signature=dat.data[first.geometry_offset:first.geometry_offset+64];hits=[]
+  with open('/proc/%d/mem'%meta['game']['pid'],'rb',buffering=0) as f:
+   for line in Path('/proc/%d/maps'%meta['game']['pid']).read_text().splitlines():
+    fields=line.split();lo,hi=[int(x,16) for x in fields[0].split('-')]
+    if 'r' not in fields[1] or not 0x10000<=lo<hi<=0x10000000:continue
+    for address in range(lo,hi,1024*1024):
+     try:data=os.pread(f.fileno(),min(1024*1024+63,hi-address),address)
+     except OSError:continue
+     start=0
+     while (offset:=data.find(signature,start))>=0:
+      hits.append(address+offset);start=offset+1
+  candidates=[]
+  for hit in hits:
+   base=hit-first.geometry_offset
+   try:
+    rows=[]
+    for ref in refs:
+     pointer=struct.unpack('<I',mem(meta,base+ref.object_offset+20,4))[0]
+     scene_pointer=struct.unpack('<I',mem(meta,base+ref.record_offset+16,4))[0]
+     expected=dat.data[ref.geometry_offset:ref.payload.vertices_offset+ref.payload.vertex_count*12]
+     assert pointer==base+ref.geometry_offset and scene_pointer==base+ref.object_offset
+     assert mem(meta,pointer,len(expected))==expected
+     rows.append({'record':ref.record_index,'object':base+ref.object_offset,'geometry':pointer,'vertex_count':ref.payload.vertex_count,'vertex_array_sha256':hashlib.sha256(expected).hexdigest()})
+    candidates.append({'base':base,'meshes':rows})
+   except (OSError,AssertionError):pass
+  assert len(candidates)==1, candidates
+  emit({'level_dat_sha256':dat.sha256,'resident_verified':candidates[0]})
+ elif action=='jump':
+  meta=guard();assert state(meta)['level']==1;env=focus(meta);samples=[];start=time.monotonic();released=False
+  try:
+   run(['xdotool','keydown','Shift_L'],env)
+   while time.monotonic()-start<2.5:
+    elapsed=time.monotonic()-start
+    if elapsed>.15 and not released:run(['xdotool','keyup','Shift_L'],env);released=True
+    samples.append({'elapsed':elapsed,**state(meta)});time.sleep(.02)
+  finally:run(['xdotool','keyup','Shift_L'],env)
+  emit({'input':'Shift_L held .15s then released; 2.5s trace','samples':samples,'after':state(guard())})
+ elif action=='deck':
+  meta=guard();fixture=json.loads((HERE/'fixture.json').read_text());raw=(Path(meta['stage'])/'PC/BUGS/CD/LEVEL01/TERRAIN.ALL').read_bytes()
+  descriptor=mem(meta,0x7f4590+99*48,48);base=struct.unpack_from('<I',descriptor,16)[0]
+  length=fixture['source99_replaced_prefix_bytes'];offset=fixture['source99_payload_offset']
+  data=mem(meta,base,length);assert data==raw[offset:offset+length]
+  levelbase=struct.unpack('<I',mem(meta,0x5ba240,4))[0];dat=(Path(meta['stage'])/'PC/BUGS/CD/LEVEL01/LEVEL.DAT').read_bytes()
+  mo=fixture['mesh160_geometry_offset'];ml=fixture['mesh160_replaced_prefix_bytes'];mesh=mem(meta,levelbase+mo,ml);assert mesh==dat[mo:mo+ml]
+  so=fixture['scene_record_offset'];assert mem(meta,levelbase+so,16)==dat[so:so+16]
+  emit({'loaded_deck_verified':True,'runtime_payload':base,'file_offset':offset,'prefix_size':length,'prefix_sha256':hashlib.sha256(data).hexdigest(),'terrain_sha256':hashlib.sha256(raw).hexdigest(),'loaded_render_prefix_verified':True,'level_base':levelbase,'runtime_geometry':levelbase+mo,'render_prefix_size':ml,'render_prefix_sha256':hashlib.sha256(mesh).hexdigest(),'level_dat_sha256':hashlib.sha256(dat).hexdigest(),'state':state(meta)})
+ elif action=='drive':
+  meta=guard();assert state(meta)['level']==1;env=focus(meta);key=sys.argv[2];seconds=float(sys.argv[3]);assert key in ('Up','Down','Left','Right','Up+Shift_L','Shift_L','none');assert 0<seconds<=4
+  samples=[];start=time.monotonic();released=False
+  try:
+   if key!='none':run(['xdotool','keydown',key],env)
+   while time.monotonic()-start<seconds:
+    elapsed=time.monotonic()-start
+    if 'Shift_L' in key and elapsed>.15 and not released:run(['xdotool','keyup','Shift_L'],env);released=True
+    samples.append({'elapsed':elapsed,**state(meta)});time.sleep(.02)
+  finally:
+   if key!='none':run(['xdotool','keyup',key],env)
+  emit({'key':key,'seconds':seconds,'samples':samples,'after':state(guard())})
+ elif action=='barrier':
+  meta=guard();raw=(Path(meta['stage'])/'PC/BUGS/CD/LEVEL01/TERRAIN.ALL').read_bytes();target=raw[219632:219700]
+  pointer=state(meta)['barrier_head'];rows=[];seen=set()
+  while pointer:
+   assert pointer not in seen and len(seen)<20;seen.add(pointer)
+   header=mem(meta,pointer-4,8);link,count,unknown=struct.unpack('<IHH',header)
+   row={'head':pointer,'segments':count}
+   if count==4:
+    payload=mem(meta,pointer-4,68)
+    row['source179_match']=payload[4:]==target[4:]
+    row['data_after_link_sha256']=hashlib.sha256(payload[4:]).hexdigest()
+   rows.append(row);pointer=link
+  assert sum(r.get('source179_match',False) for r in rows)==1
+  emit({'loaded_source179_verified':True,'terrain_file_sha256':hashlib.sha256(raw).hexdigest(),'list':rows})
+ elif action=='capture':
+  meta=guard();focus(meta);path=HERE/('frame-%d.png'%time.time_ns())
+  env=os.environ.copy();env['GAMESCOPE_WAYLAND_DISPLAY']='gamescope-0'
+  run(['gamescopectl','screenshot',str(path)],env)
+  for _ in range(100):
+   if path.exists():
+    try:
+     run(['/usr/bin/python3','-c',"from PIL import Image; import sys; im=Image.open(sys.argv[1]).convert('RGB'); assert im.size==(640,480); assert len(set(im.getdata()))>1",str(path)]);break
+    except (OSError,AssertionError):pass
+   time.sleep(.05)
+  else:raise RuntimeError('capture failed')
+  emit({'frame':str(path),'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'state':state(meta)})
+ elif action=='read':
+  meta=guard();address=int(sys.argv[2],0);n=int(sys.argv[3]);emit({'address':hex(address),'hex':mem(meta,address,n).hex()})
+ elif action=='close':
+  meta=json.loads((HERE/'launch.json').read_text());group=meta['leader']['group'];before=members(group)
+  helpers=[];prefix=('WINEPREFIX='+str(HERE/'prefix')).encode()
+  for q in Path('/proc').iterdir():
+   if not q.name.isdigit():continue
+   try:
+    if prefix in (q/'environ').read_bytes().split(b'\0'):
+     row=ident(int(q.name))
+     if row and row['group']!=group:helpers.append(row)
+   except (PermissionError,FileNotFoundError,ProcessLookupError):pass
+  before+=helpers
+  # Graceful request is attempted first. Remaining termination is scoped to pinned identities.
+  try:
+   active=guard();env=focus(active);run(['xdotool','key','Alt_L+F4'],env);time.sleep(2)
+  except Exception as e:emit({'normal_close_error':str(e)})
+  for sig in (signal.SIGTERM,signal.SIGKILL):
+   for old in before:
+    now=ident(old['pid'])
+    if now and now['start']==old['start'] and now['group']==old['group']:
+     try:os.kill(old['pid'],sig)
+     except ProcessLookupError:pass
+   time.sleep(1)
+  emit({'before':before,'after':members(group)})
+  if (HERE/'active.json').exists():(HERE/'active.json').rename(HERE/('closed-%d.json'%time.time_ns()))
+ else:raise RuntimeError('unknown action')
+except Exception as e:
+ emit({'error':type(e).__name__,'detail':str(e)});raise

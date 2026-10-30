@@ -1,0 +1,30 @@
+{
+  "experiment_id": "EXP-20260905-009",
+  "status": "level01-loaded-user-playtest-pending",
+  "date": "2026-09-06",
+  "scope": "Same-session continuation after explicit approval of the exact-session window-title exception. Launch identity and startup gates are retained in EXP-20260905-009-runtime.json.",
+  "session": {"game_pid": 23853, "game_start_ticks": 183505, "process_group": 23606, "gamescope_pid": 23624, "xwayland_pid": 23650, "display": ":2", "window": 14680071, "socket": "/run/user/1000/gamescope-0", "left_open_for_user": true},
+  "title_guard_resolution": {"normal_title": "Bugs", "additional_title": "Loading - A Bugs Life", "exception_requires_pid": 23853, "exception_requires_start_ticks": 183505, "required_size": [640, 480], "discovery_passed": true, "relaunches": 0},
+  "agent_input": [{"key": "Right", "seconds": 0.18, "purpose": "Select Anthill; capture checked before Return"}, {"key": "Return", "seconds": 0.18, "purpose": "Load visually confirmed Anthill"}, {"key": "Return", "seconds": 0.18, "purpose": "Leave visually confirmed Level One title screen"}],
+  "level_identity": {"address": "0x00861C84", "value": 1, "log_evidence": ["LOAD : Loading file R:\\PC\\BUGS\\cd\\level01\\level.dat.", "LOAD : Loading file R:\\PC\\BUGS\\cd\\level01\\terrain.all.", "ROUTINE : Start ClearLoadScreen."], "gameplay_capture_inspected": true},
+  "resident_verification": {
+    "method": "Guarded read-only /proc memory comparison to staged payloads and relocated mesh command streams",
+    "terrain_sha256": "77a77456c3b9a0f4db5e7b20d257a9772e04c0f0ed3d0812590943d630851698",
+    "level_dat_sha256": "24b8c345d82bb3489ab765d3ad24f917fcacf1da4d5a910e715b4daf84b071e8",
+    "collision": [{"source": 99, "pointer": 6986595, "file_offset": 43924, "bytes": 5164, "sha256": "ee518945f1430e3e8f6f4fc5178d39883076d54cdd9d8dcbb3319be8d8bb45b4"}, {"source": 100, "pointer": 6991759, "file_offset": 49088, "bytes": 4088, "sha256": "ab72db4bfcecef26a8f878c4edf4807c5f5c79ca0d7f89ddaf269331780f2815"}],
+    "mesh_streams": [{"record": 128, "pointer": 6815603, "bytes": 4270, "groups": 3, "sha256": "015b840c54730557f9828ddb8649f2def52ef0c300a802f5ea453b31e7f4ceb3"}, {"record": 160, "pointer": 6929611, "bytes": 13054, "groups": 7, "sha256": "9b37c8c1e518170f3011bca5bae31888132c736401c779c9045c7d028f2b62d6"}, {"record": 213, "pointer": 6652395, "bytes": 4574, "groups": 6, "sha256": "56ef2228e048be6c0985293a6bcbb37f65fbf09489536a12e6950bda98bf364e"}, {"record": 280, "pointer": 6656971, "bytes": 3038, "groups": 6, "sha256": "d7c359d86e6f2eb5cdabbba5cfe52b6078f427ed10041c8f8d0662fff460eff9"}]
+  },
+  "observed_state": {"level": 1, "position": [197091, 2734, 492897], "contact": [99, 6990387], "contact_file_offset": 47716, "terrain_base_field": 0, "terrain_base_caveat": "Zero observed in this helper field despite successful descriptor/payload checks; not interpreted as absence of collision.", "camera_translation": [219517, -14292, 475334]},
+  "captures": [{"role": "Anthill selection", "path": "work/experiments/EXP-20260905-009/preview-01/frame-1788720720088593187.png", "sha256": "ef85833d87f0c4cf0cc40307c8a09135da8e24388c1f3ac037db305f8fbc88de"}, {"role": "Level One title", "path": "work/experiments/EXP-20260905-009/preview-01/frame-1788720733512482033.png", "sha256": "5c06f4ac032d79fe62d3d9bc83d60ab4a31b59a94bb42b13f626edb902d54e29"}, {"role": "Gameplay at original start", "path": "work/experiments/EXP-20260905-009/preview-01/frame-1788720745859253770.png", "sha256": "621e362c3b1ded6e7caf2b34da1be9c268583c6d98829af7ce2c3eeeab214a27"}],
+  "capture_scope": "Owned-compositor captures decoded and visually inspected; no separate 200 ms size-stability receipt was collected.",
+  "memory_writes": false,
+  "teleport": false,
+  "debugger_or_process_stop": false,
+  "agent_gameplay_movement": false,
+  "tests_run_in_this_continuation": [],
+  "r2q_or_full_suite_run": false,
+  "git_operations": false,
+  "lifecycle": "Same intentionally live session as the startup audit; no second launch or close. Startup audit's seven generic-ledger-unattributed processes and private sink were explicitly owned/accounted for. Run session-audit after eventual close.",
+  "limits": "Confirms Level01 and resident additive assets, plus original-start visual/contact observation. Does not establish live connector traversal, deck-edge fall/landing/return, box movement, culling or overlap acceptance. Offline acceptance remains separately scoped in EXP-20260905-009-validation.json.",
+  "next": "User playtest: original ground, connector uphill/downhill and return, deck-edge fall onto original ground, and box top/step-off. Leave session open."
+}

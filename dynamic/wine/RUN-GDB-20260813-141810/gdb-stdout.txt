@@ -1,0 +1,6004 @@
+0x00007f84d887e33d in ?? ()
+Hardware access (read/write) watchpoint 1: *(unsigned short *)0x59f7f0
+Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+Hardware access (read/write) watchpoint 3: *(unsigned int *)0x5b18e0
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 13
+New value = 33
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 33
+New value = 34
+0x0000000000405838 in ?? ()
+
+Thread 1 "bugs.exe" hit Hardware access (read/write) watchpoint 2: *(unsigned short *)0x4c4118
+
+Old value = 32
+New value = 13
+0x0000000000405838 in ?? ()

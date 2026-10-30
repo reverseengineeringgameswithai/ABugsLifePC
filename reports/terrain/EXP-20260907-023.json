@@ -1,0 +1,129 @@
+{
+  "experiment": "EXP-20260907-023",
+  "status": "bounded runtime accepted; final preview OPEN",
+  "roadmap": "Vault/40-Implementation/PC Large-Level Engine Roadmap.md",
+  "milestones": {
+    "terrain_chunks": "bounded accepted",
+    "asset_storage": "bounded accepted",
+    "density_and_performance": "next",
+    "streaming": "conditional future"
+  },
+  "game": {
+    "pid": 19999,
+    "start": 161865,
+    "group": 19764,
+    "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260907-023\\preview-03\\bugs.exe log cheat mpeg                                                                                                   "
+  },
+  "leader": {
+    "pid": 19764,
+    "start": 161734,
+    "group": 19764,
+    "cmd": "/usr/bin/bash /home/dev/ABLPC/work/experiments/EXP-20260907-023/preview-03/launch.sh "
+  },
+  "project": "/home/dev/ABLPC/work/level-projects/moonlit-cliffs-chunks-arena/level.blend",
+  "build": "/home/dev/ABLPC/work/copies/blender-level-1788827582635329252",
+  "hashes": {
+    "LEVEL.DAT": "7cb935ec839a56a4b9f98e081d18c52a6867b8c3fb8bf881a4824e2e58ebc35f",
+    "TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+    "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+    "bugs.exe": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f"
+  },
+  "arena": {
+    "source_sha256": "3a2e6ca8463752463751c5eefc031e109d17e1ddaa9dc079615446b1f0454a77",
+    "output_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+    "base": 8892416,
+    "capacity": 8388608,
+    "old_base": 6547864,
+    "section_rva": 4698112,
+    "initializer_operands": [
+      4601066,
+      4616933
+    ],
+    "highlow_relocations_retained": true,
+    "exact_inverse": true,
+    "file_size_change": 0,
+    "scope": "Dedicated bounded retained-asset region; geometry, RAW staging and scratch remain separate"
+  },
+  "load_layout": {
+    "old_base": 6547864,
+    "next_known_engine_global": 7797144,
+    "space_before_engine_global": 1249280,
+    "raw_retained_bytes": 48927,
+    "level_files": [
+      {
+        "file": "LEVEL01/LEVEL.DAT",
+        "file_bytes": 593276,
+        "retained_bytes": 593276
+      },
+      {
+        "file": "LEVEL01/TERRAIN.ALL",
+        "file_bytes": 384240,
+        "retained_bytes": 367744
+      },
+      {
+        "file": "BITS/PLANTTER.ALL",
+        "file_bytes": 17760,
+        "retained_bytes": 16692
+      }
+    ],
+    "models_retained_bytes": 380232,
+    "old_retained_end": 7954735,
+    "old_highest_file_end": 7955271,
+    "old_retained_overlaps_next_globals_by": 157591,
+    "dedicated_base": 8892416,
+    "dedicated_capacity": 8388608,
+    "scope": "Pinned EXP019 asset layout reconstructed with native/model/runtime references. RAW retained length observed via DAT root, not total GPU resource use."
+  },
+  "large_load": {
+    "build": "/home/dev/ABLPC/work/copies/blender-level-1788827582635329252",
+    "padding_bytes": 2097152,
+    "original_dat_sha256": "7cb935ec839a56a4b9f98e081d18c52a6867b8c3fb8bf881a4824e2e58ebc35f",
+    "dat_sha256": "68a9566a3eb1cfa1b67b26d7f43fe48afd16375ce3e22b7a092a7d7cff7feec4",
+    "same_all_four_meshes": true,
+    "same_footer_target": true,
+    "asset_arena_bytes": 8388608,
+    "budgeted_files_bytes": 3094194,
+    "exe_sha256": "431ec953b67bd3233f8fa58e7a22edbfabaeb153e3ee322d760c45f2a44c7d8f",
+    "scope": "Bounded storage stress fixture: 2MiB inert DAT tail, unchanged layout and all four meshes. Not an authoring build or selected final gameplay asset. Cold prefix with guarded hardware/menu/model validation; no live writes.",
+    "retained_model_end": 12397977,
+    "retained_arena_bytes": 3505561,
+    "native_peak_including_last_directory": 3506097,
+    "remaining_arena_bytes": 4882511
+  },
+  "checks": {
+    "selected_tests": 1197,
+    "native_model_entries": 170,
+    "native_file_loads": 35,
+    "source_exact_entries": 157,
+    "native_preprocessed_entries": 13,
+    "live_arms": 3,
+    "final_resident_chunks": 4,
+    "live_contacts": [
+      99,
+      178,
+      179,
+      180
+    ],
+    "route_maximum_floor_gap_world": 117,
+    "route_complete": false,
+    "all_final170_models_match_native": true,
+    "movement_input_provenance": "User reported manual control overlapping agent inputs; timing unknown. Live traversal is shared-control observation, not a deterministic automated route pass. Sampled contacts/model integrity and offline native checks remain valid.",
+    "automated_route_accepted": false,
+    "clear_view_route": {
+      "reached_waypoints": 2,
+      "planned_waypoints": 3,
+      "maximum_sampled_floor_gap_world": 138,
+      "scope": "Shared-control observation; no obstruction cause established"
+    }
+  },
+  "evidence": "work/experiments/EXP-20260907-023",
+  "final_preview": "work/experiments/EXP-20260907-023/preview-03",
+  "live_memory_writes": 0,
+  "limits": "Current aggregate geometry/coordinate and one-million-byte authoring filters remain; arbitrary levels, denser geometry, sustained performance and streaming not accepted",
+  "handoff_after_shared_input": {
+    "capture": "preview-03/user-control-handoff-capture.json",
+    "audit": "preview-03/post-user-input-audit.json",
+    "evaluation": "preview-03/post-user-input-audit-evaluation.json",
+    "agent_input_finished": true
+  }
+}

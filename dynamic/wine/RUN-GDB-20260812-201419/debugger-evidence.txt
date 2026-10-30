@@ -1,0 +1,99 @@
+RUN-GDB-20260812-201419
+Experiment: EXP-20260812-027
+Arm: Training plant 10 entry +0x28 words
+Executable SHA-256: 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+LEVEL1.DAT SHA-256: 494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+Environment: Fedora Linux 44; Wine 11.0 Staging; GNU GDB 17.1-6.fc44
+Renderer: Direct3D hardware, 640x480x16
+
+This is a curated record of hardware break/watchpoint stops and read-only
+memory observations. No game-data memory value, general-purpose register,
+executable byte, or game-data file was changed. Raw GDB text and game-only
+captures remain ignored under work/copies/EXP-20260812-027/evidence/. The
+accepted raw transcript SHA-256 is
+3f8c392015cc28bc817fe70dbaf42870b74efbb60cd4abeaca83faac4f508018.
+
+Renderer preflight
+------------------
+
+The accepted run started fresh and received remote Down then Return at the
+opening renderer selector. The complete committed log contains exactly one
+`Screen mode 640x480x16 selected`, exactly one `Starting Direct3D renderer`,
+no `INITSOFTRENDER`, and one request each for plant10.anm and plant10.all.
+The ignored 640x480 captures cover only the isolated Gamescope surface, not
+the host desktop.
+
+Plant-specific start
+--------------------
+
+At unique plant 10 post-call 0x0044596D, the retained stack contained resource
+ID 0x71. Read-only state reproduced:
+
+  0x005B1AA4 = 0x006C342B
+  ANM words +0x00/+0x02/+0x04/+0x06 = 1/3/66/68
+  first entry  0x005AAB00, +0x28 word 0x005AAB28 = 0
+  second entry 0x005AAB50, +0x28 word 0x005AAB78 = 0
+
+The immediately following common-tail stop at 0x00445B01 was accepted. Both
+words remained zero. The guard and common-tail breakpoints were deleted before
+hardware read watchpoints were armed on exact two-byte ranges
+0x005AAB28-0x005AAB29 and 0x005AAB78-0x005AAB79. A third hardware slot
+bounded the resource batch at 0x004679C7.
+
+Resource-batch-return boundary
+------------------------------
+
+The 0x004679C7 execution breakpoint won before either +0x28 watchpoint. Its
+`info breakpoints` record shows exactly one execution-breakpoint hit and no hit
+count for either read watchpoint. Both words remained zero. Only the return
+breakpoint was deleted.
+
+No-input title boundary
+-----------------------
+
+No input was sent after the single Return used to select Training before the
+plant guard. Neither read watchpoint stopped execution while the game reached
+the Training title. An ignored game-only capture at
+2026-08-12T20:18:46.810212628-04:00 shows `Training Level` and
+`press a key to start`; its SHA-256 is
+524654827cd39b09ac7bd55640580cfdb9c262efc45f0da54aaaae669da500b4.
+
+After interrupting only to inspect the retained endpoint, both watches were
+still enabled with no hit counts and both words were still zero. Both watches
+were deleted, GDB reported that no breakpoint or watchpoint remained, and
+detached. The isolated game exited before its exact Gamescope wrapper PIDs were
+stopped; no target process remained.
+
+Static correlation
+------------------
+
+In address-based function 0x00448010, 0x004480B4-0x004480BD derives runtime
+entry +0x20 and 0x00448107-0x0044810B copies a descriptor word to entry +0x28.
+This population mapping independently identifies the watched addresses, but
+does not assign a field meaning.
+
+The bounded negative exhausts the exact entry fields currently tied by static
+stores to 0x00448010 and its guarded caller for the retained initialization
+window. It does not exhaust later-event consumers. A separate static candidate
+at 0x0044CE3E reads selected entry +0x2E after deriving the start/end indices
+from a per-resource ANM header; this is a bounded next-event candidate, not a
+runtime hit from this run.
+
+Boundary and limitations
+------------------------
+
+This is a bounded negative for CPU reads overlapping exactly first-entry
+0x005AAB28-0x005AAB29 or second-entry 0x005AAB78-0x005AAB79 after guarded
+final plant 10 population. It has explicit resource-batch-return and no-input
+title endpoints. Zero is an observed value, not evidence of padding or
+irrelevance. Later gameplay, other fields, copied/derived state, non-CPU
+consumption, field meaning, and any visible or behavioral outcome remain
+outside the packet.
+
+Run gates and closure
+---------------------
+
+The committed accepted log has SHA-256
+b317d8edf82396bf30d5f2b59f79750cc98bb37f63e5d7ddcbb0c852f91c99a0.
+The experiment intentionally ended at the retained title, so neither
+`End InitMainGame` nor `NextLife` is claimed for this run.

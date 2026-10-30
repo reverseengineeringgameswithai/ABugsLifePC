@@ -1,0 +1,628 @@
+{
+  "experiment": "EXP-20260909-004",
+  "status": "User-tested, approved and banked with wall-like collision caveat",
+  "project": "work/level-projects/moonlit-cliffs-plant-collision/level.blend",
+  "build": "work/copies/moonlit-cliffs-plant-collision-01",
+  "preservation": {
+    "accepted": true,
+    "bank_exact": true,
+    "project_files": 771,
+    "build_files": 724,
+    "changed": [
+      "build.json",
+      "game/PC/BUGS/CD/BITS/PLANTTER.ALL"
+    ],
+    "blend_sha256": "d8ff7fbde9de6bbbb6cbb18ce5c021ec0c487222adadbde71ce8e340dad94773",
+    "hashes": {
+      "LEVEL.DAT": "8efb777d4da4a78ac80bc9cc622bd9a84cc51883ad81026f5422c6dcd699d9be",
+      "TERRAIN.ALL": "07f4a830a62dd08f1aa6911ff4e6c6d1e8b3e2f3bcd3769903f79917e5b3371a",
+      "PLANTTER.ALL": "03d2a8c3fedef819f828f701e50e47df72f30aec12e3a9afe63f60305c433bc9",
+      "bugs.exe": "55d9cf0918c0977fc95c70f9da44d7cad491ff78fd8ef3f226d57f640d3a5c50",
+      "LEVEL.RAW": "317419261189a737b78a06aabe3f05227e025e0e662ef831580abcc99643821e"
+    },
+    "spawn": {
+      "heading": 0,
+      "xz_world": [
+        192000,
+        448000
+      ]
+    },
+    "plant_templates": {
+      "before_sha256": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+      "after_sha256": "03d2a8c3fedef819f828f701e50e47df72f30aec12e3a9afe63f60305c433bc9",
+      "changed_bytes": 24,
+      "templates": [
+        {
+          "record": 0,
+          "plant_type": 1,
+          "payload_offset": 4,
+          "restored": true,
+          "groups": 14,
+          "cells": 72
+        },
+        {
+          "record": 1,
+          "plant_type": 10,
+          "payload_offset": 2480,
+          "restored": true,
+          "groups": 14,
+          "cells": 21
+        },
+        {
+          "record": 2,
+          "plant_type": 11,
+          "payload_offset": 3324,
+          "restored": true,
+          "groups": 16,
+          "cells": 40
+        },
+        {
+          "record": 3,
+          "plant_type": 12,
+          "payload_offset": 4800,
+          "restored": true,
+          "groups": 16,
+          "cells": 18
+        },
+        {
+          "record": 4,
+          "plant_type": 13,
+          "payload_offset": 5572,
+          "restored": true,
+          "groups": 14,
+          "cells": 18
+        },
+        {
+          "record": 5,
+          "plant_type": 14,
+          "payload_offset": 6320,
+          "restored": true,
+          "groups": 8,
+          "cells": 9
+        },
+        {
+          "record": 6,
+          "plant_type": 2,
+          "payload_offset": 6708,
+          "restored": true,
+          "groups": 16,
+          "cells": 42
+        },
+        {
+          "record": 7,
+          "plant_type": 4,
+          "payload_offset": 8248,
+          "restored": true,
+          "groups": 15,
+          "cells": 43
+        },
+        {
+          "record": 8,
+          "plant_type": 5,
+          "payload_offset": 9808,
+          "restored": false,
+          "groups": 16,
+          "cells": 24
+        },
+        {
+          "record": 9,
+          "plant_type": 6,
+          "payload_offset": 10772,
+          "restored": true,
+          "groups": 3,
+          "cells": 3
+        },
+        {
+          "record": 10,
+          "plant_type": 7,
+          "payload_offset": 10908,
+          "restored": true,
+          "groups": 16,
+          "cells": 18
+        },
+        {
+          "record": 11,
+          "plant_type": 8,
+          "payload_offset": 11680,
+          "restored": true,
+          "groups": 14,
+          "cells": 70
+        },
+        {
+          "record": 12,
+          "plant_type": 9,
+          "payload_offset": 14092,
+          "restored": true,
+          "groups": 15,
+          "cells": 75
+        }
+      ],
+      "high_streams_and_directory_unchanged": true,
+      "evidence": "EXP-20260909-004; original low-kind payloads, native loader and plant-contact dispatch"
+    },
+    "density": {
+      "resolved_cells": 6272,
+      "maximum_static_candidates_bound": 149,
+      "witness_xz_stored": [
+        -487,
+        91
+      ],
+      "static_limit": 300,
+      "native_candidate_capacity": 2048,
+      "window_margin_stored": 514,
+      "maximum_delta_world": 10000,
+      "scope": "Resolved static tag6/7/8 and clone cell windows; ignores Y/group/descriptor rejection. 1748 slots remain outside the static allowance; arbitrary dynamic actors and larger movement deltas remain unverified."
+    }
+  },
+  "user_probe": {
+    "samples": 1591,
+    "seconds": 39.99276928400013,
+    "contacts": [
+      99
+    ],
+    "y_range": [
+      -202188,
+      -182375
+    ],
+    "agent_gameplay_inputs": false,
+    "live_memory_writes": false
+  },
+  "native": {
+    "accepted": true,
+    "scope": "Native built loader, dynamic registration/bounds, Flik movement, contact reader and cannon activation. Renderer and feedback callbacks excluded; no live writes.",
+    "trials": [
+      {
+        "name": "control",
+        "descriptor": {
+          "boundary": 230,
+          "index": 233,
+          "payload": 1678776884,
+          "marker": -1,
+          "bounds": [
+            779932,
+            667662,
+            32,
+            32
+          ]
+        },
+        "last": {
+          "tick": 99,
+          "position": [
+            779964,
+            -182141,
+            677646
+          ],
+          "flags": 1,
+          "descriptor": 99,
+          "plant_contact": 0,
+          "cannon_state": 0
+        }
+      },
+      {
+        "name": "cannon",
+        "descriptor": {
+          "boundary": 230,
+          "index": 233,
+          "payload": 1678776884,
+          "marker": 1,
+          "bounds": [
+            770652,
+            660526,
+            18752,
+            272256
+          ]
+        },
+        "last": {
+          "tick": 35,
+          "position": [
+            779868,
+            -188003,
+            667701
+          ],
+          "flags": 257,
+          "descriptor": 233,
+          "plant_contact": 4,
+          "cannon_state": 17
+        }
+      },
+      {
+        "name": "all-low",
+        "descriptor": {
+          "boundary": 230,
+          "index": 233,
+          "payload": 1678776884,
+          "marker": 1,
+          "bounds": [
+            770652,
+            660526,
+            18752,
+            272256
+          ]
+        },
+        "last": {
+          "tick": 35,
+          "position": [
+            779868,
+            -188003,
+            667701
+          ],
+          "flags": 257,
+          "descriptor": 233,
+          "plant_contact": 4,
+          "cannon_state": 17
+        }
+      }
+    ]
+  },
+  "focused_make_check": 577,
+  "limits": [
+    "User reports wall-like collision; accepted but unresolved",
+    "Other plant behaviors and no-ground distant plant combinations not exhaustively validated",
+    "Complete safe flight/landing coverage not established",
+    "No full-suite/R2q claim"
+  ],
+  "evidence": {
+    "initial-census.json": {
+      "path": "work/experiments/EXP-20260909-004/initial-census.json",
+      "sha256": "19c47fbf8bdef38f008f58eaa036c8266c2840785c585428c9ceb11318ebf251"
+    },
+    "initial-audit.json": {
+      "path": "work/experiments/EXP-20260909-004/initial-audit.json",
+      "sha256": "0c2c193c70d4eada73282af30293ec21e68ebad2c619a0383adb210d9171a285"
+    },
+    "initial-capture.json": {
+      "path": "work/experiments/EXP-20260909-004/initial-capture.json",
+      "sha256": "74258ebee90fc97d681fa4fd1d139ee562a435206fa6b57244b725e4b67cc37a"
+    },
+    "user-cannon-approach.json": {
+      "path": "work/experiments/EXP-20260909-004/user-cannon-approach.json",
+      "sha256": "c021b688dd1db53f6b60217f22c02d513b2f9faf466a53d686a38cdf2d5f73fa"
+    },
+    "cannon-inputs.json": {
+      "path": "work/experiments/EXP-20260909-004/cannon-inputs.json",
+      "sha256": "613bbbab44f17abe187fa44f95eb8168568d55c3fee0894d3f22491d4f4fcc1c"
+    },
+    "plant-census.json": {
+      "path": "work/experiments/EXP-20260909-004/plant-census.json",
+      "sha256": "e954d9039d57a8834e699f656893de68d0fc81998216c97072dd1d2f23c4a7d0"
+    },
+    "all-low-restoration.json": {
+      "path": "work/experiments/EXP-20260909-004/all-low-restoration.json",
+      "sha256": "e34bf0fb18a6323c0714c7209d10093d12d4b80e8b293dbbb45dda732bf1cc36"
+    },
+    "native-cannon.json": {
+      "path": "work/experiments/EXP-20260909-004/native-cannon.json",
+      "sha256": "eae4bf71b5182a10174dcb54e222a33554799d3d39b11fe9770609b7bd11e8f6"
+    },
+    "native-cannon-constructor.json": {
+      "path": "work/experiments/EXP-20260909-004/native-cannon-constructor.json",
+      "sha256": "eae4bf71b5182a10174dcb54e222a33554799d3d39b11fe9770609b7bd11e8f6"
+    },
+    "blender-roundtrip.json": {
+      "path": "work/experiments/EXP-20260909-004/blender-roundtrip.json",
+      "sha256": "caa9a27f125e8dd83c433f950493d3f8aa0362d5aa3d130a6b8e711bebd72651"
+    },
+    "build-preservation.json": {
+      "path": "work/experiments/EXP-20260909-004/build-preservation.json",
+      "sha256": "8c2e7da1b30cee390ae6df58dab595c5e4df0bfe2cc1eff8f4ba5cce99c27f43"
+    },
+    "final-test-selection.json": {
+      "path": "work/experiments/EXP-20260909-004/final-test-selection.json",
+      "sha256": "b2ff048c73be894ca639a831d94b4901fae0ec70978a735140ce796dbbfdc630"
+    },
+    "final-check.log": {
+      "path": "work/experiments/EXP-20260909-004/final-check.log",
+      "sha256": "3d9f47f4a011854a20f775c7c1b63b2d782bba763a97b730aa9a40eb138b5bbd"
+    },
+    "patch-preflight.json": {
+      "path": "work/experiments/EXP-20260909-004/patch-preflight.json",
+      "sha256": "a09a38f79b4399e26ad078a559d91ef145b433ed753fbf52f01bf1a81eac3ccb"
+    },
+    "final-runtime-audit.json": {
+      "path": "work/experiments/EXP-20260909-004/final-runtime-audit.json",
+      "sha256": "04f2f4f5d5f0d8ab1517c1e48b3af4319404df442f15ceaa515fd9db22abde02"
+    },
+    "final-doc-check.log": {
+      "path": "work/experiments/EXP-20260909-004/final-doc-check.log",
+      "sha256": "ec7a0efed5d3d84c8c4c916b031804fcf09cb6eebdfe00eb1feb84fd4ef1471b"
+    },
+    "claim-sweep.json": {
+      "path": "work/experiments/EXP-20260909-004/claim-sweep.json",
+      "sha256": "9ab2a3d1c3a3ff40eb21301a6c985ff0be5aadbcd8bb72b3dad8a27d099aa6fc"
+    },
+    "live-write-authorization.json": {
+      "path": "work/experiments/EXP-20260909-004/live-write-authorization.json",
+      "sha256": "181c0f635806c4bee36e6408018861f69c3a5344ec7a4a175fe277784e911564"
+    },
+    "before-live-write-audit.json": {
+      "path": "work/experiments/EXP-20260909-004/before-live-write-audit.json",
+      "sha256": "49f774b4da944e0e1bca8d8bd913ed51ea9a12be44483fb616e052eaf6392dc7"
+    },
+    "live-write.json": {
+      "path": "work/experiments/EXP-20260909-004/live-write.json",
+      "sha256": "f0fe7740c97bb53b9658aae0193b2e3ddaf6a0051d839b7cbb87c8853302d9bb"
+    },
+    "after-live-census.json": {
+      "path": "work/experiments/EXP-20260909-004/after-live-census.json",
+      "sha256": "72dd9b40276bc487cce9e6f9d01b3ae04b8a216013b3169e1081d36da61ce454"
+    },
+    "registration.asm": {
+      "path": "work/experiments/EXP-20260909-004/registration.asm",
+      "sha256": "a37e851b46ee339076919365ee2cab7107ed45ba178c33e2cd8f068da812833f"
+    },
+    "cached-bounds-plan.json": {
+      "path": "work/experiments/EXP-20260909-004/cached-bounds-plan.json",
+      "sha256": "81639ec8a304690165bc23be9ec5e8e0121660e77a71795e86f2764e0b225f12"
+    },
+    "probe-cached-bounds.py": {
+      "path": "work/experiments/EXP-20260909-004/probe-cached-bounds.py",
+      "sha256": "d605bb107ad167fe17e99a9a77d3b44830c6ddfe3431d67845bac60042756f88"
+    },
+    "probe-cached-bounds.log": {
+      "path": "work/experiments/EXP-20260909-004/probe-cached-bounds.log",
+      "sha256": "7300b6d7b64e16b0529ad698dcd0d8ab026cdd06d9a81d31ed372d330c6ea71d"
+    },
+    "post-write-audit.json": {
+      "path": "work/experiments/EXP-20260909-004/post-write-audit.json",
+      "sha256": "72d9327b8ad83ef20936138607d5bdc15f7c13dd03d37d4f498bc0aa8151cf50"
+    },
+    "live-doc-check.log": {
+      "path": "work/experiments/EXP-20260909-004/live-doc-check.log",
+      "sha256": "21d28caafa2c44f60523ec79729e6f35d11072a70291a1036db419a0a6cf45d9"
+    },
+    "live-claim-sweep.json": {
+      "path": "work/experiments/EXP-20260909-004/live-claim-sweep.json",
+      "sha256": "a7525a160cfd931db64f21465a20f19d86f543662b73f54dd88445be2038cb5c"
+    },
+    "cache-write-authorization.json": {
+      "path": "work/experiments/EXP-20260909-004/cache-write-authorization.json",
+      "sha256": "4a644c7fc6d5e28bf651693fee1b3286121cc5928b2b3ccf708db44e2c61c057"
+    },
+    "before-cache-write-audit.json": {
+      "path": "work/experiments/EXP-20260909-004/before-cache-write-audit.json",
+      "sha256": "5e43b9d788990b605c73c9bdd471d1fc73c52b8dfc8758ca5ced2779a38bdaca"
+    },
+    "cache-write.json": {
+      "path": "work/experiments/EXP-20260909-004/cache-write.json",
+      "sha256": "36aa581a4bdc75fc54eca9f58ba681ffa98bb5ee8fce69800cc9ceeb1e73ebb6"
+    },
+    "user-cannon-fixed-01.json": {
+      "path": "work/experiments/EXP-20260909-004/user-cannon-fixed-01.json",
+      "sha256": "a7e865fe300e21d292e57dafcb95df0aba14a68130fb30f5de4bfe5520859f9b"
+    },
+    "cache-final-audit.json": {
+      "path": "work/experiments/EXP-20260909-004/cache-final-audit.json",
+      "sha256": "184c647904584bedc2c03b8e442439bddb81bc19a5389a0c41e66dd58dabd5a9"
+    },
+    "cache-doc-check.log": {
+      "path": "work/experiments/EXP-20260909-004/cache-doc-check.log",
+      "sha256": "e65a2248600439072cdd39744eacdb60c1527124f7a01bc56e6742f7a82955d0"
+    },
+    "cache-claim-sweep.json": {
+      "path": "work/experiments/EXP-20260909-004/cache-claim-sweep.json",
+      "sha256": "b17e220446c8da01948a74aa40677efd0e18389fe4c03ccbf4e6a5cd26b2ae4f"
+    },
+    "bank.json": {
+      "path": "work/experiments/EXP-20260909-004/bank.json",
+      "sha256": "626370b4b77f54732c822e109780be49ff011090fb8cac01c785b217b9aab322"
+    },
+    "bank-runtime-audit.json": {
+      "path": "work/experiments/EXP-20260909-004/bank-runtime-audit.json",
+      "sha256": "3dc4536cdf6e7d9c19c6627d3227b89845166b85f3cc7301fce180f9c9446d18"
+    },
+    "user-cannon-fixed-02.json": {
+      "path": "work/experiments/EXP-20260909-004/user-cannon-fixed-02.json",
+      "sha256": "04b9838d196e52ebdbb4a30082eeb7b6185dca310f2d3d870fbeb994b91ddc00"
+    },
+    "bank-final-verification.json": {
+      "path": "work/experiments/EXP-20260909-004/bank-final-verification.json",
+      "sha256": "1458be8a27e7705333d54ef1c18ac90452ba35816be75f438b7354f1a6b4ff7a"
+    },
+    "bank-check.log": {
+      "path": "work/experiments/EXP-20260909-004/bank-check.log",
+      "sha256": "b1c5da20029f87ebd2220c915586959223db2061c26e80bbbb15631606353260"
+    },
+    "bank-test-selection.json": {
+      "path": "work/experiments/EXP-20260909-004/bank-test-selection.json",
+      "sha256": "b2ff048c73be894ca639a831d94b4901fae0ec70978a735140ce796dbbfdc630"
+    },
+    "bank-claim-sweep.json": {
+      "path": "work/experiments/EXP-20260909-004/bank-claim-sweep.json",
+      "sha256": "1010f4062e6430abef28fae7c53994dc92a8d0ab7aa0a3a34a1406b0a3eafe96"
+    }
+  },
+  "live_intervention": {
+    "accepted": true,
+    "authorized_user_message": "go for it",
+    "bytes_written": 24,
+    "flik_state_preserved": true,
+    "resumed": true,
+    "prefix_sha256": "bc2be600c8fddedf90aee965c176c91e547921b25faf609967078839abd73c74",
+    "cache_update_applied": true,
+    "cache_update_bytes": 240,
+    "cache_plan_native_accepted": true,
+    "cache_plan_activation": {
+      "tick": 35,
+      "contact": 4,
+      "position": [
+        779868,
+        -188003,
+        667701
+      ],
+      "state": 17
+    },
+    "missed_condition": "Source and active-instance collision bounds are cached; same-tag registration skips refresh at0044CA7F.",
+    "cache_user_message": "yup",
+    "cache_bytes_written": 240,
+    "cache_state_preserved": true,
+    "cache_resumed": true,
+    "live_cannon_bounds": [
+      770652,
+      660526,
+      18752,
+      272256
+    ],
+    "current_session_after_user_reload": "Both writes were consumed. Later user level re-entry reloaded the old on-disk control prefix; future launches use the fixed banked build."
+  },
+  "post_repair_quiet_monitor": {
+    "summary": {
+      "samples": 2181,
+      "contacts": [
+        99
+      ],
+      "cannon_states": [
+        0
+      ],
+      "y_range": [
+        -185390,
+        -185390
+      ],
+      "vy_range": [
+        0,
+        0
+      ]
+    },
+    "scope": "2181 stationary samples with no user input; not a failed approach or acceptance"
+  },
+  "follow_up_monitor": {
+    "path": "work/experiments/EXP-20260909-004/user-cannon-fixed-02.json",
+    "completed": true,
+    "summary": {
+      "samples": 11897,
+      "contacts": [
+        0,
+        5,
+        99,
+        178,
+        179,
+        181,
+        182,
+        216,
+        233
+      ],
+      "cannon_states": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "y_range": [
+        -314339,
+        15980
+      ],
+      "vy_range": [
+        -7936,
+        4096
+      ]
+    },
+    "observer_closed": true
+  },
+  "user_approval": "User: works, but it's acting like a complete wall. Good enough, bank it",
+  "bank": {
+    "accepted": true,
+    "authorization": "User: works, but it's acting like a complete wall. Good enough, bank it",
+    "time_ns": 1788989435211883812,
+    "known_issue": "Plant collision feels like a complete wall; accepted for this checkpoint, no further collision shaping performed.",
+    "prior_bank": "work/design-banks/EXP-20260909-003-path-finish",
+    "prior_files_verified": {
+      "project": 771,
+      "build": 724
+    },
+    "live_launches": [
+      {
+        "sample": 8527,
+        "seconds": 214.87986960400121,
+        "entry_contact": 233,
+        "entry_position": [
+          779360,
+          -187363,
+          670021
+        ],
+        "entry_state": 17,
+        "entry_animation": 2,
+        "minimum_y": -314339,
+        "minimum_vy": -7936
+      },
+      {
+        "sample": 9623,
+        "seconds": 242.5636262730004,
+        "entry_contact": 233,
+        "entry_position": [
+          782731,
+          -187021,
+          668779
+        ],
+        "entry_state": 17,
+        "entry_animation": 2,
+        "minimum_y": -313997,
+        "minimum_vy": -7936
+      }
+    ],
+    "manifest": "work/design-banks/EXP-20260909-004-plant-collision/manifest.json",
+    "manifest_sha256": "da6d21595a1dba5c7a7cbc3f14d9661cc535e7f5c51c2e56bb21364695868312",
+    "roles": {
+      "project": {
+        "source": "work/level-projects/moonlit-cliffs-plant-collision",
+        "bank": "work/design-banks/EXP-20260909-004-plant-collision/project",
+        "file_count": 771
+      },
+      "build": {
+        "source": "work/copies/moonlit-cliffs-plant-collision-01",
+        "bank": "work/design-banks/EXP-20260909-004-plant-collision/build",
+        "file_count": 724
+      }
+    }
+  },
+  "live_launches": [
+    {
+      "sample": 8527,
+      "seconds": 214.87986960400121,
+      "entry_contact": 233,
+      "entry_position": [
+        779360,
+        -187363,
+        670021
+      ],
+      "entry_state": 17,
+      "entry_animation": 2,
+      "minimum_y": -314339,
+      "minimum_vy": -7936
+    },
+    {
+      "sample": 9623,
+      "seconds": 242.5636262730004,
+      "entry_contact": 233,
+      "entry_position": [
+        782731,
+        -187021,
+        668779
+      ],
+      "entry_state": 17,
+      "entry_animation": 2,
+      "minimum_y": -313997,
+      "minimum_vy": -7936
+    }
+  ],
+  "known_issue": "Plant collision feels like a complete wall; accepted for this checkpoint, no further collision shaping performed.",
+  "bank_verification": {
+    "accepted": true,
+    "complete_bank_exact": true,
+    "prior_bank_exact": true,
+    "make_check_exit": 0,
+    "focused_tests": 577
+  }
+}

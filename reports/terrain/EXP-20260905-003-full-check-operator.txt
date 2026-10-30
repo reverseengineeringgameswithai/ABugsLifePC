@@ -1,0 +1,18 @@
+from pathlib import Path
+from datetime import datetime, timezone
+import hashlib, json, os, subprocess, time
+root=Path('/home/dev/ABLPC'); work=root/'work/experiments/EXP-20260905-003'
+report=root/'reports/terrain/EXP-20260905-003-validation.json'
+env=os.environ.copy(); env['TMPDIR']=str(root/'work/tmp'); env['PYTEST_ADDOPTS']='-n 2 --dist=loadfile --basetemp='+str(root/'work/tmp/pytest-full')+' -o tmp_path_retention_policy=failed'
+(root/'work/tmp').mkdir(parents=True,exist_ok=True)
+log=work/'full-check-two-workers.log'
+record={'experiment':'EXP-20260905-003','terrain_regressions':{'passed':27,'duration_seconds':6.44,'log':'work/experiments/EXP-20260905-003/patch-tests.txt'},'terrain_gate_pre_runtime':{'passed':72,'duration_seconds':27.50},'terrain_gate_final':{'passed':72,'duration_seconds':27.66,'log':'work/experiments/EXP-20260905-003/terrain-gate-final.txt'},'full_check':{'status':'running','command':'make check','environment':{k:env[k] for k in ('TMPDIR','PYTEST_ADDOPTS')},'started_utc':datetime.now(timezone.utc).isoformat(),'log':str(log.relative_to(root)),'configuration':'First full-repository measured two-worker loadfile trial; serial fallback only on evidence of ordering/shared-resource failures.'},'known_preexisting_failure':{'nodeid':'tests/test_r2q_quiet_census_design.py::test_historical_validation_protocol_is_remount_stable_and_bounded','expected_sha256':'6cd3d734d0dcbe34eedc163b96b784773fdbce1c23c07dd229818cdbf9e93da0','actual_sha256':'7d826b13a2e419c2911240eae44707e74569e1c316391f2b43d1f2e6e88ec554','baseline':'Isolated at parent e5f4a3c and banked 68ce28a; not repaired by terrain session.'},'prebank_audits':{'vault_lint':{'notes':659,'errors':0,'warnings':8},'tracked_file_violations':0,'diff_whitespace_errors':0,'claim_sweep':'reports/terrain/EXP-20260905-003-claim-sweep.json','protected_paths':'work/experiments/EXP-20260905-003/prebank-audit.txt','stash_object':'76db1c9ee1ffffce52cea6aee591c24ab6a1c39a','original_iso_modes_unchanged':'0644; user-approved procedural read-only handling','run_index':'Historical 14 uncited runs and one dangling RUN-WINE-20260819-003708 citation remain.','runtime_audit':'Unrestricted final audit clean after explicit permission to close historical game.'}}
+def save():
+ temporary=report.with_suffix('.json.tmp')
+ temporary.write_text(json.dumps(record,indent=2,sort_keys=True)+'\n'); temporary.replace(report)
+save(); start=time.monotonic()
+with log.open('xb') as out:
+ result=subprocess.run(['make','check'],cwd=root,env=env,stdout=out,stderr=subprocess.STDOUT)
+record['full_check'].update(status='completed',exit_code=result.returncode,duration_seconds=round(time.monotonic()-start,3),finished_utc=datetime.now(timezone.utc).isoformat(),log_sha256=hashlib.sha256(log.read_bytes()).hexdigest())
+save();print(json.dumps(record['full_check'],indent=2),flush=True)
+raise SystemExit(result.returncode)

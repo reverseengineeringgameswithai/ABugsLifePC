@@ -1,0 +1,12 @@
+CURATION STATUS: exploratory; excluded from the accepted M2.15 result.
+
+The structured stop at 0x0044D79A is preserved. Raw GDB output from this same
+run records thread 1 receiving SIGSEGV at 0x0044D79A after the breakpoint stop
+and before timeout. The structured result does not surface that signal and
+instead reports breakpoint deletion, cleanup verification, and detach. Wine
+later printed the matching unhandled read fault and began its debugger. The
+instruction is `test al,0x10` and has no memory operand. This run may describe
+the pre-continuation stop state, but it does not establish that the following
+call completed or that the game survived normally.
+
+See EXP-20260812-028 and RUN-GDB-20260812-204333/curation.txt.

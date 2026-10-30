@@ -1,0 +1,26 @@
+pefile: 2024.8.26
+lief: 1.0.0
+capstone: 5.0.9
+construct: 2.10.70
+rich: 15.0.0
+pytest: 9.1.1
+hypothesis: 6.165.3
+yaml: 6.0.3
+pydantic: 2.13.4
+networkx: 3.6.1
+unicorn: 2.1.4
+Python: 3.14.6
+Context budget (estimated_tokens = bytes // 4; startup sequence from START HERE):
+    tokens      bytes   lines  note
+      2154       8617     143  Vault/00-System/START HERE.md
+      9698      38794     567  Vault/00-System/Current State.md
+      4206      16826     367  Vault/00-System/Project Roadmap.md
+      1688       6752     140  Vault/00-System/Environment Status.md
+     10212      40851     757  Vault/50-Decisions/Decision Log.md
+     11262      45051     609  Vault/70-Known-Unknowns/Known Unknowns.md
+       837       3349      59  Vault/01-MOCs/Reverse Engineering MOC.md
+     40060     160240    2642  TOTAL of 7 mandated notes (session budget 120000)
+WARNING: Vault/00-System/START HERE.md: updated: 2026-10-05 is older than the newest session note date 2026-10-07
+Vault lint: 1168 notes, 0 errors, 1 warnings
+M4 compatibility check failed: Wine Linux Play Baseline renderer selection must contain exactly one 'Active R2c uses fresh RC0 with no directional input before Return.'; found 0
+make: *** [Makefile:21: m4-compatibility] Error 2

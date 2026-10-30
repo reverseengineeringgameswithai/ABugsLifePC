@@ -1,0 +1,185 @@
+{
+  "run_id": "RUN-GDB-20260812-214545",
+  "experiment_id": "EXP-20260812-030",
+  "tool": "gdb-harness",
+  "tool_version": "1.1.0",
+  "schema_version": 2,
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "environment": "Fedora Linux 44 (Workstation Edition), kernel 7.0.11-200.fc44.x86_64, wine-11.0 (Staging)",
+  "debugger": "GNU gdb (Fedora Linux) 17.1-6.fc44",
+  "working_directory": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+  "target_pid": 2555939,
+  "ownership": {
+    "pid": 2555939,
+    "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+    "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+    "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "verified": true,
+    "checked_at": "2026-08-12T21:45:45.236569-04:00"
+  },
+  "status": "target_reached",
+  "spec": {
+    "schema_version": 2,
+    "experiment_id": "EXP-20260812-030",
+    "target": {
+      "mode": "pid",
+      "pid": 2555939,
+      "exe_basename": "bugs.exe",
+      "expected_exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878"
+    },
+    "watchpoints": [
+      {
+        "id": "plant10_anm_slot_safe_control",
+        "address": "0x005B1AA4",
+        "kind": "access",
+        "size": 4
+      }
+    ],
+    "breakpoints": [],
+    "window": {
+      "max_stops": 20,
+      "timeout_seconds": 120,
+      "end_milestones": [
+        "NextLife"
+      ],
+      "log_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.log"
+    },
+    "on_stop": {
+      "registers": [
+        "rax",
+        "rbx",
+        "rcx",
+        "rdx",
+        "rsi",
+        "rdi",
+        "rip"
+      ],
+      "memory_reads": [
+        {
+          "id": "slot_value",
+          "address": "0x005B1AA4",
+          "size": 4
+        }
+      ],
+      "backtrace_limit": 8
+    },
+    "survival": {
+      "required": true,
+      "settle_ms": 500,
+      "sample_count": 5,
+      "sample_interval_ms": 200,
+      "require_untraced": true,
+      "require_resumed": true
+    }
+  },
+  "log_start_offset": 40716,
+  "gdb_arch_warning": null,
+  "artifacts": [
+    "metadata.json",
+    "spec.resolved.json",
+    "stops.jsonl",
+    "result.json",
+    "debugger-evidence.txt",
+    "gdb-stderr.txt"
+  ],
+  "time_window_start": "2026-08-12T21:45:45.328435-04:00",
+  "time_window_end": "2026-08-12T21:46:11.163568-04:00",
+  "completion": {
+    "completed": true,
+    "accepted": true,
+    "stop_reason": "target_reached",
+    "stops_observed": 4,
+    "watchpoints_installed": 1,
+    "watchpoints_deleted": 1,
+    "breakpoints_installed": 0,
+    "breakpoints_deleted": 0,
+    "cleanup_verified": true,
+    "detached": true,
+    "target_signal": null,
+    "error": null,
+    "survival_required": true,
+    "survival_verified": true,
+    "survival_receipt": {
+      "schema_version": 1,
+      "probe": "proc-identity-state-tracer",
+      "pid": 2555939,
+      "time_start": "2026-08-12T21:46:11.223543-04:00",
+      "time_end": "2026-08-12T21:46:12.525483-04:00",
+      "configuration": {
+        "required": true,
+        "settle_ms": 500,
+        "sample_count": 5,
+        "sample_interval_ms": 200,
+        "require_untraced": true,
+        "require_resumed": true
+      },
+      "identity_verified": true,
+      "identity": {
+        "pid": 2555939,
+        "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+        "cmdline": [
+          "R:\\PC\\BUGS\\bugs.exe",
+          "log",
+          "cheat",
+          "mpeg"
+        ],
+        "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+        "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+        "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+        "verified": true,
+        "checked_at": "2026-08-12T21:46:11.724597-04:00"
+      },
+      "samples": [
+        {
+          "index": 0,
+          "t_wall": "2026-08-12T21:46:11.724632-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 1,
+          "t_wall": "2026-08-12T21:46:11.924758-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 2,
+          "t_wall": "2026-08-12T21:46:12.124920-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 3,
+          "t_wall": "2026-08-12T21:46:12.325094-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 4,
+          "t_wall": "2026-08-12T21:46:12.525318-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        }
+      ],
+      "passed": true,
+      "failure_reasons": []
+    }
+  }
+}

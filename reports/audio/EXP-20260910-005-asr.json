@@ -1,0 +1,507 @@
+{
+  "experiment": "EXP-20260910-005",
+  "kind": "ASR candidates only; not human listening, verified speaker or native event evidence",
+  "model": "Systran/faster-whisper-small",
+  "compute": "cpu int8, local cache only",
+  "rows": [
+    {
+      "file": "SFX/USGN007.WAV",
+      "sha256": "414bb271c7ff64b2d13215a6252c117417e180ce6f8b809893797d029e0db15c",
+      "candidate": "",
+      "segments": []
+    },
+    {
+      "file": "SFX/USGN009.WAV",
+      "sha256": "e7f1189d381044a08ad4f20012a5205189cde158eed7d4326f34b12bcfca7593",
+      "candidate": "Grain, grain, grain.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.16,
+          "avg_logprob": -0.5759022474288941,
+          "no_speech_prob": 0.057798583060503006
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN010.WAV",
+      "sha256": "9289c37ed3b1fe3f8f2e57a1a3b8084403a7171ed710fddddaeac1f9d20ea7bc",
+      "candidate": "Just picking up grain here.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.56,
+          "avg_logprob": -0.362168100145128,
+          "no_speech_prob": 0.019576342776417732
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN013.WAV",
+      "sha256": "407870c59da2f3be308c3a26e568d4ee554c31e8107a65c08858a700035ae2d9",
+      "candidate": "It's harvest time!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.76,
+          "avg_logprob": -0.49597586691379547,
+          "no_speech_prob": 0.017820198088884354
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN014.WAV",
+      "sha256": "5d95bc13919565fa8d4049030ee67d8efb57ef683a6f4fc89960550c7d7fe049",
+      "candidate": "Never too much grain.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.16,
+          "avg_logprob": -0.44407474994659424,
+          "no_speech_prob": 0.006329748779535294
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN026.WAV",
+      "sha256": "b067cd40614d474767c49180b50a047710dd27a84179fc569615094d4bd3384c",
+      "candidate": "Cat and Dizzy!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.12,
+          "avg_logprob": -0.8736835271120071,
+          "no_speech_prob": 0.03108670935034752
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN027.WAV",
+      "sha256": "8f4ef6c535fb22cb60d149ce0418e5efba472ffdab5724bd33b6e6f819fb7e23",
+      "candidate": "Take that.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.84,
+          "avg_logprob": -0.48241376876831055,
+          "no_speech_prob": 0.1514475792646408
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN028.WAV",
+      "sha256": "09d1ab8c8ded8495179769cbff122910b875b0e0b12f11f12db52d927115213d",
+      "candidate": "Yeah!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.84,
+          "avg_logprob": -0.5606082916259766,
+          "no_speech_prob": 0.15927787125110626
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN031.WAV",
+      "sha256": "dbb0e0cddfaef6880fda6f08c8ae2da1644f6dccab3bd30c50f8b5820942e775",
+      "candidate": "Super berry",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "avg_logprob": -0.49127655029296874,
+          "no_speech_prob": 0.029178671538829803
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN032.WAV",
+      "sha256": "07f3901c105384df000dc1a6d9ad133d42ef1c0af91b2abd56536912bed23b05",
+      "candidate": "Hoomingberry, yeah!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.6,
+          "avg_logprob": -0.6850611898634169,
+          "no_speech_prob": 0.10196949541568756
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN033.WAV",
+      "sha256": "97b7aeb4a54d2ccaac3cd9e3e29267d8db63c0cb29ecd1722f914e99e413a3ac",
+      "candidate": "MEGA HOMINGBERRY!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "avg_logprob": -0.6178659742528742,
+          "no_speech_prob": 0.14713679254055023
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN034.WAV",
+      "sha256": "bdc7b71c9eea5d709b984a60fd04538fa337c139f49a667d097bf5bd6457dbf8",
+      "candidate": "Goldberry! I can do some damage with this!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.84,
+          "avg_logprob": -0.39175706676074434,
+          "no_speech_prob": 0.07539316266775131
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN042.WAV",
+      "sha256": "e8c8a5f553c59ef3bdd378e30ec31291c5c488eba89a866f15e8a19ca77e8ec4",
+      "candidate": "Ooh, that's gonna leave a stain.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.6600000000000001,
+          "avg_logprob": -0.40065133571624756,
+          "no_speech_prob": 0.005660675000399351
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN043.WAV",
+      "sha256": "c9d80ffa8a4c400fa543bcd9c8f2c0b24256f1f475512be07fbc16a546f043c1",
+      "candidate": "Oh, yeah!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.0,
+          "avg_logprob": -0.6189787898744855,
+          "no_speech_prob": 0.06934739649295807
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN044.WAV",
+      "sha256": "be9ef36512800db2476154c137c1a2ed53db5838b0e20f6a630c6aabd6b682d6",
+      "candidate": "Bye bye, buggy.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.26,
+          "avg_logprob": -0.46198145548502606,
+          "no_speech_prob": 0.018593942746520042
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN045.WAV",
+      "sha256": "251858082153d91e26095674bd4524dd557a3ab778a29d6b2749bdf0d788bb67",
+      "candidate": "Gotcha!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.5,
+          "avg_logprob": -0.5210734367370605,
+          "no_speech_prob": 0.5394097566604614
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN046.WAV",
+      "sha256": "08739c46f396fae7536011d1aac5b085ebc4074d01096da3e8d12934a034422a",
+      "candidate": "Nice one.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.84,
+          "avg_logprob": -0.5043008923530579,
+          "no_speech_prob": 0.1722470372915268
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN048.WAV",
+      "sha256": "fa10569e32caf81fda3cf994a0bcffe2f5a0f335fabd7f45b238eca06e1e76f7",
+      "candidate": "F-L-I-K spells flick. That's me.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.96,
+          "avg_logprob": -0.3127509637882835,
+          "no_speech_prob": 0.04456346109509468
+        },
+        {
+          "start": 2.96,
+          "end": 3.8000000000000003,
+          "avg_logprob": -0.3127509637882835,
+          "no_speech_prob": 0.04456346109509468
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN050.WAV",
+      "sha256": "801be0d1ebbd12e9e07cadd100b36dd69edfc3537fe8b61a03f3a77cb2d69a3c",
+      "candidate": "That helps",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "avg_logprob": -0.38970489501953126,
+          "no_speech_prob": 0.010294145904481411
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN051.WAV",
+      "sha256": "3972b94196dca0b7fb9eb75da82bdd7cda177ae81383997ef61fd5777755fbcf",
+      "candidate": "This I can use.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.5,
+          "avg_logprob": -0.44764526933431625,
+          "no_speech_prob": 0.0350353941321373
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN052.WAV",
+      "sha256": "414f592a446ef4aede4813a0e35d66e42f0c9d9d80409c8abc3bf3e2fae48835",
+      "candidate": "Progress!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "avg_logprob": -0.929810905456543,
+          "no_speech_prob": 0.11215195804834366
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN054.WAV",
+      "sha256": "d89644a0a26bf3888c22de2de2b065ed20a65f2a5174ab21a3573e81bcad8c62",
+      "candidate": "Well, all right.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.52,
+          "avg_logprob": -0.5547614246606827,
+          "no_speech_prob": 0.006246571429073811
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN069.WAV",
+      "sha256": "f9f65398399d70858891d00cf64de2be25a17cd5a05e41d7349fcf08cfa06559",
+      "candidate": "These berries don't work.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.9000000000000001,
+          "avg_logprob": -0.4013399018181695,
+          "no_speech_prob": 0.007318547461181879
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN070.WAV",
+      "sha256": "2a2ec86d475d10b8472617f7eaf530b4870bc467d6fc0948ae9af21a5a5cec7e",
+      "candidate": "Need more berry power!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "avg_logprob": -0.58101437240839,
+          "no_speech_prob": 0.0065576438792049885
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN073.WAV",
+      "sha256": "f869ec08d8327065be3547dcbed3d404a2079ac87801f97b3bd5c4456986d7b6",
+      "candidate": "So that's where I need to go.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.6,
+          "avg_logprob": -0.28929230322440463,
+          "no_speech_prob": 0.0014000405790284276
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN074.WAV",
+      "sha256": "eb55a8a646e17dda579cd64785dc3a302095d36acb0ce3b4eabd58c903127f61",
+      "candidate": "Well, will you look at that?",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.76,
+          "avg_logprob": -0.36607512018897315,
+          "no_speech_prob": 0.08682014793157578
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN075.WAV",
+      "sha256": "44e60dc51e936dd0ca73c3e473d4757acf30b7e788d543fd423bcd317cac1324",
+      "candidate": "That could be useful.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.3,
+          "avg_logprob": -0.4149746336042881,
+          "no_speech_prob": 0.01674901507794857
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN081.WAV",
+      "sha256": "75a4c1d655803ff5e87f28c294aac1db5307a3fd829e89a38e49d58b25e35697",
+      "candidate": "I'm invincible!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.32,
+          "avg_logprob": -0.5180576358522687,
+          "no_speech_prob": 0.033919014036655426
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN082.WAV",
+      "sha256": "7307d59c2c1c9b3cfef7b8187b6847f564754054cacfa2229775ef78f76d95d6",
+      "candidate": "Super jump",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "avg_logprob": -0.399240779876709,
+          "no_speech_prob": 0.0373300164937973
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN083.WAV",
+      "sha256": "4e7e5ee64c6d0eaf6e0e6750de3b54e12981d338257952696110f55f42430c9b",
+      "candidate": "I need more grain!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.34,
+          "avg_logprob": -0.48601845651865005,
+          "no_speech_prob": 0.006933686323463917
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN084.WAV",
+      "sha256": "e62a4b4b675d90bd6a82054054ef90cb0fd160b66ec7ec4b41579f96f9d8bf1c",
+      "candidate": "I need to grow a berry shooter.",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.0,
+          "avg_logprob": -0.3625906326554038,
+          "no_speech_prob": 0.0045267450623214245
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN086.WAV",
+      "sha256": "4241bff3b4d1ab0ed8ea335d3ddb0a29f42df2828d57f1dc47ed8a48d6dddfca",
+      "candidate": "I NEED SUPER JUMP!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.48,
+          "avg_logprob": -0.5038621366024018,
+          "no_speech_prob": 0.012160095386207104
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN090.WAV",
+      "sha256": "8833d606d0882930d54e96740d0b5f0b77ef953a78784e99374ad8e95045c07b",
+      "candidate": "Oh!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.5,
+          "avg_logprob": -0.5721968650817871,
+          "no_speech_prob": 0.31919342279434204
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN091.WAV",
+      "sha256": "2356061b5a428ba802e2567a5edffaa46eb5d2d008338b55fe111216438a6d76",
+      "candidate": "Yeah!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.5,
+          "avg_logprob": -0.8201066017150879,
+          "no_speech_prob": 0.5750566720962524
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN092.WAV",
+      "sha256": "c8db61c50378ddef0a3745f9e1f6aa0383a822cf809b07cf969203f301a8262f",
+      "candidate": "Ow!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.5,
+          "avg_logprob": -0.7092013359069824,
+          "no_speech_prob": 0.37019145488739014
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN098.WAV",
+      "sha256": "499253667032b0a4248e83e593e63ce161a61f4d72d59de16819c8581746696f",
+      "candidate": "Oh!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.84,
+          "avg_logprob": -0.8433784484863281,
+          "no_speech_prob": 0.13681361079216003
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN108.WAV",
+      "sha256": "463c81db69b103fb0c870dac0a64f6b66d102e022b476b71c944e1662e7b7635",
+      "candidate": "Ah!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 0.5,
+          "avg_logprob": -0.7338303565979004,
+          "no_speech_prob": 0.4589957892894745
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN109.WAV",
+      "sha256": "2b3f299c1c2dc69253456b2d70e0f7e43d9ab8d008ac2f9beff046641b2ea3d3",
+      "candidate": "Oh, come on!",
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 1.0,
+          "avg_logprob": -0.46188171207904816,
+          "no_speech_prob": 0.020497364923357964
+        }
+      ]
+    },
+    {
+      "file": "SFX/USGN111.WAV",
+      "sha256": "5d7fa58de39a76e85b75f3ed397974aad039130edc80e08b7eb95fafece78b2b",
+      "candidate": "",
+      "segments": []
+    }
+  ]
+}

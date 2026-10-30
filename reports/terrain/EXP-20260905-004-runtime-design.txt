@@ -1,0 +1,28 @@
+EXP-20260905-004: small playable ground-ramp-box area.
+Reuse the exact banked alternate-4x4 top, zero object depth offset and broad deck.
+Collision source99 and primary160 render mesh remain in their existing allocations.
+The ramp runs east from box X5750 to X7150; rise192/run1400 stored units.
+No claim of connection from this elevated deck to the distant original landscape.
+
+Prelaunch requirements: all new original-PC route cases accepted; focused terrain
+suite only; source/file hashes pinned; fresh copied game and private prefix R:
+mapping; unrestricted session audit clean. Original EXE97c95ba5...7b878 supplies
+the offline instructions; runtime executes the guarded auto-hardware cache image
+1e1d5099...a9c41f. Require six hardware markers, both content-drive log identities,
+exact PID/start/group/cwd/window and compositor-peer binding. Verify the complete
+new source99 collision prefix and primary160 render prefix against staged files.
+
+Authoritative normal entry: Right to Anthill, Return to Level One title, Return
+into gameplay, with state and compositor captures at each boundary. No memory
+writes, teleport, ptrace, STOP/CONT, registers, debugger or save states.
+
+Normal-input plan, each steer leg at most8seconds, with key releases in finally:
+spawn -> (197091,480000) -> (240000,480000) -> (240000,508800).
+Two out/back cycles: (173600,508800) on box, then (240000,508800) on deck.
+An additional ascent may establish a top jump/landing (Shift_L0.15seconds,
+2.5-second trace), followed by a west step-off to (150400,508800).
+Retain failures/timeouts. Below-floor and deck-interior guards stop inputs.
+Live contact pointers/coordinates are observations, not a validated grounded-bit
+contract. Shots are asynchronous and linked to bracketing states and hashes.
+Close the test instance with exact-owned cleanup and audit afterward. Leave the
+fresh playable files and rebuilding command, not an unexplained live process.

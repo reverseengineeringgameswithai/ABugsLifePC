@@ -1,0 +1,86 @@
+{
+  "experiment": "EXP-20260906-006",
+  "date": "2026-09-06",
+  "status": "user reports inconsistent foliage overlap; bounded static layout audit, no repair applied",
+  "retail_binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "user_image": {
+    "private_copy": "work/experiments/EXP-20260906-006/appearance-review/user-overlap.png",
+    "sha256": "299372a71b03f9dcc0d8cc96510463e36956290344d415a8b3e28ed0e8f9119c",
+    "observation": "Uneven blade overlap with abrupt dark wedges and visible gaps",
+    "atomic_camera_or_process_binding": false
+  },
+  "sources": {
+    "builder": "scripts/terrain-foliage-variety.py:55",
+    "selector_and_mesh_assembly": "reimplementation/ablpc/terrain_foliage_variety.py:82",
+    "build_receipt": "work/experiments/EXP-20260906-006/grass-variety-build.json",
+    "build_receipt_sha256": "e887c3685501da44f95db45ac4e93be1e9638fe5bfec884eb4806b2db6ae9bd6",
+    "staged_level_dat": "work/copies/EXP-20260906-007/repaired-variety-game/PC/BUGS/CD/LEVEL01/LEVEL.DAT",
+    "staged_level_dat_sha256": "548c58717a92ced0f58e1ff4ab618746f624663ea97fa8649eb549f260eb6e93",
+    "mesh_scene": 160,
+    "mesh_file_offset": 364084,
+    "first_foliage_vertex_index": 615,
+    "blades": 259,
+    "vertices_per_blade": 5
+  },
+  "confirmed_builder_behavior": {
+    "nominal_spacing_stored": 88,
+    "along_slot_jitter_fraction": 0.15,
+    "normal_root_stagger_stored": 24,
+    "yaw_jitter_degrees": 4,
+    "placement_uses_selected_blade_width": false,
+    "neighbour_overlap_or_order_check": false,
+    "template_selection_constraint": "avoid immediate repeated signature only",
+    "original_uvs_colours_and_unidentified_suffixes_retained": true,
+    "foliage_group_tags_counts": [["0x8166", 80], ["0x8163", 259], ["0x162", 179]]
+  },
+  "static_layout_measurements": {
+    "units": "stored render units, not pixels",
+    "method": "Decode scene160; take appended five-vertex blades in receipt order; undo each placement quarter-turn to obtain tangent/normal axes; compute full-blade X/Z AABBs; compare successive blades only when quarter-turn agrees",
+    "placed_width_min_median_max": [85, 136, 233],
+    "placed_depth_min_median_max": [6, 80, 212],
+    "same_edge_adjacent_pairs": 251,
+    "centre_spacing_min_median_max": [64, 87, 113],
+    "normal_root_difference_min_median_max": [0, 13, 42],
+    "tangent_aabb_overlap_min_median_max": [-11, 51, 153],
+    "positive_tangent_aabb_overlap_pairs": 249,
+    "negative_tangent_aabb_overlap_pairs": 2,
+    "largest_aabb_overlap": {"blade_indices": [51, 52], "overlap": 153, "centre_spacing": 80},
+    "largest_aabb_gap": {"blade_indices": [195, 196], "gap": 11, "centre_spacing": 97},
+    "scope": "Whole mesh, not localized to screenshot blades. Full-height AABB overlap is not proof of triangle intersection, same-height coverage, occlusion or z-fighting."
+  },
+  "interpretation": {
+    "confirmed": "Placement spacing and depth vary independently of the chosen blade dimensions and neighbouring geometry, producing highly variable tangent-envelope overlap.",
+    "inferred": "The uncontrolled overlap and depth arrangement plausibly contribute to the inconsistent layering in the supplied screenshot.",
+    "unknown": "Which measured crossing pairs correspond to the supplied crop pixels, and any additional contribution from retained donor shading, material-dependent drawing, depth interpolation or draw order. A still image alone does not establish z-fighting."
+  },
+  "closeup_followup": {
+    "user_clarification": "Gaps are secondary; hard triangular overlap cut-ins are the concern",
+    "images": [
+      {"path": "work/experiments/EXP-20260906-006/appearance-review/user-overlap-detail-1.png", "sha256": "8fbf6bd29cb5f3e66e655cb74c846d336b54ee8593f6aa02025742c1ca271317"},
+      {"path": "work/experiments/EXP-20260906-006/appearance-review/user-overlap-detail-2.png", "sha256": "2da0e156ff213a7380413e5ac5aebb4dc14cd735febe97cd792de042739ec455"}
+    ],
+    "geometry_probe": "work/experiments/EXP-20260906-006/appearance-review/geometry_crossings.py",
+    "geometry_probe_sha256": "557a38b410668618ff0af607f5959799d3afa82f4cad95694021842b84b77a0a",
+    "synthetic_segment_triangle_self_checks_passed": 4,
+    "stem_tip_shared_edge_failures": 0,
+    "stem_quad_nonplanarity_max_stored": 33.063155474866534,
+    "stem_quad_nonplanarity_above_2_stored": 94,
+    "strict_crossing_pairs_diagonal_02": 117,
+    "strict_crossing_pairs_diagonal_13": 116,
+    "pairs_crossing_under_both_splits": 116,
+    "example_pair": {"blades": [3, 4], "mesh_local_crossing": [-3752.633, 4564.065, 4856.236]},
+    "native_submission_check": "File group order is 80 tag0x8166 stem quads, 259 tag0x8163 tips, then 179 tag0x162 stem quads. This is source grouping, not proof of GPU draw order or bad depth state; no native emitted-index trace was run.",
+    "conclusion": "Actual geometric crossings exist under both conventional quad decompositions, supplying a stronger candidate for the cut-ins than tangent-envelope overlap alone.",
+    "limits": "Not screenshot face/pixel localization, native emitted-index validation, or proof that every geometric crossing is visually objectionable. Excludes coplanar and endpoint-only contacts."
+  },
+  "next_discriminator": "Prioritize intersection-aware consistent layering while retaining dense visual coverage, source attributes and repaired collision. Compare matched views against the current control. Native depth/material analysis remains necessary if the cut-ins persist; do not attribute them solely to density or restore the older builder's stripped plant collision.",
+  "safety": {
+    "game_or_collision_assets_changed": false,
+    "live_process_input_focus_memory_capture_launch_or_close": false,
+    "production_code_changed_this_review": false,
+    "tests_rerun": false,
+    "full_suite_or_r2q_run": false,
+    "git_commit_created": false,
+    "prior_mushroom_changes_saved_but_uncommitted": true
+  }
+}

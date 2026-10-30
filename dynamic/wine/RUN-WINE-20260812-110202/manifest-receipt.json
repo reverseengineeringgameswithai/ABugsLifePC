@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "manifest_name": "training-primary-record-126-field-04-plus-512",
+  "files": [
+    {
+      "path": "CD/LEVEL07/LEVEL1.DAT",
+      "input_sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+      "output_sha256": "1c7ccb3c21ec4bacf0733ed54466da93d451bd30f671a42eb04c43fc38c69952",
+      "edits": [
+        {
+          "edit_index": 0,
+          "operation": "set-scene-record-position",
+          "section": "primary",
+          "index": 126,
+          "position": [
+            872,
+            -245,
+            70
+          ]
+        }
+      ]
+    }
+  ]
+}

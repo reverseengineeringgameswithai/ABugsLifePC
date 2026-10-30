@@ -1,0 +1,82 @@
+{
+  "experiment": "EXP-20260905-004",
+  "snapshot": {
+    "path": "work/snapshots/terrain-20260905-play-area-evidence.tar.gz",
+    "sha256": "8b6bde19f8d259a8c9b539d1ae5cf190e8de48c89cfe97461cbb83b791332dcc",
+    "bytes": 3204592,
+    "file_count": 75
+  },
+  "manifest": {
+    "path": "work/snapshots/terrain-20260905-play-area-evidence.manifest.tsv",
+    "sha256": "a379e27690878626708bf40e1d783dbe653ea7eef2f9afc0deaacaa41a2fd09b",
+    "bytes": 9449
+  },
+  "archive_excludes": [
+    "Full staged game copy",
+    "Wine prefix",
+    "pytest scratch"
+  ],
+  "pre_bank_audit": {
+    "experiment": "EXP-20260905-004",
+    "utc": "2026-09-05T22:14:20.812703+00:00",
+    "parent_commit": "23978fe7df3d93f6b085a2ee8c81c818b10d31ba",
+    "protected_stash": "76db1c9ee1ffffce52cea6aee591c24ab6a1c39a",
+    "originals": [
+      {
+        "path": "originals/BUGS_PC.ISO",
+        "bytes": 533114880,
+        "mode": "0o644",
+        "mtime": 1786500452,
+        "check": "stat unchanged; no content rehash in this audit"
+      },
+      {
+        "path": "originals/Win95 OSR2.ISO",
+        "bytes": 596070400,
+        "mode": "0o644",
+        "mtime": 1787012793,
+        "check": "stat unchanged; no content rehash in this audit"
+      }
+    ],
+    "tracked_protected_path_changes": [],
+    "working_tree_before_bank": [
+      "M \"Vault/00-System/Current State.md\"",
+      " M \"Vault/00-System/Environment Status.md\"",
+      " M \"Vault/00-System/Project Roadmap.md\"",
+      " M \"Vault/01-MOCs/Experiments MOC.md\"",
+      " M \"Vault/01-MOCs/File Formats MOC.md\"",
+      " M \"Vault/01-MOCs/Implementation MOC.md\"",
+      " M \"Vault/01-MOCs/Reverse Engineering MOC.md\"",
+      " M \"Vault/20-Research/New-level authoring roadmap (terrain, collision, materials).md\"",
+      " M \"Vault/50-Decisions/Decision Log.md\"",
+      " M \"Vault/70-Known-Unknowns/Known Unknowns.md\"",
+      " M \"Vault/90-Sessions/Session Index.md\"",
+      "?? \"Vault/30-Experiments/EXP-20260905-004 - Playable ramp and box area.md\"",
+      "?? \"Vault/90-Sessions/2026-09-05 1804 - Codex - Playable ramp and box area.md\"",
+      "?? reimplementation/ablpc/terrain_play_area.py",
+      "?? reports/terrain/EXP-20260905-004-drive-operator.txt",
+      "?? reports/terrain/EXP-20260905-004-play-instructions.txt",
+      "?? reports/terrain/EXP-20260905-004-play-launcher.txt",
+      "?? reports/terrain/EXP-20260905-004-report-packager.txt",
+      "?? reports/terrain/EXP-20260905-004-runtime-design.txt",
+      "?? reports/terrain/EXP-20260905-004-runtime-operator.txt",
+      "?? reports/terrain/EXP-20260905-004.json",
+      "?? scripts/terrain-play-area.py",
+      "?? tests/test_terrain_play_area.py"
+    ],
+    "tests": {
+      "individual": "19 passed in 17.29s",
+      "terrain_gate": "118 passed in 26.51s",
+      "full_suite": "Not run: user-scoped terrain-only validation; no R2q run"
+    },
+    "vault_lint": "661 notes, 0 errors, 8 existing advisory warnings",
+    "runtime": "Closed; final session-audit clean with zero processes, null sinks or open sessions",
+    "claim_sweep": "Not applicable: new bounded composition; existing EXP-005/EXP-003 limitations remain explicit and no prior claim was corrected",
+    "private_scope": "Only work/experiment evidence and the fixture/launcher/instructions; game copy and Wine prefix excluded from archive; all private files excluded from Git"
+  },
+  "prior_evidence_anchors_from_banked_handoff_not_rehashed_here": {
+    "terrain-20260905-diagonal-movement-evidence.tar.gz": "0dbf147f3efa72feea6e8e0c248c0fcd3d30ebfe7ded63c2a9d2317b6567715c",
+    "terrain-20260905-diagonal-movement-evidence.manifest.tsv": "736d6326e06125a39e72aaa756d42d0816277a0da4432650def4134713bca528",
+    "terrain-20260905-shared-floor-evidence.tar.gz": "95b9238cf55816171c2ce004547e0012ed0c24250e0ae0d9fc033e3f91ea2e94",
+    "terrain-20260905-shared-floor-evidence.manifest.tsv": "a607ee7f795ab568f5b2629b4a17437f419cf70fff2f185bde10b862f0ba0c1a"
+  }
+}

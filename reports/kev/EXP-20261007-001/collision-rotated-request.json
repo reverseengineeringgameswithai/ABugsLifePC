@@ -1,0 +1,60 @@
+{
+  "model": "kev-latest",
+  "state": "Evidence source: Vault/30-Experiments/EXP-20261005-004 - Original collision for Moonlit leaves and hollow plant.md\n\n## Change\n\n`reimplementation/ablpc/anthill_scenery.py`:\n\n- `NATIVE_SHELLS` gains loose leaf 14 → 127, hollow plant 209 → 87 and broad\n  leaf 227 → 175. These are translated like the five existing pairings,\n  with every payload and record byte other than XYZ kept.\n- New `NATIVE_STRIPS` maps yellow leaves 196/197/198/201 → original\n  kind-0x101 strips 183/182/181/179. Only the points' X/Z move; the header,\n  sentinel, middle words and the 76-byte record stay exact.\n- `DEFAULT_SOLID` gains 14, 196–201 and 209. Only shoots, sprouts and daisies\n  (24, 25, 84, 180), which have no original collision, are still refused.\n  The animated/auxiliary guard now applies only to authored shells.\n\nThe hollow plant's 656-byte auxiliary span is still unused for collision;\nits plant base (214) stays visual, as in the original.\n\n\n## Builds\n\n- **Baseline:** recompiling the production scene with current code\n  reproduces all six production level hashes byte for byte.\n- **Candidate:** the same scene with the 12 props marked solid. Only\n  TERRAIN.ALL changes (`37824771…`, 747,502 → 751,302 bytes, 301 sources).\n  Load is 1,948,358 of 2,000,000 bytes (+3,800). The collision density bound\n  stays 234 of 300.\n\n\n## Native evidence (offline, original instructions)\n\n`scripts/anthill-scenery-probe.py` (packet `native-candidate-03.json`, copied\nto `reports/anthill-scenery/EXP-20261005-004-native.json`) accepts all 32 solid\nprops, 97 samples, with 1,632 relocation pointers exact. New this time:\n\n- **Loose leaves (3) and broad leaves (2):** landings settle on their own\n  shell.\n- **Hollow plant:** two rim landings, and four lateral wall cases that push\n  Flik 4,605–5,165 world units against the same shell lowered out of reach.\n  The wall case was added for this prop.\n- **Yellow leaves (8 × 4 sides):** grounded walks toward the stem. The loader\n  links strips into `0x007F3D3C`. With the strip, Flik stops 113–142 stored\n  units short of the centre (half-widths 103/130). Without it he walks 130–157\n  past the centre.\n- Every new case reproduces the original source at its original Anthill\n  position, shifted by the translation, step for step.\n\n\n## Hardware evidence (matched arms)\n\nEach target has two images, both production with the start moved beside the\nprop (12 bytes at VA `004DC7F4`). The candidate image also has the candidate\nTERRAIN.ALL. `make_images.py` checks that nothing else differs. `walk.py` walks\nstraight toward a goal without jumping and logs Flik every step. All eight\narms passed the 6/6 hardware gate, logged no fault and closed with a clean\naudit. A first launch was refused before any process started because the\nimage's `build.json` named the wrong EXE hash; it is kept as\n`control-leaf-e-failed-launch`.\n\n| Target | Control (production) | Candidate |\n|---|---|---|\n| Yellow leaf E, north from z 32300 | crosses the stem, reaches z 33572 in 4 steps | stops at z 32885–32889 (loop edge) for 39 holds |\n| Hollow plant, south from z 32350 | passes 110 units from the cup centre, frame shows him inside | stops at the wall, never nearer than 384 units, frame shows him pressed against it |\n| Grove loose leaf, north from z 33650 | stays at ground height (Y −5150) across the leaf | climbs onto it: Y −5261, then −5395 (245 above ground), frame shows him on top |\n| Grove broad leaf, north from z 31900 | rises 45 units, stops at z ≈ 33120 under the blade | stops at z ≈ 32860 against the leaf's stalk |\n\nThe broad leaf was solid before too, but its edge moves. The original shell\nstops Flik at the stalk lying in front of the blade, where the authored\napproximation let him past it.\n\n\n## Publication\n\n- `tools/blender/woodland_collision.py` saved\n  `levels/anthill/level-woodland-collision.blend` (`0647e759…`). It is a copy\n  of the woodland-solid source (unchanged, `e3209f54…`) with the 12 props\n  marked solid. Its export equals the candidate scene before saving and after\n  reopening, and a solid shoot is still refused.\n- Studio's Moonlit slot now uses it (campaign `2d7e282f…`; the previous\n  manifest is in Studio's history).\n- **New production:** `work/copies/studio-1791244451538294368`, built\n  14 min. Of its 779 files, only Moonlit's `TERRAIN.ALL` differs from the\n  previous production. It is byte-identical to the tested candidate\n  (`37824771…`), with `build.json`, `campaign.json` and `scene.ablpc.json`\n  changed alongside. The EXE is unchanged (`c3d8b207…`). See\n  `compare-production.json`.\n- **Smoke arm on it** (`production-smoke`): normal start, 6/6 markers, no\n  fault, clean audit. Walked west onto the Arrival leaf, a fourth placement,\n  Flik stood 250–440 units above its ground; the frame shows him on the leaf.\n- **Audit rerun:** `reports/moonlit-collision/EXP-20261005-004.json` shows\n  all 12 props and both broad leaves with their own original collision. Only\n  objects that have none in the original lack it.\n\n\n## Limits\n\n- One placement of each family was walked in hardware. The other loose\n  leaves, the other seven yellow leaves and the Arrival broad leaf are\n  covered natively only.\n- Jumping into the hollow plant's cup and landing on the rim were not tried\n  in hardware.\n- Sound and the camera near these props were not assessed. No user play yet.\n",
+  "questions": {
+    "q13": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Among the production game files, the published collision fix changed only Moonlit's TERRAIN.ALL.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q14": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The offline probe accepted all 32 solid props using 97 samples.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q15": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The yellow leaves received newly invented approximate collision shells instead of translated original strips.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q16": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Publishing the collision fix required changing the bugs.exe bytes from the preceding production.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q17": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: A player can reliably jump into the hollow plant's cup and land on its rim in the hardware-rendered game.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    },
+    "q18": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The new collision pieces lower the hardware frame rate by exactly two frames per second.",
+      "criteria": {
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation.",
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope."
+      }
+    }
+  }
+}

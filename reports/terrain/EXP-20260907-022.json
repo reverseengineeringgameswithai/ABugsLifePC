@@ -1,0 +1,252 @@
+{
+  "experiment": "EXP-20260907-022",
+  "status": "prototype implemented; live acceptance rejected; trial CLOSED",
+  "stage1_complete": false,
+  "gameplay_baseline": "reports/terrain/EXP-20260907-021.json",
+  "project": "work/level-projects/moonlit-cliffs-chunks/level.blend",
+  "build": "/home/dev/ABLPC/work/copies/blender-level-1788811888983833253",
+  "hashes": {
+    "LEVEL.DAT": "7cb935ec839a56a4b9f98e081d18c52a6867b8c3fb8bf881a4824e2e58ebc35f",
+    "TERRAIN.ALL": "f6f0da655ad1067ecee1d5a73683308ec16aa8c805fb6be0ef30e6021bdf64bc",
+    "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762",
+    "bugs.exe": "3a2e6ca8463752463751c5eefc031e109d17e1ddaa9dc079615446b1f0454a77"
+  },
+  "load_budget": {
+    "bytes": 997042,
+    "limit": 1000000,
+    "scope": "conservative pinned-profile budget; runtime model verification still required"
+  },
+  "chunks": [
+    {
+      "region": [
+        0,
+        1
+      ],
+      "origin": [
+        1024,
+        -4791,
+        22991
+      ],
+      "radius": 12104,
+      "bounds": [
+        [
+          -6400,
+          -7006,
+          19103
+        ],
+        [
+          8448,
+          -2576,
+          26880
+        ]
+      ],
+      "vertices": 1582,
+      "faces": 1717,
+      "collision_triangles": 1058,
+      "scene_index": 160,
+      "source_index": 99,
+      "mesh_bytes": 41342,
+      "collision_bytes": 46554,
+      "geometry_offset": 477076,
+      "pointer_offset": 19612,
+      "radius_offset": 8592
+    },
+    {
+      "region": [
+        0,
+        0
+      ],
+      "origin": [
+        1024,
+        -4548,
+        15360
+      ],
+      "radius": 12633,
+      "bounds": [
+        [
+          -6400,
+          -6920,
+          11008
+        ],
+        [
+          8448,
+          -2176,
+          19712
+        ]
+      ],
+      "vertices": 1544,
+      "faces": 1463,
+      "collision_triangles": 698,
+      "scene_index": 484,
+      "source_index": 189,
+      "mesh_bytes": 36814,
+      "collision_bytes": 30714,
+      "geometry_offset": 518420,
+      "pointer_offset": 477024,
+      "radius_offset": 15072
+    },
+    {
+      "region": [
+        1,
+        0
+      ],
+      "origin": [
+        9984,
+        -3945,
+        15360
+      ],
+      "radius": 7256,
+      "bounds": [
+        [
+          7936,
+          -5714,
+          11008
+        ],
+        [
+          12032,
+          -2176,
+          19712
+        ]
+      ],
+      "vertices": 885,
+      "faces": 651,
+      "collision_triangles": 315,
+      "scene_index": 485,
+      "source_index": 190,
+      "mesh_bytes": 18934,
+      "collision_bytes": 13862,
+      "geometry_offset": 555236,
+      "pointer_offset": 477048,
+      "radius_offset": 15092
+    },
+    {
+      "region": [
+        1,
+        1
+      ],
+      "origin": [
+        9984,
+        -4143,
+        23040
+      ],
+      "radius": 6551,
+      "bounds": [
+        [
+          7936,
+          -5744,
+          19200
+        ],
+        [
+          12032,
+          -2541,
+          26880
+        ]
+      ],
+      "vertices": 826,
+      "faces": 604,
+      "collision_triangles": 294,
+      "scene_index": 486,
+      "source_index": 191,
+      "mesh_bytes": 17626,
+      "collision_bytes": 12938,
+      "geometry_offset": 574172,
+      "pointer_offset": 477072,
+      "radius_offset": 15112
+    }
+  ],
+  "checks": {
+    "selected_tests": 1178,
+    "native_floor_crossings": 124,
+    "native_wall_pushes": 24,
+    "native_frame_contexts": 12,
+    "resident_chunks": 4,
+    "live_acceptance": false
+  },
+  "freeze": {
+    "accepted": true,
+    "stalled_game": {
+      "pid": 713424,
+      "start": 9526810
+    },
+    "entry_index": 37,
+    "entry_va": "0x5aa1f0",
+    "stalled_stream": "0x76f971",
+    "restored_stream": "0x76f36f",
+    "stream_bytes": 100,
+    "changed_addresses": [
+      "0x76f9a0",
+      "0x76f9a1",
+      "0x76f9a2",
+      "0x76f9a4",
+      "0x76f9a5",
+      "0x76f9a7",
+      "0x76f9a8",
+      "0x76f9a9",
+      "0x76f9aa",
+      "0x76f9ab",
+      "0x76f9ac",
+      "0x76f9ad",
+      "0x76f9af"
+    ],
+    "correct_sha256": "b86c2e3abcb8ada1b200a1e6db878b861a8b1c16ce4f8c9f0af195ceea53ffc0",
+    "rows": [
+      {
+        "repair_only_100_byte_stream": false,
+        "executed": 10000,
+        "pc_counts": {
+          "0x4509de": 1250,
+          "0x4509e0": 1250,
+          "0x44f915": 1250,
+          "0x44f918": 1250,
+          "0x44f91b": 1250,
+          "0x44f921": 1250,
+          "0x44f924": 1250,
+          "0x4509db": 1250
+        },
+        "stopped_pc": "0x4509de",
+        "result": {}
+      },
+      {
+        "repair_only_100_byte_stream": true,
+        "executed": 16,
+        "pc_counts": {
+          "0x4509de": 2,
+          "0x4509e0": 2,
+          "0x44f915": 2,
+          "0x44f918": 2,
+          "0x44f91b": 2,
+          "0x44f921": 2,
+          "0x44f924": 2,
+          "0x4509db": 1,
+          "0x44f92a": 1
+        },
+        "stopped_pc": "0x44f92a",
+        "result": {
+          "reached": "0x44f92a",
+          "esi": "0x76f9a1"
+        }
+      }
+    ],
+    "scope": "Native sampled-PC loop versus restoring only its stream from earlier build capture; stops at accepted record branch before drawing. Offline only; no whole-frame or allocator repair claim."
+  },
+  "source_match": [
+    {
+      "file": "work/copies/EXP-20260907-021/preview-02/game/PC/BUGS/CD/CHARS/MOS.ALL",
+      "offset": 2024,
+      "offset_hex": "0x7e8",
+      "sha256": "4ba6f2f466f73eccd1f6d0bef2a86ebe851a29ac27da2463a61bfd5c64619c72",
+      "bytes": 100
+    }
+  ],
+  "evidence": "work/experiments/EXP-20260907-022",
+  "next": "Establish complete model allocation/stream separation from renderer scratch before repeating live acceptance; safe-storage dependency on roadmap stage2",
+  "live_memory_writes": 0,
+  "final_test_log": "work/experiments/EXP-20260907-022/final-make-check.log",
+  "claim_sweeps": [
+    "work/experiments/EXP-20260907-022/claim-sweep-chunks.json",
+    "work/experiments/EXP-20260907-022/claim-sweep-runtime.json",
+    "work/experiments/EXP-20260907-022/claim-sweep-expansion.json"
+  ],
+  "successor": "reports/terrain/EXP-20260907-023.json",
+  "successor_scope": "same chunk geometry accepted with dedicated asset arena; this report retains the rejected original trial"
+}

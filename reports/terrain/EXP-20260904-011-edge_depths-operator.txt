@@ -1,0 +1,32 @@
+from pathlib import Path
+import json,hashlib,math
+ROOT=Path('/home/dev/ABLPC');OLD=ROOT/'work/experiments/EXP-20260904-009';OUT=ROOT/'work/experiments/EXP-20260904-011';OUT.mkdir(exist_ok=True)
+def load(name):return json.loads((OLD/name).read_text())
+def triangles(name):
+ out=[]
+ for batch in load(name)['batches']:
+  for i in range(0,len(batch['indices']),3):out.append({'index':i//3,'vertices':[batch['vertices'][j] for j in batch['indices'][i:i+3]]})
+ return out
+def hit(t,x,y):
+ a,b,c=t['vertices'];det=(b['y']-c['y'])*(a['x']-c['x'])+(c['x']-b['x'])*(a['y']-c['y'])
+ if not det:return None
+ u=((b['y']-c['y'])*(x-c['x'])+(c['x']-b['x'])*(y-c['y']))/det;v=((c['y']-a['y'])*(x-c['x'])+(a['x']-c['x'])*(y-c['y']))/det;w=1-u-v
+ if min(u,v,w)<-1e-9:return None
+ return {'triangle':t['index'],'weights':[u,v,w],'z':sum(q*t['vertices'][i]['z'] for i,q in enumerate([u,v,w])),'reciprocal_depth':1/sum(q*t['vertices'][i]['rhw'] for i,q in enumerate([u,v,w]))/16384,'vertices':t['vertices']}
+T={k:triangles(n) for k,n in [('actor','offline-actor.json'),('coarse','offline-mesh-1.json'),('split','offline-mesh-4.json')]}
+points=[(342,315),(344,315),(298,319),(299,319),(300,319),(301,319),(339,325)]
+rows=[]
+for xy in points:
+ variants=[]
+ for dx,dy in [(0,0),(.5,.5),(-.5,-.5),(0,.5),(0,-.5)]:
+  depths={}
+  for kind,tri in T.items():
+   hits=[h for t in tri if (h:=hit(t,xy[0]+dx,xy[1]+dy)) is not None];depths[kind]=min(hits,key=lambda h:h['z']) if hits else None
+  variants.append({'sample_offset':[dx,dy],'depths':depths})
+ rows.append({'xy':xy,'samples':variants})
+data={'scope':'Offline screen-space depth sensitivity using retained emitted vertices; reciprocal depth is a candidate camera-depth reconstruction, not a claimed hardware depth mode. No texture, alpha or complete rasterizer. No game actions.','points':rows}
+(OUT/'edge-depths.json').write_text(json.dumps(data,indent=2)+'\n')
+for row in rows:
+ print(row['xy'])
+ for v in row['samples']:
+  print(v['sample_offset'],{k:None if h is None else (h['triangle'],round(h['z'],9),round(h['reciprocal_depth'],9)) for k,h in v['depths'].items()})

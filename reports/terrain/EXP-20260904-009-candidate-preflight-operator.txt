@@ -1,0 +1,26 @@
+"""Read-only live preflight and private byte-pair preparation. No writer."""
+from pathlib import Path
+import json,hashlib,struct
+ROOT=Path('/home/dev/ABLPC');HERE=Path(__file__).resolve().parent
+runtime=ROOT/'work/experiments/USER-20260904-deck-depth-play-001/runtime.py'
+namespace={'__file__':str(runtime)}
+exec(compile(runtime.read_text().split('\ntry:\n action=')[0],str(runtime),'exec'),namespace)
+meta=namespace['guard']();state=namespace['state'](meta)
+manifest=json.loads((HERE/'paused-memory.json').read_text())
+for k,v in manifest['before'].items():assert json.loads(json.dumps(state[k]))==v
+stage=Path(meta['stage'])/'PC/BUGS/CD/LEVEL01';candidate=ROOT/'work/copies/EXP-20260904-009/subdivided'
+a=(stage/'LEVEL.DAT').read_bytes();b=(candidate/'LEVEL.DAT').read_bytes();offset=113136;n=1078
+assert len(a)==len(b) and a[:offset]==b[:offset] and a[offset+n:]==b[offset+n:]
+assert (stage/'TERRAIN.ALL').read_bytes()==(candidate/'TERRAIN.ALL').read_bytes()
+base=struct.unpack('<I',namespace['mem'](meta,0x5ba240,4))[0];address=base+offset
+assert address==0x6662a7
+before=namespace['mem'](meta,address,n)
+assert before==a[offset:offset+n]
+for name,raw in [('before-render-prefix.bin',before),('candidate-render-prefix.bin',b[offset:offset+n])]:
+ target=HERE/name
+ if target.exists():assert target.read_bytes()==raw
+ else:target.write_bytes(raw)
+h=lambda raw:hashlib.sha256(raw).hexdigest()
+plan={'experiment':'EXP-20260904-009','status':'prepared-read-only-not-applied','process':meta['game'],'state':state,'address':hex(address),'bytes':n,'before_sha256':h(before),'candidate_sha256':h(b[offset:offset+n]),'before_file':str(HERE/'before-render-prefix.bin'),'candidate_file':str(HERE/'candidate-render-prefix.bin'),'old_level_dat_sha256':h(a),'candidate_level_dat_sha256':h(b),'terrain_sha256':h((stage/'TERRAIN.ALL').read_bytes()),'changed_byte_count':sum(x!=y for x,y in zip(a,b)),'candidate_geometry':{'vertices':45,'quads':33,'box_top_grid':[4,4],'side_strips_each':4,'deck_quads':1},'proposed_sequence':['Fresh explicit user authorization for each of the two memory writes and brief process suspension/resumption.','Revalidate exact PID/start/group, executable, paused player/camera/contact, loaded pointers and old prefix.','Briefly suspend only the owned game while replacing this 1078-byte mesh prefix; compare before write, verify afterward and retain receipt; resume to the existing game pause menu.','Capture paused image and recheck state; send no gameplay input. If paused renderer does not update, report inconclusive rather than unpause.','Briefly suspend the same process; compare the candidate bytes, restore the saved original prefix exactly, verify and resume; capture restoration and record receipt.'],'scope':'No collision/object/camera/player-data writes, restart, load, or asset installation. No step in proposed_sequence has run; this file is not authorization.'}
+(HERE/'candidate-plan.json').write_text(json.dumps(plan,indent=2)+'\n')
+print(json.dumps({k:v for k,v in plan.items() if k not in ('proposed_sequence','before_file','candidate_file')},indent=2))

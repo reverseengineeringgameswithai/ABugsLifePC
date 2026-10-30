@@ -1,0 +1,20 @@
+RUN-GDB-20260813-102505 curation
+================================
+
+Disposition: accepted EXP-20260813-038 replacement arm.
+
+The exact unchanged executable and equal-size CHARS/FLICK.ALL replacement
+(SHA-256 6e5afb4f9ea649bc305fdafeb027aece25914b27a017d04841bf4298634079a4)
+reached Training under 640x480x16 Direct3D with no INITSOFTRENDER. One
+read-only data watchpoint at 0x005B18E0 retained metadata at exact post-call
+PC 0x0044C8AB. The bounded zero_post capture completed one full ordered cycle
+and recorded 23 candidate rows; every pre/post counter, record count, and byte
+count is zero, and every digest is SHA-256(empty). No arena payload bytes were
+read or retained.
+
+The result records cleanup_verified, detach, no target signal, and five
+passing resumed/untraced survival samples. bugs.log SHA-256 is
+e23f290155552d729a290214459b23386a58c55d5c0074c26442c262e25dc0b4.
+Raw GDB stdout/stderr were not curated; their hashes were
+3e8c05a430c54ecdd5af5a0d809a5b71e7f9bea85c8bc13b8a6e171717e3eedf and
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.

@@ -1,0 +1,92 @@
+{
+ "experiment": "EXP-20261012-001",
+ "question": "Does REA's Ghidra-backed analysis add to ABLPC's existing static tooling for bugs.exe?",
+ "target": {
+  "path": "work/experiments/EXP-20261012-001/target/bugs.exe (copy of work/copies/BUGS_PC-disc/bugs.exe)",
+  "sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878"
+ },
+ "tool": {
+  "package": "rea-agents",
+  "version": "6.4.0",
+  "install": "work/tools/rea-agents-6.4.0 (npm --ignore-scripts, exact pin)",
+  "npm_integrity": "sha512-Vj1zWfSlna5bphGoaoI/TcVBuYvze9u+OyPC3Shz8YkBqaCTqB4COnnRoX7XDwMpwI24ZlFEel2yEj0k8LTWEQ==",
+  "provider": "ghidra 12.1.2 (REA verifies 12.1.4)",
+  "jdk": "tools/jdk/jdk-21.0.12+8",
+  "mode": "CLI, one fresh Ghidra import per command; no agent/MCP registration"
+ },
+ "host_load": "load average about 17-26 on 16 cores (other projects' builds and tests, plus make check)",
+ "queries": [
+  {
+   "command": "rea xrefs 0x0059A5EE",
+   "seconds": 61,
+   "references": [
+    "0x413a96",
+    "0x41a6d4",
+    "0x41aa7d",
+    "0x41b80f",
+    "0x41b831",
+    "0x41b86f",
+    "0x41b876",
+    "0x41b8ad",
+    "0x438eb0",
+    "0x44d472"
+   ]
+  },
+  {
+   "command": "rea function 0x00403A10",
+   "seconds": 92,
+   "procedure_body": [
+    {
+     "start": "0x403a10",
+     "end": "0x403a35"
+    }
+   ],
+   "signature_calling_convention": "__stdcall",
+   "callers": [],
+   "callees": [
+    "0x4016cc"
+   ]
+  },
+  {
+   "command": "rea function 0x0041a992",
+   "seconds": 86,
+   "result": "invalid_request: No procedure exists at the requested address"
+  }
+ ],
+ "comparison_0059A5EE": {
+  "existing_export_ghidra_query": {
+   "seconds": 0.045,
+   "references": [
+    "00413a96",
+    "0041a6d4",
+    "0041aa7d",
+    "0041b80f",
+    "0041b831",
+    "0041b86f",
+    "0041b876",
+    "0041b8ad",
+    "00438eb0",
+    "0044d472"
+   ]
+  },
+  "raw_capstone_scan": [
+   "0x413a96 test byte",
+   "0x41a6d4 mov word (66 prefix)",
+   "0x41a992 mov word (66 prefix)",
+   "0x41aa7d mov word (66 prefix)",
+   "0x41b80f or byte 1",
+   "0x41b831 mov al",
+   "0x41b86f and byte 0xfe",
+   "0x41b876 mov al",
+   "0x41b8ad mov al",
+   "0x438eb0 test byte 1",
+   "0x44d472 test byte 1"
+  ],
+  "finding": "REA and the export agree on the same 10 references. The raw scan finds an 11th, a 16-bit store at 0x41a992 in code Ghidra never made into a function (tail of a routine filling 0x59a5e0..0x59a5ee; no direct E8/E9 into 0x41a940..0x41a9cf)."
+ },
+ "comparison_00403A10": {
+  "raw": "mov al,[esp+4]; mov cl,[esp+8]; stores 0x59d9b6/0x59d9b7; pushes zero-extended arg1, 0, 0x7d; call 0x4016cc; add esp,0xc; ret (caller cleans: two stack arguments)",
+  "rea": "__stdcall, 2 parameters; callers [] (does not follow the thunk at 0x401d61)",
+  "export": "__fastcall, 4 parameters; ghidra-query callers follows the thunk to FUN_00417720 (call 0x004181e4) and FUN_0041dc60"
+ }
+}

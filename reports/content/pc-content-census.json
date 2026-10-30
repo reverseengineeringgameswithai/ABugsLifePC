@@ -1,0 +1,6399 @@
+{
+  "schema_version": 1,
+  "source_root": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+  "excluded_paths": [
+    "bugs.log"
+  ],
+  "tree_fingerprint_sha256": "b145e2aa5fbf7e3350cf437985bbc76c764c36f2d954105d5282af4831738986",
+  "totals": {
+    "file_count": 721,
+    "byte_count": 460306509,
+    "observed_file_count": 51,
+    "duplicate_hash_group_count": 5,
+    "files_in_duplicate_hash_groups": 26
+  },
+  "extensions": [
+    {
+      "name": "0",
+      "file_count": 1,
+      "byte_count": 20,
+      "observed_file_count": 0
+    },
+    {
+      "name": "001",
+      "file_count": 1,
+      "byte_count": 3506176,
+      "observed_file_count": 0
+    },
+    {
+      "name": "[none]",
+      "file_count": 2,
+      "byte_count": 8501,
+      "observed_file_count": 0
+    },
+    {
+      "name": "all",
+      "file_count": 81,
+      "byte_count": 3351908,
+      "observed_file_count": 22
+    },
+    {
+      "name": "anm",
+      "file_count": 61,
+      "byte_count": 1409561,
+      "observed_file_count": 18
+    },
+    {
+      "name": "bgr",
+      "file_count": 1,
+      "byte_count": 153600,
+      "observed_file_count": 0
+    },
+    {
+      "name": "bin",
+      "file_count": 29,
+      "byte_count": 117708,
+      "observed_file_count": 0
+    },
+    {
+      "name": "bug",
+      "file_count": 40,
+      "byte_count": 210493920,
+      "observed_file_count": 0
+    },
+    {
+      "name": "dat",
+      "file_count": 22,
+      "byte_count": 5163192,
+      "observed_file_count": 3
+    },
+    {
+      "name": "dll",
+      "file_count": 5,
+      "byte_count": 1424144,
+      "observed_file_count": 0
+    },
+    {
+      "name": "err",
+      "file_count": 1,
+      "byte_count": 2014,
+      "observed_file_count": 0
+    },
+    {
+      "name": "exe",
+      "file_count": 3,
+      "byte_count": 1161216,
+      "observed_file_count": 0
+    },
+    {
+      "name": "flr",
+      "file_count": 4,
+      "byte_count": 0,
+      "observed_file_count": 0
+    },
+    {
+      "name": "grd",
+      "file_count": 4,
+      "byte_count": 0,
+      "observed_file_count": 0
+    },
+    {
+      "name": "kep",
+      "file_count": 2,
+      "byte_count": 574216,
+      "observed_file_count": 0
+    },
+    {
+      "name": "kp2",
+      "file_count": 1,
+      "byte_count": 318700,
+      "observed_file_count": 0
+    },
+    {
+      "name": "lbm",
+      "file_count": 1,
+      "byte_count": 11358,
+      "observed_file_count": 0
+    },
+    {
+      "name": "log",
+      "file_count": 2,
+      "byte_count": 688,
+      "observed_file_count": 0
+    },
+    {
+      "name": "raw",
+      "file_count": 47,
+      "byte_count": 14454924,
+      "observed_file_count": 7
+    },
+    {
+      "name": "rst",
+      "file_count": 1,
+      "byte_count": 297,
+      "observed_file_count": 0
+    },
+    {
+      "name": "s",
+      "file_count": 1,
+      "byte_count": 20,
+      "observed_file_count": 0
+    },
+    {
+      "name": "sav",
+      "file_count": 8,
+      "byte_count": 4320,
+      "observed_file_count": 0
+    },
+    {
+      "name": "scn",
+      "file_count": 5,
+      "byte_count": 650200,
+      "observed_file_count": 0
+    },
+    {
+      "name": "spl",
+      "file_count": 5,
+      "byte_count": 3932,
+      "observed_file_count": 0
+    },
+    {
+      "name": "txt",
+      "file_count": 1,
+      "byte_count": 4,
+      "observed_file_count": 1
+    },
+    {
+      "name": "vb",
+      "file_count": 20,
+      "byte_count": 8854064,
+      "observed_file_count": 0
+    },
+    {
+      "name": "vh",
+      "file_count": 20,
+      "byte_count": 110720,
+      "observed_file_count": 0
+    },
+    {
+      "name": "wal",
+      "file_count": 4,
+      "byte_count": 0,
+      "observed_file_count": 0
+    },
+    {
+      "name": "wav",
+      "file_count": 344,
+      "byte_count": 208531106,
+      "observed_file_count": 0
+    },
+    {
+      "name": "wuv",
+      "file_count": 4,
+      "byte_count": 0,
+      "observed_file_count": 0
+    }
+  ],
+  "families": [
+    {
+      "name": "[root]",
+      "file_count": 1,
+      "byte_count": 1069056,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/[root]",
+      "file_count": 4,
+      "byte_count": 1120260,
+      "observed_file_count": 4
+    },
+    {
+      "name": "CD/AUDIO",
+      "file_count": 35,
+      "byte_count": 185523696,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/BITS",
+      "file_count": 11,
+      "byte_count": 262742,
+      "observed_file_count": 2
+    },
+    {
+      "name": "CD/CHARS",
+      "file_count": 32,
+      "byte_count": 528556,
+      "observed_file_count": 8
+    },
+    {
+      "name": "CD/CHARS2",
+      "file_count": 34,
+      "byte_count": 485165,
+      "observed_file_count": 2
+    },
+    {
+      "name": "CD/CHARS3",
+      "file_count": 31,
+      "byte_count": 667334,
+      "observed_file_count": 6
+    },
+    {
+      "name": "CD/CHARS4",
+      "file_count": 6,
+      "byte_count": 226130,
+      "observed_file_count": 2
+    },
+    {
+      "name": "CD/GFX",
+      "file_count": 19,
+      "byte_count": 1442412,
+      "observed_file_count": 2
+    },
+    {
+      "name": "CD/LEVEL00",
+      "file_count": 12,
+      "byte_count": 1370307,
+      "observed_file_count": 1
+    },
+    {
+      "name": "CD/LEVEL01",
+      "file_count": 16,
+      "byte_count": 3580668,
+      "observed_file_count": 3
+    },
+    {
+      "name": "CD/LEVEL02",
+      "file_count": 15,
+      "byte_count": 3076296,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/LEVEL03",
+      "file_count": 14,
+      "byte_count": 3003652,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/LEVEL04",
+      "file_count": 21,
+      "byte_count": 3546440,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/LEVEL05",
+      "file_count": 22,
+      "byte_count": 4078944,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/LEVEL06",
+      "file_count": 10,
+      "byte_count": 2337232,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/LEVEL07",
+      "file_count": 12,
+      "byte_count": 2570568,
+      "observed_file_count": 3
+    },
+    {
+      "name": "CD/LEVEL08",
+      "file_count": 9,
+      "byte_count": 2104264,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/LEVEL09",
+      "file_count": 10,
+      "byte_count": 2944476,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/LEVEL10",
+      "file_count": 6,
+      "byte_count": 1720800,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/PAD",
+      "file_count": 7,
+      "byte_count": 6864,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/PLANTS",
+      "file_count": 22,
+      "byte_count": 82432,
+      "observed_file_count": 18
+    },
+    {
+      "name": "CD/PLANTS2",
+      "file_count": 6,
+      "byte_count": 29450,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/SAVE",
+      "file_count": 8,
+      "byte_count": 4320,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/SFX",
+      "file_count": 309,
+      "byte_count": 23007410,
+      "observed_file_count": 0
+    },
+    {
+      "name": "CD/TEMP",
+      "file_count": 49,
+      "byte_count": 215517035,
+      "observed_file_count": 0
+    }
+  ],
+  "loader_logs": [
+    {
+      "label": "training",
+      "path": "dynamic/wine/RUN-WINE-20260812-000634/bugs.log",
+      "sha256": "cff5b27529724481b2d88996da9ba1fbe402e30800e65e908591b1d65d6d04f8",
+      "observed_path_count": 25,
+      "matched_paths": [
+        "CD/BITS/PLANTTER.ALL",
+        "CD/BITS/SEED.ALL",
+        "CD/CD.TXT",
+        "CD/CHARS/BADBUG.ALL",
+        "CD/CHARS/BADBUG.ANM",
+        "CD/CHARS/FLICK.ALL",
+        "CD/CHARS/FLICK.ANM",
+        "CD/CHARS3/SOIL.ALL",
+        "CD/CHARS3/SOIL.ANM",
+        "CD/GFX/TRAINING.RAW",
+        "CD/LEVEL00/LEVEL.RAW",
+        "CD/LEVEL07/LEVEL1.DAT",
+        "CD/LEVEL07/LEVEL1.RAW",
+        "CD/LEVEL07/TERR1.ALL",
+        "CD/PLANTS/PLANT04.ALL",
+        "CD/PLANTS/PLANT04.ANM",
+        "CD/PLANTS/PLANT05.ALL",
+        "CD/PLANTS/PLANT05.ANM",
+        "CD/PLANTS/PLANT06.ALL",
+        "CD/PLANTS/PLANT06.ANM",
+        "CD/PLANTS/PLANT10.ALL",
+        "CD/PLANTS/PLANT10.ANM",
+        "CD/RAND.DAT",
+        "CD/SKY1.RAW",
+        "CD/SOFT.RAW"
+      ],
+      "unmatched_paths": []
+    },
+    {
+      "label": "level01",
+      "path": "dynamic/wine/RUN-WINE-20260812-114514/bugs.log",
+      "sha256": "5e7b93e772d3e3530583e80b5c5f71d6bccfabbb35e4cd94353baa2204d386fa",
+      "observed_path_count": 45,
+      "matched_paths": [
+        "CD/BITS/PLANTTER.ALL",
+        "CD/BITS/SEED.ALL",
+        "CD/CD.TXT",
+        "CD/CHARS/BADBUG.ALL",
+        "CD/CHARS/BADBUG.ANM",
+        "CD/CHARS/FLICK.ALL",
+        "CD/CHARS/FLICK.ANM",
+        "CD/CHARS/MOS.ALL",
+        "CD/CHARS/MOS.ANM",
+        "CD/CHARS/WASP.ALL",
+        "CD/CHARS/WASP.ANM",
+        "CD/CHARS2/DOT.ALL",
+        "CD/CHARS2/DOT.ANM",
+        "CD/CHARS3/FLIKHARV.ALL",
+        "CD/CHARS3/FLIKHARV.ANM",
+        "CD/CHARS3/PROTECT.ALL",
+        "CD/CHARS3/PROTECT.ANM",
+        "CD/CHARS4/BADWORM.ALL",
+        "CD/CHARS4/BADWORM.ANM",
+        "CD/GFX/LEVEL1A.RAW",
+        "CD/LEVEL00/LEVEL.RAW",
+        "CD/LEVEL01/LEVEL.DAT",
+        "CD/LEVEL01/LEVEL.RAW",
+        "CD/LEVEL01/TERRAIN.ALL",
+        "CD/PLANTS/PLANT02.ALL",
+        "CD/PLANTS/PLANT02.ANM",
+        "CD/PLANTS/PLANT03.ALL",
+        "CD/PLANTS/PLANT03.ANM",
+        "CD/PLANTS/PLANT04.ALL",
+        "CD/PLANTS/PLANT04.ANM",
+        "CD/PLANTS/PLANT05.ALL",
+        "CD/PLANTS/PLANT05.ANM",
+        "CD/PLANTS/PLANT06.ALL",
+        "CD/PLANTS/PLANT06.ANM",
+        "CD/PLANTS/PLANT07.ALL",
+        "CD/PLANTS/PLANT07.ANM",
+        "CD/PLANTS/PLANT08.ALL",
+        "CD/PLANTS/PLANT08.ANM",
+        "CD/PLANTS/PLANT09.ALL",
+        "CD/PLANTS/PLANT09.ANM",
+        "CD/PLANTS/PLANT10.ALL",
+        "CD/PLANTS/PLANT10.ANM",
+        "CD/RAND.DAT",
+        "CD/SKY1.RAW",
+        "CD/SOFT.RAW"
+      ],
+      "unmatched_paths": []
+    }
+  ],
+  "duplicate_hash_groups": [
+    {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0,
+      "file_count": 18,
+      "paths": [
+        "CD/BITS/SEED.FLR",
+        "CD/BITS/SEED.GRD",
+        "CD/BITS/SEED.SCN",
+        "CD/BITS/SEED.WAL",
+        "CD/BITS/SEED.WUV",
+        "CD/CHARS2/GYPSY.FLR",
+        "CD/CHARS2/GYPSY.GRD",
+        "CD/CHARS2/GYPSY.SCN",
+        "CD/CHARS2/GYPSY.WAL",
+        "CD/CHARS2/GYPSY.WUV",
+        "CD/LEVEL04/TERRAIN.FLR",
+        "CD/LEVEL04/TERRAIN.GRD",
+        "CD/LEVEL04/TERRAIN.WAL",
+        "CD/LEVEL04/TERRAIN.WUV",
+        "CD/LEVEL05/TERRAIN.FLR",
+        "CD/LEVEL05/TERRAIN.GRD",
+        "CD/LEVEL05/TERRAIN.WAL",
+        "CD/LEVEL05/TERRAIN.WUV"
+      ]
+    },
+    {
+      "sha256": "1743b26a13770b6453dfcf900d9f02a515e52a1b04e5679149c06ec77e5e8ab1",
+      "size": 182334,
+      "file_count": 2,
+      "paths": [
+        "CD/CHARS/FLICK.ANM",
+        "CD/CHARS3/FLICKD.ANM"
+      ]
+    },
+    {
+      "sha256": "285e1a904c5111a5d1b80c00bae0311d9949767ac181c69fcc34e4158ac7eecb",
+      "size": 16044,
+      "file_count": 2,
+      "paths": [
+        "CD/CHARS3/FLICKP.ALL",
+        "CD/CHARS4/FLICKP.ALL"
+      ]
+    },
+    {
+      "sha256": "4562cacc76cbe18745ad7ff030c558fc996057826be655e988625a13bf9720ed",
+      "size": 8200,
+      "file_count": 2,
+      "paths": [
+        "CD/CHARS2/ROLL.ANM",
+        "CD/CHARS2/TUCK.ANM"
+      ]
+    },
+    {
+      "sha256": "9daeeaa4adcd555973458c72a4d9cb7de7c4a4a9af51f5703323b71fcbf0934a",
+      "size": 11260,
+      "file_count": 2,
+      "paths": [
+        "CD/CHARS/MANNY.ALL",
+        "CD/CHARS2/MANNY2.ALL"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "bugs.exe",
+      "size": 1069056,
+      "sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+      "extension": "exe",
+      "family": "[root]",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/BUGS2MA.WAV",
+      "size": 5533820,
+      "sha256": "96aea05a66a9794b20b254c5f62cef7cb33fc7955f299cd2bde9b18aef13205a",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/BUGS2MB.WAV",
+      "size": 5365270,
+      "sha256": "9314c7bae7e3101118256be22cc4ac0346e662b446859ad828fb7d4a1a8ab36a",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/BUGS2MC.WAV",
+      "size": 5583716,
+      "sha256": "336f536c55c5d1b06fbe67e5816fb2169b20e533ae2eeab40d8cc9045753c64c",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/DEAD.WAV",
+      "size": 478332,
+      "sha256": "32f72bd32f613123a1387bc48dadd4c18a47a18b990742b73540cc74ea5970eb",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS1.WAV",
+      "size": 667836,
+      "sha256": "b38cd2c945d233deedeeefb8f7688d4866cad644bcdb6c3c10971dac20ca7cb7",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS10.WAV",
+      "size": 435480,
+      "sha256": "cd47476e50c45c8363cef0d335e0de9ce1b138b224e612fd2cb046fc908fb5cd",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS11.WAV",
+      "size": 312956,
+      "sha256": "f2a67f21019266be3b106f4403703625bb06e14b640a119be1e84030baacb92e",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS12.WAV",
+      "size": 447420,
+      "sha256": "8d9cab9bcae9138214147dc9169a408cc158374ed42cf7568ec8805e30a7ae6e",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS13.WAV",
+      "size": 588290,
+      "sha256": "6db1005debd542efa76d29c20e95a7b753da7d6c57e0a7a5a71a54b220b2a47b",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS2.WAV",
+      "size": 254682,
+      "sha256": "0cd363d403166c07eda958d90335011582a10e4afc7b473f0d3001fa3ff11ec4",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS3.WAV",
+      "size": 228104,
+      "sha256": "29b3d4af3e67cf21033bc1f56743999eb6e752aaba03ac8873f14cd7ae6fb6ce",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS4.WAV",
+      "size": 490560,
+      "sha256": "19aa29c3a88241d8043e3a189767fcebe5e11cb71922f3bbd5783d19bd6dc0e8",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS5.WAV",
+      "size": 224062,
+      "sha256": "9d200da44bfa440ff8fdc886196bff42112f2a5930cc10dc3cbc5e0f5aa6251f",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS6.WAV",
+      "size": 160376,
+      "sha256": "cb5e9a92e07be5bcbd5f89ed7763f66f2e7eaf0de5db6fafa0cefaf0e8d0d6b3",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS7.WAV",
+      "size": 366530,
+      "sha256": "2668a3b95612865839de73afa291b89ab3dff8ed37b1a9863d1050639e6d03a9",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS8.WAV",
+      "size": 108304,
+      "sha256": "3f20248d66a03e89e06cefb1c340513ddbfc1bded00510459b6e8fef7197d093",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS8A.WAV",
+      "size": 50772,
+      "sha256": "70a9bee0bee21aac365002fc429efdb8ab8d283916aff577180275072aab59cd",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LESS9.WAV",
+      "size": 77286,
+      "sha256": "fb3dcd57fd175fad3ce5993f4ab4cdd8c83b87d54fabb0e50f56e89c959a7a09",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVCOM.WAV",
+      "size": 474236,
+      "sha256": "0a527376cd1a6da024362ce3dcbf171527834783bca57251dd7cd86dc472347e",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL1A.WAV",
+      "size": 11387004,
+      "sha256": "f311c0135aa06287f85e0ed2bd07a9bc629ff655573642e895c91d9d476553fc",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL1B.WAV",
+      "size": 10289276,
+      "sha256": "39d09fa26937bf0cfa94cf6e5861c4b482962e53c9f8d85d4d397bc958a1ea3f",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL1C.WAV",
+      "size": 11107446,
+      "sha256": "dd787e35dba3f830364b0bf212870dab18a46b726975ec4a078a3d2e17d1e122",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL2A.WAV",
+      "size": 10447470,
+      "sha256": "9c4a4029141d2a44bddc9de95961dfc1f986af7e4e28bd8e31f219af4760235a",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL2B.WAV",
+      "size": 10967560,
+      "sha256": "77f1a5eaac955bbc6c3ca98fc629f870ebcd799fb5c1ffd875aed007568a3d29",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL2C.WAV",
+      "size": 10629244,
+      "sha256": "c8943e1df2e55fb8875fe0f72d906647c75ee898a284683bf43f0c52f690d0a9",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL3A.WAV",
+      "size": 11198012,
+      "sha256": "2f9bf46fdc94af75abb76a9b188d0b70cb963b44920f487dfc060dc82cf6e734",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL3B.WAV",
+      "size": 10805372,
+      "sha256": "282e53062037eec7e0f10c35c204a25c625490a0cd4468ad784e17121e8879fb",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL3C.WAV",
+      "size": 10526844,
+      "sha256": "66895a83fb276899644bab36536f68830d99901bcf3b670c42f568969a5b8f9e",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL4A.WAV",
+      "size": 11014268,
+      "sha256": "b289f53d5e18b0d91c07855eed62aaca01a961d491c1b670e68d93a057cda368",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL4B.WAV",
+      "size": 10629214,
+      "sha256": "031a9b4ef45b71c263d833d2c96ecd49a119382a1c9438ac9616ee6e85e79b41",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL4C.WAV",
+      "size": 10527948,
+      "sha256": "d4bd37604ee1d4cd10fc7e78bc68e41f97f228b77b75c7d14698cef383bbbc32",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL5A.WAV",
+      "size": 12234876,
+      "sha256": "01c297dc658b1c55a44cbc91ecbbff177629b8981a762f1ca5b7865a10b6df27",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL5B.WAV",
+      "size": 10752354,
+      "sha256": "b0ffa9b15a6f9c8ade4ec26a055112d8f6d4c8866295e457ba385f54da250202",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/LEVEL5C.WAV",
+      "size": 10625148,
+      "sha256": "338c7e50b631dc2167aab2397546a792bf49a9824889d32404e170eb4b940f6a",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/AUDIO/TITLE.WAV",
+      "size": 533628,
+      "sha256": "9602bdfa75502145812d434f2210d4ba7e3f2e33111bde9c6c319d39ec5f4212",
+      "extension": "wav",
+      "family": "CD/AUDIO",
+      "observed_in": []
+    },
+    {
+      "path": "CD/BITS/BUGTEST.RAW",
+      "size": 24016,
+      "sha256": "2c919d83f263eff69be6a1ef5e8cd4bffd3639edc8592544da87cfc72aee8419",
+      "extension": "raw",
+      "family": "CD/BITS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/BITS/CHARSET.LBM",
+      "size": 11358,
+      "sha256": "b48fe203bf1280dd0c42759717d0badbdc8641e4fb9f83037e8ce99d2699c6bb",
+      "extension": "lbm",
+      "family": "CD/BITS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/BITS/MEMORY.BIN",
+      "size": 39432,
+      "sha256": "b8afc2b539d5fab2791a95a1f1fc0ce3e31ec34c9b924fd7d3ea84263aeac5c0",
+      "extension": "bin",
+      "family": "CD/BITS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/BITS/PLANTTER.ALL",
+      "size": 17760,
+      "sha256": "0a0cf7fa9e110eef8e2112760dcbefaa433b391ca613a3d673ee0327767eb468",
+      "extension": "all",
+      "family": "CD/BITS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/BITS/SEED.ALL",
+      "size": 16576,
+      "sha256": "5a1014b22849995771519ba6c52a8d7b614993512ad5dcaa4d5284cded62a657",
+      "extension": "all",
+      "family": "CD/BITS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/BITS/SEED.FLR",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "flr",
+      "family": "CD/BITS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/BITS/SEED.GRD",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "grd",
+      "family": "CD/BITS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/BITS/SEED.SCN",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "scn",
+      "family": "CD/BITS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/BITS/SEED.WAL",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "wal",
+      "family": "CD/BITS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/BITS/SEED.WUV",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "wuv",
+      "family": "CD/BITS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/BITS/TTLOGO.BGR",
+      "size": 153600,
+      "sha256": "9f4551c5af276365fd62cb68803136e2c303462bc3ca95f6d55c7dbe13814335",
+      "extension": "bgr",
+      "family": "CD/BITS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CD.TXT",
+      "size": 4,
+      "sha256": "6ceffd34caf1b53332d76b344864bed1fbcd71ef1415312db9ed995fcd91a74d",
+      "extension": "txt",
+      "family": "CD/[root]",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS/BADBUG.ALL",
+      "size": 4520,
+      "sha256": "b5f358e9982de514afc0739d276e3ec3891aecddc3c45722af4674f2090ea933",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS/BADBUG.ANM",
+      "size": 4928,
+      "sha256": "f03ea66e9824fd483a2aff2a9185133165fd7212cdc3647d99da3b12342b8e24",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS/DIM.ALL",
+      "size": 12512,
+      "sha256": "65cc9982f47b2e86147ecd111e6ec78af784f2a89f77f37cc1fdc95c31aba6aa",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/DIM.ANM",
+      "size": 10524,
+      "sha256": "c4e0d4676c55fc677b0342f8a45c93c7bcb40bc92ae008273cb42cb74c65ee52",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/FLICK.ALL",
+      "size": 13548,
+      "sha256": "a2f23220392d7fb4880bbab7acab9393fe6da059961d620e7b85c8df3f4f4ac6",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS/FLICK.ANM",
+      "size": 182334,
+      "sha256": "1743b26a13770b6453dfcf900d9f02a515e52a1b04e5679149c06ec77e5e8ab1",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS/FLY.ALL",
+      "size": 6924,
+      "sha256": "3c9bb566c736ba6d7afcb0ab5a921d978e0fc68e31df54b0ddfaa08877b7fb90",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/FLY.ANM",
+      "size": 10480,
+      "sha256": "d2cdffba9f9ee3234599cf930d93ce0921b46fc69080474579f3243595168723",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/FRAN.ALL",
+      "size": 12960,
+      "sha256": "f8386ae2eab4edc87c7463e2e63ef82c6ed8210eab3b133a492f47c9aa1fff34",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/FRAN.ANM",
+      "size": 7460,
+      "sha256": "44747cacad6d82fcf383dc7f70a9e2a1bed31b1a12b362d5b63ede344c5c6166",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/GRUB.ALL",
+      "size": 5384,
+      "sha256": "cefe8bca47487cacd0ce8f33e0ef05a54399a4859f419dc6cf0d06d661cf361e",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/GRUB.ANM",
+      "size": 2064,
+      "sha256": "ef7c59c55b1ad6d8462beb746081d38e7336ddcc1cb480c93eb6ad846ad05ffa",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/GYPSY.ALL",
+      "size": 13484,
+      "sha256": "6c27fac03736dd26bc79aa3cf91d9e1b4d62d64779e3400142231b503d399c63",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/GYPSY.ANM",
+      "size": 12520,
+      "sha256": "83a8e8dca68340f7e7aaab82e2c63ef96b2d8b29416f71eb1732f2be40883c41",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/HEIM.ALL",
+      "size": 16104,
+      "sha256": "e94b6fba98977ce7ff9bc03b080ed8ffddf77d12c9b02a1933bf3600e2545e69",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/HEIM.ANM",
+      "size": 17984,
+      "sha256": "297f08f77a026b2dd183010b6c0b6ce2ca009ddd669977a2d453bd0add7ec0e4",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/MANNY.ALL",
+      "size": 11260,
+      "sha256": "9daeeaa4adcd555973458c72a4d9cb7de7c4a4a9af51f5703323b71fcbf0934a",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/MANNY.ANM",
+      "size": 17924,
+      "sha256": "b25d3f9c1b375a555cc9d216b3a67acafa05c04502d52d109ca6c879d0ba1775",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/MOS.ALL",
+      "size": 6360,
+      "sha256": "4ba6f2f466f73eccd1f6d0bef2a86ebe851a29ac27da2463a61bfd5c64619c72",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS/MOS.ANM",
+      "size": 16604,
+      "sha256": "441ca6303308e60abc723331b8cdbee583a38052ecbdc4d4a8c47b03c864d835",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS/ROSIE.ALL",
+      "size": 10156,
+      "sha256": "12da0e3bcb0d71e56f6e1276c4e6e315d0533e36838b5f13657c18506ff86eae",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/ROSIE.ANM",
+      "size": 23558,
+      "sha256": "a7c8c1c631645eff585e957d8549aef0dcd5c9044cbfa2dea1298ce815785ba0",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/SLIM.ALL",
+      "size": 9704,
+      "sha256": "f580e863f24e4f40374b99790de3c2a77bb9a469231aa67ed76a8a80fc393f66",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/SLIM.ANM",
+      "size": 15708,
+      "sha256": "def664b47f5de59499226ed47a82f67b494399ad7fd6963dc66dc14a9c28b75a",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/SLIMLOW.ALL",
+      "size": 6080,
+      "sha256": "59dd11485ddbbf22f3a68bbc0634c1117a0842be1b0ae8f4d5a6b33cf66f70ec",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/SLIMLOW.ANM",
+      "size": 7862,
+      "sha256": "c594d529b04431f7d985da4faf6690cd8bcec32fc482a20f3b82cf7e353e1350",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/STATE.RST",
+      "size": 297,
+      "sha256": "e8fe2f0fe1e0601225c42176ed9b4f1e882408c0af7a169395a2a0163f6b4bdb",
+      "extension": "rst",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/T",
+      "size": 8177,
+      "sha256": "514122289ae2242056304faa921ba0fcb84c0ac84105b8f6ee3d9ced7325c51d",
+      "extension": "[none]",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/TEST.ALL",
+      "size": 22804,
+      "sha256": "edb45da0212523d1b82c80e26339347f7f89b9a7c6c758efc1ff7b3774398349",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/TEST.ANM",
+      "size": 9896,
+      "sha256": "80bfad9460865f54f88918674c2cbf3a1894350b5b9c33651976513ac539c9a8",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS/WASP.ALL",
+      "size": 7532,
+      "sha256": "d47e76c29c778a66fdc2fe9b884ff4c38e76dd83f9a2a8eea0cd5b3b1251b99d",
+      "extension": "all",
+      "family": "CD/CHARS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS/WASP.ANM",
+      "size": 20904,
+      "sha256": "984d52af1af1ba5bf123fc094ccaf078cabab3f8356bb7a178d5c07589f583b8",
+      "extension": "anm",
+      "family": "CD/CHARS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS2/ATTAFLIK.ALL",
+      "size": 24668,
+      "sha256": "52c2ca17ed9f1b5154b8ea551c444942e430fa916669be1e3f578eac18a1ebab",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/ATTAFLIK.ANM",
+      "size": 48024,
+      "sha256": "267ba06ac8fbb88aecfe978795e65e2daa0f99b3cac86db46b06b7da4ccefc2d",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/BMOD.LOG",
+      "size": 53,
+      "sha256": "32d6756e10115c836b38d92c0fbea0e38d05d390a75b711cae36164470a166d4",
+      "extension": "log",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/DOT.ALL",
+      "size": 10484,
+      "sha256": "9a86062f5ae18710d1051fc5c843630da5798c98b28a0f7e78c0d2a652ced97c",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS2/DOT.ANM",
+      "size": 2662,
+      "sha256": "2823b702f9aa3f136081123a0b10de6cdf1f45271954c016d5fc5453a1760bab",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS2/FRANSLIM.ALL",
+      "size": 22036,
+      "sha256": "5d319e92b972058536a06774f35134c9da8c57421401d22e48ec3fc81395af8c",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/FRANSLIM.ANM",
+      "size": 56696,
+      "sha256": "70769b30d4624a8aa977625e87f52c2ca7a722d1778dcfe9442ae705624acd94",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/GGRASSH.ALL",
+      "size": 10152,
+      "sha256": "eb5d858d9939578e6299da7ea720fde53d2561ccd4d38a564fd514f51e2343a4",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/GGRASSH.ANM",
+      "size": 26378,
+      "sha256": "19709a047ce75a358cd445c534f42e317a3f467063b6e7b9e550e1907a7d208a",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/GYPSY.ALL",
+      "size": 14812,
+      "sha256": "c0639bcde5baa4b74367bab2a1b32dce7d3e8472de8724908a8c84b7eb48b8c5",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/GYPSY.ANM",
+      "size": 13820,
+      "sha256": "d051f8718e19d2d7f750d241d47bdbd4872a04c1fb86f60cba9245a0b5725931",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/GYPSY.FLR",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "flr",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/GYPSY.GRD",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "grd",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/GYPSY.SCN",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "scn",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/GYPSY.WAL",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "wal",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/GYPSY.WUV",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "wuv",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/HOPPER.ALL",
+      "size": 12160,
+      "sha256": "35417552618266bd3096ab712f133da5a8a5db4510a6230aa85329e0693d9938",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/HOPPER.ANM",
+      "size": 26232,
+      "sha256": "b7eb7a1f0d3ae99704fd03ad8639c3135f933199f119f945aca9061663be3996",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/HSPIDER.ALL",
+      "size": 7800,
+      "sha256": "a51c11eadc7d484a75f7c70f4b82d88b3c861ef07fa3a562683ef67c3ee26327",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/HSPIDER.ANM",
+      "size": 11438,
+      "sha256": "15a5cf17972d1472d8f78b9de507b22203ef9b32ce31992bdf8f72d13896fd95",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/MANNY2.ALL",
+      "size": 11260,
+      "sha256": "9daeeaa4adcd555973458c72a4d9cb7de7c4a4a9af51f5703323b71fcbf0934a",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/MANNY2.ANM",
+      "size": 34016,
+      "sha256": "0fa2b8c764fb9735f156ecc07f3485cdfe1b8ca5579989264bffcadae986d015",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/ROACH.ALL",
+      "size": 10308,
+      "sha256": "065687590a1598b44e9b1dafeaba22f49a5bb5ec1ecae87faa4f6189f4c7b371",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/ROACH.ANM",
+      "size": 13808,
+      "sha256": "4e5e859b7fb8086eed03d2660d9a3590e4137d628395fa36e5f1b11f99d369b4",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/ROLL.ALL",
+      "size": 11508,
+      "sha256": "abbc1cda88f2c6589850925bc4feec02eaa140a406a1a3f959cac62ba442e8e7",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/ROLL.ANM",
+      "size": 8200,
+      "sha256": "4562cacc76cbe18745ad7ff030c558fc996057826be655e988625a13bf9720ed",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/TAXIBUG.ALL",
+      "size": 9944,
+      "sha256": "3154110f402c5d82b5c984d4625cac044008f7598f5a1c946d39d8a6b98b5985",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/TAXIBUG.ANM",
+      "size": 6122,
+      "sha256": "83ff6566079569331ad99cfc410714b9a6f28b0e4fa8b1f0a9b5a95fddfb2526",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/THUMPER.ALL",
+      "size": 11804,
+      "sha256": "b76afe405db895cf3003f86667fec8a9df56aba076eaa51af155aa43554f8d12",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/THUMPER.ANM",
+      "size": 34304,
+      "sha256": "11cd301ca887860a21dd2e17e541289613257f2fcabc06f4c3aa02e1177c7051",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/TUCK.ALL",
+      "size": 11508,
+      "sha256": "223964069afefb09d6a539b2089b94193c6e3cddba94d2f94df0e430069aef7c",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/TUCK.ANM",
+      "size": 8200,
+      "sha256": "4562cacc76cbe18745ad7ff030c558fc996057826be655e988625a13bf9720ed",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/TUCKROLL.ALL",
+      "size": 20456,
+      "sha256": "74b2b647b595074e1982bd88fe0bb6e46bcaa36b639986ca40bb27a20cf29d82",
+      "extension": "all",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS2/TUCKROLL.ANM",
+      "size": 6312,
+      "sha256": "92785da836a25a1a971a77d94edcdc79c9612a537c493a291938bf453684dec8",
+      "extension": "anm",
+      "family": "CD/CHARS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/ACORN.ALL",
+      "size": 3636,
+      "sha256": "af51e81d2997fbe2f612cb6cb40a66ac7ec4fc5e02c5215c6f3b1bc4df4ece7f",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/ACORN.ANM",
+      "size": 224,
+      "sha256": "f609687aabfebfe7308568abc589d91380f97e4b2e29a88dab901ac498b013e2",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/ATTA.ALL",
+      "size": 14384,
+      "sha256": "9c5ba3b9147b4e02b21584ec994ed49857516059ffb36733e2fcf84f7e3c6229",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/ATTA.ANM",
+      "size": 12326,
+      "sha256": "bb4257402a4b2512b742f65ed077ae43bfc3715feab5df04d7333ac2536fd345",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/BBIRD.ALL",
+      "size": 24544,
+      "sha256": "20d2e4ce0ef972285fd19b7e4b8abda53b665750f0522c7c7920f5a17cb16a5a",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/BBIRD.ANM",
+      "size": 5120,
+      "sha256": "83e622e9fd01012ad8ab0975b51ae50c2e55e9bfd1f9341bdc0c3686162eb4b7",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/BLUESCOT.ALL",
+      "size": 11672,
+      "sha256": "593ce19d5f14142c037181ed288aa343f7c866d8b29cd4eba2cb0bbfd7dd5a36",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/BLUESCOT.ANM",
+      "size": 5312,
+      "sha256": "8ef10855a5a4593e0077639f9309cdbdac01249898803e37c199162834f23bdf",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/DRAGFLY.ALL",
+      "size": 8344,
+      "sha256": "6df612f183e8a7b19537225bacd23efdf35e1e5269d1b7e998d046e385b427bf",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/DRAGFLY.ANM",
+      "size": 8336,
+      "sha256": "40e768fff21d0ce3410fc4f1628597ef7cb6f900767a232666029e157defb1ab",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/DRAGFLY.SCN",
+      "size": 5516,
+      "sha256": "100bc1f14c57f0727575ee4cdf92dd87dd0fa431c0173a052f5795b48ecfacf1",
+      "extension": "scn",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/FDIM.ALL",
+      "size": 14096,
+      "sha256": "15e6e01146334a276f2b1c24b4cb3c5865c09ba1e5b7b37b0a63f7985b477ae2",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/FDIM.ANM",
+      "size": 3980,
+      "sha256": "9db2b1f251a4cd533ebf155df3539181ba40e2019f4840458106a4f27cf418e0",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/FLICKD.ALL",
+      "size": 13548,
+      "sha256": "6e5afb4f9ea649bc305fdafeb027aece25914b27a017d04841bf4298634079a4",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/FLICKD.ANM",
+      "size": 182334,
+      "sha256": "1743b26a13770b6453dfcf900d9f02a515e52a1b04e5679149c06ec77e5e8ab1",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/FLICKHAR.0",
+      "size": 20,
+      "sha256": "ec3dfda68acad3b31bc8e14f370509efff700f4183ba4ebacba1c88e7363fe67",
+      "extension": "0",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/FLICKHAR.S",
+      "size": 20,
+      "sha256": "852b06cf01f59606f8c824a4197fa4c89a7243b69759b74a586c8813c27bac44",
+      "extension": "s",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/FLICKP.ALL",
+      "size": 16044,
+      "sha256": "285e1a904c5111a5d1b80c00bae0311d9949767ac181c69fcc34e4158ac7eecb",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/FLICKP.ANM",
+      "size": 213090,
+      "sha256": "95e77803dfaef08b616eaed738e3edc183c0de3336f7da6473bb69ad3c0ed3b7",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/FLIKHARV.ALL",
+      "size": 11416,
+      "sha256": "26300d0b5d0b9d93d031876f82d97566e3e2c533ff9116a95a302259e9393554",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS3/FLIKHARV.ANM",
+      "size": 15374,
+      "sha256": "5442b76ff7b0911fed6f79b40390b3f7e83a04b2bcb1d5730fad86d581557f48",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS3/MOLT.ALL",
+      "size": 12088,
+      "sha256": "e4d6f624abee32d1644cf1a2f8632abb88490435f24f69458316713c8ffdb1ad",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/MOLT.ANM",
+      "size": 13356,
+      "sha256": "1c2c93d8bea9c5f2187b143034891010d47af2095875baa74ad88203265cf526",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/PROTECT.ALL",
+      "size": 7376,
+      "sha256": "113001e0a3d6ff39d3b4f1ca5ba87e47ec12a11608b49b8c6451f2a030ca11d2",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS3/PROTECT.ANM",
+      "size": 2672,
+      "sha256": "f29e8261d8d247f57210e3102d0c9e58683ffc437d1c14832f8f04f9f068c688",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS3/SOIL.ALL",
+      "size": 13960,
+      "sha256": "a64871f3de0657cb1356ab01b3ecb11467026b8758cbf1a162b23f71d128f027",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": [
+        "training"
+      ]
+    },
+    {
+      "path": "CD/CHARS3/SOIL.ANM",
+      "size": 14120,
+      "sha256": "437a8b017ca2219de975d70dac4854e668b7ca1e895235417473beeb3e02e5e2",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": [
+        "training"
+      ]
+    },
+    {
+      "path": "CD/CHARS3/THUD.ALL",
+      "size": 9288,
+      "sha256": "8773297d7bd9e1369910f6fe96c63e128aed69bfe179e88175fdd799517f0e09",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/THUD.ANM",
+      "size": 13994,
+      "sha256": "f6ae4b34642451887c295ce7d5d2ed52af5745c0fc1029f5f3470bbf009d334d",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/WEEVIL.ALL",
+      "size": 7080,
+      "sha256": "93e80fe9fd406ae8a6cb00c9b4263ae4aae4fdff6df29b438effbfec56e28dcf",
+      "extension": "all",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS3/WEEVIL.ANM",
+      "size": 4064,
+      "sha256": "ed402063ceaf939fe7c718ad3dffb3d592ea280d6c2170240c4ee1fc747ae5b7",
+      "extension": "anm",
+      "family": "CD/CHARS3",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS4/BADCENT.ALL",
+      "size": 11344,
+      "sha256": "affb114a337b073e7f092d84e7d8b569fc90bd506ca939d99ae542852411ca62",
+      "extension": "all",
+      "family": "CD/CHARS4",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS4/BADCENT.ANM",
+      "size": 8978,
+      "sha256": "9e9ef34a385142c2ca09b13ec5b5450521f462d992580b6b8e8a33807be5f65a",
+      "extension": "anm",
+      "family": "CD/CHARS4",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS4/BADWORM.ALL",
+      "size": 6992,
+      "sha256": "ebe2da35022efe8add128f570639125572754cc25afb6ec2cd27eab462fdfe36",
+      "extension": "all",
+      "family": "CD/CHARS4",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS4/BADWORM.ANM",
+      "size": 3312,
+      "sha256": "781cf3910b8f66cba373f86dd25517b3354b2eb670384cd53cfa4bc9c94a8416",
+      "extension": "anm",
+      "family": "CD/CHARS4",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/CHARS4/FLICKP.ALL",
+      "size": 16044,
+      "sha256": "285e1a904c5111a5d1b80c00bae0311d9949767ac181c69fcc34e4158ac7eecb",
+      "extension": "all",
+      "family": "CD/CHARS4",
+      "observed_in": []
+    },
+    {
+      "path": "CD/CHARS4/FLICKP.ANM",
+      "size": 179460,
+      "sha256": "85ecebab2dc71bb8b6ae23b728ed8f855775dd6cf4ff1ef9be1b3b5a2e6e3fe9",
+      "extension": "anm",
+      "family": "CD/CHARS4",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/CIRCUS.RAW",
+      "size": 58292,
+      "sha256": "5de998c416e2073c3c27888954cbcc3044b493ab04d91787ed4367d55e8d47b6",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/FILM.RAW",
+      "size": 91932,
+      "sha256": "5fc22e48b60ca8e690a310e668b26bb14fda3739697668de7850a61f08e28c76",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL1A.RAW",
+      "size": 94088,
+      "sha256": "8275b3851514c673bdc4963bf745f3c8ab7bf27bfed2e0b6cd198de3d0dc655c",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/GFX/LEVEL1B.RAW",
+      "size": 58760,
+      "sha256": "6ea5e36334312329bdbb08c621fbfbcf3e87f5941046db1c565543e5ccb5fa15",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL1C.RAW",
+      "size": 43256,
+      "sha256": "cd1748fe09bab5d5a41830a6bb8c246dbd4c49a00b71fcab0eec227e7996d82d",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL2A.RAW",
+      "size": 102044,
+      "sha256": "4a3c95b72a0cb98b651ed2f5d0343aac7c5a16eca90d418bb2d87d30ac6b6943",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL2B.RAW",
+      "size": 96140,
+      "sha256": "949b518a5d6fc2ecd2c37647d9edd8bf50eaea28c8db86ea45702583ccd91d09",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL2C.RAW",
+      "size": 90452,
+      "sha256": "8f628c9b937c99ab95ab9c42a3440e991831b38ef4fa08b06875bf9fe6b0aa4d",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL3A.RAW",
+      "size": 66660,
+      "sha256": "2044d1959f3bf524245590bb0b7b9a1e185681202a8c08df294f5882bbee56f1",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL3B.RAW",
+      "size": 64964,
+      "sha256": "b06bae9c5f9c3ad5ac80ed2da0d7dcbee502b2ec542d8309293e05a08b6171d2",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL3C.RAW",
+      "size": 47680,
+      "sha256": "8cbd0d9cf4cb526cf8ea760cf355c8bf97e7e7b0a084240ac8d1f72687f28b8c",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL4A.RAW",
+      "size": 108448,
+      "sha256": "c0a0560ea0c65e7ce1b3568a621142c06d02fe5619a161db0eed86a26d2eddf4",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL4B.RAW",
+      "size": 94844,
+      "sha256": "86423b25d751ac21b4f4e5384e40b778fe0d0938a3715896e82108b90ea961d6",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL4C.RAW",
+      "size": 83116,
+      "sha256": "b1ea5f0b96c8ee6ea445ceec7d94ddc320c4abcf15ec661dda8a27e945bdfcb0",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL5A.RAW",
+      "size": 90292,
+      "sha256": "934ff677d28a6184074002f13fb7e2389ca155f944f1332ba357ad033ab793b1",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL5B.RAW",
+      "size": 64720,
+      "sha256": "ac95c10b98e180f758d64135f094b7aa4c98550fbe58c8a82db46c017d99ffda",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LEVEL5C.RAW",
+      "size": 62632,
+      "sha256": "3ffdb8a32ca8473712b3c3dad7f5f2f5005181e386be45675067095e4d06cf3e",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/LOADING.RAW",
+      "size": 3604,
+      "sha256": "4d613b44dc383532785f995e394fabc10354dd1b720874766b55139b0ea7155d",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/GFX/TRAINING.RAW",
+      "size": 120488,
+      "sha256": "67ebe631f6fa799869461d27ef39ca63163c1c56ef6a7a41c5ab2d5e50f890e2",
+      "extension": "raw",
+      "family": "CD/GFX",
+      "observed_in": [
+        "training"
+      ]
+    },
+    {
+      "path": "CD/LEVEL00/ERRORS.ERR",
+      "size": 2014,
+      "sha256": "194d32c81fd9cac98d52814d334624bb3f05e9c36a2a8db4297f19143967381c",
+      "extension": "err",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL00/LEVEL.BIN",
+      "size": 4,
+      "sha256": "fb5e512425fc9449316ec95969ebe71e2d576dbab833d61e2a5b9330fd70ee02",
+      "extension": "bin",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL00/LEVEL.DAT",
+      "size": 94044,
+      "sha256": "b9fb1650f96aa187cf3a3cebaf588424596a4a1a164f9de71ff296131d57297f",
+      "extension": "dat",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL00/LEVEL.RAW",
+      "size": 394492,
+      "sha256": "9d78ad50cd8459e8c571bc66621c8560690bc5d19e18fc80ccf2bc60ac15e410",
+      "extension": "raw",
+      "family": "CD/LEVEL00",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/LEVEL00/LEVEL1.RAW",
+      "size": 90612,
+      "sha256": "8a611b89e7985c6e8da45c5860bf432c851e61951f69c667886b2c5c8bef831d",
+      "extension": "raw",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL00/LEVEL2.RAW",
+      "size": 99636,
+      "sha256": "9e9129196d800a3a745221afa395f58c7cfec99b2939123b7118def0cd099934",
+      "extension": "raw",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL00/LEVEL3.RAW",
+      "size": 184148,
+      "sha256": "fd150086a4e79ba7a34b8037e2328a2151a8855f52723db42ace85a3b29469df",
+      "extension": "raw",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL00/LEVEL4.RAW",
+      "size": 285216,
+      "sha256": "23a4bbda91b3165031b9fd6b1e65b700d7caafc2cc6a9b6ee2a22343aaa687a2",
+      "extension": "raw",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL00/PCDATA.BIN",
+      "size": 4612,
+      "sha256": "55ff404fd04d82ac26dda89a1b0bd90b1c985b358fd5f0f2ab2009c4f7ae2062",
+      "extension": "bin",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL00/ROSIE.ALL",
+      "size": 9268,
+      "sha256": "caa8702a5afd90c160ffd2d8836b0643dbb083d5b6d226f7d9951593d07397b9",
+      "extension": "all",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL00/ROSIEWLK.ANM",
+      "size": 11929,
+      "sha256": "8373267080df702f429ea4f1894a7f5bcc52d325aac18c8eaddeabee137f23d4",
+      "extension": "anm",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL00/TERRAIN.ALL",
+      "size": 194332,
+      "sha256": "dccf7db3978cce18c9e2e59733f057dcb2d6b45b9ba0da05ed4307b350421ac2",
+      "extension": "all",
+      "family": "CD/LEVEL00",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/DP_PREFS",
+      "size": 324,
+      "sha256": "056071539bfba2e4a89ec5e2a6d0061d592202ea03904a3e42aae8c81232c162",
+      "extension": "[none]",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL.BIN",
+      "size": 1680,
+      "sha256": "6fc00fe9bfd5533f61ffdff6434c1483d9d3d9dfe4e1a0dd00b97516cbffa362",
+      "extension": "bin",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL.DAT",
+      "size": 332824,
+      "sha256": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53",
+      "extension": "dat",
+      "family": "CD/LEVEL01",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL.KEP",
+      "size": 264268,
+      "sha256": "6a66764be68626f879ebbd246e66faef908dfc186c5f7a201588c2ef3788f652",
+      "extension": "kep",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL.RAW",
+      "size": 747748,
+      "sha256": "c07452bafcf3799b55574d1622a37189358f5debcbd1127e167fd0fe0181700e",
+      "extension": "raw",
+      "family": "CD/LEVEL01",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL1.BIN",
+      "size": 2700,
+      "sha256": "0fc9a388c1830a88a7cc3781fc3c18aea3a7d3d731d9357cfccc97e89bfffcf3",
+      "extension": "bin",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL1.DAT",
+      "size": 107880,
+      "sha256": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+      "extension": "dat",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL1.RAW",
+      "size": 541200,
+      "sha256": "de7d7cf814fbaef5f86c847d55e76a3f8709e41469e6d1c6146f94a0ee5069a5",
+      "extension": "raw",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL1A.VB",
+      "size": 501680,
+      "sha256": "48406bb924bf9c4ee977dfc9aace12e03abaad613e68900ddbabf87fa007567c",
+      "extension": "vb",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL1A.VH",
+      "size": 5152,
+      "sha256": "de94421c5bd0e497b9b84b907bd7a616419809536a95d12465f74f98bda5f1d2",
+      "extension": "vh",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL2.DAT",
+      "size": 264068,
+      "sha256": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+      "extension": "dat",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL2C.VB",
+      "size": 506528,
+      "sha256": "1ce4b7e4434d3d858c5183ce208f8902b0a651b552a4f2ca3cf771f57263bf25",
+      "extension": "vb",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/LEVEL2C.VH",
+      "size": 5152,
+      "sha256": "203c509c70719af4ee827b38abf552ffa067e9442d112715584d05ba7188e504",
+      "extension": "vh",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/TERR1.ALL",
+      "size": 61560,
+      "sha256": "602e71eefeaaf3b05cf6f441a5198d59d41d917bbd590cc623e4e1ec5edaa627",
+      "extension": "all",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL01/TERRAIN.ALL",
+      "size": 236940,
+      "sha256": "62f3b73f21630eb19c04e585a92e1f3e32a76fdcb6ec36bae18f9c1ec3a2a868",
+      "extension": "all",
+      "family": "CD/LEVEL01",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/LEVEL01/WALLSPL-.SPL",
+      "size": 964,
+      "sha256": "4a5d5676d2ece4d79f7a4810a069e9ba3a85b1fe3adb3cdc1a17a4e1c4ab3256",
+      "extension": "spl",
+      "family": "CD/LEVEL01",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL.BIN",
+      "size": 4032,
+      "sha256": "255d3a1f84fd9d2bd2199f94f6b4f83baaa21e95696683ef6eed157e02643600",
+      "extension": "bin",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL.DAT",
+      "size": 112468,
+      "sha256": "0bb00fa7387c2125ae20c55400bf5cea6a64641a7328cedc5cbd543bbd437ee7",
+      "extension": "dat",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL.RAW",
+      "size": 517912,
+      "sha256": "6f0c0e44daf0014de890046679f82ade7623e6b5472df3634bc056cd09b13269",
+      "extension": "raw",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL1.BIN",
+      "size": 4272,
+      "sha256": "abe451dd79db880baec691c82f3a461ca217394eec0ab1791abcf8ebbd8a73a5",
+      "extension": "bin",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL1.DAT",
+      "size": 400136,
+      "sha256": "5e850a16ee98bd9d7feb747b53390babeef372e98a82378f602104cd7ba76471",
+      "extension": "dat",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL1.RAW",
+      "size": 431860,
+      "sha256": "ecfffece1a7196da4d556f9767a3b3c2d18e63e7ae1c8e8cfbd8bff2871f5493",
+      "extension": "raw",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL1C.VB",
+      "size": 502288,
+      "sha256": "5cc293061a58964cbf10e7857fa09b70cfc94c7a62f8224cde94f4a6a96a857d",
+      "extension": "vb",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL1C.VH",
+      "size": 5152,
+      "sha256": "b5c17c9ae38e4c18cd8223380363b5f203e7ab036185f3624a673f7423cc75a8",
+      "extension": "vh",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL4B.VB",
+      "size": 501120,
+      "sha256": "611efea9679fbce099a60237876c5108fd712410bc52575ccb1b39e1fac53d46",
+      "extension": "vb",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL4B.VH",
+      "size": 5152,
+      "sha256": "7c83585372a9e27a49f5372224293eff3b5cf3049f90fd8c246022d4ab548f44",
+      "extension": "vh",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL4BC.VB",
+      "size": 283024,
+      "sha256": "604c46beb4cfce669dc429d90d73a7e82b1855305e380a6c6e9feb4b54ab0c2e",
+      "extension": "vb",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/LEVEL4BC.VH",
+      "size": 6688,
+      "sha256": "53c19291921e8e4bb79117d96d5969900c923145196ce22fa3c7f29b470a79f6",
+      "extension": "vh",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/MAINTREE.SPL",
+      "size": 452,
+      "sha256": "d3236a28cf1d4343c398367819f41069ae8a2b8cd3000cd3fae69f616c995875",
+      "extension": "spl",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/TERR1.ALL",
+      "size": 220036,
+      "sha256": "672412e9dc1373c9c6258a8ff0c7f780cf35c69bbf22f6df077ce08c3165c08e",
+      "extension": "all",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL02/TERRAIN.ALL",
+      "size": 81704,
+      "sha256": "7f6b446fa9fac0951a6a6e3b1e70f2f9bd456ea4dc69160918aaa36c95de83fd",
+      "extension": "all",
+      "family": "CD/LEVEL02",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/LEVEL.BIN",
+      "size": 5036,
+      "sha256": "8b4ec1f3723f2735ac5a6660a54c45ed2932ab40f3b816f830a5351ca060981f",
+      "extension": "bin",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/LEVEL.DAT",
+      "size": 274812,
+      "sha256": "bda28dc7287ebc3648998425b3c09f19d6470a85c9fcd439cca5ad8e391c0f2b",
+      "extension": "dat",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/LEVEL.RAW",
+      "size": 654512,
+      "sha256": "869700f6f8cd51d3d78ca14f55f350b343d6f77692f33fb11a8aef2b5f6a3ca4",
+      "extension": "raw",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/LEVEL1.BIN",
+      "size": 3184,
+      "sha256": "c23798218488812b19832d3f85654628ce25bc90687af843186de6c717707708",
+      "extension": "bin",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/LEVEL1.DAT",
+      "size": 236288,
+      "sha256": "c0a1d40cb912162ee5ace15efed11022b4852a55238f238a1b650030f1dfb48d",
+      "extension": "dat",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/LEVEL1.RAW",
+      "size": 513528,
+      "sha256": "67c9b8e4bd2b7fc7339eb564bf4de419f0780c07f28f3ca2977854213c495b1f",
+      "extension": "raw",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/LEVEL1B.VB",
+      "size": 502032,
+      "sha256": "f5d47b0352949202122bf741e7a27d0b39909ff0d6840da20e2b2b586f5d2270",
+      "extension": "vb",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/LEVEL1B.VH",
+      "size": 5152,
+      "sha256": "0ee9af48af65bdb426fca32281e17a9086614bd4b0d3413592d214ee6caf39da",
+      "extension": "vh",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/LEVEL4C.VB",
+      "size": 507760,
+      "sha256": "71076d786f065ea351494864a13f5a8a2c57bf168a34757872210e7cfa529577",
+      "extension": "vb",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/LEVEL4C.VH",
+      "size": 5664,
+      "sha256": "a9354d136d6b8a3abaf990d710825b498bba373f281710de23796b8ff6095843",
+      "extension": "vh",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/TERR1.ALL",
+      "size": 24972,
+      "sha256": "266678bbfa0475ebb14a07295f5122fc9d5be2614a53c20c6ce4d762181c0f3c",
+      "extension": "all",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/TERRAIN-.SPL",
+      "size": 1172,
+      "sha256": "680903042e9588c6bca793d284ceeab854dea5efc79dbbbbe1a7a6b4b5b8bd01",
+      "extension": "spl",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/TERRAIN.ALL",
+      "size": 268368,
+      "sha256": "b878c378c924fbdb45e450f4314808fdd3506f8685da2c3f255b7e316f4a2d9c",
+      "extension": "all",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL03/TERRAIN1.SPL",
+      "size": 1172,
+      "sha256": "fbac3d4422eb68f975bfed4c32a35228cef5dab3f8e5db03517ba96cb7f60d31",
+      "extension": "spl",
+      "family": "CD/LEVEL03",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/COPYOFLE.RAW",
+      "size": 264716,
+      "sha256": "ee3c1ee44ab942d315864e1a6a9027130f12ad1b2d650cde07024ab184f88c30",
+      "extension": "raw",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL.BIN",
+      "size": 3068,
+      "sha256": "c0e8b6376dbb9aabd85f90e79e3918feac7f3fcccc59c3dbcef827da14fec81a",
+      "extension": "bin",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL.DAT",
+      "size": 387392,
+      "sha256": "a6bbb538257e8652645df847623fa3623d889fdb7211891c2b145a2a18ffc905",
+      "extension": "dat",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL.RAW",
+      "size": 541536,
+      "sha256": "526fe962ffd5743769123229469f0129e0e754dc3387057701410281ba4108fe",
+      "extension": "raw",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL1.BIN",
+      "size": 4924,
+      "sha256": "5fa8d03d5f2e130f7d9a2c6d0de8ab44d403c953d38e817159765586c0ddf3c9",
+      "extension": "bin",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL1.DAT",
+      "size": 66480,
+      "sha256": "a81f2397d32983014b5f3354e1dece7604168f84a998572ef1d9a8bada1d4dd2",
+      "extension": "dat",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL1.RAW",
+      "size": 395648,
+      "sha256": "71ceb765fc4c08ea5e80d7584eaab2afafbee48b8d2ccb19b5651a824f3b87bf",
+      "extension": "raw",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL3A.VB",
+      "size": 509536,
+      "sha256": "544f75440f7a5cd2111390465a02e01647b11970389027e99246f5ec7597bbad",
+      "extension": "vb",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL3A.VH",
+      "size": 5152,
+      "sha256": "8b95971686accabf1a8761981701729acd465a55004a471ebf7d133232d63751",
+      "extension": "vh",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL3AC.VB",
+      "size": 321936,
+      "sha256": "08da7afd01ea27b0f879ab1ee6afc6ef046e5bbf716ecd58caa5bbb685cac856",
+      "extension": "vb",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL3AC.VH",
+      "size": 6176,
+      "sha256": "15aaa6c6eb03bbd5c1a39a1b447b80c2d34bbd5085d0f64fd91dd117414755ca",
+      "extension": "vh",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL3C.VB",
+      "size": 507136,
+      "sha256": "44d0d54b896125791a7132f126a329d6694ee45be3518d44e378292980c127a1",
+      "extension": "vb",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL3C.VH",
+      "size": 5152,
+      "sha256": "aa32f2d7ae85df9b282120c097c4f06045c3f28c16b3d277a0d89f0a63d4a2d9",
+      "extension": "vh",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/LEVEL4.DAT",
+      "size": 62448,
+      "sha256": "26f41f703491b260139999f9e790053a0b2971bc1661e5fc37736259e7ca58a4",
+      "extension": "dat",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/TERR1.ALL",
+      "size": 17088,
+      "sha256": "fb1efb453c41e2b8180a840819f1ee384ef7f979e770d59a7026ccaec5d705a1",
+      "extension": "all",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/TERRAIN.ALL",
+      "size": 201512,
+      "sha256": "9cf8fb6990a955a808f2e4f2c22ffce3fe5d62136f4a9271bdc444a6dd7fc103",
+      "extension": "all",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/TERRAIN.FLR",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "flr",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/TERRAIN.GRD",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "grd",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/TERRAIN.SCN",
+      "size": 246540,
+      "sha256": "d71ca0b2a3a09c1a9691b0f5c9453ce6614304e0d7b0bb7d293181391bbbd28a",
+      "extension": "scn",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/TERRAIN.WAL",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "wal",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL04/TERRAIN.WUV",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "wuv",
+      "family": "CD/LEVEL04",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL.BIN",
+      "size": 2400,
+      "sha256": "16a29ea28ee65c2a8738f7fb6e043923442d2f2cdba619d6ea9b6b41aae3ab35",
+      "extension": "bin",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL.DAT",
+      "size": 372812,
+      "sha256": "438372b363692af46351be01f0e74d3cd0547980147766e4a00b2445b75c8d90",
+      "extension": "dat",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL.RAW",
+      "size": 424088,
+      "sha256": "ebfa2a5acc65a4d6ddbde57d97b9547962609c3b1a81aaba3f76bd11055e48eb",
+      "extension": "raw",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL1.BIN",
+      "size": 4672,
+      "sha256": "8fc0cc5ee3b2145ab785ba9b06637bd276dda4f9cdf1a998b95aecff89f805b5",
+      "extension": "bin",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL1.DAT",
+      "size": 410776,
+      "sha256": "46e24f7566aa7592d8b118369088f5ca34ec05df028dd72383fed382cf4cc30b",
+      "extension": "dat",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL1.RAW",
+      "size": 688620,
+      "sha256": "3bd5e71140f1d25b60c8be54f712de6f84c4e98d9bfa507003e8574305d9716c",
+      "extension": "raw",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL3B.VB",
+      "size": 500448,
+      "sha256": "3df4b5216db65b74ff360c23bb8ea5b31fef21f2c1e359d6a74e38fa96f89b5f",
+      "extension": "vb",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL3B.VH",
+      "size": 5152,
+      "sha256": "d9ef15d5d129938344ccf254cac5958523cae4d65402071aaf3d926bc9a56e3f",
+      "extension": "vh",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL3BC.VB",
+      "size": 314304,
+      "sha256": "f10918e50320ab7704a891a244916a3586dc88788fec1ec42e09462ddf1d9184",
+      "extension": "vb",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL3BC.VH",
+      "size": 6688,
+      "sha256": "1ac297d8e6f7f9f19bbf0a75a2d0cadcd4eae80fbd447619eaa8ae95413d7674",
+      "extension": "vh",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL5C.VB",
+      "size": 506880,
+      "sha256": "ad89d68df8dbbb38b65826f13604f7a23493e301dcb5f1d10fe9c0914420126e",
+      "extension": "vb",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL5C.VH",
+      "size": 5152,
+      "sha256": "47247d26da0a84825325519199ea046f9f1539cdd16b45a80eb16dceaf31c4ce",
+      "extension": "vh",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL5CC.VB",
+      "size": 44576,
+      "sha256": "3909b4bffd2f99c187394a718ce20b1fcba5c649fa1a74b82053985cd87fb0ba",
+      "extension": "vb",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/LEVEL5CC.VH",
+      "size": 6176,
+      "sha256": "444a06ecbc4eb2dd30db2b7238e6e186924e3a0f212e306a2c7bd9c36da81ab3",
+      "extension": "vh",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/TERR1.ALL",
+      "size": 197996,
+      "sha256": "123969b6540c66e80fa35c73276d227d4c23492347dfaabf7bdab3098e7b0307",
+      "extension": "all",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/TERRAIN.ALL",
+      "size": 189888,
+      "sha256": "57bce45056f8ecdeebc14d9851badab5f930c3c4736059075baacd390bb701ff",
+      "extension": "all",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/TERRAIN.FLR",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "flr",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/TERRAIN.GRD",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "grd",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/TERRAIN.SCN",
+      "size": 398144,
+      "sha256": "a0edabfb22b32bbf36dd6ec89a0d270a808dc2bac281cedf017286af5f3ad3e5",
+      "extension": "scn",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/TERRAIN.WAL",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "wal",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/TERRAIN.WUV",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "extension": "wuv",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL05/WALLSPL-.SPL",
+      "size": 172,
+      "sha256": "5a279c11a266d9fd0f54baf2fe0cbf0271c7491861fd3cf9b16bc39c50e67d9f",
+      "extension": "spl",
+      "family": "CD/LEVEL05",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL06/LEVEL.BIN",
+      "size": 1608,
+      "sha256": "0977948bf0c4907945babfd56944883e6216ead2060492de4a271e57faceba4f",
+      "extension": "bin",
+      "family": "CD/LEVEL06",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL06/LEVEL.DAT",
+      "size": 251644,
+      "sha256": "7b23281eda241e215ea35f767f3dcf9bc948ec8b14b11ae7b572a997be1ee688",
+      "extension": "dat",
+      "family": "CD/LEVEL06",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL06/LEVEL.RAW",
+      "size": 634216,
+      "sha256": "5bbd05b081e79d7d0fe95156b3d49e541a86686a558d3e7cb2ac4c46dc06c9e3",
+      "extension": "raw",
+      "family": "CD/LEVEL06",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL06/LEVEL1.BIN",
+      "size": 1820,
+      "sha256": "da4095c027a889e51724e873c48c8b87c92359de9324e3a6a3d22458f60b6a3f",
+      "extension": "bin",
+      "family": "CD/LEVEL06",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL06/LEVEL1.DAT",
+      "size": 121984,
+      "sha256": "7aab378d952f807ef283e93e90fc1c6f0f060e774a9c315f75b37c1cf54c2f13",
+      "extension": "dat",
+      "family": "CD/LEVEL06",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL06/LEVEL1.RAW",
+      "size": 539032,
+      "sha256": "dba053d0ba9ef686a6f30d77fb3801f9c8298924f3659311cf0d05a6259f1e4d",
+      "extension": "raw",
+      "family": "CD/LEVEL06",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL06/LEVEL2A.VB",
+      "size": 508720,
+      "sha256": "af8dceb722df7ec1c5733973dffd7ed6f28c887ad0d741f10a3cf92a27a3a2fb",
+      "extension": "vb",
+      "family": "CD/LEVEL06",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL06/LEVEL2A.VH",
+      "size": 5152,
+      "sha256": "e37cf2cc001867df0cf568f4c616381fa59bc187701d6030b04554e4a4290894",
+      "extension": "vh",
+      "family": "CD/LEVEL06",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL06/TERR1.ALL",
+      "size": 94588,
+      "sha256": "b024e1c0cbfb3e7070e13a0e62d76030433b416289aff0123fdb3207ba7dafc2",
+      "extension": "all",
+      "family": "CD/LEVEL06",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL06/TERRAIN.ALL",
+      "size": 178468,
+      "sha256": "a478f03958a4ff2ed557e2ebc1b88ccd5d4966f3608c1fabfc8707646d536f44",
+      "extension": "all",
+      "family": "CD/LEVEL06",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL07/LEVEL.BIN",
+      "size": 7656,
+      "sha256": "d3a8506ba7e9d4f363745f6bd9f277550842650707bb24ea507f54abe9250b24",
+      "extension": "bin",
+      "family": "CD/LEVEL07",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL07/LEVEL.DAT",
+      "size": 350604,
+      "sha256": "3b130e5a596b716f841e45b7fc0f8b0fea7c6e1d7fc2add795760ededca63d42",
+      "extension": "dat",
+      "family": "CD/LEVEL07",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL07/LEVEL.RAW",
+      "size": 520408,
+      "sha256": "e7f75265d4591a5534a76ee193a63108b9837bc318a9433d97404ef2fad6c020",
+      "extension": "raw",
+      "family": "CD/LEVEL07",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL07/LEVEL1.BIN",
+      "size": 4336,
+      "sha256": "04a88c1a05664018e6c2e8fd46a15f797e6596e4ae8f647c26fd5738fba8d0bb",
+      "extension": "bin",
+      "family": "CD/LEVEL07",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL07/LEVEL1.DAT",
+      "size": 115060,
+      "sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+      "extension": "dat",
+      "family": "CD/LEVEL07",
+      "observed_in": [
+        "training"
+      ]
+    },
+    {
+      "path": "CD/LEVEL07/LEVEL1.RAW",
+      "size": 565740,
+      "sha256": "c5f81eed3c9d1a01cc188ead50fc10a5ae0f213b0ca165764fa7b311a02a0926",
+      "extension": "raw",
+      "family": "CD/LEVEL07",
+      "observed_in": [
+        "training"
+      ]
+    },
+    {
+      "path": "CD/LEVEL07/LEVEL4A.VB",
+      "size": 508400,
+      "sha256": "51f9bfb03f3f933bf62e525149aad4d5b7974d584e86350493b85ffaa1abcc81",
+      "extension": "vb",
+      "family": "CD/LEVEL07",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL07/LEVEL4A.VH",
+      "size": 5152,
+      "sha256": "2f53ed06058fb9f13ce450af9d8d944c6be7dede22f80ec31dfdbace244a571c",
+      "extension": "vh",
+      "family": "CD/LEVEL07",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL07/LEVEL4AC.VB",
+      "size": 306048,
+      "sha256": "a45cb8c6c5d48796f69c999d0dd9332fe87aa6b57f63fcb5a6ddcae4cb969778",
+      "extension": "vb",
+      "family": "CD/LEVEL07",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL07/LEVEL4AC.VH",
+      "size": 6176,
+      "sha256": "c52e62d2615e8da8878c814849cd646dd7c352d3cc77da80aa190712f91faee6",
+      "extension": "vh",
+      "family": "CD/LEVEL07",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL07/TERR1.ALL",
+      "size": 50564,
+      "sha256": "97141bdc9953e963329fe968f4263478dffd74af041d6a4676a984239c4dfd8c",
+      "extension": "all",
+      "family": "CD/LEVEL07",
+      "observed_in": [
+        "training"
+      ]
+    },
+    {
+      "path": "CD/LEVEL07/TERRAIN.ALL",
+      "size": 130424,
+      "sha256": "7b168efa7934cd6db15d94ae927151ed3df4e78064f1619877d5dcee463cf1c8",
+      "extension": "all",
+      "family": "CD/LEVEL07",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL08/LEVEL.BIN",
+      "size": 3500,
+      "sha256": "15fd5e5ba43367c3426cdf353ad687070e4b083b5b277c1f049000d26cb0deaf",
+      "extension": "bin",
+      "family": "CD/LEVEL08",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL08/LEVEL.DAT",
+      "size": 371892,
+      "sha256": "596a13e3b80765ee81b0331ac74dd66916075683bcd3066ba51729c07e42d7ab",
+      "extension": "dat",
+      "family": "CD/LEVEL08",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL08/LEVEL.RAW",
+      "size": 723112,
+      "sha256": "79f7592d8de319660c1c4d36a96ebc7e9d5e7d5f01ca68593d588e364a4e2343",
+      "extension": "raw",
+      "family": "CD/LEVEL08",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL08/LEVEL1.BIN",
+      "size": 4064,
+      "sha256": "1715d7221edc64e33b820af09b947a9fcf990597ba71c3ca9587d69b885c0cee",
+      "extension": "bin",
+      "family": "CD/LEVEL08",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL08/LEVEL1.DAT",
+      "size": 136940,
+      "sha256": "58d83d2ce2b05307ddda1eee56b730427866ae6f4b08221af45a4cf73f4db976",
+      "extension": "dat",
+      "family": "CD/LEVEL08",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL08/LEVEL1.RAW",
+      "size": 149472,
+      "sha256": "dde63b1253715e0b7bbfac26c51c2da89baca6a04db2f29121fcec611737d892",
+      "extension": "raw",
+      "family": "CD/LEVEL08",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL08/LEVEL5B.VB",
+      "size": 506992,
+      "sha256": "734642517401fee10bd769ac9dfc5b47932202c8097f97f2ebd4107f27c3703b",
+      "extension": "vb",
+      "family": "CD/LEVEL08",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL08/LEVEL5B.VH",
+      "size": 5664,
+      "sha256": "ee402df4a4772ba0276a3532f156923138acf5165e3da694f29ab270fde5e02a",
+      "extension": "vh",
+      "family": "CD/LEVEL08",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL08/TERRAIN.ALL",
+      "size": 202628,
+      "sha256": "adde03ec0126e4e831930fd79ba5a09e2ef40469a5becf783a2d52b56122db3a",
+      "extension": "all",
+      "family": "CD/LEVEL08",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL09/LEVEL.BIN",
+      "size": 5232,
+      "sha256": "2f8494af44d23b1a840774e3f958f746b594ba17e45a970e6bcfd24925e0ab17",
+      "extension": "bin",
+      "family": "CD/LEVEL09",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL09/LEVEL.DAT",
+      "size": 316124,
+      "sha256": "92559f64f0cad9e05d31972757f7f639d86aea713b9fe7698fa455a46ddcddab",
+      "extension": "dat",
+      "family": "CD/LEVEL09",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL09/LEVEL.KEP",
+      "size": 309948,
+      "sha256": "6f47888b02f411ce133bc54c92b8bf7fa3844ddd11e5d4ae90a0fcf707651e2e",
+      "extension": "kep",
+      "family": "CD/LEVEL09",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL09/LEVEL.KP2",
+      "size": 318700,
+      "sha256": "e769eb984801a50a98567cc7b5c2ed157f74d294716f641f5a1506826bdde96d",
+      "extension": "kp2",
+      "family": "CD/LEVEL09",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL09/LEVEL.RAW",
+      "size": 679212,
+      "sha256": "c9a5456e53db16bb63461c5a2ac4228ac4cd6fb1afd4aed5dfb7daa338f6a57b",
+      "extension": "raw",
+      "family": "CD/LEVEL09",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL09/LEVEL1.BIN",
+      "size": 532,
+      "sha256": "67a96a7a34d03e5e0e278224e3a9f8ed6131c02ae9583283b2aca7fa14140cbf",
+      "extension": "bin",
+      "family": "CD/LEVEL09",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL09/LEVEL1.RAW",
+      "size": 591844,
+      "sha256": "223ded84cd757a64e654f5cad9b756d15a4c7104c2c0f0e1945c1b841bad01d4",
+      "extension": "raw",
+      "family": "CD/LEVEL09",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL09/LEVEL5A.VB",
+      "size": 509680,
+      "sha256": "53f277436788bde1117e79a2107fac6c07d3a0c935006be87bf0835c31f1828b",
+      "extension": "vb",
+      "family": "CD/LEVEL09",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL09/LEVEL5A.VH",
+      "size": 5664,
+      "sha256": "b9168d075d045770d27b87026651dc8475503ab46e612f601948f22b797800df",
+      "extension": "vh",
+      "family": "CD/LEVEL09",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL09/TERRAIN.ALL",
+      "size": 207540,
+      "sha256": "9132b16f120a8e4202d97a75decdf1fc785d2150feccdf4a0051c4832eb2d5af",
+      "extension": "all",
+      "family": "CD/LEVEL09",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL10/LEVEL.BIN",
+      "size": 2080,
+      "sha256": "fbc536625f406e2d0d946966f2ccbf173517b0041403089cb9e97617652eca5e",
+      "extension": "bin",
+      "family": "CD/LEVEL10",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL10/LEVEL.DAT",
+      "size": 374468,
+      "sha256": "bba726988e64192d9bff73d5be8c0582f1d6a885b152050ec4e8883983a47319",
+      "extension": "dat",
+      "family": "CD/LEVEL10",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL10/LEVEL.RAW",
+      "size": 691780,
+      "sha256": "50a1ec79a0d9b55118692dd184778959088487aa397b54c0ff0c33ff56b2fb8c",
+      "extension": "raw",
+      "family": "CD/LEVEL10",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL10/LEVEL2B.VB",
+      "size": 504976,
+      "sha256": "b6ea404e40d9ed3a63e9a7dd53d6f277536d2d5fad2879b0df7fe393d54d43b7",
+      "extension": "vb",
+      "family": "CD/LEVEL10",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL10/LEVEL2B.VH",
+      "size": 5152,
+      "sha256": "84fd5e9d75113fe49c2830a3efd995ca75ae528f68212aa89e31767f0bc344b7",
+      "extension": "vh",
+      "family": "CD/LEVEL10",
+      "observed_in": []
+    },
+    {
+      "path": "CD/LEVEL10/TERRAIN.ALL",
+      "size": 142344,
+      "sha256": "7a8471bb3fa14769de03edd58c1bae79428476b0c8f90e4bdc6d2e1d20e8206a",
+      "extension": "all",
+      "family": "CD/LEVEL10",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PAD/PATH01.BIN",
+      "size": 944,
+      "sha256": "4642e59efae613554793f6bd5952b555d6ab8c9d05c53fa39ff7c30a564c4481",
+      "extension": "bin",
+      "family": "CD/PAD",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PAD/PATH02.BIN",
+      "size": 16,
+      "sha256": "be4b319886df7e06faacc353ee646ebdf2d6491cfe78a7c87db2c31269b4dd61",
+      "extension": "bin",
+      "family": "CD/PAD",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PAD/PATH03.BIN",
+      "size": 1496,
+      "sha256": "f2ba580ded70874914cb381492c068dcac0842a1e0d7ae6f8a42ce05f3303c65",
+      "extension": "bin",
+      "family": "CD/PAD",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PAD/PATH04.BIN",
+      "size": 1104,
+      "sha256": "7cb3aad7317ae236524994fe0729d382b685f7ece0beee7415bf9671cc62d7ef",
+      "extension": "bin",
+      "family": "CD/PAD",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PAD/PATH05.BIN",
+      "size": 1224,
+      "sha256": "144a93251734b40352b30cdcc02472192a01b8408f504f31496a4199b2080dcb",
+      "extension": "bin",
+      "family": "CD/PAD",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PAD/PATH12.BIN",
+      "size": 988,
+      "sha256": "469f90acdef1a4dd947565a2e914e2f5701440b4f83743c7ef3517692e78a796",
+      "extension": "bin",
+      "family": "CD/PAD",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PAD/PATH13.BIN",
+      "size": 1092,
+      "sha256": "dbbffd15fb20d12038e24cc6b964db88579cbc244f63389663196d6376961812",
+      "extension": "bin",
+      "family": "CD/PAD",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PLANTS/PLANT01.ALL",
+      "size": 5908,
+      "sha256": "888fda7095b976a7db46215e9f6ed6b48782cabac1681c169e9b4fa07efcda23",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PLANTS/PLANT01.ANM",
+      "size": 4502,
+      "sha256": "f7a9c40be4557d13cdceb908687fcc6d40d240c31e961cec121344be02344e98",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PLANTS/PLANT02.ALL",
+      "size": 3984,
+      "sha256": "bacc106bb9c2a338f57d2dbb8ece8d6a059496826e206e7c8aa3704a2a36c7fb",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT02.ANM",
+      "size": 3344,
+      "sha256": "07fbbc07d6db6958b8fbc017f7ba19d628c3ac1249739898a0c5ffd3ecf0af43",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT03.ALL",
+      "size": 2720,
+      "sha256": "1c2b0d28b138e69ae0036c6348bce797169cee59bb46b05168459fba60b9d9fd",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT03.ANM",
+      "size": 5072,
+      "sha256": "bf0160153942f711f6147d176c3bb38c3a8bde3f902a43ce512be976bf1ed2f0",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT04.ALL",
+      "size": 3592,
+      "sha256": "486bd73c54b96f9b0ef41e2c9ccc6029c95772619feaacb8885f4f1cc424f14a",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT04.ANM",
+      "size": 1802,
+      "sha256": "32dce9588272d4bd4d0b2054e58de2b9ca5ae563826d56f7cd12abe8b001e7ce",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT05.ALL",
+      "size": 4624,
+      "sha256": "8630aacd1a4d0783d618179f0a1d5113578ed8072b6d8915024e4846de03ca39",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT05.ANM",
+      "size": 1168,
+      "sha256": "d474fe3c374ce47389eb82076909007592d93718689bafaf3414a37bffa542b3",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT06.ALL",
+      "size": 2868,
+      "sha256": "615befd2008680ee700ba8b0b249653a9fd8f820640867f48a673fbadfb78a79",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT06.ANM",
+      "size": 5066,
+      "sha256": "d90a35b047c4f811ec5d7aec0aa73fb300dbea59a0a1df0dfd4dcef618bc04ec",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT07.ALL",
+      "size": 2544,
+      "sha256": "68850949f7bbf98b0e49aa1d69d2537d04ac3575bfc5c8f46005bcd139feded1",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT07.ANM",
+      "size": 5880,
+      "sha256": "4b9dd5bf3936206b660528e425ff9f55134f6d9ec907479f66b1f1e3fdaa2292",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT08.ALL",
+      "size": 3516,
+      "sha256": "6e8ab5267e2eacea7fff652783eca0ae5f1ff34c45efae0c6adbf041fc164a42",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT08.ANM",
+      "size": 3542,
+      "sha256": "23cf82a2b31fa5fc18bc81ae02d713ce55c218d28002f5d34b141d93e1ba17d1",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT09.ALL",
+      "size": 4376,
+      "sha256": "ef6562ec871d093b60f99ce0f2e8fbade28459b9824bc179a62869aec63952e9",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT09.ANM",
+      "size": 3542,
+      "sha256": "252b909e592ed577297b6d713da7c2dc0d78942a7d5ee57d51ea77385c8f59fe",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT10.ALL",
+      "size": 3592,
+      "sha256": "0c0f244b5bef3b5a3f7148744aad9ac223b7fdeaeb0eecaa561193e7a30bf714",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT10.ANM",
+      "size": 1802,
+      "sha256": "12d2550ea89b9156acd04ce403d1754aa244d1cedf8531eaca2c8e7bf22b5194",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/PLANTS/PLANT11.ALL",
+      "size": 5476,
+      "sha256": "0adfd2f42b09ed171ff99165faa0611222c73d694d511f99b54c2e98e03f76bb",
+      "extension": "all",
+      "family": "CD/PLANTS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PLANTS/PLANT11.ANM",
+      "size": 3512,
+      "sha256": "6ba80512dafcb995de3586f14b8d0a0c9dba118ac9a164c4dab6de2e399650f4",
+      "extension": "anm",
+      "family": "CD/PLANTS",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PLANTS2/PLANT12.ALL",
+      "size": 4620,
+      "sha256": "eb9038786e33c99ad15599b830f940ed3da47c9b7827636033f396d64072806f",
+      "extension": "all",
+      "family": "CD/PLANTS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PLANTS2/PLANT12.ANM",
+      "size": 4418,
+      "sha256": "281c3296972806d6ac539dfa7ed4ea70ec00f0a520f8ad7041c8e246fc34279b",
+      "extension": "anm",
+      "family": "CD/PLANTS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PLANTS2/PLANT13.ALL",
+      "size": 4744,
+      "sha256": "dbd5e39b7d0df175f4866a99416d714faa7447d7c57ade27af3e8117b8457384",
+      "extension": "all",
+      "family": "CD/PLANTS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PLANTS2/PLANT13.ANM",
+      "size": 4360,
+      "sha256": "29d7357675f1c60268976f9e351e9235ecadb7b3eca1e6e72fdd854095e116c8",
+      "extension": "anm",
+      "family": "CD/PLANTS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PLANTS2/PLANT14.ALL",
+      "size": 4700,
+      "sha256": "f67a3e9bc44615b57b4600fc1ab6d509e0040e5deb0915cdfcb725e432d1819d",
+      "extension": "all",
+      "family": "CD/PLANTS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/PLANTS2/PLANT14.ANM",
+      "size": 6608,
+      "sha256": "9aaba90a53df4976cd89071351df112378ebd5c4516eef77ab3676fa045c8da6",
+      "extension": "anm",
+      "family": "CD/PLANTS2",
+      "observed_in": []
+    },
+    {
+      "path": "CD/RAND.DAT",
+      "size": 2048,
+      "sha256": "476ca7a00cdb3eefb1a7db229219d48ed6a99b11a7020b5e02bcbacfd563f015",
+      "extension": "dat",
+      "family": "CD/[root]",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/SAVE/GAME0.SAV",
+      "size": 540,
+      "sha256": "d73dd334f4df8d40432bfd78c67f7756d4410535dccad9f3e2d82fc8f897b317",
+      "extension": "sav",
+      "family": "CD/SAVE",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SAVE/GAME1.SAV",
+      "size": 540,
+      "sha256": "e2155b3a1ca595b8f16cb516dab3502b166ee29f34ef11543bd6edbbe271d91b",
+      "extension": "sav",
+      "family": "CD/SAVE",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SAVE/GAME2.SAV",
+      "size": 540,
+      "sha256": "7b74417b3298602089876463efdf7a1f9a84fa13baafe039400a2cb25c8c34d6",
+      "extension": "sav",
+      "family": "CD/SAVE",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SAVE/GAME3.SAV",
+      "size": 540,
+      "sha256": "f73498ac11d0641d05241ccfa10e6d4de844b61959ea7ae9977b344669b600c9",
+      "extension": "sav",
+      "family": "CD/SAVE",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SAVE/GAME4.SAV",
+      "size": 540,
+      "sha256": "a30a892cc38a2ca0ce5260ab6f93c04973ed1324a2001d2964df7a13a732c485",
+      "extension": "sav",
+      "family": "CD/SAVE",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SAVE/GAME5.SAV",
+      "size": 540,
+      "sha256": "d0c0c9ab9f9d8de25e5ffa434d90c2d9215bfa85c668256ad93e9cbaf475f3b5",
+      "extension": "sav",
+      "family": "CD/SAVE",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SAVE/GAME6.SAV",
+      "size": 540,
+      "sha256": "4c19461f30c21dbcd8a27f240fa6a6c004ec766df07343945338e3ff117ee203",
+      "extension": "sav",
+      "family": "CD/SAVE",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SAVE/GAME7.SAV",
+      "size": 540,
+      "sha256": "7a89edde1436c1b4f3c7cc449aec3d0a069ff61df515305d0ee16061fea5e9b0",
+      "extension": "sav",
+      "family": "CD/SAVE",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/BIRDSQWK.WAV",
+      "size": 29336,
+      "sha256": "44dd70b91cd2e3d1c515494c415ef9fa95020a053eb033e70b18b33c2b24faaf",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/BLUSPLAT.WAV",
+      "size": 31922,
+      "sha256": "210bf3a5699172b80f5b32fc431eebd69d60a159a4bcbdbf69cd0a2db33b8e39",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/BOULDER.WAV",
+      "size": 34248,
+      "sha256": "832dec7b6fac968d9516c1fb2f5535bb174863ee7be6c481b71f9e6f71be1556",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/BUG_JMP1.WAV",
+      "size": 5428,
+      "sha256": "c57f800b3209a03e553a4573061947a0779ad307b0bb24c39cffa9d456d0f18b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/BUG_LAND.WAV",
+      "size": 6466,
+      "sha256": "5aa2e5f29debebbdbef10b8959d06aa8c9ea2e8fc5565fc473fd736f273deb7b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/BUGSTEPL.WAV",
+      "size": 1536,
+      "sha256": "b3da94037fca5e1c92745646e4187d473d9dad5f6bda30e3e76fd99d792cfdcb",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/BUGSTEPR.WAV",
+      "size": 1048,
+      "sha256": "0e5f3c4814903ff9e3bd0fbedb101ae41275946561ede4000f08247ac9afd2b5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/CANNPLNT.WAV",
+      "size": 32628,
+      "sha256": "eb58cb5b882c7f1e2fc6fbf86f49d3313c7ecc1432c2a2c01f1006faa5aae69c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/DANDLION.WAV",
+      "size": 60838,
+      "sha256": "81e49cfb243ccd68b053cf58a71513546abd310f980a771281b99183b03704f2",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/EARTHQKE.WAV",
+      "size": 114800,
+      "sha256": "57bc972d7a6936253c55fa4a3785d593350441c9d28fc33c64a854808be84cee",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/ERUPTION.WAV",
+      "size": 45356,
+      "sha256": "fea5de4ad2fd15138b79a0e40f19b9de69c84513690bcad282b55c403b71ad1d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/EXPLODE1.WAV",
+      "size": 37166,
+      "sha256": "9f0066f43302049f4d6bec88d7e9734434443423e1f827c33ce63c6896f77b0d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/GOLDSPLT.WAV",
+      "size": 46966,
+      "sha256": "6770c3b733ddeb18fc99a4efa678b7c69d41d001b45afe545f5f714e83d9fa3c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/MENUSEL1.WAV",
+      "size": 1534,
+      "sha256": "6c052b7b9e5e6e87d758d8ef1af72985adc7ec22b817b188533ae9857cf3ba7f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/MENUSEL2.WAV",
+      "size": 6628,
+      "sha256": "7db5ad852454e1646f33eb6322c914067792969cf53ca6f9e768d1590bc20a72",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/MUSHBNCE.WAV",
+      "size": 17590,
+      "sha256": "f231ac5b30b15196899005b285f6aad96a3f6e801bd274620b8433748f309ba4",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/NRG_LEAF.WAV",
+      "size": 12398,
+      "sha256": "11ceae63b55b83dc63bb131ef7f6575b3e4e94a604a6bed8333dea6a2ac65946",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/PKUP_004.WAV",
+      "size": 45936,
+      "sha256": "65c56a519c8951621c14aeb9abe1564f556b62d10029c04c484e0e698bcd1303",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/PKUP_005.WAV",
+      "size": 44826,
+      "sha256": "e93d989595683861b97de2e1cf1151a2f9e6eb6181f86780e480c1f5b5731ace",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/PKUPBNUS.WAV",
+      "size": 43954,
+      "sha256": "824ef5c32d62d6f07921b6d19b379a3e53f54d5152df50e8740e31e6b9f015b9",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/PKUPFOOD.WAV",
+      "size": 37664,
+      "sha256": "345add4c5cb7b184bfe2fa244087b433a1330fbf948387f10cc6ce4806c6278f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/RAINDROP.WAV",
+      "size": 18158,
+      "sha256": "cd4ad11fef0e19f17063712db9e76857e7c562b3c6cce76ae69a22fdc92cf5ca",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/REDSPLAT.WAV",
+      "size": 17778,
+      "sha256": "5ffab5fec1926e792a944325803af3975181bc18a1b131afbb36c534adba449a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/SEEDROLL.WAV",
+      "size": 21072,
+      "sha256": "483320bb413925d80ed0820aae7e1cb25755d89857e444158ff2b22f15f7ce73",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/SPIDER01.WAV",
+      "size": 19826,
+      "sha256": "c144a3854df1dfe094178b788e5aedb1bed09719d42b1d9d32c5928753c19c01",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/THROW01.WAV",
+      "size": 22222,
+      "sha256": "7cad8f991171e13e1b35469514f1d556ee524c931b514df630a89ef8ebe41795",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/UP_ROOT.WAV",
+      "size": 29454,
+      "sha256": "6bcb3738241b21f3f8e59e462d59631fd7a1afb4a8a69f2744d5098ff025932d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1A061.WAV",
+      "size": 42054,
+      "sha256": "00d7078379629700ec146a6a422e08be0ca68720e8865a663518e8478b67d894",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1A062.WAV",
+      "size": 44332,
+      "sha256": "85ab9729e2dd65801c2cfd1a90f44c60232885c317effbd967ef573ad22aaa57",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1A065.WAV",
+      "size": 33068,
+      "sha256": "3a0f46243d28a94ef3e3d3399f3981051a21ede22de0265605dc74f3991a80fd",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1A069.WAV",
+      "size": 67498,
+      "sha256": "77a8e1910f56f763f281fe5be0006a4ab60d3ee4a3ad1b462b0307706e2fbaea",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1A070.WAV",
+      "size": 72712,
+      "sha256": "5710933c5d40a94f274ff841994ddb50d496780039b35d80eab64bea352a517d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1A071.WAV",
+      "size": 46660,
+      "sha256": "253a8ef82c03ebfbeeb30b03b0ff7b277e993aab2371f32efa0ad649bb75f1d7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1A072.WAV",
+      "size": 84652,
+      "sha256": "a50d9226098e3208c1b1a04d81b5f8c76c472564e75fd1d8ec9a585892f47e8c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1A073.WAV",
+      "size": 90314,
+      "sha256": "cb1b6385fbd4c3faa1d11df093072ba05738a7a7a030b5662e59bcf55debbb12",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1A074.WAV",
+      "size": 112426,
+      "sha256": "53f81f9d47ec32991ed9a28f8215264ee15558d3d6ba2b639bc8a0b5778b2ec4",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1A075.WAV",
+      "size": 78508,
+      "sha256": "56d5cc31da036d5709543a30ba7dc6c8791832910302936af8b37437b6c76139",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1B003.WAV",
+      "size": 86792,
+      "sha256": "5989772f83ba763c96ad17c2dd15c719e96ce73be242b7c9c9c480963163160d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1B012.WAV",
+      "size": 100010,
+      "sha256": "d5f72711cfff0d5bc89c742ccadfc17692be97d36d5630623564ac185990de02",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1B013.WAV",
+      "size": 104236,
+      "sha256": "f3faf9e24055c22f69c56f32b06c6576ffd2539af92f2f6ad4d9f59e31d30938",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1B014.WAV",
+      "size": 104044,
+      "sha256": "a062e055d623434d0f2ef659eae4358d99a65c2e5831f78e58b82f792058ddf9",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1B016.WAV",
+      "size": 82604,
+      "sha256": "4093652491c6c1910896f42d891dac91787af351d203591076bb4bcf7ee12b6e",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1B017.WAV",
+      "size": 58796,
+      "sha256": "9cd280980e0ef6ba61198a90d527c62c4991fae1f67326e1f8eb4bc30b186758",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1B018.WAV",
+      "size": 129322,
+      "sha256": "632b778cf72fe0bd0090eb7f2964fc8d1b8ec114f158f821f252b5eba95652e4",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1B019.WAV",
+      "size": 90632,
+      "sha256": "0b95828bb8199ee04186d9c2bc775ac41e9412a060dee273da7bc2b3081ef99f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C003A.WAV",
+      "size": 25714,
+      "sha256": "4f6c598f3d8650d8c035aef13bf107ec93c84c0554c0ffaa01eae23f55d97dc5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C003B.WAV",
+      "size": 26624,
+      "sha256": "408c39cf7074f4035dc76eb9633fa3afe33cb6715d820cbfbf9319b7b72df240",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C003C.WAV",
+      "size": 39286,
+      "sha256": "c9defdfee3851ec707053c34b698fff4aa4d17242cfe93f03daefc953492d761",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C004.WAV",
+      "size": 33900,
+      "sha256": "205327ce88f6ac8cc738e52e1d9708c3c4cf4c2095c8bc18efa7a4e01dfb0601",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C005.WAV",
+      "size": 47020,
+      "sha256": "9bcbd898e6efdc833d3ffcc406b3dca6cde7f80cd95d5d4b44832935ae6f6b42",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C006.WAV",
+      "size": 113452,
+      "sha256": "7d23a54300c9b5e519b5f0f7f6faf8604942f3059a1cd1a89f8932ca7ec537a1",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C011.WAV",
+      "size": 99848,
+      "sha256": "071c2b89db8a4f1b2519730bd2b93d996ba245f79bd082480ec077af2ccdeb25",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C012.WAV",
+      "size": 99628,
+      "sha256": "47b252e8b350e3178d44834a5b7a16b70c8c1c77333581a02eae16c80e95dddc",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C015.WAV",
+      "size": 134956,
+      "sha256": "8b7b1b2badba7fab4b4f3ea7894c1e0c5b90cbed337ca4d4fada7479886e4479",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C017.WAV",
+      "size": 50092,
+      "sha256": "3c3d072b1dcac6c5363634d7b3793d936a84025fc3f00cbe9b2589cf45c44ca9",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C021.WAV",
+      "size": 107144,
+      "sha256": "da172ddb311ee02d2da82c8a5b122408f69749000725a85c5fc6f8beb0880a34",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US1C023.WAV",
+      "size": 46252,
+      "sha256": "6804a953417729a6832715a743bdfadc6941b086c7a6228ba3483870020b589b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A002.WAV",
+      "size": 120874,
+      "sha256": "de636d9a7fe7aa4f68e0c6b81c11afc0f997484cc2d0b0e52c93da8bc714918d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A003.WAV",
+      "size": 76588,
+      "sha256": "5b915e35c30bf501452cbd7e7fcbbfb3842b8a128a706ad2608d6e54abc87bd2",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A004.WAV",
+      "size": 54152,
+      "sha256": "3b74deadd5b429d79d27bf78f01e34f095071a9a379237508d0e96b3ae44e205",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A006.WAV",
+      "size": 34092,
+      "sha256": "8c00ecc3720812dde923f0a4bc69b77bc3060310c01d13d68edc5573cf89b7e0",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A009.WAV",
+      "size": 96298,
+      "sha256": "c5afe7b9843b4ecbfbbcab601274eecfcfcc9c289b4925be2cadbdabe4d8fc6a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A011.WAV",
+      "size": 78892,
+      "sha256": "ce05983eff016e2403ed51d54cd0121ef7250c00f7042f4f37218721ba79eafb",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A012.WAV",
+      "size": 36012,
+      "sha256": "d639d15f972496a077475c8afcb50c05e4c83efa6790fedd792883a697f72fb0",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A014.WAV",
+      "size": 110984,
+      "sha256": "516f64125070e620142c61257744b7a9123050f6b3fe421fc820337ccff9cd85",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A015.WAV",
+      "size": 67370,
+      "sha256": "6b7fab39821ce9bb48a62ab9c62585057d33a129f76eac2e4554ef7a42cd0ad9",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A017.WAV",
+      "size": 154924,
+      "sha256": "47b51d11e18479d83ce19ad2e8a117335ace5c7907aad7a3c9be2113ab63b55f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2A018.WAV",
+      "size": 79530,
+      "sha256": "380ed7857c2935649f4e4408c014425ec68e579efbba11e5316574d91ac08700",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2B003.WAV",
+      "size": 166190,
+      "sha256": "8509ea27327aea50ecd8a51229b5927059a2a6ee0c076076665e920e97ef3bb5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2B004.WAV",
+      "size": 139022,
+      "sha256": "c7d0efd5bd4fa9427532528102f9e21a1a88a391721bb715e949a54314d2546b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2B005.WAV",
+      "size": 79336,
+      "sha256": "c660487272d73c320599d29309b91cdd87c219756f86d11e5ea70900f6e6a622",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2B006.WAV",
+      "size": 279916,
+      "sha256": "b03539c4572db7b1c0393c112c6ea0bdfac5f933ae3f17fb4b05e9b3a68ac0a7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2B007.WAV",
+      "size": 230958,
+      "sha256": "7a86ae494b35acd1c1f6649500cbeba118ee1852d8b19f2a24ae340c663e6fc5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2B008.WAV",
+      "size": 132398,
+      "sha256": "b1e77ec9fadd70a499358d3aefc64023480a760f228a0d67f6d3f8b1a4fc420c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2B009.WAV",
+      "size": 158638,
+      "sha256": "99005ddf24683b935c4b6df98072a793368af4c3719c58e2bf58ff10c9f7a4bb",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2B011.WAV",
+      "size": 256686,
+      "sha256": "3414e0b2c74132b91a7820b0d6f4418319863433d5e36ac2f738d39206e98a1f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2B012.WAV",
+      "size": 183542,
+      "sha256": "17223a09d18415557fa1bc98760678e4cd743f8931f18c349722825911677afe",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2B013.WAV",
+      "size": 286254,
+      "sha256": "62ebc12077d93112f59090f867dd57931745d9a6c8811c222a6f1f37151c8a38",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2C002.WAV",
+      "size": 66860,
+      "sha256": "2a1c0d386a9e3e4609bb2956c6e93a7a7dddc16aca4fda14f9a0fcae088995b6",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2C004.WAV",
+      "size": 112904,
+      "sha256": "182fa64f8476e8e817e7bc0dde26af5bdaac1ecdc9ecf77d5cf5a08aca340ddc",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2C005.WAV",
+      "size": 85932,
+      "sha256": "05fa13cce37f3ccdb8739876c0696a2c27bb01df820b0a10660a52ccc22c8387",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2C006.WAV",
+      "size": 98888,
+      "sha256": "e2ba3df1086ef294969212097217c833d0dd539947ba22448b473bbc0e910bd1",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2C007.WAV",
+      "size": 109384,
+      "sha256": "54969beefa55c724782692698c01bf9d0f802438968bf15d262d32beeda45805",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2C009.WAV",
+      "size": 104200,
+      "sha256": "b02d5226ebb61fe1b05469430047696ae2da4603ca75dcdacae60113015b0f9f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2C010.WAV",
+      "size": 90952,
+      "sha256": "899a7dfa2a1913c89e685607ea34f691456ef1985616edceb3d81c01261ba6c7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2C011.WAV",
+      "size": 101162,
+      "sha256": "4ac5e1c7ee883f249101cd44ad995049238f48f3e981722c6b978e2b4efd6ee4",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2C012.WAV",
+      "size": 54186,
+      "sha256": "10c46c592e1838299b1f2ec0363fdc53013b16635d2e12451e228942de157ee0",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US2C013.WAV",
+      "size": 58412,
+      "sha256": "1a862349406f44b0dbb429313617b313203acf878a7ac153d4e68c1e718feade",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3A001.WAV",
+      "size": 63788,
+      "sha256": "ced52034674db35d9eaa8d5cb5802e272bfa3d7c6b05684989158a2baa35e66b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3A002.WAV",
+      "size": 45740,
+      "sha256": "f6c35146621ff67f1532e8e1a4057e585dcef1c085061447ea2e2d843c1a3a95",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3A004.WAV",
+      "size": 52140,
+      "sha256": "074022757d87d49e652d36899d7dca3d017f808ac49c1d35328f56780bdc8123",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3A005.WAV",
+      "size": 84140,
+      "sha256": "1e66ea40ee9bc70c416663867784fc8bb0ff09b0c533d80c8fef3c45766f9b99",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3A006.WAV",
+      "size": 62892,
+      "sha256": "2f13d7fddd25499637ed9ad361b768b93cdc7cf4d3716bdbed8fdbaa58e20153",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3A007.WAV",
+      "size": 77612,
+      "sha256": "38222532dde8026fab69520ef2f5434c2402bfce62bb520e17615ae80bb896fe",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3A011.WAV",
+      "size": 48328,
+      "sha256": "42d2347a94f0cafe3c83685f12d7621bb8c56c00ab4384b710e09947fc9f8c2d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3A013.WAV",
+      "size": 79916,
+      "sha256": "db91b646ec4951e72443cd2baf49c3cd495e8319df3d9c0b60b7e7a03e625ecb",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B001.WAV",
+      "size": 88524,
+      "sha256": "aded56f80004d7c06c14cee0e9c13c74721a352063ea093c8086ea58293b00b1",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B002.WAV",
+      "size": 52168,
+      "sha256": "a64cab8005913074a232a5a6ba511ea2c7312dc657aa9c5e57d56f342044e839",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B003.WAV",
+      "size": 84012,
+      "sha256": "e928e4e47af43e2fe26d32d2f5d4dff67b6bfdb82c550759fc5e665ab3d99b98",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B004.WAV",
+      "size": 45228,
+      "sha256": "6a5edbea9a88c68bbbf7f89485c265d65ffbff2ff20aa89ddd7f60257b0b41c8",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B005.WAV",
+      "size": 117516,
+      "sha256": "f1d27aaf8b64fffced44272b27168830367ffd4315786fe7ac64456c8037a639",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B007.WAV",
+      "size": 50650,
+      "sha256": "427ad6ab46519a2a1989af92973ee0c3b45801b9e136f1995fba657154ae265a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B008.WAV",
+      "size": 117226,
+      "sha256": "6798ae28b96d24ae3ff872bd52e09c3a84a0f5c104defff421069ee1c1dda128",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B011.WAV",
+      "size": 114474,
+      "sha256": "7cfe1ed84d4a87867049a5802f7a3a67ae3c28b854e739ae0c438eae50466141",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B012.WAV",
+      "size": 86058,
+      "sha256": "761d5c3c2bd39d969cfb2656bf37e39cfed0931ee25d07b70fdeb25830d78cbf",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B014.WAV",
+      "size": 19842,
+      "sha256": "87c0122ce794f67bb2e04b982678799ee9bdb1f9bc21a70c66f521fde1c32ad7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B015.WAV",
+      "size": 57626,
+      "sha256": "65638675e9a3be4c65c702f89ece1eed8923602078c9960be0c7d367cd621997",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B017.WAV",
+      "size": 67946,
+      "sha256": "0b8d368be3b2b6181e81021223cf7de3c3fe342b2d7d10422817efbf933895e2",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B018.WAV",
+      "size": 95402,
+      "sha256": "c1bafa0b38202dcea15a4a13671fbf07403c75c78381e39f0a10541b2e22b4ce",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B019.WAV",
+      "size": 92074,
+      "sha256": "84ecb8ebdb9408804f58dc9777bdaee7a8ef5bd204c1936b7f257932ac39f425",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B024.WAV",
+      "size": 306026,
+      "sha256": "565cfc999ebdec176db2cdf4a86a7c136199e3f76aec0a018f7dc9d3a23d9b5f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B025.WAV",
+      "size": 103980,
+      "sha256": "a478ef09b834ba3166eef6f95b6eba7015220fc65202763c129e009b560d2875",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B026.WAV",
+      "size": 584874,
+      "sha256": "3bdff68966ece1acdde5b87382b74245b165a6bac9c3c9b44638ede4b173de7a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B029.WAV",
+      "size": 130346,
+      "sha256": "09661902ac5aea41c97a48c50760d8ca3196adc6f5aa53571328af43e92c9cfe",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B030.WAV",
+      "size": 157002,
+      "sha256": "dab2c72ba96da96eb5dacc1eae3f0c65079dd7387908db871dad047b452224d7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B031.WAV",
+      "size": 97578,
+      "sha256": "8bfeff8f48f74cbd65b71a33ed96582e0982a0e1ada9f25034ec6be3fe93e1c7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B036.WAV",
+      "size": 82092,
+      "sha256": "f123cb4a722be6036772404a540929f605845d0188696e9f20485ef6ef575eb2",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B038.WAV",
+      "size": 65626,
+      "sha256": "ee9928c01d94bdc7061f31e67e7f43c358129e8c3cfc8cf887f4eeba8cfe11dd",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B039.WAV",
+      "size": 50794,
+      "sha256": "d16e113a8758f0606c48bfdc56d67872f70457b7880346d6333aac5cc2ab80dd",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B040.WAV",
+      "size": 127914,
+      "sha256": "f59ea49afd50fc909e989a52f861691741b6606fc98bbcf12de40a7c5b09a53f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B043.WAV",
+      "size": 179756,
+      "sha256": "0ab4bf28c242814369fcddce8ec834bc618963283601106b87cdf2ea30aa7b41",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B044.WAV",
+      "size": 139386,
+      "sha256": "835d4a54d570f451122d23fe0d526d07a4beeea8857a644ae4689244e2f9c0b4",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B045.WAV",
+      "size": 87338,
+      "sha256": "76da651a0df7555d5df749abb3630ad35f773526084a856e397f5978d4e548f9",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B046.WAV",
+      "size": 94890,
+      "sha256": "e2b441f2affd8a5fe95496418ee879da50e35c748332afa669d219a8cb7e956a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B049.WAV",
+      "size": 89580,
+      "sha256": "43dc5461ba010bb275362fa35e2ffe05e2f2942ab0313f7f4b7332d00083799b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B050.WAV",
+      "size": 155178,
+      "sha256": "a877a7b2b77be3b8b50feaf6f55b30b795698a7378795d87ef8c8c809da739b5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B052.WAV",
+      "size": 51850,
+      "sha256": "013c1788e62fc394af0870050937c32de0b3ed149e7716a8c5f92cfccc8778e3",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B053.WAV",
+      "size": 88010,
+      "sha256": "8899bedc8bd13b330a29b63fc0dddac2c00d5acc42a17117fc16113d6826ed35",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B055.WAV",
+      "size": 72730,
+      "sha256": "25c27bbab40ab50e387fa63dd73d2ca4cd7feacb3c8be6f78550ef528ed88118",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B058.WAV",
+      "size": 49196,
+      "sha256": "8f2feeaddea31527892bde6ec19af488f7365fb1342a30d03066c570511b08e3",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B059.WAV",
+      "size": 109738,
+      "sha256": "04520f024b781ad7daa5fcbe147cb79707eadd225827d7445090b41ddf0908f8",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3B064.WAV",
+      "size": 62362,
+      "sha256": "d122ff51aca97d6f0363091fd3effa0db36a1d8822badd61c502ae49575aa08a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C002.WAV",
+      "size": 40620,
+      "sha256": "b99b997e55d6f2408839c89898b255bb198675af407e8f31991250b8253d6776",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C003.WAV",
+      "size": 41898,
+      "sha256": "ef5fe72ab5ad352aa9bb18ce7f526d454101729089aa0e0fca711cbfe0331e5f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C004.WAV",
+      "size": 117804,
+      "sha256": "d8114d265fcd6a3e26e33fa1141d02a9eb8bf0c48f50cd4025f4f11369730a62",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C005.WAV",
+      "size": 75308,
+      "sha256": "10949cfa633d4628b2683a97cb87538c84107c89615f5a985beb4fa394429de3",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C006.WAV",
+      "size": 51976,
+      "sha256": "5209bbabae81f129e6178f6048942326f60c1e6af88ad3b05813704094dfe229",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C007.WAV",
+      "size": 62636,
+      "sha256": "fa9a4d6d8ee69581a95df3a2e23388402341c507907513c14ae7ffa3030b4923",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C008.WAV",
+      "size": 70664,
+      "sha256": "c2231ea936bc5d8033ef20a845d2e925024b1301b2bec9c83f0a86a8600a7154",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C009.WAV",
+      "size": 68268,
+      "sha256": "58ec19a19ed2038be9cfc341d47e524de807c01be3cc8113283ee5bc4b5e9ccf",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C010.WAV",
+      "size": 58808,
+      "sha256": "ab52b75a77597bbbfbacee92760eea0aeaa0e3795cd5378073464bda470c4c21",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C011.WAV",
+      "size": 144428,
+      "sha256": "77cbe45ee40373499fba734cd3752385a46d79bbee088a6068f6a74547acb8f1",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C014.WAV",
+      "size": 53914,
+      "sha256": "f2067d426eef5b562797f0d3d8fa6416fd02ec7b881c48d7cee3d9ec9c904bbf",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US3C015.WAV",
+      "size": 67756,
+      "sha256": "745ca028cf4ce45c1481a69ce20decc4b8e02520a00c5f6cb487984c1f97d309",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A006.WAV",
+      "size": 52652,
+      "sha256": "e7c2318503b62643a877986de9803ac514a8c3beb659e63231618ab52b82199d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A007.WAV",
+      "size": 73002,
+      "sha256": "f7f84685e38cb0e4b6e54536c75bc9c9b58b9bf8e667c9bd4d8a89419fb7eea5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A009.WAV",
+      "size": 116266,
+      "sha256": "1d59f540e4cd991ae714c4a904bd5a63aaea82e20d1bef15820d86d06c40eae7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A010.WAV",
+      "size": 57842,
+      "sha256": "e72727186224f76a7a40d139b212ba95cbc2e7966becd82723bd3f4eb187f00e",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A011.WAV",
+      "size": 124202,
+      "sha256": "d863302cd701758301f71f92ce852f80ef7eaf3370d001da2776c94ce3af0201",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A012.WAV",
+      "size": 63994,
+      "sha256": "207a423fd597635fa2d2bded24672e965ee42d53627a36e87a95f93a9051e5b1",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A013.WAV",
+      "size": 51756,
+      "sha256": "f9d3a5cbb9290b0d3da8f6bfb78a002304c4b45d48331c594b5eaadb56981b83",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A015.WAV",
+      "size": 32300,
+      "sha256": "902b4ce93a0402cf643cc2c3a4e22f536afa67431ac70f767cafd711d6ca9181",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A016.WAV",
+      "size": 71212,
+      "sha256": "29102a6cbcdb9bd56c4e1c8a6ef02e5d1876e67cbc390d0bc89dc0d2b117d848",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A017.WAV",
+      "size": 104748,
+      "sha256": "f2e0fc5d805d57775a09575858154316ceb61523c73344d3d032d6585876b7f6",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A019.WAV",
+      "size": 48426,
+      "sha256": "568389f202a011956696b928f9ca52a7351bf41358baabc55b911da1c8a277f6",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A021.WAV",
+      "size": 57644,
+      "sha256": "cbee9c3e153dbde19dd1ada5a9c7f88d28cb8bb6db69982835f8bfbdb7006fc5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A025.WAV",
+      "size": 117322,
+      "sha256": "252259c41c6273c9fd2c9185f9976eeb0b8755b80b93953a4b35e335199e1c3a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A027.WAV",
+      "size": 38252,
+      "sha256": "09f6388a56dc6e8cc0bd077f3e41594bcc55ce00f445aad1a34d27c326a76e6f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A029.WAV",
+      "size": 150250,
+      "sha256": "3ed5aa75deb8b60f3f8c563955aa6454817d7167e4a2240db9fa435f0ac1f066",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A030.WAV",
+      "size": 497322,
+      "sha256": "cb16ec05946647f54d4d3695f347c8bb7312b18b051340c44651eaafdd5e652b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A033.WAV",
+      "size": 201260,
+      "sha256": "8bbfa32de142df62197ef5f7acd629cce9d59ff608002a9627ce527e759bdd8c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A034.WAV",
+      "size": 118810,
+      "sha256": "a7414f6f0912ed33070f9f22bd9ccd105b48ab7b08f22d3a50f58ae92c1695b2",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A035.WAV",
+      "size": 43562,
+      "sha256": "7b610fbfb864f1674e452c961bae3a879ecb838155b62827e2db83d12bf4f94a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A037.WAV",
+      "size": 94858,
+      "sha256": "688637adc6652cf02fb44cad034cb7373fee4b426aaec7437dd8c9d11f4a764a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A038.WAV",
+      "size": 79276,
+      "sha256": "5a0a3bc5350ef3fa717bff6124ba2c0031cb44fdd6b99ecf3fbf1530751a9c65",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A041.WAV",
+      "size": 153898,
+      "sha256": "dc4a925f24b76e8d7580533d1b31b58988fd30e514614090e8a27f86c67e56c9",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4A042.WAV",
+      "size": 58924,
+      "sha256": "fab5852df1b5cdacac892af5933873fa744de82e5d34ce94028f075c284957c5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B003.WAV",
+      "size": 81580,
+      "sha256": "cc2ec74d00f60597de3931436d154ad143919efb5f3dee68ecd0bf45fd35211d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B006.WAV",
+      "size": 55724,
+      "sha256": "058bc12d0b98d76456b989a2f030be69223f19500538533cf1a28b5e7d0ef2c8",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B009.WAV",
+      "size": 64396,
+      "sha256": "816f40c2947a964a647c732973da604d670d3c3c0578f18a31eb12a9f44dc2fb",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B010.WAV",
+      "size": 37804,
+      "sha256": "5d8ab36b24bf055e5446e73be369e79c0d9be9ce71cf63ca3eb224ed5d6b20bd",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B011.WAV",
+      "size": 49324,
+      "sha256": "ff62575159351db038dd7c34c7efa8f553775d4c2a229b0fcfad6cac3ae96317",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B012.WAV",
+      "size": 51242,
+      "sha256": "9d69466f31163b9cfdc79a1d5f694f30d57d05e0346a00e5582cf2f1931dc0c8",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B013.WAV",
+      "size": 98312,
+      "sha256": "222750548660313918b6e12e927870e3df6793d42e40307db3d909d14846c3c1",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B014.WAV",
+      "size": 105672,
+      "sha256": "a9fd780f9b72dcedb2d6bccab74b8189f2a4c86598a85560fc88bc60654b34f3",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B015.WAV",
+      "size": 58796,
+      "sha256": "f3b66e57d923e7db179e0a5a9434339d4f8981e4f6e6a864c3522a376bd720bf",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B016.WAV",
+      "size": 98478,
+      "sha256": "020748cb59b0379d2ce879e8ea4084e09e836841c361a3e09ecd61b42ae0ac6f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B020.WAV",
+      "size": 98026,
+      "sha256": "d207d83a270e458fd975189caa11a476d621a2b9315fd7d859eecdcb21fc5dcb",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B021.WAV",
+      "size": 74666,
+      "sha256": "3bf08ba2248c5bae8e948f710882efc2423971645d4876dfa23fae01476942d8",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B024.WAV",
+      "size": 64234,
+      "sha256": "2fe3a693ed2ea15bb7bacf047033e46674a7a7f3530d13d5ed9fff5236425073",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B025.WAV",
+      "size": 82602,
+      "sha256": "79c74b41bed6844072b6428827c20b0b3406d8035381ae8d9dcb44c1c919b961",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B026.WAV",
+      "size": 171562,
+      "sha256": "055f87de42d0113256a86586cc1cb10b408f8d21c2944b780f4ba81a2b5c8d14",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B027.WAV",
+      "size": 85932,
+      "sha256": "158e9ca17f8475cf31e7d9adfd5fd4b1adfff883278236021d97776036f67cef",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B028.WAV",
+      "size": 93354,
+      "sha256": "4556c841b1d71573e141efcc42565b7b44592ca63c051fefdfeb71374b7dc7ed",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B029.WAV",
+      "size": 29484,
+      "sha256": "02864a1a83d7a5af2899c620937f3a4ab7901a99f83c5cbd86cbce4302cd8400",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B030.WAV",
+      "size": 40812,
+      "sha256": "6dc44e329afa5a0994975ec2d651ee4dcd9d6fae425025e437bad547c42ad877",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B032.WAV",
+      "size": 48682,
+      "sha256": "fe81ea7a8fa19f03d0b8d4e25265e775c76d2caf70954837dc7c20dc77745259",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B034.WAV",
+      "size": 66972,
+      "sha256": "903fa859b0b8cbb99d24b590dfeada7d333a658b7a2fb2a01e413e43b6680da2",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B039.WAV",
+      "size": 88090,
+      "sha256": "357b0b997843a323052526b3b497234135628851cbf2b74c6cff85210aabfffb",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B040.WAV",
+      "size": 93194,
+      "sha256": "6943aab0a776e5778d6002a86fbcc67b66f87d2302779ff69a4853b55cbdcedf",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B044.WAV",
+      "size": 44458,
+      "sha256": "f419864ad0f94ccaf65f40059d9e89a6ce31853db8c01b072e1f52f0dbb23bba",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B045.WAV",
+      "size": 61546,
+      "sha256": "2d0ec45c0193944ace37fab277c1941129257db7fb15825c9bea1cd5c8096c98",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B048.WAV",
+      "size": 63162,
+      "sha256": "40b422b2e9b54f8f919e6fa8b26c710381cd10a55bc8f591bf179228a9249f54",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B049.WAV",
+      "size": 29868,
+      "sha256": "6ba1dc27bb273d722d57436a9844170c98f0dcf96957c6069540db60720a2d01",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B050.WAV",
+      "size": 63220,
+      "sha256": "2d0e0e383d15d8707f98f294eab814939b3281c44fa36094f93a0889fec030f0",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B053.WAV",
+      "size": 43146,
+      "sha256": "6347a36e22ebbfefd0d327d1653be55f36fb87fa3d285a22012f4de6bc1c6835",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B054.WAV",
+      "size": 68138,
+      "sha256": "7ea0448d8381fd4f3ce2b48ac3d5814c8e2d1906ab6a65520cc2887a7a2d1200",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B056.WAV",
+      "size": 69610,
+      "sha256": "f7d917de2337b37cc5e3c3e6565232fc302d96638fde345f8c0982e7d99e4407",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B057.WAV",
+      "size": 45498,
+      "sha256": "b7434e06c21f3c99a518de55ae82724d2f2b72e8da130b1848d0a15299ce79e7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4B058.WAV",
+      "size": 31178,
+      "sha256": "75345feaaf6db19a4546cae38b847fb9c8b8373f4ac80507a05369847431d44f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C002.WAV",
+      "size": 41772,
+      "sha256": "41aa47d0b7d2865ef5470afab5450073f152e325c89258691151776daaf1873f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C003.WAV",
+      "size": 68524,
+      "sha256": "a9ac82c1119e02f4a63a0626edab64cbd4227ed3e685eed1e767f4d8194d8ed8",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C009.WAV",
+      "size": 75116,
+      "sha256": "c7c9605df9dc35ba6ce7e1ae8a0d8d406e3cfcba3e7105e14156d25935ff87ff",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C011.WAV",
+      "size": 74156,
+      "sha256": "3e2a77c016a661c8896eeeed99f726a63554eb6086b157c6c9717c298fffe313",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C015.WAV",
+      "size": 70060,
+      "sha256": "51685fc93e5dd6f0fbede1737e7efe256d3bf52897a35275730cf6651ffde841",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C016.WAV",
+      "size": 24108,
+      "sha256": "b45a05c290fdb4550800a6574af9cf53fa580abeabc07dc63400a2e845f39923",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C017.WAV",
+      "size": 70572,
+      "sha256": "66860762df9629518197787c8694e0affb06c38e5ccd22a9f3c0ef5733ca689b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C018.WAV",
+      "size": 37676,
+      "sha256": "91a1c425c1f14eedd2807cde6ce9fcf2cac0c86caa649b2c3fc57e44615685b5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C020.WAV",
+      "size": 37548,
+      "sha256": "4d73be9c2a83f1be08c6e4e310772dcfc35cc5aa298dbe91918c9a16c468f2f3",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C021.WAV",
+      "size": 65580,
+      "sha256": "fe8988835f9721783ac5f258694ec1299597bb0c3a3058b2f0414682a60f8dee",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C022.WAV",
+      "size": 47276,
+      "sha256": "303221ad263f22e296b91122cbe2d3fae1c0caf969e6ccecd15e8bfb1e78e1d2",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C032.WAV",
+      "size": 213776,
+      "sha256": "5504c45b00ba123282310300650492c276d509107c2d5d71b786ae4dd5c5f440",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C033.WAV",
+      "size": 68200,
+      "sha256": "d6f577f2c7ab5759e30a72a7bc5967ec23b147293ead4cf3db04aaed4c746e56",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C034.WAV",
+      "size": 65224,
+      "sha256": "6138346f223075af163b75985a08c3c6a52ca266d712ac3f98e8c3a7d1ca8918",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C036.WAV",
+      "size": 74568,
+      "sha256": "36abc08487c5eebfb08dc0450125bebe5b83c9b539b9117032bf50e91c293be8",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C038.WAV",
+      "size": 38124,
+      "sha256": "4adb1c5d552f97cfd8048ae9043dbc4db854159df99be8be00cc284d43e5e505",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C043.WAV",
+      "size": 49452,
+      "sha256": "92f3e9626d124471e4fe59e0663483edfbc74addb8c9d31ac5d84956f08bcf51",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C048.WAV",
+      "size": 57436,
+      "sha256": "d2e6c838fa312b88d1d5deeaef9433c17deaa650365b04622832a9164cddd249",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US4C049.WAV",
+      "size": 54060,
+      "sha256": "6676faecd06a3ad82ce7b5aceae71d7cd1e75c5bc97b454ad8dd840bf23b5e10",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A006.WAV",
+      "size": 54572,
+      "sha256": "d53416599b7fae204bfb9faf2d9b5f2163a84fe7c2f0d2eba8d7f2402b674803",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A007.WAV",
+      "size": 34076,
+      "sha256": "b286c57d4a10ffa059f33e695395a8cc368c6ea517d27cad7738ab4b5ab9387e",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A008.WAV",
+      "size": 46640,
+      "sha256": "5825d329ed9d2861bfc75b1885a85e9e171ebcc3f449c34d217b9954922ff3ee",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A011.WAV",
+      "size": 52780,
+      "sha256": "992f3cb177ca072ccecf843da7278937754cdb4ce2877db1c277e67db2f765c5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A014.WAV",
+      "size": 50476,
+      "sha256": "d87e4dbaa444469e10cc60bbfb5986fbb34015a0f9e660352a3b4e9cfdbab656",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A016.WAV",
+      "size": 43562,
+      "sha256": "aa91367f7330af056c05db738793b831d160723ea9963b387d9f4b5613e60b0d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A017.WAV",
+      "size": 72388,
+      "sha256": "aebe040c9c01259277f8c296f9e2601e441d5b1ec82f1b6d3777c7bbb817adad",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A021.WAV",
+      "size": 5548,
+      "sha256": "59ac6f1c20c5d37d832e021c2f93f3160407bf09d3dee89f5b1df33cd9e77af6",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A023.WAV",
+      "size": 16266,
+      "sha256": "08319b0227d1bd869b1a1edc7626afaadabfa6e4207c662c7abc68fe408489ea",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A027.WAV",
+      "size": 35884,
+      "sha256": "1965e39782e838b3e0ddd95b4efb0a0022aa07be7ab3a58c733ccef94b2d3995",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A029.WAV",
+      "size": 36938,
+      "sha256": "baa59e4c2c90714ac6fb2fff173aa1d9e0c93410b70c82924697d39c248c4b5a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A036.WAV",
+      "size": 40172,
+      "sha256": "e661aa2b1ae0d238976d05b8f4665992285bbf24c9cc28e3ec34f6ec3af349f7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A038.WAV",
+      "size": 6428,
+      "sha256": "a94960ba57e19ff66d04ce58d0bd0d7487b16aa75914a02f00ceaead55a1b027",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A040.WAV",
+      "size": 17420,
+      "sha256": "c060ffbe8c452b90adad11d5197cac9f9ae78a7cb62565bf1cfb79d5c286a9f5",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A043.WAV",
+      "size": 35756,
+      "sha256": "685afc6551303b6d47d4c63c16602039a5a481f857bf36ee5fb6e7cc0a30dee6",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5A046.WAV",
+      "size": 32364,
+      "sha256": "ea7e1244c1293dd01b1c8b2733e8b3de5796f532f5dd885aaa8839c6f679772e",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B001.WAV",
+      "size": 77356,
+      "sha256": "8274994abd97ecc4d24dbe3187c2a48cea6cfd8201c26f76ab2d7636bc306f3b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B002.WAV",
+      "size": 58760,
+      "sha256": "d5a9654802d726a1f915adb042f08e0e374f3da9343525ba2a0b52f6f8a118c2",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B003.WAV",
+      "size": 59052,
+      "sha256": "8c33e6702e9e259dd14c3818c30f8c02d16613b8e5997f6a139b3001c04a6635",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B004.WAV",
+      "size": 33324,
+      "sha256": "fe804e2212a86788e67cb0914f59850bc657b170f9c9950983dec5b2c3b9d6ed",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B005.WAV",
+      "size": 49100,
+      "sha256": "d97c360df6ec4119f0491dedd2f5f12cba7143a154bb681f828248d06d417cd4",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B006.WAV",
+      "size": 21100,
+      "sha256": "c33cbbcfe935c9fb3f0010a17e5f922b3926830325be5cd4b1a1946d263199f7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B007.WAV",
+      "size": 101164,
+      "sha256": "2d0f6ba562aea8fcca34bec1210c53fd2b3a79fb158592a498b5284001988db2",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B010.WAV",
+      "size": 83884,
+      "sha256": "1a4b06fa10f5dc6320c7c02a51844051757c3cd6d6181f2b8cbf5935a69d8f8c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B011.WAV",
+      "size": 93676,
+      "sha256": "7089c1d0aa1d4363cbaecc2fc96159db4bb0001ab9aa5d2d219361ae90f35ab2",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B015.WAV",
+      "size": 38252,
+      "sha256": "588d9bf1f2e82ff6e52f0b8dcb03855b763c99b3ee3735cfe5d0a96e682ceb93",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B016.WAV",
+      "size": 75180,
+      "sha256": "6c37a8d8c52412159935b085227b2f4f10e2c5c06828a548e20250f23bb8426f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B022.WAV",
+      "size": 48300,
+      "sha256": "4af88f09619c3706d6a5a45e93282bef3a3833e7303533ec5ed7f09298fb31c8",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B023.WAV",
+      "size": 85546,
+      "sha256": "5ac19f28852d530cc01bbb6ce9dd396b979f144b51cd4e63e82e1981b13f4700",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B024.WAV",
+      "size": 101866,
+      "sha256": "34d9bfb9682d0420084bacd38eedcf775cb0865a3437078442012356e282a439",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B026.WAV",
+      "size": 60426,
+      "sha256": "de4298efe95f2bb8aa7ed3907eb2544be9226df9382b3ff18a20e69302153b3f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B027.WAV",
+      "size": 73388,
+      "sha256": "0a59ba11c51bf7d8fc741a2aa2dd31f4f9602a0810c84695a0fdbeb66b3a5655",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B029.WAV",
+      "size": 39594,
+      "sha256": "6de71fb9803df70f2491c39e800fb8a810c6ff94f42a11b1b23242dd31d20e36",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B030.WAV",
+      "size": 62050,
+      "sha256": "9509131f8f342be8989395524f66b0a7466c482972ffbfabca83ac4007228d70",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5B031.WAV",
+      "size": 94578,
+      "sha256": "40d8eac72f63d593b0203316338fcf294d9a05f37a02419f617277a2dbcb611b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C002.WAV",
+      "size": 67912,
+      "sha256": "4afa1418599c444205a9b163cec10bc7f751c574c1df6eaf1f12a7c2da39b99b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C003.WAV",
+      "size": 136236,
+      "sha256": "a10844e3fa1943634cf5503056af7b5703cc5bed17895920af9a50899bf38024",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C004.WAV",
+      "size": 119852,
+      "sha256": "76a748bd826e726408c5dfd0f14c630c21601a6e9e7bfe497db875e6ed826579",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C005.WAV",
+      "size": 75308,
+      "sha256": "615be064b3eeceb6c2ca5b47b019a6476bfebd575c0e64b4ac4ab2c8666b4e8b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C007.WAV",
+      "size": 48008,
+      "sha256": "ab4eba1fcc99214ebde839860708f938d366f9accff1feb7823c5135e28b6e94",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C009.WAV",
+      "size": 19784,
+      "sha256": "b691a6ec3ede29c4f28bb996df432be4b1bf404cf62c3c49dea2fd07cfae7b9f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C010.WAV",
+      "size": 39340,
+      "sha256": "d59d9a4d5b8e0636abaad45319810d536cf855042a5ba34ca85f7ff92f54fa13",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C014.WAV",
+      "size": 60458,
+      "sha256": "8261beff87ad0b15c0f8148418851cde19490206ac96296efcc03b986ce117c4",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C017.WAV",
+      "size": 81690,
+      "sha256": "2d8f74da2e403bd5df7533eb0c428847029dd3e4d84dd13b760b901a73ebe283",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C018.WAV",
+      "size": 50602,
+      "sha256": "24b1093fb969efd1dcaba836f1d3e90c9abeaabad380bbc95b6331037aa25d29",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C019.WAV",
+      "size": 39242,
+      "sha256": "813886a8b78174487e70931e5a9ce5ce1873303194e22aba6137611ac9f0a596",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C020.WAV",
+      "size": 152362,
+      "sha256": "d0a6849f81b27f63fd456a682eabebcfb86619f1b0716adf272cfa698c2ae46c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C022.WAV",
+      "size": 13996,
+      "sha256": "eea77602053852444e7c6c892d73ed5edbb309ebbe5996cc23cc6e9283803dda",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C023.WAV",
+      "size": 22060,
+      "sha256": "10117097bdbdaf5a5d98e0193b1ca11180458136baf76cf3291908ef598c4b00",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/US5C024.WAV",
+      "size": 144972,
+      "sha256": "c7f58092ebc61ea7691b7172ffdeffdbc67685268148c2cd91b8eee262d09d98",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN007.WAV",
+      "size": 34220,
+      "sha256": "414bb271c7ff64b2d13215a6252c117417e180ce6f8b809893797d029e0db15c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN009.WAV",
+      "size": 49196,
+      "sha256": "e7f1189d381044a08ad4f20012a5205189cde158eed7d4326f34b12bcfca7593",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN010.WAV",
+      "size": 60972,
+      "sha256": "9289c37ed3b1fe3f8f2e57a1a3b8084403a7171ed710fddddaeac1f9d20ea7bc",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN013.WAV",
+      "size": 75276,
+      "sha256": "407870c59da2f3be308c3a26e568d4ee554c31e8107a65c08858a700035ae2d9",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN014.WAV",
+      "size": 50728,
+      "sha256": "5d95bc13919565fa8d4049030ee67d8efb57ef683a6f4fc89960550c7d7fe049",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN026.WAV",
+      "size": 50364,
+      "sha256": "b067cd40614d474767c49180b50a047710dd27a84179fc569615094d4bd3384c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN027.WAV",
+      "size": 23852,
+      "sha256": "8f4ef6c535fb22cb60d149ce0418e5efba472ffdab5724bd33b6e6f819fb7e23",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN028.WAV",
+      "size": 27820,
+      "sha256": "09d1ab8c8ded8495179769cbff122910b875b0e0b12f11f12db52d927115213d",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN031.WAV",
+      "size": 43148,
+      "sha256": "dbb0e0cddfaef6880fda6f08c8ae2da1644f6dccab3bd30c50f8b5820942e775",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN032.WAV",
+      "size": 67116,
+      "sha256": "07f3901c105384df000dc1a6d9ad133d42ef1c0af91b2abd56536912bed23b05",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN033.WAV",
+      "size": 67244,
+      "sha256": "97b7aeb4a54d2ccaac3cd9e3e29267d8db63c0cb29ecd1722f914e99e413a3ac",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN034.WAV",
+      "size": 123112,
+      "sha256": "bdc7b71c9eea5d709b984a60fd04538fa337c139f49a667d097bf5bd6457dbf8",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN042.WAV",
+      "size": 66248,
+      "sha256": "e8c8a5f553c59ef3bdd378e30ec31291c5c488eba89a866f15e8a19ca77e8ec4",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN043.WAV",
+      "size": 46376,
+      "sha256": "c9d80ffa8a4c400fa543bcd9c8f2c0b24256f1f475512be07fbc16a546f043c1",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN044.WAV",
+      "size": 45868,
+      "sha256": "be9ef36512800db2476154c137c1a2ed53db5838b0e20f6a630c6aabd6b682d6",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN045.WAV",
+      "size": 21228,
+      "sha256": "251858082153d91e26095674bd4524dd557a3ab778a29d6b2749bdf0d788bb67",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN046.WAV",
+      "size": 27308,
+      "sha256": "08739c46f396fae7536011d1aac5b085ebc4074d01096da3e8d12934a034422a",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN048.WAV",
+      "size": 162348,
+      "sha256": "fa10569e32caf81fda3cf994a0bcffe2f5a0f335fabd7f45b238eca06e1e76f7",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN050.WAV",
+      "size": 47530,
+      "sha256": "801be0d1ebbd12e9e07cadd100b36dd69edfc3537fe8b61a03f3a77cb2d69a3c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN051.WAV",
+      "size": 58028,
+      "sha256": "3972b94196dca0b7fb9eb75da82bdd7cda177ae81383997ef61fd5777755fbcf",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN052.WAV",
+      "size": 33194,
+      "sha256": "414f592a446ef4aede4813a0e35d66e42f0c9d9d80409c8abc3bf3e2fae48835",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN054.WAV",
+      "size": 59308,
+      "sha256": "d89644a0a26bf3888c22de2de2b065ed20a65f2a5174ab21a3573e81bcad8c62",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN069.WAV",
+      "size": 78380,
+      "sha256": "f9f65398399d70858891d00cf64de2be25a17cd5a05e41d7349fcf08cfa06559",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN070.WAV",
+      "size": 82604,
+      "sha256": "2a2ec86d475d10b8472617f7eaf530b4870bc467d6fc0948ae9af21a5a5cec7e",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN073.WAV",
+      "size": 68396,
+      "sha256": "f869ec08d8327065be3547dcbed3d404a2079ac87801f97b3bd5c4456986d7b6",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN074.WAV",
+      "size": 72200,
+      "sha256": "eb55a8a646e17dda579cd64785dc3a302095d36acb0ce3b4eabd58c903127f61",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN075.WAV",
+      "size": 48556,
+      "sha256": "44e60dc51e936dd0ca73c3e473d4757acf30b7e788d543fd423bcd317cac1324",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN081.WAV",
+      "size": 102156,
+      "sha256": "75a4c1d655803ff5e87f28c294aac1db5307a3fd829e89a38e49d58b25e35697",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN082.WAV",
+      "size": 42732,
+      "sha256": "7307d59c2c1c9b3cfef7b8187b6847f564754054cacfa2229775ef78f76d95d6",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN083.WAV",
+      "size": 60972,
+      "sha256": "4e7e5ee64c6d0eaf6e0e6750de3b54e12981d338257952696110f55f42430c9b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN084.WAV",
+      "size": 79880,
+      "sha256": "e62a4b4b675d90bd6a82054054ef90cb0fd160b66ec7ec4b41579f96f9d8bf1c",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN086.WAV",
+      "size": 66348,
+      "sha256": "4241bff3b4d1ab0ed8ea335d3ddb0a29f42df2828d57f1dc47ed8a48d6dddfca",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN090.WAV",
+      "size": 6988,
+      "sha256": "8833d606d0882930d54e96740d0b5f0b77ef953a78784e99374ad8e95045c07b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN091.WAV",
+      "size": 9370,
+      "sha256": "2356061b5a428ba802e2567a5edffaa46eb5d2d008338b55fe111216438a6d76",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN092.WAV",
+      "size": 11178,
+      "sha256": "c8db61c50378ddef0a3745f9e1f6aa0383a822cf809b07cf969203f301a8262f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN098.WAV",
+      "size": 31084,
+      "sha256": "499253667032b0a4248e83e593e63ce161a61f4d72d59de16819c8581746696f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN108.WAV",
+      "size": 12780,
+      "sha256": "463c81db69b103fb0c870dac0a64f6b66d102e022b476b71c944e1662e7b7635",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN109.WAV",
+      "size": 40876,
+      "sha256": "2b3f299c1c2dc69253456b2d70e0f7e43d9ab8d008ac2f9beff046641b2ea3d3",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/USGN111.WAV",
+      "size": 21356,
+      "sha256": "5d7fa58de39a76e85b75f3ed397974aad039130edc80e08b7eb95fafece78b2b",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SFX/WASPBUZZ.WAV",
+      "size": 33096,
+      "sha256": "0957ad379bb23d8d8c03de10a13c0d8f6a118ff179464e2c7b9324dc5876b20f",
+      "extension": "wav",
+      "family": "CD/SFX",
+      "observed_in": []
+    },
+    {
+      "path": "CD/SKY1.RAW",
+      "size": 921600,
+      "sha256": "d6b9dc6a597312537b6b4c4b42c667be7edaff5549ed325f335b556e4d928550",
+      "extension": "raw",
+      "family": "CD/[root]",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/SOFT.RAW",
+      "size": 196608,
+      "sha256": "25064a7db026b087bc8b6610018d741dd346e25e3536a88d204eb55d84f66b11",
+      "extension": "raw",
+      "family": "CD/[root]",
+      "observed_in": [
+        "training",
+        "level01"
+      ]
+    },
+    {
+      "path": "CD/TEMP/ALT_1.BUG",
+      "size": 3654560,
+      "sha256": "85f7543843f2c62ba614eda027768f2323cda9cc6a129b7902443f7db0951fca",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/ALT_2.BUG",
+      "size": 2780960,
+      "sha256": "dd0c95a8a9868abe88144661cd50ca31d4e5234c8bb38a6091f7ab7026bb7003",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/ALT_3.BUG",
+      "size": 3654560,
+      "sha256": "ca87f1a4243c1f80e29ade9608abbb085a9813a53fbdc665a93b292d90af5994",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/BUGSL.001",
+      "size": 3506176,
+      "sha256": "e59c5a2519ffc2994c3ebe08eaae6ae3a1498bf1a48a32075e8f1ff7c440d38d",
+      "extension": "001",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/DISNEY.BUG",
+      "size": 2629120,
+      "sha256": "bb9a0c0810bd2296ed16bad12640da482d8f41ad02eed5038d832c7fa7a7b754",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/INTRO-1.BUG",
+      "size": 24957920,
+      "sha256": "1843a6c7a8a64472e22d3e590bc2b03e11752af162fc6939dcf0573e2f09ba7b",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/INTRO.BUG",
+      "size": 9224800,
+      "sha256": "189ac5b13615ff834743abe783bf8ec976f3ebfd38b8aaa70b0c799501960971",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_10A.BUG",
+      "size": 3030560,
+      "sha256": "ae0116d97208f26c2cb2dde34e65926abfb398061573802bb4769bbd8f638445",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_10B.BUG",
+      "size": 5846880,
+      "sha256": "c8837cda7a6f8764a2eef013eb0b93e329ff1cc2a7d5bbd7e76adb27ef6361fc",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_11A.BUG",
+      "size": 2562560,
+      "sha256": "c1cb6a65a81b290577374b880a643a0fb50cb24e9d06a0d3a914024a0ce8071e",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_11B.BUG",
+      "size": 3030560,
+      "sha256": "744568a6a4ae9fe0050df20d395e35a36d190bb95b34b236c534510c71fd8cd4",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_12A.BUG",
+      "size": 3818880,
+      "sha256": "92e92f979694f48cb453247481e25ce1d3d1ecd734c53957622f93ddfb2a4a81",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_12B.BUG",
+      "size": 1948960,
+      "sha256": "33aacbfd76da086478003d8d31d772229e804915779c1e513947593f6c2e1c38",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_13A.BUG",
+      "size": 2094560,
+      "sha256": "db0786ae6d7c4dc9dadddd103bcf403afe406f95a702e4c27278afa38cbb1ed6",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_13B.BUG",
+      "size": 3818880,
+      "sha256": "5a51c5b240f14ed801b071a5ebf8fd71028c79a339f6bcd4a542f6a6dac246d9",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_14A.BUG",
+      "size": 2882880,
+      "sha256": "feb342815c9ced08cc179d91baf2c928cb36b32e951f367f17fe5d6da905dbdd",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_14B.BUG",
+      "size": 4286880,
+      "sha256": "f677d46dd6cdb497a8d74fdaedd7afe737cbf87a65ce44755b118dce6bd00994",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_15A.BUG",
+      "size": 1774240,
+      "sha256": "d3aac8d5ffff0aa94492385b7ae80f1f84078826f0bb95bd35120b9a80627fcb",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_15B.BUG",
+      "size": 5699200,
+      "sha256": "021790bd0a5511c4e9e68a892f99ae6df0f2d431c43eb2edf0d2ac05424c5f5a",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_15C.BUG",
+      "size": 16939520,
+      "sha256": "52a6cd15cd15903ddbb6572d4819b9db103bd939b2415a1b723367c473e2546a",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_15D.BUG",
+      "size": 9744800,
+      "sha256": "5e573c6e4e66593c0b25d7f8d618f4fcf57892c298324d670d7603928b1f2481",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_1A.BUG",
+      "size": 2242240,
+      "sha256": "5902e5766250e7035e5ecd2aba3d1180b16a4236e1648fcca63a1aa8c8b73176",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_1B.BUG",
+      "size": 2710240,
+      "sha256": "78c705c066ff4152b2a6682ccd9c318fb838d22e91499d83e58bb4df9423f58c",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_2A.BUG",
+      "size": 7569120,
+      "sha256": "2fbb48e0bc9e2686159fdc7888beb551e67ed7dcd737d92832214bdeefcfcb6b",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_2B.BUG",
+      "size": 7103200,
+      "sha256": "4698dfb5dbdd36c15a34bba7f7e12d1ec5023c3dd9ad7bc0385718c58182d259",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_3A.BUG",
+      "size": 3654560,
+      "sha256": "9061f4cdc6d9a429ded4dea0e601482c0e488a546f0a69d351338ddb4c62ab66",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_3B.BUG",
+      "size": 6780800,
+      "sha256": "8f2cf48efb2cebed4a80f96015d244ae7f77ba60aa0f89b4754ed0ba55207626",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_4A.BUG",
+      "size": 2562560,
+      "sha256": "a16a3f50b3cc707c7843779ddf58ea05cc11ad997b88ec25a76b6d2680cff341",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_4B.BUG",
+      "size": 8257600,
+      "sha256": "56b691d74b44a588c44cdc5fcdd388b537477f7c5d76b3d2afb4d5aceb11d06c",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_5A.BUG",
+      "size": 4122560,
+      "sha256": "0a48ad945f9fdf3d6a8ba9cb048ad180f1b8238556940d39cada5e3a5db75d70",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_5B.BUG",
+      "size": 3964480,
+      "sha256": "555955f49d45832145619fc41e6ca665a187b89af0bcbac66e375522ebcd34f6",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_6A.BUG",
+      "size": 5058560,
+      "sha256": "4c91571d95223caf0b53c9edad3d81ec61255c8a437f3375808a454a8c6cb237",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_6B.BUG",
+      "size": 6002880,
+      "sha256": "d0ceb085f371c6f73d07db48dcfd27639ed243b357fef9ed60a6efa40bac003f",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_7A.BUG",
+      "size": 8195200,
+      "sha256": "821e061dfa3f99e91708df6448ea2b3bfb1d073a85076503428f3b16faabd78f",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_7B.BUG",
+      "size": 4765280,
+      "sha256": "0df587d43dbe98209a9af0b7f0b2b857d6643d056f9ab7d53fda2a9277cdbed0",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_8A.BUG",
+      "size": 5846880,
+      "sha256": "757575e39fd34841a35a967890c1927c124853e1ea67a39e109c059a8850548d",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_8B.BUG",
+      "size": 5366400,
+      "sha256": "e79a94e2b7ac0177ea00edd066e55afa239d5772bc29f5798e7a64c335a68041",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_9A.BUG",
+      "size": 2242240,
+      "sha256": "83a3a2f0a11fa575a17e0380480e3fd9b5ad63a3ddf471d30c556a5e7c4bf351",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LEV_9B.BUG",
+      "size": 4444960,
+      "sha256": "fdc8ca5ec293274ddfb6e2c9e9dbd99217b4685b03bbdfe3d9024bf36b093691",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/LOSE.BUG",
+      "size": 1628640,
+      "sha256": "f4d4ecbab8f14725cacb6336051082cb99fac83e2feb6a2b684e79fd976f171c",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/MFC42.DLL",
+      "size": 940304,
+      "sha256": "590ee92bc1c9cf0d4a6b40e11c9272db243c59e709f940147c6085f07e297788",
+      "extension": "dll",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/MSVCIRT.DLL",
+      "size": 70656,
+      "sha256": "9717c95654d34a8e78d712f9c5a3aa82351ec04c6318e7b4aca9e6a4ad701a34",
+      "extension": "dll",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/MSVCRT.DLL",
+      "size": 280576,
+      "sha256": "df9f2aab7f7119f214c5d743d961fde4bf324f19011fbbb7e9cf666856fba0ba",
+      "extension": "dll",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/TT_LOGO.BUG",
+      "size": 3594240,
+      "sha256": "c38242ecbe30cd18ca00feddba25328a715fb21d3e6caca0e7db8b15da2acebd",
+      "extension": "bug",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/VIDEO.DLL",
+      "size": 40960,
+      "sha256": "1fb313439b9d9b64e720228cc66f8b93116a771846d5c722e39a15dbe7a79ff7",
+      "extension": "dll",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/VIDEO.EXE",
+      "size": 33280,
+      "sha256": "343ee5b10aaed35600b520a1064a8ae552ad54e5da7a7dd1cbdac9a0672757c3",
+      "extension": "exe",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/VIDEOD.DLL",
+      "size": 91648,
+      "sha256": "6c15f23bca0ec962eb432f467a8a3547a02fd2b14ad66dea2fc919d90f15677b",
+      "extension": "dll",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/VIDEOPLA.EXE",
+      "size": 58880,
+      "sha256": "ad40efbaa6e1cdd760a2cc9c007520fdfb56ca745b6c77f76ac62f393cde075e",
+      "extension": "exe",
+      "family": "CD/TEMP",
+      "observed_in": []
+    },
+    {
+      "path": "CD/TEMP/WS_FTP.LOG",
+      "size": 635,
+      "sha256": "ba56611e0f71a17c4acb46b8eb681437991822399d533df426b7f7bed24e326d",
+      "extension": "log",
+      "family": "CD/TEMP",
+      "observed_in": []
+    }
+  ]
+}

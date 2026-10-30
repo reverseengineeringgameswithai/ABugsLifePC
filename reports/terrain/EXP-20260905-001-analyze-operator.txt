@@ -1,0 +1,164 @@
+"""Read-only analysis of EXP-011's already completed four-write transaction.
+
+Run with system python3 (Pillow). Never imports or invokes a live operator.
+"""
+from pathlib import Path
+import hashlib
+import json
+from PIL import Image
+
+ROOT = Path('/home/dev/ABLPC')
+HERE = Path(__file__).resolve().parent
+RUN = HERE.parent / 'EXP-20260904-011'
+OLD = HERE.parent / 'EXP-20260904-010'
+load = lambda p: json.loads(p.read_text())
+digest = lambda p: hashlib.sha256(p.read_bytes()).hexdigest()
+plan = load(RUN / 'candidate-plan.json')
+result = load(RUN / 'result.json')
+auth = load(RUN / 'authorization.json')
+assert result['error'] is None and result['restoration'] == 'exact-original-restored'
+assert auth['plan_sha256'] == digest(RUN / 'candidate-plan.json')
+assert auth['operator_sha256'] == digest(RUN / 'live_compare.py')
+assert auth['authorized_at'] >= plan['created']
+assert [r['phase'] for r in result['writes']] == auth['memory_write_labels'] == [r['label'] for r in plan['writes']]
+for w, p in zip(result['writes'], plan['writes'], strict=True):
+    assert w['status'] == 'written-and-verified' and w['write_attempted']
+    assert w['bytes_written'] == w['bytes'] == p['bytes']
+    assert int(w['address'], 16) == int(plan['address'], 16) + p['offset']
+    assert w['before_prefix_sha256'] == plan['files'][p['from']]['sha256']
+    assert w['target_prefix_sha256'] == w['after_prefix_sha256'] == plan['files'][p['to']]['sha256']
+    assert w['frame_end_gate'] and w['renderer_return'] == '0x44dbf3'
+    assert w['state_after_resume'] == plan['state']
+
+# Exactly the EXP-010/011 selection, frozen before this live run.
+prior_path = HERE.parent / 'EXP-20260904-009/pixel-depths-exploratory.json'
+prior = load(prior_path)
+camera = plan['state']['camera_translation']
+a, b = 1409 / 4096, 3845 / 4096
+den = a * a + b * b
+analytic = []
+for row in prior['rows']:
+    sx, sy = row['xy']
+    z = (-108544 - camera[1]) / 32 * 320 / (sy - 240)
+    x = (sx - 320) / 320 * z
+    wx = camera[0] + 32 * (a * x - b * z) / den
+    wz = camera[2] + 32 * (b * x + a * z) / den
+    actor = row['depths_actor_coarse_split'][0]
+    if 163200 <= wx <= 184000 and 497600 <= wz <= 520000 and actor is not None and z / 16384 < actor:
+        analytic.append(tuple(row['xy']))
+inversions = [tuple(r['xy']) for r in prior['inversions']]
+residuals = [(342, 315), (344, 315), (298, 319), (299, 319), (300, 319), (301, 319)]
+assert len(set(analytic)) == len(analytic) == 259
+assert len(set(inversions)) == len(inversions) == 255
+assert set(residuals) <= set(analytic)
+blue = lambda rgb: rgb[2] > rgb[0] + 6 and rgb[2] > rgb[1] + 2
+roi = (285, 285, 350, 340)
+images, raw = {}, {}
+assert list(result['captures']) == plan['capture_labels']
+for arm, rows in result['captures'].items():
+    assert len(rows) == 3
+    images[arm] = []
+    for row in rows:
+        assert row['state'] == plan['state']
+        assert digest(Path(row['frame'])) == row['sha256']
+        with Image.open(row['frame']) as im:
+            assert im.size == (640, 480)
+            image = im.convert('RGB')
+        assert any(low != high for low, high in image.getextrema())
+        images[arm].append(image)
+    raw[arm] = [im.crop(roi).tobytes() for im in images[arm]]
+    assert len(set(raw[arm])) == 1, ('unstable ROI', arm)
+assert raw['original_before'] == raw['original_restored']
+assert raw['control_before'] == raw['control_restored']
+
+counts = {name: {arm: [sum(blue(im.getpixel(xy)) for xy in points) for im in ims]
+                         for arm, ims in images.items()}
+          for name, points in [('analytic259', analytic), ('residual6', residuals), ('prior255', inversions)]}
+# All expectations are from the existing offline plan, not a revised mask.
+assert list(counts['analytic259'].values()) == [[259]*3, [6]*3, [0]*3, [6]*3, [259]*3]
+assert list(counts['residual6'].values()) == [[6]*3, [6]*3, [0]*3, [6]*3, [6]*3]
+assert list(counts['prior255'].values()) == [[255]*3, [0]*3, [0]*3, [0]*3, [255]*3]
+
+old = load(OLD / 'result.json')
+old_matches = {}
+for current, previous in [('original_before', 'before'), ('control_before', 'candidate'), ('original_restored', 'restored')]:
+    old_rois = []
+    for row in old['captures'][previous]:
+        assert digest(Path(row['frame'])) == row['sha256'] and row['state'] == plan['state']
+        with Image.open(row['frame']) as im:
+            old_rois.append(im.convert('RGB').crop(roi).tobytes())
+    old_matches[current] = raw[current] == old_rois
+
+comparison = {
+    'roi': roi, 'roi_pixels': 3575, 'state_identical_all_15': True,
+    'triplet_roi_identical_each_arm': True, 'original_restored_roi_identical': True,
+    'control_restored_roi_identical': True, 'blue_filter': 'B > R + 6 and B > G + 2',
+    'blue_counts': counts,
+    'selected_residual_rgb': [{'xy': xy, 'rgb_by_arm': {arm: [im.getpixel(xy) for im in ims] for arm, ims in images.items()}} for xy in residuals],
+    'rgb_roi_sha256': {arm: [hashlib.sha256(b).hexdigest() for b in values] for arm, values in raw.items()},
+    'EXP010_roi_matches': old_matches,
+    'control_to_alternate_changed_roi_pixels': sum(images['control_before'][0].getpixel((x,y)) != images['alternate'][0].getpixel((x,y)) for y in range(roi[1],roi[3]) for x in range(roi[0],roi[2])),
+    'scope': 'Frozen EXP009/010/011 pixel selections. ROI also contains legitimately exposed model and textured box pixels; their total difference does not measure defects. No full-frame equality or moving-camera acceptance.'
+}
+(HERE / 'comparison.json').write_text(json.dumps(comparison, indent=2) + '\n')
+
+frames = {arm: [str(Path(r['frame']).relative_to(HERE.parent)) for r in rows] for arm, rows in result['captures'].items()}
+page = '''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Box edge diagonal comparison</title>
+<style>body{background:#141920;color:#edf1f6;font:16px system-ui;max-width:1100px;margin:30px auto;padding:0 20px;line-height:1.5}button{padding:10px;margin:4px;background:#35404e;color:inherit;border:1px solid #728199;border-radius:6px;cursor:pointer}button.active{background:#19696d}.row{display:flex;gap:20px;flex-wrap:wrap}#frame{width:640px;max-width:100%;image-rendering:pixelated}#zoom{width:325px;height:275px;overflow:hidden;border:2px solid #92a1b2;position:relative}#zoom img{position:absolute;width:3200px;max-width:none;left:-1425px;top:-1425px;image-rendering:pixelated}small{color:#b4c1d2}table{border-collapse:collapse}td,th{padding:6px 16px;border-bottom:1px solid #485467;text-align:left}</style>
+<h1>The six remaining fragments disappear with alternate diagonals</h1>
+<p>The finer control and alternate use identical vertices and collision. Only the top faces' triangle diagonals change. Switching back restores all six fragments. All 15 captures have the same measured player position, collision contact and camera.</p>
+<div id="buttons"></div><p id="caption"></p><div class="row"><img id="frame" alt="Unaltered native paused game capture"><div><div id="zoom"><img id="detail" alt="The unchanged comparison region magnified five times"></div><small>5× comparison region, native (285,285)–(349,339)</small></div></div>
+<p><label>Capture <input id="sample" type="range" min="0" max="2" value="0"></label> <span id="number">1 / 3</span></p>
+<table><tr><th>Measured blue fragments</th><th>Finer control</th><th>Alternate diagonals</th><th>Control restored</th></tr><tr><td>Six residual samples</td><td>6</td><td>0</td><td>6</td></tr><tr><td>All 259 analytic samples</td><td>6</td><td>0</td><td>6</td></tr><tr><td>255 earlier corrected samples</td><td>0</td><td>0</td><td>0</td></tr></table>
+<p>Both restored controls match their original 3,575-pixel regions exactly. The running game has its original six-quad mesh restored and remains paused.</p>
+<p><small>EXP-20260905-001 executes the prepared EXP-20260904-011 plan. Four guarded memory writes and exact restoration. This confirms the preserved view; oscillating movement, other camera angles, and a general mesh rule still need testing. These are original captures with CSS magnification only.</small></p>
+<script>const frames=FRAMES;const labels={original_before:'Original mesh',control_before:'Finer control',alternate:'Alternate diagonals',control_restored:'Finer control restored',original_restored:'Original restored'};let arm='alternate',index=0;for(const a of Object.keys(frames)){let b=document.createElement('button');b.textContent=labels[a];b.dataset.arm=a;b.onclick=()=>{arm=a;show()};document.querySelector('#buttons').append(b)}document.querySelector('#sample').oninput=e=>{index=Number(e.target.value);show()};function show(){const src='../'+frames[arm][index];document.querySelector('#frame').src=src;document.querySelector('#detail').src=src;document.querySelector('#caption').textContent=labels[arm];document.querySelector('#number').textContent=(index+1)+' / 3';for(const b of document.querySelectorAll('button')){b.classList.toggle('active',b.dataset.arm===arm);b.setAttribute('aria-pressed',b.dataset.arm===arm)}}show();</script></html>'''.replace('FRAMES', json.dumps(frames))
+(HERE / 'comparison.html').write_text(page)
+
+restored = load(RUN / 'authorized-restoration-check.json')
+stops = load(RUN / 'suspensions.json')
+assert restored['state'] == plan['state'] and restored['audit_exact_match']
+assert all(r['tracer_pid'] == 0 and r['state'][0] not in 'Tt' for r in restored['threads'])
+assert load(RUN / 'authorized-pre-audit.json') == load(RUN / 'authorized-post-audit.json')
+assert len(stops) == result['suspension_count'] == 15
+report = {
+    'experiment': 'EXP-20260905-001', 'executed_plan_experiment': 'EXP-20260904-011',
+    'status': 'completed-bounded-live-comparison-original-restored',
+    'result': 'Alternate top diagonals remove all six residual fragments at the preserved paused pose, with all 255 earlier fixes retained. Restoring the finer control returns all six; restoring the original mesh returns all 259 analytic samples. Both control ROIs restore exactly.',
+    'authorization': auth, 'process': plan['process'], 'state': plan['state'],
+    'executed_game_sha256': '1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f',
+    'retail_static_executable_sha256': '97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878',
+    'candidate_level_dat_sha256': plan['candidate_dat_sha256'],
+    'terrain_sha256': plan['terrain_sha256'],
+    'collision_prefix_sha256': plan['files']['collision-prefix.bin']['sha256'],
+    'collision_guard': '530 bytes at 0x006A6863 compared before/after every phase and in restored preflight; no collision write.',
+    'render_change': 'Same 45 vertex records, 33 faces and zero object depth offset. One-corner rotation of 16 top quads and paired UV fields; 138 differing bytes inside the 256-byte table at 0x006664DB.',
+    'writes': [{k:v for k,v in w.items() if k in ('phase','attempt','time','address','bytes','bytes_written','before_prefix_sha256','target_prefix_sha256','after_prefix_sha256','status','elapsed_seconds','frame_chain','renderer_return','frame_end_gate','state_after_resume')} for w in result['writes']],
+    'captures': result['captures'], 'comparison': comparison,
+    'control': {'suspensions': len(stops), 'accepted_write_stops': 4,
+                'stop_duration_seconds_max': max(r['elapsed_seconds'] for r in stops),
+                'stop_duration_seconds_total': sum(r['elapsed_seconds'] for r in stops),
+                'stop_durations_seconds': [r['elapsed_seconds'] for r in stops],
+                'frame_end_gate': 'Retained EXP010 valid EBP chain: first game return 0x00405B74, enclosing renderer return 0x0044DBF3, bounded Wine PC and 32-bit stack.',
+                'inspection': 'Scoped SIGSTOP and read-only PTRACE_SEIZE/INTERRUPT/GETREGS/DETACH; SIGCONT in finally. No register writes or breakpoints.',
+                'restoration': restored},
+    'mechanism': {'confirmed': 'The same-vertex top diagonal change causally removes the six selected residual fragments at this exact paused pose.',
+                  'supported_inference': 'Residual depth interpolation error: EXP011 original 0x004498F0 output predicts all six depth-order changes; this live control/alternate/control comparison agrees. No complete rasterizer model is claimed.'},
+    'limits': ['Known failure view selected the candidate; no independent camera holdout or oscillating movement test.',
+               'The analytic mask, sample-position sensitivity and partial actor-buffer reconstruction retain EXP009/011 limitations.',
+               'Corner/UV ordering changes texture interpolation as well as depth interpolation; total textured pixel differences are not defect counts.',
+               'General subdivision/diagonal rules, shared-floor return traversal in EXP005 and full level authoring remain open.',
+               'Four-write authority is consumed. The original six-quad mesh is restored in the paused user game; alternate geometry remains offline.'],
+    'validation': {'live_acceptance_assertions': 'passed', 'image_reader': 'system python3 Pillow; project .venv lacks Pillow',
+                   'other_runtime_actions': {'gameplay_input':0,'restarts':0,'launches':0,'closes':0,'register_writes':0,'collision_writes':0,'player_camera_writes':0}}
+}
+paths = [RUN / n for n in ['candidate-plan.json','authorization.json','started.json','result.json','suspensions.json','live_compare.py','authorized-pre-audit.json','authorized-post-audit.json','authorized-preflight.json','authorized-postflight.json','authorized-restoration-check.json']]
+paths += [RUN / (p['label'] + '-write.json') for p in plan['writes']]
+paths += [RUN / (arm + '-captures.json') for arm in plan['capture_labels']]
+paths += [Path(r['frame']) for rows in result['captures'].values() for r in rows]
+paths += [ROOT / 'reports/terrain/EXP-20260904-011.json', prior_path, OLD / 'result.json', HERE / 'comparison.json', HERE / 'comparison.html', Path(__file__)]
+report['artifacts'] = [{'path':str(p.relative_to(ROOT)), 'bytes':p.stat().st_size, 'sha256':digest(p)} for p in paths]
+out = ROOT / 'reports/terrain/EXP-20260905-001.json'
+out.write_text(json.dumps(report, indent=2) + '\n')
+(ROOT / 'reports/terrain/EXP-20260905-001-analyze-operator.txt').write_bytes(Path(__file__).read_bytes())
+print(json.dumps({'report_sha256':digest(out), 'blue_counts':counts, 'EXP010_roi_matches':old_matches, 'artifacts':len(paths), 'max_stop_ms':report['control']['stop_duration_seconds_max']*1000}, indent=2))

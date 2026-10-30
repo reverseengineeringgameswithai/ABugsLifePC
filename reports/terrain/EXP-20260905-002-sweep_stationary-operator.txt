@@ -1,0 +1,40 @@
+"""Short alternating tangential inputs into a box wall; normal XTEST only."""
+from navigate_stationary import *
+def sweep(label,side,seconds=8):
+    assert side in ('west','east','north','south') and 0<seconds<=12
+    meta=ns['guard']();env=ns['focus'](meta);assert meta['game']['pid']==json.loads((ARM/'active.json').read_text())['game']['pid']
+    binding();held=set();samples=[];events=[];captures=[];start=time.monotonic();next_capture=start;error=None
+    try:
+        while time.monotonic()-start<seconds:
+            now=time.monotonic();s=ns['state'](meta);x,y,z=s['position']
+            assert s['level']==1 and 128000<x<265600 and 416000<z<579200 and y<=-102350, s
+            assert side=='west' and 198800<=x<200820 and 474600<z<495000, ('outside intended stationary west wall',s)
+            phase=int((now-start)/.40);direction=1 if phase%2==0 else -1
+            if side in ('west','east'):
+                if z<475600:direction=1
+                if z>493600:direction=-1
+                dx,dz=(1 if side=='west' else -1),direction
+            else:
+                if x<202800:direction=1
+                if x>219600:direction=-1
+                dx,dz=direction,(-1 if side=='north' else 1)
+            m=struct.unpack('<9h',bytes.fromhex(s['camera_matrix_hex']));a,b=m[0]/4096,m[2]/4096
+            sector=round(math.atan2(-b*dx+a*dz,a*dx+b*dz)/(math.pi/4))%8
+            desired=[{'Right'},{'Right','Up'},{'Up'},{'Up','Left'},{'Left'},{'Left','Down'},{'Down'},{'Down','Right'}][sector]
+            samples.append({'elapsed':now-start,'phase':phase,'world_direction':[dx,dz],**s})
+            if desired!=held:
+                for key in sorted(held-desired):ns['run'](['xdotool','keyup',key],env)
+                for key in sorted(desired-held):ns['run'](['xdotool','keydown',key],env)
+                held=set(desired);events.append({'elapsed':time.monotonic()-start,'held':sorted(held)})
+            if now>=next_capture:
+                pre=ns['state'](meta);frame=call('capture');post=ns['state'](meta)
+                captures.append({'elapsed':time.monotonic()-start,'phase':phase,'before':pre,'capture':frame,'after':post})
+                next_capture=time.monotonic()+.20
+            time.sleep(.04)
+    except BaseException:error=traceback.format_exc()
+    finally:
+        for key in ['Up','Down','Left','Right']:ns['run'](['xdotool','keyup',key],env)
+        row={'side':side,'seconds':seconds,'samples':samples,'events':events,'captures':captures,'error':error,'after_release':ns['state'](ns['guard']())};save(label,row)
+    print(json.dumps({'label':label,'samples':len(samples),'events':len(events),'captures':len(captures),'error':error,'after_release':row['after_release']},indent=2))
+    if error:raise RuntimeError(error)
+if __name__=='__main__':sweep(sys.argv[1],sys.argv[2],float(sys.argv[3]) if len(sys.argv)>3 else 8)

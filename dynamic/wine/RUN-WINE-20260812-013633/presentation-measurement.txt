@@ -1,0 +1,17 @@
+RUN-WINE-20260812-013633 presentation measurement
+
+Command:
+gamescope --backend wayland -w 640 -h 480 -W 2560 -H 1440 -S fit -F nearest -f -- env WINEPREFIX=/home/dev/ABLPC/work/wine/baseline WINEDEBUG=-all wine ./bugs.exe log cheat mpeg
+
+PipeWire compositor capture measurements made with ImageMagick 7:
+
+- Hardware selector frame: 2560x1440 canvas; non-black trim 1920x1439+319+0.
+  Transient capture SHA-256: 491e17b4700c077a448a645ec833bc1e522f112b46fc78b724890f80c5d666fc
+- Hardware gameplay frame: 2560x1440 canvas; non-black trim 1920x1439+319+0.
+  Transient capture SHA-256: 19bafdd237d4d2a8d006e3b8cd1beeee2507a4c11e72682857bab6bbbec79326
+
+The one-pixel height difference is the measured trim result, not a claim that
+the source mode is 1920x1439. The game log independently records 640x480.
+
+The transient captures were deliberately not added to Git; the measurements,
+hashes, exact command, and game-log evidence are the durable artifacts.

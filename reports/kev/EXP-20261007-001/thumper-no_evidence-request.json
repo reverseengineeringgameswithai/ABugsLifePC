@@ -1,0 +1,60 @@
+{
+  "model": "kev-latest",
+  "state": "No evidence has been supplied.",
+  "questions": {
+    "q01": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Thumper's creature type is 16, whereas type 29 is Molt.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q02": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: In the Moonlit hardware arm Thumper occupied slot 10 and initially had health 50.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q03": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Each individual purple-berry hit removed four health points from Thumper in the recorded Moonlit arm.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q04": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Transplanting Thumper's creature row automatically brought his Council Chamber health bar and boss win sequence into Moonlit.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q05": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Thumper's buzzing sound is audible to a player in Moonlit Cliffs.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q06": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Purple projectiles actually lock onto the transplanted Thumper after he wakes.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    }
+  }
+}

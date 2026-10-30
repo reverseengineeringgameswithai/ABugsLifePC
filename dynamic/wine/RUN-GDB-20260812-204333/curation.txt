@@ -1,0 +1,10 @@
+CURATION STATUS: rejected; excluded from the accepted M2.15 result.
+
+This paired candidate-function/reader arm began after the prior caller-gate
+run's ignored raw GDB output had recorded SIGSEGV at 0x0044D79A. It recorded
+zero stops, but Wine later printed the matching unhandled read fault and began
+its debugger. The harness metadata reports cleanup and detach, which conflicts
+with the unresolved target signal. Do not use the zero-stop interval as
+evidence that either address was inactive.
+
+See EXP-20260812-028 and RUN-GDB-20260812-204252/curation.txt.

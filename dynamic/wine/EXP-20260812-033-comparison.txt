@@ -1,0 +1,135 @@
+EXP-20260812-033 curated comparison
+====================================
+
+Question
+--------
+Does exact equal-size CHARS/FLICK.ALL <- CHARS3/FLICKD.ALL produce an
+accepted, repeated stable local rendered difference along the fixed Training
+trajectory?
+
+Inputs and staging
+------------------
+bugs.exe:
+  97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+Training LEVEL1.DAT:
+  494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+unchanged CHARS/FLICK.ANM and candidate CHARS3/FLICKD.ANM:
+  1743b26a13770b6453dfcf900d9f02a515e52a1b04e5679149c06ec77e5e8ab1
+unchanged CHARS/FLICK.ALL (13,548 bytes):
+  a2f23220392d7fb4880bbab7acab9393fe6da059961d620e7b85c8df3f4f4ac6
+replacement/source CHARS3/FLICKD.ALL (13,548 bytes):
+  6e5afb4f9ea649bc305fdafeb027aece25914b27a017d04841bf4298634079a4
+
+The two ANM files are byte-identical. The ALL files differ at 2,115 byte
+positions from zero-based 0x4 through 0x34D2. Both controls recursively
+matched the fresh derived source tree when generated bugs.log was excluded.
+The replacement differed at exactly:
+  PC/BUGS/CD/CHARS/FLICK.ALL
+That destination exactly matched the CHARS3/FLICKD.ALL source hash. No ANM,
+executable, DAT, or second resource path changed.
+
+Accepted runs
+-------------
+  RUN-WINE-20260812-230859  control A
+  RUN-WINE-20260812-231216  one-path ALL replacement
+  RUN-WINE-20260812-231403  control B
+
+All three logs have 1,480 lines and contain:
+  line 76:       Screen mode 640x480x16 selected
+  line 127:      Starting Direct3D renderer
+  lines 1459-60: CHARS/FLICK.ANM and CHARS/FLICK.ALL loads
+  line 1476:     End InitMainGame
+  line 1478:     NextLife
+No accepted log contains INITSOFTRENDER. Removing only the ten clock timing
+lines makes all three logs byte-identical:
+  f47d9d3d648f0d9c3a951ea0135fa4fed29a91089ba653e0dcaf13fbc97cad18
+
+Accepted log hashes:
+  control A:   2b47114c981bc8ff4f8e23b77126ebd025e3cd7eef993a34988409d947635601
+  replacement:8b331970c547406864ce26d1afee9367683cf34b62b39bd379206fa6ffcfd500
+  control B:   ac69d57ba30c56986126051dc5171a2821723c6d6023ced2484c665399193c88
+
+Trajectory and capture boundary
+-------------------------------
+From the natural Training title after one Return:
+  three samples at start, approximately 0.25 seconds apart;
+  Up held 3 seconds; wait 1.2 seconds; three samples (after-up1);
+  Right held 2 seconds; wait 1.2 seconds; three samples (after-right);
+  Up held 3 seconds; wait 1.2 seconds; three samples (after-up2).
+
+All key events targeted exact isolated window 14680071. Each arm's committed
+input receipt contains event timestamps and frame hashes. Captures are only
+the isolated 640x480 Gamescope game surface; no desktop capture was taken.
+
+Receipt / frame-list hashes:
+  control A:   63a33619967c5b10d674918c197f6237eac591b2926cdfc4ad918862e51fcb83
+               30bb975798ba5efa54a3283f0dc5809b545ca888d5414ba13efac3c6b06ada47
+  replacement: e844115e6636cd6effa1ecfa536bd054d66afa1f904462677cb41142dd7feb81
+               1bc0c7aed6cdeb6d5fdcfe855b0f32c55bac03276e7731dc8fbea6e1b1a55ed9
+  control B:   bb41fd444db2d593b5b206613f53f06b008aa74a74c7446eeed4ac7dc3455aa8
+               2c08fde9299c9654a38d9f16c58a38b7b74a8d1c8b8e6f749408f524e2bd2821
+
+Control repeatability and direct measurements
+---------------------------------------------
+The unchanged controls are byte-identical at start samples 1 and 3:
+  start/1 c2949393c6fef0ed71538fb5f7a298323fd50d87c4fb09db37c720359883cdb5
+  start/3 04c0a4e7d4b610135633113219a5484c76131360d63cc7a147e940d83ddd4e08
+
+Replacement-to-that-exact-control RMSE is 0.0311287 at start/1 and 0.0406163
+at start/3. The later controls are not globally phase-identical: their
+same-index RMSE ranges from 0.0508476 to 0.0720664 after movement. Global RMSE
+therefore cannot by itself discriminate the substitution and is retained as
+a limitation rather than normalized away.
+
+Repeated local discriminator
+----------------------------
+For each anchor, every one of the three replacement samples was compared with
+all six control samples (three from each fresh control): 18 absolute grayscale
+difference masks. Their pixelwise intersection prevents any one control arm,
+sample index, or animation phase from defining the result.
+
+Pixels surviving all 18 comparisons at a 5% grayscale threshold:
+  start:         689 pixels, 41x195+302+190, largest component 265 pixels
+  after-up1:     466 pixels, 44x202+319+195, largest component 194 pixels
+  after-right:    89 pixels, 20x64+341+230,  largest component 62 pixels
+  after-up2:     532 pixels, 41x195+304+189, largest component 115 pixels
+
+At 2%, the corresponding counts are 1,498, 1,667, 352, and 2,348 pixels;
+each remains confined to the same moving local figure. At 10%, only one start
+pixel survives and the other anchors are empty. This bounds the demonstrated
+color/intensity delta rather than hiding the threshold dependence.
+
+Visual inspection of the direct frames and the 18-way masks confirms that the
+surviving regions lie on the input-controlled central on-screen figure at all
+four trajectory anchors and move with it. No stable intersection pixel lies
+outside the listed local boxes. Background, plant, ground, HUD, and camera-
+phase residuals disappear under the 18-way intersection.
+
+Rejected/incomplete attempts and correction
+--------------------------------------------
+One control-A retry remained at the known 954-line pre-resource boundary after
+the level Return. Its ignored log hash is:
+  d347ee200fd199f136b151ee626d4e9c1e72b2316b89c27b590cd3e640690770
+It did not load the tested paths and contributes no substitution evidence.
+
+An earlier control-A attempt reached line 1474, Start ClearLoadScreen, and was
+initially stopped as a suspected post-load stall. Isolated game-surface
+inspection on the accepted retry demonstrated that line 1474 is the natural
+Training title waiting for its start key; End ClearLoadScreen, End InitMainGame,
+and NextLife follow that key. The earlier attempt is therefore reclassified as
+operator-rejected and incomplete, not a game fault. Its ignored log hash is:
+  4b4abf7014450eafa9e6cc839a984256d1028d75863a26f1ac06aa8cdc7f709a
+
+Every accepted arm followed a clean scoped Wine-prefix shutdown. The final R:
+mapping was restored to the pristine derived tree, and no scoped process or
+private mute sink remained.
+
+Result
+------
+Positive bounded discriminator. The exact one-path ALL replacement is accepted
+by the unchanged executable and causes a repeated, local rendered difference
+on the input-controlled central figure along all four tested anchors. This
+confirms a causal loaded-file-to-rendered-region link for the exact paths and
+hashes in this experiment. It does not establish ALL layout or field semantics,
+filename identity, general replacement compatibility, an M1 payload link, or
+the complete character loader/runtime-object chain.

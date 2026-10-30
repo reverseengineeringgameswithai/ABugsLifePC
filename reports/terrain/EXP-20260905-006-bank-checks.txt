@@ -1,0 +1,81 @@
+Terrain-only banking checks; full make check and R2q deliberately not run.
+pefile: 2024.8.26
+lief: 1.0.0
+capstone: 5.0.9
+construct: 2.10.70
+rich: 15.0.0
+pytest: 9.1.1
+hypothesis: 6.165.3
+yaml: 6.0.3
+pydantic: 2.13.4
+networkx: 3.6.1
+unicorn: 2.1.4
+Python: 3.14.6
+Context budget (estimated_tokens = bytes // 4; startup sequence from START HERE):
+    tokens      bytes   lines  note
+      1325       5300      98  Vault/00-System/START HERE.md
+     77321     309286    4460  Vault/00-System/Current State.md *
+    101303     405214    6774  Vault/00-System/Project Roadmap.md *
+     19554      78216    1184  Vault/00-System/Environment Status.md
+    130109     520439    7138  Vault/50-Decisions/Decision Log.md *
+     64698     258793    3846  Vault/70-Known-Unknowns/Known Unknowns.md *
+     12496      49987     799  Vault/01-MOCs/Reverse Engineering MOC.md
+    406808    1627235   24299  TOTAL of 7 mandated notes (session budget 120000)
+WARNING: Vault/00-System/Current State.md: 77321 estimated tokens exceeds the 40000-token note budget
+WARNING: Vault/00-System/Project Roadmap.md: 101303 estimated tokens exceeds the 40000-token note budget
+WARNING: Vault/50-Decisions/Decision Log.md: 130109 estimated tokens exceeds the 40000-token note budget
+WARNING: Vault/70-Known-Unknowns/Known Unknowns.md: 64698 estimated tokens exceeds the 40000-token note budget
+WARNING: mandated startup sequence totals 406808 estimated tokens across 7 notes, exceeding the 120000-token session budget
+WARNING: Vault/00-System/Current State Archive.md: updated: 2026-08-17 is older than the newest session note date 2026-09-05
+WARNING: Vault/00-System/START HERE.md: updated: 2026-08-17 is older than the newest session note date 2026-09-05
+WARNING: 6 notes have no inbound wikilink (entry points excluded; use --list-orphans for detail)
+ERROR: Vault/30-Experiments/EXP-20260905-005 - Original wall texture regions and colour inputs.md: missing frontmatter keys: environment, result
+ERROR: Vault/30-Experiments/EXP-20260905-006 - World-scale terrain tiling and checked mesh growth.md: missing frontmatter keys: environment, result
+Vault lint: 665 notes, 2 errors, 8 warnings
+make: *** [Makefile:18: vault-lint] Error 1
+
+Protected checkpoint and stash:
+3355a0f43987c5b634730a3c863f7f088a2f8515
+76db1c9ee1ffffce52cea6aee591c24ab6a1c39a
+
+Protected original metadata:
+originals/BUGS_PC.ISO 533114880 644 1786500452
+originals/Win95 OSR2.ISO 596070400 644 1787012793
+
+Banking retry after metadata-only frontmatter correction; no code or test changes.
+pefile: 2024.8.26
+lief: 1.0.0
+capstone: 5.0.9
+construct: 2.10.70
+rich: 15.0.0
+pytest: 9.1.1
+hypothesis: 6.165.3
+yaml: 6.0.3
+pydantic: 2.13.4
+networkx: 3.6.1
+unicorn: 2.1.4
+Python: 3.14.6
+Context budget (estimated_tokens = bytes // 4; startup sequence from START HERE):
+    tokens      bytes   lines  note
+      1325       5300      98  Vault/00-System/START HERE.md
+     77321     309286    4460  Vault/00-System/Current State.md *
+    101303     405214    6774  Vault/00-System/Project Roadmap.md *
+     19554      78216    1184  Vault/00-System/Environment Status.md
+    130109     520439    7138  Vault/50-Decisions/Decision Log.md *
+     64698     258793    3846  Vault/70-Known-Unknowns/Known Unknowns.md *
+     12496      49987     799  Vault/01-MOCs/Reverse Engineering MOC.md
+    406808    1627235   24299  TOTAL of 7 mandated notes (session budget 120000)
+WARNING: Vault/00-System/Current State.md: 77321 estimated tokens exceeds the 40000-token note budget
+WARNING: Vault/00-System/Project Roadmap.md: 101303 estimated tokens exceeds the 40000-token note budget
+WARNING: Vault/50-Decisions/Decision Log.md: 130109 estimated tokens exceeds the 40000-token note budget
+WARNING: Vault/70-Known-Unknowns/Known Unknowns.md: 64698 estimated tokens exceeds the 40000-token note budget
+WARNING: mandated startup sequence totals 406808 estimated tokens across 7 notes, exceeding the 120000-token session budget
+WARNING: Vault/00-System/Current State Archive.md: updated: 2026-08-17 is older than the newest session note date 2026-09-05
+WARNING: Vault/00-System/START HERE.md: updated: 2026-08-17 is older than the newest session note date 2026-09-05
+WARNING: 6 notes have no inbound wikilink (entry points excluded; use --list-orphans for detail)
+Vault lint: 665 notes, 0 errors, 8 warnings
+M4 compatibility statement valid: ablpc-m4-compatibility-v0.2 (5 hash anchors)
+
+Fast pre-staging checks passed.
+Tracked-file audit: 0 violation(s)
+Staged diff and protected-path checks passed.

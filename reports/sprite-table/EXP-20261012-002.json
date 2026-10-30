@@ -1,0 +1,241 @@
+{
+ "experiment": "EXP-20261012-002",
+ "binaries": {
+  "retail": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "production": "c3d8b207267b416679e963254dff837b7c8e6060136627e8c991c62120ad9027 (all bytes below identical to retail; no added section references the table)"
+ },
+ "table": {
+  "address": "0x005BFD70",
+  "entries": 128,
+  "renderer_read": "0x00453510 indexes it by the drop record's sprite"
+ },
+ "dispatcher": {
+  "address": "0x00467C00",
+  "caller": "level loader 0x004671D0",
+  "case_0": "0x004415E0 (no sprite list; engine index 0 = no level loaded)"
+ },
+ "shared_setter": {
+  "address": "0x00456860",
+  "via_thunk": "0x004011F4",
+  "gate": "skips unless [0x00861C84] (engine level index) is nonzero",
+  "fills": {
+   "115": "0x4d7be0",
+   "116": "0x4d7bd0",
+   "117": "0x4d7bc0",
+   "118": "0x4d7bb0",
+   "119": "0x4d7ba0",
+   "120": "0x4d7b90",
+   "121": "0x4d7b80",
+   "122": "0x4d7b70",
+   "123": "0x4d7b58",
+   "124": "0x4d7b38",
+   "125": "0x4d7b48",
+   "126": "0x4d7b18",
+   "127": "0x4d7b00"
+  },
+  "called_from": "every initializer after its copy, plus 0x00437941 and 0x0043CE21"
+ },
+ "fragment_needs": {
+  "0x7B (123)": "drop type 0x78 glyph (type table 0x004D64C4 row field 0)",
+  "4": "retirement action 7 sparkles: drop types 0x13 and 0x14 (case 7 of 0x0042A2E0)",
+  "shadow": "behaviour 2 is drawn outside this table; the native resting leaf (type 0x2A) uses it too"
+ },
+ "per_engine": [
+  {
+   "engine": 1,
+   "level": "Anthill (also Moonlit, the Journey hub, Q and R–Z)",
+   "initializer": "0x00431b30",
+   "source_list": "0x004da6b0",
+   "entries_copied": 50,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "absent",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 2,
+   "level": "Council Chamber",
+   "initializer": "0x00432750",
+   "source_list": "0x004da7b8",
+   "entries_copied": 50,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "absent",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 3,
+   "level": "Tunnels",
+   "initializer": "0x00433500",
+   "source_list": "0x004da8f8",
+   "entries_copied": 52,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 4,
+   "level": "City Entrance",
+   "initializer": "0x00433e90",
+   "source_list": "0x004dad20",
+   "entries_copied": 51,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "absent",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 5,
+   "level": "City Square",
+   "initializer": "0x00434490",
+   "source_list": "0x004daf10",
+   "entries_copied": 55,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 6,
+   "level": "Cliffside",
+   "initializer": "0x004348c0",
+   "source_list": "0x004db160",
+   "entries_copied": 50,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "absent",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 7,
+   "level": "Clover Forest",
+   "initializer": "0x00435f70",
+   "source_list": "0x004db340",
+   "entries_copied": 64,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 8,
+   "level": "Riverbed Flight",
+   "initializer": "0x004368f0",
+   "source_list": "0x004db548",
+   "entries_copied": 53,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 9,
+   "level": "Anthill Pt 2",
+   "initializer": "0x004378b0",
+   "source_list": "0x004db6a8",
+   "entries_copied": 53,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 10,
+   "level": "Riverbed Canyon",
+   "initializer": "0x00437f10",
+   "source_list": "0x004db7e8",
+   "entries_copied": 52,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 11,
+   "level": "Bird Nest",
+   "initializer": "0x00438660",
+   "source_list": "0x004db940",
+   "entries_copied": 51,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "absent",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 12,
+   "level": "The Tree",
+   "initializer": "0x004392e0",
+   "source_list": "0x004dba88",
+   "entries_copied": 53,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 13,
+   "level": "Battle Arena",
+   "initializer": "0x00439c70",
+   "source_list": "0x004dbc58",
+   "entries_copied": 52,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 14,
+   "level": "Bug Bar",
+   "initializer": "0x0043ac20",
+   "source_list": "0x004dbdb0",
+   "entries_copied": 50,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "absent",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 15,
+   "level": "Canyon Showdown",
+   "initializer": "0x0043bb40",
+   "source_list": "0x004dbf40",
+   "entries_copied": 53,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 16,
+   "level": "engine 16 (circus-tent stage)",
+   "initializer": "0x0043bf40",
+   "source_list": "0x004dc0c0",
+   "entries_copied": 51,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "absent",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 17,
+   "level": "Training",
+   "initializer": "0x0043cbe0",
+   "source_list": "0x004dc238",
+   "entries_copied": 52,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 18,
+   "level": "engine 18 (not in the roster)",
+   "initializer": "0x0043cd90",
+   "source_list": "0x004dc3f8",
+   "entries_copied": 57,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "set",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  },
+  {
+   "engine": 19,
+   "level": "engine 19 (not in the roster)",
+   "initializer": "0x0043d980",
+   "source_list": "0x004dc588",
+   "entries_copied": 50,
+   "entry_4_sparkle": "set",
+   "entry_51_0x33": "absent",
+   "entries_115_127": "set by 0x00456860 (engine index nonzero)"
+  }
+ ],
+ "unreferenced_list": {
+  "initializer": "0x00431670",
+  "source_list": "0x004DA5C0",
+  "entries_copied": 50,
+  "note": "not in the 0x00467C00 switch; no caller found"
+ }
+}

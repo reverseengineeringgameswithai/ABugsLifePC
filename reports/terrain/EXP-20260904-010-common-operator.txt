@@ -1,0 +1,23 @@
+from pathlib import Path
+import json,hashlib,os,struct
+ROOT=Path('/home/dev/ABLPC');HERE=Path(__file__).resolve().parent
+PLAN=ROOT/'work/experiments/EXP-20260904-009/candidate-plan.json'
+plan=json.loads(PLAN.read_text());runtime=ROOT/'work/experiments/USER-20260904-deck-depth-play-001/runtime.py'
+ns={'__file__':str(runtime)}
+exec(compile(runtime.read_text().split('\ntry:\n action=')[0],str(runtime),'exec'),ns)
+original=Path(plan['before_file']).read_bytes();candidate=Path(plan['candidate_file']).read_bytes()
+address=int(plan['address'],16);size=plan['bytes'];assert address==0x6662a7 and size==1078
+assert len(original)==len(candidate)==size
+assert hashlib.sha256(original).hexdigest()==plan['before_sha256']
+assert hashlib.sha256(candidate).hexdigest()==plan['candidate_sha256']
+assert hashlib.sha256(runtime.read_bytes()).hexdigest()=='1a31bc4baf6705a97b812f494fd7dcaf2b5647e6830d105d998bed8dc1729c01'
+
+def guard(expected=None):
+ meta=ns['guard']();assert meta['game']==plan['process']
+ state=ns['state'](meta)
+ assert json.loads(json.dumps(state))==plan['state'],'paused state changed'
+ assert struct.unpack('<I',ns['mem'](meta,0x5ba240,4))[0]+113136==address
+ assert struct.unpack('<I',ns['mem'](meta,0x64f1a7+20,4))[0]==address
+ assert ns['mem'](meta,0x64f1a7+18,1)==b'\x00'
+ if expected is not None:assert ns['mem'](meta,address,size)==expected,'prefix mismatch'
+ return meta,state

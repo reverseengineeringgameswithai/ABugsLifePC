@@ -1,0 +1,182 @@
+{
+  "dispatch_mask": 49135,
+  "dispatch_value": 73,
+  "totals": {
+    "files_scanned": 21,
+    "files_with_dispatch_0x49_records": 14,
+    "matching_records": 990,
+    "parsed_references": 990,
+    "unique_positive_target_blocks": 201,
+    "errors": 0
+  },
+  "files": [
+    {
+      "path": "LEVEL00/LEVEL.DAT",
+      "sha256": "b9fb1650f96aa187cf3a3cebaf588424596a4a1a164f9de71ff296131d57297f",
+      "matching_records": 0,
+      "parsed_references": 0,
+      "unique_positive_target_blocks": 0,
+      "errors": []
+    },
+    {
+      "path": "LEVEL01/LEVEL.DAT",
+      "sha256": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53",
+      "matching_records": 9,
+      "parsed_references": 9,
+      "unique_positive_target_blocks": 4,
+      "errors": []
+    },
+    {
+      "path": "LEVEL01/LEVEL1.DAT",
+      "sha256": "20a8fd66de234e5ce30131cb3997f33dd75527c1fb18c5ffed5f33681cf6da15",
+      "matching_records": 0,
+      "parsed_references": 0,
+      "unique_positive_target_blocks": 0,
+      "errors": []
+    },
+    {
+      "path": "LEVEL01/LEVEL2.DAT",
+      "sha256": "196a0f729ac24a29742ff6bd989a892e153431e90386005d84d20afcbe221311",
+      "matching_records": 0,
+      "parsed_references": 0,
+      "unique_positive_target_blocks": 0,
+      "errors": []
+    },
+    {
+      "path": "LEVEL02/LEVEL.DAT",
+      "sha256": "0bb00fa7387c2125ae20c55400bf5cea6a64641a7328cedc5cbd543bbd437ee7",
+      "matching_records": 0,
+      "parsed_references": 0,
+      "unique_positive_target_blocks": 0,
+      "errors": []
+    },
+    {
+      "path": "LEVEL02/LEVEL1.DAT",
+      "sha256": "5e850a16ee98bd9d7feb747b53390babeef372e98a82378f602104cd7ba76471",
+      "matching_records": 36,
+      "parsed_references": 36,
+      "unique_positive_target_blocks": 6,
+      "errors": []
+    },
+    {
+      "path": "LEVEL03/LEVEL.DAT",
+      "sha256": "bda28dc7287ebc3648998425b3c09f19d6470a85c9fcd439cca5ad8e391c0f2b",
+      "matching_records": 42,
+      "parsed_references": 42,
+      "unique_positive_target_blocks": 15,
+      "errors": []
+    },
+    {
+      "path": "LEVEL03/LEVEL1.DAT",
+      "sha256": "c0a1d40cb912162ee5ace15efed11022b4852a55238f238a1b650030f1dfb48d",
+      "matching_records": 63,
+      "parsed_references": 63,
+      "unique_positive_target_blocks": 59,
+      "errors": []
+    },
+    {
+      "path": "LEVEL04/LEVEL.DAT",
+      "sha256": "a6bbb538257e8652645df847623fa3623d889fdb7211891c2b145a2a18ffc905",
+      "matching_records": 355,
+      "parsed_references": 355,
+      "unique_positive_target_blocks": 42,
+      "errors": []
+    },
+    {
+      "path": "LEVEL04/LEVEL1.DAT",
+      "sha256": "a81f2397d32983014b5f3354e1dece7604168f84a998572ef1d9a8bada1d4dd2",
+      "matching_records": 9,
+      "parsed_references": 9,
+      "unique_positive_target_blocks": 9,
+      "errors": []
+    },
+    {
+      "path": "LEVEL04/LEVEL4.DAT",
+      "sha256": "26f41f703491b260139999f9e790053a0b2971bc1661e5fc37736259e7ca58a4",
+      "matching_records": 0,
+      "parsed_references": 0,
+      "unique_positive_target_blocks": 0,
+      "errors": []
+    },
+    {
+      "path": "LEVEL05/LEVEL.DAT",
+      "sha256": "438372b363692af46351be01f0e74d3cd0547980147766e4a00b2445b75c8d90",
+      "matching_records": 237,
+      "parsed_references": 237,
+      "unique_positive_target_blocks": 20,
+      "errors": []
+    },
+    {
+      "path": "LEVEL05/LEVEL1.DAT",
+      "sha256": "46e24f7566aa7592d8b118369088f5ca34ec05df028dd72383fed382cf4cc30b",
+      "matching_records": 83,
+      "parsed_references": 83,
+      "unique_positive_target_blocks": 21,
+      "errors": []
+    },
+    {
+      "path": "LEVEL06/LEVEL.DAT",
+      "sha256": "7b23281eda241e215ea35f767f3dcf9bc948ec8b14b11ae7b572a997be1ee688",
+      "matching_records": 4,
+      "parsed_references": 4,
+      "unique_positive_target_blocks": 1,
+      "errors": []
+    },
+    {
+      "path": "LEVEL06/LEVEL1.DAT",
+      "sha256": "7aab378d952f807ef283e93e90fc1c6f0f060e774a9c315f75b37c1cf54c2f13",
+      "matching_records": 6,
+      "parsed_references": 6,
+      "unique_positive_target_blocks": 5,
+      "errors": []
+    },
+    {
+      "path": "LEVEL07/LEVEL.DAT",
+      "sha256": "3b130e5a596b716f841e45b7fc0f8b0fea7c6e1d7fc2add795760ededca63d42",
+      "matching_records": 1,
+      "parsed_references": 1,
+      "unique_positive_target_blocks": 1,
+      "errors": []
+    },
+    {
+      "path": "LEVEL07/LEVEL1.DAT",
+      "sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+      "matching_records": 135,
+      "parsed_references": 135,
+      "unique_positive_target_blocks": 12,
+      "errors": []
+    },
+    {
+      "path": "LEVEL08/LEVEL.DAT",
+      "sha256": "596a13e3b80765ee81b0331ac74dd66916075683bcd3066ba51729c07e42d7ab",
+      "matching_records": 1,
+      "parsed_references": 1,
+      "unique_positive_target_blocks": 1,
+      "errors": []
+    },
+    {
+      "path": "LEVEL08/LEVEL1.DAT",
+      "sha256": "58d83d2ce2b05307ddda1eee56b730427866ae6f4b08221af45a4cf73f4db976",
+      "matching_records": 0,
+      "parsed_references": 0,
+      "unique_positive_target_blocks": 0,
+      "errors": []
+    },
+    {
+      "path": "LEVEL09/LEVEL.DAT",
+      "sha256": "92559f64f0cad9e05d31972757f7f639d86aea713b9fe7698fa455a46ddcddab",
+      "matching_records": 9,
+      "parsed_references": 9,
+      "unique_positive_target_blocks": 5,
+      "errors": []
+    },
+    {
+      "path": "LEVEL10/LEVEL.DAT",
+      "sha256": "bba726988e64192d9bff73d5be8c0582f1d6a885b152050ec4e8883983a47319",
+      "matching_records": 0,
+      "parsed_references": 0,
+      "unique_positive_target_blocks": 0,
+      "errors": []
+    }
+  ]
+}

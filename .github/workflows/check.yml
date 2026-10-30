@@ -1,0 +1,202 @@
+# ABLPC repository gate.
+#
+# SCOPE: this workflow runs the *synthetic* repository suite only. Nothing here
+# launches the game, Wine, Gamescope, a debugger, rr, or any GPU/renderer path,
+# and no original media, disc image, ROM or executable is available to a runner
+# (`scripts/audit-tracked-files.py` exists precisely to keep those out of the
+# repository). Runtime / live-game evidence stays a manually authorized,
+# host-local activity recorded in the Vault; it is deliberately out of scope for
+# CI and a green run here is NOT runtime acceptance. Tests that need a host
+# resource (gdb, a C compiler, an ignored retail-derived executable, unshare)
+# skip themselves rather than fail.
+#
+# KU-065 RULE: pytest output is written *raw and unfiltered* to a file and
+# uploaded as an artifact. The first four KU-065 failures were lost forever
+# because output was piped through grep/sed live and the FAILED line was
+# discarded. Any filtering here is done afterwards, against the retained file,
+# never in the live pipeline.
+
+name: check
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Matches the development host (Python 3.14.6, see Environment Status) and
+  # the pinned `requirements.lock`.
+  PYTHON_VERSION: "3.14"
+
+jobs:
+  check:
+    name: repository gate (synthetic suite)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Record the resolved interpreter
+        run: |
+          set -euo pipefail
+          python --version
+          python -c "import sys; print(sys.executable)"
+
+      # The Makefile and several tests hard-code `.venv/bin/python` as the
+      # project interpreter (e.g. tests/test_input_movie.py PYTHON), so the
+      # venv must exist at the repository root with exactly that layout.
+      - name: Create .venv and install the pinned dependency set
+        run: |
+          set -euo pipefail
+          python -m venv .venv
+          .venv/bin/python -m pip install --upgrade pip
+          # requirements.lock is the pinned set; requirements.in is the
+          # unpinned intent and must not be installed here.
+          .venv/bin/python -m pip install -r requirements.lock
+          .venv/bin/python -m pip freeze > pip-freeze.txt
+
+      - name: Identify the git subject
+        run: |
+          set -euo pipefail
+          # Some tests create throwaway repositories with `git init`; give the
+          # runner an identity so any commit they make cannot prompt.
+          git config --global user.email "ci@example.invalid"
+          git config --global user.name "ABLPC CI"
+          git config --global init.defaultBranch main
+
+      # Non-pytest halves of `make check`, run through the Makefile itself so
+      # this workflow cannot drift from the local gate definition.
+      - name: make python-doctor vault-lint m4-compatibility audit-tracked
+        run: make python-doctor vault-lint m4-compatibility audit-tracked
+
+      - name: git diff --check (whitespace / conflict markers)
+        run: |
+          set -euo pipefail
+          git diff --check
+          git diff --cached --check
+
+      # pytest-randomly is NOT in requirements.lock, so `-p no:randomly` would
+      # abort with "unknown plugin". Re-add it here if the plugin is ever
+      # pinned; test order must stay deterministic for KU-065-class triage.
+      - name: pytest (raw log retained)
+        id: pytest
+        run: |
+          set -uo pipefail
+          mkdir -p ci-logs
+          PYTHONPATH="$PWD/reimplementation:${PYTHONPATH:-}" \
+            .venv/bin/python -m pytest -q --tb=short \
+            > ci-logs/pytest-raw.log 2>&1
+          rc=$?
+          echo "exit_code=$rc" >> "$GITHUB_OUTPUT"
+          # Filtering happens only against the retained raw log, never live.
+          grep -E '^(FAILED|ERROR)' ci-logs/pytest-raw.log \
+            > ci-logs/failed-nodes.txt || true
+          tail -n 40 ci-logs/pytest-raw.log
+          {
+            echo '### pytest'
+            echo '```'
+            tail -n 15 ci-logs/pytest-raw.log
+            echo '```'
+            if [ -s ci-logs/failed-nodes.txt ]; then
+              echo '### failing nodes'
+              echo '```'
+              cat ci-logs/failed-nodes.txt
+              echo '```'
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit "$rc"
+
+      - name: Upload raw pytest log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-raw-log
+          path: |
+            ci-logs/
+            pip-freeze.txt
+          if-no-files-found: warn
+          retention-days: 30
+
+  flaky-node-watch:
+    # KU-065 guard. `tests/test_input_movie.py::test_log_anchor_uses_only_new
+    # _log_bytes` failed intermittently for five recorded recurrences before
+    # its ordering race was removed; a single suite run would not have caught
+    # it (EXP-20260816-170 measured 15 pass / 5 fail over 20 isolated runs).
+    # This job re-runs the historically flaky node many times so any
+    # reintroduced ordering race shows up as a tally, not as a mystery.
+    name: flaky-node watch (KU-065)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      NODE: "tests/test_input_movie.py::test_log_anchor_uses_only_new_log_bytes"
+      ITERATIONS: "50"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Create .venv and install the pinned dependency set
+        run: |
+          set -euo pipefail
+          python -m venv .venv
+          .venv/bin/python -m pip install --upgrade pip
+          .venv/bin/python -m pip install -r requirements.lock
+
+      - name: Identify the git subject
+        run: |
+          set -euo pipefail
+          git config --global user.email "ci@example.invalid"
+          git config --global user.name "ABLPC CI"
+          git config --global init.defaultBranch main
+
+      - name: Repeat the node and report the tally
+        run: |
+          set -uo pipefail
+          mkdir -p ci-logs/flaky
+          pass=0
+          fail=0
+          for i in $(seq -w 1 "$ITERATIONS"); do
+            # One direct raw redirect per invocation, exactly as KU-065's
+            # discriminating experiment requires. No live filter.
+            PYTHONPATH="$PWD/reimplementation:${PYTHONPATH:-}" \
+              .venv/bin/python -m pytest -q "$NODE" \
+              > "ci-logs/flaky/run-$i.log" 2>&1
+            rc=$?
+            if [ "$rc" -eq 0 ]; then
+              pass=$((pass + 1))
+            else
+              fail=$((fail + 1))
+              echo "FAIL run-$i exit=$rc"
+            fi
+          done
+          echo "tally: pass=$pass fail=$fail total=$ITERATIONS"
+          {
+            echo '### KU-065 flaky-node watch'
+            echo ''
+            echo "node: \`$NODE\`"
+            echo ''
+            echo "pass **$pass** / fail **$fail** / total **$ITERATIONS**"
+          } >> "$GITHUB_STEP_SUMMARY"
+          test "$fail" -eq 0
+
+      - name: Upload per-run raw logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flaky-node-raw-logs
+          path: ci-logs/flaky/
+          if-no-files-found: warn
+          retention-days: 30

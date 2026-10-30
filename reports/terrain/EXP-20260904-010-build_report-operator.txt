@@ -1,0 +1,29 @@
+from pathlib import Path
+import json,hashlib
+from PIL import Image
+ROOT=Path('/home/dev/ABLPC');HERE=Path(__file__).resolve().parent
+load=lambda n:json.loads((HERE/n).read_text());hashfile=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+result=load('result.json');comparison=load('comparison.json');plan=json.loads((ROOT/'work/experiments/EXP-20260904-009/candidate-plan.json').read_text())
+assert result['error'] is None and result['restoration']=='exact-original-restored' and len(result['writes'])==2
+assert comparison['before_restored_roi_identical'] and comparison['state_identical_all_9']
+prior=json.loads((ROOT/'work/experiments/EXP-20260904-009/pixel-depths-exploratory.json').read_text());camera=plan['state']['camera_translation'];a=1409/4096;b=3845/4096;den=a*a+b*b;points=[]
+for row in prior['rows']:
+ sx,sy=row['xy'];z=(-108544-camera[1])/32*320/(sy-240);x=(sx-320)/320*z
+ wx=camera[0]+32*(a*x-b*z)/den;wz=camera[2]+32*(b*x+a*z)/den
+ actor=row['depths_actor_coarse_split'][0]
+ if 163200<=wx<=184000 and 497600<=wz<=520000 and actor is not None and z/16384<actor:points.append(tuple(row['xy']))
+assert len(points)==259
+blue=lambda rgb:rgb[2]>rgb[0]+6 and rgb[2]>rgb[1]+2
+remaining={}
+for arm in ['before','candidate','restored']:
+ ims=[Image.open(x['frame']).convert('RGB') for x in result['captures'][arm]]
+ remaining[arm]=[sum(blue(im.getpixel(p)) for p in points) for im in ims]
+paths=[HERE/n for n in ['authorization.json','started.json','result.json','comparison.json','comparison.html','final-state.json','final-loaded-data.txt','pre-audit.json','post-audit.json','stop-probes.json','suspensions.json','apply-write.json','restore-write.json','live_compare.py','common.py','freeze.py','compare.py']]
+paths += [Path(r['frame']) for rows in result['captures'].values() for r in rows]
+artifacts=[{'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':hashfile(p)} for p in paths]
+probe=load('stop-probes.json');stops=load('suspensions.json')
+report={'experiment':'EXP-20260904-010','status':'completed-bounded-live-comparison-original-restored','result':'Subdivision removes all255 previously identified inversion-point blue fragments in this exact paused pose; restoring the original mesh restores all3575 ROI pixels. Six other analytically occluded boundary samples remain blue.','authorization':load('authorization.json'),'process':plan['process'],'executed_game_sha256':'1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f','retail_static_executable_sha256':'97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878','reference_experiment':'EXP-20260904-009','original_plan_sha256':hashfile(ROOT/'work/experiments/EXP-20260904-009/candidate-plan.json'),'source_level_dat_sha256':plan['old_level_dat_sha256'],'candidate_level_dat_sha256':plan['candidate_level_dat_sha256'],'terrain_sha256':plan['terrain_sha256'],'state':plan['state'],'writes':[{k:r[k] for k in ['phase','address','bytes','bytes_written','before_sha256','target_sha256','after_sha256','status','elapsed_seconds','frame_chain','renderer_return','frame_end_gate','state_after_resume']} for r in result['writes']],'captures':result['captures'],'comparison':comparison,'prior_259_analytic_top_occluded_samples_blue_counts':remaining,'control':{'scoped_process_suspensions':len(probe)+len(stops),'inspection_only_probes':len(probe),'transaction_stops':len(stops),'accepted_write_stops':2,'ptrace':'Each scoped SIGSTOP uses PTRACE_SEIZE/INTERRUPT/GETREGS/DETACH for read-only registers; all threads stop, and SIGCONT resumes the same owned process. No breakpoint or register writes.','stop_duration_seconds_max':max(r['elapsed_seconds'] for r in probe+stops),'frame_end_gate':'First original return reached through a valid live EBP chain must be0x00405B74, with enclosing renderer return0x0044DBF3; PC inside Wine and bounded32-bit stack. Original timer call is0x00405B72; scene driver has finished geometry before0x0044DBEE calls it through0x004017CB.','other_actions':{'gameplay_keys':0,'restarts':0,'launches':0,'closes':0,'breakpoints':0,'register_writes':0,'collision_writes':0,'player_or_camera_writes':0}},'validation':{'synthetic_stop_register_read_detach_resume':'passed on one disposable Python child','captured_stack_gate':'three genuine recorded frame-limiter chains pass; three corrupted enclosing-return cases reject','write_guards':'exact process identity, code hash/bytes, object pointers/offset, player/camera/contact, whole expected mesh prefix and readback','before_after_audit_equal':load('pre-audit.json')==load('post-audit.json'),'final':load('final-state.json')},'limits':['One captured side pose only; oscillating gameplay was not replayed.','The four-way candidate still leaves six of259 analytic-top boundary samples blue; it is a bounded improvement, not complete occlusion or an all-view fix.','Some visible model lies legitimately above the box edge; ROI blue count does not directly count defective pixels.','Subdivision changes UV interpolation too; depth mechanism is independently supported by EXP009 original-instruction analysis.','No full-frame equality, complete GPU model, general face-size rule, whole-level authoring or EXP005 shared-floor repair is claimed.','The current game has the original six-quad mesh restored as authorized; the candidate is retained offline and is not installed permanently.'],'artifacts':artifacts}
+out=ROOT/'reports/terrain/EXP-20260904-010.json';out.write_text(json.dumps(report,indent=2)+'\n')
+for source in ['live_compare.py','common.py','freeze.py','compare.py','build_report.py']:
+ (ROOT/'reports/terrain'/('EXP-20260904-010-'+Path(source).stem+'-operator.txt')).write_text((HERE/source).read_text())
+print(json.dumps({'sha256':hashfile(out),'bytes':out.stat().st_size,'remaining_boundary_samples':remaining,'stops':len(probe)+len(stops),'max_stop_seconds':report['control']['stop_duration_seconds_max']},indent=2))

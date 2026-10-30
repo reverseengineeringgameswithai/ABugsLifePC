@@ -1,0 +1,85 @@
+"""Bounded static/original-instruction check; no live memory modification."""
+from pathlib import Path
+import hashlib
+import json
+import struct
+import sys
+
+import capstone
+import pefile
+from unicorn import Uc, UC_ARCH_X86, UC_MODE_32
+from unicorn.x86_const import UC_X86_REG_ESP, UC_X86_REG_ESI, UC_X86_REG_ECX, UC_X86_REG_EDI, UC_X86_REG_EBP
+
+ROOT = Path('/home/dev/ABLPC')
+sys.path.insert(0, str(ROOT / 'reimplementation'))
+from ablpc.level_dat import LevelDat
+
+HERE = Path(__file__).resolve().parent
+binary = ROOT / 'work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe'
+binary_hash = hashlib.sha256(binary.read_bytes()).hexdigest()
+assert binary_hash == '97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878'
+pe = pefile.PE(str(binary))
+image = pe.get_memory_mapped_image()
+path = ROOT / 'work/copies/USER-20260904-deck-play-001/PC/BUGS/CD/LEVEL01/LEVEL.DAT'
+raw = path.read_bytes()
+assert hashlib.sha256(raw).hexdigest() == '364d665aa2935f1a7aed3694e849ab6bc292af376fde33c44ff4ddbbac967bae'
+mesh = LevelDat.parse(raw).static_mesh_reference('primary', 160)
+offset = mesh.object_offset + 0x12
+assert (mesh.object_offset, offset, raw[offset]) == (18672, 18690, 8)
+
+def original_slices(value):
+    cpu = Uc(UC_ARCH_X86, UC_MODE_32)
+    cpu.mem_map(0x400000, 0x500000)
+    cpu.mem_write(0x400000, image)
+    cpu.mem_map(0x1000000, 0x10000)
+    stack, obj = 0x1008000, 0x1001000
+    cpu.mem_write(obj + 0x12, bytes([value]))
+    cpu.reg_write(UC_X86_REG_ESP, stack)
+    cpu.reg_write(UC_X86_REG_ESI, obj)
+    cpu.mem_write(stack + 0x54, struct.pack('<I', 0))
+    # Original type-0x41 dispatcher: literal-zero caller input + byte * 8.
+    cpu.emu_start(0x449b16, 0x449b28, count=30)
+    bias = cpu.reg_read(UC_X86_REG_ECX)
+    # Original positive quad path: truncate camera Z / 4, then add param_3.
+    cpu.mem_write(stack + 0xfc, struct.pack('<I', bias))
+    cpu.reg_write(UC_X86_REG_EDI, 800)
+    cpu.reg_write(UC_X86_REG_EBP, 1200)
+    cpu.reg_write(UC_X86_REG_ECX, 1000)
+    cpu.mem_write(0x5bd754, struct.pack('<h', 1600))
+    cpu.emu_start(0x45cfe8, 0x45d065, count=100)
+    output = [struct.unpack('<h', cpu.mem_read(a, 2))[0]
+              for a in (0x5bd744, 0x5bd74c, 0x5bd754, 0x5bd75c)]
+    return dict(object_byte=value, param_3=bias, camera_z=[800,1200,1600,1000], depth_words=output)
+
+cases = [original_slices(v) for v in (8, 0)]
+assert cases[0]['depth_words'] == [264, 364, 464, 314]
+assert cases[1]['depth_words'] == [200, 300, 400, 250]
+candidate = bytearray(raw)
+candidate[offset] = 0
+differences = [i for i, (a,b) in enumerate(zip(raw, candidate)) if a != b]
+assert differences == [offset]
+output = ROOT / 'work/copies/EXP-20260904-007/LEVEL-depth-zero.DAT'
+assert not output.exists()
+output.write_bytes(candidate)
+
+cs = capstone.Cs(capstone.CS_ARCH_X86, capstone.CS_MODE_32)
+assembly = []
+for start, size, ranges in [
+    (0x4498f0, 0x1800, [(0x449b00,0x449b4d)]),
+    (0x45a7f0, 0x5a80, [(0x45cfe8,0x45d065),(0x45e69a,0x45e6ee),(0x45e9a0,0x45ea05)]),
+]:
+    for ins in cs.disasm(pe.get_data(start-0x400000, size), start):
+        if any(a <= ins.address < b for a,b in ranges):
+            assembly.append(f'{ins.address:08x} {ins.mnemonic} {ins.op_str}')
+(HERE / 'depth-path.asm').write_text('\n'.join(assembly)+'\n')
+result = dict(experiment='EXP-20260904-007', binary_sha256=binary_hash,
+    input_level_dat_sha256=hashlib.sha256(raw).hexdigest(),
+    candidate_level_dat_sha256=hashlib.sha256(candidate).hexdigest(),
+    candidate=str(output.relative_to(ROOT)), candidate_launched=False,
+    changed_offsets=differences, object_offset=mesh.object_offset,
+    cases=cases, delta_depth_words=64, live_depth_scale=1/4096,
+    normalized_depth_delta=64/4096,
+    scope='Two isolated original-instruction slices with synthetic registers; not a full renderer execution or runtime visual fix.',
+    remaining='Causal live zero-offset comparison; face-size/depth interpolation and other rendering effects remain possible.')
+(HERE/'depth-probe.json').write_text(json.dumps(result,indent=2)+'\n')
+print(json.dumps(result,indent=2))

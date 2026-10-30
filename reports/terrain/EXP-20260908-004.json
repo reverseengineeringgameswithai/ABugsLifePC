@@ -1,0 +1,957 @@
+{
+  "experiment": "EXP-20260908-004",
+  "date": "2026-09-08",
+  "status": "bounded-native-page-residency",
+  "baseline_commit": "ba9f9314beeaf710e8be973a1330b76104a05983",
+  "milestone4_complete": false,
+  "native_streaming_enabled_in_normal_game": false,
+  "external_live_memory_writes": 0,
+  "roadmap": "Vault/40-Implementation/PC Large-Level Engine Roadmap.md",
+  "contact_checks": {
+    "accepted": true,
+    "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "native_slots": 24,
+    "simultaneous_pins": [
+      1,
+      2
+    ],
+    "simultaneous_retirement": {
+      "loaded": [],
+      "retired": [
+        0,
+        3
+      ],
+      "resident": [
+        1,
+        2
+      ],
+      "mapped_bytes": 49152,
+      "overlap_bytes": 118784
+    },
+    "scope": "24 actual original-x86 movement contacts, plus concurrent slots16/23; no role names inferred for all slots. Full 0x470000-byte image scanned at every byte alignment after offline completed queries; unchanged pre-mapping numeric matches are reported separately, not promoted to pointer references. Census excludes stack/register lifetime and external game/renderer allocations; not a complete live-process reference audit."
+  },
+  "movement_checks": {
+    "accepted": true,
+    "arms": [
+      {
+        "patched": false,
+        "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+        "steps": 875,
+        "publications": [
+          {
+            "loaded": [],
+            "retired": [
+              0,
+              2,
+              3
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 118784
+          },
+          {
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 52,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152,
+            "step": 104,
+            "needed": [
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 181,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152,
+            "step": 239,
+            "needed": [
+              1
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 344,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152,
+            "step": 396,
+            "needed": [
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 472,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152,
+            "step": 531,
+            "needed": [
+              1
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 636,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152,
+            "step": 688,
+            "needed": [
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 764,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152,
+            "step": 823,
+            "needed": [
+              1
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [
+              0,
+              2,
+              3
+            ],
+            "retired": [],
+            "resident": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mapped_bytes": 118784,
+            "overlap_bytes": 118784
+          }
+        ],
+        "full_reload_next_step_exact": true,
+        "source_payloads_exact": true,
+        "unmapped_read_faults": [],
+        "corrupt_second_load_rejection": "Impossible page component sizes or trailing bytes",
+        "corrupt_second_load_rolled_back": true,
+        "physical_contact_parity_all_steps": true,
+        "instruction_parity_steps": 875,
+        "maximum_traversal_resident_bytes": 49152,
+        "scope": "Six native offline corridor legs, actual disk page loads/unmaps between complete movement calls. Current coordinate/layout only; rendering and actors are not streamed. Memory accounts dedicated collision page mappings only; full original source buffers and images remain resident in the harness."
+      },
+      {
+        "patched": true,
+        "binary_sha256": "b7566474e809cb6e930f3f674f2e272256d3c6474741f8c2e963a01b64d7ac3b",
+        "steps": 875,
+        "publications": [
+          {
+            "loaded": [],
+            "retired": [
+              0,
+              2,
+              3
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 118784
+          },
+          {
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 52,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152,
+            "step": 104,
+            "needed": [
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 181,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152,
+            "step": 239,
+            "needed": [
+              1
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 344,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152,
+            "step": 396,
+            "needed": [
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 472,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152,
+            "step": 531,
+            "needed": [
+              1
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [
+              2
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 636,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              1
+            ],
+            "resident": [
+              2
+            ],
+            "mapped_bytes": 16384,
+            "overlap_bytes": 49152,
+            "step": 688,
+            "needed": [
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [
+              1
+            ],
+            "retired": [],
+            "resident": [
+              1,
+              2
+            ],
+            "mapped_bytes": 49152,
+            "overlap_bytes": 49152,
+            "step": 764,
+            "needed": [
+              1,
+              2
+            ],
+            "pins": [
+              2
+            ]
+          },
+          {
+            "loaded": [],
+            "retired": [
+              2
+            ],
+            "resident": [
+              1
+            ],
+            "mapped_bytes": 32768,
+            "overlap_bytes": 49152,
+            "step": 823,
+            "needed": [
+              1
+            ],
+            "pins": [
+              1
+            ]
+          },
+          {
+            "loaded": [
+              0,
+              2,
+              3
+            ],
+            "retired": [],
+            "resident": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "mapped_bytes": 118784,
+            "overlap_bytes": 118784
+          }
+        ],
+        "full_reload_next_step_exact": true,
+        "source_payloads_exact": true,
+        "unmapped_read_faults": [],
+        "corrupt_second_load_rejection": "Impossible page component sizes or trailing bytes",
+        "corrupt_second_load_rolled_back": true,
+        "physical_contact_parity_all_steps": true,
+        "instruction_parity_steps": 875,
+        "maximum_traversal_resident_bytes": 49152,
+        "scope": "Six native offline corridor legs, actual disk page loads/unmaps between complete movement calls. Current coordinate/layout only; rendering and actors are not streamed. Memory accounts dedicated collision page mappings only; full original source buffers and images remain resident in the harness."
+      }
+    ],
+    "seconds": 80.4338835310009
+  },
+  "query_checks": {
+    "accepted": true,
+    "comparisons": 24,
+    "scope": "All four native query collectors plus shared004ACA60 consumer, current three local positions and two binary workspaces. Exact results, candidate sequences and selected globals against all-resident control while pages0/3 are unmapped. All remaining query call contexts/actors and frame integration unproved."
+  },
+  "renderer_checks": {
+    "accepted": true,
+    "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "dat_sha256": "1b62f9de63db0cca6cb9b6bcbd64a37e4e80b2a8e219f7ed0a27117f05f749c7",
+    "views": 12,
+    "scope": "Twelve original-x86 CPU renderer contexts; all four terrain geometry pointers rebound to independent page mappings and culled mappings unmapped before drawing. Exact emitted vertex/index packet hashes, admissions, native instruction counts and batch bounds versus resident DAT. Driver COM calls stubbed; no GPU lifetime, native file IO/frame hook, camera changes within a frame, actor persistence or live streaming claim. Original DAT remains mapped as scene/global asset storage."
+  },
+  "preservation": {
+    "accepted": true,
+    "time_ns": 1788851591914062102,
+    "normal_files_exact": 721,
+    "executable_sha256": "b7566474e809cb6e930f3f674f2e272256d3c6474741f8c2e963a01b64d7ac3b",
+    "saved_blender_sha256": "52cbe34c88ee5f15a2edc242059b166b7276300f2fcbe14f48118c5a27341ca9",
+    "additions": [
+      "PC/BUGS/bugs.log"
+    ],
+    "bank_files_exact": 760,
+    "game": {
+      "pid": 154936,
+      "start": 2024608,
+      "group": 154693,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260908-002\\handoff-detail\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "state": {
+      "level": 1,
+      "position": [
+        192000,
+        -102400,
+        448000
+      ],
+      "heading": 0,
+      "contact": [
+        178,
+        9908923
+      ],
+      "barrier_head": 9888539,
+      "vertical_velocity": 0,
+      "contact_flags": 257
+    },
+    "scope": "Fresh read-only normal asset/Blender/EXE hashes and live identity/state. Generic audit rows matched to the immutable existing owned/foreign binding. No input or live writes."
+  },
+  "prior_recheck": {
+    "accepted": true,
+    "report_sha256": "171ded71f867e8d5bebfb7fa1d2693008221402496c4aa49b05739a1539c9296",
+    "artifacts_exact": 34,
+    "sources_exact": 2
+  },
+  "source_check": {
+    "accepted": true,
+    "commands": [
+      {
+        "command": [
+          "make",
+          "check"
+        ],
+        "start_ns": 1788851517772354728,
+        "end_ns": 1788851676065126603,
+        "returncode": 0
+      }
+    ],
+    "log": "/home/dev/ABLPC/work/experiments/EXP-20260908-004/source.log",
+    "log_sha256": "8ab8f9f5c23980ca1f3acca56c8a3a8c1135f12b3b4de38f69502a8530da2d49"
+  },
+  "source_files": [
+    {
+      "path": "reimplementation/ablpc/terrain_page_residency.py",
+      "bytes": 9130,
+      "sha256": "31b80368f4e6cdd42f5d9c52d1a21fd6d14bba0e9c10f9b12dc261c22bceb2c7"
+    },
+    {
+      "path": "tests/test_terrain_page_residency.py",
+      "bytes": 4830,
+      "sha256": "9282837cff69f46ff2d92713a42aac5e78d1b7bc4e2a0fe1be024cb1a08fa4eb"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "reimplementation/ablpc/terrain_pages.py",
+      "bytes": 11700,
+      "sha256": "0a371e722ca616d379f1ae2dae84b590a50f28472864803fb2ef0e936d3b42e9"
+    },
+    {
+      "path": "scripts/terrain-wall-clearance-probe.py",
+      "bytes": 10593,
+      "sha256": "2b2191ee96ac51414d6cd5b7bf024bf00f76670ade6b052d108871179cf7d12b"
+    },
+    {
+      "path": "scripts/terrain-retail-probe.py",
+      "bytes": 17792,
+      "sha256": "52ae78064bea79ec14de8f65e2529aa1b272b147b37e92599e4a9b0f24ec6980"
+    },
+    {
+      "path": "scripts/terrain-collision-probe.py",
+      "bytes": 13957,
+      "sha256": "7f6fa6e0f8b07680247ee2f55db3ba36bed6e6351402f4810ff7edcc74d27e91"
+    },
+    {
+      "path": "scripts/terrain-texture-tiling-probe.py",
+      "bytes": 4247,
+      "sha256": "28d952d6d966888bfc89f7edd0d40466a9fcf805eee21586cbefdf752d5c7cce"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-026/native-frames.py",
+      "bytes": 7501,
+      "sha256": "2ee018a76173c150d53097a1920e992fe0bcc2ba3735ab800308b8167c867023"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/replay.py",
+      "bytes": 4070,
+      "sha256": "33d3b596f81439b93f8b16f5038665a7267b86d2b948a531db6a683b3438585d"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/map.py",
+      "bytes": 6964,
+      "sha256": "2ab965807c7fcdcecd166a84f3abe873fca9a241ef5e6282c1f3ebb031e487a8"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-009/memory.json",
+      "bytes": 22524,
+      "sha256": "744d8630e8a7b6e9739199ca8fae9c657b3f548beca2f546da12b8d71844e443"
+    }
+  ],
+  "remaining": [
+    "Actual actor selector/query enumeration and inactive-slot retirement",
+    "Live frame/file IO integration with register, stack and driver lifetime closure",
+    "Persistent item/actor state, respawn, exit and primary-trailer lifecycle",
+    "Remove full-buffer duplication and measure real long-traversal memory",
+    "Wider coordinate arithmetic and hardware traversal acceptance"
+  ],
+  "private_artifacts": [
+    {
+      "path": "work/experiments/EXP-20260908-004/004A8410.json",
+      "bytes": 7815,
+      "sha256": "bc106517d2d67889d4696cf23bd7260919c56139ec63f6fb4ce117a30f6cfa12"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/004A9BA0.json",
+      "bytes": 9623,
+      "sha256": "bc4b341a023339e4a119496f9b99ca222df1852e10603cfbd1588b65621c7cd1"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/004AA4D0.json",
+      "bytes": 9626,
+      "sha256": "8ebad7a8707ada5ff32873f0dab7c04b68503585640c48b0b854401a40f0fbf2"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/004AAE30.json",
+      "bytes": 3480,
+      "sha256": "1f08f312a2b618b51d75fb45957ac37b1d270ed7c948113d3cb916c39a143913"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/004ABE00.json",
+      "bytes": 4293,
+      "sha256": "42e3bba095511e92da3708056b0363d39042c301e7d689e9fbfa9374b4ae9d59"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/004AC140.json",
+      "bytes": 4518,
+      "sha256": "286b5b0b82dd8c0e1df0a7dbb2a645a4e21e23349c283d2273761f258c1ec576"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/004AC460.json",
+      "bytes": 4258,
+      "sha256": "d25f21253f045f79780923cb1fa0e700c9a4f116a4a911014d9ce68b262bc74e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/004AC770.json",
+      "bytes": 3754,
+      "sha256": "14861640d96e8631769e2b88f1fc82e18ea24ce44b35f71b1e8fb20c49ab5a38"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/004ACEB0.json",
+      "bytes": 666,
+      "sha256": "e4566ff83866d43ce5323dfc937a8539cecb5f46240fd872913c2e2c68eab83e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/004ACF90.json",
+      "bytes": 685,
+      "sha256": "b3f021ce7ceb5a78e8b772ef111ce75c2c1e7e581985028e4e6e7d0ded47bce1"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/bank-report.py",
+      "bytes": 3278,
+      "sha256": "70eb2e6010fea07599461bc0f1e2a4cf03a617c966cd53f8e55140425258403a"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/claim-contact-table.json",
+      "bytes": 888,
+      "sha256": "e04d823b2cc2bf3dcf6473ed031a84eff6256f1cb8d877ee0e12b8388200708d"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/claim-roadmap.json",
+      "bytes": 894,
+      "sha256": "cc09e4dc97e227424e874231494c73d8fb3ee1e7b784c7c955a05043a4b44c6c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/contact-asm.txt",
+      "bytes": 6930,
+      "sha256": "d77ed916909e8f0c735112c92a6b63a1954ccd80aa2ca317732ae21b46222abf"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/contact-flags-xrefs.json",
+      "bytes": 3096,
+      "sha256": "82fda23a37efc665055e2aeb2013e722847b4b0f3ce1029fd75308c852f261ff"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/contact-index-xrefs.json",
+      "bytes": 7199,
+      "sha256": "268024e86552f049bf00e29da7ebf58b55cab020532f83691ac9cc336b2ea3c7"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/control-route-census.json",
+      "bytes": 1082,
+      "sha256": "5df854719a8d9745511779f6da9aeaa2dd44ea910ee7e8e2e1377cca3113bdc4"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/control-route-delta-census.json",
+      "bytes": 763,
+      "sha256": "fc2354a4e2e01d243618bf9fcca2f86f4f85ca1b9da450d105a60fa143841f8c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/control-route-other-lanes.json",
+      "bytes": 361,
+      "sha256": "b155024e5d7ad8cfc930d154c8ee8ca531c4e00682244e5148c4f2b0c1a0312c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/final-preservation.json",
+      "bytes": 6095,
+      "sha256": "26f16fe68501be249e496aa4f9ad5636ec5fa539df032137da2ced8915eca886"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/final-preservation.py",
+      "bytes": 2426,
+      "sha256": "1f58c4d408c0e46cd1cc6ab4b48504360551118bd83162a10bf5c5b0707383f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/movement-callers.json",
+      "bytes": 2680,
+      "sha256": "fe898b929cc3c883213291f37139cfd37a0c3f54317d9b6447b6ed40634eabf5"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/movement.json",
+      "bytes": 10548,
+      "sha256": "e5f718226629ec42ac4fb7fd009e06b874ee9ab5f08261c3b3ca222ad38e36c9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-contacts.json",
+      "bytes": 76379,
+      "sha256": "207189e096ad3503c7408eed362165712c6a3c63094a3b7452f748566a20fe3b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-contacts.log",
+      "bytes": 1523,
+      "sha256": "37425eafb2725333e06560e9bf0403fda9229ea554b0f05068d41993346bc55b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-contacts.py",
+      "bytes": 3071,
+      "sha256": "595168ca98f5ce499c875d739b0d2ff890e070a647cb91e654509c2c742880f6"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-harness.py",
+      "bytes": 5539,
+      "sha256": "448706b7acc4fcc85c2620ef0da1c72b6193b76f70ccc11e3c922130f8e5fc90"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-queries.json",
+      "bytes": 12153,
+      "sha256": "3523efe954e4899556f3379735e1f4cffe18d2528506b8f4f7a859cc99843170"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-queries.log",
+      "bytes": 414,
+      "sha256": "b28762be96109cb508efe505d8f86928fd6e81e5e4d51f5a48a32104fb5d32ad"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-queries.py",
+      "bytes": 2085,
+      "sha256": "54dbedb6ec943a3601c166ac303e5b40447ace92b39b9cac92fd3a103bea4237"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-render-pages.json",
+      "bytes": 118372,
+      "sha256": "52d7e8be962578eb601c7881621aeef36afe268992b7a5e80dce518632c2b24e"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-render-pages.log",
+      "bytes": 1177,
+      "sha256": "a9c6c4073c0581be1ed14e23d545b6af8e2bb17e1a3b3ca683b3cd29aaa1fc3b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-render-pages.py",
+      "bytes": 3588,
+      "sha256": "4febb063b8bcc7a919729237a3850eb5d75b6c513d22250ec1d9c3472efcab2c"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-transitions.json",
+      "bytes": 11201,
+      "sha256": "c4a7dba73013967bef8e26a76a748466be50eef1f7a9cecbd974870cf2d53d6b"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-transitions.log",
+      "bytes": 6315,
+      "sha256": "4b49e48db9a23036f08bda7078a29aae6c9ce0fe3be1ea8ee4ee8cefe726e702"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/native-transitions.py",
+      "bytes": 3815,
+      "sha256": "520a881964af57b675dd942ff3466f24e937e4414b3fff2080167226bfeec0f9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/page-tests.log",
+      "bytes": 99,
+      "sha256": "777658fae62ebef004c07eda23f95c88f24f5d616c1c4f38b07641920165d383"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/prior-recheck.json",
+      "bytes": 157,
+      "sha256": "647a5d8a0a1eb3e4378561b93cf82a6f79647377c82503ffb4eda9b764d09e97"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/rejected-z15000-route.json",
+      "bytes": 442,
+      "sha256": "023a7def2305e43fbfd30a323123ef299b7a77b39f689c9b1f093ab6bfde3b31"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/rejected-z15000-route.log",
+      "bytes": 469,
+      "sha256": "5f6d974ca6eac5b0f1f5c714fc75032a8cf7fa64f4d6b5c0ade33b1419beaa44"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/run-check.py",
+      "bytes": 1459,
+      "sha256": "1a5580a2e1ab48d5f1d3bf3798f22bd2cd7a04d784fd47b2bdf73b2d34e39ed9"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/source-receipt.json",
+      "bytes": 373,
+      "sha256": "8a3840e4f6b1706859733f39d1fce5be4d9eedee608bccc7e8dc5b081f113b73"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/source.log",
+      "bytes": 3459,
+      "sha256": "8ab8f9f5c23980ca1f3acca56c8a3a8c1135f12b3b4de38f69502a8530da2d49"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/spatial-init.json",
+      "bytes": 10904,
+      "sha256": "8c9f916718bc041bb0f84d6ac1522acd79e3ae7d6eb6349ebd0831b3ab839e7f"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/test-selection.json",
+      "bytes": 6524,
+      "sha256": "a00098f6f37aac01e6042ba180f920096184e3b197054a753c24cf6f179837fc"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/transitions-patched-rows.json",
+      "bytes": 636778,
+      "sha256": "17d13030511f164cebcee26c35a6207aa6b4e890f6caba39221deb2722cfea29"
+    },
+    {
+      "path": "work/experiments/EXP-20260908-004/transitions-retail-rows.json",
+      "bytes": 636778,
+      "sha256": "17d13030511f164cebcee26c35a6207aa6b4e890f6caba39221deb2722cfea29"
+    }
+  ],
+  "private_artifact_count": 47
+}

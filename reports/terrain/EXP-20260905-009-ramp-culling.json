@@ -1,0 +1,292 @@
+{
+  "experiment_id": "EXP-20260905-009",
+  "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "scene_center": [
+    4243,
+    -570,
+    16018
+  ],
+  "scene_file_offset": 8580,
+  "radius_file_offset": 8592,
+  "native_gate_start": "0x0044D59F",
+  "accepted_stop": "0x0044D6A7",
+  "rejected_stop": "0x0044D728",
+  "transform_function": "0x00448230",
+  "euler_function": "0x00463C80",
+  "native_settled_euler_matrix": "930e000068f9fcff0010f6ff98060c00930e",
+  "observed_settled_camera_matrix": "930e000068f9fcff0010f6ff98060c00930e",
+  "settled_euler_matrix_matches_camera": true,
+  "rows": [
+    {
+      "pose": "hidden_baseline",
+      "camera_matrix_hex": "58f100006a0600000010000096f9000058f1",
+      "camera_world": [
+        203758,
+        -109869,
+        385181
+      ],
+      "camera_stored": [
+        6367,
+        -3433,
+        12036
+      ],
+      "radius": 6047,
+      "native_center_view": [
+        3541,
+        2863,
+        -2796
+      ],
+      "accepted": false,
+      "rejecting_branch": "0x44d677",
+      "horizontal_lhs": -2506,
+      "horizontal_rhs": -2796,
+      "vertical_lhs": -3184,
+      "vertical_rhs": -2097,
+      "instruction_count": 137
+    },
+    {
+      "pose": "hidden_baseline",
+      "camera_matrix_hex": "58f100006a0600000010000096f9000058f1",
+      "camera_world": [
+        203758,
+        -109869,
+        385181
+      ],
+      "camera_stored": [
+        6367,
+        -3433,
+        12036
+      ],
+      "radius": 8192,
+      "native_center_view": [
+        3541,
+        2863,
+        -2796
+      ],
+      "accepted": true,
+      "rejecting_branch": null,
+      "horizontal_lhs": -4651,
+      "horizontal_rhs": -2796,
+      "vertical_lhs": -5329,
+      "vertical_rhs": -2097,
+      "instruction_count": 152
+    },
+    {
+      "pose": "hidden_early",
+      "camera_matrix_hex": "53f100005f06000000100000a1f9000053f1",
+      "camera_world": [
+        202135,
+        -110117,
+        386396
+      ],
+      "camera_stored": [
+        6316,
+        -3441,
+        12074
+      ],
+      "radius": 6047,
+      "native_center_view": [
+        3471,
+        2871,
+        -2792
+      ],
+      "accepted": false,
+      "rejecting_branch": "0x44d677",
+      "horizontal_lhs": -2576,
+      "horizontal_rhs": -2792,
+      "vertical_lhs": -3176,
+      "vertical_rhs": -2094,
+      "instruction_count": 137
+    },
+    {
+      "pose": "hidden_early",
+      "camera_matrix_hex": "53f100005f06000000100000a1f9000053f1",
+      "camera_world": [
+        202135,
+        -110117,
+        386396
+      ],
+      "camera_stored": [
+        6316,
+        -3441,
+        12074
+      ],
+      "radius": 8192,
+      "native_center_view": [
+        3471,
+        2871,
+        -2792
+      ],
+      "accepted": true,
+      "rejecting_branch": null,
+      "horizontal_lhs": -4721,
+      "horizontal_rhs": -2792,
+      "vertical_lhs": -5321,
+      "vertical_rhs": -2094,
+      "instruction_count": 152
+    },
+    {
+      "pose": "hidden_middle",
+      "camera_matrix_hex": "05f0000044ff000000100000bc00000005f0",
+      "camera_world": [
+        184778,
+        -111206,
+        385302
+      ],
+      "camera_stored": [
+        5774,
+        -3475,
+        12040
+      ],
+      "radius": 6047,
+      "native_center_view": [
+        1346,
+        2905,
+        -4043
+      ],
+      "accepted": true,
+      "rejecting_branch": null,
+      "horizontal_lhs": -4701,
+      "horizontal_rhs": -4043,
+      "vertical_lhs": -3142,
+      "vertical_rhs": -3032,
+      "instruction_count": 152
+    },
+    {
+      "pose": "hidden_middle",
+      "camera_matrix_hex": "05f0000044ff000000100000bc00000005f0",
+      "camera_world": [
+        184778,
+        -111206,
+        385302
+      ],
+      "camera_stored": [
+        5774,
+        -3475,
+        12040
+      ],
+      "radius": 8192,
+      "native_center_view": [
+        1346,
+        2905,
+        -4043
+      ],
+      "accepted": true,
+      "rejecting_branch": null,
+      "horizontal_lhs": -6846,
+      "horizontal_rhs": -4043,
+      "vertical_lhs": -5287,
+      "vertical_rhs": -3032,
+      "instruction_count": 152
+    },
+    {
+      "pose": "visible_late",
+      "camera_matrix_hex": "7e0e00003af9fbff0010f6ffc6060c007e0e",
+      "camera_world": [
+        181267,
+        -112759,
+        333192
+      ],
+      "camera_stored": [
+        5664,
+        -3523,
+        10412
+      ],
+      "radius": 6047,
+      "native_center_view": [
+        -3660,
+        2941,
+        4484
+      ],
+      "accepted": true,
+      "rejecting_branch": null,
+      "horizontal_lhs": -2387,
+      "horizontal_rhs": 4484,
+      "vertical_lhs": -3106,
+      "vertical_rhs": 3363,
+      "instruction_count": 152
+    },
+    {
+      "pose": "visible_late",
+      "camera_matrix_hex": "7e0e00003af9fbff0010f6ffc6060c007e0e",
+      "camera_world": [
+        181267,
+        -112759,
+        333192
+      ],
+      "camera_stored": [
+        5664,
+        -3523,
+        10412
+      ],
+      "radius": 8192,
+      "native_center_view": [
+        -3660,
+        2941,
+        4484
+      ],
+      "accepted": true,
+      "rejecting_branch": null,
+      "horizontal_lhs": -4532,
+      "horizontal_rhs": 4484,
+      "vertical_lhs": -5251,
+      "vertical_rhs": 3363,
+      "instruction_count": 152
+    },
+    {
+      "pose": "visible_settled",
+      "camera_matrix_hex": "930e000068f9fcff0010f6ff98060c00930e",
+      "camera_world": [
+        181412,
+        -112791,
+        332947
+      ],
+      "camera_stored": [
+        5669,
+        -3524,
+        10404
+      ],
+      "radius": 6047,
+      "native_center_view": [
+        -3612,
+        2941,
+        4534
+      ],
+      "accepted": true,
+      "rejecting_branch": null,
+      "horizontal_lhs": -2435,
+      "horizontal_rhs": 4534,
+      "vertical_lhs": -3106,
+      "vertical_rhs": 3400,
+      "instruction_count": 152
+    },
+    {
+      "pose": "visible_settled",
+      "camera_matrix_hex": "930e000068f9fcff0010f6ff98060c00930e",
+      "camera_world": [
+        181412,
+        -112791,
+        332947
+      ],
+      "camera_stored": [
+        5669,
+        -3524,
+        10404
+      ],
+      "radius": 8192,
+      "native_center_view": [
+        -3612,
+        2941,
+        4534
+      ],
+      "accepted": true,
+      "rejecting_branch": null,
+      "horizontal_lhs": -4580,
+      "horizontal_rhs": 4534,
+      "vertical_lhs": -5251,
+      "vertical_rhs": 3400,
+      "instruction_count": 152
+    }
+  ],
+  "limits": "Offline execution of original instructions with captured camera inputs and current read-only scene/projection constants. Not a live branch trace or render submission replay. Historical camera Euler triples were not recorded; the independent Euler/matrix comparison uses the settled current view. Radius 8192 is an offline discriminator, not a proposed general authoring rule. No live writes."
+}

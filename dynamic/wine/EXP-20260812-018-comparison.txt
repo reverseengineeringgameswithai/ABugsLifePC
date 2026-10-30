@@ -1,0 +1,85 @@
+EXP-20260812-018 same-layout ANM replacement comparison
+
+Inputs
+  bugs.exe SHA-256:
+    97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+  unchanged PLANT04.ANM SHA-256:
+    32dce9588272d4bd4d0b2054e58de2b9ca5ae563826d56f7cd12abe8b001e7ce
+  PLANT10.ANM / staged PLANT04.ANM SHA-256:
+    12d2550ea89b9156acd04ce403d1754aa244d1cedf8531eaca2c8e7bf22b5194
+  unchanged PLANT04.ALL SHA-256 in both arms:
+    486bd73c54b96f9b0ef41e2c9ccc6029c95772619feaacb8885f4f1cc424f14a
+
+Staging and locality
+  Both ANM inputs are 0x70A bytes and have the M2.4 first-level layout.
+  The staged destination is byte-identical to the exact PLANT10.ANM source.
+  Before execution, recursive comparison found no control/source difference
+  and exactly one replacement/source path difference:
+    CD/PLANTS/PLANT04.ANM
+  The control and replacement ANM files differ in 884 bytes, spanning 0-based
+  offsets 0x26 through 0x708. No .ALL file was changed.
+
+Runtime gate and acceptance
+  Control:     RUN-WINE-20260812-134512, S:\PC\BUGS
+  Replacement: RUN-WINE-20260812-134225, T:\PC\BUGS
+  Both logs contain exactly one of each required hardware marker:
+    INFO Screen mode 640x480x16 selected.
+    INIT : Starting Direct3D renderer.
+  Neither log contains INITSOFTRENDER. Both load level07\level1.dat, the
+  PLANT04 and PLANT10 ANM/ALL pairs, end InitMainGame, and enter NextLife.
+
+Log comparison
+  Control bugs.log SHA-256:
+    2a8299b7e2037216876639fbf70ede45c03b1cbeac0d3c075f13f8b0d77fdffd
+  Replacement bugs.log SHA-256:
+    3dddaedaa079fda33d18ee03b401c5a4c0b50f9c0d26f4f859d455c541cef6fe
+  After normalizing S:/T: to one drive label and removing the ten diagnostic
+  ->time[] lines, the logs are byte-identical. Normalized SHA-256:
+    73a6a08e91af54b11905c8866c6149eee7bfa7c3c6f735c97af7e69b04625110
+  Without removing ->time[], only indices 4 and 6 differ by one timing unit.
+
+Visual capture
+  Each primary arm has 15 Gamescope PipeWire frames captured after NextLife at
+  approximately 0.2-second intervals. The same-size primary streams are
+  2560x1440 with a 1920x1440 centered 4:3 game image. Captures remain under
+  ignored work/copies/EXP-20260812-018/evidence/.
+
+  Control raw capture-set checksum-list SHA-256:
+    9e78f4e0c58b8c9c6c1fc3a47e95bf7ac42b4d8df5ec690d2876ad2d025149a0
+  Replacement raw capture-set checksum-list SHA-256:
+    0d52d35d55351328d943acab67e468f51a8d6b94c49922fda68c45f7492fb67b
+  Control normalized 640x480 set SHA-256:
+    51ca7f9e80b3ad7912b21e91b60cb3b9c1d22acdedbbd21f3de86401078142fc
+  Replacement normalized 640x480 set SHA-256:
+    27946a2ef6801251741fba20b9dc7fa61bad9cb55e5056999ab3d57173a0620a
+
+  Closest primary pair after normalization:
+    control frame-01 vs replacement frame-15
+    37,501 differing pixels of 307,200 (12.2074%)
+    normalized RMSE 0.0390463
+  Visual inspection shows the same scene content; differences follow animated
+  stems, characters, and object edges rather than one stable replacement-only
+  region. The wall-clock sequences do not provide an exact engine-frame lock.
+
+  An auxiliary earlier control sequence exposed at 1920x1080 supplies a second
+  control-to-control variation check after the same 640x480 normalization.
+  Temporal-median comparisons:
+    earlier control vs replacement:  AE 36,045, RMSE 0.0416820
+    earlier control vs control rerun: AE 37,206, RMSE 0.0416703
+    control rerun vs replacement:     AE 44,425, RMSE 0.0532419
+  The replacement delta is comparable to ordinary inter-run animation-phase
+  variation. No stable visible change was discriminated at the tested start
+  camera during these sequences.
+
+Classification and boundary
+  accepted-no-visible-change-at-tested-start-camera
+
+  Confirmed: the exact executable accepts the ANM-only substitution while
+  retaining PLANT04.ALL and reaches Direct3D gameplay.
+  Confirmed within the recorded visual procedure: no stable visible change was
+  discriminated beyond control-to-control animation variance.
+  Unknown: later gameplay, animation-cycle-specific, nonvisual, or other-level
+  effects; complete ANM semantics; and whether replacing the paired ALL file
+  yields a visible asset substitution.
+
+No PS1 source or finding was consulted. No game asset or screenshot is tracked.

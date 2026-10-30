@@ -1,0 +1,92 @@
+{
+  "experiment_id": "EXP-20260906-001",
+  "scope": "User-approved old EXP-009 cleanup continuation after the initial ownership-read error",
+  "events": [
+    {
+      "time_ns": 1788723723575497242,
+      "authorization": "User approved termination of the recorded EXP-009 processes and private sink; continuation after ownership-read error. No scope expansion."
+    },
+    {
+      "time_ns": 1788723723582962411,
+      "intent": "SIGTERM",
+      "pid": 23624,
+      "start": 183306,
+      "group": 23606,
+      "state": "S"
+    },
+    {
+      "time_ns": 1788723723583310653,
+      "sent": "SIGTERM",
+      "pid": 23624
+    },
+    {
+      "time_ns": 1788723723583646586,
+      "intent": "SIGTERM",
+      "pid": 23774,
+      "start": 183358,
+      "group": 23606,
+      "state": "S"
+    },
+    {
+      "time_ns": 1788723723583950098,
+      "sent": "SIGTERM",
+      "pid": 23774
+    },
+    {
+      "time_ns": 1788723723584279710,
+      "intent": "SIGTERM",
+      "pid": 23813,
+      "start": 183416,
+      "group": 23813,
+      "state": "S"
+    },
+    {
+      "time_ns": 1788723723584579132,
+      "sent": "SIGTERM",
+      "pid": 23813
+    },
+    {
+      "time_ns": 1788723726589779031,
+      "intent": "SIGKILL",
+      "pid": 23624,
+      "start": 183306,
+      "group": 23606,
+      "state": "S"
+    },
+    {
+      "time_ns": 1788723726597284890,
+      "sent": "SIGKILL",
+      "pid": 23624
+    },
+    {
+      "time_ns": 1788723726597666143,
+      "intent": "SIGKILL",
+      "pid": 23774,
+      "start": 183358,
+      "group": 23606,
+      "state": "S"
+    },
+    {
+      "time_ns": 1788723726597991215,
+      "sent": "SIGKILL",
+      "pid": 23774
+    },
+    {
+      "time_ns": 1788723726598311677,
+      "intent": "SIGKILL",
+      "pid": 23813,
+      "start": 183416,
+      "group": 23813,
+      "state": "S"
+    },
+    {
+      "time_ns": 1788723726598624159,
+      "sent": "SIGKILL",
+      "pid": 23813
+    },
+    {
+      "time_ns": 1788723726598960021,
+      "remaining": []
+    }
+  ]
+}

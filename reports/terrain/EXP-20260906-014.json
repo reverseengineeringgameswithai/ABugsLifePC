@@ -1,0 +1,396 @@
+{
+  "experiment": "EXP-20260906-014",
+  "status": "offline validated; no candidate launch; not committed",
+  "retail_executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "runtime_executable_sha256": "1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f",
+  "original_reference_experiment": "EXP-20260906-013",
+  "base_commit": "12eaf80",
+  "template": {
+    "file_mesh_offset": 179576,
+    "bytes": 1626,
+    "vertices": 65,
+    "quads": 52,
+    "original_primary_instances": 22,
+    "mesh_sha256": "6548dfda5403e8a7d3b8a2ddcae4a84ad3ca4bfdacebde7f308ba0a1cea2108e",
+    "resident_donors": [
+      {
+        "scene": 344,
+        "scene_offset": 12260,
+        "object_offset": 23384,
+        "source": 147,
+        "source_offset": 233748,
+        "payload_offset": 174208,
+        "payload_bytes": 1464,
+        "resident_descriptor": 8347936,
+        "resident_payload": 7103823,
+        "mesh_and_object_and_collision_match": true
+      },
+      {
+        "scene": 342,
+        "scene_offset": 12220,
+        "object_offset": 24120,
+        "source": 142,
+        "source_offset": 233368,
+        "payload_offset": 166888,
+        "payload_bytes": 1476,
+        "resident_descriptor": 8347696,
+        "resident_payload": 7096503,
+        "mesh_and_object_and_collision_match": true
+      },
+      {
+        "scene": 396,
+        "scene_offset": 13300,
+        "object_offset": 24336,
+        "source": 146,
+        "source_offset": 233672,
+        "payload_offset": 172732,
+        "payload_bytes": 1476,
+        "resident_descriptor": 8347888,
+        "resident_payload": 7102347,
+        "mesh_and_object_and_collision_match": true
+      },
+      {
+        "scene": 400,
+        "scene_offset": 13380,
+        "object_offset": 22960,
+        "source": 148,
+        "source_offset": 233824,
+        "payload_offset": 175672,
+        "payload_bytes": 1476,
+        "resident_descriptor": 8347984,
+        "resident_payload": 7105287,
+        "mesh_and_object_and_collision_match": true
+      }
+    ],
+    "pairing_limit": "unique nearby matching footprint/orientation/shape, not a direct DAT-to-TERRAIN pointer; complete resident bytes verified; native new-copy motion covers scene344/source147 and396/146"
+  },
+  "fixture": "work/copies/EXP-20260906-014/mushroom-fixture",
+  "build": {
+    "status": "offline candidate; not installed or live-accepted",
+    "base_hashes": {
+      "LEVEL.DAT": "c0c138ce8148bce7ad41ab2ec8aa3415352b50d0054c459feaf054966ec8ba94",
+      "TERRAIN.ALL": "e3af42b68a05c358ff5471a5b24d55a6d6e3c2217e2e9229c49c68e71fb25065",
+      "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762"
+    },
+    "hashes": {
+      "LEVEL.DAT": "9529802b03e16506678bc40bd68362e3e806101aba3fe5a2aa060b4b0f13644b",
+      "TERRAIN.ALL": "cfb247925cee40979b294187b3ec43ca4439efb27015d31b5e5a9853695c00f3",
+      "PLANTTER.ALL": "c8251790b317e0458525d898237a54a88d473aac0758d01f36effcebeb38a762"
+    },
+    "placements": [
+      {
+        "variant": "tall",
+        "origin": [
+          6000,
+          -3200,
+          17000
+        ]
+      },
+      {
+        "variant": "tall",
+        "origin": [
+          8000,
+          -3200,
+          17000
+        ]
+      },
+      {
+        "variant": "small-back",
+        "origin": [
+          4000,
+          -3200,
+          19000
+        ]
+      }
+    ],
+    "additions": [
+      {
+        "variant": "tall",
+        "donor_scene": 344,
+        "donor_source": 147,
+        "old_primary_count": 484,
+        "new_primary_count": 485,
+        "old_source_count": 189,
+        "new_source_count": 190,
+        "scene_indices": [
+          484
+        ],
+        "source_indices": [
+          189
+        ],
+        "positions_stored": [
+          [
+            6000,
+            -3200,
+            17000
+          ]
+        ],
+        "translations_stored": [
+          [
+            1365,
+            -2712,
+            -677
+          ]
+        ],
+        "scene_insertion": 15060,
+        "prefix_growth": 20,
+        "object_offset": 476104,
+        "geometry_offset": 476136,
+        "mesh_sha256": "6548dfda5403e8a7d3b8a2ddcae4a84ad3ca4bfdacebde7f308ba0a1cea2108e",
+        "mesh_bytes": 1626,
+        "collision_payload_sha256": "3d13bb6c8cadab3cfeeace40e12027ac5de1ea7ec42412a9c9d91f9f8cfe1b22",
+        "pointer_fields_rebased": 1248,
+        "tail_growth": 1662,
+        "dat_sha256": "58ad532b923dc20126bab9c3fb40e776c5f4d6c3e6de1859b4f01e569e8d1d57",
+        "terrain_sha256": "ddb8161c04f596e5fd9bd063e0a33cf782069fb4775a84fb8a67ec35292ccad8",
+        "scope": "net-new independent scene objects and collision sources; retained donor transforms/materials/shell; original Level01 texture resources required"
+      },
+      {
+        "variant": "tall",
+        "donor_scene": 344,
+        "donor_source": 147,
+        "old_primary_count": 485,
+        "new_primary_count": 486,
+        "old_source_count": 190,
+        "new_source_count": 191,
+        "scene_indices": [
+          485
+        ],
+        "source_indices": [
+          190
+        ],
+        "positions_stored": [
+          [
+            8000,
+            -3200,
+            17000
+          ]
+        ],
+        "translations_stored": [
+          [
+            3365,
+            -2712,
+            -677
+          ]
+        ],
+        "scene_insertion": 15080,
+        "prefix_growth": 20,
+        "object_offset": 477784,
+        "geometry_offset": 477816,
+        "mesh_sha256": "6548dfda5403e8a7d3b8a2ddcae4a84ad3ca4bfdacebde7f308ba0a1cea2108e",
+        "mesh_bytes": 1626,
+        "collision_payload_sha256": "3d13bb6c8cadab3cfeeace40e12027ac5de1ea7ec42412a9c9d91f9f8cfe1b22",
+        "pointer_fields_rebased": 1250,
+        "tail_growth": 1660,
+        "dat_sha256": "42332ba1aaa245a48e3d0c2d805aa467c9548e6d78cbe933c1e8941b986319a5",
+        "terrain_sha256": "b9ffd9a2ba197ab85cc1afa4d65aed13db6ab14106974f0ed8a31557beb78cb7",
+        "scope": "net-new independent scene objects and collision sources; retained donor transforms/materials/shell; original Level01 texture resources required"
+      },
+      {
+        "variant": "small-back",
+        "donor_scene": 396,
+        "donor_source": 146,
+        "old_primary_count": 486,
+        "new_primary_count": 487,
+        "old_source_count": 191,
+        "new_source_count": 192,
+        "scene_indices": [
+          486
+        ],
+        "source_indices": [
+          191
+        ],
+        "positions_stored": [
+          [
+            4000,
+            -3200,
+            19000
+          ]
+        ],
+        "translations_stored": [
+          [
+            -936,
+            -2791,
+            592
+          ]
+        ],
+        "scene_insertion": 15100,
+        "prefix_growth": 20,
+        "object_offset": 479464,
+        "geometry_offset": 479496,
+        "mesh_sha256": "6548dfda5403e8a7d3b8a2ddcae4a84ad3ca4bfdacebde7f308ba0a1cea2108e",
+        "mesh_bytes": 1626,
+        "collision_payload_sha256": "3b4e24fcb991a1995f48a265155ab52a97c21cff08220da4b13b9c65bddd2965",
+        "pointer_fields_rebased": 1252,
+        "tail_growth": 1660,
+        "dat_sha256": "9529802b03e16506678bc40bd68362e3e806101aba3fe5a2aa060b4b0f13644b",
+        "terrain_sha256": "cfb247925cee40979b294187b3ec43ca4439efb27015d31b5e5a9853695c00f3",
+        "scope": "net-new independent scene objects and collision sources; retained donor transforms/materials/shell; original Level01 texture resources required"
+      }
+    ],
+    "plant_templates_unchanged": true,
+    "scope": "new scenery mushrooms, not seed-grown bouncing plants; Level01 atlas dependency retained"
+  },
+  "native": {
+    "accepted": true,
+    "seconds": 20.59555058999831,
+    "arms": [
+      {
+        "name": "collision_loader_and_preservation",
+        "required": true,
+        "accepted": true
+      },
+      {
+        "name": "render_relocation_and_preservation",
+        "required": true,
+        "accepted": true
+      },
+      {
+        "name": "landing-189",
+        "required": true,
+        "accepted": true
+      },
+      {
+        "name": "sides-189",
+        "required": true,
+        "accepted": true
+      },
+      {
+        "name": "grounded-push-return-189",
+        "required": true,
+        "accepted": true
+      },
+      {
+        "name": "landing-190",
+        "required": true,
+        "accepted": true
+      },
+      {
+        "name": "sides-190",
+        "required": true,
+        "accepted": true
+      },
+      {
+        "name": "grounded-push-return-190",
+        "required": true,
+        "accepted": true
+      },
+      {
+        "name": "landing-191",
+        "required": true,
+        "accepted": true
+      },
+      {
+        "name": "sides-191",
+        "required": false,
+        "accepted": false
+      },
+      {
+        "name": "sides-191-control-without-floor108",
+        "required": true,
+        "accepted": true
+      },
+      {
+        "name": "grounded-push-return-191",
+        "required": true,
+        "accepted": true
+      }
+    ],
+    "complete_scene_difference": "Small donor west approach in original world also contacts source108 floor (82120), absent from isolated mod. Complete-scene mismatch is retained as non-required observation; the explicit floor108-removal discriminator is required.",
+    "landing_cases": 3,
+    "lateral_cases": 12,
+    "grounded_push_retreat_cases": 12
+  },
+  "projection": {
+    "accepted": true,
+    "vertices": 308,
+    "scope": "exact emitted XYZW/diffuse/UV/index equality using original draw instructions at translated captured camera; not GPU or live visual acceptance"
+  },
+  "tests": {
+    "new": 33,
+    "new_seconds": 0.73,
+    "terrain_tests": 831,
+    "failures": 0,
+    "errors": 0,
+    "pytest_reported_seconds": 38.99,
+    "junit_seconds": "38.918",
+    "r2q_excluded": true,
+    "full_suite_run": false
+  },
+  "current_runtime": {
+    "game": {
+      "pid": 384409,
+      "start": 3290786,
+      "group": 384173,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\auto-hardware\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "leader": {
+      "pid": 384173,
+      "start": 3290651,
+      "group": 384173,
+      "cmd": "/usr/bin/bash /home/dev/ABLPC/work/experiments/EXP-20260906-013/og-preview-01/launch.sh "
+    },
+    "display": ":2",
+    "window": 14680071,
+    "present_owned": 14,
+    "departed_owned": 3,
+    "generic_processes": 7,
+    "sink": "ablpc_mute_384173",
+    "generic_audit_clean": false,
+    "all_generic_processes_and_sink_independently_accounted": true,
+    "live_actions": [
+      "read-only memory",
+      "compositor capture"
+    ],
+    "no_input_focus_writes_stops_or_candidate_launch": true
+  },
+  "evidence": [
+    {
+      "path": "work/experiments/EXP-20260906-014/memory.json",
+      "sha256": "2c539f8e7e73df4cbedf919a12f4c72529679147ca016ea18a21e0346bc54d69"
+    },
+    {
+      "path": "work/experiments/EXP-20260906-014/mapping.json",
+      "sha256": "3963484b9d11066a587f9c05ede4172403a2417ca7c5f9aa0501cca54ece043f"
+    },
+    {
+      "path": "work/experiments/EXP-20260906-014/build.json",
+      "sha256": "d86faa43ee2de695ad5ec313a62590385cbeb4300de4672c02f2a36e514dcf94"
+    },
+    {
+      "path": "work/experiments/EXP-20260906-014/native-01.json",
+      "sha256": "ab50f1c1b19d47b1537a4eee0728b6ca527626252d74c5ce2b7b54163171fca0"
+    },
+    {
+      "path": "work/experiments/EXP-20260906-014/native-02.json",
+      "sha256": "ea7f38a78f535bdfc970e6a317e33ca104663dcedd73d77dc8bae59c609ed9d2"
+    },
+    {
+      "path": "work/experiments/EXP-20260906-014/native-03.json",
+      "sha256": "5c4feade7b3e1162654eda0fa0590b05c3bb7c43c2a697dc13e9035960e080bb"
+    },
+    {
+      "path": "work/experiments/EXP-20260906-014/native-04.json",
+      "sha256": "b7ec7a2e940e96cc62b69096a36ed3ce1b15b76fe8b34cd67816d8421fc028ce"
+    },
+    {
+      "path": "work/experiments/EXP-20260906-014/projection-candidate.json",
+      "sha256": "46814c38e403d19d78f146ca0aea3c4f1a53495e56c56dd3642fff3d8746a1d7"
+    },
+    {
+      "path": "work/experiments/EXP-20260906-014/final-runtime.json",
+      "sha256": "00af6627064d2349e5a25221d05d967618cab4ba50fc8f1708b1488c7af35329"
+    },
+    {
+      "path": "work/experiments/EXP-20260906-014/terrain-check.xml",
+      "sha256": "d4af70e54f71a662b0f31eeeb9a90216f70a4e51bb0c64766d5a675452b54508"
+    }
+  ],
+  "limitations": [
+    "Live file-loaded visual/contact acceptance pending",
+    "Synthetic motion is not complete gameplay",
+    "Other two mapped variants lack this new-copy movement gate",
+    "Original Level01 texture dependencies",
+    "Retained donor transforms only; no arbitrary rescale or general repacker"
+  ]
+}

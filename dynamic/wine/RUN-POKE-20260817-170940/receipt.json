@@ -1,0 +1,44 @@
+{
+  "tool": "game-memory",
+  "tool_version": "1.1.0",
+  "schema_version": 1,
+  "verb": "poke",
+  "authorization": "user approved live reload test 2026-08-17",
+  "purpose": "validate snapshot/restore end to end",
+  "target": {
+    "pid": 57939,
+    "process_group": 57698,
+    "start_ticks": 1200478,
+    "session_id": null,
+    "ownership": {
+      "pid": 57939,
+      "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+      "cmdline": [
+        "R:\\PC\\BUGS\\bugs.exe",
+        "log",
+        "cheat",
+        "mpeg"
+      ],
+      "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+      "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+      "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+      "verified": true,
+      "checked_at": "2026-08-17T17:09:40.280531-04:00"
+    }
+  },
+  "address": "0x0059D910",
+  "size": 4,
+  "before_hex": "d42afeff",
+  "payload_hex": "87d61200",
+  "guard": {
+    "guarded": true,
+    "expected_hex": "d42afeff"
+  },
+  "dry_run": false,
+  "written": true,
+  "verified": true,
+  "started_at": "2026-08-17T17:09:40.280649-04:00",
+  "bytes_written": 4,
+  "after_hex": "87d61200",
+  "finished_at": "2026-08-17T17:09:40.280675-04:00"
+}

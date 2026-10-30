@@ -1,0 +1,88 @@
+"""Original static mesh dispatcher on an offline copy of the paused RAM.
+
+No attachment, input, live writes or external API emulation. Output is the
+original routine's hardware batch vertices, not a newly rendered game frame.
+"""
+from pathlib import Path
+import hashlib, json, struct, sys, importlib.util
+import pefile
+from unicorn import Uc, UC_ARCH_X86, UC_MODE_32, UC_HOOK_CODE, UcError
+from unicorn.x86_const import UC_X86_REG_ESP, UC_X86_REG_EIP
+
+ROOT=Path('/home/dev/ABLPC');HERE=Path(__file__).resolve().parent
+manifest=json.loads((HERE/'paused-memory.json').read_text())
+
+def cpu_from_capture():
+    cpu=Uc(UC_ARCH_X86,UC_MODE_32)
+    for row in manifest['regions']:
+        data=(ROOT/row['path']).read_bytes()
+        assert len(data)==row['end']-row['start']
+        assert hashlib.sha256(data).hexdigest()==row['sha256']
+        cpu.mem_map(row['start'],len(data));cpu.mem_write(row['start'],data)
+    raw=(ROOT/'work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe').read_bytes()
+    assert hashlib.sha256(raw).hexdigest()=='97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878'
+    pe=pefile.PE(data=raw)
+    section=next(s for s in pe.sections if s.Name.rstrip(b'\0')==b'.text')
+    cpu.mem_write(0x400000+section.VirtualAddress,section.get_data())
+    cpu.mem_map(0x70000000,0x200000)
+    return cpu
+
+def run(divisions, actor=False):
+    cpu=cpu_from_capture()
+    def get(addr,fmt):return struct.unpack('<'+fmt,cpu.mem_read(addr,struct.calcsize('<'+fmt)))
+    def put(addr,fmt,*values):cpu.mem_write(addr,struct.pack('<'+fmt,*values))
+    base=get(0x5ba240,'I')[0];scene=base+8580;obj=base+18672;mesh=base+113136
+    assert get(scene+16,'I')[0]==obj and get(obj+20,'I')[0]==mesh
+    assert get(obj+18,'B')[0]==0
+    if divisions!=1:
+        spec=importlib.util.spec_from_file_location('visual',ROOT/'scripts/terrain-deck-visual-probe.py')
+        m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+        _,data,meta=m.build(divisions=divisions)
+        cpu.mem_write(mesh,data[113136:113136+meta['mesh160_replaced_prefix_bytes']])
+    # Driver sets this threshold/pass before static type0x41 dispatch.
+    put(0x5b56d0,'I',get(0x5c02fc if actor else 0x5ba80c,'I')[0]);put(0x5ba120,'I',0)
+    roots=get(0x4c4108,'2I')
+    for i,root in enumerate(roots):
+        cpu.mem_write(root+0x104,b'\0'*128)
+        cpu.mem_write(root+(0x1fd56 if i==0 else 0x4b186),b'\0'*128)
+    table=0x70001000;stack=0x70180000;ret=0x70000000
+    put(table,'I',scene);put(stack,'5I',ret,table,1,0,0)
+    cpu.reg_write(UC_X86_REG_ESP,stack)
+    trace=[];instruction_count=0
+    def guard(uc,address,size,unused):
+        nonlocal instruction_count
+        instruction_count+=1
+        if not 0x401000<=address<0x4c1000:
+            raise RuntimeError(f'External/unmapped execution {address:08x}')
+        if len(trace)<30:trace.append(hex(address))
+    cpu.hook_add(UC_HOOK_CODE,guard)
+    try:cpu.emu_start(0x44c440 if actor else 0x4498f0,ret,count=2000000)
+    except (UcError,RuntimeError) as error:
+        print('STOP',hex(cpu.reg_read(UC_X86_REG_EIP)),error);raise
+    assert cpu.reg_read(UC_X86_REG_EIP)==ret
+    batches=[]
+    for root_index,root in enumerate(roots):
+        for page in range(32):
+            count=get(root+0x104+page*2,'H')[0]
+            if not count:continue
+            assert count<=500
+            pointer=get(root+page*4,'I')[0]
+            vertices=[]
+            for i in range(count):
+                addr=pointer+i*32
+                vertices.append(dict(zip(('x','y','z','rhw'),get(addr,'4f')))|
+                                {'diffuse':hex(get(addr+16,'I')[0]),'uv':get(addr+24,'2f')})
+            offset=0x1fd56 if root_index==0 else 0x4b186
+            index_count=get(root+offset+page*2,'H')[0]
+            index_base=root+0x186+page*(2000 if root_index==0 else 9600)
+            indices=get(index_base,str(index_count)+'H')
+            batches.append({'root_index':root_index,'page':page,'pointer':hex(pointer),'vertices':vertices,'indices':indices})
+    result={'divisions':divisions,'actor':actor,'before':manifest['before'],'batches':batches,
+            'instruction_count':instruction_count,'scope':'Original dispatcher and mesh renderer in offline captured memory; original text restored, synthetic stack/table and cleared output counters. No API stubs, no live changes.'}
+    (HERE/('offline-actor.json' if actor else f'offline-mesh-{divisions}.json')).write_text(json.dumps(result,indent=2)+'\n')
+    print('actor',actor,'divisions',divisions,[(x['page'],len(x['vertices']),len(x['indices'])) for x in batches])
+    return result
+
+if __name__=='__main__':
+    actor=len(sys.argv)>1 and sys.argv[1]=='actor'
+    run(1 if actor else int(sys.argv[1]) if len(sys.argv)>1 else 1,actor)

@@ -1,0 +1,157 @@
+# RUN-GDB-20260813-113106
+
+Experiment: EXP-20260813-040
+Tool: gdb-harness 1.3.0 (read-only hardware watch/breakpoints)
+Window start: 2026-08-13T11:31:06.821880-04:00
+Window end:   2026-08-13T11:31:06.909576-04:00
+
+This is an auto-generated draft of read-only debugger stops. No game memory, register, executable byte, or game file was changed. Read watchpoints are read-class hardware traps on x86 and may report during writes; treat them as access evidence, not proof of a read.
+
+Completion: error (completed=False, accepted=False, stops=134, cleanup_verified=True, detached=True)
+
+Stops
+-----
+seq 1: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 2: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 3: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 4: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 5: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 6: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 7: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 8: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 9: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 10: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 11: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 12: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 13: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 14: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 15: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 16: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 17: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 18: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 19: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 20: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 21: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 22: watchpoint batch_pre at PC 0x4557a9 watched=0200
+seq 23: watchpoint entry_post at PC 0x4032f6 watched=fb506800
+seq 24: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 25: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 26: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 27: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 28: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 29: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 30: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 31: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 32: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 33: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 34: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 35: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 36: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 37: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 38: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 39: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 40: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 41: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 42: watchpoint batch_pre at PC 0x410a47 watched=0200
+seq 43: watchpoint batch_pre at PC 0x40fe79 watched=0200
+seq 44: watchpoint batch_pre at PC 0x405cbc watched=0200
+seq 45: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 46: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 47: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 48: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 49: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 50: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 51: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 52: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 53: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 54: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 55: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 56: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 57: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 58: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 59: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 60: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 61: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 62: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 63: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 64: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 65: watchpoint batch_pre at PC 0x4205a4 watched=0200
+seq 66: watchpoint batch_pre at PC 0x404c82 watched=0200
+seq 67: watchpoint batch_pre at PC 0x404f36 watched=0200
+seq 68: watchpoint batch_pre at PC 0x404f6c watched=0200
+seq 69: watchpoint batch_pre at PC 0x404f6c watched=0200
+seq 70: watchpoint batch_pre at PC 0x40521f watched=0200
+seq 71: watchpoint batch_pre at PC 0x40450f watched=0200
+seq 72: watchpoint batch_flush at PC 0x404663 watched=1d00
+seq 73: watchpoint batch_flush at PC 0x40474a watched=2000
+seq 74: watchpoint batch_pre at PC 0x44d45b watched=0200
+seq 75: watchpoint batch_pre at PC 0x40932e watched=0200
+seq 76: watchpoint batch_pre at PC 0x40bb48 watched=0200
+seq 77: watchpoint entry_post at PC 0x44c63a watched=fb506800
+seq 78: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 79: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 80: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 81: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 82: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 83: watchpoint entry_post at PC 0x44c8ab watched=fb506800
+seq 84: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 85: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 86: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 87: watchpoint entry_post at PC 0x44c8ab watched=fb506800
+seq 88: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 89: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 90: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 91: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 92: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 93: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 94: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 95: watchpoint entry_post at PC 0x44c8ab watched=fb506800
+seq 96: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 97: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 98: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 99: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 100: watchpoint entry_post at PC 0x44c8ab watched=fb506800
+seq 101: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 102: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 103: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 104: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 105: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 106: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 107: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 108: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 109: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 110: watchpoint entry_post at PC 0x44c8ab watched=fb506800
+seq 111: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 112: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 113: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 114: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 115: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 116: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 117: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 118: watchpoint entry_post at PC 0x44c8ab watched=fb506800
+seq 119: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 120: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 121: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 122: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 123: watchpoint entry_post at PC 0x44c8ab watched=fb506800
+seq 124: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 125: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 126: watchpoint batch_pre at PC 0x45026c watched=0200
+seq 127: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 128: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 129: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 130: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 131: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 132: watchpoint batch_pre at PC 0x44f951 watched=0200
+seq 133: watchpoint entry_post at PC 0x44c8ab watched=fb506800
+seq 134: watchpoint entry_post at PC 0x44c8ab watched=fb506800
+
+Direct3D batch capture
+----------------------
+completed=False cycles=0 algorithm=sha256 payload_bytes_retained=False failure=batch post trigger arrived without paired pre
+
+Post-detach survival
+--------------------
+passed=True identity_verified=True samples=5 failure_reasons=[]
+
+Interpretation is intentionally left for a linked experiment note.

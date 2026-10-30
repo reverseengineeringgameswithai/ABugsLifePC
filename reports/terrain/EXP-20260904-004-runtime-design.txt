@@ -1,0 +1,8 @@
+EXP-20260904-004: moved-barrier prototype and live feasibility.
+Authorized by user 2026-09-04: Go for that, assuming you're able to properly test this in runtime. If not, let me know what you're stuck on.
+First arm: unchanged retail content cloned into control; isolated copy of baseline prefix with only c/z/r mappings; no historical mappings changed.
+Execute guarded auto-hardware build 1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f using established play-pristine launcher. Six hardware log markers required before menu input.
+Menu route: held Right .18 s, settle >=1 s, held Return .18 s; inspect title and read level1 before final Return. Guard exact game PID/start/group/cwd/mapped movement code and X window. Nested-display XTEST only.
+Read-only runtime state: level00861c84, position0059d910, terrain base007f3d60 and barrier head007f3d3c. No writes, teleport or save state. Screenshots via owned compositor.
+After gameplay: measure spawn and bounded walking to choose nearby reproducible authored barrier test. Retain trajectory before/after each held key; exact repeated frame timing is not assumed. Offline original instructions establish fixture behavior before any changed-content launch.
+Close owned arm with normal Alt+F4 then identity-guarded TERM/KILL as needed; clear audit between arms. Report any failed runtime capability directly. No claim of live collision authoring until modified content and movement causality are demonstrated.

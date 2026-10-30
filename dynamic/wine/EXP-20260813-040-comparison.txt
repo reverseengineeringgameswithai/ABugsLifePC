@@ -1,0 +1,75 @@
+EXP-20260813-040 Direct3D retained-entry batch provenance
+Date: 2026-08-13
+Executable SHA-256: 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+
+Accepted arms
+-------------
+control A:   RUN-GDB-20260813-113620
+replacement: RUN-GDB-20260813-113842
+control B:   RUN-GDB-20260813-113954
+
+Every arm reports capture_complete after 417 conditioned data-watch stops,
+three installed/deleted watchpoints, cleanup_verified, detach, no target
+signal, and five passing resumed/untraced survival samples. Each live log
+positively proves Native software render mode is FALSE, Direct3D render mode,
+640x480x16, Starting Direct3D renderer, exact flick.all load, and NextLife;
+none contains INITSOFTRENDER. Clock-normalized prefixes through first NextLife
+are byte-identical, SHA-256:
+4939e81e81c6c7929725f87f2277d0320003ceaefb3a73414dcf4b35f06538f1
+
+Both batch families and pre-reset marker PCs were watched. All selected entry
+segments occur only in family root_004c4108, page 16. No selected entry has an
+in-call flush; family root_004c410c is zero throughout. The 32 unmatched flush
+markers per arm occur outside an exact pending retained-entry call and are
+retained only as audit metadata.
+
+Count comparison
+----------------
+B4/B3 decompose counts using B4=(I-V)/2 and B3=(V-4*B4)/3. They mean completed
+four-input and three-input append paths only; no primitive semantics
+follow. M2.28 correction: EXP-20260813-041 proves the pre-call function-entry
+set is broader, so B4/B3 are completed append-path counts rather than all
+function calls. The measured values below are unchanged.
+
+entry  control-A V/I B4/B3   replacement V/I B4/B3   control-B V/I B4/B3   replacement outside both controls
+0      12/18 3/0             12/18 3/0               12/18 3/0             no
+1      11/15 2/1             8/12 2/0                11/15 2/1             yes
+2      18/24 3/2             14/18 2/2               18/24 3/2             yes
+3      11/15 2/1             11/15 2/1               11/15 2/1             no
+4      18/24 3/2             22/30 4/2               18/24 3/2             yes
+5      18/24 3/2             11/15 2/1               18/24 3/2             yes
+6      11/15 2/1             8/12 2/0                11/15 2/1             yes
+7      18/24 3/2             22/30 4/2               18/24 3/2             yes
+9      24/36 6/0             23/33 5/1               24/36 6/0             yes
+10     98/144 23/2           140/204 32/4            102/150 24/2          yes
+11     4/6 1/0               4/6 1/0                 4/6 1/0               no
+12     4/6 1/0               4/6 1/0                 4/6 1/0               no
+13     11/15 2/1             11/15 2/1               11/15 2/1             no
+14     11/15 2/1             4/6 1/0                 8/12 2/0              yes
+15     19/27 4/1             24/30 3/4               19/27 4/1             yes
+16     4/6 1/0               4/6 1/0                 4/6 1/0               no
+17     4/6 1/0               4/6 1/0                 4/6 1/0               no
+18     11/15 2/1             22/30 4/2               19/27 4/1             yes
+19     11/15 2/1             4/6 1/0                 8/12 2/0              yes
+20     19/27 4/1             17/21 2/3               19/27 4/1             yes
+21     0/0 0/0               0/0 0/0                 0/0 0/0               no
+22     0/0 0/0               0/0 0/0                 0/0 0/0               no
+23     0/0 0/0               0/0 0/0                 0/0 0/0               no
+
+Exact replacement-outside-both set:
+{1,2,4,5,6,7,9,10,14,15,18,19,20}
+
+The 13-entry set is a count-based discriminator. Vertex/index SHA-256 values
+are retained for audit, but are not used to enlarge the set because transformed
+bytes and pre-existing batch-relative indices vary between the two controls.
+No protected batch payload bytes are retained.
+
+Rejected calibration arms
+-------------------------
+RUN-GDB-20260813-112727 through 113414 failed closed while correcting the
+preserved caller receipt, nullable inactive page pointers, the exact fixed
+0x00511510 second root, entry-8 no-pre handling, and unrelated callers.
+RUN-GDB-20260813-113443/113555 reached bounded max_stops before exact stop
+conditions/limit were final. Every rejected arm deleted all installed points,
+detached, observed no target signal, and passed five survival samples. None is
+used in the candidate result.

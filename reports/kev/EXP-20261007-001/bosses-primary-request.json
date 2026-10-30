@@ -1,0 +1,60 @@
+{
+  "model": "kev-latest",
+  "state": "Evidence source: Vault/30-Experiments/EXP-20261005-002 - Native bosses and tough enemies in Moonlit Cliffs.md\n\n## Hardware arms\n\n`arm.py NAME [ROUNDS] [SLOTS]` launches through EXP-001's `launch.sh`. Every\narm had 6/6 hardware markers and no software markers. It takes a purple\nberry and walks through the gate. It then fights each slot with EXP-001's\n`goto.py` (camera-relative keys, throws of 16, backing off within 900), and\ncloses through the packet with a clean `make session-audit`. Every run moved\nits `bugs.log` into the packet. No game fault appears in any `launch.log`.\nNo memory was written.\n\n| Creature | Behaviour in Moonlit | Damage | Outcome |\n|---|---|---|---|\n| Molt | On the ground; wandered, then chased and killed Flik once | 14 × −3 | Killed, removed |\n| Hopper (Canyon Showdown) | Dropped 346 to the ground; chased | 10 × −3 | Killed, removed |\n| Hopper (Anthill Pt 2) | Flew at spawn height (1,974 up), drifting | −3 steps, 99 → 0 | Killed, removed |\n| Hopper (Riverbed Flight) | Hovered fixed 2,468 up | none in 96 throws | Immune |\n| Bird (Bird Nest) | Flew 2,304 up, drifting; never hurt Flik | −3 steps, 50 → 0 | Killed, removed |\n| Bird (Cliffside) | Flew 2,035 up, drifting | none | Immune |\n| Bird (Canyon Showdown) | Hovered fixed 1,786 up | none | Immune |\n| Thud | Floated fixed 1,364 up | 50 → 0 twice | Killed, **respawned** at 50, killed again |\n| Grasshopper | Dropped 1,471 to the ground and moved | yes | Killed |\n| Roach | Moved toward Flik; Flik lost health during the fight | yes | Killed |\n| Hspider | Moved about 800 from its spawn | yes | Killed |\n| Taxi bug | Ran far east (to x ≈ 19,000) | yes | Killed |\n| Fly | Dormant until Flik came near, then flew | yes | Killed (respawns natively) |\n| Centipede | Stays at its spawn, pops up (`0x4045`) and retracts (`0x48C5`); killed Flik once | none in 4 rounds | Inconclusive (see below) |\n\n- **Flags on waking.** Every boss gained bit `0x0001` once awake, usually\n  with `0x4000` (for example 0x44 → 0x4045, 0x144 → 0x4145, 0x984 → 0x4985).\n- **Homing reaches airborne targets.** The Anthill Pt 2 Hopper and the Bird\n  Nest bird took −3 hits while 1,974 and 2,304 units up. A frame\n  (`hopper-anthill-2/goto-fight0-throw3-…`) shows a purple berry climbing\n  toward the flying Hopper. This is consistent with homing locking on, which\n  EXP-001 recorded as contradictory. No projectile record was sampled.\n- **Centipede.** The berries homed onto the respawned fly overhead instead.\n  Frames show them climbing toward it while the centipede sits beside Flik.\n  Its damage is untested, not refuted.\n- **Bird height.** The user notes the bird is \"up\" by default, as in the\n  original game, where a berry-shooter plant that fires straight up is\n  needed. All three birds keep their native height (flag 0x04 holds target\n  Y). In Moonlit only the homing berry reaches the vulnerable one.\n\n\n## Static audit (research subagent; confirmed unless marked)\n\n- **No crash path (inferred from confirmed parts).**\n  - Reachable script code uses no op4, op10 or op11.\n  - Sounds return early when a sample is not loaded (`0049D820`).\n  - Kill and release take the default arm for types 22/29/30/36.\n  - Sprite tables share entries 0–49 across engines 1, 6, 8, 9, 11, 13, 14\n    and 15. The extra entries 50–52 feed only level-routine effects (rain,\n    feathers, crowd).\n- **Health ≥ 100 is immune** (`cmp ax,0x64` at `0x00429C35`). Flag 0x80 makes\n  a creature unhittable, and 0x800 makes the contact routine ignore it\n  (`0x0041CD7F`). Flag 0x04 is flying (holds target Y); 0x40 deflects red.\n- **Respawn byte.** 101 is a literal 101-frame countdown, which is why Thud\n  returns. 100 uses a per-type table delay. 0 removes the creature.\n- **Scripts.** 11, 22 and 26 wander around home; 18 hovers (radius 0); 19\n  and 29 idle. 28's tail runs only when engine 15 writes its program counter.\n- **The fights are level routines**, from per-frame table `0x004187E8` and\n  init table `0x004186FC`:\n  - **Cliffside** `0x004345F0`: the bird tracks Flik and kills him when he\n    falls into a band; an enforcer, not a fight.\n  - **Riverbed Flight** `0x004361C0`: Hopper follows Flik's trail and taunts.\n  - **Anthill Pt 2** `0x004369B0`/`0x00436B40`: Hopper flies a path, lowers\n    per hit and releases Atta at health 90; the win comes from slot 23.\n  - **Bird Nest** `0x00438040`: the bird chases high; below 21 the level\n    is won.\n  - **Battle Arena** `0x00439410`: hurt animation, crowd projectiles; win\n    below 21.\n  - **Bug Bar** `0x00439E90`: Thud shuttles, throws, and hits count only at\n    the two ends; 8 counted hits win.\n  - **Canyon Showdown** `0x0043AE00`: Hopper runs a waypoint table on hits;\n    the bird carries him off with a movie.\n- **Engine 1's routines touch only slot 25 and path 1** (`0x004317D0`,\n  `0x00431730`).\n- **Side effect.** Immune donors keep the enemies-left count\n  (`0x0059D99E`) above 0, so an all-enemies trigger cannot fire.\n\n\n## \"Visual artifacts when Flik starts moving\"\n\nThree of nine post-move frames in the boss arms showed the view mostly\ncovered by dark horizontal bands. Camera pose and model did not explain it\n(bird-nest and bird-cliffside share both). A **discriminating burst test**\ncaptured about 10 frames per second through three cycles of right, up and\ndown starts:\n\n- the boss-free control copy `EXP-20261005-002-control` (production\n  reflinked);\n- the Thud image.\n\nThe control showed the bands in 2 of 236 frames (`control-burst/burst-right3-00/01`),\nwhile Flik turned beside the spawn with the camera near the east fence\n(about (6870, 14830)). Thud's image showed them in 0 of 234. So the bands\n**predate the transplants**: an intermittent camera view beside the spawn\nfence. Their cause is not identified (camera near the fence or terrain is a\nguess). If the user saw something different, it is still open.\n\n\n## Confirmed, inferred, unknown\n\n- **Confirmed (runtime):** all 14 load, render and run without a fault. The\n  outcomes in the table. Thud respawns. Three bosses are immune.\n- **Confirmed (static):** immunity at 100+, respawn semantics, the\n  level-routine locations, identical shared sprite entries.\n- **Inferred:** that homing locks on (airborne hits and the frame, no\n  projectile sample); that the bands are a camera clip.\n- **Unknown:** the centipede's damage; sound (null sink); behaviour over\n  long play; the cause of the bands.\n\n",
+  "questions": {
+    "q07": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The transplanted Thud was killed, respawned at health 50, and was killed again.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q08": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The static berry damage path treats creature health of at least 100 as immune.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q09": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The experiment established that the centipede is immune to purple-berry damage.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q10": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The dark horizontal bands occurred only in an image containing a transplanted boss.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q11": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: The dark bands at the spawn fence are caused by the camera clipping the fence geometry.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    },
+    "q12": {
+      "type": "choice",
+      "instructions": "Classify this claim using ONLY the evidence in the state. Respect static versus runtime evidence, tested scope, historical changes, and explicitly unresolved questions. If the state has no evidence, choose insufficient. Do not use outside knowledge. Claim: Instruction 0x0041C100 is the writer that sets awake bosses' flags bit 0x0001.",
+      "criteria": {
+        "supported": "The supplied evidence establishes the claim, within the exact stated scope.",
+        "contradicted": "The supplied evidence establishes that the claim is false or overstates what was demonstrated.",
+        "insufficient": "The supplied evidence does not settle whether the claim is true. Plausibility, inference and missing tests are not confirmation."
+      }
+    }
+  }
+}

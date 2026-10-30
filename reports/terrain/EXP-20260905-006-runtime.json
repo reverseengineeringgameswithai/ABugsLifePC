@@ -1,0 +1,31 @@
+{
+  "experiment": "EXP-20260905-006",
+  "arm": "user-preview",
+  "authorization": "User: sounds good. switch over",
+  "status": "open-for-user",
+  "stage": "work/copies/EXP-20260905-006/game",
+  "prefix": "work/experiments/EXP-20260905-006/preview/prefix",
+  "operator": "work/experiments/EXP-20260905-006/preview/runtime.py",
+  "executed_image_sha256": "1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f",
+  "staged_retail_exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "level_dat_sha256": "99fbff1754fc43979542de40e56c04d10d7af4fccde8d13e919853b679429a21",
+  "terrain_sha256": "1ff3af9f0b5b2c2957bde8e877e1d988054455f3e1be18f8ea0e6cb57875d16b",
+  "previous_game": {"pid": 299378, "group": 299129, "closed": true, "post_close_audit_clean": true},
+  "pre_launch_audit_clean": true,
+  "active": {"leader": 309445, "leader_start": 10310958, "group": 309445, "game": 309701, "game_start": 10311098, "gamescope": 309463, "gamescope_start": 10310959, "xwayland": 309499, "xwayland_start": 10310984, "display": ":2", "window": 14680071, "window_name": "Loading - A Bugs Life", "window_class": "bugs.exe", "socket": "gamescope-0", "sink": "ablpc_mute_309445", "sink_module": 536870916},
+  "hardware_gate": {"all_six_markers": true, "software_markers_absent": true, "both_r_drive_log_identities": true, "r_drive_cdrom": true},
+  "input": ["Right held 0.18 seconds; Anthill capture inspected", "Return held 0.18 seconds; Level One title inspected", "Return held 0.18 seconds; gameplay capture inspected"],
+  "gameplay_state": {"level": 1, "position": [197108, -102400, 492895], "contact": [99, 6983739], "camera_matrix_hex": "dd090000990c00000010000067f30000dd09", "camera_translation": [219785, -115200, 475141]},
+  "loaded_verification": {"collision_sources": [99, 100], "complete_meshes": [128, 160, 213, 280], "all_bytes_match_staged_file": true, "mesh160_bytes": 10186, "mesh160_sha256": "b759d335984bd132a589c0beae6c287d6cbb3d09b57128f890c46d04ea5867b4", "dat_base": 6596791, "mesh160_pointer": 6929611, "trailing_data_pointer_address": "0x005B7100", "trailing_data_pointer": 6921315, "expected_trailing_offset": 324524},
+  "captures": [
+    {"file": "work/experiments/EXP-20260905-006/preview/frame-1788659231426155020.png", "sha256": "ac30518bd1e15125da6e88319495ac8f5071a3294fb07444e2ee431f57f6b423", "observation": "Anthill selected"},
+    {"file": "work/experiments/EXP-20260905-006/preview/frame-1788659254257184834.png", "sha256": "cf8df78dc234e6a067797b1b1e9d9b07a59c8d4fe26a287903e77327f3219834", "observation": "Level One title"},
+    {"file": "work/experiments/EXP-20260905-006/preview/frame-1788659285511085081.png", "sha256": "f22a80eee5514e51a7d1bb2ea9341dbe4bf7c18d85941fd9f63872f68672de31", "observation": "Flik at natural spawn; repeated ground texture and warm wall visible"}
+  ],
+  "handoff_audit": {"clean": false, "accounted_processes": 7, "accounted_sinks": 1, "scope": "Only this new preview; no old game remains"},
+  "agent_held_keys": [],
+  "live_memory_writes": 0,
+  "debugger_or_process_suspension": false,
+  "tests_rerun": false,
+  "limitations": ["This is cold-load and user-preview evidence, not a movement sweep", "No user aesthetic approval of the tiled candidate yet", "No performance, all-view occlusion, arbitrary-layout or generic packaging claim", "The pre-runtime archive and offline bank remain immutable; these later receipts are separate"]
+}

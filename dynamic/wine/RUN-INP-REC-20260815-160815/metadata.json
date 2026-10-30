@@ -1,0 +1,1509 @@
+{
+  "accepted": true,
+  "all_keys_released": true,
+  "anchor": {
+    "anchored_at": "2026-08-15T16:08:15.830417-04:00",
+    "frame": null,
+    "log_basename": "bugs.log",
+    "marker": "--- Start LevelSelect ---",
+    "matched_offset": 30105,
+    "neutral_wait_ns": 0,
+    "start_offset": 2777,
+    "type": "log-milestone"
+  },
+  "duration_ns": 54331244586,
+  "emergency_releases": [],
+  "ended": "2026-08-15T16:09:10.172784-04:00",
+  "event_count": 300,
+  "ignored_unmatched_release_count": 139,
+  "ignored_unmatched_releases": [
+    {
+      "action": "up",
+      "keycode": 36,
+      "keysym": "Return",
+      "offset_ns": 3129762759,
+      "send_event": false,
+      "sequence": 0,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 36,
+      "keysym": "Return",
+      "offset_ns": 5101047951,
+      "send_event": false,
+      "sequence": 2,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 52,
+      "keysym": "z",
+      "offset_ns": 6498935426,
+      "send_event": false,
+      "sequence": 4,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 7605384938,
+      "send_event": false,
+      "sequence": 6,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 8098527478,
+      "send_event": false,
+      "sequence": 8,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 8541306542,
+      "send_event": false,
+      "sequence": 10,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 9029049866,
+      "send_event": false,
+      "sequence": 12,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 9481760996,
+      "send_event": false,
+      "sequence": 14,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 9984785502,
+      "send_event": false,
+      "sequence": 16,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 11211777338,
+      "send_event": false,
+      "sequence": 18,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 11835413428,
+      "send_event": false,
+      "sequence": 20,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 12484118786,
+      "send_event": false,
+      "sequence": 22,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 13052372377,
+      "send_event": false,
+      "sequence": 24,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 13640642072,
+      "send_event": false,
+      "sequence": 26,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 14163645491,
+      "send_event": false,
+      "sequence": 28,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 15073829683,
+      "send_event": false,
+      "sequence": 30,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 15305335897,
+      "send_event": false,
+      "sequence": 32,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 15853531735,
+      "send_event": false,
+      "sequence": 34,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 16089960552,
+      "send_event": false,
+      "sequence": 36,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 16643161932,
+      "send_event": false,
+      "sequence": 38,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 16874496666,
+      "send_event": false,
+      "sequence": 40,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 17553431475,
+      "send_event": false,
+      "sequence": 42,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 52,
+      "keysym": "z",
+      "offset_ns": 17689280061,
+      "send_event": false,
+      "sequence": 43,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 52,
+      "keysym": "z",
+      "offset_ns": 17955960781,
+      "send_event": false,
+      "sequence": 45,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 18076871467,
+      "send_event": false,
+      "sequence": 48,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 18569818426,
+      "send_event": false,
+      "sequence": 50,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 18841409408,
+      "send_event": false,
+      "sequence": 51,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 19072759272,
+      "send_event": false,
+      "sequence": 53,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 19258866904,
+      "send_event": false,
+      "sequence": 55,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 19309171170,
+      "send_event": false,
+      "sequence": 56,
+      "source": "window-event",
+      "state": 4
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 19444989505,
+      "send_event": false,
+      "sequence": 58,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 19786915018,
+      "send_event": false,
+      "sequence": 61,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 19812114316,
+      "send_event": false,
+      "sequence": 62,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 19988126021,
+      "send_event": false,
+      "sequence": 64,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 20139001897,
+      "send_event": false,
+      "sequence": 66,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 20355275350,
+      "send_event": false,
+      "sequence": 68,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 20556573153,
+      "send_event": false,
+      "sequence": 75,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 20953949234,
+      "send_event": false,
+      "sequence": 77,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 21250709263,
+      "send_event": false,
+      "sequence": 80,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 21250736064,
+      "send_event": false,
+      "sequence": 81,
+      "source": "window-event",
+      "state": 4
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 21492201095,
+      "send_event": false,
+      "sequence": 83,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 22020454379,
+      "send_event": false,
+      "sequence": 92,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 22387686529,
+      "send_event": false,
+      "sequence": 94,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 22649254644,
+      "send_event": false,
+      "sequence": 95,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 23011483750,
+      "send_event": false,
+      "sequence": 97,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 23162434687,
+      "send_event": false,
+      "sequence": 99,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 23705841883,
+      "send_event": false,
+      "sequence": 101,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 23937205306,
+      "send_event": false,
+      "sequence": 103,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 24500439184,
+      "send_event": false,
+      "sequence": 106,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 24641247273,
+      "send_event": false,
+      "sequence": 107,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 24787166777,
+      "send_event": false,
+      "sequence": 108,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 24872782948,
+      "send_event": false,
+      "sequence": 110,
+      "source": "window-event",
+      "state": 4
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 25018772722,
+      "send_event": false,
+      "sequence": 113,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 25225156699,
+      "send_event": false,
+      "sequence": 116,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 25733165468,
+      "send_event": false,
+      "sequence": 118,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 26065128953,
+      "send_event": false,
+      "sequence": 120,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 26085275147,
+      "send_event": false,
+      "sequence": 121,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 26628446411,
+      "send_event": false,
+      "sequence": 124,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 27548833131,
+      "send_event": false,
+      "sequence": 126,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 28036637725,
+      "send_event": false,
+      "sequence": 128,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 28162402704,
+      "send_event": false,
+      "sequence": 129,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 28906711420,
+      "send_event": false,
+      "sequence": 132,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 64,
+      "keysym": "Alt_L",
+      "offset_ns": 29017403748,
+      "send_event": false,
+      "sequence": 134,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 29460033731,
+      "send_event": false,
+      "sequence": 136,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 29525466088,
+      "send_event": false,
+      "sequence": 137,
+      "source": "window-event",
+      "state": 4
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 29947974916,
+      "send_event": false,
+      "sequence": 140,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 30109033931,
+      "send_event": false,
+      "sequence": 142,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 37,
+      "keysym": "Control_L",
+      "offset_ns": 30164444191,
+      "send_event": false,
+      "sequence": 143,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 30657314349,
+      "send_event": false,
+      "sequence": 146,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 30677458483,
+      "send_event": false,
+      "sequence": 147,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 30843467501,
+      "send_event": false,
+      "sequence": 148,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 31145373285,
+      "send_event": false,
+      "sequence": 151,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 31341591804,
+      "send_event": false,
+      "sequence": 154,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 31573043358,
+      "send_event": false,
+      "sequence": 155,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 32091032364,
+      "send_event": false,
+      "sequence": 157,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 32412940961,
+      "send_event": false,
+      "sequence": 159,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 33096945394,
+      "send_event": false,
+      "sequence": 162,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 33448989433,
+      "send_event": false,
+      "sequence": 164,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 33579783396,
+      "send_event": false,
+      "sequence": 165,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 34148164947,
+      "send_event": false,
+      "sequence": 168,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 64,
+      "keysym": "Alt_L",
+      "offset_ns": 34515363067,
+      "send_event": false,
+      "sequence": 170,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 34837125014,
+      "send_event": false,
+      "sequence": 172,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 34877403122,
+      "send_event": false,
+      "sequence": 173,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 35053470537,
+      "send_event": false,
+      "sequence": 176,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 35189299183,
+      "send_event": false,
+      "sequence": 177,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 35596706591,
+      "send_event": false,
+      "sequence": 180,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 35692292269,
+      "send_event": false,
+      "sequence": 181,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 35953803683,
+      "send_event": false,
+      "sequence": 183,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 36129861208,
+      "send_event": false,
+      "sequence": 185,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 36170128697,
+      "send_event": false,
+      "sequence": 187,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 36572524721,
+      "send_event": false,
+      "sequence": 190,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 36808890838,
+      "send_event": false,
+      "sequence": 191,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 36984960783,
+      "send_event": false,
+      "sequence": 193,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 37115699285,
+      "send_event": false,
+      "sequence": 195,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 37251576511,
+      "send_event": false,
+      "sequence": 198,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 37412513925,
+      "send_event": false,
+      "sequence": 199,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 37649035513,
+      "send_event": false,
+      "sequence": 202,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 37784807389,
+      "send_event": false,
+      "sequence": 203,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 37865288236,
+      "send_event": false,
+      "sequence": 205,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 38242587913,
+      "send_event": false,
+      "sequence": 208,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 38891368741,
+      "send_event": false,
+      "sequence": 213,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 39077464143,
+      "send_event": false,
+      "sequence": 215,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 39364114135,
+      "send_event": false,
+      "sequence": 217,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 39530095542,
+      "send_event": false,
+      "sequence": 220,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 39972751725,
+      "send_event": false,
+      "sequence": 223,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 40204123459,
+      "send_event": false,
+      "sequence": 225,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 40244376137,
+      "send_event": false,
+      "sequence": 226,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 40817885804,
+      "send_event": false,
+      "sequence": 230,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 116,
+      "keysym": "Down",
+      "offset_ns": 41099479482,
+      "send_event": false,
+      "sequence": 231,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 111,
+      "keysym": "Up",
+      "offset_ns": 41496810423,
+      "send_event": false,
+      "sequence": 233,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 41682937955,
+      "send_event": false,
+      "sequence": 235,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 42035159794,
+      "send_event": false,
+      "sequence": 237,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 42050303395,
+      "send_event": false,
+      "sequence": 238,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 42593448039,
+      "send_event": false,
+      "sequence": 240,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 42925523364,
+      "send_event": false,
+      "sequence": 249,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 43267440755,
+      "send_event": false,
+      "sequence": 250,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 43745329584,
+      "send_event": false,
+      "sequence": 253,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 43881202720,
+      "send_event": false,
+      "sequence": 254,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 44389209799,
+      "send_event": false,
+      "sequence": 257,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 45148505875,
+      "send_event": false,
+      "sequence": 259,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 45259173793,
+      "send_event": false,
+      "sequence": 260,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 45384997503,
+      "send_event": false,
+      "sequence": 262,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 45812549665,
+      "send_event": false,
+      "sequence": 265,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 45892992812,
+      "send_event": false,
+      "sequence": 267,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 46949223648,
+      "send_event": false,
+      "sequence": 269,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 47869347487,
+      "send_event": false,
+      "sequence": 271,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 48130865731,
+      "send_event": false,
+      "sequence": 273,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 48196331608,
+      "send_event": false,
+      "sequence": 274,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 48548536268,
+      "send_event": false,
+      "sequence": 276,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 49041404036,
+      "send_event": false,
+      "sequence": 278,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 49242646238,
+      "send_event": false,
+      "sequence": 280,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 49373384411,
+      "send_event": false,
+      "sequence": 282,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 49509242567,
+      "send_event": false,
+      "sequence": 284,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 49594763058,
+      "send_event": false,
+      "sequence": 285,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 113,
+      "keysym": "Left",
+      "offset_ns": 49700461093,
+      "send_event": false,
+      "sequence": 288,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 114,
+      "keysym": "Right",
+      "offset_ns": 49786023413,
+      "send_event": false,
+      "sequence": 290,
+      "source": "window-event",
+      "state": 1
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 50917700453,
+      "send_event": false,
+      "sequence": 294,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 52,
+      "keysym": "z",
+      "offset_ns": 51269760512,
+      "send_event": false,
+      "sequence": 296,
+      "source": "window-event",
+      "state": 0
+    },
+    {
+      "action": "up",
+      "keycode": 50,
+      "keysym": "Shift_L",
+      "offset_ns": 51621836431,
+      "send_event": false,
+      "sequence": 298,
+      "source": "window-event",
+      "state": 0
+    }
+  ],
+  "implementation_sha256": "2c7b3650d50a032f0e5ee2f83eba664171e46fa9089a0f394c6b2ca4e16281cc",
+  "mode": "record",
+  "movie_path": "/home/dev/ABLPC/work/copies/input-movies/input-20260815-160751.input-movie.json",
+  "movie_sha256": "abc45db6a5822c6eeb5f56b045e237b7b8c9a84814de13ed0abf4f79deb17b91",
+  "ownership": {
+    "checked_at": "2026-08-15T16:07:58.037674-04:00",
+    "cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "cwd": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+    "exe_path": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS/bugs.exe",
+    "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "pid": 29161,
+    "verified": true
+  },
+  "recording_backend": "x11-window-select-v1",
+  "run_id": "RUN-INP-REC-20260815-160815",
+  "schedule_sha256": "23e0dbc0f237199bcf3cc84d08a9d481ccf38213396a1ad60d637e2c9dd119ad",
+  "schema_version": 1,
+  "started": "2026-08-15T16:08:15.830733-04:00",
+  "status": "complete",
+  "termination": "stop-keysym",
+  "tool": "input-movie",
+  "tool_version": "1.1.0",
+  "window_after": {
+    "checked_at": "2026-08-15T16:09:10.164862-04:00",
+    "class": "bugs.exe",
+    "display": ":2",
+    "focused": true,
+    "focused_window_id": 14680071,
+    "game_pgid": 28907,
+    "geometry": {
+      "height": 480,
+      "screen": 0,
+      "width": 640,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Loading - A Bugs Life",
+    "owner_cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "owner_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "owner_pgid": 28907,
+    "pid": 29161,
+    "same_process_group": true,
+    "signature": {
+      "class": "bugs.exe",
+      "height": 480,
+      "owner_exe_basename": "wine-preloader",
+      "screen": 0,
+      "width": 640
+    },
+    "window_id": 14680071,
+    "window_id_hex": "0xe00007"
+  },
+  "window_before": {
+    "checked_at": "2026-08-15T16:07:58.041791-04:00",
+    "class": "bugs.exe",
+    "display": ":2",
+    "focused": true,
+    "focused_window_id": 14680071,
+    "game_pgid": 28907,
+    "geometry": {
+      "height": 480,
+      "screen": 0,
+      "width": 640,
+      "x": 0,
+      "y": 0
+    },
+    "name": "Bugs",
+    "owner_cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "owner_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "owner_pgid": 28907,
+    "pid": 29161,
+    "same_process_group": true,
+    "signature": {
+      "class": "bugs.exe",
+      "height": 480,
+      "owner_exe_basename": "wine-preloader",
+      "screen": 0,
+      "width": 640
+    },
+    "window_id": 14680071,
+    "window_id_hex": "0xe00007"
+  }
+}

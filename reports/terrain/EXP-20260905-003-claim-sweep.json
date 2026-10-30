@@ -1,0 +1,302 @@
+{
+  "exit_code": 0,
+  "hits_truncated": false,
+  "mixed": false,
+  "new": "EXP-20260905-003",
+  "new_hits": [
+    {
+      "column": 56,
+      "context": "... repository suite passed. See `reports/terrain/EXP-20260905-003-validation.json`",
+      "line": 17,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Current State.md"
+    },
+    {
+      "column": 7,
+      "context": "and [[EXP-20260905-003 - Shared floor return discriminator and stitched patch]].",
+      "line": 18,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Current State.md"
+    },
+    {
+      "column": 3,
+      "context": "[[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]",
+      "line": 23,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Current State.md"
+    },
+    {
+      "column": 38,
+      "context": "remaining failures: `reports/terrain/EXP-20260905-003-validation.json`.",
+      "line": 36,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Current State.md"
+    },
+    {
+      "column": 62,
+      "context": "...now prop-aware broader seam coverage after EXP-20260905-003's return repair. See",
+      "line": 49,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Current State.md"
+    },
+    {
+      "column": 17,
+      "context": "DEC-241 records EXP-20260905-003's bounded stitched-floor repair; universal geom...",
+      "line": 80,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Current State.md"
+    },
+    {
+      "column": 13,
+      "context": "then extend EXP-20260905-003's prop-aware seam coverage. Keep the",
+      "line": 217,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Current State.md"
+    },
+    {
+      "column": 56,
+      "context": "... repository suite passed. See `reports/terrain/EXP-20260905-003-validation.json`",
+      "line": 20,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Environment Status.md"
+    },
+    {
+      "column": 7,
+      "context": "and [[EXP-20260905-003 - Shared floor return discriminator and stitched patch]].",
+      "line": 21,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Environment Status.md"
+    },
+    {
+      "column": 3,
+      "context": "[[EXP-20260905-003 - Shared floor return discriminator and stitched patch]] used",
+      "line": 26,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Environment Status.md"
+    },
+    {
+      "column": 18,
+      "context": "`reports/terrain/EXP-20260905-003-validation.json`, not inferred from terrain te...",
+      "line": 45,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Environment Status.md"
+    },
+    {
+      "column": 3,
+      "context": "[[EXP-20260905-003 - Shared floor return discriminator and stitched patch]] now",
+      "line": 16,
+      "match": "EXP-20260905-003",
+      "path": "Vault/00-System/Project Roadmap.md"
+    },
+    {
+      "column": 5,
+      "context": "- [[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]: 6...",
+      "line": 12,
+      "match": "EXP-20260905-003",
+      "path": "Vault/01-MOCs/Experiments MOC.md"
+    },
+    {
+      "column": 5,
+      "context": "- [[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]: 6...",
+      "line": 12,
+      "match": "EXP-20260905-003",
+      "path": "Vault/01-MOCs/File Formats MOC.md"
+    },
+    {
+      "column": 5,
+      "context": "- [[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]: 6...",
+      "line": 12,
+      "match": "EXP-20260905-003",
+      "path": "Vault/01-MOCs/Implementation MOC.md"
+    },
+    {
+      "column": 5,
+      "context": "- [[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]: 6...",
+      "line": 12,
+      "match": "EXP-20260905-003",
+      "path": "Vault/01-MOCs/Reverse Engineering MOC.md"
+    },
+    {
+      "column": 3,
+      "context": "[[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]",
+      "line": 19,
+      "match": "EXP-20260905-003",
+      "path": "Vault/20-Research/File-Formats/PC TERRAIN ALL collision descriptor source.md"
+    },
+    {
+      "column": 3,
+      "context": "[[EXP-20260905-003 - Shared floor return discriminator and stitched patch]] now",
+      "line": 17,
+      "match": "EXP-20260905-003",
+      "path": "Vault/20-Research/New-level authoring roadmap (terrain, collision, materials).md"
+    },
+    {
+      "column": 3,
+      "context": "[[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]",
+      "line": 19,
+      "match": "EXP-20260905-003",
+      "path": "Vault/30-Experiments/EXP-20260904-005 - Raised floor and visible ground pairing.md"
+    },
+    {
+      "column": 3,
+      "context": "[[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]",
+      "line": 19,
+      "match": "EXP-20260905-003",
+      "path": "Vault/30-Experiments/EXP-20260904-006 - Flat deck and solid block test.md"
+    },
+    {
+      "column": 5,
+      "context": "id: EXP-20260905-003",
+      "line": 3,
+      "match": "EXP-20260905-003",
+      "path": "Vault/30-Experiments/EXP-20260905-003 - Shared floor return discriminator and stitched patch.md"
+    },
+    {
+      "column": 56,
+      "context": "... repository suite passed. See `reports/terrain/EXP-20260905-003-validation.json`",
+      "line": 22,
+      "match": "EXP-20260905-003",
+      "path": "Vault/30-Experiments/EXP-20260905-003 - Shared floor return discriminator and stitched patch.md"
+    },
+    {
+      "column": 7,
+      "context": "and [[EXP-20260905-003 - Shared floor return discriminator and stitched patch]].",
+      "line": 23,
+      "match": "EXP-20260905-003",
+      "path": "Vault/30-Experiments/EXP-20260905-003 - Shared floor return discriminator and stitched patch.md"
+    },
+    {
+      "column": 28,
+      "context": "Evidence: `reports/terrain/EXP-20260905-003.json` (census, exact offsets, hashes...",
+      "line": 35,
+      "match": "EXP-20260905-003",
+      "path": "Vault/30-Experiments/EXP-20260905-003 - Shared floor return discriminator and stitched patch.md"
+    },
+    {
+      "column": 18,
+      "context": "`reports/terrain/EXP-20260905-003-runtime.json` (normal-input traces, identity a...",
+      "line": 37,
+      "match": "EXP-20260905-003",
+      "path": "Vault/30-Experiments/EXP-20260905-003 - Shared floor return discriminator and stitched patch.md"
+    },
+    {
+      "column": 29,
+      "context": "report is `work/experiments/EXP-20260905-003/offline-v2.json`, hash-pinned by th...",
+      "line": 39,
+      "match": "EXP-20260905-003",
+      "path": "Vault/30-Experiments/EXP-20260905-003 - Shared floor return discriminator and stitched patch.md"
+    },
+    {
+      "column": 42,
+      "context": "Authored files remain under `work/copies/EXP-20260905-003/`.",
+      "line": 135,
+      "match": "EXP-20260905-003",
+      "path": "Vault/30-Experiments/EXP-20260905-003 - Shared floor return discriminator and stitched patch.md"
+    },
+    {
+      "column": 18,
+      "context": "`reports/terrain/EXP-20260905-003-validation.json`; do not infer a green full su...",
+      "line": 197,
+      "match": "EXP-20260905-003",
+      "path": "Vault/30-Experiments/EXP-20260905-003 - Shared floor return discriminator and stitched patch.md"
+    },
+    {
+      "column": 56,
+      "context": "... repository suite passed. See `reports/terrain/EXP-20260905-003-validation.json`",
+      "line": 19,
+      "match": "EXP-20260905-003",
+      "path": "Vault/50-Decisions/Decision Log.md"
+    },
+    {
+      "column": 7,
+      "context": "and [[EXP-20260905-003 - Shared floor return discriminator and stitched patch]].",
+      "line": 20,
+      "match": "EXP-20260905-003",
+      "path": "Vault/50-Decisions/Decision Log.md"
+    },
+    {
+      "column": 13,
+      "context": "Evidence: [[EXP-20260905-003 - Shared floor return discriminator and stitched pa...",
+      "line": 25,
+      "match": "EXP-20260905-003",
+      "path": "Vault/50-Decisions/Decision Log.md"
+    },
+    {
+      "column": 3,
+      "context": "[[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]",
+      "line": 12,
+      "match": "EXP-20260905-003",
+      "path": "Vault/70-Known-Unknowns/Known Unknowns.md"
+    },
+    {
+      "column": 3,
+      "context": "[[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]",
+      "line": 13,
+      "match": "EXP-20260905-003",
+      "path": "Vault/90-Sessions/2026-09-05 1126 - Codex - Terrain diagonal and movement checkpoint.md"
+    },
+    {
+      "column": 5,
+      "context": "- EXP-20260905-003",
+      "line": 7,
+      "match": "EXP-20260905-003",
+      "path": "Vault/90-Sessions/2026-09-05 1659 - Codex - Shared floor return and stitched patch.md"
+    },
+    {
+      "column": 56,
+      "context": "... repository suite passed. See `reports/terrain/EXP-20260905-003-validation.json`",
+      "line": 21,
+      "match": "EXP-20260905-003",
+      "path": "Vault/90-Sessions/2026-09-05 1659 - Codex - Shared floor return and stitched patch.md"
+    },
+    {
+      "column": 7,
+      "context": "and [[EXP-20260905-003 - Shared floor return discriminator and stitched patch]].",
+      "line": 22,
+      "match": "EXP-20260905-003",
+      "path": "Vault/90-Sessions/2026-09-05 1659 - Codex - Shared floor return and stitched patch.md"
+    },
+    {
+      "column": 11,
+      "context": "assigning EXP-20260905-003. Historical run-index diagnostics remain 14 uncited",
+      "line": 29,
+      "match": "EXP-20260905-003",
+      "path": "Vault/90-Sessions/2026-09-05 1659 - Codex - Shared floor return and stitched patch.md"
+    },
+    {
+      "column": 3,
+      "context": "[[EXP-20260905-003 - Shared floor return discriminator and stitched patch]]",
+      "line": 34,
+      "match": "EXP-20260905-003",
+      "path": "Vault/90-Sessions/2026-09-05 1659 - Codex - Shared floor return and stitched patch.md"
+    },
+    {
+      "column": 21,
+      "context": "in `reports/terrain/EXP-20260905-003-validation.json`. Full-suite scratch stays",
+      "line": 69,
+      "match": "EXP-20260905-003",
+      "path": "Vault/90-Sessions/2026-09-05 1659 - Codex - Shared floor return and stitched patch.md"
+    },
+    {
+      "column": 74,
+      "context": "...r return and stitched patch]] - EXP-20260905-003: rigid return reproduced offlin...",
+      "line": 12,
+      "match": "EXP-20260905-003",
+      "path": "Vault/90-Sessions/Session Index.md"
+    }
+  ],
+  "new_hits_truncated": false,
+  "new_notes": 17,
+  "new_total_hits": 40,
+  "notes_scanned": 659,
+  "old": "reverse failure",
+  "old_hits": [],
+  "old_hits_truncated": false,
+  "old_notes": 0,
+  "old_total_hits": 0,
+  "overlap_rule": "old hits contained in a new occurrence are ignored",
+  "search_path": "Vault",
+  "state": "new_only",
+  "subcommand": "pair",
+  "tool": "claim-sweep"
+}

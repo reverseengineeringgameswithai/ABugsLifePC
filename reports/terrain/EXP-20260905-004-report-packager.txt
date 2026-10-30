@@ -1,0 +1,74 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import hashlib,json
+ROOT=Path('/home/dev/ABLPC');W=ROOT/'work/experiments/EXP-20260905-004'
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def load(p):
+ text=p.read_text();decoder=json.JSONDecoder();rows=[];offset=0
+ while offset<len(text):
+  while offset<len(text) and text[offset].isspace():offset+=1
+  if offset==len(text):break
+  value,offset=decoder.raw_decode(text,offset);rows.append(value)
+ if not rows:raise ValueError('empty JSON stream')
+ return rows[0] if len(rows)==1 else rows
+j=load(W/'offline.json');meta=j['fixture'];names={r['file_offset']:r['surface'] for r in meta['cells']}
+def compact_step(s):return {k:s[k] for k in ('requested_delta','before','after')}
+def leg(r):return {**{k:v for k,v in r.items() if k!='steps'},'steps':[compact_step(s) for s in r['steps']]}
+def surfaces(states):
+ out=[]
+ for state in states:
+  c=state.get('contact_cell');name=names.get(c['file_offset']) if c else None
+  if not out or out[-1]!=name:out.append(name)
+ return out
+routes=[]
+for r in j['routes']:
+ row={'z_stored':r['z_stored'],'speed':r['speed'],'landing':compact_step(r['landing'])}
+ for k in ('uphill','downhill'):
+  original=r[k];sequence=surfaces(s['after'] for s in original['steps'])
+  expected='top' if k=='uphill' else 'deck'
+  assert original['accepted'] and names[original['final']['contact_cell']['file_offset']]==expected
+  assert set(('deck','ramp','top')).issubset(sequence)
+  row[k]=leg(original);row[k]['surface_sequence']=sequence
+ routes.append(row)
+labels=('approach-south','approach-east','ramp-foot','uphill-1','downhill-1','uphill-2','downhill-2','jump-approach','step-off-west')
+live={};total=0
+for label in labels:
+ row=load(W/(label+'.json'));ss=row['samples'];total+=len(ss);sequence=[]
+ for s in ss:
+  name=s.get('contact_surface')
+  if not sequence or sequence[-1]!=name:sequence.append(name)
+ assert row['outcome']=='target-reached' and row['error'] is None
+ if label.startswith(('uphill','downhill')):
+  assert set(('deck','ramp','top')).issubset(sequence)
+  assert row['after_release']['contact_surface']==('top' if label.startswith('uphill') else 'deck')
+ live[label]={**row,'surface_sequence':sequence,'frame':load(W/(label+'-frame.json')),
+              'max_below_floor_world':max(s['below_floor_world'] for s in ss if s['below_floor_world'] is not None)}
+jump=load(W/'jump.json');total+=len(jump['samples'])
+frames=[]
+for p in sorted(W.glob('*.png')):frames.append({'path':str(p.relative_to(ROOT)),'sha256':sha(p),'bytes':p.stat().st_size})
+build=load(W/'build.json');differences=[r for r in build['staging']['files'] if r['source_sha256']!=r['staged_sha256']]
+record={'experiment':'EXP-20260905-004','created_utc':datetime.now(timezone.utc).isoformat(),
+ 'fixture':meta,'offline':{'accepted':j['accepted'],'binary_sha256':j['binary_sha256'],'routes':routes,
+ 'natural_spawn_approach':{'landing':compact_step(j['natural_spawn_approach']['landing']),'legs':[leg(r) for r in j['natural_spawn_approach']['legs']]},
+ 'landings':[{'surface':r['surface'],'landing':compact_step(r['landing']),'settle':[compact_step(s) for s in r['settle']]} for r in j['landings']],
+ 'step_off':{'landing':compact_step(j['step_off']['landing']),'route':leg(j['step_off']['route'])},
+ 'banked_closed_wall_control':leg(j['banked_closed_wall_control']),
+ 'mesh_stream_instruction_audit':j['mesh_stream_instruction_audit'],
+ 'complete_private_report':{'path':str((W/'offline.json').relative_to(ROOT)),'sha256':sha(W/'offline.json')},
+ 'public_projection':'All requested deltas and before/after states retained; per-call instruction/candidate/plane-sign detail remains in hash-pinned private report.',
+ 'bootstrap_rejection':'A preliminary adapter call used deckY-2048 and failed the banked landing assertion. The gate uses EXP-006 existing deckY-1024 seed; no geometry change was made for this setup correction.'},
+ 'runtime':{'scope':'One fresh file-loaded copy; normal XTEST input and read-only capture. Coordinates/contact globals are not a validated grounded-bit contract; captures are asynchronous.',
+ 'launch':load(W/'launch.json'),'discovery':load(W/'discovery.txt'),'loaded_before':load(W/'loaded-verification.txt'),
+ 'loaded_after':load(W/'loaded-verification-after.txt'),'routes':live,'jump':jump,
+ 'jump_y_range':[min(s['position'][1] for s in jump['samples']),max(s['position'][1] for s in jump['samples'])],
+ 'jump_settled':load(W/'jump-settled.json'),'samples_total':total,'frames':frames,
+ 'pre_audit':load(W/'pre-launch-audit.json'),'post_audit':load(W/'post-close-audit.json'),
+ 'close':load(W/'close.txt'),'staged_file_count':len(build['staging']['files']),'staged_differences':differences,'build_receipt_sha256':sha(W/'build.json')},
+ 'validation':{'new_regressions':{'passed':19,'duration_seconds':17.29},
+ 'terrain_gate':{'passed':118,'duration_seconds':26.51,'files':['tests/test_terrain_deck_grid_probe.py','tests/test_terrain_deck_probe.py','tests/test_terrain_deck_visual_probe.py','tests/test_terrain_floor_edit.py','tests/test_terrain_floor_visual_fixture.py','tests/test_terrain_floor_patch.py','tests/test_terrain_play_area.py']},
+ 'r2q_and_full_suite':'Not run; user-directed terrain-only validation.'},
+ 'limits':['Elevated local deck, not a route to the distant retail landscape.','Broad deck remains beneath ramp/box, not a retessellated Boolean union.','Finite lanes, speeds and runtime views only; no universal mesh/material rule.','EXP-003 prop-confounded source100 route remains a separate open question.'],
+ 'provenance':{p:sha(ROOT/p) for p in ('reimplementation/ablpc/terrain_play_area.py','scripts/terrain-play-area.py','tests/test_terrain_play_area.py','scripts/terrain-deck-grid-probe.py','scripts/terrain-deck-visual-probe.py','scripts/terrain-deck-probe.py','scripts/terrain-floor-boundary-probe.py')}}
+out=ROOT/'reports/terrain/EXP-20260905-004.json'
+with out.open('x') as f:json.dump(record,f,indent=2);f.write('\n')
+print(json.dumps({'report_bytes':out.stat().st_size,'terrain_sha256':meta['terrain_sha256'],'dat_sha256':meta['level_dat_sha256'],'runtime_samples':total,'frames':len(frames),'jump_samples':len(jump['samples']),'jump_y_range':record['runtime']['jump_y_range'],'jump_after':jump['after'],'main_routes':{k:{'samples':len(v['samples']),'surfaces':v['surface_sequence'],'max_below_floor_world':v['max_below_floor_world']} for k,v in live.items()},'control':j['banked_closed_wall_control']['outcome']},indent=2))

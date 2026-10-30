@@ -1,0 +1,48 @@
+from pathlib import Path
+import hashlib,json
+ROOT=Path('/home/dev/ABLPC'); W=ROOT/'work/experiments/EXP-20260905-003'; R=ROOT/'reports/terrain'
+def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
+def load(p):
+ text=p.read_text(); decoder=json.JSONDecoder(); documents=[]; offset=0
+ while offset<len(text):
+  while offset<len(text) and text[offset].isspace(): offset+=1
+  if offset==len(text): break
+  value,offset=decoder.raw_decode(text,offset); documents.append(value)
+ if not documents: raise ValueError('empty JSON stream: '+str(p))
+ return documents[0] if len(documents)==1 else {'stream_format':'concatenated JSON command output','documents':documents}
+def save(name,j):
+ p=R/name
+ encoded=json.dumps(j,indent=2,sort_keys=True)+'\n'
+ if p.exists():
+  assert p.read_text()==encoded, 'refusing to replace different report: '+str(p)
+ else:
+  with p.open('x') as f: f.write(encoded)
+ print(name,p.stat().st_size)
+def prune(v):
+ if isinstance(v,list):return [prune(x) for x in v]
+ if isinstance(v,dict):return {k:prune(x) for k,x in v.items() if k not in ('execution','admitted_cells','segment_updates','triangle_updates')}
+ return v
+original=load(W/'offline-v2.json'); j=prune(original)
+j['private_complete_report']={'path':str((W/'offline-v2.json').relative_to(ROOT)),'sha256':digest(W/'offline-v2.json'),'bytes':(W/'offline-v2.json').stat().st_size}
+j['public_projection']='Omit per-call execution, candidate, segment-update and triangle-update arrays; preserve all before/after states, plane signs, offsets and hashes. Complete return witness follows; unabridged private report is hash-pinned.'
+j['rigid_return_witness_index_10']=original['arms']['rigid']['return_route']['legs'][1]['steps'][10]
+j['boundary_totals']={a:{c: {'accepted':sum(r['accepted'] for r in v['boundary_crossings'] if r['control']==c),'attempted':sum(r['control']==c for r in v['boundary_crossings'])} for c in sorted({r['control'] for r in v['boundary_crossings']})} for a,v in original['arms'].items()}
+save('EXP-20260905-003.json',j)
+runtime={'experiment':'EXP-20260905-003','scope':'Fresh file-loaded copies; normal XTEST input; read-only process memory and compositor frames. Live contact globals are not a validated grounded-bit contract. The below-floor guard compares the player anchor with floor plane +3200; capture and after-release samples need not be temporally identical.','operator_sha256':digest(W/'operate.py'),'arms':{}}
+for arm in ('retail','rigid','stitched'):
+ d=W/arm; rows={}; traces={}
+ for p in sorted(d.glob('*.json')):
+  v=load(p)
+  if p.name in ('launch.json','discovery.json','pre-audit.json','post-audit.json','close.json','loaded-verification.json','spawn.json','jump.json','jump-settled.json') or p.stem.startswith(('forward-','return-','seam-')):rows[p.stem]=v
+  if p.name.startswith('receipt-') and v.get('command')==['verify_patch']: rows['loaded-verification']=v['result']
+ for label,v in rows.items():
+  if 'samples' not in v:continue
+  ss=v['samples'];contacts=[]
+  for s in ss:
+   key=s.get('contact_locator',s.get('contact'))
+   if not contacts or contacts[-1]['contact']!=key:contacts.append({'elapsed':s['elapsed'],'contact':key,'position':s['position']})
+  traces[label]={'samples':len(ss),'outcome':v.get('outcome'),'error':v.get('error'),'contact_transitions':contacts,'y_range':[min(s['position'][1] for s in ss),max(s['position'][1] for s in ss)],'max_below_floor_world':max((s['below_floor_world'] for s in ss if s.get('below_floor_world') is not None),default=None),'final':v.get('after_release',v.get('after'))}
+ runtime['arms'][arm]={'receipts':rows,'trace_summary':traces,'runtime_operator_sha256':digest(d/'runtime.py')}
+ print(arm,json.dumps(traces))
+runtime['audit_visibility_correction']={'initial_sandbox_audits':'Reported clean but were not host-complete; unrestricted retail post-audit found the historical USER-20260904-deck-depth-play-001 group46458 and its mute sink.','authorization':'User explicitly authorized closing that older session in the continuation.','close_receipt':load(W/'older-session-close.json'),'post_close_audit':load(W/'older-session-post-audit.json'),'retail_comparison_limit':'Retail ran concurrently with that older instance, with exact PID/window/display and compositor-peer guards. It is a scoped runtime comparison, not evidence of an initially empty host.'}
+save('EXP-20260905-003-runtime.json',runtime)

@@ -1,0 +1,66 @@
+{
+  "experiment": "EXP-20260906-003",
+  "status": "candidate-built-native-checks-complete-test-fixture-correction-pending",
+  "affected_tests": {
+    "passed": 137,
+    "failed": 1,
+    "seconds": 0.59,
+    "failure": "tests/test_terrain_ramp_solid.py::test_ground_profile_reads_both_synthetic_footer_variants",
+    "diagnosis": "The new synthetic test reverses an already upward quad, so the ground reader correctly excludes it. The private candidate integration test passes.",
+    "proposed_correction": "Use mesh() unchanged in that test instead of reversing its indices. No production or asset change.",
+    "approval": "Requested from the user; not yet received or applied at this checkpoint.",
+    "junit": "work/experiments/EXP-20260906-003/affected-tests.xml"
+  },
+  "focused_terrain_gate": {
+    "passed": 72,
+    "failed": 0,
+    "seconds": 26.29,
+    "workers": 4,
+    "distribution": "loadfile",
+    "scratch": "work/tmp/pytest-terrain",
+    "retention": "failed",
+    "junit": "work/experiments/EXP-20260906-003/focused-tests.xml"
+  },
+  "native_side_blocking": {
+    "accepted": true,
+    "seconds": 5.050443803000235,
+    "arms": 8,
+    "result": "Four visual-only control approaches cross the side plane; all four candidate approaches remain outside it.",
+    "limit": "Blocking criterion only; two western candidate final flags are [1,0], not a claim of continuously settled actor grounding.",
+    "evidence": "work/experiments/EXP-20260906-003/native-side-blocking.json"
+  },
+  "native_original_route_gate": {
+    "accepted": false,
+    "seconds": 8.819170605998806,
+    "failure": "Western lane5850 third fixed-axis leg misses the ramp after downhill X drift. The original criterion is retained as failed.",
+    "passes": "Centre/east three-leg routes, east/west step-off and landing, east step-off return via open foot, and all124 native mesh command streams.",
+    "evidence": "work/experiments/EXP-20260906-003/native-ramp-routes.json"
+  },
+  "native_drift_discriminator": {
+    "accepted": true,
+    "seconds": 9.5961760579994,
+    "result": "Unchanged visual control fails the same western fixed-axis criterion, with all three leg-end states matching the candidate. New continuously steered three-leg paths pass in all three lanes.",
+    "steering": "Clamp corrective X to +/-384, retain Z +/-900 and downward512; no reset between legs.",
+    "evidence": "work/experiments/EXP-20260906-003/native-drift-discriminator.json"
+  },
+  "native_relocation": {
+    "accepted": true,
+    "seconds": 0.16341503300100158,
+    "result": "New pointer/mesh and preserved trailing-data pointers/table confirmed by original PC instructions.",
+    "evidence": "work/experiments/EXP-20260906-003/native-relocation.json"
+  },
+  "ground_join": {
+    "confirmed": "The authored skirts extend below the selected original render contour. The new copy clips those buried portions against primary124/128 without changing the original ground.",
+    "bridge": "One explicitly recorded west-boundary seam smaller than one stored unit is bridged only in the new trim contour.",
+    "limits": "28 rotated references were unresolved in the orientation census and are not treated as ground. Exact screenshot-to-face attribution and draw-order causality remain open; the candidate is a bounded geometry discriminator, not a proven live repair.",
+    "evidence": ["work/experiments/EXP-20260906-003/ground-join-census.json", "work/experiments/EXP-20260906-003/render-side-spans.json", "reports/terrain/EXP-20260906-003.json"]
+  },
+  "terrain_sha256": "288d57396d6de67db0df7904567c2bf2a0a40e4309fff490f9343928dc1075b7",
+  "dat_sha256": "f6cfa7883a902af5f43362356b7731adf9708ee5164c454b489e266867b048b2",
+  "current_runtime": "EXP-002 PID36272/start830202/group36018 left unchanged; last user state paused. No new audit or runtime action in this offline task.",
+  "prepared_successor": "work/experiments/EXP-20260906-003/preview-01/ contains an isolated prefix, copied direct operator and checked content hashes; no launch yet.",
+  "full_suite_or_r2q": "not run",
+  "git_operations": [],
+  "live_actions": [],
+  "next": "After user-approved synthetic fixture correction and affected-test pass, perform the requested clean audited switch and file-loaded visual/play handoff. The existing focused gate need not be repeated for a test-only correction."
+}

@@ -1,0 +1,77 @@
+"""Offline evidence accounting; no live process operations."""
+from pathlib import Path
+import hashlib,json,math,struct
+from PIL import Image
+ROOT=Path('/home/dev/ABLPC');HERE=Path(__file__).resolve().parent
+load=lambda p:json.loads(p.read_text())
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+cases=[('alternate','west-oscillation','West wall'),('alternate','north-oscillation','North wall'),('alternate','east-oscillation','East wall'),('stationary','west-occlusion-oscillation','Occluding west view'),('stationary','south-occlusion-oscillation','South wall')]
+summaries=[];gallery={};frame_paths=set();total_samples=0
+for arm,name,label in cases:
+    d=load(HERE/arm/(name+'.json'));assert d['error'] is None
+    samples=d['samples'];axis=2 if d['side'] in ('east','west') else 0
+    signs=[]
+    for a,b in zip(samples,samples[1:]):
+        delta=b['position'][axis]-a['position'][axis]
+        if abs(delta)>=32:signs.append(1 if delta>0 else -1)
+    assert all(s['level']==1 and s['contact'][0]==99 and -102403<=s['position'][1]<=-102400 for s in samples)
+    bounds=(163200,184000,497600,520000) if arm=='alternate' else (200800,221600,473600,496000)
+    x0,x1,z0,z1=bounds
+    for s in samples:
+        x,y,z=s['position']
+        if d['side']=='west':assert x<x0 and z0<z<z1
+        elif d['side']=='east':assert x>x1 and z0<z<z1
+        elif d['side']=='north':assert z>z1 and x0<x<x1
+        else:assert z<z0 and x0<x<x1
+    rows=[]
+    for c in d['captures']:
+        row=c['capture'];p=Path(row['frame']);assert sha(p)==row['sha256']
+        with Image.open(p) as im:assert im.size==(640,480) and len(im.getextrema())>=3
+        frame_paths.add(p)
+        rows.append({'path':str(p.relative_to(HERE)),'elapsed':c['elapsed'],'phase':c['phase'],'state':row['state'],'sha256':row['sha256']})
+    gallery[label]=rows
+    summary={'arm':arm,'trace':str((HERE/arm/(name+'.json')).relative_to(ROOT)),'side':d['side'],'samples':len(samples),'captures':len(rows),'requested_seconds':d['seconds'],'position_ranges':[[min(s['position'][i] for s in samples),max(s['position'][i] for s in samples)] for i in range(3)],'input_changes':len(d['events']),'tangential_reversals_delta_at_least_32':sum(a!=b for a,b in zip(signs,signs[1:])),'unique_camera_matrices':len({s['camera_matrix_hex'] for s in samples}),'ground_source99_all_samples':True,'stayed_outside_tested_wall_all_samples':True}
+    summaries.append(summary);total_samples+=len(samples)
+diag=load(HERE/'stationary/diagnostic/edge-classification.json')
+assert diag['triplet_roi_identical'] and diag['analytic_top_ahead_blue_pixels']==0
+assert diag['captured_batch_matches'][1]['matched_tuples']==84
+jump=load(HERE/'alternate/jump-east-settle.json');leave=load(HERE/'alternate/west-settle.json')
+assert -108547<=jump['after']['position'][1]<=-108544
+assert -102403<=leave['after']['position'][1]<=-102400
+base=load(HERE/'pre-audit.json')
+for p in [HERE/'alternate/post-audit.json',HERE/'stationary/pre-audit.json',HERE/'stationary/post-audit.json',HERE/'post-audit.json']:assert load(p)==base
+assert load(HERE/'preserved-user-preflight.json')==load(HERE/'preserved-user-postflight.json')
+for arm in ['alternate','stationary']:
+    assert not (HERE/arm/'active.json').exists()
+    first=load(HERE/arm/'loaded-fixture.json')
+    last=load(HERE/arm/('post-south-loaded-fixture.json' if arm=='stationary' else 'final-loaded-fixture.json'))
+    for key in ['prefix_sha256','render_prefix_sha256','level_dat_sha256','terrain_sha256']:
+        assert first[key]==last[key]
+    stage=ROOT/'work/copies/EXP-20260905-002'/arm/'PC/BUGS'
+    for key,name in [('level_dat_sha256','LEVEL.DAT'),('terrain_sha256','TERRAIN.ALL')]:assert sha(stage/'CD/LEVEL01'/name)==first[key]
+    log=(stage/'bugs.log').read_text()
+    for marker in ['Native software render mode is FALSE','RenderMode set to Direct3d render mode','Screen mode 640x480x16 selected','OnlySystemMemory status VIDEO MEMORY ONLY','D3DAPPCREATE : Mode set to 640x480','INIT : Starting Direct3D renderer','LOADING : App run from R:\\PC\\BUGS.','LOAD : Loading file R:\\PC\\BUGS\\cd\\cd.txt.']:assert marker in log
+    assert 'INITSOFTRENDER' not in log and 'SYSTEM MEMORY ONLY' not in log
+    (HERE/arm/'final-game.log').write_text(log)
+
+page=r'''<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Box movement and visibility tests</title>
+<style>body{font:16px system-ui;background:#141920;color:#edf1f6;max-width:1020px;margin:30px auto;padding:0 20px;line-height:1.5}button,select{font:inherit;padding:9px;background:#35404e;color:inherit;border:1px solid #748395;border-radius:5px;margin:4px}img{width:960px;max-width:100%;image-rendering:pixelated}small{color:#b5c2d2}input{width:300px;max-width:80%}pre{white-space:pre-wrap}</style>
+<h1>Five bounded wall-reversal tests</h1><p>Flik stayed on the deck and outside the tested wall in every recorded sample. The original box placement covers west, north and east; the stationary placement adds an occluding west view and south-wall coverage.</p>
+<label>View <select id="case"></select></label><button id="play">Play captures</button><p><label>Capture <input id="sample" type="range" min="0" value="0"></label> <span id="number"></span></p><img id="frame" alt="Unaltered native game capture"><pre id="state"></pre>
+<p>The stationary paused edge was also checked with original PC drawing instructions: none of its 485 inspected blue pixels were behind the analytic box top in the reconstructed comparison. This is one diagnostic view, not a guarantee for every animation or camera angle.</p>
+<p><small>The original south-route attempt overshot its approach and left the finite deck. That route was rejected and is excluded from these five valid tests. The later south test uses an explicit wall-position guard. Captures during movement are asynchronous; player/camera readings are observations, not atomic image-state snapshots. All displayed images are original captures, scaled with CSS only.</small></p>
+<p><small>EXP-20260905-002. Both research instances are closed. The user's original paused game is unchanged.</small></p>
+<script>const cases=CASES;let name='Occluding west view',index=0,timer=null;const select=document.querySelector('#case'),slider=document.querySelector('#sample');for(const n of Object.keys(cases)){const o=document.createElement('option');o.textContent=n;o.value=n;select.append(o)}select.value=name;select.onchange=()=>{name=select.value;index=0;show()};slider.oninput=()=>{index=Number(slider.value);show()};document.querySelector('#play').onclick=()=>{if(timer){clearInterval(timer);timer=null}else timer=setInterval(()=>{index=(index+1)%cases[name].length;show()},400);document.querySelector('#play').textContent=timer?'Pause captures':'Play captures'};function show(){const r=cases[name][index];slider.max=cases[name].length-1;slider.value=index;document.querySelector('#frame').src=r.path;document.querySelector('#number').textContent=(index+1)+' / '+cases[name].length;document.querySelector('#state').textContent=name+' · '+r.elapsed.toFixed(2)+' seconds\nPlayer '+r.state.position.join(', ')+'\nCamera '+r.state.camera_translation.join(', ')}show();</script></html>'''.replace('CASES',json.dumps(gallery))
+(HERE/'comparison.html').write_text(page)
+report={'experiment':'EXP-20260905-002','status':'bounded-movement-complete-both-test-arms-closed','executed_game_sha256':'1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f','retail_static_executable_sha256':'97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878','plan':load(HERE/'plan.json'),'stationary_extension':load(HERE/'stationary-plan.json'),'sweeps':summaries,'total_valid_sweep_samples':total_samples,'total_valid_sweep_captures':sum(s['captures'] for s in summaries),'jump_landing':jump['after'],'step_off_landing':leave['after'],'rejected_navigation':load(HERE/'alternate/navigation-rejection.json'),'diagnostic':{k:v for k,v in diag.items() if k not in ['rows']},'state_preserved':load(HERE/'preserved-user-postflight.json'),'lifecycle':{'both_scientific_arms_closed':True,'all_after_close_audits_equal_user_baseline':True,'baseline_accounting':'Seven original user-session processes plus sink ablpc_mute_46458. Ledger exit2 is accounted against the direct handoff; no new survivor.','live_memory_writes':0,'debugger_or_process_stops':0,'original_user_game_input':0},'limits':['Finite movements and selected views; no universal diagonal/subdivision rule.','Original-location south route was invalid; the valid south test uses the stationary placement.','Moving images and state observations are asynchronous, not a frozen A/B/A pixel comparison.','The paused analytic diagnostic is post-hoc and uses integer screen samples; actor output matches179/355 live tuples, static mesh84/84. No full actor/GPU reconstruction.','EXP005 shared-floor return failure remains separate and unrepaired.'],'gallery':str((HERE/'comparison.html').relative_to(ROOT))}
+paths=[]
+for p in HERE.rglob('*'):
+    if not p.is_file() or 'prefix' in p.relative_to(HERE).parts:continue
+    if p.suffix in ('.json','.py','.txt','.log','.html','.png'):paths.append(p)
+paths=sorted(set(paths))
+report['artifacts']=[{'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':sha(p)} for p in paths]
+out=ROOT/'reports/terrain/EXP-20260905-002.json';out.write_text(json.dumps(report,indent=2)+'\n')
+for name in ['operate.py','navigate.py','sweep.py','operate_stationary.py','navigate_stationary.py','sweep_stationary.py','sweep_stationary_v2.py','capture_diagnostic.py','classify_edge.py','build_report.py']:
+    (ROOT/'reports/terrain'/('EXP-20260905-002-'+Path(name).stem+'-operator.txt')).write_bytes((HERE/name).read_bytes())
+(ROOT/'reports/terrain/EXP-20260905-002-runtime-operator.txt').write_bytes((HERE/'alternate/runtime.py').read_bytes())
+print(json.dumps({'samples':total_samples,'captures':report['total_valid_sweep_captures'],'sweeps':summaries,'report_bytes':out.stat().st_size,'report_sha256':sha(out),'artifacts':len(paths)},indent=2))

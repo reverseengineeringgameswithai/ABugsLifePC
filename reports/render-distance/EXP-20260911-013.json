@@ -1,0 +1,540 @@
+{
+  "experiment": "EXP-20260911-013",
+  "status": "implemented-bounded-performance-checked",
+  "authorization": "User requested implementation of the recommended2x distance and performance testing.",
+  "settings": {
+    "path": "work/studio/fliks-adventure/levels/anthill/project.json",
+    "before": {
+      "near": 1728,
+      "far": 2496
+    },
+    "after": {
+      "near": 2304,
+      "far": 3328
+    },
+    "before_sha256": "e6cd83e6aa2f1f1f9e02dd8c058c312bf55a2d18839b775dda04731ed7ebc9c4",
+    "after_sha256": "b543e03916bf09df808ea130259388ec6e06709df705637f80eac55d4a16b331",
+    "scope": "Shared engine distance selected by saved Studio Anthill manifest; all other JSON exact"
+  },
+  "production_build": "/home/dev/ABLPC/work/copies/studio-1789159210352751346",
+  "executable_sha256": "bf9d83ae735505fcfd4acef62bf8343f641e8553213ca2b112a04a6d09353a0a",
+  "training_dat_sha256": "d5ed5105a41814ae7a0acfc1d25793eb589428494373dd98046a67542a995bcc",
+  "preservation": {
+    "build": "/home/dev/ABLPC/work/copies/studio-1789159210352751346",
+    "executable_sha256": "bf9d83ae735505fcfd4acef62bf8343f641e8553213ca2b112a04a6d09353a0a",
+    "previous_executable_sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002",
+    "changed_executable_bytes": [
+      307107,
+      307108,
+      307119,
+      307120,
+      307138
+    ],
+    "initializer_sites": [
+      {
+        "va": "0x44bba3",
+        "offset": 307107,
+        "before": 2496,
+        "after": 3328
+      },
+      {
+        "va": "0x44bbaf",
+        "offset": 307119,
+        "before": 2496,
+        "after": 3328
+      },
+      {
+        "va": "0x44bbc1",
+        "offset": 307137,
+        "before": -768,
+        "after": -1024
+      }
+    ],
+    "all_cd_files_exact": true,
+    "training_dat_sha256": "d5ed5105a41814ae7a0acfc1d25793eb589428494373dd98046a67542a995bcc",
+    "changed_project_files": [
+      "levels/anthill/project.json"
+    ],
+    "project_file_count": 1191,
+    "bank_unchanged": true,
+    "matched_benchmark_cd_exact": true,
+    "matched_benchmark_exe_diff_exact": true
+  },
+  "native_primary_scene_check": [
+    {
+      "near": 1728,
+      "far": 2496,
+      "scene_count": 371,
+      "admitted": 37,
+      "total_vertices": 3281,
+      "max_batch_vertices": 496,
+      "batch_count": 9,
+      "driver_calls": 27
+    },
+    {
+      "near": 2304,
+      "far": 3328,
+      "scene_count": 371,
+      "admitted": 37,
+      "total_vertices": 3728,
+      "max_batch_vertices": 497,
+      "batch_count": 9,
+      "driver_calls": 27
+    }
+  ],
+  "native_scope": "All primary scenes, original admission/emission/flush, six COM sites return success; captured camera; no actors/background/GPU timing claim",
+  "hardware": {
+    "six_markers_all_three_arms": true,
+    "corner_restored": true,
+    "live_initializer": {
+      "near": 2304,
+      "far": 3328,
+      "lookup_words_exact": 4095,
+      "level": 17,
+      "executable_sha256": "018bf53d356615434839dedcbdcedbd9e328bcf291b653a52dc2e0d51831e504"
+    },
+    "final_play": {
+      "normal_build": "/home/dev/ABLPC/work/copies/studio-1789159210352751346",
+      "preview": "/home/dev/ABLPC/work/copies/EXP-20260911-013-play",
+      "cd_exact": true,
+      "normal_camera_hook_bytes": "e99a844700",
+      "near": 2304,
+      "far": 3328,
+      "flik": [
+        44556,
+        -32961,
+        578624
+      ],
+      "sha256": "f55c3612f60fb1fba373c55d8cab6afcac96cf00d4156c542963234aa58b7059"
+    }
+  },
+  "performance": {
+    "rows": [
+      {
+        "seconds": 60.07002226699842,
+        "fps_windows": 5,
+        "fps_median": 31.22723,
+        "fps_min": 31.22073,
+        "fps_max": 31.279324,
+        "cpu_percent_one_core": {
+          "game": 101.58145060905609,
+          "leader": 7.391373987286284,
+          "xwayland": 0.06658895484041699
+        },
+        "game_rss_max_mib": 395.6875,
+        "stable_camera": false,
+        "flik_start": [
+          42261,
+          -32961,
+          581896
+        ],
+        "flik_end": [
+          42261,
+          -32961,
+          581896
+        ],
+        "near": 1728,
+        "far": 2496,
+        "label": "base",
+        "receipt": "/home/dev/ABLPC/work/experiments/EXP-20260911-013/base-play/benchmark-1789159487422329996.json",
+        "flik_unique_positions": 1,
+        "camera_samples_matching_fixed_pose": 240,
+        "samples": 241
+      },
+      {
+        "seconds": 60.06829513300181,
+        "fps_windows": 6,
+        "fps_median": 31.25,
+        "fps_min": 31.24349,
+        "fps_max": 31.256512,
+        "cpu_percent_one_core": {
+          "game": 101.68425766830589,
+          "leader": 5.909939664742729,
+          "xwayland": 0.0832385868273624
+        },
+        "game_rss_max_mib": 396.3125,
+        "stable_camera": true,
+        "flik_start": [
+          42261,
+          -32961,
+          581896
+        ],
+        "flik_end": [
+          42261,
+          -32961,
+          581896
+        ],
+        "near": 2304,
+        "far": 3328,
+        "label": "candidate",
+        "receipt": "/home/dev/ABLPC/work/experiments/EXP-20260911-013/candidate-play/benchmark-1789159712002040247.json",
+        "flik_unique_positions": 1,
+        "camera_samples_matching_fixed_pose": 241,
+        "samples": 241
+      }
+    ],
+    "fps_median_change_percent": 0.0729171303378573,
+    "game_cpu_change_percentage_points": 0.10280705924979827,
+    "scope": "Matched rendered camera/start, two60s settled trials; first overlapping300-paint FPS report excluded; static Training view only; no1%low or GPU timer claim"
+  },
+  "performance_method": {
+    "compositor_version": "gamescope-3.16.25-1.fc44.x86_64",
+    "sampling_source": "https://raw.githubusercontent.com/ValveSoftware/gamescope/3.16.25/src/steamcompmgr.cpp",
+    "sampling_lines": "2374-2387",
+    "fps_unit": "300 compositor paint calls per window; first overlap window excluded",
+    "cpu": "Linux /proc utime+stime deltas, percentage of one core",
+    "rss": "Linux /proc resident pages",
+    "warmup": "Settled Training after menu/startup and tutorial audio; no benchmark input",
+    "camera": "Identical file-built fixed camera before world draw; one baseline read sampled a different between-update translation; all Flik positions stable",
+    "conclusion": "No material slowdown observed in this matched Training view; small FPS/CPU differences do not establish causality"
+  },
+  "checks": {
+    "command": "PYTEST_ADDOPTS='-k \"render_distance or training_expansion or training_soil or training_occlusion\"' make check",
+    "passed": 79,
+    "deselected": 6457,
+    "seconds": 39.3,
+    "compatibility": true,
+    "tracked_file_audit": true,
+    "vault": {
+      "notes": 940,
+      "errors": 0,
+      "warnings": 5
+    },
+    "claim_pairs": "new_only",
+    "briefing": true,
+    "full_suite_rerun": false
+  },
+  "runtime": {
+    "final_ownership": {
+      "build": "/home/dev/ABLPC/work/copies/EXP-20260911-013-play",
+      "sha256": "f55c3612f60fb1fba373c55d8cab6afcac96cf00d4156c542963234aa58b7059",
+      "sink": "ablpc_soil_1789159752419995386",
+      "module": 536870916,
+      "code_va": 17313792,
+      "state_va": 17317888,
+      "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-013/play/prefix",
+      "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+      "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+      "audible": false,
+      "expect_auto_hardware": true,
+      "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+      "leader": {
+        "pid": 91091,
+        "start": 5734658,
+        "group": 91091,
+        "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789159752419995386 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-013/play/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-013-play/bugs.exe log cheat mpeg "
+      },
+      "game": {
+        "pid": 91321,
+        "start": 5734777,
+        "group": 91091,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-013-play\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "display": ":2",
+      "xwayland": {
+        "pid": 91119,
+        "start": 5734682,
+        "group": 91091,
+        "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+      },
+      "hardware_before_input": true,
+      "window": "14680071"
+    },
+    "bindings": [
+      {
+        "pid": 91091,
+        "start": 5734658,
+        "group": 91091,
+        "binding": "group"
+      },
+      {
+        "pid": 91119,
+        "start": 5734682,
+        "group": 91091,
+        "binding": "group"
+      },
+      {
+        "pid": 91243,
+        "start": 5734693,
+        "group": 91091,
+        "binding": "group"
+      },
+      {
+        "pid": 91245,
+        "start": 5734693,
+        "group": 91091,
+        "binding": "group"
+      },
+      {
+        "pid": 91247,
+        "start": 5734693,
+        "group": 91247,
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 91253,
+        "start": 5734698,
+        "group": 91253,
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 91256,
+        "start": 5734700,
+        "group": 91256,
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 91267,
+        "start": 5734701,
+        "group": 91267,
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 91269,
+        "start": 5734701,
+        "group": 91269,
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 91275,
+        "start": 5734704,
+        "group": 91275,
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 91281,
+        "start": 5734705,
+        "group": 91281,
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 91312,
+        "start": 5734769,
+        "group": 91312,
+        "binding": "exact_prefix"
+      },
+      {
+        "pid": 91321,
+        "start": 5734777,
+        "group": 91091,
+        "binding": "group"
+      }
+    ],
+    "audit_unattributed": 7,
+    "all_reported_processes_bound": true,
+    "audio": {
+      "sink": {
+        "index": 5140,
+        "name": "ablpc_soil_1789159752419995386",
+        "owner_module": 536870916
+      },
+      "streams": [
+        {
+          "index": 5233,
+          "sink": 5140,
+          "mute": false,
+          "properties": {
+            "client.api": "pipewire-pulse",
+            "pulse.server.type": "unix",
+            "application.name": "Travellers Tales bugs",
+            "application.process.id": "91321",
+            "application.process.user": "dev",
+            "application.process.host": "fedora",
+            "application.process.binary": "wine-preloader",
+            "application.language": "C.UTF-8",
+            "window.x11.display": ":2",
+            "application.process.machine_id": "a959c6830a494191b12b8af35d09fa6b",
+            "media.name": "audio stream #1",
+            "pulse.corked": "false",
+            "node.rate": "1/48000",
+            "node.latency": "256/48000",
+            "target.object": "ablpc_soil_1789159752419995386",
+            "stream.is-live": "true",
+            "node.name": "Travellers Tales bugs",
+            "node.want-driver": "true",
+            "node.autoconnect": "true",
+            "media.class": "Stream/Output/Audio",
+            "port.group": "stream.0",
+            "adapt.follower.spa-node": "",
+            "object.register": "false",
+            "factory.id": "7",
+            "clock.quantum-limit": "8192",
+            "node.loop.name": "data-loop.0",
+            "library.name": "audioconvert/libspa-audioconvert",
+            "client.id": "292",
+            "object.id": "266",
+            "object.serial": "5233",
+            "pulse.attr.maxlength": "30720",
+            "pulse.attr.tlength": "9600",
+            "pulse.attr.prebuf": "8",
+            "pulse.attr.minreq": "3840",
+            "node.driver-id": "94",
+            "module-stream-restore.id": "sink-input-by-application-name:Travellers Tales bugs"
+          }
+        }
+      ]
+    },
+    "closures": [
+      {
+        "receipt": "work/experiments/EXP-20260911-011/garden-preview/close-1789159278487594686.json",
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014",
+        "clean": true
+      },
+      {
+        "receipt": "work/experiments/EXP-20260911-013/base-play/close-1789159524104073744.json",
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014",
+        "clean": true
+      },
+      {
+        "receipt": "work/experiments/EXP-20260911-013/candidate-play/close-1789159741671571818.json",
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014",
+        "clean": true
+      }
+    ],
+    "final_open": true,
+    "final_scope": "Convenient file-built platform start, normal camera/control; exact production CD; muted",
+    "final_input": "Return, Return, then Right0.18s with native support"
+  },
+  "limits": [
+    "Shared setting affects the mod; performance measured only in this Training garden view.",
+    "Coarse compositor FPS and CPU/RSS are not GPU timestamps,1%lows or exhaustive frame-pacing results.",
+    "Two static60s trials do not establish movement-heavy or other-machine performance.",
+    "Normal production has no diagnostic hooks; final convenience preview adds only its startup hook.",
+    "2x remains a finite distance; no all-angle guarantee or new design-bank acceptance.",
+    "Five historical Vault size warnings and prior full-suite R2p/R2q issues remain."
+  ],
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260911-013/settings-change.json",
+      "sha256": "ec481d901462f18e2af0174e9944b93a46b8ff4c8af349858b2622ce8eb94ba1"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/preservation.py",
+      "sha256": "bc21af7329c121bc78ec10b5e6dea98b62a50e555ef87e52732b8a4f152025d8"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/preservation.json",
+      "sha256": "c6f8f637c6a0a7d17d92c26af5698278ee7aab5662d971b337e3b7b0ec5b667c"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/benchmark-builds.json",
+      "sha256": "e6a4bdf2a31d2adbe45676086325f3be1a913d374e23ed16372ad533c62c014a"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/prepare-bench.py",
+      "sha256": "0809cb535235cd485716f3f765b290a0a570401231c0aeee39579f42d1adf28e"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/runtime.py",
+      "sha256": "51a1b0c98ca39b420335bb2c880717754326778e249b751b88c9c1ef12c67647"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/bench.py",
+      "sha256": "d4ccadc8651a366bae98dd9b2aec36c02e185fd3ff3547f343962b9abdca75aa"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/compare-bench.py",
+      "sha256": "eb7ad81de9d00fe79390fa42772a9e17bf914105182bb906c2ca44f7d3ddcf35"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/performance.json",
+      "sha256": "7cca43dbd7fcecaec6bb6e9f93797b1db1372b05272b3c8675d404812d86e795"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/base-play/benchmark-1789159487422329996.json",
+      "sha256": "7d85837269315f4ad7124111604a12513ea98f559d14dd2668cf19bcbd7ce65f"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/candidate-play/benchmark-1789159712002040247.json",
+      "sha256": "05c013d9dedabbf576fef91f597fa80ca12925c4700a64f3635793f7562a1ffb"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/base-play/gamescope.stats",
+      "sha256": "a18da84f19309b59600188cba6d45f01cbde4c2adc4e28b877e608b41e67b8e8"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/candidate-play/gamescope.stats",
+      "sha256": "dfa236a5de6138b73abde558824c950004ff6f6e8131799df632e8c57fae08e8"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/base-play/frame-1789159349958581035.png",
+      "sha256": "8070f7d99bca39a5287dc124ca961ec566e25cf39bd234abaadcf89331e12585"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/candidate-play/frame-1789159585494192641.png",
+      "sha256": "11d16ccac3dd8fceabf47fe970ae7b0bb2dde5e9469bf7baa75b0c1906e51692"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/frame-probe.py",
+      "sha256": "444121f6f6bc05416695a4cc9e2e922e81c465e5659abdd827bd2d7a6d1d21ea"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/frame-probe.json",
+      "sha256": "a9d2b2778153c043858022e87031514ea00b30bbb37286bfb0686f971f391b27"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/live-distance-check.json",
+      "sha256": "2c2bfdccf72587868bd980374c304a0d58094bbc72aea6c85a9f1eab5f0aa8b1"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/prepare-play.py",
+      "sha256": "f88749d5787bf3435592b23ac233eadec05e85a462ee64379f058d2aa121c9a3"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/final-play-check.json",
+      "sha256": "6f30946e91248b6fd7b6446b88d88dba16f1173a25df38874cab9ccd47012ce5"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/play/pressure-1789159778258989325.png",
+      "sha256": "a47f9ca8156be3f0775cc04dc973989c58e86bab0206b812b2197e98043c4c54"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/play/pressure-1789159789699721187.png",
+      "sha256": "7af593a7829f4052f670ab86351bf9e55d44ebc47d71a2090f3d6a9c2659bdf7"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/play/pressure-1789159789700881915.json",
+      "sha256": "f959aeb24ea7d75376120619204dddcd82596874c1aa5c613732c96198072295"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/play/ownership.json",
+      "sha256": "127ebaf0fecafa8e8e4decebccbf6ae9df930e4c9a53998de34285d1117d1eb8"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/final-audit.json",
+      "sha256": "52714ac275029c202de2af062e20e8d0077383becbb6c4615880505d325fd9e3"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/final-bindings.json",
+      "sha256": "834e2a88bb30e5a05d0e46eb9cb93367c08e0e6ec4cd0e8230cc00add24d20a6"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/audio-binding.json",
+      "sha256": "21d3daeb35f243a8af46aa9379d2c3090629bec52755d51e53e83cb144538026"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/check.log",
+      "sha256": "4fd9c8ea3931f9066da8209e4e36a57f69fabceb6397688f7d63dfb442500f0c"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/final-vault.log",
+      "sha256": "c53e1920bf4ffd12f96fd2b720e6b7177c12a8439d66625915612bd57166bc19"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/claim-installed.json",
+      "sha256": "01ccec2c0b3bf53b3fc6cb1bc8a570168749c46c2094c7639d230e9d99746467"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/claim-unknowns.json",
+      "sha256": "e6d7b61529a137da50cd2b8072cfa554e7fd737d045d7b2d536f6bdf1125d5cd"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/briefing.txt",
+      "sha256": "d9e203b2e2daf8df8976e72fae0ce2b6d460616439e0cde3f7d6b01c197bb69e"
+    }
+  ],
+  "last_accepted_bank": "work/design-banks/EXP-20260911-009-original-gate-grain",
+  "originals_modified": false,
+  "external_live_writes": false,
+  "ps1_consulted": false
+}

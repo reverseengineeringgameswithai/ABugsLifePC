@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "manifest_name": "training-primary-record-124-candidate-far",
+  "files": [
+    {
+      "path": "CD/LEVEL07/LEVEL1.DAT",
+      "input_sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+      "output_sha256": "10e42b43f02281664a5e6cb0b26099b7a2762eb6b2ac7eb2f50751a18c2e64c7",
+      "edits": [
+        {
+          "edit_index": 0,
+          "operation": "set-scene-record-position",
+          "section": "primary",
+          "index": 124,
+          "position": [
+            50000,
+            -833,
+            -393
+          ]
+        }
+      ]
+    }
+  ]
+}

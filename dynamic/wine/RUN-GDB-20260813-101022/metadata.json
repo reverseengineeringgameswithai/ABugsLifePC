@@ -1,0 +1,224 @@
+{
+  "run_id": "RUN-GDB-20260813-101022",
+  "experiment_id": "EXP-20260813-038",
+  "tool": "gdb-harness",
+  "tool_version": "1.2.0",
+  "schema_version": 3,
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "environment": "Fedora Linux 44 (Workstation Edition), kernel 7.0.11-200.fc44.x86_64, wine-11.0 (Staging)",
+  "debugger": "GNU gdb (Fedora Linux) 17.1-6.fc44",
+  "working_directory": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS",
+  "target_pid": 2613716,
+  "ownership": {
+    "pid": 2613716,
+    "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+    "cmdline": [
+      "R:\\PC\\BUGS\\bugs.exe",
+      "log",
+      "cheat",
+      "mpeg"
+    ],
+    "cwd": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS",
+    "exe_path": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS/bugs.exe",
+    "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+    "verified": true,
+    "checked_at": "2026-08-13T10:10:22.435243-04:00"
+  },
+  "status": "target_signal",
+  "spec": {
+    "schema_version": 3,
+    "experiment_id": "EXP-20260813-038",
+    "target": {
+      "mode": "pid",
+      "pid": 2613716,
+      "exe_basename": "bugs.exe",
+      "expected_exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+      "expected_loader_re": ".*wine-preloader$",
+      "expected_cwd_prefix": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS/"
+    },
+    "watchpoints": [],
+    "breakpoints": [
+      {
+        "id": "entry_pre",
+        "address": "0x0044C898"
+      },
+      {
+        "id": "entry_post",
+        "address": "0x0044C89E"
+      }
+    ],
+    "window": {
+      "max_stops": 200,
+      "timeout_seconds": 30,
+      "end_milestones": [],
+      "log_path": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS/bugs.log"
+    },
+    "on_stop": {
+      "registers": [
+        "rip",
+        "rsi"
+      ],
+      "memory_reads": [],
+      "backtrace_limit": 2
+    },
+    "survival": {
+      "required": true,
+      "settle_ms": 500,
+      "sample_count": 5,
+      "sample_interval_ms": 200,
+      "require_untraced": true,
+      "require_resumed": true
+    },
+    "submission_capture": {
+      "pre_trigger_id": "entry_pre",
+      "post_trigger_id": "entry_post",
+      "entry_register": "rsi",
+      "entry_root": "0x005A9660",
+      "entry_stride": 80,
+      "entry_count": 24,
+      "candidate_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "counter_address": "0x008082C8",
+      "capacity_address": "0x0081C138",
+      "base_pointer_address": "0x0081BC28",
+      "pointer_size": 4,
+      "output_stride": 128,
+      "max_records_per_entry": 4096,
+      "warmup_rollovers": 1,
+      "capture_cycles": 1
+    }
+  },
+  "log_start_offset": 64723,
+  "gdb_arch_warning": null,
+  "artifacts": [
+    "metadata.json",
+    "spec.resolved.json",
+    "stops.jsonl",
+    "result.json",
+    "debugger-evidence.txt",
+    "gdb-stderr.txt"
+  ],
+  "time_window_start": "2026-08-13T10:10:22.533090-04:00",
+  "time_window_end": "2026-08-13T10:10:22.547067-04:00",
+  "completion": {
+    "completed": false,
+    "accepted": false,
+    "stop_reason": "target_signal",
+    "stops_observed": 1,
+    "watchpoints_installed": 0,
+    "watchpoints_deleted": 0,
+    "breakpoints_installed": 2,
+    "breakpoints_deleted": 2,
+    "cleanup_verified": true,
+    "detached": true,
+    "target_signal": {
+      "schema_version": 1,
+      "name": "SIGSEGV",
+      "classification": "fatal",
+      "pc": "0x44c898",
+      "t_wall": "2026-08-13T10:10:22.546896-04:00",
+      "delivery_policy": "stop-print-nopass"
+    },
+    "error": null,
+    "survival_required": true,
+    "survival_verified": true,
+    "survival_receipt": {
+      "schema_version": 1,
+      "probe": "proc-identity-state-tracer",
+      "pid": 2613716,
+      "time_start": "2026-08-13T10:10:22.594189-04:00",
+      "time_end": "2026-08-13T10:10:23.896280-04:00",
+      "configuration": {
+        "required": true,
+        "settle_ms": 500,
+        "sample_count": 5,
+        "sample_interval_ms": 200,
+        "require_untraced": true,
+        "require_resumed": true
+      },
+      "identity_verified": true,
+      "identity": {
+        "pid": 2613716,
+        "loader_exe": "/usr/lib64/wine-wow64/wine/x86_64-unix/wine-preloader",
+        "cmdline": [
+          "R:\\PC\\BUGS\\bugs.exe",
+          "log",
+          "cheat",
+          "mpeg"
+        ],
+        "cwd": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS",
+        "exe_path": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS/bugs.exe",
+        "exe_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+        "verified": true,
+        "checked_at": "2026-08-13T10:10:23.095286-04:00"
+      },
+      "samples": [
+        {
+          "index": 0,
+          "t_wall": "2026-08-13T10:10:23.095327-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 1,
+          "t_wall": "2026-08-13T10:10:23.295471-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 2,
+          "t_wall": "2026-08-13T10:10:23.495690-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 3,
+          "t_wall": "2026-08-13T10:10:23.695895-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        },
+        {
+          "index": 4,
+          "t_wall": "2026-08-13T10:10:23.896123-04:00",
+          "state": "R",
+          "tracer_pid": 0,
+          "passed": true,
+          "failure_reasons": []
+        }
+      ],
+      "passed": true,
+      "failure_reasons": []
+    }
+  }
+}

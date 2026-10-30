@@ -1,0 +1,122 @@
+{
+  "schema": "ablpc.flik-events.v1",
+  "evidence": "EXP-20260910-005, EXP-20260910-009",
+  "retail_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "events": [
+    {
+      "id": "need_grain",
+      "title": "Need more grain",
+      "file": "SFX/USGN083.WAV",
+      "cue": 76,
+      "sample_id": 61,
+      "kind": "level_hint",
+      "wording_candidate": "I need more grain!",
+      "uses": [
+        {"slots": [2], "condition": "Approach a still-closed Tunnels grain gate with less grain than that gate requires. The reminder radius is smaller than the gate-opening radius.", "repeat": "A shared Tunnels reminder cooldown must be zero. A request resets it to 60 + a random byte (0–255) game updates; this is not a seconds timer.", "addresses": ["00432EF1", "00432FEB", "0043300D"]},
+        {"slots": [7], "condition": "Approach one of City Entrance's closed grain gates with less than its native 10 / 20 / 30 grain requirement, inside that gate's proximity radius.", "repeat": "A shared City Entrance reminder cooldown must be zero. A request resets it to 60 + a random byte (0–255) game updates; this is not a seconds timer.", "addresses": ["00433790", "004337D1", "00433833"]}
+      ]
+    },
+    {
+      "id": "need_super_jump",
+      "title": "Need Super Jump",
+      "file": "SFX/USGN086.WAV",
+      "cue": 79,
+      "sample_id": 64,
+      "kind": "level_hint",
+      "wording_candidate": "I need super jump!",
+      "uses": [
+        {"slots": [8], "condition": "City Square's updater requests this reminder while Flik lacks the Super Jump flag. It is a periodic reminder, not a failed-jump input check.", "repeat": "The reminder timer must be zero. It resets to 600 + a random byte (0–255) game updates, even when Flik already has Super Jump. A nonzero timer decrements once per update.", "addresses": ["004187A5", "00434170", "00434185", "0043419D"]}
+      ],
+      "caveat": "Dormant in the normal PC City Square banks: the updater requests sample 64, but banks 9, 21 and 22 do not load it. Startup bank 1 does. Replacing this WAV alone does not activate the reminder. No automatic bank restoration is performed."
+    },
+    {
+      "id": "collect_super_jump", "title": "Super Jump acquired", "file": "SFX/USGN082.WAV",
+      "cue": 75, "sample_id": 60, "kind": "pickup", "selector": 15,
+      "wording_candidate": "Super jump!",
+      "condition": "Collect a Super Jump power-up. The native handler also sets Flik's Super Jump flag (bit 0x20). This is different from the missing-Super-Jump reminder.",
+      "addresses": ["004292C0", "0042944C"]
+    },
+    {
+      "id": "collect_invincibility", "title": "Invincibility acquired", "file": "SFX/USGN081.WAV",
+      "cue": 65, "sample_id": 50, "kind": "pickup", "selector": 12,
+      "wording_candidate": "I'm invincible!",
+      "condition": "Collect an invincibility power-up while the invincibility timer is below 1. Collecting another while the timer is active refreshes it without requesting this line.",
+      "addresses": ["004292C0", "0042942A"]
+    },
+    {
+      "id": "collect_health", "title": "Health / general pickup", "file": "SFX/USGN050.WAV",
+      "cue": 62, "sample_id": 47, "kind": "pickup", "selector": 9,
+      "wording_candidate": "That helps.",
+      "condition": "Collect the native health pickup. The handler increments Flik's health and requests this response.",
+      "addresses": ["004292C0", "004293FA"]
+    },
+    {
+      "id": "collect_super_berry", "title": "Super Berry pickup", "file": "SFX/USGN031.WAV",
+      "cue": 53, "sample_id": 38, "kind": "pickup", "selector": 35,
+      "wording_candidate": "Super berry!",
+      "condition": "Collect the native Super Berry power-up (pickup-effect selector 0x23); the handler selects berry weapon 1.",
+      "addresses": ["004292C0", "004294CC"]
+    },
+    {
+      "id": "collect_homing_berry", "title": "Homing Berry pickup", "file": "SFX/USGN032.WAV",
+      "cue": 54, "sample_id": 39, "kind": "pickup", "selector": 33,
+      "wording_candidate": "Homing berry, yeah!",
+      "condition": "Collect the native Homing Berry power-up (pickup-effect selector 0x21); the handler selects berry weapon 2.",
+      "addresses": ["004292C0", "004294CC"]
+    },
+    {
+      "id": "collect_mega_homing_berry", "title": "Mega Homing Berry pickup", "file": "SFX/USGN033.WAV",
+      "cue": 55, "sample_id": 40, "kind": "pickup", "selector": 36,
+      "wording_candidate": "Mega homing berry!",
+      "condition": "Collect the native Mega Homing Berry power-up (pickup-effect selector 0x24); the handler selects berry weapon 4.",
+      "addresses": ["004292C0", "004294CC"]
+    },
+    {
+      "id": "collect_gold_berry", "title": "Gold Berry pickup", "file": "SFX/USGN034.WAV",
+      "cue": 56, "sample_id": 41, "kind": "pickup", "selector": 34,
+      "wording_candidate": "Gold berry! I can do some damage with this!",
+      "condition": "Collect the native Gold Berry power-up (pickup-effect selector 0x22); the handler selects berry weapon 3.",
+      "addresses": ["004292C0", "004294CC"]
+    },
+    {"id": "grain_variant_1", "title": "Grain collected · variant 1", "file": "SFX/USGN009.WAV", "cue": 48, "sample_id": 33, "kind": "action", "wording_candidate": "Grain, grain, grain!"},
+    {"id": "grain_variant_2", "title": "Grain collected · variant 2", "file": "SFX/USGN010.WAV", "cue": 49, "sample_id": 34, "kind": "action", "wording_candidate": "Just picking up grain here."},
+    {"id": "pickup_variant_2", "title": "General pickup · Progress", "file": "SFX/USGN052.WAV", "cue": 63, "sample_id": 48, "kind": "action", "wording_candidate": "Progress!"},
+    {"id": "pickup_variant_3", "title": "General pickup · This I can use", "file": "SFX/USGN051.WAV", "cue": 66, "sample_id": 51, "kind": "action", "wording_candidate": "This I can use."},
+    {"id": "pickup_variant_4", "title": "General pickup · Yeah", "file": "SFX/USGN028.WAV", "cue": 52, "sample_id": 37, "kind": "action", "wording_candidate": "Yeah!"},
+    {"id": "pickup_variant_5", "title": "General pickup · Oh yeah", "file": "SFX/USGN043.WAV", "cue": 58, "sample_id": 43, "kind": "action", "wording_candidate": "Oh yeah!"},
+    {"id": "hurt_variant_1", "title": "Hurt reaction · variant 1", "file": "SFX/USGN090.WAV", "cue": 67, "sample_id": 52, "kind": "action", "wording_candidate": "Oh! (short vocalization; transcription uncertain)"},
+    {"id": "hurt_variant_2", "title": "Hurt reaction · variant 2", "file": "SFX/USGN091.WAV", "cue": 68, "sample_id": 53, "kind": "action", "wording_candidate": "Short vocalization; no reliable word transcription."},
+    {"id": "hurt_variant_3", "title": "Hurt reaction · variant 3", "file": "SFX/USGN108.WAV", "cue": 77, "sample_id": 62, "kind": "action", "wording_candidate": "Ah! (short vocalization; transcription uncertain)"},
+    {"id": "hurt_variant_4", "title": "Hurt reaction · variant 4", "file": "SFX/USGN109.WAV", "cue": 78, "sample_id": 63, "kind": "action", "wording_candidate": "Oh, come on!"},
+    {"id": "hurt_variant_5", "title": "Hurt reaction · variant 5", "file": "SFX/USGN092.WAV", "cue": 81, "sample_id": 66, "kind": "action", "wording_candidate": "Ow! (short vocalization; transcription uncertain)"}
+  ],
+  "groups": [
+    {
+      "id": "grain_collection", "title": "Collect ordinary grain", "disabled_slots": [0],
+      "files": ["SFX/USGN009.WAV", "SFX/USGN010.WAV"],
+      "condition": "Collect a grain pickup (selector 0x14), either a stored level collectible or an effect pickup. This is not the grain-gate reminder. Grain is still collected when speech is suppressed.",
+      "selection": "First random byte & 15 must be zero: nominally a 1-in-16 opportunity, not a line on every grain. Outside Training, the next random byte's low bit selects USGN009 or USGN010. These are the only two ordinary-grain candidates in these handlers; other grain-related wording does not establish another variant.",
+      "guards": "Suppressed in Training (engine 17), while tracked speech is busy, in Flik state 2, with flag 0x04, or while speech blocker 00572C20 is set. No round-robin or immediate-repeat avoidance is present in these two grain paths. The chance statement assumes uniformly distributed random bytes; it is not a measured frequency.",
+      "addresses": ["00417720", "00417CCD", "00417D73", "00418B90", "00418C38", "004292C0"],
+      "evidence": "EXP-20260910-009"
+    },
+    {
+      "id": "shared_pickup", "title": "Collect letters, blueberry or seed tokens", "disabled_slots": [0],
+      "files": ["SFX/USGN050.WAV", "SFX/USGN052.WAV", "SFX/USGN051.WAV", "SFX/USGN028.WAV", "SFX/USGN043.WAV"],
+      "condition": "The stored-collectible handler requests the shared response pool when collecting F/L/I/K letters (0x10–0x13), the blueberry (0x20), or seed tokens (verified selectors 0x29–0x2B). This is a different pool from ordinary grain. USGN050 is also requested directly for a health pickup.",
+      "selection": "The next random byte & 7 indexes a weighted eight-entry table: USGN050, USGN052, USGN051, USGN028, USGN043, USGN050, USGN052, USGN051. If the chosen cue equals the last shared-dispatcher cue, the game substitutes this pool's previously saved fallback. It is not a five-item round-robin, and probability depends on prior state.",
+      "guards": "The shared-pickup pool returns without choosing speech in Training (engine 17). Elsewhere state 2 or speech blocker 00572C20 suppresses dispatch. The matching collectible must exist and overlap Flik; a loaded WAV alone does not cause an event. These verified uses are not an exhaustive list of every caller of the same pool or recording.",
+      "addresses": ["00417720", "00414CC0", "00414D5E", "00414DD3", "004C7678"],
+      "evidence": "EXP-20260910-009"
+    },
+    {
+      "id": "nonfatal_hurt", "title": "Take nonfatal damage", "disabled_slots": [],
+      "files": ["SFX/USGN090.WAV", "SFX/USGN091.WAV", "SFX/USGN108.WAV", "SFX/USGN109.WAV", "SFX/USGN092.WAV"],
+      "condition": "The normal damage handler accepts a hit, decrements the native health field and finds it still nonnegative. It then requests the hurt pool. An invulnerability timer or invincibility can prevent this response. The fatal branch requests a different cue, not this pool.",
+      "selection": "The next random byte & 7 indexes: USGN090, USGN091, USGN108, USGN109, USGN092, USGN090, USGN091, USGN108. A repeated last shared-dispatcher cue is replaced by the previously saved fallback for this pool. This is not a round-robin; not every damage source has been traced upstream.",
+      "guards": "Native damage acceptance guards remain intact. The shared speech dispatcher can additionally suppress these cues in state 2 or while speech blocker 00572C20 is set. No Training-specific suppression exists in this pool.",
+      "addresses": ["0041C6C0", "0041C7A5", "0041C821", "00414CC0", "004C7638"],
+      "evidence": "EXP-20260910-009"
+    }
+  ]
+}

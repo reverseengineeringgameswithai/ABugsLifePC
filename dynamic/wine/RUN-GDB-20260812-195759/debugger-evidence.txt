@@ -1,0 +1,92 @@
+RUN-GDB-20260812-195759
+Experiment: EXP-20260812-026
+Arm: Training plant 10 entry +0x2E words
+Executable SHA-256: 97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+LEVEL1.DAT SHA-256: 494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+Environment: Fedora Linux 44; Wine 11.0 Staging; GNU GDB 17.1-6.fc44
+Renderer: Direct3D hardware, 640x480x16
+
+This is a curated record of hardware break/watchpoint stops and read-only
+memory observations. No game-data memory value, general-purpose register,
+executable byte, or game-data file was changed. Raw GDB text and captures
+remain ignored under work/copies/EXP-20260812-026/evidence/. The accepted raw
+transcript SHA-256 is
+6979be79169d46eef16418d194e1ed797f8a6bf02092b0584baa7291232456f2.
+
+Renderer preflight
+------------------
+
+An initial candidate arm was rejected before evidence promotion because the
+opening selector had not received the required Down input; the user identified
+that the UI remained on software. All breakpoints were deleted, GDB detached,
+and that process was stopped. The accepted run started fresh, received remote
+Down then Return at the opening selector, and was checked only after the full
+log existed. The committed accepted log contains exactly one
+`Screen mode 640x480x16 selected`, exactly one `Starting Direct3D renderer`,
+no `INITSOFTRENDER`, and both plant 10 request lines.
+
+Plant-specific start
+--------------------
+
+At unique plant 10 post-call 0x0044596D, the retained stack contained path
+0x004DDC6C and resource ID 0x71. The read-only state reproduced:
+
+  0x005B1AA4 = 0x006C342B
+  ANM words +0x00/+0x02/+0x04/+0x06 = 1/3/66/68
+  first entry  0x005AAB00, +0x2E word 0x005AAB2E = 1
+  second entry 0x005AAB50, +0x2E word 0x005AAB7E = 1
+
+The immediately following common-tail stop at 0x00445B01 was accepted. Both
+words remained 1. The guard and common-tail breakpoints were deleted before
+hardware read watchpoints were armed on the exact two-byte ranges
+0x005AAB2E-0x005AAB2F and 0x005AAB7E-0x005AAB7F. A third hardware slot
+bounded the resource batch at 0x004679C7.
+
+Resource-batch-return boundary
+------------------------------
+
+The 0x004679C7 execution breakpoint won before either +0x2E watchpoint. Its
+`info breakpoints` record shows exactly one execution-breakpoint hit and no
+hit count for either read watchpoint. Both words remained 1. Only the return
+breakpoint was deleted.
+
+No-input title boundary
+-----------------------
+
+No input was sent after the single Return used to select Training before the
+plant guard. Neither read watchpoint stopped execution while the game reached
+the Training title. An ignored capture at
+2026-08-12T19:59:55.729298233-04:00 shows that title and has SHA-256
+bffa032d477a337bb2c4a52876b244124a94e4d2901285052efdfdd006c471a0.
+
+After interrupting only to inspect the retained endpoint, both watches were
+still enabled with no hit counts and both words were still 1. Both watches
+were deleted, GDB reported that no breakpoint or watchpoint remained, and
+detached.
+
+Static correlation
+------------------
+
+In 0x00448010, 0x00448117 populates runtime entry +0x2E; 0x0044812D can
+replace value 9 with 12, and 0x0044813C can add 2. Static candidate reads in
+0x00446970 compare selected entry +0x2E at 0x00446A8A and 0x00447661 before
+their respective +0x0C accesses. Neither candidate nor any other CPU
+instruction read either exact plant 10 word in the retained interval.
+
+Boundary and limitations
+------------------------
+
+This is a bounded negative for CPU reads overlapping exactly first-entry
+0x005AAB2E-0x005AAB2F or second-entry 0x005AAB7E-0x005AAB7F after guarded
+final plant 10 population. It has explicit resource-batch-return and no-input
+title endpoints. It does not prove that 0x00446970 never selects either entry
+after the endpoint, and it does not cover later gameplay, later fields,
+non-CPU consumption, or field meaning.
+
+Run gates and closure
+---------------------
+
+The committed accepted log has SHA-256
+e2dc4f8c105a818b5b1b6cca181f84d5d6dc085befc203ccd78feaa4f36640a5.
+The experiment intentionally ended at the retained title, so neither
+`End InitMainGame` nor `NextLife` is claimed for this run.

@@ -1,0 +1,3725 @@
+{
+  "experiment": "EXP-20260910-009",
+  "retail_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "evidence": "Offline original x86, device/visual/geometry stubs; not live listening",
+  "bases": [
+    "0x400000",
+    "0x1000000"
+  ],
+  "cases": [
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 0,
+      "variant": 0,
+      "requests": [
+        {
+          "cue": 48,
+          "via": 4301488,
+          "callsite": 4295736
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 33,
+          "file": "SFX/USGN009.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 0,
+      "variant": 1,
+      "requests": [
+        {
+          "cue": 49,
+          "via": 4301488,
+          "callsite": 4295736
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 34,
+          "file": "SFX/USGN010.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 1,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 1,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 2,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 2,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 3,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 3,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 4,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 4,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 5,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 5,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 6,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 6,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 7,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 7,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 8,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 8,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 9,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 9,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 10,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 10,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 11,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 11,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 12,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 12,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 13,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 13,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 14,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 14,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 15,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "helper",
+      "random": 15,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "helper",
+      "guard": "training",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "helper",
+      "guard": "busy",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "helper",
+      "guard": "state2",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "helper",
+      "guard": "flag04",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "helper",
+      "guard": "blocker",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 0,
+      "variant": 0,
+      "requests": [
+        {
+          "cue": 48,
+          "via": 4301488,
+          "callsite": 4291955
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 33,
+          "file": "SFX/USGN009.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 0,
+      "variant": 1,
+      "requests": [
+        {
+          "cue": 49,
+          "via": 4301488,
+          "callsite": 4291955
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 34,
+          "file": "SFX/USGN010.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 1,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 1,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 2,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 2,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 3,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 3,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 4,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 4,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 5,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 5,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 6,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 6,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 7,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 7,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 8,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 8,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 9,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 9,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 10,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 10,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 11,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 11,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 12,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 12,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 13,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 13,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 14,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 14,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 15,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "stored",
+      "random": 15,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "stored",
+      "guard": "training",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "stored",
+      "guard": "busy",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "stored",
+      "guard": "state2",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "stored",
+      "guard": "flag04",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "stored",
+      "guard": "blocker",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 0,
+      "variant": 0,
+      "requests": [
+        {
+          "cue": 48,
+          "via": 4301488,
+          "callsite": 4295736
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 33,
+          "file": "SFX/USGN009.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 0,
+      "variant": 1,
+      "requests": [
+        {
+          "cue": 49,
+          "via": 4301488,
+          "callsite": 4295736
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 34,
+          "file": "SFX/USGN010.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 1,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 1,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 2,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 2,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 3,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 3,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 4,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 4,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 5,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 5,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 6,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 6,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 7,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 7,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 8,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 8,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 9,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 9,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 10,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 10,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 11,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 11,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 12,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 12,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 13,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 13,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 14,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 14,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 15,
+      "variant": 0,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain",
+      "path": "effect",
+      "random": 15,
+      "variant": 1,
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "effect",
+      "guard": "training",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 1,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "effect",
+      "guard": "busy",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "effect",
+      "guard": "state2",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "effect",
+      "guard": "flag04",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "grain_guard",
+      "path": "effect",
+      "guard": "blocker",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 2,
+      "grain": 1,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 16,
+      "choice": 0,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 16,
+      "choice": 1,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 16,
+      "choice": 2,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 16,
+      "choice": 3,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 52,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 37,
+          "file": "SFX/USGN028.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 52
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 16,
+      "choice": 4,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 58,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 43,
+          "file": "SFX/USGN043.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 58
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 16,
+      "choice": 5,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 16,
+      "choice": 6,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 16,
+      "choice": 7,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup_training",
+      "selector": 16,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        }
+      ],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 17,
+      "choice": 0,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 17,
+      "choice": 1,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 17,
+      "choice": 2,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 17,
+      "choice": 3,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 52,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 37,
+          "file": "SFX/USGN028.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 52
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 17,
+      "choice": 4,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 58,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 43,
+          "file": "SFX/USGN043.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 58
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 17,
+      "choice": 5,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 17,
+      "choice": 6,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 17,
+      "choice": 7,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup_training",
+      "selector": 17,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        }
+      ],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 18,
+      "choice": 0,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 18,
+      "choice": 1,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 18,
+      "choice": 2,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 18,
+      "choice": 3,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 52,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 37,
+          "file": "SFX/USGN028.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 52
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 18,
+      "choice": 4,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 58,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 43,
+          "file": "SFX/USGN043.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 58
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 18,
+      "choice": 5,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 18,
+      "choice": 6,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 18,
+      "choice": 7,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup_training",
+      "selector": 18,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        }
+      ],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 19,
+      "choice": 0,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 19,
+      "choice": 1,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 19,
+      "choice": 2,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 19,
+      "choice": 3,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 52,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 37,
+          "file": "SFX/USGN028.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 52
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 19,
+      "choice": 4,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 58,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 43,
+          "file": "SFX/USGN043.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 58
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 19,
+      "choice": 5,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 19,
+      "choice": 6,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 19,
+      "choice": 7,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup_training",
+      "selector": 19,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4291775
+        }
+      ],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 32,
+      "choice": 0,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292259
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 32,
+      "choice": 1,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292259
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 32,
+      "choice": 2,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292259
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 32,
+      "choice": 3,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292259
+        },
+        {
+          "cue": 52,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 37,
+          "file": "SFX/USGN028.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 52
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 32,
+      "choice": 4,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292259
+        },
+        {
+          "cue": 58,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 43,
+          "file": "SFX/USGN043.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 58
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 32,
+      "choice": 5,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292259
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 32,
+      "choice": 6,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292259
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 32,
+      "choice": 7,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292259
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup_training",
+      "selector": 32,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292259
+        }
+      ],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 41,
+      "choice": 0,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292405
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 41,
+      "choice": 1,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292405
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 41,
+      "choice": 2,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292405
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 41,
+      "choice": 3,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292405
+        },
+        {
+          "cue": 52,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 37,
+          "file": "SFX/USGN028.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 52
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 41,
+      "choice": 4,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292405
+        },
+        {
+          "cue": 58,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 43,
+          "file": "SFX/USGN043.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 58
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 41,
+      "choice": 5,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292405
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 41,
+      "choice": 6,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292405
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 41,
+      "choice": 7,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292405
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup_training",
+      "selector": 41,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292405
+        }
+      ],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 42,
+      "choice": 0,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 42,
+      "choice": 1,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 42,
+      "choice": 2,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 42,
+      "choice": 3,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 52,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 37,
+          "file": "SFX/USGN028.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 52
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 42,
+      "choice": 4,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 58,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 43,
+          "file": "SFX/USGN043.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 58
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 42,
+      "choice": 5,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 42,
+      "choice": 6,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 42,
+      "choice": 7,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup_training",
+      "selector": 42,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        }
+      ],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 43,
+      "choice": 0,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 43,
+      "choice": 1,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 43,
+      "choice": 2,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 43,
+      "choice": 3,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 52,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 37,
+          "file": "SFX/USGN028.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 52
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 43,
+      "choice": 4,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 58,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 43,
+          "file": "SFX/USGN043.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 58
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 43,
+      "choice": 5,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 62,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 62
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 43,
+      "choice": 6,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 63,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 63
+    },
+    {
+      "event": "shared_pickup",
+      "selector": 43,
+      "choice": 7,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "shared_pickup_training",
+      "selector": 43,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": 4292888
+        }
+      ],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "pickup_overlap_guard",
+      "selector": 20,
+      "guard": "inactive",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "pickup_overlap_guard",
+      "selector": 20,
+      "guard": "distant",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "pickup_overlap_guard",
+      "selector": 16,
+      "guard": "inactive",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "pickup_overlap_guard",
+      "selector": 16,
+      "guard": "distant",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "pickup_overlap_guard",
+      "selector": 32,
+      "guard": "inactive",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "pickup_overlap_guard",
+      "selector": 32,
+      "guard": "distant",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "pickup_overlap_guard",
+      "selector": 41,
+      "guard": "inactive",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "pickup_overlap_guard",
+      "selector": 41,
+      "guard": "distant",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 0
+    },
+    {
+      "event": "nonfatal_hurt",
+      "choice": 0,
+      "requests": [
+        {
+          "cue": 4294967295,
+          "via": 4279488,
+          "callsite": 4311073
+        },
+        {
+          "cue": 67,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 52,
+          "file": "SFX/USGN090.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 1,
+      "last_cue": 67
+    },
+    {
+      "event": "nonfatal_hurt",
+      "choice": 1,
+      "requests": [
+        {
+          "cue": 4294967295,
+          "via": 4279488,
+          "callsite": 4311073
+        },
+        {
+          "cue": 68,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 53,
+          "file": "SFX/USGN091.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 1,
+      "last_cue": 68
+    },
+    {
+      "event": "nonfatal_hurt",
+      "choice": 2,
+      "requests": [
+        {
+          "cue": 4294967295,
+          "via": 4279488,
+          "callsite": 4311073
+        },
+        {
+          "cue": 77,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 62,
+          "file": "SFX/USGN108.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 1,
+      "last_cue": 77
+    },
+    {
+      "event": "nonfatal_hurt",
+      "choice": 3,
+      "requests": [
+        {
+          "cue": 4294967295,
+          "via": 4279488,
+          "callsite": 4311073
+        },
+        {
+          "cue": 78,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 63,
+          "file": "SFX/USGN109.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 1,
+      "last_cue": 78
+    },
+    {
+      "event": "nonfatal_hurt",
+      "choice": 4,
+      "requests": [
+        {
+          "cue": 4294967295,
+          "via": 4279488,
+          "callsite": 4311073
+        },
+        {
+          "cue": 81,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 66,
+          "file": "SFX/USGN092.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 1,
+      "last_cue": 81
+    },
+    {
+      "event": "nonfatal_hurt",
+      "choice": 5,
+      "requests": [
+        {
+          "cue": 4294967295,
+          "via": 4279488,
+          "callsite": 4311073
+        },
+        {
+          "cue": 67,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 52,
+          "file": "SFX/USGN090.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 1,
+      "last_cue": 67
+    },
+    {
+      "event": "nonfatal_hurt",
+      "choice": 6,
+      "requests": [
+        {
+          "cue": 4294967295,
+          "via": 4279488,
+          "callsite": 4311073
+        },
+        {
+          "cue": 68,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 53,
+          "file": "SFX/USGN091.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 1,
+      "last_cue": 68
+    },
+    {
+      "event": "nonfatal_hurt",
+      "choice": 7,
+      "requests": [
+        {
+          "cue": 4294967295,
+          "via": 4279488,
+          "callsite": 4311073
+        },
+        {
+          "cue": 77,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 62,
+          "file": "SFX/USGN108.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 1,
+      "last_cue": 77
+    },
+    {
+      "event": "hurt_guard",
+      "guard": "invulnerability",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 2,
+      "last_cue": 0
+    },
+    {
+      "event": "hurt_guard",
+      "guard": "invincibility",
+      "requests": [],
+      "samples": [],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": 2,
+      "last_cue": 0
+    },
+    {
+      "event": "hurt_guard",
+      "guard": "fatal",
+      "requests": [
+        {
+          "cue": 73,
+          "via": 4279488,
+          "callsite": 4311013
+        },
+        {
+          "cue": 73,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 58,
+          "file": "SFX/USGN098.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 0,
+      "grain": 0,
+      "health": -1,
+      "last_cue": 73
+    },
+    {
+      "event": "repeat_fallback",
+      "selector": -3,
+      "requests": [
+        {
+          "cue": 4294967293,
+          "via": 4279488,
+          "callsite": null
+        },
+        {
+          "cue": 66,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 51,
+          "file": "SFX/USGN051.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 66
+    },
+    {
+      "event": "repeat_fallback",
+      "selector": -1,
+      "requests": [
+        {
+          "cue": 4294967295,
+          "via": 4279488,
+          "callsite": null
+        },
+        {
+          "cue": 77,
+          "via": 4301488,
+          "callsite": 4279883
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 62,
+          "file": "SFX/USGN108.WAV",
+          "available": true
+        }
+      ],
+      "random_bytes": 1,
+      "grain": 0,
+      "health": 0,
+      "last_cue": 77
+    }
+  ]
+}

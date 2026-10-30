@@ -1,0 +1,214 @@
+{
+ "experiment": "EXP-20261018-004",
+ "binary_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+ "table": "0x004C6E08",
+ "level_banks": [
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  16,
+  17
+ ],
+ "events": [
+  {
+   "event": "0x07",
+   "caller": "badbug/weevil handler 0x0041BEF0, frame 0",
+   "entry": [
+    28,
+    4800,
+    64,
+    0,
+    2,
+    0,
+    0,
+    0
+   ],
+   "path": "one-shot",
+   "sample": 28,
+   "files_in_level_banks": [
+    "SFX/SPIDER01.WAV"
+   ]
+  },
+  {
+   "event": "0x14",
+   "caller": "op-11 subroutine 2 (wasp ring) 0x004287D0",
+   "entry": [
+    27,
+    5600,
+    64,
+    0,
+    -1,
+    0,
+    10,
+    255
+   ],
+   "path": "one-shot",
+   "sample": 27,
+   "files_in_level_banks": [
+    "SFX/SEEDROLL.WAV"
+   ]
+  },
+  {
+   "event": "0x18",
+   "caller": "op-11 subroutines 1 and 8 (emerge) 0x004288F0, 0x00428990",
+   "entry": [
+    11,
+    4800,
+    160,
+    0,
+    2,
+    0,
+    0,
+    0
+   ],
+   "path": "one-shot",
+   "sample": 11,
+   "files_in_level_banks": [
+    "SFX/ERUPTION.WAV"
+   ]
+  },
+  {
+   "event": "0x19",
+   "caller": "long-legged spider shot 0x0041C3B4",
+   "entry": [
+    29,
+    4000,
+    128,
+    64,
+    -1,
+    0,
+    0,
+    0
+   ],
+   "path": "one-shot",
+   "sample": 29,
+   "files_in_level_banks": [
+    "SFX/THROW01.WAV"
+   ]
+  },
+  {
+   "event": "0x1A",
+   "caller": "Thumper/Hopper/Thud handler 0x0041C100; grasshopper handler group 1",
+   "entry": [
+    -31,
+    1136,
+    48,
+    10,
+    4,
+    0,
+    0,
+    0
+   ],
+   "path": "keyed channel",
+   "sample": 31,
+   "files_in_level_banks": [
+    "SFX/WASPBUZZ.WAV"
+   ]
+  },
+  {
+   "event": "0x26",
+   "caller": "grasshopper and Molt handlers, footstep frames",
+   "entry": [
+    2,
+    4000,
+    58,
+    0,
+    2,
+    0,
+    0,
+    0
+   ],
+   "path": "one-shot",
+   "sample": 2,
+   "files_in_level_banks": [
+    "SFX/BOULDER.WAV"
+   ]
+  },
+  {
+   "event": "0x28",
+   "caller": "fly/wasp handler 0x0041C160",
+   "entry": [
+    -31,
+    4096,
+    32,
+    10,
+    1,
+    0,
+    0,
+    0
+   ],
+   "path": "keyed channel",
+   "sample": 31,
+   "files_in_level_banks": [
+    "SFX/WASPBUZZ.WAV"
+   ]
+  },
+  {
+   "event": "0x2A",
+   "caller": "mosquito handler 0x0041C190 (group 1); dragonfly handler 0x0041C210",
+   "entry": [
+    -31,
+    6000,
+    16,
+    15,
+    4,
+    0,
+    0,
+    0
+   ],
+   "path": "keyed channel",
+   "sample": 31,
+   "files_in_level_banks": [
+    "SFX/WASPBUZZ.WAV"
+   ]
+  },
+  {
+   "event": "0x66",
+   "caller": "op-11 subroutine 3 (Tunnels grasshopper) 0x00432A50",
+   "entry": [
+    7,
+    3200,
+    128,
+    0,
+    -1,
+    0,
+    15,
+    255
+   ],
+   "path": "one-shot",
+   "sample": 7,
+   "files_in_level_banks": [
+    "SFX/CANNPLNT.WAV"
+   ]
+  },
+  {
+   "event": "0x7D",
+   "caller": "acorn handler 0x0041C130",
+   "entry": [
+    -9,
+    400,
+    128,
+    10,
+    8,
+    0,
+    0,
+    0
+   ],
+   "path": "keyed channel",
+   "sample": 9,
+   "files_in_level_banks": [
+    "SFX/DANDLION.WAV"
+   ]
+  }
+ ]
+}

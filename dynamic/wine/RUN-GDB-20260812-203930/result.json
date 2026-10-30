@@ -1,0 +1,20 @@
+{
+  "tool": "gdb-harness",
+  "tool_version": "1.0.0",
+  "schema_version": 1,
+  "time_window_start": "2026-08-12T20:39:30.711660-04:00",
+  "time_window_end": "2026-08-12T20:39:40.725990-04:00",
+  "log_start_offset": 64723,
+  "completion": {
+    "completed": true,
+    "stop_reason": "timeout",
+    "stops_observed": 0,
+    "watchpoints_installed": 0,
+    "watchpoints_deleted": 0,
+    "breakpoints_installed": 1,
+    "breakpoints_deleted": 1,
+    "cleanup_verified": true,
+    "detached": true,
+    "error": null
+  }
+}

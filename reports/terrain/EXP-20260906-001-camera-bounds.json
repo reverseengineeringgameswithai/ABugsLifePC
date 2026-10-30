@@ -1,0 +1,257 @@
+{
+  "experiment_id": "EXP-20260906-001",
+  "kind": "offline-original-PC-camera-gate-sweep",
+  "candidate_dat_sha256": "691674fdca9b87a95f477bfb144f9ff6d805fecc05785669c68162c8f4f17659",
+  "control_radius": 6047,
+  "candidate_radius": 8560,
+  "statistics": {
+    "targeted_camera_cases": 6624,
+    "target_inside_frustum": 5152,
+    "outside_target_cases": 1472,
+    "control_rejections": 544,
+    "candidate_rejections": 0
+  },
+  "control_failure_examples": [
+    {
+      "vertex_index": 416,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 900,
+      "camera_stored": [
+        6739,
+        -3181,
+        11361
+      ],
+      "target_view": [
+        0,
+        461,
+        707
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 417,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 900,
+      "camera_stored": [
+        6739,
+        -3184,
+        11413
+      ],
+      "target_view": [
+        0,
+        461,
+        707
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 418,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 900,
+      "camera_stored": [
+        6453,
+        -3097,
+        11413
+      ],
+      "target_view": [
+        0,
+        461,
+        707
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 419,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 900,
+      "camera_stored": [
+        6441,
+        -3090,
+        11361
+      ],
+      "target_view": [
+        0,
+        461,
+        707
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 425,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 900,
+      "camera_stored": [
+        6941,
+        -3243,
+        11361
+      ],
+      "target_view": [
+        0,
+        461,
+        707
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 426,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 900,
+      "camera_stored": [
+        6941,
+        -3246,
+        11413
+      ],
+      "target_view": [
+        0,
+        461,
+        707
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 432,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 900,
+      "camera_stored": [
+        6441,
+        -3097,
+        11413
+      ],
+      "target_view": [
+        0,
+        461,
+        707
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 416,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 1400,
+      "camera_stored": [
+        7122,
+        -2990,
+        11618
+      ],
+      "target_view": [
+        0,
+        461,
+        1206
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 417,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 1400,
+      "camera_stored": [
+        7122,
+        -2993,
+        11670
+      ],
+      "target_view": [
+        0,
+        461,
+        1206
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 418,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 1400,
+      "camera_stored": [
+        6836,
+        -2906,
+        11670
+      ],
+      "target_view": [
+        0,
+        461,
+        1206
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 419,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 1400,
+      "camera_stored": [
+        6824,
+        -2899,
+        11618
+      ],
+      "target_view": [
+        0,
+        461,
+        1206
+      ],
+      "branch": "0x44d677"
+    },
+    {
+      "vertex_index": 425,
+      "yaw": 1408,
+      "pitch": -256,
+      "distance": 1400,
+      "camera_stored": [
+        7324,
+        -3052,
+        11618
+      ],
+      "target_view": [
+        0,
+        461,
+        1206
+      ],
+      "branch": "0x44d677"
+    }
+  ],
+  "candidate_failures": [],
+  "historical_cameras": [
+    {
+      "pose": "hidden_baseline",
+      "accepted": true,
+      "rejecting_branch": null
+    },
+    {
+      "pose": "hidden_early",
+      "accepted": true,
+      "rejecting_branch": null
+    },
+    {
+      "pose": "hidden_middle",
+      "accepted": true,
+      "rejecting_branch": null
+    },
+    {
+      "pose": "visible_late",
+      "accepted": true,
+      "rejecting_branch": null
+    },
+    {
+      "pose": "visible_settled",
+      "accepted": true,
+      "rejecting_branch": null
+    }
+  ],
+  "duration_seconds": 1.4757455979997758,
+  "native_addresses": [
+    "0x00463C80",
+    "0x00448230",
+    "0x0044D59F",
+    "0x0044D6A7",
+    "0x0044D728"
+  ],
+  "limits": "Finite 32-yaw x 3-pitch x 3-distance x 23-connector-vertex sweep. Only cases with the targeted point inside the viewport require scene admission. No live game, face rasterization, sorting, occlusion, all-angle theorem or universal rounding bound is claimed."
+}

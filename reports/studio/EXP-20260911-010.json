@@ -1,0 +1,1822 @@
+{
+  "experiment": "EXP-20260911-010",
+  "status": "implemented-bounded-user-appearance-acceptance-open",
+  "build": "work/copies/studio-1789156266178050587",
+  "executable_sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002",
+  "training_dat": {
+    "path": "work/copies/studio-1789156266178050587/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+    "bytes": 188436,
+    "sha256": "ea09e0475a6c5fd129e91607a3f4c7d1c2163e212c98c2f1660ebaece499ca79"
+  },
+  "campaign_sha256": "5dbd3aaaddd43c17df3bd5d8842aae1d5755189d6f7e86557042744115b40d04",
+  "preservation": {
+    "changed_cd_files": [
+      "LEVEL07/LEVEL1.DAT"
+    ],
+    "changed_scene_meshes": [
+      [
+        "primary_records",
+        269
+      ]
+    ],
+    "all_104_pickups_and_all_scene_poses_preserved": true,
+    "other_meshes_preserved": true,
+    "ground_bias_changes": [
+      {
+        "scene": 57,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 58,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 59,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 60,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 61,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 62,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 63,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 64,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 65,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 66,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 67,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 68,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 69,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 70,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 71,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 72,
+        "before": 9,
+        "after": 0
+      }
+    ],
+    "terrain_raw_audio_soil_signs_unchanged": true,
+    "source_project_and_previous_bank_unchanged": true,
+    "build": "/home/dev/ABLPC/work/copies/studio-1789156266178050587",
+    "executable_sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002",
+    "dat_sha256": "ea09e0475a6c5fd129e91607a3f4c7d1c2163e212c98c2f1660ebaece499ca79"
+  },
+  "floor_bias": {
+    "objects": [
+      {
+        "scene": 57,
+        "field_offset": 11042,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 58,
+        "field_offset": 11066,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 59,
+        "field_offset": 11090,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 60,
+        "field_offset": 11114,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 61,
+        "field_offset": 11138,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 62,
+        "field_offset": 11162,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 63,
+        "field_offset": 11186,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 64,
+        "field_offset": 11210,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 65,
+        "field_offset": 11234,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 66,
+        "field_offset": 11258,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 67,
+        "field_offset": 11282,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 68,
+        "field_offset": 11306,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 69,
+        "field_offset": 11330,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 70,
+        "field_offset": 11354,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 71,
+        "field_offset": 11378,
+        "before": 9,
+        "after": 0
+      },
+      {
+        "scene": 72,
+        "field_offset": 11402,
+        "before": 9,
+        "after": 0
+      }
+    ],
+    "hardware_depth_delta": -0.017578125
+  },
+  "pressure_objects": {
+    "button_base": [
+      139448
+    ],
+    "button": [
+      141412
+    ],
+    "frame": [
+      143376
+    ],
+    "platform": [
+      147644
+    ]
+  },
+  "previous_accepted_bank": {
+    "path": "work/design-banks/EXP-20260911-009-original-gate-grain",
+    "manifest_sha256": "7942e766ae33921af1313c57261b8c5985c62d017256daf55c6bdffdcf77a2f1",
+    "unchanged": true,
+    "new_bank_created": false
+  },
+  "native_retail_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "native_ground_runs": {
+    "flik": {
+      "instructions": 128068,
+      "driver_calls": 0,
+      "vertices": 346,
+      "indices": 498,
+      "artifact": {
+        "path": "work/experiments/EXP-20260911-010/regression/occlusion-flik.json",
+        "bytes": 64533,
+        "sha256": "d0361562ba24ea989f25199d8f4a02f5e46fefd387c1ef28afe430af4ac81f0f"
+      }
+    },
+    "seed": {
+      "instructions": 38971,
+      "driver_calls": 0,
+      "vertices": 104,
+      "indices": 156,
+      "artifact": {
+        "path": "work/experiments/EXP-20260911-010/regression/occlusion-seed.json",
+        "bytes": 19579,
+        "sha256": "db900c7c912d732e009c9b15258ebc9355a4bf843681f92aacbbc4e02659cfa7"
+      }
+    },
+    "baseline": {
+      "instructions": 125883,
+      "driver_calls": 0,
+      "vertices": 259,
+      "indices": 381,
+      "artifact": {
+        "path": "work/experiments/EXP-20260911-010/regression/occlusion-baseline.json",
+        "bytes": 48461,
+        "sha256": "ab56678b950c18925d93c2e2fc247b04a4b9c354777d01c1a90620653716d3fb"
+      }
+    },
+    "candidate": {
+      "instructions": 1843816,
+      "driver_calls": 18,
+      "vertices": 3540,
+      "indices": 3540,
+      "artifact": {
+        "path": "work/experiments/EXP-20260911-010/regression/occlusion-candidate.json",
+        "bytes": 638089,
+        "sha256": "7330bec694b7baa27d16cd5a6c8466f7f2fb928888b63b513fcbe152ad4774c3"
+      }
+    },
+    "baseline-zero": {
+      "instructions": 125883,
+      "driver_calls": 0,
+      "vertices": 259,
+      "indices": 381,
+      "artifact": {
+        "path": "work/experiments/EXP-20260911-010/regression/occlusion-baseline-zero.json",
+        "bytes": 48479,
+        "sha256": "240e35d123595b17e700fe23031d53360be9be7a42b1b8743e90fe0e3484d62f"
+      }
+    },
+    "candidate-zero": {
+      "instructions": 1843816,
+      "driver_calls": 18,
+      "vertices": 3540,
+      "indices": 3540,
+      "artifact": {
+        "path": "work/experiments/EXP-20260911-010/regression/occlusion-candidate-zero.json",
+        "bytes": 638171,
+        "sha256": "86277e7a2a3d44973b3445746e22649fd96df0f1d9191636a7437eca0c13d626"
+      }
+    }
+  },
+  "bias_discriminator": {
+    "vertices": 259,
+    "changed_attributes": {
+      "z": 259
+    },
+    "exact_z_delta": -0.017578125,
+    "indices_and_pages_equal": true,
+    "retail_bias_also_nine": true,
+    "scope": "Original renderer with all16 floor objects in first captured camera; changing byte+18 only, offline; no live writes"
+  },
+  "depth_discriminator": {
+    "flik": {
+      "baseline": {
+        "physical_reference_occluded_pixels": 790,
+        "pixels_still_in_front": 783,
+        "false_hidden": 0
+      },
+      "candidate": {
+        "physical_reference_occluded_pixels": 790,
+        "pixels_still_in_front": 423,
+        "false_hidden": 0
+      },
+      "baseline-zero": {
+        "physical_reference_occluded_pixels": 790,
+        "pixels_still_in_front": 0,
+        "false_hidden": 0
+      },
+      "candidate-zero": {
+        "physical_reference_occluded_pixels": 790,
+        "pixels_still_in_front": 0,
+        "false_hidden": 0
+      }
+    },
+    "seed": {
+      "baseline": {
+        "physical_reference_occluded_pixels": 6957,
+        "pixels_still_in_front": 6957,
+        "false_hidden": 0
+      },
+      "candidate": {
+        "physical_reference_occluded_pixels": 6957,
+        "pixels_still_in_front": 6925,
+        "false_hidden": 0
+      },
+      "baseline-zero": {
+        "physical_reference_occluded_pixels": 6957,
+        "pixels_still_in_front": 0,
+        "false_hidden": 0
+      },
+      "candidate-zero": {
+        "physical_reference_occluded_pixels": 6957,
+        "pixels_still_in_front": 0,
+        "false_hidden": 61
+      }
+    },
+    "scope": "Pixel-center depth discriminator only. Reference uses interpolated native RHW reciprocal; no texture alpha/GPU raster edges or atomic screenshot correspondence."
+  },
+  "underside": {
+    "old_vertices": 312,
+    "new_vertices": 372,
+    "old_quads": 78,
+    "new_quads": 93,
+    "one_moving_object": true,
+    "max_under_edge_stored": 245,
+    "depth_comparison": {
+      "scope": "Offline linear screen-space depth test on original emitted triangles; no texture/alpha/raster-edge/GPU simulation or atomic frame match",
+      "old_wood_to_new_opaque_underside_pixels": 22181,
+      "old_wood_pixels": 22194,
+      "sample_pixels": [
+        {
+          "xy": [
+            178,
+            0
+          ],
+          "old_depth": 0.05552297885949989,
+          "new_depth": 0.04126977197732708
+        },
+        {
+          "xy": [
+            213,
+            11
+          ],
+          "old_depth": 0.05710329075266945,
+          "new_depth": 0.04383330243400478
+        },
+        {
+          "xy": [
+            418,
+            21
+          ],
+          "old_depth": 0.05730605496375531,
+          "new_depth": 0.04531652589871929
+        },
+        {
+          "xy": [
+            246,
+            32
+          ],
+          "old_depth": 0.06317324687948189,
+          "new_depth": 0.04684059470400165
+        },
+        {
+          "xy": [
+            282,
+            42
+          ],
+          "old_depth": 0.06625603007295332,
+          "new_depth": 0.05009570831948138
+        },
+        {
+          "xy": [
+            337,
+            52
+          ],
+          "old_depth": 0.0694483196924603,
+          "new_depth": 0.05211317854387393
+        },
+        {
+          "xy": [
+            386,
+            63
+          ],
+          "old_depth": 0.07220569957386364,
+          "new_depth": 0.05517750682213293
+        },
+        {
+          "xy": [
+            286,
+            78
+          ],
+          "old_depth": 0.07874323634930458,
+          "new_depth": 0.059671907898382094
+        },
+        {
+          "xy": [
+            284,
+            109
+          ],
+          "old_depth": 0.09439559444304436,
+          "new_depth": 0.0750734985031168
+        }
+      ]
+    }
+  },
+  "runtime": {
+    "ownership": {
+      "build": "/home/dev/ABLPC/work/copies/studio-1789156266178050587",
+      "sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002",
+      "sink": "ablpc_soil_1789156440393698742",
+      "module": 536870916,
+      "code_va": 17313792,
+      "state_va": 17317888,
+      "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/final-play/prefix",
+      "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+      "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+      "audible": false,
+      "expect_auto_hardware": true,
+      "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+      "leader": {
+        "pid": 83357,
+        "start": 5403456,
+        "group": 83357,
+        "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789156440393698742 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/final-play/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/studio-1789156266178050587/bugs.exe log cheat mpeg "
+      },
+      "game": {
+        "pid": 83585,
+        "start": 5403601,
+        "group": 83357,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\studio-1789156266178050587\\bugs.exe log cheat mpeg                                                                                                   "
+      },
+      "display": ":2",
+      "xwayland": {
+        "pid": 83384,
+        "start": 5403482,
+        "group": 83357,
+        "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+      },
+      "hardware_before_input": true,
+      "window": "14680071"
+    },
+    "bindings": [
+      {
+        "pid": 83357,
+        "start": 5403456,
+        "group": 83357,
+        "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789156440393698742 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/final-play/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/studio-1789156266178050587/bugs.exe log cheat mpeg ",
+        "binding": "owned_group"
+      },
+      {
+        "pid": 83384,
+        "start": 5403482,
+        "group": 83357,
+        "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation ",
+        "binding": "owned_group"
+      },
+      {
+        "pid": 83507,
+        "start": 5403493,
+        "group": 83357,
+        "cmd": "gamescopereaper -- env PULSE_SINK=ablpc_soil_1789156440393698742 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/final-play/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/studio-1789156266178050587/bugs.exe log cheat mpeg ",
+        "binding": "owned_group"
+      },
+      {
+        "pid": 83511,
+        "start": 5403494,
+        "group": 83511,
+        "cmd": "/usr/lib64/wine-wow64/wine/../../../bin/wineserver ",
+        "binding": "exact_private_prefix"
+      },
+      {
+        "pid": 83520,
+        "start": 5403501,
+        "group": 83520,
+        "cmd": "C:\\windows\\system32\\winedevice.exe                                                                                                   ",
+        "binding": "exact_private_prefix"
+      },
+      {
+        "pid": 83545,
+        "start": 5403505,
+        "group": 83545,
+        "cmd": "C:\\windows\\system32\\winedevice.exe                                                                                                   ",
+        "binding": "exact_private_prefix"
+      },
+      {
+        "pid": 83585,
+        "start": 5403601,
+        "group": 83357,
+        "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\studio-1789156266178050587\\bugs.exe log cheat mpeg                                                                                                   ",
+        "binding": "owned_group"
+      }
+    ],
+    "audit": {
+      "tool": "game-session",
+      "tool_version": "1.0.0",
+      "verb": "audit",
+      "processes": {
+        "processes": [
+          {
+            "pid": 83357,
+            "process_group": 83357,
+            "start_ticks": 5403456,
+            "command": [
+              "gamescope",
+              "--backend",
+              "wayland",
+              "-w",
+              "640",
+              "-h",
+              "480",
+              "-W",
+              "1280",
+              "-H",
+              "960",
+              "-S",
+              "fit",
+              "-F",
+              "nearest",
+              "--",
+              "env",
+              "PULSE_SINK=ablpc_soil_1789156440393698742",
+              "WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/final-play/prefix",
+              "WINEDEBUG=-all",
+              "wine",
+              "/home/dev/ABLPC/work/copies/studio-1789156266178050587/bugs.exe",
+              "log",
+              "cheat",
+              "mpeg"
+            ],
+            "name": "gamescope",
+            "owned": false
+          },
+          {
+            "pid": 83384,
+            "process_group": 83357,
+            "start_ticks": 5403482,
+            "command": [
+              "Xwayland",
+              ":2",
+              "-rootless",
+              "-core",
+              "-terminate",
+              "-listenfd",
+              "89",
+              "-listenfd",
+              "90",
+              "-displayfd",
+              "94",
+              "-noTouchPointerEmulation",
+              "-force-xrandr-emulation"
+            ],
+            "name": "xwayland",
+            "owned": false
+          },
+          {
+            "pid": 83507,
+            "process_group": 83357,
+            "start_ticks": 5403493,
+            "command": [
+              "gamescopereaper",
+              "--",
+              "env",
+              "PULSE_SINK=ablpc_soil_1789156440393698742",
+              "WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/final-play/prefix",
+              "WINEDEBUG=-all",
+              "wine",
+              "/home/dev/ABLPC/work/copies/studio-1789156266178050587/bugs.exe",
+              "log",
+              "cheat",
+              "mpeg"
+            ],
+            "name": "gamescopereaper",
+            "owned": false
+          },
+          {
+            "pid": 83511,
+            "process_group": 83511,
+            "start_ticks": 5403494,
+            "command": [
+              "/usr/lib64/wine-wow64/wine/../../../bin/wineserver"
+            ],
+            "name": "wineserver",
+            "owned": false
+          },
+          {
+            "pid": 83520,
+            "process_group": 83520,
+            "start_ticks": 5403501,
+            "command": [
+              "C:\\windows\\system32\\winedevice.exe"
+            ],
+            "name": "c:\\windows\\system32\\winedevice.exe",
+            "owned": false
+          },
+          {
+            "pid": 83545,
+            "process_group": 83545,
+            "start_ticks": 5403505,
+            "command": [
+              "C:\\windows\\system32\\winedevice.exe"
+            ],
+            "name": "c:\\windows\\system32\\winedevice.exe",
+            "owned": false
+          },
+          {
+            "pid": 83585,
+            "process_group": 83357,
+            "start_ticks": 5403601,
+            "command": [
+              "Z:\\home\\dev\\ABLPC\\work\\copies\\studio-1789156266178050587\\bugs.exe",
+              "log",
+              "cheat",
+              "mpeg"
+            ],
+            "name": "z:\\home\\dev\\ablpc\\work\\copies\\studio-1789156266178050587\\bugs.exe",
+            "owned": false
+          }
+        ],
+        "owned_count": 0,
+        "unattributed_count": 7,
+        "owned_groups": []
+      },
+      "null_sinks": [
+        {
+          "module_id": 536870916,
+          "sink_name": "ablpc_soil_1789156440393698742",
+          "arguments": "sink_name=ablpc_soil_1789156440393698742",
+          "owned": false
+        }
+      ],
+      "open_sessions": [],
+      "clean": false
+    },
+    "audio": {
+      "stream": {
+        "index": 4540,
+        "driver": "PipeWire",
+        "owner_module": null,
+        "client": "4539",
+        "sink": 4447,
+        "sample_specification": "float32le 2ch 48000Hz",
+        "channel_map": "front-left,front-right",
+        "format": "pcm, format.sample_format = \"\\\"float32le\\\"\"  format.rate = \"48000\"  format.channels = \"2\"  format.channel_map = \"\\\"front-left,front-right\\\"\"",
+        "corked": false,
+        "mute": false,
+        "volume": {
+          "front-left": {
+            "value": 65536,
+            "value_percent": "100%",
+            "db": "0.00 dB"
+          },
+          "front-right": {
+            "value": 65536,
+            "value_percent": "100%",
+            "db": "0.00 dB"
+          }
+        },
+        "balance": 0.0,
+        "buffer_latency_usec": 0.0,
+        "sink_latency_usec": 0.0,
+        "resample_method": "PipeWire",
+        "properties": {
+          "client.api": "pipewire-pulse",
+          "pulse.server.type": "unix",
+          "application.name": "Travellers Tales bugs",
+          "application.process.id": "83585",
+          "application.process.user": "dev",
+          "application.process.host": "fedora",
+          "application.process.binary": "wine-preloader",
+          "application.language": "C.UTF-8",
+          "window.x11.display": ":2",
+          "application.process.machine_id": "a959c6830a494191b12b8af35d09fa6b",
+          "media.name": "audio stream #1",
+          "pulse.corked": "false",
+          "node.rate": "1/48000",
+          "node.latency": "256/48000",
+          "target.object": "ablpc_soil_1789156440393698742",
+          "stream.is-live": "true",
+          "node.name": "Travellers Tales bugs",
+          "node.want-driver": "true",
+          "node.autoconnect": "true",
+          "media.class": "Stream/Output/Audio",
+          "port.group": "stream.0",
+          "adapt.follower.spa-node": "",
+          "object.register": "false",
+          "factory.id": "7",
+          "clock.quantum-limit": "8192",
+          "node.loop.name": "data-loop.0",
+          "library.name": "audioconvert/libspa-audioconvert",
+          "client.id": "202",
+          "object.id": "234",
+          "object.serial": "4540",
+          "pulse.attr.maxlength": "30720",
+          "pulse.attr.tlength": "9600",
+          "pulse.attr.prebuf": "8",
+          "pulse.attr.minreq": "3840",
+          "node.driver-id": "194",
+          "module-stream-restore.id": "sink-input-by-application-name:Travellers Tales bugs"
+        }
+      },
+      "sink_index": 4447,
+      "sink_name": "ablpc_soil_1789156440393698742",
+      "inaudible_private_sink": true
+    }
+  },
+  "diagnostic_arms": [
+    {
+      "name": "banked-control",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/EXP-20260911-010-banked-control",
+        "sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002",
+        "sink": "alsa_output.pci-0000_12_00.6.analog-stereo",
+        "module": null,
+        "code_va": 17313792,
+        "state_va": 17317888,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/banked-control/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": true,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 67520,
+          "start": 5132951,
+          "group": 67520,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/banked-control/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-010-banked-control/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 67751,
+          "start": 5133089,
+          "group": 67520,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-010-banked-control\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 67546,
+          "start": 5132973,
+          "group": 67520,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/banked-control/close-1789154326459167584.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/banked-control/discover-1789153752538922686.json",
+        "bytes": 268,
+        "sha256": "32b43b3a2ea43a462ac600de1a128da467b18b874a5ee13661ddb2f355c46105"
+      },
+      "actual_dat": {
+        "path": "work/copies/EXP-20260911-010-banked-control/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 187476,
+        "sha256": "5e052cca0f5dbfa014d2a5cb3e0fd459efc5ca2b76b0bbfea28db8ba8761ed1a"
+      },
+      "actual_exe": {
+        "path": "work/copies/EXP-20260911-010-banked-control/bugs.exe",
+        "bytes": 1081856,
+        "sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "clear-base",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/EXP-20260911-010-clear-base",
+        "sha256": "ebbbe8be6548ab65aaa3c4696b4b4cf4de0e5ae80de162aed523bfdeccf89786",
+        "sink": "alsa_output.pci-0000_12_00.6.analog-stereo",
+        "module": null,
+        "code_va": 17313792,
+        "state_va": 17317888,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/clear-base/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": true,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 78870,
+          "start": 5327947,
+          "group": 78870,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/clear-base/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-010-clear-base/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 79099,
+          "start": 5328166,
+          "group": 78870,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-010-clear-base\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 78898,
+          "start": 5327976,
+          "group": 78870,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/clear-base/close-1789155722163262698.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/clear-base/discover-1789155696165004049.json",
+        "bytes": 269,
+        "sha256": "75e8b2151a9f4e74626ac7d31e7653d21a8a057df21ab49273aaeae75e3369c2"
+      },
+      "actual_dat": {
+        "path": "work/copies/EXP-20260911-010-clear-base/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 187476,
+        "sha256": "5e052cca0f5dbfa014d2a5cb3e0fd459efc5ca2b76b0bbfea28db8ba8761ed1a"
+      },
+      "actual_exe": {
+        "path": "work/copies/EXP-20260911-010-clear-base/bugs.exe",
+        "bytes": 1081856,
+        "sha256": "ebbbe8be6548ab65aaa3c4696b4b4cf4de0e5ae80de162aed523bfdeccf89786"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "clear-floor",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/EXP-20260911-010-clear-floor",
+        "sha256": "ebbbe8be6548ab65aaa3c4696b4b4cf4de0e5ae80de162aed523bfdeccf89786",
+        "sink": "alsa_output.pci-0000_12_00.6.analog-stereo",
+        "module": null,
+        "code_va": 17313792,
+        "state_va": 17317888,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/clear-floor/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": true,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 79304,
+          "start": 5332366,
+          "group": 79304,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/clear-floor/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-010-clear-floor/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 79531,
+          "start": 5332542,
+          "group": 79304,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-010-clear-floor\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 79330,
+          "start": 5332390,
+          "group": 79304,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/clear-floor/close-1789156051664814112.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/clear-floor/discover-1789155752389844479.json",
+        "bytes": 270,
+        "sha256": "3ddec1883a827597b065fca22bad0a5e241f9f8433e0f00f24fee716ebfd9ee5"
+      },
+      "actual_dat": {
+        "path": "work/copies/EXP-20260911-010-clear-floor/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 279460,
+        "sha256": "d07c438c7b0d2c985484694b36be9b7f208458e4eedbf52f9a1e8f3c2587cea7"
+      },
+      "actual_exe": {
+        "path": "work/copies/EXP-20260911-010-clear-floor/bugs.exe",
+        "bytes": 1081856,
+        "sha256": "ebbbe8be6548ab65aaa3c4696b4b4cf4de0e5ae80de162aed523bfdeccf89786"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "clear-zero",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/EXP-20260911-010-clear-zero",
+        "sha256": "ebbbe8be6548ab65aaa3c4696b4b4cf4de0e5ae80de162aed523bfdeccf89786",
+        "sink": "ablpc_soil_1789156066522365377",
+        "module": 536870916,
+        "code_va": 17313792,
+        "state_va": 17317888,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/clear-zero/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": false,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 80996,
+          "start": 5366069,
+          "group": 80996,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789156066522365377 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/clear-zero/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-010-clear-zero/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 81227,
+          "start": 5366213,
+          "group": 80996,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-010-clear-zero\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 81025,
+          "start": 5366091,
+          "group": 80996,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/clear-zero/close-1789156327025169042.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/clear-zero/discover-1789156086073069149.json",
+        "bytes": 270,
+        "sha256": "b2078479972a49d20a5ca4ef90d559b3e4852a3a01be7a38fdeec29b153b046b"
+      },
+      "actual_dat": {
+        "path": "work/copies/EXP-20260911-010-clear-zero/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 187476,
+        "sha256": "e72c710c43656c1553816d9d6589eb369723fff87f38d18037eadd452217283f"
+      },
+      "actual_exe": {
+        "path": "work/copies/EXP-20260911-010-clear-zero/bugs.exe",
+        "bytes": 1081856,
+        "sha256": "ebbbe8be6548ab65aaa3c4696b4b4cf4de0e5ae80de162aed523bfdeccf89786"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "corrected-play",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/studio-1789153070547148565",
+        "sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002",
+        "sink": "alsa_output.pci-0000_12_00.6.analog-stereo",
+        "module": null,
+        "code_va": 17313792,
+        "state_va": 17317888,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/corrected-play/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": true,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 66566,
+          "start": 5084475,
+          "group": 66566,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/corrected-play/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/studio-1789153070547148565/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 66793,
+          "start": 5084591,
+          "group": 66566,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\studio-1789153070547148565\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 66592,
+          "start": 5084498,
+          "group": 66566,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/corrected-play/close-1789153711337964339.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/corrected-play/discover-1789153473502205299.json",
+        "bytes": 270,
+        "sha256": "5a3f9409c4c7dccd575629140fd64c0b557221f2e62c06e3547606a0e07473a3"
+      },
+      "actual_dat": {
+        "path": "work/copies/studio-1789153070547148565/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 190164,
+        "sha256": "1c8a6aadf7510d0b17c53bd4bce7908e6b511a9abf454ae1e2a661561de6fbf1"
+      },
+      "actual_exe": {
+        "path": "work/copies/studio-1789153070547148565/bugs.exe",
+        "bytes": 1081856,
+        "sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "final-play",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/studio-1789156266178050587",
+        "sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002",
+        "sink": "ablpc_soil_1789156440393698742",
+        "module": 536870916,
+        "code_va": 17313792,
+        "state_va": 17317888,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/final-play/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": false,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 83357,
+          "start": 5403456,
+          "group": 83357,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789156440393698742 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/final-play/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/studio-1789156266178050587/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 83585,
+          "start": 5403601,
+          "group": 83357,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\studio-1789156266178050587\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 83384,
+          "start": 5403482,
+          "group": 83357,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": false,
+      "closure": null,
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/final-play/discover-1789156455903617858.json",
+        "bytes": 270,
+        "sha256": "617881a61cd9efbc0c4ebef70cec178242c8477ffabfd8fa9914af4935514d53"
+      },
+      "actual_dat": {
+        "path": "work/copies/studio-1789156266178050587/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 188436,
+        "sha256": "ea09e0475a6c5fd129e91607a3f4c7d1c2163e212c98c2f1660ebaece499ca79"
+      },
+      "actual_exe": {
+        "path": "work/copies/studio-1789156266178050587/bugs.exe",
+        "bytes": 1081856,
+        "sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "floor-preview",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/EXP-20260911-010-floor-preview",
+        "sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002",
+        "sink": "alsa_output.pci-0000_12_00.6.analog-stereo",
+        "module": null,
+        "code_va": 17313792,
+        "state_va": 17317888,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/floor-preview/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": true,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 75292,
+          "start": 5278576,
+          "group": 75292,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/floor-preview/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-010-floor-preview/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 75519,
+          "start": 5278719,
+          "group": 75292,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-010-floor-preview\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 75318,
+          "start": 5278599,
+          "group": 75292,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/floor-preview/close-1789155678246881297.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/floor-preview/discover-1789155215830989458.json",
+        "bytes": 270,
+        "sha256": "02d57f7520d582ade3ef9aabff1b896ce0879c4af615bb45c11437705bcfc827"
+      },
+      "actual_dat": {
+        "path": "work/copies/EXP-20260911-010-floor-preview/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 279460,
+        "sha256": "d07c438c7b0d2c985484694b36be9b7f208458e4eedbf52f9a1e8f3c2587cea7"
+      },
+      "actual_exe": {
+        "path": "work/copies/EXP-20260911-010-floor-preview/bugs.exe",
+        "bytes": 1081856,
+        "sha256": "149351bfe9b120424aa113df67678907cf89048612aa7ab1e34b1a5264b0e002"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "mod-matched",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/EXP-20260911-010-mod-matched",
+        "sha256": "c247789aeb64d373dc9d58e315be28e9d3de5ae56f21c598da5250c03e93c9fb",
+        "sink": "alsa_output.pci-0000_12_00.6.analog-stereo",
+        "module": null,
+        "code_va": 4963584,
+        "state_va": 5895864,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/mod-matched/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": true,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 71968,
+          "start": 5234033,
+          "group": 71968,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/mod-matched/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-010-mod-matched/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 72195,
+          "start": 5234171,
+          "group": 71968,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-010-mod-matched\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 71994,
+          "start": 5234059,
+          "group": 71968,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/mod-matched/close-1789155174518616797.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/mod-matched/discover-1789154757427834557.json",
+        "bytes": 109,
+        "sha256": "fc306012a0f6546f5cb7577628d1297289c59ec645ded7120ba800ebd2eaef97"
+      },
+      "actual_dat": {
+        "path": "work/copies/EXP-20260911-010-mod-matched/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 187476,
+        "sha256": "5e052cca0f5dbfa014d2a5cb3e0fd459efc5ca2b76b0bbfea28db8ba8761ed1a"
+      },
+      "actual_exe": {
+        "path": "work/copies/EXP-20260911-010-mod-matched/bugs.exe",
+        "bytes": 1081856,
+        "sha256": "c247789aeb64d373dc9d58e315be28e9d3de5ae56f21c598da5250c03e93c9fb"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "original-control",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/EXP-20260911-010-original-control",
+        "sha256": "2e57aa5f8c1623a21382baac0a1fae13de579e8ec352fb8ce79fb90d4531589a",
+        "sink": "alsa_output.pci-0000_12_00.6.analog-stereo",
+        "module": null,
+        "code_va": 4963584,
+        "state_va": 5895864,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/original-control/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": true,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 69735,
+          "start": 5193884,
+          "group": 69735,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/original-control/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-010-original-control/bugs.exe log cheat mpeg "
+        }
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/original-control/close-1789154388431030034.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": null,
+      "actual_dat": {
+        "path": "work/copies/EXP-20260911-010-original-control/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 115060,
+        "sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22"
+      },
+      "actual_exe": {
+        "path": "work/copies/EXP-20260911-010-original-control/bugs.exe",
+        "bytes": 1069056,
+        "sha256": "2e57aa5f8c1623a21382baac0a1fae13de579e8ec352fb8ce79fb90d4531589a"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "original-control-02",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/EXP-20260911-010-original-control-02",
+        "sha256": "2e57aa5f8c1623a21382baac0a1fae13de579e8ec352fb8ce79fb90d4531589a",
+        "sink": "alsa_output.pci-0000_12_00.6.analog-stereo",
+        "module": null,
+        "code_va": 4963584,
+        "state_va": 5895864,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/original-control-02/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": true,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 70307,
+          "start": 5199267,
+          "group": 70307,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/original-control-02/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-010-original-control-02/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 70538,
+          "start": 5199398,
+          "group": 70307,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-010-original-control-02\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 70333,
+          "start": 5199290,
+          "group": 70307,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/original-control-02/close-1789154532716991836.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/original-control-02/discover-1789154408754727157.json",
+        "bytes": 109,
+        "sha256": "2467a9ef1f9c38f805421af40e17211ad16735931d2f5d0264e6d225749fc5a6"
+      },
+      "actual_dat": {
+        "path": "work/copies/EXP-20260911-010-original-control-02/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 115060,
+        "sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22"
+      },
+      "actual_exe": {
+        "path": "work/copies/EXP-20260911-010-original-control-02/bugs.exe",
+        "bytes": 1069056,
+        "sha256": "2e57aa5f8c1623a21382baac0a1fae13de579e8ec352fb8ce79fb90d4531589a"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "original-matched",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/EXP-20260911-010-original-matched",
+        "sha256": "20d46bd75bafa55af19a092f1a5deda9674a3f0f8fe5cf8084364997b344c505",
+        "sink": "alsa_output.pci-0000_12_00.6.analog-stereo",
+        "module": null,
+        "code_va": 4963584,
+        "state_va": 5895864,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/original-matched/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": true,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 71148,
+          "start": 5214706,
+          "group": 71148,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=alsa_output.pci-0000_12_00.6.analog-stereo WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/original-matched/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-010-original-matched/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 71375,
+          "start": 5214823,
+          "group": 71148,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-010-original-matched\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 71174,
+          "start": 5214730,
+          "group": 71148,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/original-matched/close-1789154721961746048.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/original-matched/discover-1789154561723981153.json",
+        "bytes": 109,
+        "sha256": "320986012a49cf89bc990a34b4e072114b1c1acd3c092fb9a4608fdfb4693b80"
+      },
+      "actual_dat": {
+        "path": "work/copies/EXP-20260911-010-original-matched/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 115060,
+        "sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22"
+      },
+      "actual_exe": {
+        "path": "work/copies/EXP-20260911-010-original-matched/bugs.exe",
+        "bytes": 1069056,
+        "sha256": "20d46bd75bafa55af19a092f1a5deda9674a3f0f8fe5cf8084364997b344c505"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    },
+    {
+      "name": "under-final",
+      "ownership": {
+        "build": "/home/dev/ABLPC/work/copies/EXP-20260911-010-under-final",
+        "sha256": "c5bb0b9b3d9bc31753d64b06412923ec10019e33993f2c99676c7ec7e583840b",
+        "sink": "ablpc_soil_1789156352289273269",
+        "module": 536870916,
+        "code_va": 17313792,
+        "state_va": 17317888,
+        "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-010/under-final/prefix",
+        "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+        "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+        "audible": false,
+        "expect_auto_hardware": true,
+        "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+        "leader": {
+          "pid": 82872,
+          "start": 5394645,
+          "group": 82872,
+          "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789156352289273269 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-010/under-final/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-010-under-final/bugs.exe log cheat mpeg "
+        },
+        "game": {
+          "pid": 83100,
+          "start": 5394793,
+          "group": 82872,
+          "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-010-under-final\\bugs.exe log cheat mpeg                                                                                                   "
+        },
+        "display": ":2",
+        "xwayland": {
+          "pid": 82898,
+          "start": 5394673,
+          "group": 82872,
+          "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+        },
+        "hardware_before_input": true,
+        "window": "14680071"
+      },
+      "closed": true,
+      "closure": {
+        "path": "work/experiments/EXP-20260911-010/under-final/close-1789156425166105719.json",
+        "bytes": 312,
+        "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+      },
+      "discover": {
+        "path": "work/experiments/EXP-20260911-010/under-final/discover-1789156360206048187.json",
+        "bytes": 269,
+        "sha256": "5fd753415ffb0c8faf8ed5fec69269f48c503b00ea68c5d488267820d25751ed"
+      },
+      "actual_dat": {
+        "path": "work/copies/EXP-20260911-010-under-final/game/PC/BUGS/CD/LEVEL07/LEVEL1.DAT",
+        "bytes": 188436,
+        "sha256": "ea09e0475a6c5fd129e91607a3f4c7d1c2163e212c98c2f1660ebaece499ca79"
+      },
+      "actual_exe": {
+        "path": "work/copies/EXP-20260911-010-under-final/bugs.exe",
+        "bytes": 1081856,
+        "sha256": "c5bb0b9b3d9bc31753d64b06412923ec10019e33993f2c99676c7ec7e583840b"
+      },
+      "private_build_metadata_limit": "Diagnostic copies may inherit old CD inventory/layout hashes; actual file hashes here own diagnostic asset identity."
+    }
+  ],
+  "old_exp009_closure": {
+    "path": "work/experiments/EXP-20260911-009/wider-play/close-1789153227508705029.json",
+    "bytes": 312,
+    "sha256": "9412535a9b3ac3c30bfeac96a92a45f7e1a9c63eda1c50591d00ff6d51fe4014"
+  },
+  "checks": {
+    "command": "PYTEST_ADDOPTS='-k \"training_pressure or training_expansion or training_soil or soil_intro or training_occlusion or training_gate\"' make check",
+    "exit_code": 0,
+    "passed": 161,
+    "deselected": 6375,
+    "seconds": 65.88,
+    "prior_underside_selected_passed": 78,
+    "initial_direct_pytest": "Collection failed because PYTHONPATH was omitted; corrected make invocation passes",
+    "scope": "Selected tests; known unrelated full-suite R2p/R2q failures not rerun",
+    "compatibility": "pass",
+    "tracked_file_audit": "0 violations",
+    "hooks": "already installed",
+    "vault": {
+      "notes": 934,
+      "errors": 0,
+      "warnings": 5,
+      "scope": "Five pre-existing size warnings; current runtime handoff kept below its per-note budget"
+    }
+  },
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260911-010/before.png",
+      "bytes": 364614,
+      "sha256": "2be8925935b7b603e33dceafc8c81ac7eea3a49cd58a4dc6575b7556c2735950"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/capture.py",
+      "bytes": 2051,
+      "sha256": "d5db0c4ec9c5aa5b267931f1bed20cae94aa9a448a67f970169d5532a3ef7d3e"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/memory.json",
+      "bytes": 17924,
+      "sha256": "8b412dae55ea0e57eebe7c94357c0995afffbc1edf251b2d812474e37be17b3b"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/preservation.py",
+      "bytes": 2149,
+      "sha256": "aab1da245fe22a9bb08d8fca2c4ce2acfa64814017d759ab275a4adbd4a91364"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/preservation.json",
+      "bytes": 535,
+      "sha256": "4cfbdabc7c37dfbce624ffcc530ede6c8d938fb97ae11f7b4b1aa13cff2bcb66"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/underside-only/offline.py",
+      "bytes": 3384,
+      "sha256": "bce2312655aeeaadc5d443fa49d25f818f30a6cebaf6bb2d7a8464e8f35ca769"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/underside-only/offline-original.json",
+      "bytes": 34914,
+      "sha256": "bcbc50fe2d2345b2f6ab04f095b2ccb0a1afe591af462bb3e79f1f449084200e"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/underside-only/offline-candidate.json",
+      "bytes": 50749,
+      "sha256": "1caa8b7c4a56eba8838de107ef6e10cfa243b3b1b8565e72b2e0a75b7327a81f"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/underside-only/depth-comparison.json",
+      "bytes": 1508,
+      "sha256": "7e3b3585ab1a7088b8d3fbf4f806c0de20acc8bb5570c4d7de177035ee82f9c0"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/final-preservation.py",
+      "bytes": 2398,
+      "sha256": "d4010d306e77b8f7fd6e9790a890cb051991e8429e026aa8e137be0168dd7523"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/final-preservation.json",
+      "bytes": 1697,
+      "sha256": "69410bdce9bcd43588b1f7f6e9e0a159b72478ff9360003da40f774709186300"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/final-check.log",
+      "bytes": 1859,
+      "sha256": "9c38808a2d7b184699e4fbfafa3c7a163506a9f71bbcba8a1f0e06ad7f3d6589"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/final-focused-tests.log",
+      "bytes": 2282,
+      "sha256": "ee369c545d68e2222bcdb3c6a92c6f1e2eee3025b7818d0a0101cd10462cfbe0"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/underside-only-tests.log",
+      "bytes": 180,
+      "sha256": "fa089873060e9dfafe806c10f1bd242b863951190e486c6a844f9c126b415ebd"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/fast-left.py",
+      "bytes": 1644,
+      "sha256": "3abbe4695de051af0547c693181ce324ece7c0c896ac0fd32d1c84051219884a"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/floor-preview/fast-left-1789155608193947090.json",
+      "bytes": 2071,
+      "sha256": "8789ca3feeb11cef1c7a7fdd6cbd27ec74c8b1fc89cf0144cb194de0d8d7c7ba"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/retail-dat-comparison.json",
+      "bytes": 137,
+      "sha256": "cd4644d83dfc0acfabe34dd56e2af8729a63ba31ff166404a994357ae77902df"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/text-diff.json",
+      "bytes": 9849,
+      "sha256": "dcde3d0392dba69983871cf2560035c575f7c3b9399cc6152e6f60574e37140a"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/data-diff.json",
+      "bytes": 281,
+      "sha256": "e697faa4e916f2824b16ceba1932e02235710fec48f7786f976fab685d473562"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/memory.json",
+      "bytes": 18617,
+      "sha256": "f2f511498356860ebf7f67583be18e77cf3fa4cacf45950dc439bc3b538679a2"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/left/memory.json",
+      "bytes": 18951,
+      "sha256": "92353c6bc2825baf187c7231602863654bb027127a174b08c875dd96201897a9"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/scene-driver.json",
+      "bytes": 27623,
+      "sha256": "8c96a6ec3c911e80c0de3b930d218733d480cdd86512a220b67aabccecda36fe"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/scene-bias-disassembly.txt",
+      "bytes": 6419,
+      "sha256": "11b882983ce26e6ae1da7de4a4bcf97701c639ea96ac7b967da572564075693e"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/occlusion-probe.py",
+      "bytes": 4244,
+      "sha256": "f30fe8973e88c6aa24b542a6f8bbfbf999f16ea770135f68bde4e7b3aad0bed5"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/occlusion-zero.py",
+      "bytes": 4297,
+      "sha256": "2214f7e5413ec6c18ee1621add94ab96ebdcc5c1d9868db3a111fe8e56c0314f"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/bias-discriminator.json",
+      "bytes": 297,
+      "sha256": "b647cb5dba869e42695fab831c3c0b8d0398e04863c6ec4c3062a39571e0e295"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/raster-occlusion.py",
+      "bytes": 1892,
+      "sha256": "d0e41eab2f2ca9976c1ec43e1dd7ec8cd737201bbd597be36338cbb33a8a99d8"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/raster-occlusion.json",
+      "bytes": 1305,
+      "sha256": "a685ff9373663eb1a51098793c7a8528cbad91d3b61b85c27ae4280593ddbd31"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/clear-builds.py",
+      "bytes": 2977,
+      "sha256": "84b555c67fe40bbd32d484edb324c03f758ea9428608227d63f2d268a6d69608"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/under-build.py",
+      "bytes": 2915,
+      "sha256": "053fb91381eb99319ad77161a4c77074e33280758fa29219c8cb19b63f8978ed"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/og-runtime.py",
+      "bytes": 11462,
+      "sha256": "7a693ef3c45f0323225d11061bacd6bae61536d2fd79a341317cfd963f20346a"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/subdivide.py",
+      "bytes": 3390,
+      "sha256": "31e4a7a95354961a8dba2d707b8231f063e77da4a9fa0bf4697160c7c7d975a7"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/regression/floor-preview.json",
+      "bytes": 5570,
+      "sha256": "c0ecc30dc2c66f11a8bbaddf2f1768b075833d06f121891682b8b04029295660"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/clear-base/pressure-1789155710900813845.png",
+      "bytes": 299056,
+      "sha256": "ebfd46b1ca0cf86f29fde00c5b2099b5c6c3629c37d3404621bf72cbd00a7f71"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/clear-base/pressure-1789155710902349386.json",
+      "bytes": 14185,
+      "sha256": "24847093aa93603024d695c6b32a57ede1ab7ea89bef2bd651c322e71c91903c"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/clear-zero/pressure-1789156108093975774.png",
+      "bytes": 300537,
+      "sha256": "ca3ca71343a09873f90fae54ea4c0731e6ef9c14f6f3dd467c043eaf67f0f078"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/clear-zero/pressure-1789156108095216323.json",
+      "bytes": 14185,
+      "sha256": "337631e03eddcca7a4867e5547a740a44891e9363814367a69f5ba87dd863fae"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/clear-floor/mute.json",
+      "bytes": 4675,
+      "sha256": "49013baa4019d15003d1b600593d3438a184f84170b5ab35fb2a024408d55896"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/under-final/pressure-1789156395237940212.png",
+      "bytes": 364081,
+      "sha256": "9dcf6bc077168b090177eb9a575c33cb3c16ed5a506e933c349940e4f2f7d8e3"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/under-final/pressure-1789156395239254452.json",
+      "bytes": 14395,
+      "sha256": "c69ca6ba0d0166475233954465acff50c1e1626b18026f03deedb12489704c66"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/final-play/pressure-1789156567071011651.png",
+      "bytes": 330695,
+      "sha256": "353a9a00245be670d6514876b688bbd5741e1012dd05110b112feb5137a5a479"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/final-play/pressure-1789156567072282411.json",
+      "bytes": 50992,
+      "sha256": "703fb20639a3b340b9496a2bd9e042b1a8666d1184a428fc6f9edd5498c1e0ed"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/final-bindings.json",
+      "bytes": 10216,
+      "sha256": "d3ebcbec81c5d3a18ccacd15e3bf1bef309a93b0297c7aacc408ec6abfde62c9"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/final-audit.json",
+      "bytes": 3494,
+      "sha256": "78969891979fa3467e041307fb91a9fcf9cae954b8f93647947628d742a2b668"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/final-vault.log",
+      "bytes": 1270,
+      "sha256": "f101c37ac504c0ca1fe40d15596d8c846450b342d40e3e575ff117b4d9eb8c6c"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/claim-sweep-runtime.json",
+      "bytes": 784,
+      "sha256": "47f0ff5167597e476ad2f3771592e97203a53b7220e07da49e657d427628ffac"
+    },
+    {
+      "path": "work/experiments/EXP-20260911-010/claim-sweep-floor.json",
+      "bytes": 1041,
+      "sha256": "4f64c30a9b8cee9083a3d00f9856376fc4ae393ad4ab059662826a8a88fbc4db"
+    }
+  ],
+  "limits": [
+    "Read-only non-atomic captures; no live memory writes or PS1 source.",
+    "Initial all-face deck and floor-subdivision prototypes are superseded and absent from production.",
+    "Original/mod control matched at one earlier angle but grass obscured seed; no universal OG equivalence claim.",
+    "Clear comparison uses file-fixed camera/start and identical settled actor XYZ; animation phase differs.",
+    "Pixel-center linear/RHW depth comparisons omit texture alpha, raster edges and GPU behavior.",
+    "Earlier observer nominal1ms hold includes at least30ms sampling delay; later measured XTest acknowledgement interval1.069448ms produced no observed movement.",
+    "No exclusive attribution of every historical pixel defect or all-angle/software/native-Windows acceptance."
+  ],
+  "user_audio_preference": {
+    "text": "Mute instances going forward",
+    "current_game_inaudible": true,
+    "future_launch": "Omit --audible; own/close private null sink with each instance",
+    "prior_specific_mute": "clear-floor stream4122 PID79531 only"
+  },
+  "source_files": [
+    {
+      "path": "reimplementation/ablpc/training_pressure.py",
+      "bytes": 13351,
+      "sha256": "a4cfb80584037ad256f1a078672b82fcf83ca1ceaaea33f8cb54b189c9b54b2d"
+    },
+    {
+      "path": "reimplementation/ablpc/training_occlusion.py",
+      "bytes": 1642,
+      "sha256": "c608d966eb022922a1b0560dee2b61d09102a7a1dcce5fc80e3521e3c5d969b1"
+    },
+    {
+      "path": "reimplementation/ablpc/training_mechanisms.py",
+      "bytes": 3246,
+      "sha256": "678245d9160f368df72ab2017796ebe1102ca44b9092a9556020df8d960c3b6c"
+    },
+    {
+      "path": "tests/test_training_pressure.py",
+      "bytes": 11806,
+      "sha256": "9f8d7b836f4a064d6d2f2bb0909e2760c528fa105cb5ff11874b21696155227e"
+    },
+    {
+      "path": "tests/test_training_occlusion.py",
+      "bytes": 3129,
+      "sha256": "bcb8310533151c785b7f349f79665882461d99d320603060a5ec56d7190078a1"
+    },
+    {
+      "path": "tests/test_training_expansion.py",
+      "bytes": 10016,
+      "sha256": "ce482b6270c38b5d83704623a7c553784ab15f4fbe57b183e7ca6c8f9efd4c58"
+    }
+  ],
+  "claim_sweep": {
+    "runtime": {
+      "exit_code": 0,
+      "hits_truncated": false,
+      "mixed": false,
+      "new": "Game83585/group83357 remains OPEN",
+      "new_hits": [
+        {
+          "column": 1,
+          "context": "Game83585/group83357 remains OPEN in Training, six hardware markers confirmed.",
+          "line": 23,
+          "match": "Game83585/group83357 remains OPEN",
+          "path": "Vault/00-System/Current State.md"
+        }
+      ],
+      "new_hits_truncated": false,
+      "new_notes": 1,
+      "new_total_hits": 1,
+      "notes_scanned": 934,
+      "old": "Game62633/group62405 remains OPEN",
+      "old_hits": [],
+      "old_hits_truncated": false,
+      "old_notes": 0,
+      "old_total_hits": 0,
+      "overlap_rule": "old hits contained in a new occurrence are ignored",
+      "search_path": "Vault",
+      "state": "new_only",
+      "subcommand": "pair",
+      "tool": "claim-sweep"
+    },
+    "floor": {
+      "exit_code": 1,
+      "hits_truncated": false,
+      "mixed": true,
+      "new": "all original ground meshes remain exact",
+      "new_hits": [
+        {
+          "column": 34,
+          "context": "changes sixteen object bytes9\u21920; all original ground meshes remain exact.",
+          "line": 11,
+          "match": "all original ground meshes remain exact",
+          "path": "Vault/00-System/Current State.md"
+        }
+      ],
+      "new_hits_truncated": false,
+      "new_notes": 1,
+      "new_total_hits": 1,
+      "notes_scanned": 934,
+      "old": "floor-subdivision prototype",
+      "old_hits": [
+        {
+          "column": 5,
+          "context": "The floor-subdivision prototype is rejected and absent from production. Grass",
+          "line": 16,
+          "match": "floor-subdivision prototype",
+          "path": "Vault/70-Known-Unknowns/Known Unknowns.md"
+        }
+      ],
+      "old_hits_truncated": false,
+      "old_notes": 1,
+      "old_total_hits": 1,
+      "overlap_rule": "old hits contained in a new occurrence are ignored",
+      "search_path": "Vault",
+      "state": "mixed",
+      "subcommand": "pair",
+      "tool": "claim-sweep"
+    },
+    "disposition": "Old runtime present-tense wording corrected to dated history plus explicit EXP010 closure. The floor prototype occurrence explicitly says rejected/absent from production, so the literal mixed result is not conflicting active guidance."
+  }
+}

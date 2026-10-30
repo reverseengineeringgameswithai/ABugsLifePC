@@ -1,0 +1,1460 @@
+{
+  "experiment_id": "EXP-20260905-008",
+  "scope": "All compared Level01 files; every TERRAIN.ALL directory/payload; active resolved height-cell instances and canonical 0x101 barriers; all type-0x41 static render references",
+  "mode": "offline read-only comparison; no runtime control, RAM access, tests or asset edits",
+  "input_hashes": {
+    "retail": {
+      "TERRAIN.ALL": "62f3b73f21630eb19c04e585a92e1f3e32a76fdcb6ec36bae18f9c1ec3a2a868",
+      "LEVEL.DAT": "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53"
+    },
+    "authored": {
+      "TERRAIN.ALL": "1ff3af9f0b5b2c2957bde8e877e1d988054455f3e1be18f8ea0e6cb57875d16b",
+      "LEVEL.DAT": "99fbff1754fc43979542de40e56c04d10d7af4fccde8d13e919853b679429a21"
+    }
+  },
+  "level01_files": [
+    {
+      "name": "DP_PREFS",
+      "status": "unchanged",
+      "retail_bytes": 324,
+      "authored_bytes": 324
+    },
+    {
+      "name": "LEVEL.BIN",
+      "status": "unchanged",
+      "retail_bytes": 1680,
+      "authored_bytes": 1680
+    },
+    {
+      "name": "LEVEL.DAT",
+      "status": "changed",
+      "retail_bytes": 332824,
+      "authored_bytes": 343012
+    },
+    {
+      "name": "LEVEL.KEP",
+      "status": "unchanged",
+      "retail_bytes": 264268,
+      "authored_bytes": 264268
+    },
+    {
+      "name": "LEVEL.RAW",
+      "status": "unchanged",
+      "retail_bytes": 747748,
+      "authored_bytes": 747748
+    },
+    {
+      "name": "LEVEL1.BIN",
+      "status": "unchanged",
+      "retail_bytes": 2700,
+      "authored_bytes": 2700
+    },
+    {
+      "name": "LEVEL1.DAT",
+      "status": "unchanged",
+      "retail_bytes": 107880,
+      "authored_bytes": 107880
+    },
+    {
+      "name": "LEVEL1.RAW",
+      "status": "unchanged",
+      "retail_bytes": 541200,
+      "authored_bytes": 541200
+    },
+    {
+      "name": "LEVEL1A.VB",
+      "status": "unchanged",
+      "retail_bytes": 501680,
+      "authored_bytes": 501680
+    },
+    {
+      "name": "LEVEL1A.VH",
+      "status": "unchanged",
+      "retail_bytes": 5152,
+      "authored_bytes": 5152
+    },
+    {
+      "name": "LEVEL2.DAT",
+      "status": "unchanged",
+      "retail_bytes": 264068,
+      "authored_bytes": 264068
+    },
+    {
+      "name": "LEVEL2C.VB",
+      "status": "unchanged",
+      "retail_bytes": 506528,
+      "authored_bytes": 506528
+    },
+    {
+      "name": "LEVEL2C.VH",
+      "status": "unchanged",
+      "retail_bytes": 5152,
+      "authored_bytes": 5152
+    },
+    {
+      "name": "TERR1.ALL",
+      "status": "unchanged",
+      "retail_bytes": 61560,
+      "authored_bytes": 61560
+    },
+    {
+      "name": "TERRAIN.ALL",
+      "status": "changed",
+      "retail_bytes": 236940,
+      "authored_bytes": 236940
+    },
+    {
+      "name": "WALLSPL-.SPL",
+      "status": "unchanged",
+      "retail_bytes": 964,
+      "authored_bytes": 964
+    }
+  ],
+  "terrain": {
+    "bytes": [
+      236940,
+      236940
+    ],
+    "source_record_count": 189,
+    "changed_sources": [
+      99
+    ],
+    "unchanged_sources": 188,
+    "directory_identical": true,
+    "changed_shared_bytes": 592,
+    "change_extent_half_open": [
+      43926,
+      44542
+    ],
+    "header_identical": true,
+    "suffix_identical": true,
+    "active_cells": {
+      "retail": 7281,
+      "authored": 7161
+    },
+    "unchanged_active_cells": 7147,
+    "retired_active_cells": 134,
+    "new_active_cells": 14,
+    "retired_sources": {
+      "99": 134
+    },
+    "new_sources": {
+      "99": 14
+    },
+    "retired_cell_raw_bytes_still_present": 116,
+    "payload99_consumers": {
+      "retail": [
+        99
+      ],
+      "authored": [
+        99
+      ]
+    },
+    "source99_terminators": {
+      "retail": 48380,
+      "authored": 44540
+    },
+    "source99_bounds_world": {
+      "retail": [
+        138080,
+        288064,
+        320224,
+        544000
+      ],
+      "authored": [
+        128000,
+        265600,
+        416000,
+        579200
+      ]
+    },
+    "barrier_sources": {
+      "retail": [
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187
+      ],
+      "authored": [
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187
+      ]
+    },
+    "barrier_segments": {
+      "retail": 262,
+      "authored": 262
+    },
+    "barrier_payloads_identical": true
+  },
+  "render": {
+    "reference_count": {
+      "retail": 124,
+      "authored": 124
+    },
+    "face_count": {
+      "retail": 6046,
+      "authored": 6501
+    },
+    "changed_references": [
+      {
+        "key": "primary:160",
+        "changed_fields": [
+          "geometry_sha256",
+          "object_header_sha256",
+          "scene_record_sha256"
+        ],
+        "retail": {
+          "key": "primary:160",
+          "record_offset": 8580,
+          "object_offset": 18672,
+          "geometry_offset": 113136,
+          "terminator_offset": 115368,
+          "vertex_count": 92,
+          "face_count": 69,
+          "geometry_sha256": "1de3480a594b7a44959d67b2ea8771f63a482b6fe4cc04c419bfc38743d6ab2a",
+          "object_header_sha256": "6a52d073f21723592aa6c4f173be235081bbe1e0218a10a09141a9c2f79101ea",
+          "scene_record_sha256": "325add8a9bc619e69ca41fea8e4f47943269950291e4d9f1d77ef3bba1c1a496",
+          "projection_resolved": true
+        },
+        "authored": {
+          "key": "primary:160",
+          "record_offset": 8580,
+          "object_offset": 18672,
+          "geometry_offset": 332820,
+          "terminator_offset": 343004,
+          "vertex_count": 324,
+          "face_count": 524,
+          "geometry_sha256": "b759d335984bd132a589c0beae6c287d6cbb3d09b57128f890c46d04ea5867b4",
+          "object_header_sha256": "e30d74b50c1c72a4ca50fab83b581d33020f1d471352ae9fa4136b4235c68bee",
+          "scene_record_sha256": "64aa6e7851c1ce6cd63c369d081db922b917c29624ada05b97117da8667e40d6",
+          "projection_resolved": true
+        }
+      }
+    ],
+    "unchanged_reference_count": 123,
+    "unresolved_projections": {
+      "retail": [
+        {
+          "key": "primary:98",
+          "rotation": [
+            0,
+            3688,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:100",
+          "rotation": [
+            0,
+            3688,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:194",
+          "rotation": [
+            2049,
+            948,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:196",
+          "rotation": [
+            2103,
+            49,
+            2084
+          ],
+          "low_flags": 10
+        },
+        {
+          "key": "primary:197",
+          "rotation": [
+            2103,
+            49,
+            2084
+          ],
+          "low_flags": 14
+        },
+        {
+          "key": "primary:198",
+          "rotation": [
+            2103,
+            49,
+            2084
+          ],
+          "low_flags": 6
+        },
+        {
+          "key": "primary:201",
+          "rotation": [
+            2103,
+            49,
+            2084
+          ],
+          "low_flags": 14
+        },
+        {
+          "key": "primary:232",
+          "rotation": [
+            2049,
+            948,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:244",
+          "rotation": [
+            2049,
+            948,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:247",
+          "rotation": [
+            2049,
+            948,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:252",
+          "rotation": [
+            2049,
+            948,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:256",
+          "rotation": [
+            471,
+            927,
+            3705
+          ],
+          "low_flags": 2
+        },
+        {
+          "key": "primary:257",
+          "rotation": [
+            471,
+            927,
+            3705
+          ],
+          "low_flags": 2
+        },
+        {
+          "key": "primary:258",
+          "rotation": [
+            471,
+            927,
+            3705
+          ],
+          "low_flags": 14
+        },
+        {
+          "key": "primary:259",
+          "rotation": [
+            2049,
+            1022,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:262",
+          "rotation": [
+            2049,
+            1022,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:302",
+          "rotation": [
+            2049,
+            580,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:306",
+          "rotation": [
+            2049,
+            580,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:345",
+          "rotation": [
+            0,
+            977,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:361",
+          "rotation": [
+            2049,
+            953,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:369",
+          "rotation": [
+            2049,
+            953,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:383",
+          "rotation": [
+            0,
+            966,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:388",
+          "rotation": [
+            0,
+            966,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:392",
+          "rotation": [
+            0,
+            722,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:399",
+          "rotation": [
+            0,
+            977,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:419",
+          "rotation": [
+            2049,
+            953,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:433",
+          "rotation": [
+            0,
+            966,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:440",
+          "rotation": [
+            0,
+            966,
+            0
+          ],
+          "low_flags": 0
+        }
+      ],
+      "authored": [
+        {
+          "key": "primary:98",
+          "rotation": [
+            0,
+            3688,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:100",
+          "rotation": [
+            0,
+            3688,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:194",
+          "rotation": [
+            2049,
+            948,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:196",
+          "rotation": [
+            2103,
+            49,
+            2084
+          ],
+          "low_flags": 10
+        },
+        {
+          "key": "primary:197",
+          "rotation": [
+            2103,
+            49,
+            2084
+          ],
+          "low_flags": 14
+        },
+        {
+          "key": "primary:198",
+          "rotation": [
+            2103,
+            49,
+            2084
+          ],
+          "low_flags": 6
+        },
+        {
+          "key": "primary:201",
+          "rotation": [
+            2103,
+            49,
+            2084
+          ],
+          "low_flags": 14
+        },
+        {
+          "key": "primary:232",
+          "rotation": [
+            2049,
+            948,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:244",
+          "rotation": [
+            2049,
+            948,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:247",
+          "rotation": [
+            2049,
+            948,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:252",
+          "rotation": [
+            2049,
+            948,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:256",
+          "rotation": [
+            471,
+            927,
+            3705
+          ],
+          "low_flags": 2
+        },
+        {
+          "key": "primary:257",
+          "rotation": [
+            471,
+            927,
+            3705
+          ],
+          "low_flags": 2
+        },
+        {
+          "key": "primary:258",
+          "rotation": [
+            471,
+            927,
+            3705
+          ],
+          "low_flags": 14
+        },
+        {
+          "key": "primary:259",
+          "rotation": [
+            2049,
+            1022,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:262",
+          "rotation": [
+            2049,
+            1022,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:302",
+          "rotation": [
+            2049,
+            580,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:306",
+          "rotation": [
+            2049,
+            580,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:345",
+          "rotation": [
+            0,
+            977,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:361",
+          "rotation": [
+            2049,
+            953,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:369",
+          "rotation": [
+            2049,
+            953,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:383",
+          "rotation": [
+            0,
+            966,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:388",
+          "rotation": [
+            0,
+            966,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:392",
+          "rotation": [
+            0,
+            722,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:399",
+          "rotation": [
+            0,
+            977,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:419",
+          "rotation": [
+            2049,
+            953,
+            2048
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:433",
+          "rotation": [
+            0,
+            966,
+            0
+          ],
+          "low_flags": 0
+        },
+        {
+          "key": "primary:440",
+          "rotation": [
+            0,
+            966,
+            0
+          ],
+          "low_flags": 0
+        }
+      ]
+    },
+    "retired_collision_footprint_census": {
+      "retail": {
+        "meshes": 7,
+        "near_faces": 196,
+        "exact_touching_faces": 158,
+        "duplicate_vertex_groups": 96
+      },
+      "authored": {
+        "meshes": 7,
+        "near_faces": 594,
+        "exact_touching_faces": 543,
+        "duplicate_vertex_groups": 112
+      }
+    }
+  },
+  "centroid_probes": {
+    "count": 134,
+    "no_authored_projected_collision": 46,
+    "no_authored_projected_collision_but_static_render_overlap": 46,
+    "limitation": "One centroid per retired cell; overlapping X/Z cells do not establish same-height support, admission, or full-area coverage"
+  },
+  "named_points": {
+    "retail_spawn": {
+      "world_xyz": [
+        197091,
+        2734,
+        492897
+      ],
+      "retail": {
+        "collision": [
+          {
+            "source": 99,
+            "offset": 47716,
+            "vertices_stored": [
+              [
+                6497,
+                -54,
+                15500
+              ],
+              [
+                6169,
+                -19,
+                15109
+              ],
+              [
+                6103,
+                16,
+                16174
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:280",
+            "face_offset": 61804,
+            "group_offset": 61672,
+            "tag": 96,
+            "vertex_indices": [
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        ]
+      },
+      "authored": {
+        "collision": [
+          {
+            "source": 99,
+            "offset": 43936,
+            "vertices_stored": [
+              [
+                4000,
+                -3296,
+                13000
+              ],
+              [
+                8300,
+                -3296,
+                18100
+              ],
+              [
+                8300,
+                -3296,
+                13000
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:160",
+            "face_offset": 337148,
+            "group_offset": 336712,
+            "tag": 97,
+            "vertex_indices": [
+              28,
+              22,
+              20
+            ]
+          },
+          {
+            "mesh": "primary:280",
+            "face_offset": 61804,
+            "group_offset": 61672,
+            "tag": 96,
+            "vertex_indices": [
+              26,
+              27,
+              28,
+              29
+            ]
+          }
+        ]
+      }
+    },
+    "earlier_authored_deck_edge": {
+      "world_xyz": [
+        220590,
+        -102402,
+        435460
+      ],
+      "retail": {
+        "collision": [
+          {
+            "source": 99,
+            "offset": 47008,
+            "vertices_stored": [
+              [
+                6925,
+                -1049,
+                13577
+              ],
+              [
+                6541,
+                -1057,
+                13502
+              ],
+              [
+                6981,
+                -658,
+                14026
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:213",
+            "face_offset": 57940,
+            "group_offset": 57792,
+            "tag": 96,
+            "vertex_indices": [
+              29,
+              30,
+              31,
+              32
+            ]
+          }
+        ]
+      },
+      "authored": {
+        "collision": [
+          {
+            "source": 99,
+            "offset": 43936,
+            "vertices_stored": [
+              [
+                4000,
+                -3296,
+                13000
+              ],
+              [
+                8300,
+                -3296,
+                18100
+              ],
+              [
+                8300,
+                -3296,
+                13000
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:160",
+            "face_offset": 337220,
+            "group_offset": 336712,
+            "tag": 97,
+            "vertex_indices": [
+              33,
+              24,
+              32
+            ]
+          },
+          {
+            "mesh": "primary:213",
+            "face_offset": 57940,
+            "group_offset": 57792,
+            "tag": 96,
+            "vertex_indices": [
+              29,
+              30,
+              31,
+              32
+            ]
+          }
+        ]
+      }
+    },
+    "earlier_authored_fall_end": {
+      "world_xyz": [
+        222481,
+        -22529,
+        383185
+      ],
+      "retail": {
+        "collision": [
+          {
+            "source": 99,
+            "offset": 45884,
+            "vertices_stored": [
+              [
+                6489,
+                -2707,
+                12014
+              ],
+              [
+                6991,
+                -2684,
+                12511
+              ],
+              [
+                6991,
+                -3106,
+                11517
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:213",
+            "face_offset": 58564,
+            "group_offset": 58256,
+            "tag": 32868,
+            "vertex_indices": [
+              120,
+              121,
+              122,
+              15
+            ]
+          }
+        ]
+      },
+      "authored": {
+        "collision": [],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:213",
+            "face_offset": 58564,
+            "group_offset": 58256,
+            "tag": 32868,
+            "vertex_indices": [
+              120,
+              121,
+              122,
+              15
+            ]
+          }
+        ]
+      }
+    },
+    "later_slope_transfer": {
+      "world_xyz": [
+        124987,
+        -102158,
+        328714
+      ],
+      "retail": {
+        "collision": [
+          {
+            "source": 98,
+            "offset": 43416,
+            "vertices_stored": [
+              [
+                3505,
+                -3367,
+                10014
+              ],
+              [
+                4001,
+                -3191,
+                10512
+              ],
+              [
+                4496,
+                -3451,
+                10016
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:124",
+            "face_offset": 118412,
+            "group_offset": 118376,
+            "tag": 33380,
+            "vertex_indices": [
+              96,
+              95,
+              97,
+              98
+            ]
+          }
+        ]
+      },
+      "authored": {
+        "collision": [
+          {
+            "source": 98,
+            "offset": 43416,
+            "vertices_stored": [
+              [
+                3505,
+                -3367,
+                10014
+              ],
+              [
+                4001,
+                -3191,
+                10512
+              ],
+              [
+                4496,
+                -3451,
+                10016
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:124",
+            "face_offset": 118412,
+            "group_offset": 118376,
+            "tag": 33380,
+            "vertex_indices": [
+              96,
+              95,
+              97,
+              98
+            ]
+          }
+        ]
+      }
+    },
+    "og_source99_entry": {
+      "world_xyz": [
+        191376,
+        -96469,
+        348189
+      ],
+      "retail": {
+        "collision": [
+          {
+            "source": 99,
+            "offset": 44140,
+            "vertices_stored": [
+              [
+                5991,
+                -3298,
+                10520
+              ],
+              [
+                5496,
+                -2891,
+                11019
+              ],
+              [
+                6488,
+                -3195,
+                11018
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:124",
+            "face_offset": 117660,
+            "group_offset": 117176,
+            "tag": 32868,
+            "vertex_indices": [
+              5,
+              12,
+              15,
+              6
+            ]
+          }
+        ]
+      },
+      "authored": {
+        "collision": [],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:124",
+            "face_offset": 117660,
+            "group_offset": 117176,
+            "tag": 32868,
+            "vertex_indices": [
+              5,
+              12,
+              15,
+              6
+            ]
+          }
+        ]
+      }
+    },
+    "og_source99_exit": {
+      "world_xyz": [
+        249967,
+        -96337,
+        371497
+      ],
+      "retail": {
+        "collision": [
+          {
+            "source": 99,
+            "offset": 44248,
+            "vertices_stored": [
+              [
+                7500,
+                -2927,
+                12017
+              ],
+              [
+                8004,
+                -3124,
+                11522
+              ],
+              [
+                7500,
+                -3490,
+                11014
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:213",
+            "face_offset": 58468,
+            "group_offset": 58256,
+            "tag": 32868,
+            "vertex_indices": [
+              11,
+              114,
+              14,
+              12
+            ]
+          }
+        ]
+      },
+      "authored": {
+        "collision": [],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:213",
+            "face_offset": 58468,
+            "group_offset": 58256,
+            "tag": 32868,
+            "vertex_indices": [
+              11,
+              114,
+              14,
+              12
+            ]
+          }
+        ]
+      }
+    },
+    "og_after_up": {
+      "world_xyz": [
+        303395,
+        -73801,
+        405307
+      ],
+      "retail": {
+        "collision": [
+          {
+            "source": 47,
+            "offset": 124,
+            "vertices_stored": [
+              [
+                9303,
+                -2476,
+                12776
+              ],
+              [
+                9592,
+                -2324,
+                12760
+              ],
+              [
+                9270,
+                -2354,
+                12403
+              ]
+            ]
+          },
+          {
+            "source": 93,
+            "offset": 24136,
+            "vertices_stored": [
+              [
+                9505,
+                -2396,
+                12507
+              ],
+              [
+                9007,
+                -2457,
+                12998
+              ],
+              [
+                9510,
+                -2419,
+                13494
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:213",
+            "face_offset": 58388,
+            "group_offset": 58256,
+            "tag": 32868,
+            "vertex_indices": [
+              100,
+              101,
+              102,
+              103
+            ]
+          }
+        ]
+      },
+      "authored": {
+        "collision": [
+          {
+            "source": 47,
+            "offset": 124,
+            "vertices_stored": [
+              [
+                9303,
+                -2476,
+                12776
+              ],
+              [
+                9592,
+                -2324,
+                12760
+              ],
+              [
+                9270,
+                -2354,
+                12403
+              ]
+            ]
+          },
+          {
+            "source": 93,
+            "offset": 24136,
+            "vertices_stored": [
+              [
+                9505,
+                -2396,
+                12507
+              ],
+              [
+                9007,
+                -2457,
+                12998
+              ],
+              [
+                9510,
+                -2419,
+                13494
+              ]
+            ]
+          }
+        ],
+        "projected_render_faces": [
+          {
+            "mesh": "primary:213",
+            "face_offset": 58388,
+            "group_offset": 58256,
+            "tag": 32868,
+            "vertex_indices": [
+              100,
+              101,
+              102,
+              103
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "No executable movement or falling trajectory was replayed",
+    "One changed collision source can span a broad region; unchanged source bytes do not promise all runtime interactions unchanged",
+    "Static render projection excludes unresolved rotations/scales and is not camera visibility, texture alpha, winding admission, or ground-height equivalence",
+    "Other level files are checked for byte identity, not semantically reinterpreted; no game-wide asset or dynamic-object collision claim",
+    "General box/ramp rules and the earlier exact fall remain separate questions"
+  ],
+  "duration_seconds": 2.832951796008274,
+  "evidence": [
+    {
+      "path": "work/experiments/EXP-20260905-008/active-cells.json",
+      "bytes": 9993129,
+      "sha256": "310f0d284b8f8ad21ba93e336688b35d8c1336c10c1e892f87d6432f8bc7ba4c"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/added-cells.json",
+      "bytes": 8482,
+      "sha256": "8c91803d728461280440e6636a97fa22daef06517dc2a9c5ab33525bea062275"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/audit.py",
+      "bytes": 18616,
+      "sha256": "6605c223abd319e251e9d95d1e73f40338d32923fb09676ee8c21fa2b70f5548"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/barrier-inventory.json",
+      "bytes": 72461,
+      "sha256": "3bdb63a328d745006154349b014629ed330ce58689cb5675554ba814e0ce9802"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/byte-differences.json",
+      "bytes": 11092,
+      "sha256": "03b12aff2c7ef6dc6ce2beb9f3ac1918f03bc13ca0cf9b5b5a7f1f429c6ff270"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/centroid-probes.json",
+      "bytes": 83463,
+      "sha256": "2901f76ecf59d2068cb97278c69a26e15a2b6f74fec53696976485c5fcbb1022"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/collision-groups.json",
+      "bytes": 736543,
+      "sha256": "aaba1dd1b3fc9147830766425f588a8fef95146dbe60119487d4bf577aa34ce5"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/coverage-map.svg",
+      "bytes": 278528,
+      "sha256": "be4caab5b9cad767bb459779f180c7f51ced3392a6164c37f71d211c8a3e24a1"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/input-manifest.json",
+      "bytes": 4707,
+      "sha256": "f78a85096bcf69a730916ed611e69a5fced9f446f792a96a42e6ffe703a1e9d5"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/record-inventory.json",
+      "bytes": 96667,
+      "sha256": "14d8e9cdfdde21bb680bcfd7ed8d488259e2ea4292d17b44a2b520146651f42d"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/render-faces-private.json",
+      "bytes": 10126498,
+      "sha256": "1ae44fe8c0b67b979dc135e2003384f37b13d7725fcbe3103c7b3b1eea6ca1c5"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/render-footprint-census.json",
+      "bytes": 666367,
+      "sha256": "edcb31df83105ba3fce304a924e2618dc8aecbed8bcc6dbdba554085de333993"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/render-reference-inventory.json",
+      "bytes": 133951,
+      "sha256": "9c7f110dc7340d2bb752a613ef360e2bd834a98a872125e085886643aa936ad1"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/retired-cells.json",
+      "bytes": 88804,
+      "sha256": "0c91e419d5f3275009288a9f1e5971efa8456f59a804fd60f71aec6836ffd1ad"
+    },
+    {
+      "path": "work/experiments/EXP-20260905-008/runtime-descriptors.json",
+      "bytes": 130372,
+      "sha256": "10901168758171265579584e74cc135416af68988a71e1181c6b3b838a5efa5b"
+    }
+  ]
+}

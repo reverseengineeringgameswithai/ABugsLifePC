@@ -1,0 +1,12 @@
+549112607b76fda8bccc60893c4fb53e4b8077346082dd4eabccc8deaf8258c2  work/copies/EXP-20260812-032/evidence/control-a/after-right-1.png
+c53296ff5632935b68aab886e617b1ffe178cf01f7a20ae3f1f48988a66a8b41  work/copies/EXP-20260812-032/evidence/control-a/after-right-2.png
+9408a9f791d54cf49c30adcef5cf886c21703772b09f107c7f43556e69f57ef8  work/copies/EXP-20260812-032/evidence/control-a/after-right-3.png
+29b7a725bb5f7da8ac378867ab42bf06df2b69a51e778d5e016379a1053b343c  work/copies/EXP-20260812-032/evidence/control-a/after-up1-1.png
+ebf4f572fe925031344643e94f36affb3918d1f27897646c7cbb907f732b06ac  work/copies/EXP-20260812-032/evidence/control-a/after-up1-2.png
+138ac245b775c82bdc5d47cc29bae032b5210fdbde367e171aad9400d0f04b83  work/copies/EXP-20260812-032/evidence/control-a/after-up1-3.png
+3e12d588c9202959e628b0dfa663e3abe3002f58d9ff584e29c07e7cd71f8f32  work/copies/EXP-20260812-032/evidence/control-a/after-up2-1.png
+eb85f4da00e50ef2ded5b3b07ee28def93cbcceb172ce36c976f428d3c70fef2  work/copies/EXP-20260812-032/evidence/control-a/after-up2-2.png
+9f089bcc9520b7e1728aca333eee2c192acca5d328b172fd05f28de6abeae5c3  work/copies/EXP-20260812-032/evidence/control-a/after-up2-3.png
+c2949393c6fef0ed71538fb5f7a298323fd50d87c4fb09db37c720359883cdb5  work/copies/EXP-20260812-032/evidence/control-a/start-1.png
+ada6101780e5de658036f14dd9b89469c67785f4ea64b619a562f6a236b3c30a  work/copies/EXP-20260812-032/evidence/control-a/start-2.png
+01ab341beb97a49b76b1913f9e2da122eb16e21b01c812865a506b7c9518a974  work/copies/EXP-20260812-032/evidence/control-a/start-3.png

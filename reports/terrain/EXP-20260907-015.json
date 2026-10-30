@@ -1,0 +1,35 @@
+{
+  "experiment": "EXP-20260907-015",
+  "session": "2026-09-07 - Codex - Original game and trunk sampling",
+  "scope": "Original PC content operational handoff",
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260907-015/prepare.json",
+      "sha256": "e3f02ec3b6d31d4030ca3b61b9408c306adcde003f8b7d29c22f4b5d0203cdea"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-015/auto-hardware-build.json",
+      "sha256": "915b1c6269ed5ef50a737ea4320e95675bb9350bd5eea89eac8ca8e0cee99da9"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-015/postclose-audit.json",
+      "sha256": "6917d6c14a86459c85a15100f6cbc87045b2cd721d81046767a219816bf3e879"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-015/prelaunch-audit.json",
+      "sha256": "6917d6c14a86459c85a15100f6cbc87045b2cd721d81046767a219816bf3e879"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-015/resident-original.json",
+      "sha256": "d65eca78dd0927ed5f4d190bc02ecf00302b37320ea23110e45414ebf4801ba1"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-015/gameplay-capture.json",
+      "sha256": "37406e96332154c2ac6ab2300b6c15ea0808e28ec467f38d5757c13f403df80b"
+    },
+    {
+      "path": "work/experiments/EXP-20260907-015/og-preview-01/live-handoff-binding.json",
+      "sha256": "0ec001a1ce2f93b688c20d2a46a257d352c1d0c75873ec121a584760a46e8726"
+    }
+  ]
+}

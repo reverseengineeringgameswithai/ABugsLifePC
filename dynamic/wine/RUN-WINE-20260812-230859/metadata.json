@@ -1,0 +1,20 @@
+{
+  "run_id": "RUN-WINE-20260812-230859",
+  "experiment_id": "EXP-20260812-033",
+  "arm": "control-a",
+  "started": "2026-08-12T23:08:59-04:00",
+  "trajectory_ended": "2026-08-12T23:11:34.985772906-04:00",
+  "executable": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS/bugs.exe",
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "argv": ["bugs.exe", "log", "cheat", "mpeg"],
+  "launcher": "scripts/play-pristine.sh --research --windowed --mute",
+  "environment": "Wine 11.0 Staging; windowed muted Gamescope",
+  "working_directory": "/home/dev/ABLPC/work/copies/EXP-20260812-033/control-a/PC/BUGS",
+  "drive_mapping": "R:\\ -> /home/dev/ABLPC/work/copies/EXP-20260812-033/control-a",
+  "game_window_id": 14680071,
+  "game_pid": 2575427,
+  "renderer": "640x480x16 Direct3D; no INITSOFTRENDER",
+  "capture_scope": "isolated 640x480 Gamescope game surface only",
+  "status": "complete",
+  "artifacts": ["bugs.log", "input-receipt.txt", "frame-hashes.txt"]
+}

@@ -1,0 +1,380 @@
+{
+  "schema": "ablpc-terrain-research-checkpoint-v1",
+  "date": "2026-09-04",
+  "parent_commit": "0f589de6dbee606a42d3861e6bacb2455191b453",
+  "scope": "EXP-20260904-002 through EXP-20260904-010, bounded reader/edit prototypes and regression tests",
+  "status": "research checkpoint with explicit validation limitations",
+  "validation": {
+    "serial_full_check": {
+      "command": [
+        "make",
+        "check"
+      ],
+      "pid": 49996,
+      "start_ticks": 1350185,
+      "group": 49996,
+      "started": 1788569555.6650426,
+      "tmpdir": "/dev/shm/ablpc-terrain-bank-20260904",
+      "pytest_addopts": "--basetemp=/dev/shm/ablpc-terrain-bank-20260904/pytest --maxfail=1 --durations=15",
+      "exit_code": 2,
+      "finished": 1788569778.2377257,
+      "elapsed_seconds": 222.57268404960632,
+      "summary": "1142 passed then deliberately interrupted; incomplete"
+    },
+    "parallel_full_check": {
+      "command": [
+        "make",
+        "check"
+      ],
+      "pid": 52282,
+      "start_ticks": 1374022,
+      "group": 52282,
+      "started": 1788569794.0427525,
+      "tmpdir": "/dev/shm/ablpc-terrain-bank-20260904-parallel",
+      "pytest_addopts": "--basetemp=/dev/shm/ablpc-terrain-bank-20260904-parallel/pytest -n 6 --dist=worksteal --durations=15",
+      "exit_code": 2,
+      "finished": 1788570514.363185,
+      "elapsed_seconds": 720.3204333782196,
+      "summary": "60 failed, 4023 passed then deliberately interrupted; incomplete",
+      "failed_nodes": [
+        "tests/test_r2q_quiet_census_design.py::test_historical_validation_protocol_is_remount_stable_and_bounded",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_anchor_link_success_records_postlink_clock_errors[1-link-timestamp-read-error-True]",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_anchor_link_success_records_postlink_clock_errors[3-start-time-error-False]",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_rejects_corruption_fsynced_then_restored_without_fsync",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_rejects_mode_drift_before_d2[lock]",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_rejects_mode_drift_before_d2[parent]",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_continuity_fallback_commits_current_evidence",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_fallback_rejects_coherently_forged_authority_before_write",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_anchor_link_success_records_postlink_clock_errors[4-completion-time-error-True]",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_continuity_fallback_classifies_partial_pwrite",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_parent_fsync_failure_accounts_anchor_link_topology",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_fallback_never_attributes_replacement_bytes",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_fallback_reports_loss_of_both_authenticated_paths",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_records_durable_owned_entry",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_records_eexist_without_claiming_owned_fd",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_records_partial_write_and_skips_fsyncs",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_anchor_parent_fsync_and_close_errors_are_both_retained",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_never_attributes_replacement_path",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_canonicalizes_path_read_error",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_failure_orders_final_observations_after_continuity",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_failure_observes_callback_mode_mutation",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_failure_rejects_interpass_lock_mutation",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_last_callback_mutation_is_after_recorded_observation",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[pristine]",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_parent_fsync_failure_uses_retained_lock_fallback_when_account_fails",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[arbitrary-regular-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[arbitrary-regular-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[exact-regular-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[exact-regular-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[symlink-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[symlink-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[directory-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[directory-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[exact-complete-competitor-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[lock-mode]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[exact-complete-competitor-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-directory-fsync-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-directory-fsync-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-completion-reread-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-completion-reread-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-tree-reconstruction-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-tree-reconstruction-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[postcommit-deadline-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[postcommit-deadline-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_is_fsynced_reread_and_exactly_reconstructable",
+        "tests/test_r2q_quiet_census_runtime.py::test_timed_regular_observation_rejects_link_count_drift",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[parent-mode]",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[lock-replaced]",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[anchor-replaced]",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[third-link]",
+        "tests/test_r2q_quiet_census_runtime.py::test_direct_executable_hash_rejects_same_byte_path_replacement",
+        "tests/test_r2q_quiet_census_runtime.py::test_phase_finish_creates_nested_receipt_parent",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_fallback_rejects_receipt_authority_mismatch_before_write",
+        "tests/test_r2q_quiet_census_runtime.py::test_comparison_failure_captures_continuity_after_all_final_evidence",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_validator_rejects_omission_and_zero_mutations[omit-parent-fsync]",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_validator_rejects_omission_and_zero_mutations[zero-byte-count]",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_validator_rejects_omission_and_zero_mutations[misbracket-write]",
+        "tests/test_r2q_quiet_census_runtime.py::test_prejournal_failure_authenticates_consumed_one_shot",
+        "tests/test_release.py::test_release_build_is_byte_reproducible_and_verifiable",
+        "tests/test_release.py::test_release_build_rejects_dirty_or_untracked_source"
+      ],
+      "quota_error": "OSError: [Errno 122] Disk quota exceeded during dedicated tmpfs test run",
+      "remaining_worker_samples": "all six sampled in unchanged R2q receipt generation/validation"
+    },
+    "targeted_rerun": {
+      "command": [
+        "/home/dev/ABLPC/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--basetemp=/home/dev/ABLPC/work/experiments/BANK-20260904-terrain-001/disk-pytest/pytest",
+        "--durations=10",
+        "--junitxml=/home/dev/ABLPC/work/experiments/BANK-20260904-terrain-001/targeted.xml",
+        "tests/test_terrain_all.py",
+        "tests/test_terrain_barrier_edit.py",
+        "tests/test_terrain_barrier_probe.py",
+        "tests/test_terrain_barriers.py",
+        "tests/test_terrain_collision_probe.py",
+        "tests/test_terrain_deck_probe.py",
+        "tests/test_terrain_deck_visual_probe.py",
+        "tests/test_terrain_floor_edit.py",
+        "tests/test_terrain_floor_visual_fixture.py",
+        "tests/test_terrain_height.py",
+        "tests/test_terrain_retail_probe.py",
+        "tests/test_r2q_quiet_census_design.py::test_historical_validation_protocol_is_remount_stable_and_bounded",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_anchor_link_success_records_postlink_clock_errors[1-link-timestamp-read-error-True]",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_anchor_link_success_records_postlink_clock_errors[3-start-time-error-False]",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_rejects_corruption_fsynced_then_restored_without_fsync",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_rejects_mode_drift_before_d2[lock]",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_rejects_mode_drift_before_d2[parent]",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_continuity_fallback_commits_current_evidence",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_fallback_rejects_coherently_forged_authority_before_write",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_anchor_link_success_records_postlink_clock_errors[4-completion-time-error-True]",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_continuity_fallback_classifies_partial_pwrite",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_parent_fsync_failure_accounts_anchor_link_topology",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_fallback_never_attributes_replacement_bytes",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_fallback_reports_loss_of_both_authenticated_paths",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_records_durable_owned_entry",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_records_eexist_without_claiming_owned_fd",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_records_partial_write_and_skips_fsyncs",
+        "tests/test_r2q_quiet_census_runtime.py::test_d1_anchor_parent_fsync_and_close_errors_are_both_retained",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_never_attributes_replacement_path",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_canonicalizes_path_read_error",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_failure_orders_final_observations_after_continuity",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_failure_observes_callback_mode_mutation",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_failure_rejects_interpass_lock_mutation",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_last_callback_mutation_is_after_recorded_observation",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[pristine]",
+        "tests/test_r2q_quiet_census_runtime.py::test_one_shot_parent_fsync_failure_uses_retained_lock_fallback_when_account_fails",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[arbitrary-regular-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[arbitrary-regular-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[exact-regular-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[exact-regular-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[symlink-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[symlink-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[directory-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_no_replace_accounts_for_every_competitor_kind[directory-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[exact-complete-competitor-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[lock-mode]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[exact-complete-competitor-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-directory-fsync-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-directory-fsync-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-completion-reread-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-completion-reread-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-tree-reconstruction-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[final-tree-reconstruction-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[postcommit-deadline-control]",
+        "tests/test_r2q_quiet_census_runtime.py::test_final_acceptance_boundary_accounts_valid_but_ambiguous_envelope[postcommit-deadline-comparison]",
+        "tests/test_r2q_quiet_census_runtime.py::test_acceptance_commit_is_fsynced_reread_and_exactly_reconstructable",
+        "tests/test_r2q_quiet_census_runtime.py::test_timed_regular_observation_rejects_link_count_drift",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[parent-mode]",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[lock-replaced]",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[anchor-replaced]",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_admission_primary_publication_failure_commits_retained_fallback[third-link]",
+        "tests/test_r2q_quiet_census_runtime.py::test_direct_executable_hash_rejects_same_byte_path_replacement",
+        "tests/test_r2q_quiet_census_runtime.py::test_phase_finish_creates_nested_receipt_parent",
+        "tests/test_r2q_quiet_census_runtime.py::test_d2_fallback_rejects_receipt_authority_mismatch_before_write",
+        "tests/test_r2q_quiet_census_runtime.py::test_comparison_failure_captures_continuity_after_all_final_evidence",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_validator_rejects_omission_and_zero_mutations[omit-parent-fsync]",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_validator_rejects_omission_and_zero_mutations[zero-byte-count]",
+        "tests/test_r2q_quiet_census_runtime.py::test_exclusive_writer_validator_rejects_omission_and_zero_mutations[misbracket-write]",
+        "tests/test_r2q_quiet_census_runtime.py::test_prejournal_failure_authenticates_consumed_one_shot",
+        "tests/test_release.py::test_release_build_is_byte_reproducible_and_verifiable",
+        "tests/test_release.py::test_release_build_rejects_dirty_or_untracked_source"
+      ],
+      "started": 1788570556.7128963,
+      "scope": "all terrain tests plus the 60 tests reported failed in the interrupted parallel run, serial on disk",
+      "exit_code": 1,
+      "elapsed_seconds": 451.6668245792389,
+      "finished": 1788571008.3797226,
+      "all": {
+        "total": 282,
+        "passed": 281,
+        "failed": 1,
+        "errors": 0,
+        "skipped": 0
+      },
+      "terrain": {
+        "total": 222,
+        "passed": 222,
+        "failed": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "failed_nodes": [
+        "tests.test_r2q_quiet_census_design.test_historical_validation_protocol_is_remount_stable_and_bounded"
+      ]
+    },
+    "baseline_comparison": {
+      "files": [
+        {
+          "path": "reimplementation/ablpc/r2q_quiet_census_design.py",
+          "head_commit": "0f589de",
+          "unchanged_from_head": true,
+          "sha256": "2de355ef369f2e6b50d7f262b0a1712b4f036f31a1e9aedb1be4b9bfe1f23734"
+        },
+        {
+          "path": "tests/test_r2q_quiet_census_design.py",
+          "head_commit": "0f589de",
+          "unchanged_from_head": true,
+          "sha256": "9a2efa1ccd27355cd65c3c202c9f8e10984f6ef35a371ad0a4937dec9c26b931"
+        },
+        {
+          "path": "reimplementation/ablpc/r2q_quiet_census_runtime.py",
+          "head_commit": "0f589de",
+          "unchanged_from_head": true,
+          "sha256": "7dfaff29aff7fab6299bd28b02c168e4c1da91cba542c3e624bab5f36d9651e8"
+        },
+        {
+          "path": "tests/test_r2q_quiet_census_runtime.py",
+          "head_commit": "0f589de",
+          "unchanged_from_head": true,
+          "sha256": "216ffde0e7aef65d6da7ea59f379e98c5544491abdf4ceca030b5e5eb67bb599"
+        },
+        {
+          "path": "tests/test_release.py",
+          "head_commit": "0f589de",
+          "unchanged_from_head": true,
+          "sha256": "7edbc129f3fdecce17945af6c05df333f9ba0c68b2276898eac0566d7522700e"
+        }
+      ],
+      "mismatch": "test_historical_validation_protocol_is_remount_stable_and_bounded expects PREVIOUS_OUTPUT_029_SHA256; _frozen_protocol uses PREVIOUS_OUTPUT_031_SHA256; both files unchanged from HEAD",
+      "no_r2q_source_or_test_change": true
+    },
+    "explicit_limit": "No complete successful make check. Do not treat interrupted runs or the targeted rerun as a full-suite pass.",
+    "final_fast_gates": {
+      "commands": [
+        "claim-sweep pair",
+        "make python-doctor vault-lint m4-compatibility audit-tracked",
+        "git diff --cached --check"
+      ],
+      "all_exit_zero": true,
+      "vault_warnings": 8,
+      "vault_errors": 0,
+      "asset_violations": 0,
+      "claim_sweep": "new_only"
+    }
+  },
+  "reference_verification": {
+    "checked_existing_files": 287,
+    "mismatches": [],
+    "scope": "Existing file references with explicit SHA256; no statement about unresolved relative paths or unavailable artifacts."
+  },
+  "private_archive": {
+    "path": "work/snapshots/terrain-20260904-evidence.tar.gz",
+    "bytes": 34812935,
+    "sha256": "e2f0b8aca3e3610963ddb105fad479e4c7c9437348ce004b8b9cfceb10ee1731",
+    "files": 1115,
+    "uncompressed_bytes": 156876681,
+    "verified_all_members": true
+  },
+  "whitespace": [
+    {
+      "path": "reports/terrain/EXP-20260904-004-live-paths.svg",
+      "before_sha256": "d0cb7b12e93b24f171c97e1ac05c25825a267170a72bd94996301f9acbdc25e7",
+      "after_sha256": "4249ca0b198fdc049977f43207f008c12a537f914a56240988e16e0b9767de36",
+      "removed_bytes": 946,
+      "non_whitespace_unchanged": true
+    },
+    {
+      "path": "reports/terrain/EXP-20260904-007-depth-path.asm",
+      "before_sha256": "28bb844e3249a733376806d30af11919a66b07682497c30640cc4030b5f23777",
+      "after_sha256": "28bb844e3249a733376806d30af11919a66b07682497c30640cc4030b5f23777",
+      "removed_bytes": 0,
+      "non_whitespace_unchanged": true,
+      "action": "Restored exact hash-pinned bytes; narrow Git whitespace attribute retains original separators."
+    },
+    {
+      "path": "reports/terrain/EXP-20260904-010-safe-stop.asm",
+      "before_sha256": "f4fc2e7d82efbc892c2ca948bec3c11b7931a470da80ec0ea7ec28e85d783d32",
+      "after_sha256": "05df7f91033d19c03dad0b1e803e683dd63a88475cd52d90db7e75ec0ecc13cf",
+      "removed_bytes": 5,
+      "non_whitespace_unchanged": true
+    }
+  ],
+  "session_audit": {
+    "unchanged_from": "work/experiments/EXP-20260904-010/post-audit.json",
+    "identical_full_audit": true,
+    "unattributed_but_accounted_user_processes": 7,
+    "sink": "ablpc_mute_46458",
+    "game_pid": 46701,
+    "game_start_ticks": 1147812,
+    "no_test_process_leftovers": true,
+    "exit_status_explanation": "Existing direct-handoff user session is not enrolled in the fixture ledger. Do not close it."
+  },
+  "open_work": [
+    "Six remaining analytic boundary samples and other camera angles",
+    "A general render subdivision rule",
+    "EXP-005 return-floor failure and shared boundaries",
+    "General collision/layout authoring",
+    "Pre-existing R2q historical-protocol hash expectation and full-suite validation"
+  ],
+  "private_receipts": [
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/make-check.log",
+      "byte_count": 5128,
+      "sha256": "0ed010e4209ecadabb59dde0cc7bd0282eaeed3abcbcaa1627b021a4304c2585"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/make-check-parallel.log",
+      "byte_count": 540225,
+      "sha256": "3c6934e31744527f4109f06033846ff2ec9a9f3d7f025260afc6f9ddaaae96a8"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/targeted.log",
+      "byte_count": 2805,
+      "sha256": "4506827003d6fc1899b2be4ccf0f494bfb9fced68a7bc394b0a3df3f464550e4"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/targeted.xml",
+      "byte_count": 40988,
+      "sha256": "33a962e333438106275a36c2258d04495dfc49acb35aed8da767d68e08ac7fdf"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/targeted-result.json",
+      "byte_count": 8407,
+      "sha256": "1b28294cdf77a63191fd84eb2d306c09cb5b6307dd634595897771a9f572bfbc"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/parallel-interrupt.json",
+      "byte_count": 386,
+      "sha256": "d04e74b39fa6b57391de3440554b76e9e0a2bd98e837e1c9b54b0f3af1eaaab6"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/worker-stacks.json",
+      "byte_count": 16615,
+      "sha256": "456b5f3bf1aee681a58bce3f569dc44291deec5d92a43047a49f9d4f4212e60e"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/scratch-cleanup.json",
+      "byte_count": 261,
+      "sha256": "151bd70bd9ca12223f2bf0a46302790e62b128bfe71edf65367b010b825fd659"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/session-audit.log",
+      "byte_count": 3492,
+      "sha256": "dee510ce4dce0c32d9853c9d8bc82171019b085e8aa0651b6a45f32f227bddef"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/session-audit-accounting.json",
+      "byte_count": 402,
+      "sha256": "a64ebf854ba03b47af7b8a7cf99d5ab378204df41f1348f44af74ce2cf21be12"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/final-gates.json",
+      "byte_count": 3632,
+      "sha256": "cd2eddf529958861ae037633f04ceff50399712731910b6cfd49ffe593bb6c27"
+    },
+    {
+      "path": "work/experiments/BANK-20260904-terrain-001/disk-scratch-cleanup.json",
+      "byte_count": 233,
+      "sha256": "dd5691428348808fc60bcdecc0748e973efbd91ad6d357ac709369f6f71ebb60"
+    }
+  ],
+  "disk_scratch_cleanup": {
+    "path": "/home/dev/ABLPC/work/experiments/BANK-20260904-terrain-001/disk-pytest",
+    "removed": true,
+    "elapsed_seconds": 1.3151781558990479,
+    "scope": "owned completed serial test scratch only; test log and JUnit retained"
+  }
+}

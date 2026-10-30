@@ -1,0 +1,113 @@
+EXP-20260813-048 exact 0A6C consecutive-cycle live receipt
+================================================================
+
+Accepted run
+------------
+
+RUN-GDB-20260813-150842
+
+Authority and scope
+-------------------
+
+The user's fresh instruction authorized the already staged M2.33 live phase.
+The arm used one unchanged post-NextLife control process and the locked
+harness 1.6.0/schema-6 exact_0a6c_admission envelope. Relative to accepted
+RUN-GDB-20260813-142433, the resolved spec changes only experiment provenance,
+the fresh PID, and capture_cycles 1 -> 3. It adds no point, source edit, target
+write, other record/family, semantic name, payload capture, or PS1 evidence.
+
+Identity and renderer gates
+---------------------------
+
+executable SHA-256:
+  97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+unchanged CD/CHARS/FLICK.ALL SHA-256:
+  a2f23220392d7fb4880bbab7acab9393fe6da059961d620e7b85c8df3f4f4ac6
+complete bugs.log SHA-256:
+  4b31578df91c6662a95dced776f4611a77402117eda20e1789e7d4b0a4ed931c
+canonical 168-call plan SHA-256:
+  5eb280a7bd54b56a9654fed7984e9677a15618c5376be703a85718ea3bb2ffec
+
+The complete fresh log contains exactly one of each required marker:
+  INFO Native software render mode is FALSE.
+  INFO RenderMode set to Direct3d render mode.
+  INFO Screen mode 640x480x16 selected.
+  INIT : Starting Direct3D renderer.
+
+It also contains exact level07\level1.dat and chars\flick.all loads,
+End ClearLoadScreen, End InitMainGame, and NextLife. It contains no
+INITSOFTRENDER.
+
+Completion and safety
+---------------------
+
+completed / accepted: true / true
+stop reason: capture_complete
+time window: 2026-08-13T15:08:42.853892-04:00 through
+             2026-08-13T15:08:43.796478-04:00
+stops: 816 total
+  batch_pre: 672
+  entry_post: 96
+  batch_flush: 48
+rollovers: 4 (one warmup plus three captured cycles)
+ignored unmatched flushes: 48
+points: 3 data watches installed and deleted; 0 breakpoints
+cleanup / detached: true / true
+target signal / error: null / null
+survival: five of five samples state R, TracerPid 0, passed
+
+The observed stop total is 184 below the unchanged 1,000-stop ceiling. The
+offline 800-stop projection was conservative but not exact: this live arm
+observed 16 more flush-watch stops than the projection.
+
+Ordered exact receipts
+----------------------
+
+cycle 0:
+  predicted / observed append: 0 / 0
+  first reject / evaluated slots: 0x004065B0 / 7
+  active-state SHA-256:
+    9c7ccf1117c2fc6baa25ac0eddf18e23fcfa43738d33d9d15f4e8712730eab73
+
+cycle 1:
+  predicted / observed append: 1 / 1
+  first reject / evaluated slots: none / 12
+  active-state SHA-256:
+    7d0211dfa941d9dfe37811c1a0040e5c22a61a46bec43f39b88dc0ccb9b17d7c
+
+cycle 2:
+  predicted / observed append: 0 / 0
+  first reject / evaluated slots: 0x004065B0 / 7
+  active-state SHA-256:
+    1ff77701d75255b9c0b0f886c3cda8504bd7ec6f54d45a3188ffcc08768c4bfa
+
+Every prediction matches the independent count outcome. The ordered append
+sequence is reject/pass/reject (0/1/0), an A/B/A recurrence inside one
+unchanged process. Cycles 0 and 2 share the slot-7 reject but have different
+state digests, so their equal boolean/reject receipts do not imply identical
+underlying active state.
+
+Output exclusion
+----------------
+
+The result and every receipt declare raw_inputs_retained=false and
+payload_bytes_retained=0. All 816 stop rows have watched_value_hex=null,
+empty registers, and empty memory_reads. The raw GDB console transcript was
+not retained in the curated run; metadata does not list it as an artifact.
+
+Limits
+------
+
+This one bounded sequence proves within-process temporal variation and one
+reject/pass/reject recurrence at exact record 0x0A6C. It does not establish a
+period, distribution, cross-process sequence, source or visible causality,
+state semantics, or a safe parser/editor/public mod operation.
+
+Operator-only pre-capture attempts
+----------------------------------
+
+Two fresh, non-instrumented launches reached Start ClearLoadScreen and were
+stopped before the title Return was held long enough for DirectInput. No GDB
+attached and neither contributes admission evidence. The accepted arm used
+the documented natural-title boundary and required logged NextLife before
+attachment.

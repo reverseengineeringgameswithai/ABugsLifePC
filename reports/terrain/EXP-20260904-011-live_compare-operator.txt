@@ -1,0 +1,119 @@
+"""Prepared EXP-011 four-write diagonal comparison; requires fresh authorization.
+
+Reuses only hash-bound EXP-010 helper functions, never its consumed main routine.
+No gameplay input, launch, restart, collision/player/camera writes.
+"""
+from pathlib import Path
+import importlib.util, json, hashlib, os, sys, time, traceback
+
+ROOT=Path('/home/dev/ABLPC');HERE=Path(__file__).resolve().parent
+PLAN=HERE/'candidate-plan.json'
+h=lambda b:hashlib.sha256(b).hexdigest()
+plan=json.loads(PLAN.read_text())
+OLD=HERE.parent/'EXP-20260904-010'
+for name,digest in plan['helper_sha256'].items():
+ assert h((OLD/name).read_bytes())==digest
+sys.path.insert(0,str(OLD))
+spec=importlib.util.spec_from_file_location('retained_comparison_helpers',OLD/'live_compare.py')
+lib=importlib.util.module_from_spec(spec);spec.loader.exec_module(lib)
+# Only this new driver can run. Helper outputs go to the new experiment.
+lib.HERE=HERE
+assert plan['state']==lib.plan['state'] and plan['process']==lib.plan['process']
+assert int(plan['address'],16)==lib.address==0x6662a7 and plan['prefix_bytes']==lib.size==1078
+buffers={}
+for name,row in plan['files'].items():
+ data=(ROOT/row['path']).read_bytes()
+ assert len(data)==row['bytes'] and h(data)==row['sha256']
+ buffers[name]=data
+original=buffers['original-prefix.bin'];control=buffers['control-prefix.bin'];alternate=buffers['alternate-prefix.bin']
+assert original==lib.original and control==lib.candidate
+writes=[];stops=[]
+
+def identity(expected=None,require_pose=True):
+ meta,state=lib.identity(expected,require_pose)
+ assert lib.ns['mem'](meta,int(plan['collision_address'],16),530)==buffers['collision-prefix.bin']
+ return meta,state
+
+def change(label,expected,target,offset=0,length=1078,require_pose=True):
+ assert label in [r['label'] for r in plan['writes']]
+ assert not any(r['phase']==label for r in writes) and len(writes)<4
+ assert len(expected)==len(target)==1078 and 0<=offset<offset+length<=1078
+ assert expected[:offset]==target[:offset] and expected[offset+length:]==target[offset+length:]
+ meta,state=identity(expected,require_pose)
+ for attempt in range(100):
+  receipt={'phase':label,'attempt':attempt,'time':time.time()};done=False
+  try:
+   with lib.frozen(meta['game']['pid'],receipt) as regs:
+    identity(expected,require_pose)
+    if lib.frame_end_gate(meta,regs,receipt):
+     fd=os.open('/proc/%d/mem'%meta['game']['pid'],os.O_RDWR)
+     try:
+      before=os.pread(fd,1078,lib.address);assert before==expected
+      receipt.update(address=hex(lib.address+offset),bytes=length,
+       before_prefix_sha256=h(before),target_prefix_sha256=h(target),
+       before_slice_sha256=h(before[offset:offset+length]),
+       target_slice_sha256=h(target[offset:offset+length]),
+       status='compare-passed-write-attempt-recorded',write_attempted=True)
+      writes.append(receipt);lib.save(label+'-write.json',receipt)
+      n=os.pwrite(fd,target[offset:offset+length],lib.address+offset)
+      receipt['bytes_written']=n
+      after=os.pread(fd,1078,lib.address);receipt['after_prefix_sha256']=h(after)
+      assert n==length and after==target,'write/readback incomplete'
+      receipt['status']='written-and-verified';done=True
+     finally:os.close(fd)
+   if done:
+    receipt['state_after_resume']=lib.ns['state'](lib.ns['guard']())
+    lib.save(label+'-write.json',receipt);return
+  finally:
+   stops.append(receipt);lib.save('suspensions.json',stops)
+  time.sleep(.017)
+ raise RuntimeError('No accepted frame-limiter stop; no write for '+label)
+
+def sample(label):
+ identity()
+ lib.sample(label)
+ identity()
+
+def run():
+ assert sys.argv[1:]==['--run-authorized']
+ auth=json.loads((HERE/'authorization.json').read_text())
+ assert auth['experiment']=='EXP-20260904-011'
+ assert auth['plan_sha256']==h(PLAN.read_bytes())
+ assert auth['operator_sha256']==h(Path(__file__).read_bytes())
+ assert auth['memory_write_labels']==[r['label'] for r in plan['writes']]
+ assert auth['brief_process_stops_and_read_only_register_inspection'] is True
+ assert auth['user_text'] and auth['authorized_at']>=plan['created']
+ identity(original)
+ with (HERE/'started.json').open('x') as f:
+  json.dump({'time':time.time(),'authorization':auth},f);f.flush();os.fsync(f.fileno())
+ error=None;restoration=None
+ try:
+  sample('original_before')
+  change('apply_control',original,control);sample('control_before')
+  change('apply_diagonal',control,alternate,564,256);sample('alternate')
+  change('restore_control',alternate,control,564,256);sample('control_restored')
+ except BaseException:
+  error=traceback.format_exc()
+ finally:
+  if writes:
+   try:
+    meta,_=identity(require_pose=False)
+    current=lib.ns['mem'](meta,lib.address,1078)
+    assert all(v in (a,b,c) for v,a,b,c in zip(current,original,control,alternate)), 'unrelated mesh mutation'
+    change('restore_original',current,original,require_pose=False)
+    restoration='exact-original-restored';sample('original_restored')
+   except BaseException:
+    restoration='RESTORATION-FAILED';error=(error or '')+'\n'+traceback.format_exc()
+  else:restoration='no-write-needed'
+  lib.save('result.json',{'error':error,'restoration':restoration,'writes':writes,
+    'captures':lib.captures,'suspension_count':len(stops),'finished':time.time()})
+ print(json.dumps({'error':error,'restoration':restoration,'writes':len(writes),
+   'captures':{k:len(v) for k,v in lib.captures.items()},'suspensions':len(stops)},indent=2))
+ return bool(error)
+
+if __name__=='__main__':
+ if sys.argv[1:]==['--preflight']:
+  _,state=identity(original)
+  print(json.dumps({'status':'read-only-preflight','state':state,'plan_sha256':h(PLAN.read_bytes()),
+    'operator_sha256':h(Path(__file__).read_bytes()),'authorization_present':(HERE/'authorization.json').exists()}))
+ else:sys.exit(run())

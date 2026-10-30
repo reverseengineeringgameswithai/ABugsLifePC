@@ -1,0 +1,1818 @@
+{
+  "experiment": "EXP-20260911-014",
+  "status": "confirmed-bounded",
+  "question": "Why do the distant flowers remain visible when closer custom Training walls disappear?",
+  "retail_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "runtime": {
+    "build": "/home/dev/ABLPC/work/copies/EXP-20260911-013-play",
+    "sha256": "f55c3612f60fb1fba373c55d8cab6afcac96cf00d4156c542963234aa58b7059",
+    "sink": "ablpc_soil_1789159752419995386",
+    "module": 536870916,
+    "code_va": 17313792,
+    "state_va": 17317888,
+    "prefix": "/home/dev/ABLPC/work/experiments/EXP-20260911-013/play/prefix",
+    "prefix_donor": "/home/dev/ABLPC/work/playtests/soil-entry-20260909-01/preview/prefix",
+    "replaced_private_r_link": "/home/dev/ABLPC/work/copies/moonlit-cliffs-soil-entry-play-01/game",
+    "audible": false,
+    "expect_auto_hardware": true,
+    "preregistered": "Auto-hardware build: no renderer input; require all six markers before menu keys.",
+    "leader": {
+      "pid": 91091,
+      "start": 5734658,
+      "group": 91091,
+      "cmd": "gamescope --backend wayland -w 640 -h 480 -W 1280 -H 960 -S fit -F nearest -- env PULSE_SINK=ablpc_soil_1789159752419995386 WINEPREFIX=/home/dev/ABLPC/work/experiments/EXP-20260911-013/play/prefix WINEDEBUG=-all wine /home/dev/ABLPC/work/copies/EXP-20260911-013-play/bugs.exe log cheat mpeg "
+    },
+    "game": {
+      "pid": 91321,
+      "start": 5734777,
+      "group": 91091,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\EXP-20260911-013-play\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "display": ":2",
+    "xwayland": {
+      "pid": 91119,
+      "start": 5734682,
+      "group": 91091,
+      "cmd": "Xwayland :2 -rootless -core -terminate -listenfd 89 -listenfd 90 -displayfd 94 -noTouchPointerEmulation -force-xrandr-emulation "
+    },
+    "hardware_before_input": true,
+    "window": "14680071"
+  },
+  "before": {
+    "time_ns": 1789167091467759601,
+    "flik": [
+      17990,
+      -21756,
+      278757
+    ],
+    "camera_matrix": "75f00000ca03feff0010f5ff36fcf4ff75f0",
+    "camera_translation": [
+      25152,
+      -34556,
+      306650
+    ],
+    "camera_phase": 6300,
+    "level": 17
+  },
+  "turned": {
+    "time_ns": 1789167179123363149,
+    "flik": [
+      18041,
+      -21688,
+      278964
+    ],
+    "camera_matrix": "9b0f000079fcc9fff80f0cff8503fb00930f",
+    "camera_translation": [
+      11552,
+      -42856,
+      252188
+    ],
+    "camera_phase": 8337,
+    "level": 17
+  },
+  "input": [
+    {
+      "key": "Down",
+      "requested_sleep_ms": 1,
+      "down_ack_ns": 64701025684265,
+      "up_ack_ns": 64701026757282,
+      "ack_interval_ms": 1.073017,
+      "total_ms": 1.402899,
+      "scope": "Owned nested-window XTest; acknowledgement timing does not establish game frame consumption"
+    },
+    {
+      "key": "Down",
+      "requested_sleep_ms": 35,
+      "down_ack_ns": 64762072424573,
+      "up_ack_ns": 64762107517024,
+      "ack_interval_ms": 35.092451,
+      "total_ms": 35.125241,
+      "scope": "Owned nested-window XTest; acknowledgement timing does not establish game frame consumption"
+    }
+  ],
+  "panorama": {
+    "record": {
+      "index": 29,
+      "file_offset": 289474,
+      "decoded_size": 35600,
+      "compressed_size": 11204,
+      "type": 36,
+      "sha256": "2a5fd67af8f9cca8cdfbeee4fadf4867940d8c742d2f8202b26d075e0acdd54d",
+      "path": "work/experiments/EXP-20260911-014/decoded/record-029.bin"
+    },
+    "dimensions": [
+      256,
+      136
+    ],
+    "identification": "Decoded type36 bitmap visibly contains the distant flower strip in the before/turned screenshots; distinct from secondary DAT scenery and nearby 3D plants",
+    "native_cases": 6,
+    "translation_and_distance_independent_in_both_captures": true,
+    "submission": {
+      "vertices": 4,
+      "indices": 6
+    },
+    "draw_function": "0x00405410 -> 0x00404410"
+  },
+  "wall_diagnosis": {
+    "actual_distances": {
+      "near": 2304,
+      "far": 3328
+    },
+    "context": {
+      "matrix": [
+        3995,
+        0,
+        -903,
+        -55,
+        4088,
+        -244,
+        901,
+        251,
+        3987
+      ],
+      "translation": [
+        11552,
+        -42856,
+        252188
+      ]
+    },
+    "rows": [
+      {
+        "variant": "current",
+        "scene": 291,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            86,
+            240,
+            3589
+          ],
+          "flags": 89
+        },
+        "vertices": 80,
+        "xy_bounds": [
+          [
+            320.0,
+            344.0
+          ],
+          [
+            148.0,
+            408.0
+          ]
+        ],
+        "faces": 20,
+        "depth_pass": 20,
+        "depth_reject": 0,
+        "min_depth": 2365,
+        "max_depth": 4814,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 292,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            1067,
+            154,
+            4995
+          ],
+          "flags": 89
+        },
+        "vertices": 80,
+        "xy_bounds": [
+          [
+            320.0,
+            452.0
+          ],
+          [
+            184.0,
+            317.0
+          ]
+        ],
+        "faces": 20,
+        "depth_pass": 20,
+        "depth_reject": 0,
+        "min_depth": 4692,
+        "max_depth": 5298,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 293,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            3213,
+            124,
+            5479
+          ],
+          "flags": 89
+        },
+        "vertices": 96,
+        "xy_bounds": [
+          [
+            449.0,
+            562.0
+          ],
+          [
+            187.0,
+            308.0
+          ]
+        ],
+        "faces": 24,
+        "depth_pass": 24,
+        "depth_reject": 0,
+        "min_depth": 5176,
+        "max_depth": 5782,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 294,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            5359,
+            95,
+            5963
+          ],
+          "flags": 89
+        },
+        "vertices": 68,
+        "xy_bounds": [
+          [
+            557.0,
+            649.0
+          ],
+          [
+            190.0,
+            301.0
+          ]
+        ],
+        "faces": 17,
+        "depth_pass": 17,
+        "depth_reject": 0,
+        "min_depth": 5660,
+        "max_depth": 6266,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 295,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            6885,
+            36,
+            6921
+          ],
+          "flags": 89
+        },
+        "vertices": 44,
+        "xy_bounds": [
+          [
+            624.0,
+            648.0
+          ],
+          [
+            195.0,
+            292.0
+          ]
+        ],
+        "faces": 11,
+        "depth_pass": 11,
+        "depth_reject": 0,
+        "min_depth": 6410,
+        "max_depth": 7698,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 296,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            7018,
+            -93,
+            9048
+          ],
+          "flags": 89
+        },
+        "vertices": 112,
+        "xy_bounds": [
+          [
+            523.0,
+            629.0
+          ],
+          [
+            198.0,
+            281.0
+          ]
+        ],
+        "faces": 28,
+        "depth_pass": 28,
+        "depth_reject": 0,
+        "min_depth": 7576,
+        "max_depth": 10520,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 297,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            6378,
+            -266,
+            11871
+          ],
+          "flags": 89
+        },
+        "vertices": 112,
+        "xy_bounds": [
+          [
+            465.0,
+            526.0
+          ],
+          [
+            204.0,
+            264.0
+          ]
+        ],
+        "faces": 28,
+        "depth_pass": 28,
+        "depth_reject": 0,
+        "min_depth": 10399,
+        "max_depth": 13343,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 298,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            5739,
+            -439,
+            14694
+          ],
+          "flags": 89
+        },
+        "vertices": 12,
+        "xy_bounds": [
+          [
+            458.0,
+            466.0
+          ],
+          [
+            208.0,
+            244.0
+          ]
+        ],
+        "faces": 24,
+        "depth_pass": 3,
+        "depth_reject": 21,
+        "min_depth": 13222,
+        "max_depth": 16166,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 299,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 28,
+        "depth_pass": 0,
+        "depth_reject": 28,
+        "min_depth": 16045,
+        "max_depth": 18989,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 300,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 16,
+        "depth_pass": 0,
+        "depth_reject": 16,
+        "min_depth": 18867,
+        "max_depth": 19893,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 301,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 28,
+        "depth_pass": 0,
+        "depth_reject": 28,
+        "min_depth": 19129,
+        "max_depth": 19893,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 302,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 28,
+        "depth_pass": 0,
+        "depth_reject": 28,
+        "min_depth": 18487,
+        "max_depth": 19251,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 303,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 24,
+        "depth_pass": 0,
+        "depth_reject": 24,
+        "min_depth": 17845,
+        "max_depth": 18609,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 304,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 28,
+        "depth_pass": 0,
+        "depth_reject": 28,
+        "min_depth": 17202,
+        "max_depth": 17966,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 305,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 28,
+        "depth_pass": 0,
+        "depth_reject": 28,
+        "min_depth": 16560,
+        "max_depth": 17324,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 306,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 16,
+        "depth_pass": 0,
+        "depth_reject": 16,
+        "min_depth": 15128,
+        "max_depth": 16682,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 307,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "vertices": 48,
+        "xy_bounds": [
+          [
+            30.0,
+            51.0
+          ],
+          [
+            207.0,
+            257.0
+          ]
+        ],
+        "faces": 28,
+        "depth_pass": 12,
+        "depth_reject": 16,
+        "min_depth": 12305,
+        "max_depth": 15249,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 308,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -10841,
+            -210,
+            10955
+          ],
+          "flags": 89
+        },
+        "vertices": 64,
+        "xy_bounds": [
+          [
+            -9.0,
+            33.0
+          ],
+          [
+            204.0,
+            264.0
+          ]
+        ],
+        "faces": 16,
+        "depth_pass": 16,
+        "depth_reject": 0,
+        "min_depth": 10431,
+        "max_depth": 12427,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 309,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d677",
+          "view": [
+            -10201,
+            -38,
+            8132
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 0,
+        "depth_pass": 0,
+        "depth_reject": 0,
+        "min_depth": null,
+        "max_depth": null,
+        "limits": []
+      },
+      {
+        "variant": "current",
+        "scene": 310,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d677",
+          "view": [
+            -9562,
+            134,
+            5309
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 0,
+        "depth_pass": 0,
+        "depth_reject": 0,
+        "min_depth": null,
+        "max_depth": null,
+        "limits": []
+      },
+      {
+        "variant": "current",
+        "scene": 311,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d677",
+          "view": [
+            -8525,
+            248,
+            3446
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 0,
+        "depth_pass": 0,
+        "depth_reject": 0,
+        "min_depth": null,
+        "max_depth": null,
+        "limits": []
+      },
+      {
+        "variant": "current",
+        "scene": 312,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d677",
+          "view": [
+            -6751,
+            261,
+            3232
+          ],
+          "flags": 89
+        },
+        "vertices": 0,
+        "xy_bounds": null,
+        "faces": 0,
+        "depth_pass": 0,
+        "depth_reject": 0,
+        "min_depth": null,
+        "max_depth": null,
+        "limits": []
+      },
+      {
+        "variant": "current",
+        "scene": 313,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -4638,
+            232,
+            3708
+          ],
+          "flags": 89
+        },
+        "vertices": 44,
+        "xy_bounds": [
+          [
+            -26.0,
+            34.0
+          ],
+          [
+            175.0,
+            340.0
+          ]
+        ],
+        "faces": 11,
+        "depth_pass": 11,
+        "depth_reject": 0,
+        "min_depth": 3771,
+        "max_depth": 4007,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 314,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -2525,
+            203,
+            4185
+          ],
+          "flags": 89
+        },
+        "vertices": 80,
+        "xy_bounds": [
+          [
+            26.0,
+            216.0
+          ],
+          [
+            176.0,
+            336.0
+          ]
+        ],
+        "faces": 20,
+        "depth_pass": 20,
+        "depth_reject": 0,
+        "min_depth": 3886,
+        "max_depth": 4484,
+        "limits": [
+          13312
+        ]
+      },
+      {
+        "variant": "current",
+        "scene": 315,
+        "near": 2304,
+        "far": 3328,
+        "far_group": true,
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -1028,
+            256,
+            3321
+          ],
+          "flags": 89
+        },
+        "vertices": 80,
+        "xy_bounds": [
+          [
+            213.0,
+            238.0
+          ],
+          [
+            141.0,
+            425.0
+          ]
+        ],
+        "faces": 20,
+        "depth_pass": 20,
+        "depth_reject": 0,
+        "min_depth": 2159,
+        "max_depth": 4484,
+        "limits": [
+          13312
+        ]
+      }
+    ],
+    "seconds": 0.45096647000173107,
+    "scope": "Original retail x86 on read-only captured state; variants affect offline Unicorn only; no GPU emulation or live writes"
+  },
+  "code_verification": [
+    {
+      "name": "panorama_submit",
+      "start": "0x404410",
+      "end_exclusive": "0x404980",
+      "retail_file_offset": 14352,
+      "sha256": "271d843a25866d2c345776d715cfb37b60ab4682702cd33aec8ec45b8bc32c56",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "panorama_scroll",
+      "start": "0x405410",
+      "end_exclusive": "0x4055f0",
+      "retail_file_offset": 18448,
+      "sha256": "8e7df751d08e79df002763b4da2e17c1a6300897749d780e74f113b9c9c297dd",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "scene_distance_gate",
+      "start": "0x44d59f",
+      "end_exclusive": "0x44d5f2",
+      "retail_file_offset": 313759,
+      "sha256": "ea4cd4d9474d17b292cf9939edff257e8dc7db0193bc82cd2945e502332d6258",
+      "resident_equals_retail": true
+    },
+    {
+      "name": "quad_distance_gate",
+      "start": "0x45cf63",
+      "end_exclusive": "0x45cf8f",
+      "retail_file_offset": 377699,
+      "sha256": "0ea8fc86d609ec0a534600f401f5293d27fa87daed2ebf7251809efae6495dd5",
+      "resident_equals_retail": true
+    }
+  ],
+  "corrections": [
+    "For the painted flower strip, the secondary-scenery hypothesis is superseded by panorama evidence. EXP015 identifies the separately cropped grass strip as secondary15.",
+    "Historical extractor asserts a 12-byte trailer; this mod RAW has an intact 9-byte ffffffff ffffffff 00 trailer. All record decodes passed bounds/coverage; trailer is retained unparsed.",
+    "Draw results for rejected scene gates are forced single-object diagnostics, not claims of live submission."
+  ],
+  "limits": [
+    "No exact one-millisecond game-frame consumption claim. First 1ms request left sampled XYZ/camera unchanged; separately approved 35ms request turned camera.",
+    "Offline native submissions are CPU evidence, not a GPU capture.",
+    "No settings, source implementation, assets, saved project, or design-bank changes. No new benchmark; EXP013 performance scope remains.",
+    "A distant visual wall proxy is only a possible design, not implemented or tested."
+  ],
+  "evidence": [
+    {
+      "path": "work/experiments/EXP-20260911-014/memory.json",
+      "sha256": "d11c4d4c1eb6b816cee2fcf0123694898c6f32b31e3025a9116dfb8042ead400",
+      "bytes": 21042
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/after/memory.json",
+      "sha256": "1c000341080ad76f45acda166e83c4b6237a1857f8bdf26769b6e09863a67b4f",
+      "bytes": 21426
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/turned/memory.json",
+      "sha256": "82532f3b615fb3b7d32cf9de4a16202150b38b2457973aa64313ca01c2e4aa35",
+      "bytes": 21491
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/turned/diagnosis.json",
+      "sha256": "252ba5d0a636f30c8f27758ffce3f9cc76322bd1caea6538a81b11c41dc21ac3",
+      "bytes": 15315
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/panorama-native.json",
+      "sha256": "313dd261add7a6d672434ada16caca3374c29f64274704e16e22186ae36b6dd9",
+      "bytes": 8798
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/panorama-probe.py",
+      "sha256": "f645d8f16e4e99c172d1e931f8ab56141fef02e0dec2670115b33b003a172634",
+      "bytes": 3012
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/code-verification.json",
+      "sha256": "2bb2cdb1b5f48b335fc3cf296a3ccd7bed618cefb1f9618092952b1e01996aa3",
+      "bytes": 1004
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/verify.py",
+      "sha256": "f322dd7e7d740b3cddf189bfd187aa0544178cf3bb1d9c870e308fe8f84763c0",
+      "bytes": 1055
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/training-records.json",
+      "sha256": "582d6404af854cce979e10cc2905f8285e85d91506f91931b9918c1fb4dbb289",
+      "bytes": 15800
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/training-panorama.png",
+      "sha256": "e63fe9b0b607f9ed93a6a46d7673816a01d4ef264cd718e7b8804f77791673d8",
+      "bytes": 18866
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/turned/diagnose.py",
+      "sha256": "d5cb674a60b07185115373ca3e9e1455109780b37dcfaaf8cd388f8ff7eb20a4",
+      "bytes": 1976
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/turned/replay.py",
+      "sha256": "dd71ef75b8daff16aaa8b45ce0cf46872def089498bca7928d43d18e218418c5",
+      "bytes": 2628
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/turned/map.py",
+      "sha256": "82e26b6e4dd32c88ed1fc641c48235ed89d20f258ae978cbb1eda0a7099235fe",
+      "bytes": 5295
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/capture.py",
+      "sha256": "d27e50c1dd806f7f6d46dbd35104fde12f048f653e147b56c83018393fafd28f",
+      "bytes": 1483
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/fast-down.py",
+      "sha256": "5b567bcd081c4152c15fedc8d5549b6bca3d3697eac2d60a9a8d86555d8c7e4c",
+      "bytes": 1684
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/down-35ms.py",
+      "sha256": "3ff282dae990760ae7e196ec95fed8a5840a3b506c7c68fa4da55806bd0aa9a6",
+      "bytes": 1685
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/extract.py",
+      "sha256": "3ff1a5f3fecf64264caa758a9b2b1e14a08a27cd8189aa52ba8abbc31d8e80e4",
+      "bytes": 3545
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/panorama-function.json",
+      "sha256": "81479ce59a63ff4aca6cccb216eb6e81b9ba4eba0471a9d00c0f1038332d9b23",
+      "bytes": 4801
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/panorama-submit-function.json",
+      "sha256": "cabf1508f4d12f7edce15f7b6454688c7557b5dbac28c15e425b5b7670f1c823",
+      "bytes": 17724
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/fast-down-1789167106864408584.json",
+      "sha256": "d0d5061b0df6bb5324acf38c292c055423e3d2dcee6302274cf8c89c9d93a671",
+      "bytes": 2008
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/down-35ms-1789167167945055065.json",
+      "sha256": "e05a4ecb229447b3570e36309bc099430d7ba5eb71d3834b806180f9094bc516",
+      "bytes": 2011
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/play/frame-1789167080746302396.png",
+      "sha256": "f9da4085dd140b7d6a0b6e4af981147abfa55567f908626d8d04c9c4c4dc4fa0",
+      "bytes": 177594
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/play/frame-1789167106898509328.png",
+      "sha256": "50a11d4ac9d49de6c7247b1e652aef33fbd00aee21c295387d05f0853eec4d66",
+      "bytes": 174832
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/play/frame-1789167125438949226.png",
+      "sha256": "2c11db9eb99709ba51dcea2e56506bd128f0b0eeda9aa250be5ef08db5f61e62",
+      "bytes": 177907
+    },
+    {
+      "path": "work/experiments/EXP-20260911-013/play/frame-1789167179093588573.png",
+      "sha256": "35b08fcededaec70404ba7437f9a80e8652c32a18a90738d3e137027950f8bc2",
+      "bytes": 192752
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/make-check.log",
+      "sha256": "a08503d3ed00d283242d4d7265d3b1d731e270ea15f38055e06131e42787a5f9",
+      "bytes": 1687
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/vault-lint-final.log",
+      "sha256": "68c6403e78feb64d03bd7ba79d0a946e4f8d251a5ab7935dbffe9fffa66a94e4",
+      "bytes": 1270
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/claim-sweep.json",
+      "sha256": "9d310ae7e39b762b7be205f1bd0a61ac54b80fd9ba5cfad2eadbaf7705225ef9",
+      "bytes": 848
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/initial-final-audit.json",
+      "sha256": "52714ac275029c202de2af062e20e8d0077383becbb6c4615880505d325fd9e3",
+      "bytes": 3462
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/initial-final-bindings.json",
+      "sha256": "834e2a88bb30e5a05d0e46eb9cb93367c08e0e6ec4cd0e8230cc00add24d20a6",
+      "bytes": 3497
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/initial-audio-binding.json",
+      "sha256": "21d3daeb35f243a8af46aa9379d2c3090629bec52755d51e53e83cb144538026",
+      "bytes": 1754
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/final-audit.json",
+      "sha256": "52714ac275029c202de2af062e20e8d0077383becbb6c4615880505d325fd9e3",
+      "bytes": 3462
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/final-bindings.json",
+      "sha256": "834e2a88bb30e5a05d0e46eb9cb93367c08e0e6ec4cd0e8230cc00add24d20a6",
+      "bytes": 3497
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/audio-binding.json",
+      "sha256": "21d3daeb35f243a8af46aa9379d2c3090629bec52755d51e53e83cb144538026",
+      "bytes": 1754
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/audit.py",
+      "sha256": "70c0c4f70b8d70ea913e8adac591688cf1f5fc6913d2909eadc9d946c5e88426",
+      "bytes": 1937
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/initial-foliage.py",
+      "sha256": "5ade7fb985acb516d2b73888a252616e3a4ee5112accccde19b05bfea8b82a5f",
+      "bytes": 1835
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/initial-foliage.json",
+      "sha256": "88c8ebf3fa2c51b74af9cda46cc554c451f7b92129d64d2449078593b953c179",
+      "bytes": 57228
+    },
+    {
+      "path": "work/experiments/EXP-20260911-014/make-check-foliage.log",
+      "sha256": "23d70d9f0fe201666f7af47c305c2b961659e72900fd935aec17369f1bd3fe3e",
+      "bytes": 1687
+    }
+  ],
+  "validation": {
+    "command": "PYTEST_ADDOPTS='-k \"render_distance or night_mod\"' make check",
+    "passed": 50,
+    "deselected": 6486,
+    "seconds": 8.31,
+    "vault_notes": 942,
+    "vault_errors": 0,
+    "vault_warnings": 5,
+    "warning_scope": "Existing historical register/startup budget warnings; full-suite R2p/R2q limits remain",
+    "git_diff_check": true
+  },
+  "lifecycle": {
+    "generic_processes": 7,
+    "bound_processes": 13,
+    "game_left_open": true,
+    "muted": true,
+    "external_live_writes": false,
+    "launches": 0,
+    "closes": 0,
+    "private_sink": "ablpc_soil_1789159752419995386",
+    "module": 536870916,
+    "stream": 5233
+  },
+  "initial_3d_foliage_followup": {
+    "scope": "Original PC single-scene admission/emission from saved EXP014 initial capture, opening screen region candidates; no GPU occlusion or live input/write",
+    "screen_region_xy": [
+      150,
+      195,
+      365,
+      247
+    ],
+    "scene_count": 13,
+    "depth_range": [
+      8185,
+      11982
+    ],
+    "quad_cutoffs": [
+      13184
+    ],
+    "all_tested_quads_inside_2x": true,
+    "rows": [
+      {
+        "scene": 124,
+        "flags": 89,
+        "object": 12800,
+        "origin": [
+          -48,
+          98,
+          -59
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -1437,
+            273,
+            9914
+          ],
+          "flags": 89
+        },
+        "vertices": 136,
+        "xy_bounds": [
+          [
+            260.0,
+            286.0
+          ],
+          [
+            221.0,
+            280.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 125,
+        "flags": 89,
+        "object": 12832,
+        "origin": [
+          732,
+          504,
+          -692
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -2555,
+            837,
+            10232
+          ],
+          "flags": 89
+        },
+        "vertices": 156,
+        "xy_bounds": [
+          [
+            227.0,
+            248.0
+          ],
+          [
+            243.0,
+            291.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 126,
+        "flags": 89,
+        "object": 12864,
+        "origin": [
+          547,
+          157,
+          -51
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -2336,
+            347,
+            9218
+          ],
+          "flags": 89
+        },
+        "vertices": 184,
+        "xy_bounds": [
+          [
+            222.0,
+            252.0
+          ],
+          [
+            222.0,
+            283.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 127,
+        "flags": 89,
+        "object": 12896,
+        "origin": [
+          163,
+          77,
+          408
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -1379,
+            307,
+            8783
+          ],
+          "flags": 89
+        },
+        "vertices": 192,
+        "xy_bounds": [
+          [
+            256.0,
+            284.0
+          ],
+          [
+            220.0,
+            281.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 128,
+        "flags": 89,
+        "object": 12928,
+        "origin": [
+          -223,
+          72,
+          126
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -958,
+            385,
+            9364
+          ],
+          "flags": 89
+        },
+        "vertices": 164,
+        "xy_bounds": [
+          [
+            276.0,
+            298.0
+          ],
+          [
+            227.0,
+            280.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 89
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 129,
+        "flags": 16473,
+        "object": 12960,
+        "origin": [
+          480,
+          327,
+          797
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -1844,
+            518,
+            8230
+          ],
+          "flags": 16473
+        },
+        "vertices": 62,
+        "xy_bounds": [
+          [
+            234.0,
+            257.0
+          ],
+          [
+            222.0,
+            293.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -1844,
+            518,
+            8230
+          ],
+          "flags": 16473
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 131,
+        "flags": 16473,
+        "object": 13024,
+        "origin": [
+          560,
+          110,
+          509
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -2265,
+            416,
+            8776
+          ],
+          "flags": 16473
+        },
+        "vertices": 62,
+        "xy_bounds": [
+          [
+            218.0,
+            251.0
+          ],
+          [
+            228.0,
+            283.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 16473
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 132,
+        "flags": 16473,
+        "object": 13056,
+        "origin": [
+          198,
+          126,
+          103
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -2154,
+            33,
+            9162
+          ],
+          "flags": 16473
+        },
+        "vertices": 62,
+        "xy_bounds": [
+          [
+            217.0,
+            264.0
+          ],
+          [
+            202.0,
+            282.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 16473
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 133,
+        "flags": 16473,
+        "object": 13088,
+        "origin": [
+          45,
+          93,
+          136
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -1156,
+            -175,
+            9245
+          ],
+          "flags": 16473
+        },
+        "vertices": 62,
+        "xy_bounds": [
+          [
+            267.0,
+            295.0
+          ],
+          [
+            186.0,
+            281.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 16473
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 134,
+        "flags": 16473,
+        "object": 13120,
+        "origin": [
+          351,
+          496,
+          -778
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -2421,
+            689,
+            10114
+          ],
+          "flags": 16473
+        },
+        "vertices": 62,
+        "xy_bounds": [
+          [
+            225.0,
+            257.0
+          ],
+          [
+            236.0,
+            290.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 16473
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 135,
+        "flags": 16473,
+        "object": 13152,
+        "origin": [
+          570,
+          493,
+          -767
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -2195,
+            690,
+            10480
+          ],
+          "flags": 16473
+        },
+        "vertices": 62,
+        "xy_bounds": [
+          [
+            247.0,
+            257.0
+          ],
+          [
+            235.0,
+            290.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 16473
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 175,
+        "flags": 16473,
+        "object": 14416,
+        "origin": [
+          2560,
+          262,
+          -2699
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -4259,
+            584,
+            11438
+          ],
+          "flags": 16473
+        },
+        "vertices": 62,
+        "xy_bounds": [
+          [
+            190.0,
+            213.0
+          ],
+          [
+            233.0,
+            278.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 16473
+        },
+        "stock_vertices": 0
+      },
+      {
+        "scene": 205,
+        "flags": 16473,
+        "object": 15304,
+        "origin": [
+          2487,
+          262,
+          -2763
+        ],
+        "gate": {
+          "accepted": true,
+          "destination": "0x44d712",
+          "rejection": null,
+          "view": [
+            -4354,
+            753,
+            11764
+          ],
+          "flags": 16473
+        },
+        "vertices": 30,
+        "xy_bounds": [
+          [
+            193.0,
+            212.0
+          ],
+          [
+            244.0,
+            277.0
+          ]
+        ],
+        "stock_gate": {
+          "accepted": false,
+          "destination": "0x44d728",
+          "rejection": "0x44d5ec",
+          "view": [
+            0,
+            0,
+            0
+          ],
+          "flags": 16473
+        },
+        "stock_vertices": 0
+      }
+    ],
+    "limits": "Selected scaled primary plant meshes whose projected bounds overlap the passage opening; admission/emission evidence does not establish GPU visibility through intervening geometry or enumerate every blade of grass. Panorama is separate; no new live access, input or writes.",
+    "validation": {
+      "passed": 50,
+      "deselected": 6486,
+      "seconds": 8.11,
+      "vault_notes": 942,
+      "vault_errors": 0,
+      "vault_existing_budget_warnings": 5
+    }
+  },
+  "target_clarification": {
+    "experiment": "EXP-20260911-015",
+    "target": "User crop grass is secondary15; earlier painted-flower and13-primary-plant results remain scoped to other objects."
+  }
+}

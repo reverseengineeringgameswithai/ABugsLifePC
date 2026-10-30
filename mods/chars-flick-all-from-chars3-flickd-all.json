@@ -1,0 +1,18 @@
+{
+  "schema_version": 2,
+  "name": "chars-flick-all-from-chars3-flickd-all",
+  "files": [
+    {
+      "path": "CD/CHARS/FLICK.ALL",
+      "sha256": "a2f23220392d7fb4880bbab7acab9393fe6da059961d620e7b85c8df3f4f4ac6",
+      "format": "opaque-file-v0",
+      "edits": [
+        {
+          "operation": "replace-whole-file",
+          "source_path": "CD/CHARS3/FLICKD.ALL",
+          "source_sha256": "6e5afb4f9ea649bc305fdafeb027aece25914b27a017d04841bf4298634079a4"
+        }
+      ]
+    }
+  ]
+}

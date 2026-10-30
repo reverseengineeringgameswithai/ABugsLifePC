@@ -1,0 +1,35 @@
+{
+  "experiment": "EXP-20260905-003",
+  "base_checkpoint": "68ce28a048e07a817b47154ac3bd7ddbcfede621",
+  "protected_stash_object": "76db1c9ee1ffffce52cea6aee591c24ab6a1c39a",
+  "evidence_snapshot": {
+    "archive": "work/snapshots/terrain-20260905-shared-floor-evidence.tar.gz",
+    "archive_bytes": 7732071,
+    "archive_sha256": "95b9238cf55816171c2ce004547e0012ed0c24250e0ae0d9fc033e3f91ea2e94",
+    "manifest": "work/snapshots/terrain-20260905-shared-floor-evidence.manifest.tsv",
+    "manifest_sha256": "a607ee7f795ab568f5b2629b4a17437f419cf70fff2f185bde10b862f0ba0c1a",
+    "files": 139,
+    "scope": "Experiment receipts, model results, source operators, read-only captures, final audit/partial test logs, and candidate TERRAIN.ALL/LEVEL.DAT. Excludes Wine prefixes and whole copied games; no live processes."
+  },
+  "originals": [
+    {
+      "path": "originals/BUGS_PC.ISO",
+      "bytes": 533114880,
+      "mode": "0o644",
+      "mtime": 1786500452,
+      "handling": "unchanged; procedural read-only with explicit user approval"
+    },
+    {
+      "path": "originals/Win95 OSR2.ISO",
+      "bytes": 596070400,
+      "mode": "0o644",
+      "mtime": 1787012793,
+      "handling": "unchanged; procedural read-only with explicit user approval"
+    }
+  ],
+  "previous_checkpoint_snapshot_unchanged": {
+    "archive_sha256": "0dbf147f3efa72feea6e8e0c248c0fcd3d30ebfe7ded63c2a9d2317b6567715c",
+    "manifest_sha256": "736d6326e06125a39e72aaa756d42d0816277a0da4432650def4134713bca528",
+    "verification_receipt": "work/experiments/EXP-20260905-003/prebank-audit.txt"
+  }
+}

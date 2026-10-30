@@ -1,0 +1,1337 @@
+{
+  "experiment": "EXP-20260906-003",
+  "status": "built-offline-validation-pending",
+  "input_sha256": [
+    "77a77456c3b9a0f4db5e7b20d257a9772e04c0f0ed3d0812590943d630851698",
+    "691674fdca9b87a95f477bfb144f9ff6d805fecc05785669c68162c8f4f17659",
+    "574a375fbc83d4757159f3c61672a7df8af9e209269e27420e19c18823a901be",
+    "8469172e17592544c75fc572b2dc99eb0729ee8f9edc20c6ecd64eab0ea517b0",
+    "786b7a964129d4fee6a1983b356e172d406b17663d87b8befe645b92dbf08b53"
+  ],
+  "terrain_sha256": "288d57396d6de67db0df7904567c2bf2a0a40e4309fff490f9343928dc1075b7",
+  "dat_sha256": "f6cfa7883a902af5f43362356b7731adf9708ee5164c454b489e266867b048b2",
+  "side_mesh_sha256": "ad1a680f36ab27f150553b970e2ab4d74ee53d7a4e1593452ea8b2df050ee180",
+  "profiles": {
+    "5750": [
+      {
+        "lo": {
+          "numerator": 10900,
+          "denominator": 1
+        },
+        "hi": {
+          "numerator": 10999,
+          "denominator": 1
+        },
+        "y_lo": {
+          "numerator": -1455601,
+          "denominator": 500
+        },
+        "y_hi": {
+          "numerator": -2852,
+          "denominator": 1
+        },
+        "record": 124,
+        "face_offset": 117660,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 10999,
+          "denominator": 1
+        },
+        "hi": {
+          "numerator": 11249,
+          "denominator": 1
+        },
+        "y_lo": {
+          "numerator": -2852,
+          "denominator": 1
+        },
+        "y_hi": {
+          "numerator": -2702,
+          "denominator": 1
+        },
+        "record": 124,
+        "face_offset": 118092,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 11249,
+          "denominator": 1
+        },
+        "hi": {
+          "numerator": 11499,
+          "denominator": 1
+        },
+        "y_lo": {
+          "numerator": -2702,
+          "denominator": 1
+        },
+        "y_hi": {
+          "numerator": -2566,
+          "denominator": 1
+        },
+        "record": 124,
+        "face_offset": 118092,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 11499,
+          "denominator": 1
+        },
+        "hi": {
+          "numerator": 11749,
+          "denominator": 1
+        },
+        "y_lo": {
+          "numerator": -2566,
+          "denominator": 1
+        },
+        "y_hi": {
+          "numerator": -2477,
+          "denominator": 1
+        },
+        "record": 124,
+        "face_offset": 118380,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 11749,
+          "denominator": 1
+        },
+        "hi": {
+          "numerator": 11999,
+          "denominator": 1
+        },
+        "y_lo": {
+          "numerator": -2477,
+          "denominator": 1
+        },
+        "y_hi": {
+          "numerator": -4755,
+          "denominator": 2
+        },
+        "record": 124,
+        "face_offset": 118380,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 11999,
+          "denominator": 1
+        },
+        "hi": {
+          "numerator": 24499,
+          "denominator": 2
+        },
+        "y_lo": {
+          "numerator": -4755,
+          "denominator": 2
+        },
+        "y_hi": {
+          "numerator": -2301,
+          "denominator": 1
+        },
+        "record": 124,
+        "face_offset": 118108,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 24499,
+          "denominator": 2
+        },
+        "hi": {
+          "numerator": 3076000,
+          "denominator": 247
+        },
+        "y_lo": {
+          "numerator": -2301,
+          "denominator": 1
+        },
+        "y_hi": {
+          "numerator": -555943,
+          "denominator": 247
+        },
+        "record": 124,
+        "face_offset": 118108,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 3076000,
+          "denominator": 247
+        },
+        "hi": {
+          "numerator": 6139592,
+          "denominator": 493
+        },
+        "y_lo": {
+          "numerator": -555943,
+          "denominator": 247
+        },
+        "y_hi": {
+          "numerator": -1109653,
+          "denominator": 493
+        },
+        "bridge": true
+      },
+      {
+        "lo": {
+          "numerator": 6139592,
+          "denominator": 493
+        },
+        "hi": {
+          "numerator": 5547252,
+          "denominator": 443
+        },
+        "y_lo": {
+          "numerator": -1109653,
+          "denominator": 493
+        },
+        "y_hi": {
+          "numerator": -921875,
+          "denominator": 443
+        },
+        "record": 128,
+        "face_offset": 222888,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 5547252,
+          "denominator": 443
+        },
+        "hi": {
+          "numerator": 5591586,
+          "denominator": 445
+        },
+        "y_lo": {
+          "numerator": -921875,
+          "denominator": 443
+        },
+        "y_hi": {
+          "numerator": -862109,
+          "denominator": 445
+        },
+        "record": 128,
+        "face_offset": 222888,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 5591586,
+          "denominator": 445
+        },
+        "hi": {
+          "numerator": 2491209,
+          "denominator": 197
+        },
+        "y_lo": {
+          "numerator": -862109,
+          "denominator": 445
+        },
+        "y_hi": {
+          "numerator": -329260,
+          "denominator": 197
+        },
+        "record": 128,
+        "face_offset": 221596,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 2491209,
+          "denominator": 197
+        },
+        "hi": {
+          "numerator": 1637563,
+          "denominator": 129
+        },
+        "y_lo": {
+          "numerator": -329260,
+          "denominator": 197
+        },
+        "y_hi": {
+          "numerator": -193598,
+          "denominator": 129
+        },
+        "record": 128,
+        "face_offset": 221596,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 1637563,
+          "denominator": 129
+        },
+        "hi": {
+          "numerator": 6723685,
+          "denominator": 526
+        },
+        "y_lo": {
+          "numerator": -193598,
+          "denominator": 129
+        },
+        "y_hi": {
+          "numerator": -741909,
+          "denominator": 526
+        },
+        "record": 124,
+        "face_offset": 117612,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 6723685,
+          "denominator": 526
+        },
+        "hi": {
+          "numerator": 6971000,
+          "denominator": 537
+        },
+        "y_lo": {
+          "numerator": -741909,
+          "denominator": 526
+        },
+        "y_hi": {
+          "numerator": -240681,
+          "denominator": 179
+        },
+        "record": 124,
+        "face_offset": 117612,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 6971000,
+          "denominator": 537
+        },
+        "hi": {
+          "numerator": 13000,
+          "denominator": 1
+        },
+        "y_lo": {
+          "numerator": -240681,
+          "denominator": 179
+        },
+        "y_hi": {
+          "numerator": -189486649,
+          "denominator": 142291
+        },
+        "record": 124,
+        "face_offset": 118304,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      }
+    ],
+    "6250": [
+      {
+        "lo": {
+          "numerator": 10900,
+          "denominator": 1
+        },
+        "hi": {
+          "numerator": 10999,
+          "denominator": 1
+        },
+        "y_lo": {
+          "numerator": -153097263,
+          "denominator": 49900
+        },
+        "y_hi": {
+          "numerator": -1499850,
+          "denominator": 499
+        },
+        "record": 124,
+        "face_offset": 116968,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 10999,
+          "denominator": 1
+        },
+        "hi": {
+          "numerator": 5613501,
+          "denominator": 499
+        },
+        "y_lo": {
+          "numerator": -1499850,
+          "denominator": 499
+        },
+        "y_hi": {
+          "numerator": -1417100,
+          "denominator": 499
+        },
+        "record": 124,
+        "face_offset": 117996,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 5613501,
+          "denominator": 499
+        },
+        "hi": {
+          "numerator": 11499,
+          "denominator": 1
+        },
+        "y_lo": {
+          "numerator": -1417100,
+          "denominator": 499
+        },
+        "y_hi": {
+          "numerator": -1342400,
+          "denominator": 499
+        },
+        "record": 124,
+        "face_offset": 117996,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 11499,
+          "denominator": 1
+        },
+        "hi": {
+          "numerator": 5863001,
+          "denominator": 499
+        },
+        "y_lo": {
+          "numerator": -1342400,
+          "denominator": 499
+        },
+        "y_hi": {
+          "numerator": -1301900,
+          "denominator": 499
+        },
+        "record": 124,
+        "face_offset": 117356,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 5863001,
+          "denominator": 499
+        },
+        "hi": {
+          "numerator": 11999,
+          "denominator": 1
+        },
+        "y_lo": {
+          "numerator": -1301900,
+          "denominator": 499
+        },
+        "y_hi": {
+          "numerator": -1257578,
+          "denominator": 499
+        },
+        "record": 124,
+        "face_offset": 117356,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 11999,
+          "denominator": 1
+        },
+        "hi": {
+          "numerator": 6112501,
+          "denominator": 499
+        },
+        "y_lo": {
+          "numerator": -1257578,
+          "denominator": 499
+        },
+        "y_hi": {
+          "numerator": -1220078,
+          "denominator": 499
+        },
+        "record": 124,
+        "face_offset": 117112,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 6112501,
+          "denominator": 499
+        },
+        "hi": {
+          "numerator": 6237250,
+          "denominator": 499
+        },
+        "y_lo": {
+          "numerator": -1220078,
+          "denominator": 499
+        },
+        "y_hi": {
+          "numerator": -1181981,
+          "denominator": 499
+        },
+        "record": 124,
+        "face_offset": 117112,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 6237250,
+          "denominator": 499
+        },
+        "hi": {
+          "numerator": 3147875,
+          "denominator": 248
+        },
+        "y_lo": {
+          "numerator": -1181981,
+          "denominator": 499
+        },
+        "y_hi": {
+          "numerator": -560087,
+          "denominator": 248
+        },
+        "record": 124,
+        "face_offset": 117372,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 3147875,
+          "denominator": 248
+        },
+        "hi": {
+          "numerator": 1290851,
+          "denominator": 101
+        },
+        "y_lo": {
+          "numerator": -560087,
+          "denominator": 248
+        },
+        "y_hi": {
+          "numerator": -227950,
+          "denominator": 101
+        },
+        "record": 124,
+        "face_offset": 117372,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 1290851,
+          "denominator": 101
+        },
+        "hi": {
+          "numerator": 1254347,
+          "denominator": 98
+        },
+        "y_lo": {
+          "numerator": -227950,
+          "denominator": 101
+        },
+        "y_hi": {
+          "numerator": -15167,
+          "denominator": 7
+        },
+        "record": 128,
+        "face_offset": 222984,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 1254347,
+          "denominator": 98
+        },
+        "hi": {
+          "numerator": 1599781,
+          "denominator": 124
+        },
+        "y_lo": {
+          "numerator": -15167,
+          "denominator": 7
+        },
+        "y_hi": {
+          "numerator": -222909,
+          "denominator": 124
+        },
+        "record": 128,
+        "face_offset": 222984,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 1599781,
+          "denominator": 124
+        },
+        "hi": {
+          "numerator": 1565389,
+          "denominator": 121
+        },
+        "y_lo": {
+          "numerator": -222909,
+          "denominator": 124
+        },
+        "y_hi": {
+          "numerator": -198996,
+          "denominator": 121
+        },
+        "record": 128,
+        "face_offset": 222584,
+        "triangle": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "lo": {
+          "numerator": 1565389,
+          "denominator": 121
+        },
+        "hi": {
+          "numerator": 13000,
+          "denominator": 1
+        },
+        "y_lo": {
+          "numerator": -198996,
+          "denominator": 121
+        },
+        "y_hi": {
+          "numerator": -24905307,
+          "denominator": 17681
+        },
+        "record": 128,
+        "face_offset": 222584,
+        "triangle": [
+          0,
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  "trim": {
+    "original_vertices": 60,
+    "original_faces": 80,
+    "vertices": 176,
+    "faces": 253,
+    "max_coordinate_change_from_exact": 2.640631072474021,
+    "unknown_fields": "+6/+7/+11 retained",
+    "scope": "only new side mesh; original top/storage unchanged; lower contour is not buried"
+  },
+  "cells": [
+    {
+      "side": "west",
+      "cell_relative_offset": 12,
+      "vertices": [
+        [
+          5750,
+          -1072,
+          10952
+        ],
+        [
+          5750,
+          -3037,
+          10952
+        ],
+        [
+          5750,
+          -3030,
+          10900
+        ]
+      ],
+      "normal": [
+        -16384,
+        0,
+        0
+      ],
+      "file_offset": 49096
+    },
+    {
+      "side": "west",
+      "cell_relative_offset": 56,
+      "vertices": [
+        [
+          5750,
+          -1072,
+          10900
+        ],
+        [
+          5750,
+          -1072,
+          10952
+        ],
+        [
+          5750,
+          -3030,
+          10900
+        ]
+      ],
+      "normal": [
+        -16384,
+        0,
+        0
+      ],
+      "file_offset": 49140
+    },
+    {
+      "side": "west",
+      "cell_relative_offset": 100,
+      "vertices": [
+        [
+          5750,
+          -1072,
+          11464
+        ],
+        [
+          5750,
+          -3101,
+          11464
+        ],
+        [
+          5750,
+          -3037,
+          10952
+        ]
+      ],
+      "normal": [
+        -16384,
+        0,
+        0
+      ],
+      "file_offset": 49184
+    },
+    {
+      "side": "west",
+      "cell_relative_offset": 144,
+      "vertices": [
+        [
+          5750,
+          -1072,
+          10952
+        ],
+        [
+          5750,
+          -1072,
+          11464
+        ],
+        [
+          5750,
+          -3037,
+          10952
+        ]
+      ],
+      "normal": [
+        -16384,
+        0,
+        0
+      ],
+      "file_offset": 49228
+    },
+    {
+      "side": "west",
+      "cell_relative_offset": 188,
+      "vertices": [
+        [
+          5750,
+          -1072,
+          11976
+        ],
+        [
+          5750,
+          -3166,
+          11976
+        ],
+        [
+          5750,
+          -3101,
+          11464
+        ]
+      ],
+      "normal": [
+        -16384,
+        0,
+        0
+      ],
+      "file_offset": 49272
+    },
+    {
+      "side": "west",
+      "cell_relative_offset": 232,
+      "vertices": [
+        [
+          5750,
+          -1072,
+          11464
+        ],
+        [
+          5750,
+          -1072,
+          11976
+        ],
+        [
+          5750,
+          -3101,
+          11464
+        ]
+      ],
+      "normal": [
+        -16384,
+        0,
+        0
+      ],
+      "file_offset": 49316
+    },
+    {
+      "side": "west",
+      "cell_relative_offset": 276,
+      "vertices": [
+        [
+          5750,
+          -1072,
+          12488
+        ],
+        [
+          5750,
+          -3231,
+          12488
+        ],
+        [
+          5750,
+          -3166,
+          11976
+        ]
+      ],
+      "normal": [
+        -16384,
+        0,
+        0
+      ],
+      "file_offset": 49360
+    },
+    {
+      "side": "west",
+      "cell_relative_offset": 320,
+      "vertices": [
+        [
+          5750,
+          -1072,
+          11976
+        ],
+        [
+          5750,
+          -1072,
+          12488
+        ],
+        [
+          5750,
+          -3166,
+          11976
+        ]
+      ],
+      "normal": [
+        -16384,
+        0,
+        0
+      ],
+      "file_offset": 49404
+    },
+    {
+      "side": "west",
+      "cell_relative_offset": 364,
+      "vertices": [
+        [
+          5750,
+          -1072,
+          13000
+        ],
+        [
+          5750,
+          -3296,
+          13000
+        ],
+        [
+          5750,
+          -3231,
+          12488
+        ]
+      ],
+      "normal": [
+        -16384,
+        0,
+        0
+      ],
+      "file_offset": 49448
+    },
+    {
+      "side": "west",
+      "cell_relative_offset": 408,
+      "vertices": [
+        [
+          5750,
+          -1072,
+          12488
+        ],
+        [
+          5750,
+          -1072,
+          13000
+        ],
+        [
+          5750,
+          -3231,
+          12488
+        ]
+      ],
+      "normal": [
+        -16384,
+        0,
+        0
+      ],
+      "file_offset": 49492
+    },
+    {
+      "side": "east",
+      "cell_relative_offset": 452,
+      "vertices": [
+        [
+          6250,
+          -3183,
+          10900
+        ],
+        [
+          6250,
+          -3186,
+          10952
+        ],
+        [
+          6250,
+          -1072,
+          10952
+        ]
+      ],
+      "normal": [
+        16384,
+        0,
+        0
+      ],
+      "file_offset": 49536
+    },
+    {
+      "side": "east",
+      "cell_relative_offset": 496,
+      "vertices": [
+        [
+          6250,
+          -3183,
+          10900
+        ],
+        [
+          6250,
+          -1072,
+          10952
+        ],
+        [
+          6250,
+          -1072,
+          10900
+        ]
+      ],
+      "normal": [
+        16384,
+        0,
+        0
+      ],
+      "file_offset": 49580
+    },
+    {
+      "side": "east",
+      "cell_relative_offset": 540,
+      "vertices": [
+        [
+          6250,
+          -3186,
+          10952
+        ],
+        [
+          6250,
+          -3213,
+          11464
+        ],
+        [
+          6250,
+          -1072,
+          11464
+        ]
+      ],
+      "normal": [
+        16384,
+        0,
+        0
+      ],
+      "file_offset": 49624
+    },
+    {
+      "side": "east",
+      "cell_relative_offset": 584,
+      "vertices": [
+        [
+          6250,
+          -3186,
+          10952
+        ],
+        [
+          6250,
+          -1072,
+          11464
+        ],
+        [
+          6250,
+          -1072,
+          10952
+        ]
+      ],
+      "normal": [
+        16384,
+        0,
+        0
+      ],
+      "file_offset": 49668
+    },
+    {
+      "side": "east",
+      "cell_relative_offset": 628,
+      "vertices": [
+        [
+          6250,
+          -3213,
+          11464
+        ],
+        [
+          6250,
+          -3241,
+          11976
+        ],
+        [
+          6250,
+          -1072,
+          11976
+        ]
+      ],
+      "normal": [
+        16384,
+        0,
+        0
+      ],
+      "file_offset": 49712
+    },
+    {
+      "side": "east",
+      "cell_relative_offset": 672,
+      "vertices": [
+        [
+          6250,
+          -3213,
+          11464
+        ],
+        [
+          6250,
+          -1072,
+          11976
+        ],
+        [
+          6250,
+          -1072,
+          11464
+        ]
+      ],
+      "normal": [
+        16384,
+        0,
+        0
+      ],
+      "file_offset": 49756
+    },
+    {
+      "side": "east",
+      "cell_relative_offset": 716,
+      "vertices": [
+        [
+          6250,
+          -3241,
+          11976
+        ],
+        [
+          6250,
+          -3268,
+          12488
+        ],
+        [
+          6250,
+          -1072,
+          12488
+        ]
+      ],
+      "normal": [
+        16384,
+        0,
+        0
+      ],
+      "file_offset": 49800
+    },
+    {
+      "side": "east",
+      "cell_relative_offset": 760,
+      "vertices": [
+        [
+          6250,
+          -3241,
+          11976
+        ],
+        [
+          6250,
+          -1072,
+          12488
+        ],
+        [
+          6250,
+          -1072,
+          11976
+        ]
+      ],
+      "normal": [
+        16384,
+        0,
+        0
+      ],
+      "file_offset": 49844
+    },
+    {
+      "side": "east",
+      "cell_relative_offset": 804,
+      "vertices": [
+        [
+          6250,
+          -3268,
+          12488
+        ],
+        [
+          6250,
+          -3296,
+          13000
+        ],
+        [
+          6250,
+          -1072,
+          13000
+        ]
+      ],
+      "normal": [
+        16384,
+        0,
+        0
+      ],
+      "file_offset": 49888
+    },
+    {
+      "side": "east",
+      "cell_relative_offset": 848,
+      "vertices": [
+        [
+          6250,
+          -3268,
+          12488
+        ],
+        [
+          6250,
+          -1072,
+          13000
+        ],
+        [
+          6250,
+          -1072,
+          12488
+        ]
+      ],
+      "normal": [
+        16384,
+        0,
+        0
+      ],
+      "file_offset": 49932
+    }
+  ],
+  "render_allocation": {
+    "record_index": 160,
+    "scene_record_offset": 8580,
+    "object_offset": 18672,
+    "pointer_field_offset": 18692,
+    "previous_geometry_offset": 332820,
+    "geometry_offset": 345876,
+    "stream_bytes": 18206,
+    "stream_sha256": "6ac8ba9594349af7e9c97b8d683ed33e3e88b8ec267834266eccc65549b64f33",
+    "growth_bytes": 18208,
+    "original_vertex_count": 439,
+    "original_face_count": 623,
+    "vertex_count": 615,
+    "face_count": 876,
+    "additions": [
+      {
+        "vertices": 176,
+        "faces": 253,
+        "vertex_index_base": 439
+      }
+    ],
+    "original_vertex_bytes_sha256": "b615815e4007671ea62ef7e5862185a1a03211b0e46ba254880f33ae97ce66be",
+    "original_command_bytes_sha256": "b0030d0e770fd138585884c834d3cfc57673d5168906301e47d6b585d27d22fa",
+    "retained_commands_new_offset": 353260,
+    "retained_commands_size": 7780,
+    "visibility_bound_offset": 8592,
+    "visibility_bound_before": 8560,
+    "visibility_bound_after": 8560,
+    "scene_center_retained": [
+      4243,
+      -570,
+      16018
+    ],
+    "depth_bias_offset": 18690,
+    "depth_bias_before": 0,
+    "depth_bias_after": 0,
+    "footer_offset_before": 345876,
+    "footer_offset_after": 364084,
+    "footer_word_before": 21356,
+    "footer_word_after": 39564,
+    "trailing_data_offset": 324524,
+    "preservation": "All original vertices and full command groups remain active; old payload bytes remain in place. Only the known object pointer, conservative visibility bound, selected depth bias and displaced footer change.",
+    "rendering_limit": "Zero depth bias is inherited from the banked authored area, not a pixel-identical retail sorting claim. Enlarged-batch visibility/performance still need runtime comparison."
+  },
+  "collision_allocation": {
+    "source_index": 99,
+    "payload_offset": 43924,
+    "insertion_offset": 49084,
+    "growth_bytes": 880,
+    "directory_offset_before": 223276,
+    "directory_offset_after": 224156,
+    "record_offset_before": 230804,
+    "record_offset_after": 231684,
+    "payload_size_before": 5164,
+    "payload_size_after": 6044,
+    "original_group_count": 30,
+    "added_group_count": 20,
+    "original_cell_count": 150,
+    "added_cell_count": 20,
+    "original_terminator_before": 49084,
+    "original_terminator_after": 49964,
+    "original_trailer_sha256": "ca2fd00fa001190744c15c317643ab092e7048ce086a243e2be9437c898de1bb",
+    "preservation": "Original group/cell bytes, terminator, trailer, other payloads and unknown directory fields retained; only directory locator and this payload word count are rewritten."
+  },
+  "controls": [
+    "EXP-20260906-002 visual-only buried skirts",
+    "controls/collision-only",
+    "controls/trim-only"
+  ],
+  "build_seconds": 0.1036081699985516,
+  "root_cause_limit": "Buried geometry removed as a bounded discriminator; exact screenshot pixels and full draw-order causality not established.",
+  "live_actions": []
+}

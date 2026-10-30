@@ -1,0 +1,29 @@
+{
+  "run_id": "RUN-GDB-20260812-163111",
+  "experiment_id": "EXP-20260812-024",
+  "arm": "plant10-first-entry-head-00-04-08",
+  "time_window_start": "2026-08-12T16:31:11-04:00",
+  "plant10_guard": "2026-08-12T16:34:52.502662331-04:00",
+  "accepted_watch_start": "2026-08-12T16:35:30.739061649-04:00",
+  "resource_batch_return": "2026-08-12T16:36:10.229805161-04:00",
+  "gameplay_capture_time": "2026-08-12T16:36:45.292633013-04:00",
+  "final_debugger_stop": "2026-08-12T16:37:29.557351625-04:00",
+  "executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "level_dat_sha256": "494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22",
+  "environment": "Fedora Linux 44, kernel 7.0.11-200.fc44.x86_64, Wine 11.0 Staging",
+  "debugger": "GNU GDB 17.1-6.fc44",
+  "working_directory": "/home/dev/ABLPC/work/copies/BUGS_PC-full-disc/PC/BUGS",
+  "renderer": "Direct3D hardware, 640x480x16",
+  "status": "complete-bounded-negative",
+  "raw_transcript_sha256": "0a0874b97afb4d3bd68ecd39feb9d117d0a2ab369b389a3b611f9f6c3b593cad",
+  "raw_transcript_committed": false,
+  "gameplay_capture_sha256": "4e7975ecc49285140ce990f8a82868d039837a9bca677577fd505171c5987a8a",
+  "gameplay_capture_committed": false,
+  "title_pause_retained": false,
+  "title_advanced_by": "queued load-phase Return",
+  "artifacts": [
+    "bugs.log",
+    "debugger-evidence.txt",
+    "metadata.json"
+  ]
+}

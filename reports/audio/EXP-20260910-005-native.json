@@ -1,0 +1,506 @@
+{
+  "experiment": "EXP-20260910-005",
+  "retail_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "kind": "Original x86 at two PE bases; final sound backend/visual callbacks stubbed; no live listening",
+  "cases": [
+    {
+      "event": "grain_city",
+      "case": "below_requirement",
+      "bank": 8,
+      "requests": [
+        {
+          "cue": 76,
+          "via": 4280032,
+          "callsite": 4405299
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 61,
+          "file": "SFX/USGN083.WAV",
+          "available": true
+        }
+      ],
+      "cooldown": 67,
+      "gate_state": 4294967295
+    },
+    {
+      "event": "grain_city",
+      "case": "one_below",
+      "bank": 8,
+      "requests": [
+        {
+          "cue": 76,
+          "via": 4280032,
+          "callsite": 4405299
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 61,
+          "file": "SFX/USGN083.WAV",
+          "available": true
+        }
+      ],
+      "cooldown": 67,
+      "gate_state": 4294967295
+    },
+    {
+      "event": "grain_city",
+      "case": "enough_grain",
+      "bank": 8,
+      "requests": [
+        {
+          "cue": 63,
+          "via": 4279488,
+          "callsite": 4405223
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "cooldown": 0,
+      "gate_state": 31
+    },
+    {
+      "event": "grain_city",
+      "case": "outside_radius",
+      "bank": 8,
+      "requests": [],
+      "samples": [],
+      "cooldown": 0,
+      "gate_state": 4294967295
+    },
+    {
+      "event": "grain_city",
+      "case": "inside_radius",
+      "bank": 8,
+      "requests": [
+        {
+          "cue": 76,
+          "via": 4280032,
+          "callsite": 4405299
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 61,
+          "file": "SFX/USGN083.WAV",
+          "available": true
+        }
+      ],
+      "cooldown": 67,
+      "gate_state": 4294967295
+    },
+    {
+      "event": "grain_city",
+      "case": "cooldown",
+      "bank": 8,
+      "requests": [],
+      "samples": [],
+      "cooldown": 1,
+      "gate_state": 4294967295
+    },
+    {
+      "event": "grain_tunnels",
+      "case": "below_requirement",
+      "bank": 3,
+      "requests": [
+        {
+          "cue": 76,
+          "via": 4280032,
+          "callsite": 4403213
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 61,
+          "file": "SFX/USGN083.WAV",
+          "available": true
+        }
+      ],
+      "cooldown": 67,
+      "gate_state": 4295
+    },
+    {
+      "event": "grain_tunnels",
+      "case": "one_below",
+      "bank": 3,
+      "requests": [
+        {
+          "cue": 76,
+          "via": 4280032,
+          "callsite": 4403213
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 61,
+          "file": "SFX/USGN083.WAV",
+          "available": true
+        }
+      ],
+      "cooldown": 67,
+      "gate_state": 4295
+    },
+    {
+      "event": "grain_tunnels",
+      "case": "enough_grain",
+      "bank": 3,
+      "requests": [
+        {
+          "cue": 63,
+          "via": 4279488,
+          "callsite": 4403031
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 48,
+          "file": "SFX/USGN052.WAV",
+          "available": true
+        }
+      ],
+      "cooldown": 0,
+      "gate_state": 4200
+    },
+    {
+      "event": "grain_tunnels",
+      "case": "outside_radius",
+      "bank": 3,
+      "requests": [],
+      "samples": [],
+      "cooldown": 0,
+      "gate_state": 4295
+    },
+    {
+      "event": "grain_tunnels",
+      "case": "inside_radius",
+      "bank": 3,
+      "requests": [
+        {
+          "cue": 76,
+          "via": 4280032,
+          "callsite": 4403213
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 61,
+          "file": "SFX/USGN083.WAV",
+          "available": true
+        }
+      ],
+      "cooldown": 67,
+      "gate_state": 4295
+    },
+    {
+      "event": "grain_tunnels",
+      "case": "cooldown",
+      "bank": 3,
+      "requests": [],
+      "samples": [],
+      "cooldown": 1,
+      "gate_state": 4295
+    },
+    {
+      "event": "need_super_jump",
+      "case": "missing_jump",
+      "bank": 1,
+      "requests": [
+        {
+          "cue": 79,
+          "via": 4280032,
+          "callsite": 4407685
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 64,
+          "file": "SFX/USGN086.WAV",
+          "available": true
+        }
+      ],
+      "cooldown": 607
+    },
+    {
+      "event": "need_super_jump",
+      "case": "has_jump",
+      "bank": 1,
+      "requests": [],
+      "samples": [],
+      "cooldown": 607
+    },
+    {
+      "event": "need_super_jump",
+      "case": "cooldown",
+      "bank": 1,
+      "requests": [],
+      "samples": [],
+      "cooldown": 0
+    },
+    {
+      "event": "need_super_jump",
+      "case": "missing_jump",
+      "bank": 9,
+      "requests": [
+        {
+          "cue": 79,
+          "via": 4280032,
+          "callsite": 4407685
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 64,
+          "file": null,
+          "available": false
+        }
+      ],
+      "cooldown": 607
+    },
+    {
+      "event": "need_super_jump",
+      "case": "has_jump",
+      "bank": 9,
+      "requests": [],
+      "samples": [],
+      "cooldown": 607
+    },
+    {
+      "event": "need_super_jump",
+      "case": "cooldown",
+      "bank": 9,
+      "requests": [],
+      "samples": [],
+      "cooldown": 0
+    },
+    {
+      "event": "need_super_jump",
+      "case": "missing_jump",
+      "bank": 21,
+      "requests": [
+        {
+          "cue": 79,
+          "via": 4280032,
+          "callsite": 4407685
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 64,
+          "file": null,
+          "available": false
+        }
+      ],
+      "cooldown": 607
+    },
+    {
+      "event": "need_super_jump",
+      "case": "has_jump",
+      "bank": 21,
+      "requests": [],
+      "samples": [],
+      "cooldown": 607
+    },
+    {
+      "event": "need_super_jump",
+      "case": "cooldown",
+      "bank": 21,
+      "requests": [],
+      "samples": [],
+      "cooldown": 0
+    },
+    {
+      "event": "need_super_jump",
+      "case": "missing_jump",
+      "bank": 22,
+      "requests": [
+        {
+          "cue": 79,
+          "via": 4280032,
+          "callsite": 4407685
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 64,
+          "file": null,
+          "available": false
+        }
+      ],
+      "cooldown": 607
+    },
+    {
+      "event": "need_super_jump",
+      "case": "has_jump",
+      "bank": 22,
+      "requests": [],
+      "samples": [],
+      "cooldown": 607
+    },
+    {
+      "event": "need_super_jump",
+      "case": "cooldown",
+      "bank": 22,
+      "requests": [],
+      "samples": [],
+      "cooldown": 0
+    },
+    {
+      "event": "pickup",
+      "selector": 9,
+      "bank": 1,
+      "requests": [
+        {
+          "cue": 62,
+          "via": 4279488,
+          "callsite": 4363258
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 47,
+          "file": "SFX/USGN050.WAV",
+          "available": true
+        }
+      ],
+      "flags": 0,
+      "weapon": 0
+    },
+    {
+      "event": "pickup",
+      "selector": 12,
+      "bank": 1,
+      "requests": [
+        {
+          "cue": 65,
+          "via": 4279488,
+          "callsite": 4363306
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 50,
+          "file": "SFX/USGN081.WAV",
+          "available": true
+        }
+      ],
+      "flags": 0,
+      "weapon": 0
+    },
+    {
+      "event": "pickup",
+      "selector": 15,
+      "bank": 1,
+      "requests": [
+        {
+          "cue": 75,
+          "via": 4279488,
+          "callsite": 4363340
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 60,
+          "file": "SFX/USGN082.WAV",
+          "available": true
+        }
+      ],
+      "flags": 32,
+      "weapon": 0
+    },
+    {
+      "event": "pickup",
+      "selector": 33,
+      "bank": 1,
+      "requests": [
+        {
+          "cue": 54,
+          "via": 4279488,
+          "callsite": 4363468
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 39,
+          "file": "SFX/USGN032.WAV",
+          "available": true
+        }
+      ],
+      "flags": 0,
+      "weapon": 2
+    },
+    {
+      "event": "pickup",
+      "selector": 34,
+      "bank": 1,
+      "requests": [
+        {
+          "cue": 56,
+          "via": 4279488,
+          "callsite": 4363468
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 41,
+          "file": "SFX/USGN034.WAV",
+          "available": true
+        }
+      ],
+      "flags": 0,
+      "weapon": 3
+    },
+    {
+      "event": "pickup",
+      "selector": 35,
+      "bank": 1,
+      "requests": [
+        {
+          "cue": 53,
+          "via": 4279488,
+          "callsite": 4363468
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 38,
+          "file": "SFX/USGN031.WAV",
+          "available": true
+        }
+      ],
+      "flags": 0,
+      "weapon": 1
+    },
+    {
+      "event": "pickup",
+      "selector": 36,
+      "bank": 1,
+      "requests": [
+        {
+          "cue": 55,
+          "via": 4279488,
+          "callsite": 4363468
+        }
+      ],
+      "samples": [
+        {
+          "sample_id": 40,
+          "file": "SFX/USGN033.WAV",
+          "available": true
+        }
+      ],
+      "flags": 0,
+      "weapon": 4
+    }
+  ],
+  "bases": [
+    "0x400000",
+    "0x1000000"
+  ]
+}

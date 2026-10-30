@@ -1,0 +1,4779 @@
+{
+  "experiment": "EXP-20260905-006",
+  "arm": "tiled-material",
+  "source_dat_sha256": "b9da33f9fa8a8227e78ed72fe6870f187e8065a04039b6de4ebcd72f719d6241",
+  "candidate_dat_sha256": "99fbff1754fc43979542de40e56c04d10d7af4fccde8d13e919853b679429a21",
+  "terrain_sha256": "1ff3af9f0b5b2c2957bde8e877e1d988054455f3e1be18f8ea0e6cb57875d16b",
+  "collision_byte_identical": true,
+  "mesh_origin": [
+    8192,
+    -8192,
+    8192
+  ],
+  "tiling": {
+    "tile_size_stored": 512,
+    "tile_size_world": 16384,
+    "anchor_stored": [
+      4000,
+      -3200,
+      13000
+    ],
+    "source_vertices": 78,
+    "source_faces": 49,
+    "vertex_count": 324,
+    "face_count": 524,
+    "stream_bytes": 10186,
+    "stream_sha256": "b759d335984bd132a589c0beae6c287d6cbb3d09b57128f890c46d04ea5867b4",
+    "tag": 97,
+    "surface_triangles": {
+      "ground": 390,
+      "wall": 134
+    },
+    "degenerate_triangles_omitted": 0,
+    "max_coordinate_rounding_error_stored": "1/2",
+    "projection": "Ground X/Z; vertical-wall U is height and V is X or Z. 512 is an authoring choice, not a native universal tile scale.",
+    "preservation": "Original triangle boundaries before int16 quantization; original corner colours; interpolated known colour bytes; unchanged unknown vertex fields. Collision is not an input to tiling.",
+    "faces": [
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          1,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          1,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          1,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          1,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          1,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          1,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          7,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 0,
+        "tile": [
+          8,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          0
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          1
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          1,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          2
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          3
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          7
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          7,
+          8
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          7,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          7,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          7,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 0,
+        "source_triangle": 1,
+        "tile": [
+          8,
+          9
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 1,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 1,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 1,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 1,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 1,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 1,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 2,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 2,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 2,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 2,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 2,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 2,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 3,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 4,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 4,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 4,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 4,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 4,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 4,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 5,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 5,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 6,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 6,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 7,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 7,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 7,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 7,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 7,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 7,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 8,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 8,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 9,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 9,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 9,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 9,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 9,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 9,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 10,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 10,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 10,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 10,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 10,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 10,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 11,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 12,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 12,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 12,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 12,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 12,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 12,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 13,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 13,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 14,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 14,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 15,
+        "source_triangle": 0,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 15,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 15,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 15,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 15,
+        "source_triangle": 1,
+        "tile": [
+          2,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 15,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 16,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 16,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 17,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 17,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 18,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 18,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 18,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 18,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 18,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 18,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 19,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 19,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 19,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 19,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 19,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 19,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 20,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 20,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 20,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 20,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 20,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 20,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 20,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 20,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 20,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 20,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 21,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 21,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 21,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 21,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 21,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 21,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 21,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 21,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 21,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 21,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 22,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 22,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 22,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 22,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 22,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 22,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 22,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 22,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 22,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 22,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 23,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 23,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 23,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 23,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 23,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 23,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 24,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 24,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 24,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 24,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 24,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 24,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 24,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 24,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 24,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 24,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 25,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          4
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 26,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 27,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 27,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 27,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 27,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 27,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 27,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 28,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 28,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 28,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 28,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 28,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 28,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 28,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 28,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 28,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 28,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 29,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          5
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 30,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 31,
+        "source_triangle": 0,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 31,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 31,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 31,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 31,
+        "source_triangle": 1,
+        "tile": [
+          3,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 31,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 32,
+        "source_triangle": 0,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 32,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 32,
+        "source_triangle": 0,
+        "tile": [
+          5,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 32,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 32,
+        "source_triangle": 0,
+        "tile": [
+          6,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 32,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 32,
+        "source_triangle": 1,
+        "tile": [
+          4,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 32,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 32,
+        "source_triangle": 1,
+        "tile": [
+          5,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 32,
+        "source_triangle": 1,
+        "tile": [
+          6,
+          6
+        ],
+        "surface": "ground"
+      },
+      {
+        "source_face": 33,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 33,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 33,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 33,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 33,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 33,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 34,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 34,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 34,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 34,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 34,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 34,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 34,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 34,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 35,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 35,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 35,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 35,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 35,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 35,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 36,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 36,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 36,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 36,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 36,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 36,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 37,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 37,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 37,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 37,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 38,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 38,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 38,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 38,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 38,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 38,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 39,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 39,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 40,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 40,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 40,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          3
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 40,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          2
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 41,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 41,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 42,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 42,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 43,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 43,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 43,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 43,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 43,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 43,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 44,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 44,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 44,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 44,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 44,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 44,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          6
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 45,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 45,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 46,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 46,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 47,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 47,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 47,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 47,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 47,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 47,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 48,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 48,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 48,
+        "source_triangle": 0,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 48,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 48,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          4
+        ],
+        "surface": "wall"
+      },
+      {
+        "source_face": 48,
+        "source_triangle": 1,
+        "tile": [
+          0,
+          5
+        ],
+        "surface": "wall"
+      }
+    ]
+  },
+  "allocation": {
+    "geometry_offset": 332820,
+    "object_offset": 18672,
+    "scene_record_offset": 8580,
+    "pointer_field_offset": 18692,
+    "previous_geometry_offset": 113136,
+    "source_bytes": 332824,
+    "candidate_bytes": 343012,
+    "growth_bytes": 10188,
+    "alignment_padding_bytes": 2,
+    "footer_offset_before": 332820,
+    "footer_offset_after": 343008,
+    "end_relative_word_before": 8300,
+    "end_relative_word_after": 18488,
+    "trailing_data_offset": 324524,
+    "preservation": "All original bytes except object+0x14 and the displaced final word; no existing payload or unknown field moved or overwritten.",
+    "native_evidence": [
+      "0044bd13..0044bd22",
+      "0044bec4..0044bf25"
+    ]
+  },
+  "runtime_acceptance": "Pending; this is an offline authored candidate, not a live appearance or general repacking result.",
+  "game_stage": "work/copies/EXP-20260905-006/game",
+  "fixture": "work/copies/EXP-20260905-006/fixture"
+}

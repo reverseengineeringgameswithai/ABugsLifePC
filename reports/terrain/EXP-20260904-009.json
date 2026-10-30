@@ -1,0 +1,425 @@
+{
+  "experiment": "EXP-20260904-009",
+  "status": "read-only-live-observation-and-offline-diagnosis; candidate-not-applied",
+  "retail_executable_sha256": "97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878",
+  "executed_game_sha256": "1e1d5099b200e71ce25aa53d06c2f30eb7c2ca88bcd1642f52970065c8a9c41f",
+  "game": {
+    "leader": {
+      "pid": 46458,
+      "start": 1147668,
+      "group": 46458,
+      "cmd": "/usr/bin/env bash /home/dev/ABLPC/scripts/play-pristine.sh --game-dir /home/dev/ABLPC/work/copies/USER-20260904-deck-depth-play-001/PC/BUGS --prefix /home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/prefix --auto-hardware --research --windowed --mute "
+    },
+    "stage": "/home/dev/ABLPC/work/copies/USER-20260904-deck-depth-play-001",
+    "args": [
+      "/home/dev/ABLPC/scripts/play-pristine.sh",
+      "--game-dir",
+      "/home/dev/ABLPC/work/copies/USER-20260904-deck-depth-play-001/PC/BUGS",
+      "--prefix",
+      "/home/dev/ABLPC/work/experiments/USER-20260904-deck-depth-play-001/prefix",
+      "--auto-hardware",
+      "--research",
+      "--windowed",
+      "--mute"
+    ],
+    "game": {
+      "pid": 46701,
+      "start": 1147812,
+      "group": 46458,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\auto-hardware\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "display": ":2",
+    "window": 14680071
+  },
+  "paused_state": {
+    "position": [
+      163024,
+      -102401,
+      509900
+    ],
+    "contact": [
+      99,
+      6973595
+    ],
+    "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+    "camera_translation": [
+      190254,
+      -115203,
+      500135
+    ]
+  },
+  "capture_before_after_equal": true,
+  "readable_memory_capture": {
+    "regions": 55,
+    "bytes": 131133440,
+    "seconds": 6.831935405731201,
+    "atomic": false,
+    "restorable_save_state": false
+  },
+  "known_box_world": {
+    "x": [
+      163200,
+      184000
+    ],
+    "z": [
+      497600,
+      520000
+    ],
+    "top_y": -108544,
+    "deck_y": -102400
+  },
+  "player_x_outside_left_plane_by": 176,
+  "loaded_offset_byte": 0,
+  "static_depth_evidence": {
+    "prior_experiment": "EXP-20260904-007",
+    "object_offset_byte_file": 18690,
+    "dispatcher": [
+      "0x00449B22",
+      "0x00449B25"
+    ],
+    "camera_z_quarter": [
+      "0x0045CFE8",
+      "0x0045D05F"
+    ],
+    "tlvertex_z_store": [
+      "0x0045E9BF",
+      "0x0045E9D4"
+    ],
+    "scale_address": "0x004C00E8",
+    "scale_value": 0.000244140625
+  },
+  "original_instruction_executions": [
+    {
+      "artifact": "offline-mesh-1.json",
+      "entry": "0x004498F0",
+      "instruction_count": 3958,
+      "returned": true,
+      "batches": [
+        {
+          "page": 0,
+          "vertices": 12,
+          "indices": 18
+        }
+      ]
+    },
+    {
+      "artifact": "offline-mesh-4.json",
+      "entry": "0x004498F0",
+      "instruction_count": 21209,
+      "returned": true,
+      "batches": [
+        {
+          "page": 0,
+          "vertices": 72,
+          "indices": 108
+        }
+      ]
+    },
+    {
+      "artifact": "offline-actor.json",
+      "entry": "0x0044C440",
+      "instruction_count": 131857,
+      "returned": true,
+      "batches": [
+        {
+          "page": 16,
+          "vertices": 387,
+          "indices": 549
+        }
+      ]
+    }
+  ],
+  "captured_batch_matches": [
+    {
+      "file": "offline-actor.json",
+      "page": 16,
+      "matching_xyzw_vertices": 75,
+      "total": 387,
+      "consecutive_match_start_indices": [],
+      "live_count": 0
+    },
+    {
+      "file": "offline-mesh-1.json",
+      "page": 0,
+      "matching_xyzw_vertices": 12,
+      "total": 12,
+      "consecutive_match_start_indices": [
+        232
+      ],
+      "live_count": 0
+    }
+  ],
+  "exploratory_counts": {
+    "blue_roi_pixels": 1034,
+    "blue_with_all_three_depths": 564,
+    "split_actor_coarse_order": 255,
+    "ray_hits_box_top": 300,
+    "ray_hit_and_ideal_top_before_actor": 259,
+    "coarse_loses_where_ideal_top_before_actor": 259,
+    "split_loses_where_ideal_top_before_actor": 6
+  },
+  "selected_pixels": [
+    {
+      "xy": [
+        301,
+        319
+      ],
+      "rgb": [
+        24,
+        28,
+        41
+      ],
+      "depths_actor_coarse_split": [
+        0.05150415990259741,
+        0.05425742147394763,
+        0.051664100060096155
+      ],
+      "ideal_top_depth": 0.051447228540348104,
+      "ray_box_top_world": [
+        164370.61118723228,
+        -108544,
+        507913.88718255825
+      ],
+      "ray_inside_box_top": true
+    },
+    {
+      "xy": [
+        305,
+        319
+      ],
+      "rgb": [
+        41,
+        44,
+        57
+      ],
+      "depths_actor_coarse_split": [
+        0.054145382612179487,
+        0.05446747264822895,
+        0.05160475510817308
+      ],
+      "ideal_top_depth": 0.051447228540348104,
+      "ray_box_top_world": [
+        164486.64852769652,
+        -108544,
+        508230.5398256278
+      ],
+      "ray_inside_box_top": true
+    },
+    {
+      "xy": [
+        308,
+        320
+      ],
+      "rgb": [
+        41,
+        36,
+        57
+      ],
+      "depths_actor_coarse_split": [
+        0.05385898779154519,
+        0.05453324523549795,
+        0.05096153846153846
+      ],
+      "ideal_top_depth": 0.05080413818359375,
+      "ray_box_top_world": [
+        164894.68057638162,
+        -108544,
+        508363.8664415808
+      ],
+      "ray_inside_box_top": true
+    },
+    {
+      "xy": [
+        312,
+        321
+      ],
+      "rgb": [
+        24,
+        28,
+        41
+      ],
+      "depths_actor_coarse_split": [
+        0.053521603954081634,
+        0.05465153061633726,
+        0.050303485576923074
+      ],
+      "ideal_top_depth": 0.050176926601080245,
+      "ray_box_top_world": [
+        165320.93081490375,
+        -108544,
+        508571.10955714766
+      ],
+      "ray_inside_box_top": true
+    },
+    {
+      "xy": [
+        339,
+        325
+      ],
+      "rgb": [
+        57,
+        65,
+        90
+      ],
+      "depths_actor_coarse_split": [
+        0.054443359375,
+        0.05570231286896817,
+        0.047876317223837214
+      ],
+      "ideal_top_depth": 0.04781565946691176,
+      "ray_box_top_world": [
+        167222.21538599714,
+        -108544,
+        510160.6458358328
+      ],
+      "ray_inside_box_top": true
+    }
+  ],
+  "numeric_model": "Barycentric interpolation of emitted TLvertex z at integer pixel coordinates. Box top ray intersection uses captured camera, exact authored top plane, focal320 and center320,240. No texture, alpha, culling, depth-quantization or complete GPU simulation. Post-hoc blue filter and ROI are explanatory, not an independent acceptance gate.",
+  "conclusion": "Strong evidence that large-face depth interpolation contributes to residual side-view bleed after the bounded offset correction: original mesh outputs match captured static vertices; visible pixel depths put a physically nearer top behind the actor. Subdivision reduces this error offline. A live changed/restored paused-frame comparison is still needed.",
+  "limits": [
+    "User triggered oscillation before observation; no attempted movement replay.",
+    "Read-only capture spans frames; only stated player/contact/camera values are stable, not atomic RAM.",
+    "All12 static emitted XYZRHW vertices match consecutive captured slots232..243. Actor buffer is only partially matched:75/387 vertices; remaining buffer content is not claimed to be current Flik.",
+    "Four-way subdivision still has six analytically occluded blue pixel samples whose modeled depth does not beat the actor; these are near boundaries and are not resolved by this test.",
+    "Physical body-extent contact at all poses, material rules, arbitrary face sizes and full level behavior remain open.",
+    "EXP-005 return-floor fall remains a separate unresolved defect."
+  ],
+  "candidate": {
+    "experiment": "EXP-20260904-009",
+    "status": "prepared-read-only-not-applied",
+    "process": {
+      "pid": 46701,
+      "start": 1147812,
+      "group": 46458,
+      "cmd": "Z:\\home\\dev\\ABLPC\\work\\copies\\auto-hardware\\bugs.exe log cheat mpeg                                                                                                   "
+    },
+    "state": {
+      "level": 1,
+      "position": [
+        163024,
+        -102401,
+        509900
+      ],
+      "terrain_base": 0,
+      "barrier_head": 7152075,
+      "contact": [
+        99,
+        6973595
+      ],
+      "camera_matrix_hex": "81050000050f000000100000fbf000008105",
+      "camera_translation": [
+        190254,
+        -115203,
+        500135
+      ]
+    },
+    "address": "0x6662a7",
+    "bytes": 1078,
+    "before_sha256": "6741aab66d6a191f1e9285a92a0ca4edc3fb5157a384062a6ba52c79b9fe1554",
+    "candidate_sha256": "9f953f2edd1f4e4a6fa0f58e1d3c40ef55afcf9a7b9b61301e4c60393a35d1f1",
+    "before_file": "/home/dev/ABLPC/work/experiments/EXP-20260904-009/before-render-prefix.bin",
+    "candidate_file": "/home/dev/ABLPC/work/experiments/EXP-20260904-009/candidate-render-prefix.bin",
+    "old_level_dat_sha256": "b0e6a65a353e7a33c0e72399659a8f3ee6d08380fe45893232281d93c06805cb",
+    "candidate_level_dat_sha256": "8ba384541d80da2e82a3016cf99638476229b4da7d445a9edfafdc34e365b6e5",
+    "terrain_sha256": "26f3e0235533419a80b2a0eff18f423fadc20617a6c2ed2be445abeae87b35d5",
+    "changed_byte_count": 777,
+    "candidate_geometry": {
+      "vertices": 45,
+      "quads": 33,
+      "box_top_grid": [
+        4,
+        4
+      ],
+      "side_strips_each": 4,
+      "deck_quads": 1
+    },
+    "proposed_sequence": [
+      "Fresh explicit user authorization for each of the two memory writes and brief process suspension/resumption.",
+      "Revalidate exact PID/start/group, executable, paused player/camera/contact, loaded pointers and old prefix.",
+      "Briefly suspend only the owned game while replacing this 1078-byte mesh prefix; compare before write, verify afterward and retain receipt; resume to the existing game pause menu.",
+      "Capture paused image and recheck state; send no gameplay input. If paused renderer does not update, report inconclusive rather than unpause.",
+      "Briefly suspend the same process; compare the candidate bytes, restore the saved original prefix exactly, verify and resume; capture restoration and record receipt."
+    ],
+    "scope": "No collision/object/camera/player-data writes, restart, load, or asset installation. No step in proposed_sequence has run; this file is not authorization."
+  },
+  "actions": {
+    "gameplay_input": 0,
+    "live_memory_writes": 0,
+    "debugger_attachment": 0,
+    "signals": 0,
+    "launches": 0,
+    "closes": 0,
+    "restarts": 0,
+    "save_states": 0,
+    "process_memory_access": "read-only",
+    "captures": "existing owned paused window; no gameplay keys"
+  },
+  "artifacts": [
+    {
+      "path": "work/experiments/EXP-20260904-009/paused-memory.json",
+      "bytes": 18487,
+      "sha256": "2e0f87c9b98f44a59e6d60c021a28682af90a5dfdc89ade55949964e725c50cc"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/maps.txt",
+      "bytes": 93522,
+      "sha256": "1f10617990c01bceb27abc98d7a12ee69202833954d69c1df1a9d457147d759b"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/pre-audit.json",
+      "bytes": 3444,
+      "sha256": "d52938990118da40f0721d80d0d9fb4c3b9f57d767c4f442f2f036782059504c"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/offline_mesh.py",
+      "bytes": 4753,
+      "sha256": "0bac203d0a1279fe439cad66f5e14b88d3539923ce7fcf9da8e3eb18f303e788"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/depth_compare.py",
+      "bytes": 3033,
+      "sha256": "99ca74859f84a840761415cd20d9537cfb152afb0183ae7b7271f208653b356f"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/prepare_candidate.py",
+      "bytes": 3089,
+      "sha256": "c50539e174d1c529be400714f98fef1a99e5ce55e1a69798f4ae1f3405e20dee"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/candidate-plan.json",
+      "bytes": 2522,
+      "sha256": "a6fee8cda76f9c555411232982ed57d25ec81b0ccb90c3b62e0df60954a8e1ba"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/offline-actor.json",
+      "bytes": 103635,
+      "sha256": "fb9b756fb7115923764073c15d3514e1129c53fc2a14c05f43c2d21ba1068118"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/offline-mesh-1.json",
+      "bytes": 3783,
+      "sha256": "76c3b297e772924498f13cdfc4fd4a1ab2c4558baf04e18f1e9832d7ce9f21a2"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/offline-mesh-4.json",
+      "bytes": 19285,
+      "sha256": "1f11b434bf993a43909c0c4948c88905d62f3372ee1524454aaf4455a7667088"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/pixel-depths-exploratory.json",
+      "bytes": 309924,
+      "sha256": "47ccde8def96a7f38fd0b9d963cc76119d68c6c8253a2477b8c837092452177a"
+    },
+    {
+      "path": "work/experiments/EXP-20260904-009/user-paused-image.png",
+      "bytes": 182846,
+      "sha256": "b4f4021a9c18be34533ce2276a5cf570cb52e35117716ec64fe606a8be2a2259"
+    },
+    {
+      "path": "work/experiments/USER-20260904-deck-depth-play-001/frame-1788567836037465925.png",
+      "bytes": 166195,
+      "sha256": "acf58e566b9712c17c9e32ae4abf6d2be74490a823023db28183ccfd318c2c09"
+    }
+  ]
+}

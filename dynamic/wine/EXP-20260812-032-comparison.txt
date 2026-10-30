@@ -1,0 +1,142 @@
+EXP-20260812-032 curated comparison
+====================================
+
+Question
+--------
+Does exact PLANT04.ANM/.ALL <- PLANT10.ANM/.ALL produce a stable,
+replacement-local rendered difference along one fixed Training trajectory
+beyond repeated-control variance?
+
+Inputs and staging
+------------------
+bugs.exe:
+  97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878
+Training LEVEL1.DAT:
+  494d28187739782523757511a17414c41c04782d84f90f7333092d6f008d5a22
+control PLANT04.ANM:
+  32dce9588272d4bd4d0b2054e58de2b9ca5ae563826d56f7cd12abe8b001e7ce
+replacement/source PLANT10.ANM:
+  12d2550ea89b9156acd04ce403d1754aa244d1cedf8531eaca2c8e7bf22b5194
+control PLANT04.ALL:
+  486bd73c54b96f9b0ef41e2c9ccc6029c95772619feaacb8885f4f1cc424f14a
+replacement/source PLANT10.ALL:
+  0c0f244b5bef3b5a3f7148744aad9ac223b7fdeaeb0eecaa561193e7a30bf714
+
+Both controls recursively matched the fresh source tree when generated
+bugs.log was excluded. The replacement differed at exactly:
+  PC/BUGS/CD/PLANTS/PLANT04.ANM
+  PC/BUGS/CD/PLANTS/PLANT04.ALL
+Both replacement destinations exactly matched their PLANT10 source hashes.
+
+Accepted runs
+-------------
+  RUN-WINE-20260812-223223  control A
+  RUN-WINE-20260812-223921  paired replacement
+  RUN-WINE-20260812-224252  control B
+
+All three logs have 1480 lines and contain:
+  line 76:   Screen mode 640x480x16 selected
+  line 127:  Starting Direct3D renderer
+  lines 1468-1471: PLANT04 and PLANT10 ANM/ALL loads
+  line 1476: End InitMainGame
+  line 1478: NextLife
+No accepted log contains INITSOFTRENDER. Removing only the ten clock timing
+lines makes all three logs byte-identical:
+  f47d9d3d648f0d9c3a951ea0135fa4fed29a91089ba653e0dcaf13fbc97cad18
+
+Accepted log hashes:
+  control A:  5f68bada4060e9a5f09afdb303f654ea61a608cc318adc9a52a475114e55057c
+  replacement:8b331970c547406864ce26d1afee9367683cf34b62b39bd379206fa6ffcfd500
+  control B:  cf5b8e00510f33f401de54c57dc508ad675c94f70b9f789c425b541e2a648a32
+
+Trajectory
+----------
+From natural Training start after one title Return:
+  3 samples at start, approximately 0.4 seconds apart
+  Up held 3 seconds; wait 1 second; 3 samples (after-up1)
+  Right held 2 seconds; wait 1 second; 3 samples (after-right)
+  Up held 3 seconds; wait 1 second; 3 samples (after-up2)
+
+All key events targeted exact isolated window 14680071. Each arm's committed
+input receipt contains event timestamps and frame hashes. Captures are the
+isolated 640x480 Gamescope game surface; no desktop capture was taken.
+
+Receipt / frame-list hashes:
+  control A:   8529b11ad8272cec4b22133d92808d84e91d56db84d5386cbb0bce49157b4549
+               a369515f78e451dc25e45e4dbe8d4462ee2ca47d3926c0e09479391cff1b46e9
+  replacement: efb3912b9c6341ec66295e2898e462ac7f51a2c21fd91f76835be8e3f7396d85
+               caff251649d1effb24ff84dbc252717a64a2062a04274419915f2011ad931e2b
+  control B:   661adf1297563128554ef2323ee141a569b85591b66850bfc695a65876d3cbfe
+               7e29490cd1a55d67c8bdd23917f716040e2f27d92386dcd9a669f42c55d8f934
+
+Same-index frame measurements
+-----------------------------
+ImageMagick AE is count and fraction of 307200 pixels. RMSE is normalized.
+
+anchor/sample    control A vs B            replacement vs control A
+start/1          32394 (0.105449), .0303271 exact
+start/2          exact                     26541 (0.0863965), .0315323
+start/3          exact                     exact
+after-up1/1      exact                     19624 (0.0638770), .0230690
+after-up1/2      exact                      6746 (0.0219596), .0131987
+after-up1/3      exact                      7693 (0.0250423), .0124696
+after-right/1    exact                     14427 (0.0469596), .0110342
+after-right/2    exact                    205848 (0.6700750), .0792866
+after-right/3    exact                     24562 (0.0799544), .0128991
+after-up2/1      exact                     exact
+after-up2/2      exact                     19395 (0.0631348), .0139480
+after-up2/3      exact                     20478 (0.0666602), .0169279
+
+The fresh controls are byte-identical at 11 of 12 same-index samples. The
+only control difference is start sample 1. Replacement samples exactly match
+a control at start samples 1/3 and after-up2 sample 1. Other low residuals
+follow animation/camera phase; after-right sample 2 catches a different
+camera-transition phase. After the start anchor, controls A and B are exact,
+so the replacement-to-control-B measurements equal the listed replacement-to-
+control-A measurements. At start, replacement 1 equals control A, replacement
+3 equals both controls, and replacement 2 is compared against the same exact
+control frame 2; therefore the start differences also do not define a repeated
+replacement-only region against control B.
+
+Temporal medians
+----------------
+anchor          controls AE/RMSE         replacement vs control A AE/RMSE
+start            7420 / .0132714          14217 / .0221729
+after-up1           0 / 0                 12393 / .0165925
+after-right         0 / 0                108430 / .0491928
+after-up2           0 / 0                 18006 / .0127760
+
+Pixels differing in every one of the three replacement comparisons at an
+anchor (exact / >2% / >5% / >10% channel threshold):
+  start:        0 /   0 /  0 / 0
+  after-up1:  242 /  16 /  8 / 3
+  after-right:1302 / 257 / 13 / 0
+  after-up2:    0 /   0 /  0 / 0
+
+Visual review of the selected direct differences, three-sample intersections,
+and temporal-median differences found only thin residuals on the moving player,
+stems, flowers, ground texture, and camera-transition edges. It found no solid,
+stable, replacement-local rendered region.
+
+Rejected preflights and contradictions
+---------------------------------------
+An initial control-A launch used the staged physical path while R: still
+resolved to the pristine tree. It failed the CD-path gate before renderer
+selection and was rejected. R: was then mapped to each exact arm.
+
+One replacement attempt and the first control-B attempt entered the Training
+loading screen but stalled at the same 954-line pre-resource boundary with
+high CPU. Their ignored log hashes are respectively:
+  c853ebb70ec8700d92cd2edef384fc2ee11723ce3d4068c61044dd604a998abf
+  ce0f292cf10302e3fc473b588bca84f1f423021b3c6210103c88efc2c570d4ca
+Because the stall occurred in both replacement and unchanged arms before the
+tested files loaded, it is not replacement-specific evidence. Each accepted
+arm followed a clean scoped Wine-prefix shutdown. The final R: mapping was
+restored to the pristine derived tree.
+
+Result
+------
+Bounded negative. This fixed trajectory produces no stable replacement-local
+visual region in either control comparison. Retire the plant-04/10 direct
+visible-outcome route. This does not prove that the files are unused,
+semantically interchangeable, or invisible under every later event/camera.
