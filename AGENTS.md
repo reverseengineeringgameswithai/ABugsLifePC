@@ -49,7 +49,9 @@ Treat the PS1 research repository (conventionally `~/Downloads/ABL`) as an exter
 
 ## Publishing
 
-This repository is public on GitHub. `scripts/git-hooks/private_names.py`
+This repository is public on GitHub. Never write the user's personal name,
+username, login or email anywhere in it; refer to them as "the user".
+`scripts/git-hooks/private_names.py`
 refuses any commit whose files (plain, UTF-16, hex or base64), paths, message
 or identities contain a name listed in the local, unpushed
 `.git/info/private-names`. It runs at commit time, at push time, and before
