@@ -75,6 +75,14 @@ jobs:
           git config --global user.name "ABLPC CI"
           git config --global init.defaultBranch main
 
+      # The live-memory tools (game-memory, savestate-hotkeys, send-keys,
+      # wait-for, game-session) read a sibling fixture process with
+      # process_vm_readv. The development host runs Yama ptrace_scope=0; the
+      # hosted runner defaults to 1 (descendants only), which refuses those
+      # reads with EPERM. Match the host instead of skipping the tests.
+      - name: Allow sibling process memory reads (Yama ptrace_scope=0)
+        run: sudo sysctl -w kernel.yama.ptrace_scope=0
+
       # Non-pytest halves of `make check`, run through the Makefile itself so
       # this workflow cannot drift from the local gate definition.
       - name: make python-doctor vault-lint m4-compatibility audit-tracked
