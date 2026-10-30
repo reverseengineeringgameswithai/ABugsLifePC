@@ -1,5 +1,8 @@
 # 86Box source patches (RE builds)
 
+These patches modify 86Box and are distributed under 86Box's own license (GNU
+GPL), not under this repository's MIT license.
+
 Tracked source patches applied to the **v6.0 GDBSTUB** 86Box build
 (tag `v6.0`, commit `4fef696a4eead1d55a28d6ac0e5bd2864e5454da`). The built
 binaries are **not** committed (they live git-ignored under

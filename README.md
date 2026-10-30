@@ -216,3 +216,30 @@ Never commit original binaries, assets, disc images, ROMs, Windows media, dumps,
 ## Project charter
 
 The durable mission, evidence hierarchy, research phases, repository hygiene rules, and PC-first cross-port policy are defined in `Vault/00-System/Project Charter.md`. Read it before changing research scope or consulting another port.
+
+## Building on this work
+
+This repository is a snapshot and is not maintained. To continue the research,
+fork it. Start with [START HERE](Vault/00-System/START%20HERE.md),
+[Next Tasks](Vault/00-System/Next%20Tasks.md) and
+[Known Unknowns](Vault/70-Known-Unknowns/Known%20Unknowns.md). Findings are tied
+to the retail `bugs.exe` with SHA-256
+`97c95ba5572dce637f6ea6325dbfff0c9a2d002a30d3dc88f39e0f558a27b878`; verify them
+against your own legally obtained copy rather than taking the notes on trust.
+
+## License
+
+[MIT](LICENSE), covering this repository's own notes, code and data. You may
+fork, copy, modify and redistribute it, including commercially, provided the
+copyright and permission notice in `LICENSE` is kept with substantial copies.
+
+Not covered by that license:
+
+- *A Bug's Life* itself. No game files are included. The game, and the short
+  excerpts of its text and code quoted here for analysis, remain the property
+  of their rights holders.
+- `tools/86box/patches/`: modifications of 86Box, distributed under 86Box's
+  own license (GNU GPL), not MIT.
+- Third-party tools and packages the scripts call (Ghidra, Wine, Gamescope,
+  86Box, Blender, and the Python packages in `requirements.lock`). They keep
+  their own licenses and are not redistributed here.
