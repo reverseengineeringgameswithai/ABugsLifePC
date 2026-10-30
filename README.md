@@ -1,5 +1,8 @@
 # ABLPC: reverse engineering *A Bug's Life* (PC)
 
+> Every step of this was used with AI. Some things may be inaccurate or false.
+> I will not be updating this repo going forward.
+
 This repository is a reproducible, evidence-driven research record for the
 Windows PC version of Disney/Pixar's *A Bug's Life* (1998). It documents how the
 original executable and its data files work: formats, functions, structures,
