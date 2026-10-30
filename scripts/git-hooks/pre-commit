@@ -6,6 +6,8 @@
 # defect which is expensive to undo once committed:
 #
 #   1. git diff --check          whitespace damage and conflict markers
+#      private_names.py staged   staged files naming anyone in the local,
+#      unpushed .git/info/private-names (no list: passes)
 #   2. scripts/audit-tracked-files.py   the provenance / asset-leak guard, the
 #      one that genuinely matters before a commit: it refuses tracked game
 #      assets, disc images, ROMs, memory dumps and virtual disks
@@ -86,6 +88,11 @@ run_gate() {
 
 run_gate "git diff --check" git diff --check
 run_gate "git diff --cached --check" git diff --cached --check
+if test -f "$ROOT/scripts/git-hooks/private_names.py"; then
+    run_gate "private-names" "$PYTHON" "$ROOT/scripts/git-hooks/private_names.py" staged
+else
+    printf 'pre-commit: skip  private-names (no checker in this tree)\n'
+fi
 run_gate "audit-tracked-files" "$PYTHON" "$ROOT/scripts/audit-tracked-files.py"
 run_gate "vault-lint" "$PYTHON" "$ROOT/scripts/vault-lint.py"
 if test -f "$ROOT/scripts/check-m4-compatibility.py"; then

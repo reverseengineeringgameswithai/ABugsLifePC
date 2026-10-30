@@ -49,10 +49,12 @@ Treat the PS1 research repository (conventionally `~/Downloads/ABL`) as an exter
 
 ## Publishing
 
-This repository is public on GitHub. Pushes run `scripts/git-hooks/pre-push`,
-which refuses any commit whose files, paths, message or identities contain a
-name listed in the local, unpushed `.git/info/private-names`. Never bypass it
-(`git push --no-verify`), never edit or empty that list, and never copy its
+This repository is public on GitHub. `scripts/git-hooks/private_names.py`
+refuses any commit whose files (plain, UTF-16, hex or base64), paths, message
+or identities contain a name listed in the local, unpushed
+`.git/info/private-names`. It runs at commit time, at push time, and before
+this clone's GitHub login is issued, and CI repeats it on every push. Never
+bypass it (`--no-verify`), never edit or empty that list, and never copy its
 contents into a tracked file. Runtime tools record absolute paths: before
 committing new receipts or notes, replace the home-directory prefix with
 `/home/dev`, as the existing receipts do. Ask before any force-push or history

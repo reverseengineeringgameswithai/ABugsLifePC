@@ -1,49 +1,6 @@
 #!/usr/bin/env bash
-# Refuse a push that would publish a string listed, one per line, in
-# .git/info/private-names (matched case-insensitively; blank lines and lines
-# starting with # are ignored). The list stays local because .git/info is never
-# pushed. Every commit being pushed is checked: file contents (binary files
-# included), file paths, commit messages, and author and committer identities.
-# Without the list file the hook allows the push.
-set -euo pipefail
-
-list="$(git rev-parse --git-dir)/info/private-names"
-test -s "$list" || exit 0
-patterns=$(mktemp)
-trap 'rm -f "$patterns"' EXIT
-grep -v -e '^[[:space:]]*$' -e '^#' "$list" > "$patterns" || exit 0
-
-zero=0000000000000000000000000000000000000000
-status=0
-while read -r local_ref local_sha remote_ref remote_sha; do
-    test "$local_sha" = "$zero" && continue  # deleting a remote ref
-    if printf '%s\n%s\n' "$local_ref" "$remote_ref" | grep -q -i -F -f "$patterns"; then
-        echo "pre-push: a ref name matches a private name" >&2
-        status=1
-    fi
-    if test "$remote_sha" != "$zero" && git cat-file -e "$remote_sha^{commit}" 2>/dev/null; then
-        commits=$(git rev-list "$remote_sha..$local_sha")
-    else
-        commits=$(git rev-list "$local_sha")
-    fi
-    for c in $commits; do
-        if hits=$(git grep -a -i -l -F -f "$patterns" "$c"); then
-            echo "pre-push: commit ${c:0:12} has files containing a private name:" >&2
-            printf '%s\n' "$hits" | head -5 >&2
-            status=1
-        fi
-        if git ls-tree -r --name-only "$c" | grep -q -i -F -f "$patterns"; then
-            echo "pre-push: commit ${c:0:12} has a path containing a private name" >&2
-            status=1
-        fi
-        if git show -s --format='%an%n%ae%n%cn%n%ce%n%B' "$c" | grep -q -i -F -f "$patterns"; then
-            echo "pre-push: commit ${c:0:12} message or identity contains a private name" >&2
-            status=1
-        fi
-    done
-done
-
-if test "$status" -ne 0; then
-    echo "pre-push: refused. Remove the matches from the commits above before pushing." >&2
-fi
-exit "$status"
+# Refuse a push whose commits contain a name from the local, unpushed
+# .git/info/private-names: file contents in plain, UTF-16, hex or base64 form,
+# paths, messages and identities. See scripts/git-hooks/private_names.py.
+# Without the list file the push is allowed.
+exec python3 "$(git rev-parse --show-toplevel)/scripts/git-hooks/private_names.py" push

@@ -208,3 +208,29 @@ jobs:
           path: ci-logs/flaky/
           if-no-files-found: warn
           retention-days: 30
+
+  private-names:
+    # Fails when any commit names someone listed in the PRIVATE_NAMES repository
+    # secret (one name per line). Catches what the local hooks cannot see, such
+    # as edits made on github.com. scripts/git-hooks/private_names.py redacts
+    # every match, so this log is safe to publish. Without the secret (for
+    # example on a fork) the job does nothing.
+    name: private-name guard
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check every commit for private names
+        env:
+          PRIVATE_NAMES: ${{ secrets.PRIVATE_NAMES }}
+        run: |
+          set -euo pipefail
+          if [ -z "${PRIVATE_NAMES}" ]; then
+            echo "PRIVATE_NAMES secret not set; nothing to check"
+            exit 0
+          fi
+          printf '%s\n' "$PRIVATE_NAMES" > .git/info/private-names
+          python3 scripts/git-hooks/private_names.py history --require-list
