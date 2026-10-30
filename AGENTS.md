@@ -47,6 +47,17 @@ Do not silently resolve contradictory evidence. Record the contradiction and pro
 
 Treat the PS1 research repository (conventionally `~/Downloads/ABL`) as an external, read-only PS1 comparative source. Follow `Vault/00-System/Cross-Port Evidence Policy.md`: do not copy or link the repository into ABLPC, cite its commit and relative path, and never promote PS1 evidence into a confirmed PC claim without independent PC evidence.
 
+## Publishing
+
+This repository is public on GitHub. Pushes run `scripts/git-hooks/pre-push`,
+which refuses any commit whose files, paths, message or identities contain a
+name listed in the local, unpushed `.git/info/private-names`. Never bypass it
+(`git push --no-verify`), never edit or empty that list, and never copy its
+contents into a tracked file. Runtime tools record absolute paths: before
+committing new receipts or notes, replace the home-directory prefix with
+`/home/dev`, as the existing receipts do. Ask before any force-push or history
+rewrite.
+
 ## Tooling
 
 Machine-readable contracts: `make harness-caps`, `input-movie-caps`,
